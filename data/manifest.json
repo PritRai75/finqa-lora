@@ -1,0 +1,33 @@
+{
+  "source": "https://github.com/czyssrs/FinQA",
+  "commit": "0f16e2867befa6840783e58be38c9efb9229d742",
+  "license": "MIT, Copyright (c) 2021 Zhiyu Chen",
+  "raw_url": "https://raw.githubusercontent.com/czyssrs/FinQA/{commit}/{path}",
+  "files": {
+    "train.json": {
+      "path": "dataset/train.json",
+      "bytes": 78216616,
+      "sha256": "49f237eb9779b569473b26b08048867d04635a7cc39ad6a7a5664c55bb428db6"
+    },
+    "dev.json": {
+      "path": "dataset/dev.json",
+      "bytes": 10954658,
+      "sha256": "a847fb7e0d61a3125a1e2909852df6b89f1ee64d2c5ff1bf689e332214deee51"
+    },
+    "test.json": {
+      "path": "dataset/test.json",
+      "bytes": 14395143,
+      "sha256": "831dbfb2e785dbc227f895ce3f24046433467aec67b09db2bd6ac7692a8a30dc"
+    }
+  },
+  "vendored": {
+    "third_party/finqa_official/evaluate.py": {
+      "path": "code/evaluate/evaluate.py",
+      "sha256": "845cd131cab843eceff256cf6d392978cc470a7da4a80107beb56027fdca5c13"
+    },
+    "third_party/finqa_official/LICENSE": {
+      "path": "LICENSE",
+      "sha256": "92c0e67bd762c15c07ba60de09558338315a8ebf99aac4f51f487179809ac087"
+    }
+  }
+}
