@@ -1,0 +1,29 @@
+{
+  "parser_version": 1,
+  "splits": {
+    "train": {
+      "items": 6251,
+      "agree": 5656,
+      "disagree": 431,
+      "no_answer": 48,
+      "sign_only": 63,
+      "unparsed": 53
+    },
+    "dev": {
+      "items": 883,
+      "agree": 803,
+      "disagree": 57,
+      "no_answer": 12,
+      "sign_only": 8,
+      "unparsed": 3
+    },
+    "test": {
+      "items": 1147,
+      "agree": 1040,
+      "disagree": 76,
+      "no_answer": 14,
+      "sign_only": 9,
+      "unparsed": 8
+    }
+  }
+}
