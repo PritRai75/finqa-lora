@@ -1,0 +1,4 @@
+# Keep LF everywhere, whatever core.autocrlf says.
+* text=auto eol=lf
+# Vendored upstream files are checked by SHA-256, so Git must not touch their bytes.
+third_party/** -text

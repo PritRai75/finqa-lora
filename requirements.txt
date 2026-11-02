@@ -1,0 +1,6 @@
+# Data, scoring and the audit (CPU only). Training needs are added in phase 2.
+# numpy, sympy and tqdm are imported by the official FinQA evaluate.py.
+numpy==2.5.3
+sympy==1.14.0
+tqdm==4.70.1
+pytest==9.1.1

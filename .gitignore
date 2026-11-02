@@ -1,0 +1,9 @@
+# Downloaded data (about 103 MB): fetch it with python -m finqa_lora.fetch
+data/raw/
+*.part
+scratch/
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+.ipynb_checkpoints/
