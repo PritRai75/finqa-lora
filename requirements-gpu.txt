@@ -1,0 +1,8 @@
+# Training and inference. Installed on top of the GPU machine's own torch (Kaggle ships one);
+# needs torch >= 2.6. CI installs CPU torch first and runs the tiny-model tests with these.
+transformers==5.22.2
+peft==0.21.2
+trl==1.17.1
+accelerate==1.15.0
+datasets==5.1.0
+sympy>=1.13
