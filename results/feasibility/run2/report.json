@@ -1,0 +1,271 @@
+{
+  "started": "2026-11-10 05:51:24",
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cuda": true,
+    "git_commit": "f6918e3d9e86d73eff0c58c3021891d7e158cd44",
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "transformers": "5.22.2",
+    "peft": "0.21.2",
+    "trl": "1.17.1",
+    "accelerate": "1.15.0",
+    "datasets": "5.1.0"
+  },
+  "prompt_version": 1,
+  "prompt_fingerprint": "4139bfc3519c",
+  "arm_items": 5820,
+  "steps_run": [
+    "licence",
+    "tokens",
+    "timed_train",
+    "estimate"
+  ],
+  "candidates": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "licence": {
+        "license": "apache-2.0",
+        "gated": false,
+        "sha": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+      },
+      "tokens": {
+        "train_example_tokens": {
+          "median": 367,
+          "p90": 529,
+          "p99": 692,
+          "max": 852,
+          "total": 2261167
+        },
+        "dev_few_shot_prompt_tokens": {
+          "median": 862,
+          "max": 1195
+        },
+        "program_tokens_max": 66
+      },
+      "dev_zero_shot": {
+        "items": 883,
+        "exe_correct": 29,
+        "prog_correct": 27,
+        "executes": 206,
+        "exe_acc": 0.03284258210645526,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 251.0,
+        "prompt_tokens_mean": 368.3
+      },
+      "dev_few_shot": {
+        "items": 883,
+        "exe_correct": 43,
+        "prog_correct": 36,
+        "executes": 286,
+        "exe_acc": 0.04869762174405436,
+        "split": "dev",
+        "shots": 4,
+        "seconds": 351.0,
+        "prompt_tokens_mean": 882.3
+      },
+      "dev_zero_shot_repeat": {
+        "items": 883,
+        "exe_correct": 29,
+        "prog_correct": 27,
+        "executes": 206,
+        "exe_acc": 0.03284258210645526,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 250.0,
+        "prompt_tokens_mean": 368.3,
+        "same_reply": 883,
+        "same_exe_correct": 883,
+        "changed_ids": []
+      },
+      "timed_train": {
+        "config": {
+          "model": "Qwen/Qwen2.5-1.5B-Instruct",
+          "arm": "cleaned",
+          "seed": 1,
+          "out": "/kaggle/working/timing/Qwen__Qwen2.5-1.5B-Instruct/timed_run",
+          "lora_r": 16,
+          "lora_alpha": 32,
+          "lora_dropout": 0.05,
+          "learning_rate": 0.0002,
+          "epochs": 3.0,
+          "batch_size": 8,
+          "grad_accum": 2,
+          "max_length": 1024,
+          "warmup_ratio": 0.03,
+          "max_steps": 30,
+          "subset": 640,
+          "save": false
+        },
+        "git_commit": "f6918e3d9e86d73eff0c58c3021891d7e158cd44",
+        "prompt_version": 1,
+        "prompt_fingerprint": "4139bfc3519c",
+        "items": 640,
+        "dropped_over_max_length": [],
+        "ids_sha256": "1de65a96b06e72634714bf5fd96a6366d880bcd04cc1deede48dfd0a57f9ea14",
+        "trainable_params": 18464768,
+        "steps": 30,
+        "seconds": 210.0,
+        "seconds_per_step": 6.869,
+        "examples_per_step": 16,
+        "losses": [
+          0.3351184606552124,
+          0.1834856629371643,
+          0.20608360767364503
+        ],
+        "train_loss": 0.2415625770886739,
+        "loss_is_finite": true,
+        "peak_gpu_gb": 5.42
+      },
+      "estimate": {
+        "steps_per_epoch": 364,
+        "train_hours": 2.08,
+        "dev_scoring_hours": 0.21,
+        "total_hours": 2.29,
+        "passes_gate": true,
+        "gate_hours": 2.5,
+        "epochs": 3,
+        "main_runs_hours": 13.8,
+        "batch_size": 8,
+        "grad_accum": 2
+      },
+      "from_previous": [
+        "dev_zero_shot",
+        "dev_few_shot",
+        "dev_zero_shot_repeat"
+      ],
+      "step_seconds": {
+        "licence": 0.3,
+        "tokens": 8.0,
+        "timed_train": 241.2,
+        "estimate": 0.0
+      }
+    },
+    "Qwen/Qwen3-4B-Instruct-2507": {
+      "licence": {
+        "license": "apache-2.0",
+        "gated": false,
+        "sha": "cdbee75f17c01a7cc42f958dc650907174af0554"
+      },
+      "tokens": {
+        "train_example_tokens": {
+          "median": 367,
+          "p90": 529,
+          "p99": 692,
+          "max": 852,
+          "total": 2261167
+        },
+        "dev_few_shot_prompt_tokens": {
+          "median": 862,
+          "max": 1195
+        },
+        "program_tokens_max": 66
+      },
+      "dev_zero_shot": {
+        "items": 883,
+        "exe_correct": 224,
+        "prog_correct": 197,
+        "executes": 463,
+        "exe_acc": 0.2536806342015855,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 712.0,
+        "prompt_tokens_mean": 368.3
+      },
+      "dev_few_shot": {
+        "items": 883,
+        "exe_correct": 221,
+        "prog_correct": 185,
+        "executes": 757,
+        "exe_acc": 0.25028312570781425,
+        "split": "dev",
+        "shots": 4,
+        "seconds": 964.8,
+        "prompt_tokens_mean": 882.3
+      },
+      "dev_zero_shot_repeat": {
+        "items": 883,
+        "exe_correct": 224,
+        "prog_correct": 197,
+        "executes": 463,
+        "exe_acc": 0.2536806342015855,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 711.1,
+        "prompt_tokens_mean": 368.3,
+        "same_reply": 883,
+        "same_exe_correct": 883,
+        "changed_ids": []
+      },
+      "timed_train": {
+        "config": {
+          "model": "Qwen/Qwen3-4B-Instruct-2507",
+          "arm": "cleaned",
+          "seed": 1,
+          "out": "/kaggle/working/timing/Qwen__Qwen3-4B-Instruct-2507/timed_run",
+          "lora_r": 16,
+          "lora_alpha": 32,
+          "lora_dropout": 0.05,
+          "learning_rate": 0.0002,
+          "epochs": 3.0,
+          "batch_size": 8,
+          "grad_accum": 2,
+          "max_length": 1024,
+          "warmup_ratio": 0.03,
+          "max_steps": 30,
+          "subset": 640,
+          "save": false
+        },
+        "git_commit": "f6918e3d9e86d73eff0c58c3021891d7e158cd44",
+        "prompt_version": 1,
+        "prompt_fingerprint": "4139bfc3519c",
+        "items": 640,
+        "dropped_over_max_length": [],
+        "ids_sha256": "1de65a96b06e72634714bf5fd96a6366d880bcd04cc1deede48dfd0a57f9ea14",
+        "trainable_params": 33030144,
+        "steps": 30,
+        "seconds": 542.6,
+        "seconds_per_step": 18.191,
+        "examples_per_step": 16,
+        "losses": [
+          0.5404580593109131,
+          0.13095468282699585,
+          0.15088542699813842
+        ],
+        "train_loss": 0.2740993897120158,
+        "loss_is_finite": true,
+        "peak_gpu_gb": 11.88
+      },
+      "estimate": {
+        "steps_per_epoch": 364,
+        "train_hours": 5.52,
+        "dev_scoring_hours": 0.59,
+        "total_hours": 6.11,
+        "passes_gate": false,
+        "gate_hours": 2.5,
+        "epochs": 3,
+        "main_runs_hours": 36.7,
+        "batch_size": 8,
+        "grad_accum": 2
+      },
+      "from_previous": [
+        "dev_zero_shot",
+        "dev_few_shot",
+        "dev_zero_shot_repeat"
+      ],
+      "step_seconds": {
+        "licence": 0.1,
+        "tokens": 8.1,
+        "timed_train": 599.1,
+        "estimate": 0.0
+      }
+    }
+  },
+  "previous": {
+    "path": "results/feasibility/run1/report.json",
+    "git_commit": "59f8396b4cb0095c072a4b02b2c12b0713ad02d3",
+    "started": "2026-11-10 02:15:25"
+  },
+  "finished": "2026-11-10 06:05:46"
+}
