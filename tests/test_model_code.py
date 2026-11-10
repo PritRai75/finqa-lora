@@ -64,3 +64,36 @@ def test_long_examples_are_dropped_not_truncated(tiny_model, tmp_path):
     kept, dropped = build_dataset(ids, tok, cut)
     assert len(kept) + len(dropped) == 40 and 0 < len(dropped) < 40
     assert all(len(chat_ids(tok, r["prompt"] + r["completion"])) <= cut for r in kept)
+
+
+def test_feasibility_reuses_previous_dev_results(tiny_model, tmp_path, monkeypatch):
+    import json
+    import sys
+    import finqa_lora.feasibility as F
+    from finqa_lora.prompt import prompt_fingerprint
+    monkeypatch.setattr(F, "TIMED_STEPS", 6)
+    monkeypatch.setattr(F, "TIMED_SUBSET", 48)
+    prev = {"started": "x", "environment": {"git_commit": "abc"}, "prompt_fingerprint": prompt_fingerprint(),
+            "candidates": {tiny_model: {"dev_zero_shot": {"seconds": 360.0, "exe_correct": 7},
+                                        "step_seconds": {"dev_zero_shot": 361}}}}
+    (tmp_path / "prev.json").write_text(json.dumps(prev), encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["x", "--out", str(tmp_path / "out"), "--models", tiny_model,
+                                      "--only", "timed_train", "estimate", "--previous", str(tmp_path / "prev.json")])
+    F.main()
+    c = json.loads((tmp_path / "out" / "report.json").read_text(encoding="utf-8"))["candidates"][tiny_model]
+    assert c["dev_zero_shot"]["exe_correct"] == 7 and c["from_previous"] == ["dev_zero_shot"]
+    assert "seconds_per_step" in c["timed_train"]
+    assert c["estimate"]["dev_scoring_hours"] == round(360.0 * F.EPOCHS / 3600, 2)
+    assert "licence" not in c and "tokens" not in c  # not in --only, not in the previous report
+
+
+def test_feasibility_refuses_previous_report_with_another_prompt(tiny_model, tmp_path, monkeypatch):
+    import json
+    import sys
+    import finqa_lora.feasibility as F
+    prev = {"environment": {}, "prompt_fingerprint": "000000000000", "candidates": {}}
+    (tmp_path / "prev.json").write_text(json.dumps(prev), encoding="utf-8")
+    monkeypatch.setattr(sys, "argv", ["x", "--out", str(tmp_path / "out"), "--models", tiny_model,
+                                      "--only", "estimate", "--previous", str(tmp_path / "prev.json")])
+    with pytest.raises(SystemExit):
+        F.main()
