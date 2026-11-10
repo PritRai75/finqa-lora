@@ -1,0 +1,1067 @@
+id,reply,program,executes,value,exe_correct,prog_correct
+V/2008/page_17.pdf-1,"divide(637, 5.0)","divide(637, 5.0)",1,127.4,1,0
+C/2017/page_328.pdf-1,"multiply(table_average(""citi"", none), 100), subtract(100, 100)","table_average(""citi"", none), subtract(100, 100)",0,,0,0
+DVN/2007/page_58.pdf-2,"table_average(""canada of total ( mmboe )"", none), divide(#0, table_average(""total of total ( mmboe )"", none)), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+ETR/2011/page_341.pdf-3,"subtract(555.3, 536.7)","subtract(555.3, 536.7)",1,18.6,0,0
+ETR/2004/page_213.pdf-2,"divide(59.1, 98.0)","divide(59.1, 98.0)",1,0.60306,1,1
+PM/2017/page_38.pdf-1,"subtract(11503, 10815)","subtract(11503, 10815)",1,688.0,1,1
+JPM/2008/page_85.pdf-3,"The CET1 ratio is calculated as:
+
+CET1 Ratio = (Common Equity Tier 1) / (Total Capital)
+
+Common Equity Tier 1 (CET1) is typically derived from Tier 1 capital minus Tier 2 capital. However, in this case, we are not given direct values for CET1. But we can assume that CET1 is a portion of Tier 1 capital, and since no specific breakdown is provided, we may infer that the question is",,0,,0,0
+PNC/2013/page_207.pdf-1,"table_average(""assetfairvalue ( a )"", none) + table_average(""liabilityfairvalue ( b )"", none) = #1  
+table_sum(""notional/contractamount"", none) = #2  
+divide(#1, #2) * 100 = #3  
+#3","table_sum(""notional/contractamount"", none)",0,,0,0
+CME/2017/page_97.pdf-5,"subtract(339235, 338240)","subtract(339235, 338240)",1,995.0,1,1
+PNC/2013/page_62.pdf-2,"table_sum(""total residential mortgages of december 312013"", ""total residential mortgages of december 312012"")","table_sum(""total residential mortgages of december 312013"", ""total residential mortgages of december 312012"")",0,,0,0
+AAPL/2004/page_36.pdf-2,"subtract(27.5, 27.3)","subtract(27.5, 27.3)",1,0.2,1,1
+PKG/2009/page_65.pdf-4,"divide(table_sum(""thereafter"", ""2014""), table_sum(""total"", ""2014""))","table_sum(""thereafter"", ""2014""), table_sum(""total"", ""2014"")",0,,0,0
+LMT/2013/page_74.pdf-4,"subtract(326.5, 328.4)","subtract(326.5, 328.4)",1,-1.9,1,1
+STT/2011/page_83.pdf-1,"table_average(""unrealized losses reclassifications after-tax"", none)","table_average(""unrealized losses reclassifications after-tax"", none)",0,,0,0
+MRO/2007/page_149.pdf-2,"table_average(""development costs"", none)  
+add(#0, 1654)","table_average(""development costs"", none)",0,,0,0
+AOS/2004/page_11.pdf-2,"table_sum(""total"", ""purchase obligations of (dollars in millions) total""), divide(#0, table_sum(""total"", ""total of (dollars in millions) total"")) * 100",,0,,0,0
+C/2010/page_223.pdf-3,"table_average(""carrying amount of loan receivable"", ""allowance""), subtract(#1, #0), divide(#2, #0), multiply(#3, 100)","table_average(""carrying amount of loan receivable"", ""allowance""), subtract(#1, #0), divide(#2, #0), multiply(#3, 100)",0,,0,0
+MSI/2006/page_61.pdf-3,"divide(1451, 4134)","divide(1451, 4134)",1,0.35099,1,1
+ABMD/2006/page_75.pdf-1,"subtract(4819, add(1703, 1035))","add(1703, 1035)",1,2738.0,0,0
+AMAT/2013/page_18.pdf-2,"The question asks for ""the applied 2019s net sales in 2018 (in billions),"" but the facts provided do not contain any direct information about net sales in 2018 or 2019. The facts mention investments in R&D for 2011, 2012, and 2013, expressed as percentages of net sales, but no actual net sales figures are given for those years",,0,,0,0
+DVN/2014/page_85.pdf-1,"table_average(amortization amount, 2015, 2018, 2019)","table_average(amortization amount, 2015, 2018, 2019)",0,,0,0
+SPGI/2018/page_74.pdf-1,"divide(480, 415)","divide(480, 415)",1,1.15663,1,1
+ZBH/2003/page_58.pdf-3,"table_average(inventories, reserves for obsolete and slow-moving inventory at4)","table_average(inventories, reserves for obsolete and slow-moving inventory at4)",0,,0,0
+AMT/2005/page_105.pdf-2,"add(2157503, 2418012)","add(2157503, 2418012)",1,4575515.0,1,1
+ETR/2015/page_131.pdf-1,"divide(subtract(const_766451, const_204079), const_204079)","subtract(const_766451, const_204079)",1,562372.0,0,0
+PNC/2009/page_46.pdf-2,"table_average(""bbb/baa of december 31 2009"", none) subtract table_average(""bbb/baa of december 31 2008"", none)","table_average(""bbb/baa of december 31 2009"", none), table_average(""bbb/baa of december 31 2008"", none)",0,,0,0
+PM/2017/page_38.pdf-3,"divide(23, 914)","divide(23, 914)",1,0.02516,0,0
+HOLX/2015/page_98.pdf-2,"divide(365.6, 377.0)","divide(365.6, 377.0)",1,0.96976,0,0
+ETR/2017/page_114.pdf-2,"divide(2, 6)","divide(2, 6)",1,0.33333,1,1
+UNP/2008/page_77.pdf-1,"divide(367, 2560)","divide(367, 2560)",1,0.14336,1,1
+AES/2016/page_191.pdf-3,"table_average(settlements, none)","table_average(settlements, none)",1,-11.33333,1,1
+ETFC/2007/page_126.pdf-3,"divide(2996337, 3450152)","divide(2996337, 3450152)",1,0.86847,1,1
+MAS/2012/page_70.pdf-1,"table_average(""total of net goodwill at december 31 2010"", none), table_average(""total of net goodwill at december 31 2011"", none), divide(subtract(#1, #0), #0), multiply(#2, const_100)","table_average(""total of net goodwill at december 31 2010"", none), table_average(""total of net goodwill at december 31 2011"", none), subtract(#1, #0), multiply(#2, const_100)",0,,0,0
+AON/2010/page_28.pdf-1,"table_sum(occupied square footage, lease expiration dates is 2020)","table_sum(occupied square footage, lease expiration dates is 2020)",0,,0,0
+AES/2002/page_46.pdf-4,"subtract(#3, #4)","subtract(#3, #4)",0,,0,0
+CB/2010/page_200.pdf-4,"table_average(""statutory capital and surplus"", none), table_average(""statutory net income"", none), divide(#0, #1)","table_average(""statutory capital and surplus"", none), table_average(""statutory net income"", none), divide(#0, #1)",0,,0,0
+PM/2015/page_85.pdf-1,"divide(subtract(const_28500000000, const_29500000000), const_29500000000)","subtract(const_28500000000, const_29500000000)",1,-1000000000.0,0,0
+ETFC/2014/page_26.pdf-2,"table_average(""e*trade financial corporation"", none)","table_average(""e*trade financial corporation"", none)",0,,0,0
+ZBH/2003/page_40.pdf-1,"subtract(const_512, const_474)","subtract(const_512, const_474)",1,38.0,0,0
+AAPL/2014/page_38.pdf-3,"subtract(#2, #1)","subtract(#2, #1)",0,,0,0
+ETR/2003/page_84.pdf-2,"The provided facts do not include any information about long-term debt due in the next 36 months as of December 31, 2003. Therefore, it is not possible to calculate the requested amount based on the given data. No valid operation can be performed.",,0,,0,0
+LMT/2012/page_47.pdf-3,"The question asks for the growth rate in operating profit for space systems in 2011, but the provided facts do not mention ""space systems"" or any specific division or segment of the business. The data given refers only to overall operating profit and net sales for the years 2010, 2011, and 2012, without segmentation.
+
+Therefore, based on the available information, it is not possible to compute the growth rate in",,0,,0,0
+MAS/2018/page_35.pdf-3,"divide(1211, 1194)","divide(1211, 1194)",1,1.01424,0,0
+SYY/2019/page_9.pdf-2,"subtract(62, 62)","subtract(62, 62)",1,0.0,1,0
+ETR/2002/page_86.pdf-3,"table_average(2007, none)","table_average(2007, none)",1,475288.0,0,0
+ZBH/2003/page_58.pdf-1,"multiply(100, subtract(divide(527.7, 257.6), const_1), const_1)","divide(527.7, 257.6)",1,2.04852,0,0
+AMT/2010/page_34.pdf-2,"multiply(#1, #2)","multiply(#1, #2)",0,,0,0
+PM/2014/page_67.pdf-2,"table_sum(e, none)","table_sum(e, none)",0,,0,0
+ETR/2002/page_24.pdf-1,"table_average(""increase in earnings in 2002"", none)","table_average(""increase in earnings in 2002"", none)",0,,0,0
+PM/2015/page_127.pdf-4,"table_average(currency translation adjustments, 2013, 2014, 2015)","table_average(currency translation adjustments, 2013, 2014, 2015)",0,,0,0
+RSG/2016/page_144.pdf-1,"divide(12000000, 3000000)","divide(12000000, 3000000)",1,4.0,1,1
+SNPS/2006/page_69.pdf-2,"multiply(3400, divide(100, 15704))","divide(100, 15704)",1,0.00637,0,0
+GIS/2019/page_37.pdf-3,"table_average(""accrued trade liabilities"", none) → this is not valid since ""accrued trade liabilities"" is not a table with rows. Instead, we use the facts directly:
+
+- Accrued trade liabilities as of May 26, 2019: $484 million  
+- Accrued trade liabilities as of May 27, 2018: $500 million  
+
+Percentage change = ((New Value -","table_average(""accrued trade liabilities"", none)",0,,0,0
+JPM/2018/page_110.pdf-2,"subtract(228681, 200247)","subtract(228681, 200247)",1,28434.0,1,1
+STT/2008/page_83.pdf-2,"table_average(""foreign exchange products"", ""annual average""), table_average(""interest-rate products"", ""annual average""), subtract(#0, #1), divide(#2, #1), multiply(#3, 100)","table_average(""foreign exchange products"", ""annual average""), table_average(""interest-rate products"", ""annual average""), subtract(#0, #1), divide(#2, #1), multiply(#3, 100)",0,,0,0
+AES/2016/page_185.pdf-4,"subtract(782, 538)","subtract(782, 538)",1,244.0,1,1
+CDNS/2012/page_30.pdf-4,"table_average(nasdaq composite, 12/29/07 to 1/3/09)","table_average(nasdaq composite, 12/29/07 to 1/3/09)",1,91.335,0,0
+AMAT/2014/page_35.pdf-1,"divide(16, 75)","divide(16, 75)",1,0.21333,1,1
+LMT/2006/page_90.pdf-3,"table_average(""future minimum lease commitments"", ""2009, 2010, 2011, later years"") / 1490","table_average(""future minimum lease commitments"", ""2009, 2010, 2011, later years"")",0,,0,0
+MO/2012/page_44.pdf-2,"table_average(""cost reduction initiatives"", none)","table_average(""cost reduction initiatives"", none)",0,,0,0
+GS/2017/page_106.pdf-4,"subtract(3000, 2000)","subtract(3000, 2000)",1,1000.0,0,0
+EW/2016/page_79.pdf-4,"divide(190.0, 320.1)","divide(190.0, 320.1)",1,0.59356,1,1
+SLB/2012/page_44.pdf-3,"subtract(81.15, 64.48)","subtract(81.15, 64.48)",1,16.67,0,0
+GIS/2012/page_64.pdf-2,"divide(412.0, 526.5)","divide(412.0, 526.5)",1,0.78253,1,1
+PM/2017/page_99.pdf-1,"table_average(""net earnings attributable to pmi"", none)","table_average(""net earnings attributable to pmi"", none)",0,,0,0
+IP/2007/page_75.pdf-1,"table_average(""lease obligations"", none), table_average(""purchase obligations (a)"", none), table_average(""total"", none)","table_average(""lease obligations"", none), table_average(""total"", none)",0,,0,0
+GS/2017/page_143.pdf-2,"divide(subtract(47, 73), 73)","subtract(47, 73)",1,-26.0,0,0
+IPG/2009/page_85.pdf-2,"table_average(""defined contribution plans"", ""2009"") - table_average(""defined contribution plans"", ""2007"") , divide( table_average(""defined contribution plans"", ""2008"") - table_average(""defined contribution plans"", ""2007""), table_average(""defined contribution plans"", ""2007"") )","table_average(""defined contribution plans"", ""2009""), table_average(""defined contribution plans"", ""2007""), table_average(""defined contribution plans"", ""2008""), table_average(""defined contribution plans"", ""2007""), table_average(""defined contribution plans"", ""2007"")",0,,0,0
+ABMD/2009/page_88.pdf-1,"add(5583333, 5583333), add(#1, 5583334)","add(5583333, 5583333), add(#1, 5583334)",0,,0,0
+IP/2006/page_32.pdf-1,"The facts provided do not include any information about consumer packaging sales or the breakdown of foodservice net sales relative to consumer packaging sales. Therefore, it is not possible to calculate the percentage of consumer packaging sales represented by foodservice net sales based on the given data.
+
+No valid computation can be performed.  
+Answer: none",,0,,0,0
+CDNS/2018/page_31.pdf-3,"divide(165.84, 172.11)","divide(165.84, 172.11)",1,0.96357,0,0
+L/2015/page_59.pdf-4,"subtract(100, divide(110.59, 126.23))","divide(110.59, 126.23)",1,0.8761,0,0
+ILMN/2007/page_78.pdf-4,"divide(50000000, 5154639)","divide(50000000, 5154639)",1,9.7,0,0
+ADI/2011/page_81.pdf-1,"table_sum(""money market funds"", ""mutual funds"", ""total deferred compensation plan investments""), divide(#0, 9223)","table_sum(""money market funds"", ""mutual funds"", ""total deferred compensation plan investments""), divide(#0, 9223)",0,,0,0
+MRO/2006/page_33.pdf-1,"multiply(1425, 77.76), multiply(#0, const_365)","multiply(1425, 77.76), multiply(#0, const_365)",1,40444920.0,1,0
+AMT/2012/page_125.pdf-2,"subtract(173.2, 171.5)","subtract(173.2, 171.5)",1,1.7,1,1
+ETR/2004/page_213.pdf-4,"divide(subtract(const_973.7, const_922.9), const_922.9)","subtract(const_973.7, const_922.9)",1,50.8,0,0
+IP/2007/page_31.pdf-1,"table_average(european_industrial_packaging_net_sales, none)","table_average(european_industrial_packaging_net_sales, none)",0,,0,0
+AMT/2005/page_54.pdf-2,"divide(531822, 139590)","divide(531822, 139590)",1,3.80989,0,0
+FBHS/2017/page_23.pdf-2,"divide(subtract(const_2467.1, const_2397.8), const_2397.8)","subtract(const_2467.1, const_2397.8)",1,69.3,0,0
+MSI/2009/page_65.pdf-2,"divide(12099, 7146)","divide(12099, 7146)",1,1.69312,1,1
+PM/2015/page_38.pdf-1,"table_average(""u.s. pension plans"", ""2015"") - table_average(""u.s. pension plans"", ""2014"") divided by table_average(""u.s. pension plans"", ""2014"") * 100","table_average(""u.s. pension plans"", ""2015""), table_average(""u.s. pension plans"", ""2014""), table_average(""u.s. pension plans"", ""2014"")",0,,0,0
+AON/2009/page_48.pdf-4,"The question asks for the percentage of the segment's operating income among the total operating income in 2009. However, the provided facts only give the segment operating income for 2009 ($203) and the segment operating income margin (16.0%), but do not provide total operating income for the company (not just the segment).
+
+Since total operating income is not given, and no other data (like total operating income) is available in the",,0,,0,0
+CDNS/2006/page_30.pdf-1,"table_average(""cadence design systems inc."", none)","table_average(""cadence design systems inc."", none)",0,,0,0
+ALXN/2007/page_104.pdf-2,"divide(subtract(3200, 3160), 3160)","subtract(3200, 3160)",1,40.0,0,0
+AES/2016/page_191.pdf-2,"table_average(""december 31, the balance at december 31 of 2016 is $ 369 ; the balance at december 31 of 2015 is $ 373 ; the balance at december 31 of 2014 is $ 394 ;"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(""december 31, the balance at december 31 of 2016 is $ 369 ; the balance at december 31 of 2015 is $ 373 ; the balance at december 31 of 2014 is $ 394 ;"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+CB/2010/page_200.pdf-3,"table_average(potential anti-dilutive share conversions, 2008, 2009, 2010)","table_average(potential anti-dilutive share conversions, 2008, 2009, 2010)",0,,0,0
+IP/2012/page_93.pdf-1,"subtract(231, 205)","subtract(231, 205)",1,26.0,1,1
+GS/2017/page_143.pdf-1,"table_average(""credit net"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(""credit net"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+HWM/2017/page_41.pdf-1,"table_average(""prior to the separation"", ""after the separation"")","table_average(""prior to the separation"", ""after the separation"")",0,,0,0
+RSG/2009/page_100.pdf-2,"The facts provided do not include any information about the year 2019 or any data related to restricted cash or proceeds from tax-exempt bonds for that year. The only information given is about restricted cash as of December 31, 2009.
+
+Therefore, based on the given facts, it is not possible to determine the percentage of restricted cash that was proceeds from the issuance of tax-exempt bonds as of December 31, 201",,0,,0,0
+BLK/2013/page_124.pdf-2,"table_sum(""6.25% notes due 2017 of carrying value"", none)","table_sum(""6.25% notes due 2017 of carrying value"", none)",0,,0,0
+AAP/2011/page_28.pdf-2,"table_average(""s&p 500 index"", none)","table_average(""s&p 500 index"", none)",0,,0,0
+HOLX/2007/page_129.pdf-1,"table_average(""net tangible assets acquired as of july 27 2006 the trade name of $ 11800 is 5800"", none)","table_average(""net tangible assets acquired as of july 27 2006 the trade name of $ 11800 is 5800"", none)",0,,0,0
+LKQ/2010/page_84.pdf-1,"subtract(5735, 4900), divide(#0, 4900), multiply(#1, const_100)","subtract(5735, 4900), divide(#0, 4900), multiply(#1, const_100)",1,17.04082,0,0
+AAPL/2008/page_78.pdf-2,"table_average(""change in unrealized gains on derivative instruments"", none)","table_average(""change in unrealized gains on derivative instruments"", none)",0,,0,0
+GS/2013/page_152.pdf-2,"subtract(150, -233)","subtract(150, -233)",1,383.0,1,1
+GPN/2009/page_70.pdf-2,"divide(13536, 19427)","divide(13536, 19427)",1,0.69676,1,1
+C/2008/page_102.pdf-2,"subtract(108.4, 121.6)","subtract(108.4, 121.6)",1,-13.2,1,1
+LMT/2006/page_37.pdf-1,"table_average(""october"", ""total number of shares purchased"") is not valid; instead, we need to compute the total shares purchased in October and December, then find the percentage of October's purchases relative to the total.
+
+From facts:
+- October shares purchased: 447700
+- December shares purchased: 929400
+- Total shares purchased = 447700 + 929400 =","table_average(""october"", ""total number of shares purchased"")",0,,0,0
+AES/2015/page_117.pdf-2,"multiply(#1, divide(100, #2))","divide(100, #2)",0,,0,0
+AMT/2005/page_85.pdf-1,"subtract(3451276, 3155228)","subtract(3451276, 3155228)",1,296048.0,1,1
+ABMD/2009/page_56.pdf-1,"table_sum(""contractual obligations the contractual obligations ( 1 ) of payments due by fiscal year ( in $ 000 2019s ) total"", none)",,0,,0,0
+DISH/2013/page_138.pdf-1,"subtract(#1, #2)","subtract(#1, #2)",0,,0,0
+PM/2018/page_24.pdf-2,"table_average(""pmi"", ""2013_2018""), table_average(""s&p 500 index"", ""2013_2018""), divide(subtract(#1, #0), #0)","table_average(""pmi"", ""2013_2018""), table_average(""s&p 500 index"", ""2013_2018""), subtract(#1, #0)",0,,0,0
+ZBH/2003/page_58.pdf-4,"subtract(527.7, 257.6)","subtract(527.7, 257.6)",1,270.1,1,1
+LMT/2013/page_74.pdf-1,"table_average(""diluted computations"", ""2011, 2012, 2013"")","table_average(""diluted computations"", ""2011, 2012, 2013"")",0,,0,0
+ETR/2003/page_84.pdf-1,"The provided facts do not include any information about long-term debt due in the next 24 months as of December 31, 2003. Therefore, it is not possible to calculate the requested amount based on the given data. No valid operation can be performed.",,0,,0,0
+AMT/2008/page_32.pdf-3,"divide(subtract(const_42.72, const_32.10), const_32.10)","subtract(const_42.72, const_32.10)",1,10.62,0,0
+TROW/2010/page_22.pdf-2,"divide(240.0, 5.0)","divide(240.0, 5.0)",1,48.0,1,0
+UNP/2008/page_27.pdf-1,"divide(852, 17970)","divide(852, 17970)",1,0.04741,1,1
+APD/2016/page_57.pdf-2,"subtract(137.5, 79.3)","subtract(137.5, 79.3)",1,58.2,0,0
+ETR/2017/page_114.pdf-1,"subtract(6, 2)","subtract(6, 2)",1,4.0,1,1
+GIS/2012/page_64.pdf-1,"multiply(526.5, 0.024)","multiply(526.5, 0.024)",1,12.636,1,0
+IPG/2009/page_85.pdf-3,"table_average(""discretionary_company_contribution_2009"", none), divide(#0, add(35.1, 29.6, 31.4)), multiply(#1, 100)","table_average(""discretionary_company_contribution_2009"", none), add(35.1, 29.6, 31.4), multiply(#1, 100)",0,,0,0
+INTC/2013/page_29.pdf-3,"table_average(othercountries, none)","table_average(othercountries, none)",0,,0,0
+ADBE/2018/page_86.pdf-1,"divide(subtract(60721, 24927), 24927)","subtract(60721, 24927)",1,35794.0,0,0
+APD/2019/page_48.pdf-2,"table_sum(""operating activities of 2018"", ""investing activities of 2018"", ""financing activities of 2018"")","table_sum(""operating activities of 2018"", ""investing activities of 2018"", ""financing activities of 2018"")",0,,0,0
+UNP/2015/page_24.pdf-1,"divide(524, 7344)","divide(524, 7344)",1,0.07135,1,1
+ETR/2008/page_355.pdf-2,"divide(3.9, subtract(252.7, 231.0))","subtract(252.7, 231.0)",1,21.7,0,0
+IPG/2008/page_62.pdf-2,"table_sum(""2007 program"", ""2003 program"", ""2001 program""), subtract(table_sum(""2007 program"", ""2003 program"", ""2001 program"", ""2008""), table_sum(""2007 program"", ""2003 program"", ""2001 program"", ""2006""))","table_sum(""2007 program"", ""2003 program"", ""2001 program""), table_sum(""2007 program"", ""2003 program"", ""2001 program"", ""2008""), table_sum(""2007 program"", ""2003 program"", ""2001 program"", ""2006"")",0,,0,0
+AES/2017/page_157.pdf-1,"divide(1590, 10530)","divide(1590, 10530)",1,0.151,1,1
+JPM/2005/page_37.pdf-1,"table_average(""investment bank"", ""total"")","table_average(""investment bank"", ""total"")",0,,0,0
+BLK/2014/page_119.pdf-1,"divide(subtract(const_5309, const_4938), const_4938)","subtract(const_5309, const_4938)",1,371.0,0,0
+ETR/2008/page_377.pdf-4,"divide(6.1, subtract(442.3, 403.3))","subtract(442.3, 403.3)",1,39.0,0,0
+ETR/2017/page_26.pdf-4,"divide(subtract(1542, 1666), 1666)","subtract(1542, 1666)",1,-124.0,0,0
+PNC/2009/page_46.pdf-4,"table_average(aaa/aaa, none)","table_average(aaa/aaa, none)",1,0.165,0,0
+ZBH/2017/page_53.pdf-1,"multiply(const_330.2, const_100), divide(#0, const_7517.8)","multiply(const_330.2, const_100), divide(#0, const_7517.8)",1,4.39224,0,0
+MRO/2004/page_36.pdf-2,"table_sum(""heavy fuel oil"", none)","table_sum(""heavy fuel oil"", none)",0,,0,0
+AON/2014/page_47.pdf-1,"table_average(operating_margin, none), table_max(operating_margin, none), subtract(#1, #0)","table_average(operating_margin, none), table_max(operating_margin, none), subtract(#1, #0)",0,,0,0
+MAS/2018/page_60.pdf-2,"table_average(""goodwill of initial"", ""goodwill of revised"")","table_average(""goodwill of initial"", ""goodwill of revised"")",0,,0,0
+MRO/2007/page_134.pdf-2,"table_sum(""tax benefits realized for deductions during 2007 and 2006 that were in excess of the stock-based compensation expense recorded for options exercised and other stock-based awards vested during the period"", none)","table_sum(""tax benefits realized for deductions during 2007 and 2006 that were in excess of the stock-based compensation expense recorded for options exercised and other stock-based awards vested during the period"", none)",0,,0,0
+ETR/2017/page_316.pdf-3,"divide(92.9, 1520.5)","divide(92.9, 1520.5)",1,0.0611,1,1
+LMT/2017/page_80.pdf-1,"table_average(diluted, 2015, 2016, 2017)","table_average(diluted, 2015, 2016, 2017)",0,,0,0
+GS/2012/page_165.pdf-2,"divide(table_average(""goodwill and identifiable intangible assets2"", none), table_average(""total"", none)) * 100","table_average(""goodwill and identifiable intangible assets2"", none), table_average(""total"", none)",0,,0,0
+CME/2017/page_97.pdf-4,"table_sum(""class b-3 common stock authorized issued and outstanding of december 31 , 2017"", none)","table_sum(""class b-3 common stock authorized issued and outstanding of december 31, 2017"", none)",0,,0,0
+JPM/2018/page_110.pdf-4,"divide(subtract(47733, 31434), 47733)","subtract(47733, 31434)",1,16299.0,0,0
+MRO/2015/page_18.pdf-2,"table_average(""u.s."", ""total"") divide table_average(""u.s."", ""total""), table_average(""total"", ""total"")","table_average(""u.s."", ""total""), table_average(""u.s."", ""total""), table_average(""total"", ""total"")",0,,0,0
+AMAT/2014/page_18.pdf-2,"divide(1200, 0.14)","divide(1200, 0.14)",1,8571.42857,0,0
+IPG/2008/page_62.pdf-1,"table_average(""2007 program"", ""2008""), table_average(""2003 program"", ""2008""), table_average(""2001 program"", ""2008"")","table_average(""2007 program"", ""2008""), table_average(""2003 program"", ""2008""), table_average(""2001 program"", ""2008"")",0,,0,0
+APD/2013/page_36.pdf-1,"divide(451.1, 65.5)","divide(451.1, 65.5)",1,6.88702,1,1
+HIG/2011/page_188.pdf-2,"table_average(""deferred costs"", none)","table_average(""deferred costs"", none)",0,,0,0
+PNC/2015/page_159.pdf-2,"table_average(provision_recapture, none)","table_average(provision_recapture, none)",0,,0,0
+MRO/2017/page_111.pdf-2,"table_average(purchases of reserves in place, none)","table_average(purchases of reserves in place, none)",1,15.0,0,0
+PNC/2009/page_46.pdf-3,"greater(14, 19)","greater(14, 19)",1,no,1,1
+IP/2005/page_35.pdf-1,"table_average(""total debt"", ""2009"") - table_average(""total debt"", ""2008"")","table_average(""total debt"", ""2009""), table_average(""total debt"", ""2008"")",0,,0,0
+LMT/2015/page_56.pdf-4,"table_average(""net sales"", ""2013 to 2015"")","table_average(""net sales"", ""2013 to 2015"")",0,,0,0
+BLL/2010/page_28.pdf-3,"table_sum(""the ball corporation of 12/31/06"", ""the ball corporation of 12/31/10"")","table_sum(""the ball corporation of 12/31/06"", ""the ball corporation of 12/31/10"")",0,,0,0
+IPG/2015/page_37.pdf-3,"subtract(#2, #1)","subtract(#2, #1)",0,,0,0
+KHC/2016/page_23.pdf-3,"divide(2, 83)","divide(2, 83)",1,0.0241,0,0
+AON/2009/page_46.pdf-2,"table_min(segment operating income, 2007, 2008, 2009)","table_min(segment operating income, 2007, 2008, 2009)",0,,0,0
+GS/2014/page_136.pdf-1,"table_max(""hedged borrowings and bank deposits"", ""2014, 2013, 2012"")","table_max(""hedged borrowings and bank deposits"", ""2014, 2013, 2012"")",0,,0,0
+RSG/2015/page_142.pdf-2,"divide(37800000, 34400000)","divide(37800000, 34400000)",1,1.09884,0,0
+MMM/2005/page_95.pdf-1,"divide(130, 7)","divide(130, 7)",1,18.57143,1,1
+GS/2017/page_106.pdf-2,"divide(table_sum(""equity"", ""2017""), table_sum(""total"", ""2017""))","table_sum(""equity"", ""2017""), table_sum(""total"", ""2017"")",0,,0,0
+UAA/2016/page_52.pdf-1,"divide(table_average(""asia-pacific"", none), table_average(""total operating income"", none))","table_average(""asia-pacific"", none), table_average(""total operating income"", none)",0,,0,0
+LMT/2015/page_56.pdf-3,"table_average(backlog at year-end, 2013, 2014, 2015)","table_average(backlog at year-end, 2013, 2014, 2015)",0,,0,0
+DVN/2007/page_58.pdf-3,"table_average(""canada of total ( mmboe )"", none), divide(#0, table_average(""total of total ( mmboe )"", none)), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+INTC/2013/page_33.pdf-2,"divide(240, 52708)","divide(240, 52708)",1,0.00455,1,1
+OKE/2008/page_86.pdf-1,"subtract(258800, 25171)","subtract(258800, 25171)",1,233629.0,1,1
+ETR/2017/page_316.pdf-1,"table_average(2016, 2017)","table_average(2016, 2017)",0,,0,0
+OKE/2008/page_86.pdf-2,"divide(subtract(const_258800, const_25171), const_25171)","subtract(const_258800, const_25171)",1,233629.0,0,0
+FRT/2005/page_117.pdf-1,"The question refers to the ""growth of the additions"" in comparison with the ""growth of the deductions during 2003 and 2004,"" but the provided facts only mention deductions during the period 2014 related to disposition and retirements of property, with values given as -4645000, -1390000, and -15244000. There is no information about additions",,0,,0,0
+MRO/2007/page_149.pdf-1,"add(1654, 1251), add(#1, 1030)","add(1654, 1251), add(#1, 1030)",0,,0,0
+AES/2016/page_191.pdf-1,"table_average(""balance at december 31 of 2014"", none), table_average(""balance at december 31 of 2015"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(""balance at december 31 of 2014"", none), table_average(""balance at december 31 of 2015"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+STZ/2006/page_68.pdf-2,"table_average(""current assets the net assets acquired of $ 513782 is $ 1042661"", none), subtract(#0, 170800)","table_average(""current assets the net assets acquired of $ 513782 is $ 1042661"", none), subtract(#0, 170800)",0,,0,0
+INTC/2013/page_29.pdf-1,"table_sum(""owned facilities1"", ""total"") / table_sum(""total facilities"", ""total"") * const_100","table_sum(""owned facilities1"", ""total""), table_sum(""total facilities"", ""total"")",0,,0,0
+CDNS/2012/page_30.pdf-1,"table_average(""cadence design systems inc."", none)","table_average(""cadence design systems inc."", none)",0,,0,0
+GPN/2017/page_77.pdf-3,"subtract(62154, 27954)","subtract(62154, 27954)",1,34200.0,0,0
+STT/2009/page_73.pdf-1,"divide(subtract(74843, 60786), 60786)","subtract(74843, 60786)",1,14057.0,0,0
+BLK/2012/page_37.pdf-2,"divide(77699, 403484)","divide(77699, 403484)",1,0.19257,1,1
+HII/2017/page_104.pdf-3,"divide(1279, 1278)","divide(1279, 1278)",1,1.00078,1,1
+SWKS/2006/page_81.pdf-2,"table_average(""pension adjustments"", none)","table_average(""pension adjustments"", none)",0,,0,0
+FBHS/2017/page_23.pdf-1,"table_average(""total"", none) * 25.5%","table_average(""total"", none)",0,,0,0
+HOLX/2008/page_84.pdf-2,"table_average(""total contractual obligations of payments due by period less than 1 year"", none)","table_average(""total contractual obligations of payments due by period less than 1 year"", none)",0,,0,0
+MRO/2015/page_18.pdf-3,"table_sum(total, 2016, 2017, 2018)","table_sum(total, 2016, 2017, 2018)",0,,0,0
+HOLX/2010/page_124.pdf-1,"divide(2094800, 6156900)","divide(2094800, 6156900)",1,0.34024,1,1
+ALXN/2007/page_104.pdf-1,"table_average(""2008"", ""the 2010 of $ 4935"")","table_average(""2008"", ""the 2010 of $ 4935"")",0,,0,0
+AES/2015/page_117.pdf-4,"divide(343, 1791)","divide(343, 1791)",1,0.19151,1,1
+PPG/2011/page_70.pdf-1,"table_average(""total stock-based compensation cost"", none)","table_average(""total stock-based compensation cost"", none)",0,,0,0
+BLK/2013/page_125.pdf-2,"multiply(divide(127, 1286), const_100)","divide(127, 1286)",1,0.09876,1,1
+VLO/2018/page_25.pdf-1,"The question asks for the total number of shares purchased in **November 2018** for the fourth quarter ended December 31, 2018.
+
+From the facts:
+- In **November 2018**, the total number of shares purchased is **3,655,945**.
+
+Thus, the answer is:
+
+3655945",,0,,0,0
+C/2008/page_102.pdf-3,"subtract(71.0, 82.0)","subtract(71.0, 82.0)",1,-11.0,1,1
+LMT/2012/page_47.pdf-1,"The provided facts do not contain any information about ""space systems"" or specific segments of the company. The data given refers only to overall net sales and operating profit for the years 2010, 2011, and 2012, without segmentation by product lines or divisions such as ""space systems.""
+
+Therefore, based on the given facts, it is not possible to calculate the growth rate in operating profit for space systems in 2012",,0,,0,0
+ETFC/2013/page_26.pdf-2,"divide(254000, 107000)","divide(254000, 107000)",1,2.37383,1,1
+LMT/2005/page_40.pdf-4,"divide(2630, 3066)","divide(2630, 3066)",1,0.8578,1,1
+DRE/2002/page_40.pdf-1,"table_average(march_31_2002_dividend, none), table_average(march_31_2003_dividend, none), subtract(#1, #0), divide(#2, #0), multiply(#3, 100)","table_average(march_31_2002_dividend, none), table_average(march_31_2003_dividend, none), subtract(#1, #0), divide(#2, #0), multiply(#3, 100)",0,,0,0
+AMT/2005/page_54.pdf-1,"divide(const_30584, const_531822)","divide(const_30584, const_531822)",1,0.05751,0,0
+ETR/2008/page_355.pdf-1,"divide(subtract(const_21.7, const_231.0), const_231.0)","subtract(const_21.7, const_231.0)",1,-209.3,0,0
+AON/2014/page_47.pdf-3,"table_sum(operating income, 2013)","table_sum(operating income, 2013)",1,1092.0,0,0
+ETR/2008/page_377.pdf-2,"subtract(442.3, 403.3)","subtract(442.3, 403.3)",1,39.0,1,1
+CDNS/2006/page_30.pdf-2,"table_average(""s & p 500"", none)","table_average(""s & p 500"", none)",0,,0,0
+UA/2015/page_71.pdf-1,"divide(231277, 3967008)","divide(231277, 3967008)",1,0.0583,1,1
+RSG/2015/page_126.pdf-2,"divide(1200000, 17000000)","divide(1200000, 17000000)",1,0.07059,0,0
+PNC/2009/page_41.pdf-3,"divide(1050, 251)","divide(1050, 251)",1,4.18327,1,1
+GIS/2019/page_37.pdf-2,"table_average(""long-term debt (a) of payments due by fiscal year 2020"", none), divide(#0, table_average(""total contractual obligations of payments due by fiscal year total"", none)) * 100","table_average(""total contractual obligations of payments due by fiscal year total"", none)",0,,0,0
+ADBE/2018/page_86.pdf-2,"divide(table_sum(""settlements with taxing authorities of 2018"", ""settlements with taxing authorities of 2017""), const_809000000)","table_sum(""settlements with taxing authorities of 2018"", ""settlements with taxing authorities of 2017"")",0,,0,0
+DRE/2013/page_39.pdf-2,"table_average(""debt"", none)","table_average(""debt"", none)",0,,0,0
+UNP/2006/page_37.pdf-2,"divide(3200, 2242)","divide(3200, 2242)",1,1.4273,0,0
+UNP/2006/page_37.pdf-1,"divide(table_sum(""track"", ""2006""), table_sum(""total"", ""2006""))","table_sum(""track"", ""2006""), table_sum(""total"", ""2006"")",0,,0,0
+STZ/2006/page_68.pdf-3,"divide(634203, 1848575)","divide(634203, 1848575)",1,0.34308,1,1
+AES/2017/page_157.pdf-2,"multiply(246, 12.12)","multiply(246, 12.12)",1,2981.52,1,1
+AMT/2004/page_81.pdf-1,"divide(88.8, 90.5)","divide(88.8, 90.5)",1,0.98122,0,0
+PM/2015/page_127.pdf-1,"table_average(""2015"", ""2014""), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(""2015"", ""2014""), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+K/2013/page_62.pdf-2,"table_average(""interest rate contracts of 2013"", none), divide(#0, #1), multiply(#2, const_100)","table_average(""interest rate contracts of 2013"", none), divide(#0, #1), multiply(#2, const_100)",0,,0,0
+MS/2014/page_292.pdf-2,"divide(258, 2228)","divide(258, 2228)",1,0.1158,1,1
+IP/2012/page_93.pdf-2,"subtract(205, 210)","subtract(205, 210)",1,-5.0,1,1
+PPG/2011/page_70.pdf-2,"The facts state that on January 1, 2011, the company match was increased to 75% on the first 6% of compensation. However, there is no explicit mention of a prior match percentage, so we cannot directly compute the increase in the match percentage without assuming a baseline.
+
+But since the only given value is 75% (the new match), and no prior value is provided, we cannot determine the increase in the match percentage from",,0,,0,0
+C/2017/page_328.pdf-4,"multiply(153.9, 0.065), subtract(188.9, 153.9), divide(#1, #0), multiply(#2, 100)","multiply(153.9, 0.065), subtract(188.9, 153.9), divide(#1, #0), multiply(#2, 100)",1,349.87754,0,0
+PNC/2013/page_112.pdf-2,"divide(685, 3000)","divide(685, 3000)",1,0.22833,0,0
+LMT/2017/page_80.pdf-2,"subtract(290.6, 303.1)","subtract(290.6, 303.1)",1,-12.5,1,1
+LLY/2018/page_63.pdf-1,"subtract(4458.3, 4111.8), divide(#0, 4458.3), multiply(#1, 100)","subtract(4458.3, 4111.8), divide(#0, 4458.3), multiply(#1, 100)",1,7.77202,0,0
+HOLX/2008/page_144.pdf-1,"divide(106500, 4600)","divide(106500, 4600)",1,23.15217,1,1
+DRE/2009/page_72.pdf-2,"divide(7300000, 4900000)","divide(7300000, 4900000)",1,1.4898,0,0
+ETFC/2007/page_126.pdf-2,"The question refers to ""the ratio of the future debt maturities for 2011 to the amounts after 2012"" as of December 2007. From the facts:
+
+- ""2008 the 2011 of $ 2014 is 453815"" → This likely means the future debt maturity for 2011 is 453,815.
+-",,0,,0,0
+IP/2009/page_37.pdf-2,"divide(2500, 3195)","divide(2500, 3195)",1,0.78247,1,0
+ADBE/2018/page_86.pdf-4,"add(24600, 23600)","add(24600, 23600)",1,48200.0,0,0
+C/2017/page_328.pdf-3,"table_average(""citi"", ""31-dec-2017"") subtract table_average(""s&p financials"", ""31-dec-2017""), divide(#0, 100) exp multiply(100, #1)","table_average(""citi"", ""31-dec-2017""), table_average(""s&p financials"", ""31-dec-2017""), divide(#0, 100), multiply(100, #1)",0,,0,0
+PNC/2009/page_46.pdf-1,"table_average(""bbb/baa"", none)","table_average(""bbb/baa"", none)",0,,0,0
+ETR/2011/page_324.pdf-4,"multiply(250, 0.01875)","multiply(250, 0.01875)",1,4.6875,0,0
+PM/2015/page_85.pdf-3,"The facts provided do not include any information about interest rates or interest expense. Therefore, based on the given data, it is not possible to calculate the interest expense in 2015.
+
+No valid calculation can be performed with the given facts.  
+Answer: none",,0,,0,0
+AAPL/2003/page_24.pdf-1,"subtract(290, 92)","subtract(290, 92)",1,198.0,1,1
+ETR/2015/page_109.pdf-1,"subtract(68, 2)","subtract(68, 2)",1,66.0,1,1
+MSI/2006/page_61.pdf-4,"table_average(""rental expense"", none)","table_average(""rental expense"", none)",0,,0,0
+CDNS/2018/page_31.pdf-2,"table_average(""cadence design systems inc."", none), table_average(""nasdaq composite"", none), subtract(#1, #0)","table_average(""cadence design systems inc."", none), table_average(""nasdaq composite"", none), subtract(#1, #0)",0,,0,0
+HWM/2016/page_40.pdf-2,"table_average(""first quarter high"", ""second quarter high"")","table_average(""first quarter high"", ""second quarter high"")",0,,0,0
+ETR/2017/page_26.pdf-3,"subtract(1542, 1666)","subtract(1542, 1666)",1,-124.0,1,1
+ABMD/2006/page_75.pdf-2,"divide(58000, 1262000)","divide(58000, 1262000)",1,0.04596,1,1
+BDX/2019/page_45.pdf-1,"table_average(""short-term debt as a percentage of total debt"", none)  
+subtract(100, #0)","table_average(""short-term debt as a percentage of total debt"", none)",0,,0,0
+UNP/2013/page_54.pdf-2,"divide(21963, 21963), multiply(21963, 2.1), divide(#1, #0)","divide(21963, 21963), multiply(21963, 2.1), divide(#1, #0)",1,46122.3,0,0
+AWK/2013/page_132.pdf-4,"add(7367, -5974)","add(7367, -5974)",1,1393.0,1,1
+MRO/2009/page_56.pdf-2,"table_max(""henry hub natural gas ( dollars per mcf ) ( a )"", none), table_min(""henry hub natural gas ( dollars per mcf ) ( a )"", none), subtract(#1, #0)","subtract(#1, #0)",0,,0,0
+IP/2006/page_32.pdf-2,"The facts provided do not include any information about consumer packaging sales or the breakdown of foodservice net sales relative to consumer packaging sales. Therefore, it is not possible to calculate the percentage of consumer packaging sales represented by foodservice net sales in 2005 based on the given data.
+
+No valid computation can be performed.  
+Answer: none",,0,,0,0
+LMT/2005/page_40.pdf-3,"table_average(""commitment 1 year (a) years (a)"", none)",,0,,0,0
+APD/2014/page_44.pdf-1,"subtract(1885.1, 1682.2)","subtract(1885.1, 1682.2)",1,202.9,1,1
+IPG/2015/page_48.pdf-2,"table_average(""2015 interest income"", none), table_average(""2014 interest income"", none), subtract(#1, #0), divide(#2, #1), multiply(#3, 100)","table_average(""2015 interest income"", none), table_average(""2014 interest income"", none), subtract(#1, #0), divide(#2, #1), multiply(#3, 100)",0,,0,0
+AES/2002/page_46.pdf-2,"table_average(second quarter of high $ 17.84, second quarter of high $ 60.15), table_average(second quarter of low $ 4.11, second quarter of low $ 41.30)","table_average(second quarter of high $ 17.84, second quarter of high $ 60.15), table_average(second quarter of low $ 4.11, second quarter of low $ 41.30)",0,,0,0
+JPM/2008/page_85.pdf-4,"multiply(1966895, 0.05)","multiply(1966895, 0.05)",1,98344.75,1,0
+DRE/2009/page_72.pdf-1,"multiply(1583616, 9.32)","multiply(1583616, 9.32)",1,14759301.12,1,1
+APTV/2014/page_49.pdf-2,"table_average(""delphi automotive plc (1)"", none)",,0,,0,0
+ILMN/2007/page_78.pdf-2,"The question asks for the percentage change in net income (loss) on a pro forma basis between 2006 and 2007. However, the provided facts do not mention ""pro forma"" net income. They only provide net income for the years 2006 and 2007, and net income per share.
+
+Since ""pro forma"" is not defined or included in the facts, and no pro forma figures are given, we cannot",,0,,0,0
+BLK/2012/page_160.pdf-1,"table_average(""2010"", ""beginning""), table_average(""2012"", ""end""), divide(subtract(#1, #0), #0) * 100","table_average(""2010"", ""beginning""), table_average(""2012"", ""end""), subtract(#1, #0)",0,,0,0
+EW/2017/page_82.pdf-2,"divide(53.1, 182.2)","divide(53.1, 182.2)",1,0.29144,1,1
+JPM/2008/page_85.pdf-1,"divide(48616, 184720)","divide(48616, 184720)",1,0.26319,1,1
+APD/2018/page_59.pdf-1,"exp(multiply(0.069, 10))","multiply(0.069, 10)",1,0.69,0,0
+ETR/2002/page_24.pdf-2,"divide(3955, 29953)","divide(3955, 29953)",1,0.13204,1,1
+PNC/2011/page_87.pdf-4,"table_sum(2013, interest_only_product), table_sum(2013, principal_and_interest_product)","table_sum(2013, interest_only_product), table_sum(2013, principal_and_interest_product)",1,1542.0,1,0
+UNP/2011/page_76.pdf-2,"table_average(""accounts payable"", none) > table_average(""dividends payable"", none)","table_average(""accounts payable"", none), table_average(""dividends payable"", none)",0,,0,0
+HII/2017/page_104.pdf-4,"divide(16, 3)","divide(16, 3)",1,5.33333,1,0
+GPN/2009/page_70.pdf-3,"table_average(""non-tangible assets"", none)","table_average(""non-tangible assets"", none)",0,,0,0
+MSI/2009/page_65.pdf-1,"multiply(7146, 100), divide(#0, 41)","multiply(7146, 100), divide(#0, 41)",1,17429.26829,0,0
+DISH/2013/page_138.pdf-3,"table_average(revenue, 2013, 2011)","table_average(revenue, 2013, 2011)",0,,0,0
+ANSS/2013/page_55.pdf-1,"divide(table_sum(""global headquarters operating leases (1)"", ""within 1 year"", ""2 2013 3 years"", ""4 2013 5 years"", ""after 5 years""), table_sum(""total contractual obligations of payments due by period"", ""within 1 year"", ""2 2013 3 years"", ""4 2013 5 years"", ""after 5 years"")) * 100","table_sum(""total contractual obligations of payments due by period"", ""within 1 year"", ""2 2013 3 years"", ""4 2013 5 years"", ""after 5 years"")",0,,0,0
+MRO/2008/page_69.pdf-1,"subtract(145.29, 114.95)","subtract(145.29, 114.95)",1,30.34,1,1
+IPG/2008/page_93.pdf-4,"add(327.1, 255.7)","add(327.1, 255.7)",1,582.8,1,1
+ETR/2017/page_316.pdf-2,"divide(92.9, const_1000)","divide(92.9, const_1000)",1,0.0929,0,0
+HIG/2008/page_318.pdf-1,"The question refers to ""the percent of the total gaap stockholders 2019 equity and aggregate statutory capital associated with life operations"" in 2008. However, none of the provided facts mention:
+
+- GAAP stockholders' equity  
+- Aggregate statutory capital  
+- Data for 2019  
+
+The facts only provide life operations and total operations for 2007 and 2008, with no information about equity, capital",,0,,0,0
+HII/2017/page_47.pdf-1,"table_average(""return_on_total_assets"", none)","table_average(""return_on_total_assets"", none)",0,,0,0
+AMT/2005/page_105.pdf-3,"divide(65.0, 90.0)","divide(65.0, 90.0)",1,0.72222,0,0
+MAS/2012/page_70.pdf-3,"divide(587, 4216)","divide(587, 4216)",1,0.13923,1,1
+L/2015/page_59.pdf-1,"subtract(97.37, 100.0)","subtract(97.37, 100.0)",1,-2.63,0,0
+AAPL/2003/page_24.pdf-2,"table_max(gross margin percentage, 2001, 2002, 2003)","table_max(gross margin percentage, 2001, 2002, 2003)",0,,0,0
+RE/2015/page_33.pdf-3,"multiply(17700, 0.874)","multiply(17700, 0.874)",1,15469.8,0,0
+GPN/2009/page_70.pdf-4,"table_average(""non-tangible assets"", none)","table_average(""non-tangible assets"", none)",0,,0,0
+CAG/2008/page_75.pdf-1,"table_average(""total of 2007"", none), table_average(""finished goods of 2007"", none), divide(#1, #0) * const_100","table_average(""total of 2007"", none), table_average(""finished goods of 2007"", none), divide(#1, #0)",0,,0,0
+K/2013/page_62.pdf-1,"The question asks for the percentage change in the company's recognized tax-related interest and penalties in 2011. However, the facts provided only state that the company recognized a **decrease of $3 million** in tax-related interest and penalties and had **$16 million accrued** at December 31, 2011. There is no information about the amount before the decrease (i.e., the original amount in 2010 or prior",,0,,0,0
+UAA/2016/page_52.pdf-2,"table_average(""connected fitness"", none)","table_average(""connected fitness"", none)",0,,0,0
+DISCA/2012/page_39.pdf-1,"subtract(246, 183)","subtract(246, 183)",1,63.0,1,1
+PM/2015/page_38.pdf-2,"table_average(""non-u.s. pension plans"", ""2015"") subtract table_average(""non-u.s. pension plans"", ""2014""), divide(#0, table_average(""non-u.s. pension plans"", ""2014""))","table_average(""non-u.s. pension plans"", ""2015""), table_average(""non-u.s. pension plans"", ""2014""), table_average(""non-u.s. pension plans"", ""2014"")",0,,0,0
+CME/2012/page_70.pdf-3,"divide(2899.5, 10973.1)","divide(2899.5, 10973.1)",1,0.26424,1,1
+APD/2013/page_32.pdf-2,"subtract(22.8, 21.9)","subtract(22.8, 21.9)",1,0.9,0,0
+ILMN/2007/page_78.pdf-1,"divide(#1, #0)","divide(#1, #0)",0,,0,0
+PM/2015/page_127.pdf-2,"table_average(2015, none), table_average(2014, none), table_average(2013, none)  
+subtract(#2, #1), divide(#0, #1)","table_average(2015, none), table_average(2014, none), table_average(2013, none)",0,,0,0
+ETR/2016/page_418.pdf-2,"subtract(644.2, 637.2)","subtract(644.2, 637.2)",1,7.0,1,1
+CDNS/2018/page_31.pdf-4,"table_average(""cadence design systems inc."", none)","table_average(""cadence design systems inc."", none)",0,,0,0
+SNA/2012/page_33.pdf-3,"divide(187.26, 108.59)","divide(187.26, 108.59)",1,1.72447,1,1
+AON/2009/page_48.pdf-3,"multiply(1267, 100), divide(#0, 17)","multiply(1267, 100), divide(#0, 17)",1,7452.94118,1,0
+C/2010/page_223.pdf-2,"divide(77, 392)","divide(77, 392)",1,0.19643,0,0
+MRO/2009/page_139.pdf-2,"table_max(net rental ( a ), 2009, 2008, 2007)",,0,,0,0
+CMCSA/2015/page_64.pdf-1,"subtract(81, 154)","subtract(81, 154)",1,-73.0,1,1
+STZ/2006/page_68.pdf-1,"table_average(""current assets the trademarks of $ 513782"", ""current liabilities of $ 513782"")","table_average(""current assets the trademarks of $ 513782"", ""current liabilities of $ 513782"")",0,,0,0
+ETR/2002/page_24.pdf-3,"multiply(100, subtract(divide(201, 128), const_1))","divide(201, 128)",1,1.57031,0,0
+LMT/2015/page_54.pdf-2,"table_average(backlog at year-end, 2013, 2014, 2015)","table_average(backlog at year-end, 2013, 2014, 2015)",0,,0,0
+RSG/2015/page_126.pdf-1,"The question asks for the percentage decline in gross unrecognized tax benefits from 2014 to 2015 as of December 31, 2015.
+
+From the facts:
+- The balance at the end of year 2014 is $70.1 million (this is the gross unrecognized tax benefits at the end of 2014).
+- During 2014, we reduced gross unrecognized tax benefits by $1",,0,,0,0
+AAP/2012/page_12.pdf-2,"table_average(""beginning stores"", ""ending stores"") - table_average(""new stores (1)"", ""beginning stores"")","table_average(""beginning stores"", ""ending stores"")",0,,0,0
+KHC/2016/page_23.pdf-1,"divide(11, 83)","divide(11, 83)",1,0.13253,1,1
+IPG/2008/page_21.pdf-3,"table_average(november, average price paid per share2), table_average(december, average price paid per share2)","table_average(november, average price paid per share2), table_average(december, average price paid per share2)",0,,0,0
+C/2010/page_223.pdf-4,"add(392, 77)","add(392, 77)",1,469.0,1,1
+BLL/2007/page_35.pdf-4,"add(12, 0.675)","add(12, 0.675)",1,12.675,1,0
+BLL/2010/page_28.pdf-1,"table_average(""ball corporation"", none)","table_average(""ball corporation"", none)",0,,0,0
+AES/2015/page_117.pdf-1,"table_average(""proportional free cash flow of 2015/2014 change"", none)","table_average(""proportional free cash flow of 2015/2014 change"", none)",0,,0,0
+ZBH/2017/page_71.pdf-1,"subtract(42.5, 40.2)","subtract(42.5, 40.2)",1,2.3,1,1
+ETFC/2011/page_82.pdf-1,"multiply(divide(40.6, 1934.2), const_100)","divide(40.6, 1934.2)",1,0.02099,1,1
+LMT/2005/page_40.pdf-2,"divide(524, 3066)","divide(524, 3066)",1,0.17091,1,1
+FIS/2007/page_94.pdf-2,"table_average(""the 2012 of 83382"", ""the thereafter of 83382"")","table_average(""the 2012 of 83382"", ""the thereafter of 83382"")",0,,0,0
+HUM/2017/page_133.pdf-4,"divide(subtract(1.49, 1.16), 1.16)","subtract(1.49, 1.16)",1,0.33,0,0
+PKG/2009/page_65.pdf-2,"multiply(divide(1486, 44572), const_100)","divide(1486, 44572)",1,0.03334,1,1
+MRO/2017/page_111.pdf-1,"table_average(""revisions of previous estimates of 552"", none)","table_average(""revisions of previous estimates of 552"", none)",0,,0,0
+LLY/2018/page_63.pdf-3,"divide(table_average(""finished products"", none), table_average(""inventories"", none))","table_average(""finished products"", none), table_average(""inventories"", none)",0,,0,0
+APD/2013/page_32.pdf-1,"divide(5.4, 47.1)","divide(5.4, 47.1)",1,0.11465,1,1
+RSG/2017/page_138.pdf-1,"table_average(""debt securities"", ""equity securities"")(2017actualassetallocation)","table_average(""debt securities"", ""equity securities"")",0,,0,0
+MS/2017/page_74.pdf-2,"divide(43.2, 40.2)","divide(43.2, 40.2)",1,1.07463,0,0
+HII/2017/page_47.pdf-2,"table_average(""total assets"", ""dividends declared per share"")","table_average(""total assets"", ""dividends declared per share"")",0,,0,0
+MS/2014/page_267.pdf-1,"subtract(1951, 1974)","subtract(1951, 1974)",1,-23.0,0,0
+AMT/2008/page_32.pdf-2,"multiply(28.85, 397097677)","multiply(28.85, 397097677)",1,11456267981.45,0,0
+MRO/2008/page_69.pdf-4,"subtract(11.34, 5.42)","subtract(11.34, 5.42)",1,5.92,1,1
+HOLX/2008/page_144.pdf-2,"divide(139000, 248100)","divide(139000, 248100)",1,0.56026,1,1
+PNC/2016/page_177.pdf-1,"multiply(divide(const_108256, const_163897), const_100)","divide(const_108256, const_163897)",1,0.66051,1,0
+AES/2015/page_117.pdf-3,"table_average(proportional recoverable environmental capital expenditures, 2015, 2014, 2013)","table_average(proportional recoverable environmental capital expenditures, 2015, 2014, 2013)",0,,0,0
+CDNS/2018/page_31.pdf-1,"multiply(100000, divide(129.05, 110.28))","divide(129.05, 110.28)",1,1.1702,0,0
+PNC/2018/page_171.pdf-2,"divide(subtract(181612, 172521), 172521)","subtract(181612, 172521)",1,9091.0,0,0
+V/2013/page_41.pdf-1,"The question asks for the total number of shares purchased in August 2013, specifically for the quarter ended September 30, 2013.
+
+From the facts:
+- For the period August 1–31, 2013, the total number of shares purchased (1) is **6,640,563**.
+
+This value is directly given and does not require any calculation.
+
+Answer: 6640",,0,,0,0
+HOLX/2008/page_142.pdf-2,"table_average(net tangible assets acquired as of may 2 2006 the customer relationship of $ 24800, net tangible assets acquired as of may 2 2006 the trade name of $ 24800), divide(#0, const_31300)","table_average(net tangible assets acquired as of may 2 2006 the customer relationship of $ 24800, net tangible assets acquired as of may 2 2006 the trade name of $ 24800), divide(#0, const_31300)",0,,0,0
+JPM/2005/page_37.pdf-2,"table_sum(""total of year ended december 31 , 2005"", ""commercial banking of year ended december 31 , 2005"")","table_sum(""total of year ended december 31, 2005"", ""commercial banking of year ended december 31, 2005"")",0,,0,0
+ETFC/2014/page_26.pdf-4,"table_average(""e*trade financial corporation"", none), table_average(""s&p 500 index"", none), subtract(#1, #0)","table_average(""e*trade financial corporation"", none), table_average(""s&p 500 index"", none), subtract(#1, #0)",0,,0,0
+JPM/2009/page_133.pdf-2,"subtract(554, 672)","subtract(554, 672)",1,-118.0,0,0
+MRO/2007/page_134.pdf-3,"table_average(expected_life, 2005, 2006, 2007)","table_average(expected_life, 2005, 2006, 2007)",0,,0,0
+BLK/2012/page_37.pdf-1,"divide(298024, 403484)","divide(298024, 403484)",1,0.73863,1,1
+PPG/2013/page_40.pdf-2,"subtract(288, 453)","subtract(288, 453)",1,-165.0,0,0
+ETR/2008/page_321.pdf-1,"multiply(300, 0.065)","multiply(300, 0.065)",1,19.5,1,0
+C/2008/page_211.pdf-2,"table_sum(""aggregate unpaid principal balance in excess of fair value of 2008 trading assets"", none)","table_sum(""aggregate unpaid principal balance in excess of fair value of 2008 trading assets"", none)",0,,0,0
+AES/2003/page_52.pdf-1,"table_sum(mountainview, songas, aes haripur private ltd/aes meghnaghat ltd)","table_sum(mountainview, songas, aes haripur private ltd/aes meghnaghat ltd)",0,,0,0
+STZ/2006/page_68.pdf-4,"divide(513782, 1848575)","divide(513782, 1848575)",1,0.27793,0,0
+JPM/2014/page_65.pdf-1,"table_average(""jpmorgan chase"", none)","table_average(""jpmorgan chase"", none)",0,,0,0
+NKE/2016/page_37.pdf-2,"table_average(""long-term debt (1)"", none)",,0,,0,0
+L/2015/page_59.pdf-3,"table_average(""s&p 500 index"", none)","table_average(""s&p 500 index"", none)",0,,0,0
+HOLX/2007/page_129.pdf-2,"table_average(""net tangible assets acquired as of july 27 2006 the goodwill of $ 11800 is 202000"", none), divide(#0, const_267100)","table_average(""net tangible assets acquired as of july 27 2006 the goodwill of $ 11800 is 202000"", none), divide(#0, const_267100)",0,,0,0
+LKQ/2016/page_26.pdf-1,"table_average(lkq_corporation, none)","table_average(lkq_corporation, none)",0,,0,0
+VRTX/2003/page_71.pdf-1,"divide(249, table_average(""total of 21829"", none))","table_average(""total of 21829"", none)",0,,0,0
+PNC/2011/page_87.pdf-1,"table_average(""2012"", ""interest only product"") = 904  
+table_average(""2012"", ""principal and interest product"") = 266  
+table_average(""2015"", ""interest only product"") = 1988  
+table_average(""2015"", ""principal and interest product"") = 820  
+table_average(""total (a)"", ""interest only product"") = 131","table_average(""2012"", ""interest only product"")",0,,0,0
+GS/2012/page_165.pdf-3,"table_average(miscellaneous_receivables_and_other5, none)","table_average(miscellaneous_receivables_and_other5, none)",0,,0,0
+JPM/2018/page_110.pdf-1,"table_average(afs investment securities ( period-end ), 2016, 2017, 2018)",,0,,0,0
+PNC/2011/page_78.pdf-3,"subtract(13.0, 13.2)","subtract(13.0, 13.2)",1,-0.2,0,0
+ILMN/2007/page_78.pdf-3,"divide(subtract(366854, 187103), 187103)","subtract(366854, 187103)",1,179751.0,0,0
+PM/2017/page_99.pdf-2,"table_average(""net earnings for basic and diluted eps"", none)","table_average(""net earnings for basic and diluted eps"", none)",0,,0,0
+EW/2016/page_94.pdf-2,"subtract(18.13, 11.75), divide(#0, 11.75), multiply(#1, const_100)","subtract(18.13, 11.75), divide(#0, 11.75), multiply(#1, const_100)",1,54.29787,0,0
+HWM/2016/page_40.pdf-1,"table_average(third_of_2016_high, third_of_2016_low)","table_average(third_of_2016_high, third_of_2016_low)",0,,0,0
+PM/2018/page_24.pdf-3,"divide(subtract(96.50, 100.00), 100.00)","subtract(96.50, 100.00)",1,-3.5,0,0
+IP/2005/page_35.pdf-2,"The question asks for the change in total debt to be repaid in contractual obligations (debt and lease commitments) between 2008 and 2007.
+
+From the facts:
+- Total debt in 2007: $570 million
+- Total debt in 2008: $308 million
+
+Change = Total debt in 2008 - Total debt in 2007  
+= 30",,0,,0,0
+UPS/2006/page_32.pdf-4,"table_average(""united parcel service inc."", ""dow jones transportation average"")","table_average(""united parcel service inc."", ""dow jones transportation average"")",0,,0,0
+AAL/2015/page_118.pdf-2,"table_average(""revenue"", none), table_average(""net income"", none), subtract(#1, #2), divide(#3, #0), multiply(#4, 100)","table_average(""revenue"", none), table_average(""net income"", none), subtract(#1, #2), divide(#3, #0), multiply(#4, 100)",0,,0,0
+ETR/2004/page_213.pdf-3,"subtract(973.7, 922.9)","subtract(973.7, 922.9)",1,50.8,1,1
+CME/2010/page_42.pdf-1,"table_max(lease expiration, ""20 south wacker drive, chicago, illinois"")","table_max(lease expiration, ""20 south wacker drive, chicago, illinois"")",0,,0,0
+ETFC/2013/page_26.pdf-1,"table_average(""alpharetta_georgia"", none)","table_average(""alpharetta_georgia"", none)",0,,0,0
+LMT/2010/page_42.pdf-1,"divide(subtract(const_820, const_852), const_852)","subtract(const_820, const_852)",1,-32.0,0,0
+TSCO/2017/page_31.pdf-1,"multiply(100, divide(174.14, 100))","divide(174.14, 100)",1,1.7414,0,0
+C/2008/page_211.pdf-4,"divide(38, 188)","divide(38, 188)",1,0.20213,1,1
+FRT/2005/page_117.pdf-2,"subtract(663750000, 595338000)","subtract(663750000, 595338000)",1,68412000.0,0,0
+ETFC/2011/page_82.pdf-3,"divide(142.4, 1934.2)","divide(142.4, 1934.2)",1,0.07362,1,1
+UNP/2007/page_65.pdf-1,"divide(542, 4717)","divide(542, 4717)",1,0.1149,0,0
+ETR/2002/page_86.pdf-1,"divide(subtract(const_540372, const_925005), const_925005)","subtract(const_540372, const_925005)",1,-384633.0,0,0
+CAT/2017/page_85.pdf-2,"divide(subtract(const_412, const_716), const_716)","subtract(const_412, const_716)",1,-304.0,0,0
+AES/2017/page_175.pdf-1,"table_average(""receivable balances in puerto rico"", none) is not applicable. Instead, we know:
+
+- Total receivable balances in Puerto Rico: $86 million  
+- Overdue receivables: $53 million  
+- Therefore, current receivables = $86 million - $53 million = $33 million  
+
+Percent current = (current / total) * 100 = (33 / 86) * 10","table_average(""receivable balances in puerto rico"", none)",0,,0,0
+HII/2014/page_69.pdf-2,"table_average(""newport news of december 31 2014 total backlog"", none)","table_average(""newport news of december 31 2014 total backlog"", none)",0,,0,0
+VTR/2007/page_47.pdf-4,"multiply(14669, 43.89)","multiply(14669, 43.89)",1,643822.41,1,1
+AAL/2015/page_118.pdf-1,"divide(2526, 40678)","divide(2526, 40678)",1,0.0621,1,1
+CNP/2010/page_31.pdf-2,"divide(67489, 806357)","divide(67489, 806357)",1,0.0837,1,1
+LMT/2015/page_99.pdf-3,"subtract(15261, 6142)","subtract(15261, 6142)",1,9119.0,1,1
+HUM/2017/page_133.pdf-2,"divide(55, 0.40)","divide(55, 0.40)",1,137.5,1,1
+JPM/2013/page_209.pdf-3,"table_sum(""trading assets 2013 derivative receivables"", ""trading liabilities 2013 derivative payables""), subtract(#1, #0)","table_sum(""trading assets 2013 derivative receivables"", ""trading liabilities 2013 derivative payables""), subtract(#1, #0)",0,,0,0
+JPM/2005/page_37.pdf-3,"The question refers to ""2015,"" but the provided facts only cover data for 2004 and 2005. There is no information about 2015 or any operating income data, especially without the asset & wealth management segment. Therefore, it is not possible to compute the total operating income for 2015 based on the given facts.
+
+No valid calculation can be performed. The program cannot be generated.",,0,,0,0
+EW/2016/page_79.pdf-2,"divide(258.9, 28.1)","divide(258.9, 28.1)",1,9.21352,1,1
+ZBH/2003/page_40.pdf-2,"subtract(26.3, 19.5)","subtract(26.3, 19.5)",1,6.8,1,1
+EW/2016/page_79.pdf-3,"divide(28.1, 32.9)","divide(28.1, 32.9)",1,0.8541,0,0
+DISH/2013/page_138.pdf-2,"subtract(#1, #2)","subtract(#1, #2)",0,,0,0
+UNP/2011/page_21.pdf-2,"multiply(3915795, 98.19)","multiply(3915795, 98.19)",1,384491911.05,0,0
+PM/2018/page_24.pdf-1,"subtract(divide(97.90, 100.00), 1)","divide(97.90, 100.00)",1,0.979,0,0
+ETR/2013/page_118.pdf-4,"divide(149, 385373)","divide(149, 385373)",1,0.00039,0,0
+APD/2016/page_39.pdf-2,"table_min(interest incurred, 2014, 2015, 2016)","table_min(interest incurred, 2014, 2015, 2016)",0,,0,0
+AAP/2011/page_28.pdf-1,"table_average(""advance auto parts"", none)","table_average(""advance auto parts"", none)",0,,0,0
+C/2008/page_102.pdf-1,"table_average(""total capital (tier 1 and tier 2)"", ""2008"") subtract table_average(""total capital (tier 1 and tier 2)"", ""2007"")",,0,,0,0
+IPG/2015/page_48.pdf-3,"subtract(34.7, 33.7)","subtract(34.7, 33.7)",1,1.0,0,0
+MRO/2011/page_73.pdf-4,"The provided facts do not include any information about the cost of goods sold in 2009. Therefore, it is not possible to calculate or determine the cost of goods sold based on the given data. 
+
+No valid operation can be performed.",,0,,0,0
+IP/2005/page_19.pdf-2,"subtract(2040, 1734)","subtract(2040, 1734)",1,306.0,1,1
+IPG/2015/page_37.pdf-1,"table_average(""net cash provided by operating activities"", none), subtract(table_average(""net cash provided by operating activities"", none), 669.5), divide(#1, 669.5), multiply(#2, 100)","table_average(""net cash provided by operating activities"", none), table_average(""net cash provided by operating activities"", none), divide(#1, 669.5), multiply(#2, 100)",0,,0,0
+STT/2009/page_73.pdf-2,"divide(74843, 72699)","divide(74843, 72699)",1,1.02949,1,1
+MO/2012/page_44.pdf-1,"divide(87, 119)","divide(87, 119)",1,0.73109,1,1
+MRO/2017/page_111.pdf-3,"subtract(546, 140)","subtract(546, 140)",1,406.0,0,0
+DRE/2007/page_59.pdf-1,"divide(const_148527, const_867558)","divide(const_148527, const_867558)",1,0.1712,0,0
+AMT/2005/page_85.pdf-2,"table_average(""less current portion of other long-term obligations"", none)","table_average(""less current portion of other long-term obligations"", none)",0,,0,0
+CME/2017/page_97.pdf-2,"multiply(100, divide(339235, 1000000))","divide(339235, 1000000)",1,0.33924,1,1
+LMT/2005/page_40.pdf-1,"divide(2505, 3066)","divide(2505, 3066)",1,0.81703,1,1
+EW/2017/page_82.pdf-1,"multiply(100, divide(142.1, 182.2))","divide(142.1, 182.2)",1,0.77991,1,1
+CDNS/2012/page_30.pdf-3,"table_average(nasdaq_composite, none)","table_average(nasdaq_composite, none)",0,,0,0
+ETR/2011/page_324.pdf-2,"table_average(""receivables"", none), divide(#0, 50000000)","table_average(""receivables"", none), divide(#0, 50000000)",0,,0,0
+BLK/2014/page_119.pdf-2,"table_sum(fair value, 5.00% ( 5.00 % ) notes due 2019)",,0,,0,0
+ETR/2002/page_86.pdf-2,"divide(925005, 540372)","divide(925005, 540372)",1,1.71179,1,1
+HII/2014/page_69.pdf-1,"table_average(""ingalls"", none)","table_average(""ingalls"", none)",0,,0,0
+BLL/2007/page_47.pdf-4,"divide(41000000, 0.4)","divide(41000000, 0.4)",1,102500000.0,0,0
+MS/2017/page_74.pdf-1,"multiply(divide(40.2, 69.8), 100)","divide(40.2, 69.8)",1,0.57593,1,1
+STT/2011/page_83.pdf-2,"divide(subtract(const_99832, const_81881), const_81881)","subtract(const_99832, const_81881)",1,17951.0,0,0
+ETFC/2014/page_26.pdf-3,"divide(137.81, 137.81)","divide(137.81, 137.81)",1,1.0,0,0
+AMT/2010/page_34.pdf-3,"divide(397612895, 463)","divide(397612895, 463)",1,858775.15119,1,1
+MS/2014/page_292.pdf-1,"table_sum(""1999"", ""2013"", ""2005"", ""2006"", ""2013"", ""2008"", ""2007"", ""2013"", ""2009"")","table_sum(""1999"", ""2013"", ""2005"", ""2006"", ""2013"", ""2008"", ""2007"", ""2013"", ""2009"")",0,,0,0
+ETFC/2014/page_26.pdf-1,"table_average(""e*trade financial corporation"", none) - 100.00) * 100","table_average(""e*trade financial corporation"", none)",0,,0,0
+UNP/2011/page_21.pdf-1,"table_average(""total number of shares purchased"", ""average price paid per share"")","table_average(""total number of shares purchased"", ""average price paid per share"")",0,,0,0
+ETR/2011/page_341.pdf-2,"The question asks for the percentage change in net revenue in 2011, but the facts only provide net revenue for 2009 and 2010. There is no data for 2011. Therefore, it is impossible to calculate the percentage change in net revenue for 2011 based on the given facts.
+
+No valid calculation can be performed.  
+Answer: error (insufficient data)",,0,,0,0
+C/2017/page_328.pdf-2,"table_average(""s&p 500"", none) divide table_average(""citi"", none)","table_average(""s&p 500"", none), table_average(""citi"", none)",0,,0,0
+JPM/2014/page_65.pdf-3,"divide(123.36, 112.13)","divide(123.36, 112.13)",1,1.10015,1,1
+HIG/2008/page_318.pdf-2,"The question asks for the weight of property & casualty operations relative to the total statutory capital. However, the term ""total statutory capital"" is not defined in the facts provided. The facts give:
+
+- Life operations (2008): $6047  
+- Property & casualty operations (2008): 6012  
+- Total of 2008: $13777  
+
+Since ""total statutory capital"" is not mentioned",,0,,0,0
+APD/2014/page_39.pdf-2,"table_average(2012, operating income) divide(44.6, 420.1)","table_average(2012, operating income), divide(44.6, 420.1)",0,,0,0
+JPM/2008/page_85.pdf-2,"The Tier 2 Capital Ratio (CET2) is calculated as:
+
+$$
+\text{CET2 Ratio} = \frac{\text{Tier 2 Capital}}{\text{Total Capital}}
+$$
+
+From the facts:
+- Tier 2 Capital in 2008 = 48,616 (in millions)
+- Total Capital in 2008 = 184,720 (in millions)
+
+So the CET",,0,,0,0
+GPN/2009/page_70.pdf-1,"table_average(contract-based intangible assets, none)","table_average(contract-based intangible assets, none)",1,1031.0,0,0
+ADBE/2018/page_86.pdf-3,"The facts provided do not include any data for 2016, only for 2017 and 2018. Therefore, it is not possible to calculate the percentage change in total gross amount of unrecognized tax benefits from 2016 to 2017.
+
+Answer: cannot compute",,0,,0,0
+JPM/2007/page_147.pdf-2,"table_average(""third-party of 2007"", none)","table_average(""third-party of 2007"", none)",0,,0,0
+AON/2009/page_48.pdf-1,"table_average(""segment revenue"", none)","table_average(""segment revenue"", none)",0,,0,0
+ETR/2008/page_355.pdf-3,"subtract(252.7, 231.0)","subtract(252.7, 231.0)",1,21.7,1,1
+APD/2019/page_48.pdf-1,"table_average(""cash provided by operating activities"", none)","table_average(""cash provided by operating activities"", none)",0,,0,0
+MRO/2006/page_33.pdf-2,"table_sum(""matching buy/sell volumes"", ""2006""), table_sum(""matching buy/sell volumes"", ""2005""), table_sum(""matching buy/sell volumes"", ""2004"")","table_sum(""matching buy/sell volumes"", ""2006""), table_sum(""matching buy/sell volumes"", ""2005""), table_sum(""matching buy/sell volumes"", ""2004"")",0,,0,0
+JPM/2007/page_33.pdf-2,"multiply(100, subtract(divide(6635, 5520), const_1))","divide(6635, 5520)",1,1.20199,0,0
+JPM/2013/page_209.pdf-1,"subtract(#1, #2)","subtract(#1, #2)",0,,0,0
+ETR/2002/page_24.pdf-4,"divide(411, 128)","divide(411, 128)",1,3.21094,0,0
+EW/2016/page_94.pdf-3,"subtract(100, divide(31.00, 18.13) * 100)","divide(31.00, 18.13)",1,1.70987,0,0
+C/2010/page_223.pdf-1,"divide(77, 392)","divide(77, 392)",1,0.19643,1,1
+ABMD/2009/page_88.pdf-2,"The question refers to ""the average payment per year for the state tax settlement,"" but none of the provided facts mention a ""state tax settlement"" or any related payments. The facts only reference contingent payments related to the acquisition of Impella and do not include any information about state tax settlements.
+
+Therefore, based on the given facts, it is not possible to calculate the average payment per year for the state tax settlement.
+
+No valid computation can be performed. The answer is: **undefined",,0,,0,0
+AES/2017/page_157.pdf-4,"divide(2710, 10530)","divide(2710, 10530)",1,0.25736,1,1
+HII/2017/page_124.pdf-4,"table_sum(a, c)","table_sum(a, c)",0,,0,0
+ETR/2013/page_118.pdf-3,"table_average(2014, 2015), divide(#0, 1000)","table_average(2014, 2015), divide(#0, 1000)",1,385.373,0,0
+HOLX/2008/page_142.pdf-1,"divide(5800, 31300)","divide(5800, 31300)",1,0.1853,1,1
+IPG/2008/page_93.pdf-3,"table_average(2009, none), table_average(2010, none), table_average(2011, none), table_average(2012, none), table_average(2013, none), table_average(thereafter, none), subtract(table_average(2009, none), table_average(2013, none)), divide(#5, #4), multiply(#6, 100)","table_average(2009, none), table_average(2010, none), table_average(2011, none), table_average(2012, none), table_average(2013, none), table_average(thereafter, none), table_average(2009, none), table_average(2013, none), divide(#5, #4), multiply(#6, 100)",0,,0,0
+BLL/2007/page_47.pdf-3,"divide(41000000, 0.4)","divide(41000000, 0.4)",1,102500000.0,0,0
+HOLX/2012/page_113.pdf-1,"divide(3967866, 3972176)","divide(3967866, 3972176)",1,0.99891,1,1
+HUM/2017/page_133.pdf-3,"divide(170, 1.14)","divide(170, 1.14)",1,149.12281,1,1
+ETR/2008/page_249.pdf-2,"divide(828, 14669)","divide(828, 14669)",1,0.05645,1,1
+AON/2009/page_46.pdf-3,"multiply(0.83, subtract(6305, 6197))","subtract(6305, 6197)",1,108.0,0,0
+LKQ/2018/page_83.pdf-1,"subtract(23262, 23151)","subtract(23262, 23151)",1,111.0,1,1
+PM/2014/page_67.pdf-1,"table_sum(e, none)","table_sum(e, none)",0,,0,0
+PM/2017/page_38.pdf-2,"table_average(""net earnings attributable to pmi"", none)","table_average(""net earnings attributable to pmi"", none)",0,,0,0
+IPG/2008/page_93.pdf-1,"table_sum(""total contingent acquisition payments of 2009"", ""total contingent acquisition payments of 2010"", ""total contingent acquisition payments of 2011"", ""total contingent acquisition payments of 2012"", ""total contingent acquisition payments of 2013""), divide(#0, const_402.8)","table_sum(""total contingent acquisition payments of 2009"", ""total contingent acquisition payments of 2010"", ""total contingent acquisition payments of 2011"", ""total contingent acquisition payments of 2012"", ""total contingent acquisition payments of 2013""), divide(#0, const_402.8)",0,,0,0
+BLK/2013/page_125.pdf-1,"multiply(divide(135, 1286), const_100)","divide(135, 1286)",1,0.10498,1,1
+AAP/2012/page_12.pdf-1,"table_average(""beginning stores"", ""ending stores"") - table_average(""new stores (1)"", none)","table_average(""beginning stores"", ""ending stores"")",0,,0,0
+CDNS/2006/page_30.pdf-3,"table_average(""cadence design systems , inc."", none)","table_average(""cadence design systems, inc."", none)",0,,0,0
+EW/2016/page_94.pdf-4,"multiply(100, subtract(divide(31.00, 11.75), const_1)), divide(100, 11.75)","divide(31.00, 11.75), divide(100, 11.75)",1,8.51064,0,0
+VLO/2018/page_25.pdf-2,"table_average(""december 2018"", none)","table_average(""december 2018"", none)",0,,0,0
+APD/2014/page_44.pdf-2,"subtract(const_2778.3, const_2559.8)","subtract(const_2778.3, const_2559.8)",1,218.5,0,0
+CME/2012/page_70.pdf-1,"The question asks for the ""percent of available potential to increase the multi-currency line of credit,"" but the provided facts only mention existing credit facilities: a $5.0 billion 364-day multi-currency line of credit and an additional $1.8 billion senior credit facility. There is no information about potential increases, capacity beyond current amounts, or percentages of available potential.
+
+Thus, based on the given facts, we cannot compute a percentage of available potential to increase",,0,,0,0
+BLK/2017/page_122.pdf-2,"divide(1580, 2206)","divide(1580, 2206)",1,0.71623,1,1
+INTC/2013/page_29.pdf-4,"divide(29.9, 32.2)","divide(29.9, 32.2)",1,0.92857,1,1
+ETR/2011/page_324.pdf-1,"table_sum(""credit facility"", ""outstanding"") - const_200","table_sum(""credit facility"", ""outstanding"")",0,,0,0
+APD/2019/page_31.pdf-1,"divide(1.10, 4.58)","divide(1.10, 4.58)",1,0.24017,1,1
+PNC/2013/page_62.pdf-1,"subtract(2220, 1356)","subtract(2220, 1356)",1,864.0,0,0
+KHC/2016/page_23.pdf-2,"divide(4, 87)","divide(4, 87)",1,0.04598,1,0
+BLL/2007/page_35.pdf-3,"multiply(table_sum(a, ""october 29 to november 25 2007"", ""november 26 to december 31 2007""), table_average(""average pricepaid per share"", ""october 29 to november 25 2007"", ""november 26 to december 31 2007"")), divide(#0, const_1000000)","table_sum(a, ""october 29 to november 25 2007"", ""november 26 to december 31 2007""), table_average(""average pricepaid per share"", ""october 29 to november 25 2007"", ""november 26 to december 31 2007""), divide(#0, const_1000000)",0,,0,0
+CB/2010/page_200.pdf-1,"table_average(""statutory capital and surplus"", ""2010"") - table_average(""statutory capital and surplus"", ""2009"")","table_average(""statutory capital and surplus"", ""2010""), table_average(""statutory capital and surplus"", ""2009"")",0,,0,0
+MRO/2011/page_73.pdf-2,"The provided facts do not include any information about the cost of goods sold in 2009. Therefore, it is not possible to calculate or determine the cost of goods sold based on the given data. 
+
+No valid operation can be performed.",,0,,0,0
+UNP/2009/page_65.pdf-2,"table_average(""2001 plan"", none)","table_average(""2001 plan"", none)",0,,0,0
+ETFC/2007/page_126.pdf-1,"divide(453815, 3450152)","divide(453815, 3450152)",1,0.13153,1,1
+AES/2017/page_175.pdf-3,"divide(subtract(const_1297, const_1100), const_1100)","subtract(const_1297, const_1100)",1,197.0,0,0
+BLL/2007/page_47.pdf-1,"multiply(26, 5)","multiply(26, 5)",1,130.0,0,0
+MA/2008/page_126.pdf-1,"divide(subtract(476915, 404436), 476915)","subtract(476915, 404436)",1,72479.0,0,0
+AWK/2013/page_132.pdf-2,"multiply(#0, divide(100, #1))","divide(100, #1)",0,,0,0
+MRO/2007/page_134.pdf-1,"subtract(#2, #0)","subtract(#2, #0)",0,,0,0
+INTC/2013/page_29.pdf-2,"table_average(""total facilities of total"", none)","table_average(""total facilities of total"", none)",0,,0,0
+MAS/2018/page_35.pdf-1,"subtract(15.7, 15.1)","subtract(15.7, 15.1)",1,0.6,0,0
+PPG/2013/page_40.pdf-1,"subtract(345, 488)","subtract(345, 488)",1,-143.0,0,0
+ETR/2015/page_131.pdf-4,"multiply(7, const_108000), multiply(8, const_20000), table_sum(#0, #1)","multiply(7, const_108000), multiply(8, const_20000), table_sum(#0, #1)",0,,0,0
+VNO/2012/page_84.pdf-2,"subtract(109, 100)","subtract(109, 100)",1,9.0,1,1
+VTR/2007/page_47.pdf-3,"multiply(14669, 43.89)","multiply(14669, 43.89)",1,643822.41,1,1
+UPS/2006/page_32.pdf-2,"table_average(""ups"", none) - table_average(""s&p 500"", none)","table_average(""ups"", none), table_average(""s&p 500"", none)",0,,0,0
+HII/2017/page_124.pdf-2,"divide(4087587, 448859)","divide(4087587, 448859)",1,9.10662,0,0
+VRTX/2003/page_71.pdf-2,"divide(125, 22203)","divide(125, 22203)",1,0.00563,1,1
+GS/2016/page_77.pdf-4,"divide(table_average(""equity securities"", none), table_average(""total net revenues"", none))","table_average(""equity securities"", none), table_average(""total net revenues"", none)",0,,0,0
+AES/2003/page_52.pdf-2,"table_sum(mountainview, songas, aes haripur private ltd/aes meghnaghat ltd)","table_sum(mountainview, songas, aes haripur private ltd/aes meghnaghat ltd)",0,,0,0
+MAS/2012/page_70.pdf-2,"table_average(cabinets and related products of net goodwill at december 31 2011, none)","table_average(cabinets and related products of net goodwill at december 31 2011, none)",0,,0,0
+AON/2011/page_134.pdf-2,"divide(6817, 11287)","divide(6817, 11287)",1,0.60397,1,1
+HII/2014/page_69.pdf-3,"multiply(21, 0.28)","multiply(21, 0.28)",1,5.88,1,0
+DRE/2009/page_56.pdf-1,"table_average(""net income ( loss ) attributable to common shareholders"", ""2007""), subtract(table_average(""net income ( loss ) attributable to common shareholders"", ""2008""), table_average(""net income ( loss ) attributable to common shareholders"", ""2007"")), divide(#1, #0), multiply(#2, const_100)","divide(#1, #0), multiply(#2, const_100)",0,,0,0
+RCL/2014/page_17.pdf-2,"table_average(""european cruise guests"", none)","table_average(""european cruise guests"", none)",0,,0,0
+AAL/2015/page_118.pdf-3,"table_sum(""operating expenses"", none)","table_sum(""operating expenses"", none)",0,,0,0
+LMT/2015/page_56.pdf-2,"table_average(""net sales"", ""2013 to 2015"")","table_average(""net sales"", ""2013 to 2015"")",0,,0,0
+PM/2015/page_127.pdf-3,"table_average(""total accumulated other comprehensive losses"", none)","table_average(""total accumulated other comprehensive losses"", none)",0,,0,0
+LMT/2012/page_47.pdf-4,"table_average(operating profit, 2010 to 2012)","table_average(operating profit, 2010 to 2012)",1,1058.66667,0,0
+AAPL/2005/page_83.pdf-1,"table_average(effective_tax_rate, none)","table_average(effective_tax_rate, none)",0,,0,0
+PM/2014/page_67.pdf-3,"divide(1029, 1)","divide(1029, 1)",1,1029.0,0,0
+ETR/2013/page_118.pdf-2,"table_average(2014, 2015), divide(#0, 1000)","table_average(2014, 2015), divide(#0, 1000)",1,385.373,0,0
+HOLX/2007/page_128.pdf-2,"divide(6900, 220600)","divide(6900, 220600)",1,0.03128,1,1
+GIS/2019/page_37.pdf-1,"divide(13093.0, 17932.7)","divide(13093.0, 17932.7)",1,0.73012,1,1
+IPG/2009/page_85.pdf-1,"table_max(""postretirement benefit plans"", none), table_min(""postretirement benefit plans"", none), subtract(#0, #1)","table_max(""postretirement benefit plans"", none), table_min(""postretirement benefit plans"", none), subtract(#0, #1)",0,,0,0
+RE/2017/page_159.pdf-4,"divide(subtract(144618, 146507), 146507)","subtract(144618, 146507)",1,-1889.0,0,0
+JPM/2018/page_110.pdf-3,"divide(47733, 247980)","divide(47733, 247980)",1,0.19249,1,1
+MRO/2009/page_139.pdf-4,"subtract(59, 60)","subtract(59, 60)",1,-1.0,1,1
+UNP/2014/page_35.pdf-2,"table_average(""capital investments in 2012"", none)","table_average(""capital investments in 2012"", none)",0,,0,0
+RSG/2017/page_142.pdf-1,"table_average(""issuances under this plan"", none) → this is not valid as ""issuances under this plan"" is not a table. Instead, we compute the percent decline from 2016 to 2017.
+
+From facts:
+- 2016: 130085 shares
+- 2017: 113941 shares
+
+Percent decline = ((2016 -","table_average(""issuances under this plan"", none)",0,,0,0
+C/2008/page_211.pdf-3,"table_average(""trading assets"", ""carrying amount reported on the consolidated balance sheet"")","table_average(""trading assets"", ""carrying amount reported on the consolidated balance sheet"")",0,,0,0
+AES/2002/page_46.pdf-3,"subtract(#3, #4)","subtract(#3, #4)",0,,0,0
+UPS/2006/page_32.pdf-3,"table_average(""upsi"", none) - table_average(""sp500"", none)","table_average(""upsi"", none), table_average(""sp500"", none)",0,,0,0
+NWS/2016/page_61.pdf-1,"subtract(2014interest, 13)","subtract(2014interest, 13)",0,,0,0
+JPM/2014/page_65.pdf-2,"table_average(kbw bank index, none)","table_average(kbw bank index, none)",1,134.52667,0,0
+APD/2016/page_39.pdf-1,"table_max(interest expense, 2014, 2015, 2016)","table_max(interest expense, 2014, 2015, 2016)",0,,0,0
+IPG/2008/page_93.pdf-2,"subtract(255.7, 327.1), divide(#0, 327.1), multiply(#1, 100)","subtract(255.7, 327.1), divide(#0, 327.1), multiply(#1, 100)",1,-21.82819,0,0
+AMT/2004/page_81.pdf-3,"divide(905000000, 920000000)","divide(905000000, 920000000)",1,0.9837,0,0
+AES/2016/page_185.pdf-3,"table_max(""dpl preferred stock"", ""2015"")","table_max(""dpl preferred stock"", ""2015"")",0,,0,0
+ETR/2015/page_131.pdf-2,"table_sum(2017, 2018, 2019)","table_sum(2017, 2018, 2019)",0,,0,0
+IPG/2008/page_21.pdf-1,"multiply(table_average(""october 1-31"", ""average price paid per share2""), table_sum(""october 1-31"", ""total number of shares purchased"")), multiply(table_average(""november 1-30"", ""average price paid per share2""), table_sum(""november 1-30"", ""total number of shares purchased"")), divide(subtract(#0, #1), #1)","table_average(""october 1-31"", ""average price paid per share2""), table_sum(""october 1-31"", ""total number of shares purchased""), table_average(""november 1-30"", ""average price paid per share2""), table_sum(""november 1-30"", ""total number of shares purchased""), subtract(#0, #1)",0,,0,0
+GS/2017/page_106.pdf-1,"subtract(35, 25)","subtract(35, 25)",1,10.0,1,1
+STT/2011/page_83.pdf-3,"divide(subtract(const_99832, const_81881), const_81881)","subtract(const_99832, const_81881)",1,17951.0,0,0
+APD/2019/page_31.pdf-2,"table_average(""first quarter"", ""total"")","table_average(""first quarter"", ""total"")",0,,0,0
+LMT/2015/page_54.pdf-1,"table_average(2013, 2015)","table_average(2013, 2015)",0,,0,0
+MRO/2008/page_69.pdf-2,"subtract(33.87, 145.29)","subtract(33.87, 145.29)",1,-111.42,0,0
+JPM/2013/page_209.pdf-2,"subtract(#1, #2)","subtract(#1, #2)",0,,0,0
+AON/2010/page_115.pdf-3,"divide(subtract(209, 21), 21)","subtract(209, 21)",1,188.0,0,0
+AMT/2005/page_105.pdf-4,"table_average(""federal"", none), table_average(""state"", none), divide(table_average(""state"", none), add(table_average(""federal"", none), table_average(""state"", none)))","table_average(""federal"", none), table_average(""state"", none), table_average(""state"", none), table_average(""federal"", none), table_average(""state"", none)",0,,0,0
+IPG/2015/page_37.pdf-2,"table_sum(""net cash provided by operating activities"", ""net cash used in investing activities"", ""net cash used in financing activities"")","table_sum(""net cash provided by operating activities"", ""net cash used in investing activities"", ""net cash used in financing activities"")",0,,0,0
+LMT/2013/page_74.pdf-3,"subtract(328.4, 339.9)","subtract(328.4, 339.9)",1,-11.5,1,1
+PM/2017/page_38.pdf-4,"divide(688, 10815)","divide(688, 10815)",1,0.06362,1,0
+RCL/2014/page_17.pdf-1,"The question asks for the mathematical range for European cruise guests from 2010–2014. However, the provided facts only include data for the year 2014 and do not contain any data for the years 2010–2013. Therefore, we cannot compute a range (i.e., the difference between the maximum and minimum values) across those years with the given information.
+
+As a result, based on the available facts",,0,,0,0
+UNP/2011/page_76.pdf-1,"table_average(""accrued casualty costs"", none) is not applicable as we need a direct calculation.
+
+We are given:
+- Accrued casualty costs on Dec. 31, 2010: 325 (in millions)
+- These were completely repaired in the following year (2011), so they are no longer accrued.
+- Therefore, the repairs and maintenance expense in 2011 would increase by the amount of the repaired","table_average(""accrued casualty costs"", none)",0,,0,0
+LMT/2006/page_90.pdf-4,"table_average(2007, none), table_average(2008, none), table_average(2009, none), table_average(2010, none), table_average(2011, none), table_average(later years, none)  
+table_sum(2007, 2008, 2009, 2010, 2011, later years)  
+divide","table_average(2007, none), table_average(2008, none), table_average(2009, none), table_average(2010, none), table_average(2011, none), table_average(later years, none)",0,,0,0
+AES/2016/page_185.pdf-2,"subtract(618, 460)","subtract(618, 460)",1,158.0,1,1
+TSCO/2018/page_34.pdf-2,"multiply(100, divide(104.11, 100))","divide(104.11, 100)",1,1.0411,0,0
+ABMD/2004/page_26.pdf-1,"table_average(""year ending march 31, the thereafter of operating leases is 708"", none), multiply(#0, const_127000)","table_average(""year ending march 31, the thereafter of operating leases is 708"", none), multiply(#0, const_127000)",0,,0,0
+AES/2017/page_175.pdf-2,"table_average(""interest expense"", none) - table_average(""interest income"", none)","table_average(""interest expense"", none), table_average(""interest income"", none)",0,,0,0
+LMT/2016/page_48.pdf-4,"table_average(aeronautics, 2014, 2016)","table_average(aeronautics, 2014, 2016)",0,,0,0
+HOLX/2007/page_128.pdf-1,"divide(205500, 4400)","divide(205500, 4400)",1,46.70455,1,1
+PNC/2011/page_78.pdf-1,"table_average(""unpaid_principal_balance"", ""december 31, 2011 and december 31, 2010"")","table_average(""unpaid_principal_balance"", ""december 31, 2011 and december 31, 2010"")",0,,0,0
+GS/2014/page_136.pdf-2,"table_min(""interest rate hedges"", ""2012, 2013, 2014"")","table_min(""interest rate hedges"", ""2012, 2013, 2014"")",0,,0,0
+DISCA/2012/page_39.pdf-4,"multiply(100, divide(264000000, 20))","divide(264000000, 20)",1,13200000.0,0,0
+LMT/2015/page_54.pdf-3,"divide(6770, 15500)","divide(6770, 15500)",1,0.43677,1,1
+LMT/2015/page_99.pdf-2,"divide(subtract(15261, 6142), 6142)","subtract(15261, 6142)",1,9119.0,0,0
+C/2008/page_211.pdf-1,"table_average(""trading assets"", ""carrying amount reported on the consolidated balance sheet"") - table_average(""trading assets"", ""carrying amount reported on the consolidated balance sheet"")","table_average(""trading assets"", ""carrying amount reported on the consolidated balance sheet""), table_average(""trading assets"", ""carrying amount reported on the consolidated balance sheet"")",0,,0,0
+LMT/2010/page_42.pdf-4,"divide(subtract(const_852, const_926), const_926)","subtract(const_852, const_926)",1,-74.0,0,0
+ETFC/2011/page_82.pdf-2,"multiply(divide(1751.2, 1934.2), 100)","divide(1751.2, 1934.2)",1,0.90539,1,1
+AON/2010/page_115.pdf-1,"table_average(""total stock-based compensation expense"", none)","table_average(""total stock-based compensation expense"", none)",0,,0,0
+PNC/2009/page_41.pdf-1,"divide(107, 1012)","divide(107, 1012)",1,0.10573,1,1
+MRO/2011/page_73.pdf-1,"add(85, 135)","add(85, 135)",1,220.0,0,0
+UNP/2013/page_54.pdf-1,"divide(table_sum(""agricultural"", ""total freight revenues""), table_sum(""total freight revenues"", ""agricultural""), 100)","table_sum(""agricultural"", ""total freight revenues""), table_sum(""total freight revenues"", ""agricultural"")",0,,0,0
+JKHY/2014/page_30.pdf-2,"subtract(116.85, 100.00)","subtract(116.85, 100.00)",1,16.85,0,0
+L/2015/page_59.pdf-2,"table_average(""loews common stock"", ""2010"", ""2012"")","table_average(""loews common stock"", ""2010"", ""2012"")",0,,0,0
+ABMD/2007/page_52.pdf-2,"table_sum(table_average(""total obligations of payments due by fiscal year less than 1 year"", none), table_average(""total obligations of payments due by fiscal year 1-3 years"", none), table_average(""total obligations of payments due by fiscal year 3-5 years"", none), table_average(""total obligations of payments due by fiscal year more than 5 years"", none))","table_average(""total obligations of payments due by fiscal year less than 1 year"", none), table_average(""total obligations of payments due by fiscal year 1-3 years"", none), table_average(""total obligations of payments due by fiscal year 3-5 years"", none), table_average(""total obligations of payments due by fiscal year more than 5 years"", none)",0,,0,0
+LMT/2015/page_99.pdf-4,"The facts provided do not mention any discounts or debt issuance costs associated with the November 2015 notes. Therefore, based on the given information, it is not possible to calculate the percent of discounts and debt issuance costs to the long-term debt from the November 2015 notes.
+
+No valid computation can be performed, so the answer is:  
+table_average(none, none)","table_average(none, none)",0,,0,0
+PKG/2009/page_65.pdf-1,"table_sum(2010, 2011)","table_sum(2010, 2011)",1,6951.0,0,0
+UPS/2006/page_32.pdf-1,"table_average(""united parcel service inc."", none)","table_average(""united parcel service inc."", none)",0,,0,0
+HII/2017/page_104.pdf-1,"subtract(15, 19), divide(#0, 19), multiply(#1, const_100)","subtract(15, 19), divide(#0, 19), multiply(#1, const_100)",1,-21.05263,0,0
+CDNS/2006/page_30.pdf-4,"table_average(""cadence design systems inc."", ""december 30 2006""), table_average(""s & p 500"", ""december 30 2006""), divide(subtract(#0, #1), #1)","table_average(""cadence design systems inc."", ""december 30 2006""), table_average(""s & p 500"", ""december 30 2006""), subtract(#0, #1)",0,,0,0
+ABMD/2004/page_26.pdf-2,"table_average(""thereafter"", none), divide(#0, table_average(""total future minimum lease payments of operating leases"", none))","table_average(""thereafter"", none), table_average(""total future minimum lease payments of operating leases"", none)",0,,0,0
+ADI/2011/page_50.pdf-2,"multiply(375000000, 0.03)","multiply(375000000, 0.03)",1,11250000.0,0,0
+UNP/2014/page_25.pdf-2,"The question asks for a projection of 2015 freight revenues assuming growth at the same rate as the agricultural arc growth. However, ""agricultural arc growth"" is not defined in the facts provided. 
+
+Looking at the facts, we are given percentage changes in freight revenues:
+
+- Freight revenues: 9% growth from 2013 to 2014, and 5% growth from 2012 to 2013",,0,,0,0
+ADI/2011/page_81.pdf-2,"subtract(26410, 8690)","subtract(26410, 8690)",1,17720.0,1,1
+AWK/2013/page_132.pdf-3,"multiply(#0, divide(100, #1))","divide(100, #1)",0,,0,0
+UNP/2008/page_79.pdf-1,"divide(431, 471)","divide(431, 471)",1,0.91507,0,0
+AAL/2013/page_15.pdf-3,"divide(24800, 22900)","divide(24800, 22900)",1,1.08297,1,1
+AMT/2012/page_125.pdf-1,"table_average(""customer-related intangibles"", ""network location intangibles""), divide(#1, add(#0, #2))","table_average(""customer-related intangibles"", ""network location intangibles""), add(#0, #2)",0,,0,0
+EW/2016/page_79.pdf-1,"multiply(100, divide(28.1, 320.1))","divide(28.1, 320.1)",1,0.08779,0,0
+PM/2015/page_85.pdf-2,"subtract(28.5, 29.5)","subtract(28.5, 29.5)",1,-1.0,1,1
+AAL/2013/page_15.pdf-2,"divide(15000, 60100)","divide(15000, 60100)",1,0.24958,1,1
+MRO/2011/page_73.pdf-3,"divide(100, add(const_188, const_80))","add(const_188, const_80)",1,268.0,0,0
+ETR/2004/page_213.pdf-1,"divide(8.9, 973.7)","divide(8.9, 973.7)",1,0.00914,0,0
+PNC/2009/page_41.pdf-2,"divide(107, 197)","divide(107, 197)",1,0.54315,0,0
+BKR/2017/page_103.pdf-1,"divide(15000000, 37000000)","divide(15000000, 37000000)",1,0.40541,1,0
+AMT/2010/page_34.pdf-4,"divide(subtract(52.11, 43.70), 52.11)","subtract(52.11, 43.70)",1,8.41,0,0
+GS/2012/page_165.pdf-1,"divide(5099, 39623)","divide(5099, 39623)",1,0.12869,1,1
+BLL/2010/page_28.pdf-2,"divide(table_average(""ball corporation"", none), table_average(""dj containers & packaging index"", none)) > 1","table_average(""ball corporation"", none), table_average(""dj containers & packaging index"", none)",0,,0,0
+AON/2011/page_134.pdf-4,"subtract(11287, 8512)","subtract(11287, 8512)",1,2775.0,0,0
+ETR/2016/page_418.pdf-4,"divide(subtract(const_644.2, const_637.2), const_637.2)","subtract(const_644.2, const_637.2)",1,7.0,0,0
+GS/2016/page_70.pdf-1,"subtract(34400, 36800)","subtract(34400, 36800)",1,-2400.0,1,1
+TSCO/2018/page_34.pdf-1,"table_average(""s&p retail index"", none), table_average(""tractor supply company"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(""s&p retail index"", none), table_average(""tractor supply company"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+JPM/2007/page_157.pdf-2,"subtract(3133, 2139)","subtract(3133, 2139)",1,994.0,1,1
+GS/2016/page_70.pdf-2,"subtract(36800, 34000)","subtract(36800, 34000)",1,2800.0,1,1
+UA/2015/page_71.pdf-2,"divide(#1, #0)","divide(#1, #0)",0,,0,0
+RE/2015/page_33.pdf-2,"table_average(""average investments (1)"", none), subtract(#1, #0), divide(#2, #0), multiply(#3, 100)","subtract(#1, #0), divide(#2, #0), multiply(#3, 100)",0,,0,0
+V/2008/page_17.pdf-2,"divide(55, 0.6)","divide(55, 0.6)",1,91.66667,1,1
+AON/2009/page_48.pdf-2,"table_min(segment operating income margin, 2007, 2008, 2009)","table_min(segment operating income margin, 2007, 2008, 2009)",0,,0,0
+DRE/2002/page_40.pdf-2,"table_average(""dividend"", ""march 31 2002""), table_average(""dividend"", ""december 31 2002""), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(""dividend"", ""march 31 2002""), table_average(""dividend"", ""december 31 2002""), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+APD/2016/page_96.pdf-2,"divide(#1, #0)","divide(#1, #0)",0,,0,0
+SLB/2012/page_44.pdf-2,"subtract(81.15, 64.48)","subtract(81.15, 64.48)",1,16.67,0,0
+UNP/2013/page_44.pdf-1,"divide(57, 285)","divide(57, 285)",1,0.2,0,0
+DVN/2014/page_85.pdf-2,"table_average(""2015"", ""2019""), divide(#0, 36)","table_average(""2015"", ""2019""), divide(#0, 36)",0,,0,0
+APD/2014/page_39.pdf-1,"divide(88.2, 450.4)","divide(88.2, 450.4)",1,0.19583,1,1
+JPM/2007/page_157.pdf-1,"divide(986, 6682)","divide(986, 6682)",1,0.14756,0,0
+CAT/2017/page_85.pdf-1,"table_average(""countries"", none)","table_average(""countries"", none)",0,,0,0
+DISCA/2012/page_39.pdf-3,"table_average(""international networks"", ""revenues"") + table_average(""education"", ""revenues"")","table_average(""international networks"", ""revenues""), table_average(""education"", ""revenues"")",0,,0,0
+AOS/2004/page_11.pdf-1,"divide(275.1, 521.3)","divide(275.1, 521.3)",1,0.52772,1,1
+AON/2011/page_134.pdf-3,"table_max(""total operating segments"", none)","table_max(""total operating segments"", none)",0,,0,0
+RE/2015/page_33.pdf-4,"table_average(""pre-tax investment income ( 2 )"", none)",,0,,0,0
+JPM/2007/page_33.pdf-1,"divide(subtract(const_5520, const_4088), const_4088)","subtract(const_5520, const_4088)",1,1432.0,0,0
+IPG/2015/page_48.pdf-1,"table_average(""interest income"", none)","table_average(""interest income"", none)",0,,0,0
+PNC/2015/page_159.pdf-1,"subtract(0.3, 0.9)","subtract(0.3, 0.9)",1,-0.6,1,0
+ETR/2016/page_418.pdf-1,"table_sum(reserve_equalization, purchased_power_capacity, transmission_revenue)","table_sum(reserve_equalization, purchased_power_capacity, transmission_revenue)",0,,0,0
+AAPL/2005/page_83.pdf-2,"table_min(research_and_development_credit_2005, research_and_development_credit_2004, research_and_development_credit_2003)","table_min(research_and_development_credit_2005, research_and_development_credit_2004, research_and_development_credit_2003)",0,,0,0
+MRO/2009/page_139.pdf-3,"subtract(table_min(""contingent rental""), table_min(""contingent rental"", ""2007""))","table_min(""contingent rental""), table_min(""contingent rental"", ""2007"")",0,,0,0
+APD/2018/page_59.pdf-2,"divide(subtract(const_91.8, const_72.0), const_72.0)","subtract(const_91.8, const_72.0)",1,19.8,0,0
+LLY/2018/page_63.pdf-2,"divide(subtract(506.5, 488.8), 488.8)","subtract(506.5, 488.8)",1,17.7,0,0
+LMT/2015/page_99.pdf-1,"subtract(15261, 6142)","subtract(15261, 6142)",1,9119.0,1,1
+CME/2017/page_97.pdf-3,"add(3, 2)","add(3, 2)",1,5.0,1,0
+MRO/2009/page_56.pdf-1,"table_average(""wti crude oil (dollars per barrel)"", ""2007"") = 72.41  
+table_average(""wti crude oil (dollars per barrel)"", ""2009"") = 62.09  
+subtract(72.41, 62.09) = 10.32  
+divide(10.32, 72.41) = 0.","subtract(72.41, 62.09)",1,10.32,0,0
+IPG/2008/page_62.pdf-3,"subtract(table_min(""2003 program"", ""2006 to 2008""), table_max(""2003 program"", ""2006 to 2008""))","table_min(""2003 program"", ""2006 to 2008""), table_max(""2003 program"", ""2006 to 2008"")",0,,0,0
+EW/2016/page_94.pdf-1,"table_average(2014, none)","table_average(2014, none)",0,,0,0
+CB/2010/page_88.pdf-1,"table_average(""2010"", ""2009"", ""2008""), subtract(table_average(""2010"", ""2009"", ""2008""), table_average(""2009"", ""2008"")), divide(#1, #2)","table_average(""2010"", ""2009"", ""2008""), table_average(""2010"", ""2009"", ""2008""), table_average(""2009"", ""2008""), divide(#1, #2)",0,,0,0
+MRO/2004/page_36.pdf-1,"subtract(2300, 2200)","subtract(2300, 2200)",1,100.0,0,0
+GPN/2017/page_77.pdf-2,"divide(203828, 265982)","divide(203828, 265982)",1,0.76632,1,1
+APD/2013/page_40.pdf-1,"table_average(gaap_capex, 2011, 2012, 2013)","table_average(gaap_capex, 2011, 2012, 2013)",0,,0,0
+GS/2013/page_152.pdf-3,"table_average(currency hedges, 2013), table_average(currency hedges, 2012), table_average(currency hedges, 2011)","table_average(currency hedges, 2013), table_average(currency hedges, 2012), table_average(currency hedges, 2011)",1,25.66667,1,0
+VTR/2007/page_47.pdf-2,"table_sum(""number of shares repurchased (1)"", ""December 1 through December 31"")",,0,,0,0
+AMAT/2013/page_18.pdf-1,"The facts provided do not include any data on RD&E spending for 2014. Therefore, the percentage change in RD&E spending from 2013 to 2014 cannot be calculated based on the given information. 
+
+No valid program can be generated for this question.",,0,,0,0
+ETR/2011/page_376.pdf-2,"table_average(volume_weather, net_revenue), divide(#0, #1)","table_average(volume_weather, net_revenue), divide(#0, #1)",0,,0,0
+HII/2017/page_124.pdf-3,"table_average(""2012 plan"", ""stock rights"") / table_average(""2011 plan"", ""stock rights"")","table_average(""2012 plan"", ""stock rights""), table_average(""2011 plan"", ""stock rights"")",0,,0,0
+INTC/2013/page_33.pdf-1,"divide(351, subtract(53341, 52708))","subtract(53341, 52708)",1,633.0,0,0
+ETR/2013/page_118.pdf-1,"divide(subtract(const_766801, const_270852), const_270852)","subtract(const_766801, const_270852)",1,495949.0,0,0
+BLK/2012/page_160.pdf-2,"table_average(""balance increase"", none) - table_average(""acquisitions positions"", none)","table_average(""balance increase"", none), table_average(""acquisitions positions"", none)",0,,0,0
+BDX/2018/page_82.pdf-2,"divide(136, 90)","divide(136, 90)",1,1.51111,0,0
+FIS/2007/page_94.pdf-3,"divide(subtract(const_106400000, const_81500000), const_81500000)","subtract(const_106400000, const_81500000)",1,24900000.0,0,0
+MA/2008/page_126.pdf-2,"subtract(1736298, 404436)","subtract(1736298, 404436)",1,1331862.0,1,1
+AES/2016/page_185.pdf-1,"divide(const_3000000, const_60000000)","divide(const_3000000, const_60000000)",1,0.05,1,0
+OKE/2012/page_52.pdf-1,"divide(705, 4859)","divide(705, 4859)",1,0.14509,1,1
+ETFC/2011/page_82.pdf-4,"divide(142.4, 40.6)","divide(142.4, 40.6)",1,3.50739,1,1
+LKQ/2016/page_26.pdf-2,"table_average(""lkq corporation"", none), table_average(""s&p 500 index"", none), subtract(#1, #0), divide(#2, #0), exp(#3, 100)","table_average(""lkq corporation"", none), table_average(""s&p 500 index"", none), subtract(#1, #0), divide(#2, #0), exp(#3, 100)",0,,0,0
+ETR/2011/page_324.pdf-3,"table_average(2008, 2010), divide(#0, 1000)","table_average(2008, 2010), divide(#0, 1000)",0,,0,0
+ETR/2008/page_355.pdf-4,"table_average(""gas customers"", none)","table_average(""gas customers"", none)",0,,0,0
+INTC/2013/page_33.pdf-3,"table_average(""diluted earnings per common share"", ""dec 29 2012"", ""dec 28 2013""), multiply(#0, 100), divide(#1, #0), subtract(100, #2)","table_average(""diluted earnings per common share"", ""dec 29 2012"", ""dec 28 2013""), multiply(#0, 100), divide(#1, #0), subtract(100, #2)",0,,0,0
+UNP/2014/page_35.pdf-1,"subtract(99, 261)","subtract(99, 261)",1,-162.0,0,0
+HII/2014/page_69.pdf-4,"table_average(""ingalls of december 31 2014 funded"", ""ingalls of december 31 2014 unfunded"", ""ingalls of december 31 2014 total backlog"") / table_average(""total backlog of december 31 2014 funded"", ""total backlog of december 31 2014 unfunded"", ""total backlog of december 31 2014","table_average(""ingalls of december 31 2014 funded"", ""ingalls of december 31 2014 unfunded"", ""ingalls of december 31 2014 total backlog"")",0,,0,0
+IP/2009/page_37.pdf-1,"table_average(north_american_consumer_packaging_net_sales, 2009)","table_average(north_american_consumer_packaging_net_sales, 2009)",0,,0,0
+PM/2018/page_31.pdf-1,"divide(205, 160)","divide(205, 160)",1,1.28125,0,0
+JPM/2014/page_65.pdf-4,"table_average(jpmorgan_chase, none), table_average(s&p_500_index, none), greater(#0, #1)","table_average(jpmorgan_chase, none), table_average(s&p_500_index, none), greater(#0, #1)",0,,0,0
+SWKS/2006/page_81.pdf-1,"table_sum(pension adjustments, none)","table_sum(pension adjustments, none)",0,,0,0
+IP/2005/page_19.pdf-1,"subtract(1923, 2040)","subtract(1923, 2040)",1,-117.0,1,1
+PNC/2013/page_112.pdf-1,"divide(802, 2700)","divide(802, 2700)",1,0.29704,0,0
+KHC/2016/page_23.pdf-4,"multiply(83, 100), divide(#0, 87)","multiply(83, 100), divide(#0, 87)",1,95.4023,0,0
+UNP/2015/page_35.pdf-1,"divide(4249, 7385)","divide(4249, 7385)",1,0.57536,0,0
+AMT/2008/page_32.pdf-4,"table_max(""2008 the quarter ended december 31 of high"", none), subtract(#1, #0), divide(#2, #0), add(1, #3)","table_max(""2008 the quarter ended december 31 of high"", none), subtract(#1, #0), divide(#2, #0), add(1, #3)",0,,0,0
+PKG/2009/page_65.pdf-3,"subtract(37300, 29400)","subtract(37300, 29400)",1,7900.0,0,0
+PNC/2011/page_78.pdf-4,"table_sum(reserve, none)","table_sum(reserve, none)",0,,0,0
+PM/2018/page_31.pdf-2,"subtract(3.97, 3.79), divide(#0, 3.79), multiply(#1, 100)","subtract(3.97, 3.79), divide(#0, 3.79), multiply(#1, 100)",1,4.74934,0,0
+IPG/2008/page_62.pdf-4,"divide(subtract(const_12.8, const_29.6), const_29.6)","subtract(const_12.8, const_29.6)",1,-16.8,0,0
+TSCO/2017/page_31.pdf-2,"table_average(""s&p 500"", none), table_average(""s&p retail index"", none), divide(subtract(table_average(""s&p retail index"", none), table_average(""s&p 500"", none)), table_average(""s&p 500"", none))","table_average(""s&p 500"", none), table_average(""s&p retail index"", none), table_average(""s&p retail index"", none), table_average(""s&p 500"", none), table_average(""s&p 500"", none)",0,,0,0
+APD/2016/page_96.pdf-1,"table_average(cash_paid_for_interest, none)","table_average(cash_paid_for_interest, none)",0,,0,0
+BLL/2007/page_47.pdf-2,"table_average(""long-term debt of payments due by period (a) less than 1 year"", none), divide(#0, add(2302.6, 126.1, 547.6, 1174.9, 454.0)) * 100","add(2302.6, 126.1, 547.6, 1174.9, 454.0)",0,,0,0
+UNP/2014/page_25.pdf-1,"multiply(2.8, 1.06)","multiply(2.8, 1.06)",1,2.968,0,0
+RSG/2009/page_100.pdf-1,"table_average(""balance at beginning of year"", ""balance at end of year"")","table_average(""balance at beginning of year"", ""balance at end of year"")",0,,0,0
+PNC/2011/page_87.pdf-2,"table_average(a, none)","table_average(a, none)",0,,0,0
+AES/2001/page_44.pdf-2,"divide(739, 296)","divide(739, 296)",1,2.49662,1,1
+FBHS/2017/page_43.pdf-1,"multiply(4.2, divide(100, subtract(4.2, 2.9)))","subtract(4.2, 2.9)",1,1.3,0,0
+MSI/2006/page_61.pdf-2,"The facts provided do not include lease obligations for 2004. The lease obligations are only given for 2007 through 2011 and ""thereafter."" Since 2004 is not mentioned, we cannot calculate a drop from 2004 to 2011.
+
+Therefore, the question cannot be answered with the given information.  
+
+However, if we assume the question meant to ask about the drop from 20",,0,,0,0
+BLK/2013/page_124.pdf-1,"subtract(5284, 4939)","subtract(5284, 4939)",1,345.0,1,1
+SNA/2012/page_33.pdf-2,"divide(108.59, 100.00)","divide(108.59, 100.00)",1,1.0859,0,0
+LMT/2016/page_48.pdf-1,"table_average(""net sales"", ""2014, 2015, 2016"")","table_average(""net sales"", ""2014, 2015, 2016"")",0,,0,0
+TROW/2010/page_22.pdf-3,"subtract(38.4, 37.1)","subtract(38.4, 37.1)",1,1.3,1,1
+AAPL/2014/page_38.pdf-4,"subtract(16597, 15452)","subtract(16597, 15452)",1,1145.0,1,1
+AES/2017/page_157.pdf-3,"table_sum(mcac sbu of total revenue 2017, total revenue of total revenue 2017)","table_sum(mcac sbu of total revenue 2017, total revenue of total revenue 2017)",0,,0,0
+FIS/2007/page_91.pdf-1,"table_sum(""amount of unrecognized tax benefit at december 31 2007 of gross amount"", ""amount of decreases due to change of position of gross amount""), subtract(#1, #0)","table_sum(""amount of unrecognized tax benefit at december 31 2007 of gross amount"", ""amount of decreases due to change of position of gross amount""), subtract(#1, #0)",0,,0,0
+CNP/2010/page_31.pdf-1,"divide(390668, 438701)","divide(390668, 438701)",1,0.89051,1,1
+UNP/2009/page_65.pdf-1,"divide(60000, divide(const_2000, const_3))","divide(const_2000, const_3)",1,666.66667,0,0
+AON/2010/page_115.pdf-2,"divide(subtract(const_138, const_124), const_124)","subtract(const_138, const_124)",1,14.0,0,0
+ETR/2008/page_377.pdf-1,"divide(subtract(const_442.3, const_403.3), const_403.3)","subtract(const_442.3, const_403.3)",1,39.0,0,0
+TROW/2010/page_22.pdf-1,"divide(subtract(const_2.0, const_5.6), const_5.6)","subtract(const_2.0, const_5.6)",1,-3.6,0,0
+MRO/2015/page_18.pdf-4,"table_average(""total of net undeveloped acres expiring year ended december 31 , 2017"", none), divide(#0, table_average(""total africa of net undeveloped acres expiring year ended december 31 , 2017"", none))","table_average(""total of net undeveloped acres expiring year ended december 31, 2017"", none), table_average(""total africa of net undeveloped acres expiring year ended december 31, 2017"", none)",0,,0,0
+ETR/2011/page_376.pdf-1,"table_average(2010, 2011)","table_average(2010, 2011)",0,,0,0
+ETR/2017/page_316.pdf-4,"subtract(1522.6, 1520.5)","subtract(1522.6, 1520.5)",1,2.1,1,1
+CAG/2008/page_75.pdf-2,"divide(1179.1, 1931.5)","divide(1179.1, 1931.5)",1,0.61046,1,1
+AES/2002/page_46.pdf-1,"table_average(""high"", ""2002 first quarter""), table_average(""low"", ""2002 first quarter""), table_average(""high"", ""2001 first quarter""), table_average(""low"", ""2001 first quarter""), greater(subtract(#2, #1), subtract(#4, #3))","table_average(""high"", ""2002 first quarter""), table_average(""low"", ""2002 first quarter""), table_average(""high"", ""2001 first quarter""), table_average(""low"", ""2001 first quarter""), subtract(#2, #1), subtract(#4, #3)",0,,0,0
+LMT/2016/page_48.pdf-3,"The provided facts do not include any information about the ""aeronautics business segment"" or profit margins broken down by business segment. Therefore, it is not possible to determine the profit margin for the aeronautics business segment in 2014 based on the given data.
+
+No valid calculation can be performed.",,0,,0,0
+RE/2017/page_159.pdf-3,"table_average(""estimated cost to replace all such annuities"", none)","table_average(""estimated cost to replace all such annuities"", none)",0,,0,0
+BDX/2018/page_82.pdf-1,"table_average(service cost of pension plans, 2016, 2017, 2018)","table_average(service cost of pension plans, 2016, 2017, 2018)",0,,0,0
+CB/2010/page_88.pdf-2,"table_average(catastrophe_losses, 2008, 2009, 2010)","table_average(catastrophe_losses, 2008, 2009, 2010)",0,,0,0
+AON/2014/page_47.pdf-2,"subtract(1140, 780)","subtract(1140, 780)",1,360.0,0,0
+AON/2014/page_47.pdf-4,"multiply(100, divide(const_4264, const_35))","divide(const_4264, const_35)",1,121.82857,0,0
+PNC/2013/page_207.pdf-2,"table_max(""notional/contractamount"", ""designated as hedging instruments"") > table_max(""notional/contractamount"", ""not designated as hedging instruments"")","table_max(""notional/contractamount"", ""designated as hedging instruments""), table_max(""notional/contractamount"", ""not designated as hedging instruments"")",0,,0,0
+CB/2010/page_88.pdf-3,"subtract(366, 137)","subtract(366, 137)",1,229.0,1,1
+BLL/2007/page_35.pdf-1,"multiply(table_sum(a, ""october 1 to october 28 2007"", ""october 29 to november 25 2007""), table_average(""average pricepaid per share"", ""october 1 to october 28 2007"", ""october 29 to november 25 2007"")), divide(#0, const_1000000)","table_sum(a, ""october 1 to october 28 2007"", ""october 29 to november 25 2007""), table_average(""average pricepaid per share"", ""october 1 to october 28 2007"", ""october 29 to november 25 2007""), divide(#0, const_1000000)",0,,0,0
+GS/2016/page_77.pdf-1,"divide(2573, 4080)","divide(2573, 4080)",1,0.63064,1,1
+BLL/2010/page_28.pdf-4,"table_average(""ball corporation"", none), table_average(""s&p 500 index"", none), subtract(#0, #1), divide(#2, #1), multiply(#3, const_100)","table_average(""ball corporation"", none), table_average(""s&p 500 index"", none), subtract(#0, #1), divide(#2, #1), multiply(#3, const_100)",0,,0,0
+GPN/2017/page_77.pdf-1,"divide(45826, 62154)","divide(45826, 62154)",1,0.7373,1,1
+CME/2012/page_70.pdf-4,"The facts provided do not contain information about the percentage by which CME can increase their current line of credit. Therefore, based on the given data, it is not possible to calculate or determine the percentage increase. The question cannot be answered with the available information.",,0,,0,0
+DRE/2007/page_59.pdf-2,"divide(14722, 867558)","divide(14722, 867558)",1,0.01697,0,0
+JPM/2007/page_147.pdf-3,"table_average(""december 31 2007 (in millions) the total of 2007 is"", none)",,0,,0,0
+PNC/2018/page_171.pdf-1,"divide(table_average(""total commitments to extend credit and other commitments"", none), table_average(""home equity lines of credit"", none))","table_average(""total commitments to extend credit and other commitments"", none), table_average(""home equity lines of credit"", none)",0,,0,0
+HIG/2011/page_188.pdf-1,"table_average(2013, none), table_average(2014, none), divide(subtract(#1, #0), #0)","table_average(2013, none), table_average(2014, none), subtract(#1, #0)",0,,0,0
+FBHS/2017/page_76.pdf-1,"divide(#0, table_average(""total debt"", none))","table_average(""total debt"", none)",0,,0,0
+AAL/2013/page_15.pdf-1,"divide(table_sum(""flight attendants of american"", ""flight attendants of us airways"", ""flight attendants of wholly-owned regional carriers"", ""flight attendants of total""), table_sum(""pilots of american"", ""pilots of us airways"", ""pilots of wholly-owned regional carriers"", ""pilots of total""))","table_sum(""flight attendants of american"", ""flight attendants of us airways"", ""flight attendants of wholly-owned regional carriers"", ""flight attendants of total""), table_sum(""pilots of american"", ""pilots of us airways"", ""pilots of wholly-owned regional carriers"", ""pilots of total"")",0,,0,0
+LMT/2013/page_74.pdf-2,"table_average(""2011"", ""aeronautics"") / table_sum(""2011"", ""aeronautics"", ""space systems"", ""is&gs"", ""corporate headquarters"") * 100","table_average(""2011"", ""aeronautics""), table_sum(""2011"", ""aeronautics"", ""space systems"", ""is&gs"", ""corporate headquarters"")",0,,0,0
+ALLE/2016/page_43.pdf-1,"table_min(""allegion_plc"", ""s&p_500"")","table_min(""allegion_plc"", ""s&p_500"")",0,,0,0
+HUM/2017/page_133.pdf-1,"table_average(""stock repurchases in september 2014"", ""new authorization for share repurchases"")","table_average(""stock repurchases in september 2014"", ""new authorization for share repurchases"")",0,,0,0
+FIS/2007/page_91.pdf-2,"divide(1400000, 8400000)","divide(1400000, 8400000)",1,0.16667,1,0
+HIG/2008/page_318.pdf-3,"subtract(13777, 15915)","subtract(13777, 15915)",1,-2138.0,1,1
+RE/2015/page_33.pdf-1,"divide(264.9, 266.3)","divide(264.9, 266.3)",1,0.99474,1,1
+MRO/2009/page_56.pdf-3,"subtract(100, divide(3.99, 6.86) * 100)","divide(3.99, 6.86)",1,0.58163,0,0
+MSI/2006/page_61.pdf-1,"table_sum(""long-term debt obligations of payments due by period (1) 2007"", ""long-term debt obligations of payments due by period (1) 2011""), divide(subtract(#1, #0), #0), multiply(#2, const_100)","subtract(#1, #0), multiply(#2, const_100)",0,,0,0
+PNC/2011/page_87.pdf-3,"table_average(""home equity lines of credit with balloon payments"", none)","table_average(""home equity lines of credit with balloon payments"", none)",0,,0,0
+SNA/2012/page_33.pdf-1,"divide(subtract(83.66, 100.00), 100.00)","subtract(83.66, 100.00)",1,-16.34,0,0
+NKE/2016/page_37.pdf-1,"multiply(100, divide(const_4600, const_5500))","divide(const_4600, const_5500)",1,0.83636,1,0
+ZBH/2017/page_71.pdf-3,"divide(subtract(91.0, 78.7), 78.7)","subtract(91.0, 78.7)",1,12.3,0,0
+CMCSA/2015/page_64.pdf-2,"subtract(296, 443)","subtract(296, 443)",1,-147.0,1,1
+SLB/2012/page_44.pdf-1,"table_average(""total cost of shares purchased"", none)","table_average(""total cost of shares purchased"", none)",0,,0,0
+MRO/2006/page_33.pdf-3,"table_average(propane, none)","table_average(propane, none)",1,22.33333,1,1
+ETR/2016/page_418.pdf-3,"subtract(637.2, 7.0), subtract(637.2, 5.4), greater(#0, #1)","subtract(637.2, 7.0), subtract(637.2, 5.4), greater(#0, #1)",1,no,0,0
+MRO/2015/page_18.pdf-1,"table_sum(""total africa"", ""u.s."")","table_sum(""total africa"", ""u.s."")",0,,0,0
+LMT/2017/page_80.pdf-3,"subtract(303.1, 314.7)","subtract(303.1, 314.7)",1,-11.6,1,1
+ETR/2008/page_377.pdf-3,"divide(subtract(const_442.3, const_403.3), const_403.3)","subtract(const_442.3, const_403.3)",1,39.0,0,0
+GS/2017/page_106.pdf-3,"divide(table_average(""equity"", none), table_average(""total"", none))","table_average(""equity"", none), table_average(""total"", none)",0,,0,0
+RE/2017/page_159.pdf-1,"table_average(""2010 employee plan"", none)","table_average(""2010 employee plan"", none)",0,,0,0
+LMT/2010/page_42.pdf-2,"divide(374, 3173)","divide(374, 3173)",1,0.11787,1,1
+AES/2017/page_175.pdf-4,"divide(53, 86)","divide(53, 86)",1,0.61628,1,1
+HII/2017/page_124.pdf-1,"table_average(""equity compensation plans approved by security holders"", ""number of securities to be issued upon exercise of outstanding options, warrants and rights"")","table_average(""equity compensation plans approved by security holders"", ""number of securities to be issued upon exercise of outstanding options, warrants and rights"")",0,,0,0
+CME/2012/page_70.pdf-2,"divide(7973.6, 10973.1)","divide(7973.6, 10973.1)",1,0.72665,1,1
+ETR/2017/page_26.pdf-2,"multiply(divide(68, 1542), 100)","divide(68, 1542)",1,0.0441,1,1
+CDNS/2012/page_30.pdf-2,"table_average(""cadence design systems inc."", none), table_average(""nasdaq composite"", none), subtract(#1, #0)","table_average(""cadence design systems inc."", none), table_average(""nasdaq composite"", none), subtract(#1, #0)",0,,0,0
+FIS/2007/page_94.pdf-4,"table_average(""2009"", ""2010""), divide(#0, const_249038) * const_100","table_average(""2009"", ""2010""), divide(#0, const_249038)",0,,0,0
+AMT/2008/page_32.pdf-1,"divide(table_average(""outstanding shares"", ""registered holders""), table_average(""registered holders"", none))","table_average(""outstanding shares"", ""registered holders""), table_average(""registered holders"", none)",0,,0,0
+PM/2017/page_99.pdf-3,"subtract(1553, 1551)","subtract(1553, 1551)",1,2.0,1,1
+PNC/2011/page_78.pdf-2,"add(23, 18)","add(23, 18)",1,41.0,0,0
+JPM/2009/page_133.pdf-1,"subtract(1594, 336)","subtract(1594, 336)",1,1258.0,0,0
+LMT/2006/page_90.pdf-2,"divide(subtract(const_324, const_318), const_318)","subtract(const_324, const_318)",1,6.0,0,0
+AMT/2005/page_105.pdf-1,"The question refers to a percentage of the federal NOL (net operating loss) set to expire between 2016 to 2020 in 2005. However, the provided facts do not contain any information about NOLs, their expiration dates, or data related to 2005. There is no direct or implied data to calculate such a percentage.
+
+Therefore, based on the given facts, the query cannot be answered.
+
+No valid",,0,,0,0
+DRE/2013/page_39.pdf-1,"table_average(""office"", ""2012""), divide(#0, table_average(""total"", ""2012"")), multiply(#1, const_100)","table_average(""office"", ""2012""), table_average(""total"", ""2012""), multiply(#1, const_100)",0,,0,0
+AON/2011/page_134.pdf-1,"divide(subtract(const_6817, const_6423), const_6423)","subtract(const_6817, const_6423)",1,394.0,0,0
+DISCA/2012/page_39.pdf-2,"subtract(246, 90)","subtract(246, 90)",1,156.0,0,0
+MAS/2018/page_35.pdf-2,"subtract(15.7, 15.1)","subtract(15.7, 15.1)",1,0.6,0,0
+MRO/2008/page_69.pdf-3,"subtract(24.97, 91.90)","subtract(24.97, 91.90)",1,-66.93,0,0
+MRO/2009/page_139.pdf-1,"subtract(#1, #0)","subtract(#1, #0)",0,,0,0
+SPGI/2015/page_57.pdf-1,"table_average(""current assets the net assets acquired of $ 23"", none)","table_average(""current assets the net assets acquired of $ 23"", none)",0,,0,0
+FBHS/2017/page_76.pdf-2,"divide(subtract(1507.6, 1431.1), 1431.1)","subtract(1507.6, 1431.1)",1,76.5,1,1
+UNP/2014/page_75.pdf-1,"divide(subtract(3303, 3086), 3086)","subtract(3303, 3086)",1,217.0,0,0
+STT/2009/page_73.pdf-3,"table_average(""net unrealized loss at december 31, 2009"", none), table_average(""net unrealized loss at december 31, 2008"", none), divide(subtract(#0, #1), #1), multiply(#2, const_100)","table_average(""net unrealized loss at december 31, 2009"", none), table_average(""net unrealized loss at december 31, 2008"", none), subtract(#0, #1), multiply(#2, const_100)",0,,0,0
+MRO/2017/page_111.pdf-4,"subtract(546, 552)","subtract(546, 552)",1,-6.0,0,0
+RSG/2015/page_142.pdf-1,"divide(27000000, 12000000)","divide(27000000, 12000000)",1,2.25,1,1
+APD/2016/page_57.pdf-1,"table_average(""special items of $ 7.3 included pension settlement losses of $ 6.4 , special termination benefits of $ 2.0 , and curtailment gains of $ 1.1"", none) → #0  
+divide(#0, 7.3) → #1  
+multiply(#1, 100)","table_average(""special items of $ 7.3 included pension settlement losses of $ 6.4, special termination benefits of $ 2.0, and curtailment gains of $ 1.1"", none)",0,,0,0
+ABMD/2007/page_52.pdf-1,"table_sum(""aggregate purchase price"", ""contingent payment"")","table_sum(""aggregate purchase price"", ""contingent payment"")",0,,0,0
+RSG/2016/page_144.pdf-2,"divide(2700000, 37800000)","divide(2700000, 37800000)",1,0.07143,0,0
+GPN/2017/page_77.pdf-4,"table_average(cash, none)","table_average(cash, none)",1,45826.0,0,0
+MRO/2014/page_58.pdf-1,"divide(3400, 3500)","divide(3400, 3500)",1,0.97143,1,0
+CME/2017/page_97.pdf-1,"subtract(339235, 338240)","subtract(339235, 338240)",1,995.0,1,1
+SLB/2012/page_44.pdf-4,"divide(subtract(const_6800000000, const_6100000000), const_6100000000)","subtract(const_6800000000, const_6100000000)",1,700000000.0,0,0
+APD/2013/page_36.pdf-2,"divide(420.1, 44.6)","divide(420.1, 44.6)",1,9.41928,1,1
+ZBH/2017/page_71.pdf-2,"subtract(47.9, 42.5)","subtract(47.9, 42.5)",1,5.4,1,1
+RSG/2017/page_142.pdf-2,"divide(subtract(const_63.84, const_48.56), const_48.56)","subtract(const_63.84, const_48.56)",1,15.28,0,0
+HOLX/2008/page_84.pdf-1,"table_sum(""less than 1 year"", ""interest on long-term debt obligations"")","table_sum(""less than 1 year"", ""interest on long-term debt obligations"")",0,,0,0
+HIG/2011/page_188.pdf-3,"table_sum(""amortization 2014 dac of 2011"", ""amortization 2014 dac from discontinued operations of 2011"")","table_sum(""amortization 2014 dac of 2011"", ""amortization 2014 dac from discontinued operations of 2011"")",0,,0,0
+UA/2009/page_50.pdf-2,"divide(subtract(300000, 1200000), 1200000)","subtract(300000, 1200000)",1,-900000.0,0,0
+ZBH/2003/page_58.pdf-2,"subtract(384.3, 206.7)","subtract(384.3, 206.7)",1,177.6,1,1
+HOLX/2012/page_113.pdf-2,"divide(23200000, 3.5)","divide(23200000, 3.5)",1,6628571.42857,0,0
+GS/2016/page_77.pdf-2,"table_average(""equity securities"", none)","table_average(""equity securities"", none)",0,,0,0
+JPM/2018/page_110.pdf-5,"subtract(228681, 203449)","subtract(228681, 203449)",1,25232.0,0,0
+SNPS/2006/page_69.pdf-1,"table_sum(intangible_assets, core_developed_technology, customer_relationships, backlog), divide(#0, 15704), multiply(#1, const_100)","table_sum(intangible_assets, core_developed_technology, customer_relationships, backlog), divide(#0, 15704), multiply(#1, const_100)",0,,0,0
+LKQ/2010/page_84.pdf-2,"subtract(66900000, 57200000), divide(#0, 57200000), multiply(#1, const_100)","subtract(66900000, 57200000), divide(#0, 57200000), multiply(#1, const_100)",1,16.95804,0,0
+ETR/2008/page_249.pdf-1,"multiply(1526, const_100), divide(#0, 14669)","multiply(1526, const_100), divide(#0, 14669)",1,10.40289,0,0
+STT/2008/page_83.pdf-1,"table_average(""foreign exchange products of 2008 annual average"", none)","table_average(""foreign exchange products of 2008 annual average"", none)",0,,0,0
+CB/2010/page_200.pdf-2,"divide(subtract(const_2430, const_2369), const_2369)","subtract(const_2430, const_2369)",1,61.0,0,0
+AAPL/2014/page_38.pdf-1,"table_max(""cash cash equivalents and marketable securities"", none)","table_max(""cash cash equivalents and marketable securities"", none)",0,,0,0
+AAL/2013/page_15.pdf-4,"divide(7900, 60100)","divide(7900, 60100)",1,0.13145,1,1
+ETR/2011/page_341.pdf-1,"divide(const_100, 1046)","divide(const_100, 1046)",1,0.0956,0,0
+JPM/2014/page_65.pdf-5,"table_average(jpmorgan_chase, none), table_average(kbw_bank_index, none), greater(#0, #1)","table_average(jpmorgan_chase, none), table_average(kbw_bank_index, none), greater(#0, #1)",0,,0,0
+AAPL/2014/page_38.pdf-2,"subtract(20624, 16597)","subtract(20624, 16597)",1,4027.0,1,1
+RE/2017/page_159.pdf-2,"divide(subtract(34444, 33860), 33860)","subtract(34444, 33860)",1,584.0,0,0
+LMT/2012/page_47.pdf-2,"table_average(""net sales decrease"", ""operating profit decrease"")","table_average(""net sales decrease"", ""operating profit decrease"")",0,,0,0
+BKR/2017/page_103.pdf-2,"multiply(37, 2.1%)","multiply(37, 2.1%)",1,0.777,0,0
+LMT/2016/page_48.pdf-2,"The question asks for the **ratio of the increasing factor to the offsetting factors that reduced sales** in 2016, based on the increase in net sales.
+
+From the facts:
+
+- Net sales in 2016: $17,769 million  
+- Net sales in 2015: $15,570 million  
+- Increase in net sales from 2015 to 2016: $",,0,,0,0
+SYY/2019/page_9.pdf-1,"subtract(62, 61)","subtract(62, 61)",1,1.0,0,0
+FIS/2007/page_94.pdf-1,"table_average(""2008"", ""the thereafter of 83382"") , divide(#0, table_average(""2008"", ""the total of 83382"")) , multiply(#1, const_100)","table_average(""2008"", ""the thereafter of 83382""), table_average(""2008"", ""the total of 83382""), multiply(#1, const_100)",0,,0,0
+AON/2009/page_46.pdf-1,"table_average(""segment revenue"", none)","table_average(""segment revenue"", none)",0,,0,0
+TROW/2010/page_22.pdf-4,"divide(table_sum(""cash and cash equivalents"", ""mutual fund investment holdings""), 2600)","table_sum(""cash and cash equivalents"", ""mutual fund investment holdings"")",0,,0,0
+ETR/2011/page_376.pdf-3,"divide(721, 4.5)","divide(721, 4.5)",1,160.22222,0,0
+VTR/2007/page_47.pdf-1,"subtract(138311810, 14669)","subtract(138311810, 14669)",1,138297141.0,0,0
+BLK/2016/page_119.pdf-2,"table_average(""total long-term borrowings of maturityamount"", none), multiply(#0, const_0.01), multiply(9, 8), divide(#1, #0)","table_average(""total long-term borrowings of maturityamount"", none), multiply(#0, const_0.01), multiply(9, 8), divide(#1, #0)",0,,0,0
+BLK/2016/page_119.pdf-1,"table_average(""4.25% (4.25%) notes due 2021 of maturityamount"", none) divide(100, table_average(""total long-term borrowings of maturityamount"", none))","table_average(""total long-term borrowings of maturityamount"", none)",0,,0,0
+AMT/2004/page_81.pdf-2,"table_average(2004, other intangible assets net), table_average(2003, other intangible assets net), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)","table_average(2004, other intangible assets net), table_average(2003, other intangible assets net), subtract(#1, #0), divide(#2, #0), multiply(#3, const_100)",0,,0,0
+BLL/2007/page_35.pdf-2,"table_sum(a, none)","table_sum(a, none)",0,,0,0
+TFX/2015/page_70.pdf-1,"multiply(1442912, 86.98)","multiply(1442912, 86.98)",1,125504485.76,0,0
+ADI/2011/page_50.pdf-1,"divide(subtract(17859, 7256), 7256)","subtract(17859, 7256)",1,10603.0,0,0
+LMT/2010/page_42.pdf-3,"table_sum(""net cash provided by operating activities"", ""net cash used for investing activities"", ""net cash used for financing activities"")","table_sum(""net cash provided by operating activities"", ""net cash used for investing activities"", ""net cash used for financing activities"")",0,,0,0
+JPM/2007/page_147.pdf-1,"multiply(divide(412, 20048), const_100)","divide(412, 20048)",1,0.02055,0,0
+IPG/2008/page_21.pdf-4,"multiply(29704, 5.99)","multiply(29704, 5.99)",1,177926.96,1,1
+GS/2016/page_77.pdf-3,"divide(2402, 3034)","divide(2402, 3034)",1,0.79169,0,0
+LMT/2006/page_90.pdf-1,"divide(288, 1100)","divide(288, 1100)",1,0.26182,1,0
+MAS/2018/page_60.pdf-1,"table_sum(""total of revised"", none)","table_sum(""total of revised"", none)",0,,0,0
+MRO/2007/page_134.pdf-4,"subtract(#1, #0)","subtract(#1, #0)",0,,0,0
+PM/2017/page_99.pdf-4,"subtract(1551, 1549)","subtract(1551, 1549)",1,2.0,1,1
+JPM/2008/page_85.pdf-5,"divide(48616, 184720)","divide(48616, 184720)",1,0.26319,1,1
+TFX/2015/page_70.pdf-2,"multiply(table_max(""equity compensation plans approved by security holders of number of securities remaining available for future issuance under equity compensation plans (excluding securities reflected in column (a))"", none), const_1000000)",,0,,0,0
+AWK/2013/page_132.pdf-1,"divide(const_72238, const_7367)","divide(const_72238, const_7367)",1,9.80562,1,0
+HWM/2017/page_41.pdf-2,"table_average(""second of 2017 high"", ""second of 2017 low"")","table_average(""second of 2017 high"", ""second of 2017 low"")",0,,0,0
+IP/2007/page_75.pdf-2,"table_sum(""lease obligations"", ""2008""), divide(#0, table_sum(""total"", ""2008"")) * 100","table_sum(""lease obligations"", ""2008""), table_sum(""total"", ""2008"")",0,,0,0
+IP/2007/page_31.pdf-2,"table_average(european_industrial_packaging_net_sales, 2006), divide(#0, const_1000), multiply(#1, const_100)","table_average(european_industrial_packaging_net_sales, 2006), divide(#0, const_1000), multiply(#1, const_100)",0,,0,0
+AMAT/2014/page_18.pdf-1,"table_average(""silicon systems group"", ""2014"") - table_average(""silicon systems group"", ""2013"") , divide(table_average(""silicon systems group"", ""2014"") - table_average(""silicon systems group"", ""2013""), table_average(""silicon systems group"", ""2013""))","table_average(""silicon systems group"", ""2014""), table_average(""silicon systems group"", ""2013""), table_average(""silicon systems group"", ""2014""), table_average(""silicon systems group"", ""2013""), table_average(""silicon systems group"", ""2013"")",0,,0,0
+AMT/2010/page_34.pdf-1,"subtract(56.73, 53.14), divide(#0, 53.14)","subtract(56.73, 53.14), divide(#0, 53.14)",1,0.06756,1,1
+JKHY/2014/page_30.pdf-1,"table_average(""s&p 500"", none)","table_average(""s&p 500"", none)",0,,0,0
+AAPL/2004/page_36.pdf-1,"table_max(gross_margin, 2004, 2003, 2002)","table_max(gross_margin, 2004, 2003, 2002)",0,,0,0
+PNC/2009/page_41.pdf-4,"table_average(fair_value, total_commercial_mortgages)","table_average(fair_value, total_commercial_mortgages)",0,,0,0
+ETR/2002/page_86.pdf-4,"add(multiply(7, const_108000000), multiply(8, const_20000000))","multiply(7, const_108000000), multiply(8, const_20000000)",1,160000000.0,0,0
+PM/2015/page_85.pdf-4,"subtract(888, 120)","subtract(888, 120)",1,768.0,1,1
+DRE/2007/page_59.pdf-3,"divide(66.1, 89.7)","divide(66.1, 89.7)",1,0.7369,0,0
+AES/2001/page_44.pdf-4,#0 = 827,,0,,0,0
+AON/2010/page_115.pdf-4,"multiply(100, subtract(divide(221, 209), const_1))","divide(221, 209)",1,1.05742,0,0
+ETR/2017/page_26.pdf-1,"divide(subtract(const_1542, const_1666), const_1666)","subtract(const_1542, const_1666)",1,-124.0,0,0
+HII/2017/page_104.pdf-2,"table_average(credit_facilities, none)","table_average(credit_facilities, none)",0,,0,0
+ETR/2015/page_131.pdf-3,"divide(subtract(const_1631181, const_768588), const_768588)","subtract(const_1631181, const_768588)",1,862593.0,0,0
+UAA/2016/page_52.pdf-3,"multiply(3122, 100), divide(#0, 408547)","multiply(3122, 100), divide(#0, 408547)",1,0.76417,0,0
+IPG/2008/page_21.pdf-2,"multiply(#1, #2)","multiply(#1, #2)",0,,0,0
+VNO/2012/page_84.pdf-1,"table_average(nareit_all_equity_index, 2007 to 2012)","table_average(nareit_all_equity_index, 2007 to 2012)",0,,0,0
+ETR/2011/page_376.pdf-4,"table_average(net_income, 2010), divide(#0, 540.2)","table_average(net_income, 2010), divide(#0, 540.2)",0,,0,0
+CMCSA/2015/page_64.pdf-3,"table_average(investment income ( loss ) net of 2013, investment income ( loss ) net of 2014, investment income ( loss ) net of 2015)",,0,,0,0
+IP/2007/page_31.pdf-3,"subtract(5245, 4925)","subtract(5245, 4925)",1,320.0,0,0
+UNP/2014/page_25.pdf-3,"divide(subtract(const_2600, const_2600), const_2600)","subtract(const_2600, const_2600)",1,0.0,1,0
+UNP/2006/page_37.pdf-3,"divide(subtract(const_1472, const_1328), const_1328)","subtract(const_1472, const_1328)",1,144.0,0,0
+UNP/2014/page_35.pdf-3,"divide(subtract(const_6823, const_6161), const_6161)","subtract(const_6823, const_6161)",1,662.0,0,0
+ABMD/2009/page_56.pdf-2,"table_average(""contractual obligations the contractual obligations ( 1 ) of payments due by fiscal year ( in $ 000 2019s ) less than 1 year"", ""contractual obligations the total obligations of payments due by fiscal year ( in $ 000 2019s ) total"")",,0,,0,0
+CAT/2017/page_85.pdf-3,"divide(259, 412)","divide(259, 412)",1,0.62864,0,0
+AAP/2012/page_12.pdf-3,"table_average(new stores ( 1 ), 2008 to 2012)",,0,,0,0
+UNP/2014/page_75.pdf-2,"divide(subtract(const_2400, const_2300), const_2300)","subtract(const_2400, const_2300)",1,100.0,0,0
+UNP/2015/page_24.pdf-2,"divide(subtract(const_1504, const_2085), const_2085)","subtract(const_1504, const_2085)",1,-581.0,0,0
+BDX/2018/page_82.pdf-3,"table_average(interest cost of pension plans, 2016, 2017, 2018)","table_average(interest cost of pension plans, 2016, 2017, 2018)",0,,0,0
+IP/2012/page_93.pdf-3,"The question asks for the percent of the total future minimum commitments under existing non-cancelable operating leases that was due in 2014, as of December 31, 2012.
+
+From the facts:
+- Lease obligations:
+  - 2013: $198
+  - 2014: $136
+  - 2015: $106
+  - 2016",,0,,0,0
+BDX/2018/page_82.pdf-4,"table_sum(net_pension_cost_2016, net_pension_cost_2017, net_pension_cost_2018)","table_sum(net_pension_cost_2016, net_pension_cost_2017, net_pension_cost_2018)",0,,0,0
+PPG/2011/page_70.pdf-3,"divide(45, 74)","divide(45, 74)",1,0.60811,0,0
+ABMD/2006/page_75.pdf-3,"divide(1371, 4819)","divide(1371, 4819)",1,0.2845,1,1
+UNP/2011/page_76.pdf-3,"divide(325, 2713)","divide(325, 2713)",1,0.11979,1,1
+ABMD/2009/page_88.pdf-3,"add(5583333, 5583333), add(#1, 5583334)","add(5583333, 5583333), add(#1, 5583334)",0,,0,0
+IP/2012/page_93.pdf-4,"table_average(""rent expense"", none)","table_average(""rent expense"", none)",0,,0,0
+ABMD/2009/page_56.pdf-3,"table_average(""operating lease commitments of payments due by fiscal year (in $000 2019s) less than 1 year"", ""operating lease commitments of payments due by fiscal year (in $000 2019s) 1-3 years"", ""operating lease commitments of payments due by fiscal year (in $000 2019s) 3-5 years"", ""operating lease",,0,,0,0
+UNP/2007/page_65.pdf-2,"divide(550, 7680)","divide(550, 7680)",1,0.07161,1,1
+BKR/2017/page_103.pdf-3,"table_average(""compensation expense"", ""acceleration of equity awards"")","table_average(""compensation expense"", ""acceleration of equity awards"")",0,,0,0
+PPG/2011/page_70.pdf-4,"divide(55, 73)","divide(55, 73)",1,0.75342,0,0
+CAT/2017/page_85.pdf-4,"divide(259, 412)","divide(259, 412)",1,0.62864,1,1
+IP/2009/page_37.pdf-3,"subtract(433, 17)","subtract(433, 17)",1,416.0,1,1
+UNP/2013/page_54.pdf-3,"multiply(divide(2077, 20684), const_100)","divide(2077, 20684)",1,0.10042,0,0
+IP/2005/page_19.pdf-3,"table_average(""industry segment operating profits"", none)","table_average(""industry segment operating profits"", none)",0,,0,0
+UNP/2008/page_79.pdf-2,"table_average(""total capacity to sell undivided interests"", ""2008"") - table_average(""total capacity to sell undivided interests"", ""2007"")","table_average(""total capacity to sell undivided interests"", ""2008""), table_average(""total capacity to sell undivided interests"", ""2007"")",0,,0,0
+BLK/2012/page_160.pdf-3,"table_average(""2011"", ""included in the balance of unrecognized tax benefits at december 31 , 2011"")","table_average(""2011"", ""included in the balance of unrecognized tax benefits at december 31, 2011"")",0,,0,0
+IP/2007/page_75.pdf-3,"The question asks for the **percent of the total future minimum commitments under existing non-cancelable operating leases for purchase obligations** at December 31, 2007.
+
+However, the facts provided give data starting from **2008**, and there is **no data for 2007**. The lease obligations, purchase obligations, and total commitments are all given for years from 2008 onward.
+
+Since the question refers to **December",,0,,0,0
+UNP/2008/page_77.pdf-2,"divide(subtract(93, 103), 103)","subtract(93, 103)",1,-10.0,0,0
+ANSS/2013/page_55.pdf-2,"divide(60129, 144535)","divide(60129, 144535)",1,0.41602,1,1
+UNP/2014/page_75.pdf-3,"divide(subtract(const_2300, const_2100), const_2100)","subtract(const_2300, const_2100)",1,200.0,0,0
+BLK/2017/page_122.pdf-1,"The provided facts do not contain sufficient information to calculate the growth rate in based rent for Hudson Yards, New York facility in the second period. No data related to rent, periods, or growth rates is explicitly given. Therefore, no valid operation can be performed based on the current facts.
+
+Error: Insufficient data to compute growth rate.",,0,,0,0
+UNP/2015/page_35.pdf-2,"divide(subtract(7344, 7385), 7385)","subtract(7344, 7385)",1,-41.0,0,0
+UNP/2014/page_25.pdf-4,"divide(subtract(const_28000, const_26000), const_26000)","subtract(const_28000, const_26000)",1,2000.0,0,0
+IP/2009/page_37.pdf-4,"table_average(sales, none)","table_average(sales, none)",1,3090.0,1,1
+ANSS/2013/page_55.pdf-3,"divide(table_sum(""global headquarters operating leases"", none), table_sum(""total contractual obligations"", none))","table_sum(""global headquarters operating leases"", none), table_sum(""total contractual obligations"", none)",0,,0,0
+ABMD/2009/page_88.pdf-4,"divide(const_664612, const_1800000)","divide(const_664612, const_1800000)",1,0.36923,0,0
+ABMD/2007/page_52.pdf-3,"divide(table_sum(""operating lease obligations""), table_sum(""total obligations""))","table_sum(""operating lease obligations""), table_sum(""total obligations"")",0,,0,0
+UNP/2015/page_24.pdf-3,"divide(subtract(524, 1504), 1504)","subtract(524, 1504)",1,-980.0,0,0
+BLK/2014/page_119.pdf-3,"table_average(""maturity amount"", none)","table_average(""maturity amount"", none)",0,,0,0
+LKQ/2010/page_84.pdf-3,"table_sum(2014, none)","table_sum(2014, none)",1,37660.0,0,0
+UNP/2011/page_21.pdf-3,"The facts provided do not include any data about October (e.g., total number of shares purchased in October or any related metrics). Therefore, it is not possible to calculate the percentage of total shares purchased in October based on the given information.
+
+No valid computation can be performed.  
+Answer: none",,0,,0,0
+MO/2012/page_44.pdf-3,"divide(subtract(const_763.3, const_734.6), const_734.6)","subtract(const_763.3, const_734.6)",1,28.7,0,0
+LKQ/2018/page_83.pdf-2,"subtract(23151, 19634)","subtract(23151, 19634)",1,3517.0,1,1
+BLK/2012/page_37.pdf-3,"divide(121640, 138425)","divide(121640, 138425)",1,0.87874,1,1
+BLK/2013/page_124.pdf-3,"multiply(25, 1)","multiply(25, 1)",1,25.0,0,0
+LKQ/2010/page_84.pdf-4,"table_sum(2010, 2009, 2008)","table_sum(2010, 2009, 2008)",0,,0,0
+APTV/2014/page_49.pdf-1,"The question asks for the lowest return for the first month of the investment. We are given data for the company index values at specific dates, starting from November 17, 2011, and ending at December 31, 2014. The first month of investment would be from November 17, 2011, to December 31, 2011.
+
+We need to compute the return for each company during",,0,,0,0
+IP/2005/page_35.pdf-3,"table_average(""purchase obligations (a)"", ""2006"") multiply(100, divide(const_2400, #0))","divide(const_2400, #0)",0,,0,0
+BLK/2014/page_119.pdf-4,"table_average(""maturity amount"", none)","table_average(""maturity amount"", none)",0,,0,0
+TFX/2015/page_70.pdf-3,"table_average(""weighted-average exercise price of outstanding options warrants and rights"", none)","table_average(""weighted-average exercise price of outstanding options warrants and rights"", none)",0,,0,0
+UNP/2013/page_44.pdf-2,"table_average(""open sites beginning balance"", none) subtract table_average(""open sites ending balance"", none)","table_average(""open sites beginning balance"", none), table_average(""open sites ending balance"", none)",0,,0,0
+UNP/2014/page_35.pdf-4,"divide(subtract(const_7385, const_6823), const_6823)","subtract(const_7385, const_6823)",1,562.0,0,0
+UNP/2011/page_21.pdf-4,"table_sum(""total number ofsharespurchased [a]"", ""dec . 1 through dec . 31"") / table_sum(""total number ofsharespurchased [a]"", ""total"") * 100","table_sum(""total number ofsharespurchased [a]"", ""dec . 1 through dec . 31""), table_sum(""total number ofsharespurchased [a]"", ""total"")",0,,0,0
+BLK/2016/page_119.pdf-3,"table_average(""gains of $ 14 million ( net of tax of $ 8 million ) and $ 19 million ( net of tax of $ 11 million ) were recognized in other comprehensive income for 2016 and 2015 , respectively."", none)",,0,,0,0
+SNPS/2006/page_69.pdf-3,"subtract(14000, 8500)","subtract(14000, 8500)",1,5500.0,0,0
+UNP/2008/page_77.pdf-3,"subtract(367, 394), divide(#0, 394), multiply(#1, const_100)","subtract(367, 394), divide(#0, 394), multiply(#1, const_100)",1,-6.85279,0,0
+AAP/2011/page_28.pdf-3,"table_min(""advance auto parts"", none), subtract(#1, #0)","table_min(""advance auto parts"", none), subtract(#1, #0)",0,,0,0
+BLK/2016/page_119.pdf-4,"subtract(const_14, const_8)","subtract(const_14, const_8)",1,6.0,0,0
+MO/2012/page_44.pdf-4,"divide(subtract(const_734.6, const_724.4), const_724.4)","subtract(const_734.6, const_724.4)",1,10.2,0,0
+IP/2006/page_32.pdf-3,"divide(subtract(691, 670), 691)","subtract(691, 670)",1,21.0,0,0
+LKQ/2018/page_83.pdf-3,"divide(43, 105)","divide(43, 105)",1,0.40952,0,0
+PPG/2013/page_40.pdf-3,"divide(subtract(const_488, const_453), const_453)","subtract(const_488, const_453)",1,35.0,0,0
+IP/2007/page_75.pdf-4,"divide(41, 415)","divide(41, 415)",1,0.0988,1,1
+BLK/2012/page_37.pdf-4,"divide(298024, 403484)","divide(298024, 403484)",1,0.73863,1,1
+PPG/2013/page_40.pdf-4,"divide(subtract(const_453, const_428), const_428)","subtract(const_453, const_428)",1,25.0,0,0
+BLK/2013/page_125.pdf-3,"table_average(""rent expense and certain office equipment expense"", ""2013"") - table_average(""rent expense and certain office equipment expense"", ""2012"") divided by table_average(""rent expense and certain office equipment expense"", ""2012"")","table_average(""rent expense and certain office equipment expense"", ""2013""), table_average(""rent expense and certain office equipment expense"", ""2012""), table_average(""rent expense and certain office equipment expense"", ""2012"")",0,,0,0
+ABMD/2004/page_26.pdf-3,"divide(table_sum(""thereafter"", ""2009""), table_sum(""total future minimum lease payments"", ""operating leases""))","table_sum(""thereafter"", ""2009""), table_sum(""total future minimum lease payments"", ""operating leases"")",0,,0,0
+IP/2005/page_35.pdf-4,"The question refers to ""the percent of the total contractual obligations for future payments for total debt in 2005,"" but the facts provided do not include any data for 2005. Additionally, there is no explicit information about ""contractual obligations for future payments"" beyond the given years (2006–2010 and thereafter). The only mention of contractual obligations is in 2006, where $2.4 billion is allocated",,0,,0,0
+IP/2006/page_32.pdf-4,"divide(#1, #0)","divide(#1, #0)",0,,0,0
+UNP/2015/page_35.pdf-3,"divide(subtract(const_7385, const_6823), const_6823)","subtract(const_7385, const_6823)",1,562.0,0,0
+VLO/2018/page_25.pdf-3,"multiply(7673266, 81.77)","multiply(7673266, 81.77)",1,627442960.82,1,1
+UNP/2011/page_76.pdf-4,"divide(249, 3108)","divide(249, 3108)",1,0.08012,1,1
+BLK/2013/page_125.pdf-4,"divide(subtract(133, 154), 154)","subtract(133, 154)",1,-21.0,0,0
+BLK/2013/page_124.pdf-4,"multiply(10, 2)","multiply(10, 2)",1,20.0,0,0
+ABMD/2004/page_26.pdf-4,"multiply(divide(769, 4578), const_100)","divide(769, 4578)",1,0.16798,1,1
+UNP/2008/page_79.pdf-3,"table_average(""sold receivables"", none)","table_average(""sold receivables"", none)",0,,0,0
+UNP/2013/page_54.pdf-4,"multiply(divide(1510, 18508), const_100)","divide(1510, 18508)",1,0.08159,0,0
+UNP/2013/page_44.pdf-3,"table_sum(""open sites beginning balance"", ""closed sites""), subtract(#1, #0)","table_sum(""open sites beginning balance"", ""closed sites""), subtract(#1, #0)",0,,0,0
+IP/2007/page_31.pdf-4,"table_average(2005, none)","table_average(2005, none)",0,,0,0
+BLK/2017/page_122.pdf-3,"The provided facts do not contain sufficient information to calculate the growth rate in based rent for Hudson Yards, New York facility in the third period. No data related to rent, periods, or growth rates is explicitly given. Therefore, no valid operation can be performed based on the current facts.
+
+Error: Insufficient data to compute growth rate.",,0,,0,0
+LKQ/2016/page_26.pdf-3,"divide(219, 140)","divide(219, 140)",1,1.56429,1,1
+UNP/2006/page_37.pdf-4,"divide(subtract(const_1487, const_1472), const_1472)","subtract(const_1487, const_1472)",1,15.0,0,0
+BLK/2012/page_160.pdf-4,"table_average(""2012"", ""unrecognized tax benefits that would affect effective tax rate"")","table_average(""2012"", ""unrecognized tax benefits that would affect effective tax rate"")",0,,0,0
+BKR/2017/page_103.pdf-4,"multiply(1.7, 40.18)","multiply(1.7, 40.18)",1,68.306,1,1
+SNPS/2006/page_69.pdf-4,"table_average(acquisition-related costs of ( in thousands ), none)",,0,,0,0
+VRTX/2003/page_71.pdf-3,"table_average(common stock under stock and option plans, none)","table_average(common stock under stock and option plans, none)",1,21829.0,0,0
+APTV/2014/page_49.pdf-3,"table_max(""delphi automotive plc (1)"", ""december 31 2012"") - table_min(""delphi automotive plc (1)"", ""december 31 2012"")",,0,,0,0
+ABMD/2007/page_52.pdf-4,"table_sum(""purchase obligations of payments due by fiscal year total"", ""purchase obligations of payments due by fiscal year less than 1 year"", ""purchase obligations of payments due by fiscal year 1-3 years"", ""purchase obligations of payments due by fiscal year 3-5 years"", ""purchase obligations of payments due by fiscal year more than 5 years"") / table_sum(""total obligations of payments due by fiscal year total"", ""total obligations of payments due by fiscal year","table_sum(""purchase obligations of payments due by fiscal year total"", ""purchase obligations of payments due by fiscal year less than 1 year"", ""purchase obligations of payments due by fiscal year 1-3 years"", ""purchase obligations of payments due by fiscal year 3-5 years"", ""purchase obligations of payments due by fiscal year more than 5 years"")",0,,0,0
+ABMD/2006/page_75.pdf-4,"divide(1035, 4819)","divide(1035, 4819)",1,0.21477,1,1
+ADI/2011/page_81.pdf-3,"multiply(100, subtract(divide(26410, 8690), const_1))","divide(26410, 8690)",1,3.03913,0,0
+ADI/2011/page_50.pdf-3,"multiply(145000000, 1.6100000000000001)","multiply(145000000, 1.6100000000000001)",1,233450000.0,0,0
+UNP/2007/page_65.pdf-3,"divide(4717, 7680)","divide(4717, 7680)",1,0.61419,1,1

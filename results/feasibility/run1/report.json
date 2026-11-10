@@ -1,0 +1,170 @@
+{
+  "started": "2026-11-10 02:15:25",
+  "environment": {
+    "python": "3.13.16",
+    "torch": "2.11.0+cu130",
+    "cuda": true,
+    "git_commit": "59f8396b4cb0095c072a4b02b2c12b0713ad02d3",
+    "gpu": "Tesla T4",
+    "gpu_count": 1,
+    "transformers": "5.22.2",
+    "peft": "0.21.2",
+    "trl": "1.17.1",
+    "accelerate": "1.15.0",
+    "datasets": "5.1.0"
+  },
+  "prompt_version": 1,
+  "prompt_fingerprint": "4139bfc3519c",
+  "arm_items": 5820,
+  "candidates": {
+    "Qwen/Qwen2.5-1.5B-Instruct": {
+      "licence": {
+        "license": "apache-2.0",
+        "gated": false,
+        "sha": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"
+      },
+      "step_seconds": {
+        "licence": 0.2,
+        "tokens": 8.0,
+        "dev_zero_shot": 253.1,
+        "dev_few_shot": 353.7,
+        "dev_zero_shot_repeat": 251.5,
+        "timed_train": 4.3,
+        "estimate": 0.0
+      },
+      "tokens": {
+        "train_example_tokens": {
+          "median": 367,
+          "p90": 529,
+          "p99": 692,
+          "max": 852,
+          "total": 2261167
+        },
+        "dev_few_shot_prompt_tokens": {
+          "median": 862,
+          "max": 1195
+        },
+        "program_tokens_max": 66
+      },
+      "dev_zero_shot": {
+        "items": 883,
+        "exe_correct": 29,
+        "prog_correct": 27,
+        "executes": 206,
+        "exe_acc": 0.03284258210645526,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 251.0,
+        "prompt_tokens_mean": 368.3
+      },
+      "dev_few_shot": {
+        "items": 883,
+        "exe_correct": 43,
+        "prog_correct": 36,
+        "executes": 286,
+        "exe_acc": 0.04869762174405436,
+        "split": "dev",
+        "shots": 4,
+        "seconds": 351.0,
+        "prompt_tokens_mean": 882.3
+      },
+      "dev_zero_shot_repeat": {
+        "items": 883,
+        "exe_correct": 29,
+        "prog_correct": 27,
+        "executes": 206,
+        "exe_acc": 0.03284258210645526,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 250.0,
+        "prompt_tokens_mean": 368.3,
+        "same_reply": 883,
+        "same_exe_correct": 883,
+        "changed_ids": []
+      },
+      "timed_train": {
+        "error": "ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')",
+        "traceback": "          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/finqa-lora/finqa_lora/feasibility.py\", line 92, in timed_train\n    metrics, trainer = train(cfg, tok=tok)\n                       ~~~~~^^^^^^^^^^^^^^\n  File \"/tmp/finqa-lora/finqa_lora/train.py\", line 143, in train\n    trainer = SFTTrainer(model=model, args=args, train_dataset=ds, processing_class=tok,\n                         peft_config=peft_cfg, callbacks=[timer])\n  File \"/usr/local/lib/python3.13/dist-packages/trl/trainer/sft_trainer.py\", line 918, in __init__\n    model = get_peft_model(model, peft_config, **get_peft_model_kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/peft/mapping_func.py\", line 198, in get_peft_model\n    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        model,\n        ^^^^^^\n    ...<3 lines>...\n        low_cpu_mem_usage=low_cpu_mem_usage,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 2082, in __init__\n    super().__init__(model, peft_config, adapter_name, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 177, in __init__\n    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)\n                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 344, in __init__\n    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 978, in inject_adapter\n    self._create_and_replace(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        peft_config, adapter_name, target, target_name, parent, current_key=key\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 389, in _create_and_replace\n    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 552, in _create_new_module\n    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/torchao.py\", line 160, in dispatch_torchao\n    if not is_torchao_available():\n           ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/import_utils.py\", line 162, in is_torchao_available\n    raise ImportError(\n    ...<2 lines>...\n    )\nImportError: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported\n"
+      },
+      "estimate": {
+        "error": "KeyError('examples_per_step')",
+        "traceback": "Traceback (most recent call last):\n  File \"/tmp/finqa-lora/finqa_lora/feasibility.py\", line 110, in step\n    r[name] = fn()\n              ~~^^\n  File \"/tmp/finqa-lora/finqa_lora/feasibility.py\", line 152, in estimate\n    steps_per_epoch = -(-n // t[\"examples_per_step\"])\n                              ~^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'examples_per_step'\n"
+      }
+    },
+    "Qwen/Qwen3-4B-Instruct-2507": {
+      "licence": {
+        "license": "apache-2.0",
+        "gated": false,
+        "sha": "cdbee75f17c01a7cc42f958dc650907174af0554"
+      },
+      "step_seconds": {
+        "licence": 0.1,
+        "tokens": 8.0,
+        "dev_zero_shot": 715.1,
+        "dev_few_shot": 968.7,
+        "dev_zero_shot_repeat": 713.8,
+        "timed_train": 8.2,
+        "estimate": 0.0
+      },
+      "tokens": {
+        "train_example_tokens": {
+          "median": 367,
+          "p90": 529,
+          "p99": 692,
+          "max": 852,
+          "total": 2261167
+        },
+        "dev_few_shot_prompt_tokens": {
+          "median": 862,
+          "max": 1195
+        },
+        "program_tokens_max": 66
+      },
+      "dev_zero_shot": {
+        "items": 883,
+        "exe_correct": 224,
+        "prog_correct": 197,
+        "executes": 463,
+        "exe_acc": 0.2536806342015855,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 712.0,
+        "prompt_tokens_mean": 368.3
+      },
+      "dev_few_shot": {
+        "items": 883,
+        "exe_correct": 221,
+        "prog_correct": 185,
+        "executes": 757,
+        "exe_acc": 0.25028312570781425,
+        "split": "dev",
+        "shots": 4,
+        "seconds": 964.8,
+        "prompt_tokens_mean": 882.3
+      },
+      "dev_zero_shot_repeat": {
+        "items": 883,
+        "exe_correct": 224,
+        "prog_correct": 197,
+        "executes": 463,
+        "exe_acc": 0.2536806342015855,
+        "split": "dev",
+        "shots": 0,
+        "seconds": 711.1,
+        "prompt_tokens_mean": 368.3,
+        "same_reply": 883,
+        "same_exe_correct": 883,
+        "changed_ids": []
+      },
+      "timed_train": {
+        "error": "ImportError('Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported')",
+        "traceback": "          ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/tmp/finqa-lora/finqa_lora/feasibility.py\", line 92, in timed_train\n    metrics, trainer = train(cfg, tok=tok)\n                       ~~~~~^^^^^^^^^^^^^^\n  File \"/tmp/finqa-lora/finqa_lora/train.py\", line 143, in train\n    trainer = SFTTrainer(model=model, args=args, train_dataset=ds, processing_class=tok,\n                         peft_config=peft_cfg, callbacks=[timer])\n  File \"/usr/local/lib/python3.13/dist-packages/trl/trainer/sft_trainer.py\", line 918, in __init__\n    model = get_peft_model(model, peft_config, **get_peft_model_kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/peft/mapping_func.py\", line 198, in get_peft_model\n    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](\n           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^\n        model,\n        ^^^^^^\n    ...<3 lines>...\n        low_cpu_mem_usage=low_cpu_mem_usage,\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 2082, in __init__\n    super().__init__(model, peft_config, adapter_name, **kwargs)\n    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/peft_model.py\", line 177, in __init__\n    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)\n                      ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 344, in __init__\n    self.inject_adapter(self.model, adapter_name, low_cpu_mem_usage=low_cpu_mem_usage, state_dict=state_dict)\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/tuners_utils.py\", line 978, in inject_adapter\n    self._create_and_replace(\n    ~~~~~~~~~~~~~~~~~~~~~~~~^\n        peft_config, adapter_name, target, target_name, parent, current_key=key\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 389, in _create_and_replace\n    new_module = self._create_new_module(lora_config, adapter_name, target, device_map=device_map, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/model.py\", line 552, in _create_new_module\n    new_module = dispatcher(target, adapter_name, config=lora_config, **kwargs)\n  File \"/usr/local/lib/python3.13/dist-packages/peft/tuners/lora/torchao.py\", line 160, in dispatch_torchao\n    if not is_torchao_available():\n           ~~~~~~~~~~~~~~~~~~~~^^\n  File \"/usr/local/lib/python3.13/dist-packages/peft/import_utils.py\", line 162, in is_torchao_available\n    raise ImportError(\n    ...<2 lines>...\n    )\nImportError: Found an incompatible version of torchao. Found version 0.10.0, but only versions above 0.16.0 are supported\n"
+      },
+      "estimate": {
+        "error": "KeyError('examples_per_step')",
+        "traceback": "Traceback (most recent call last):\n  File \"/tmp/finqa-lora/finqa_lora/feasibility.py\", line 110, in step\n    r[name] = fn()\n              ~~^^\n  File \"/tmp/finqa-lora/finqa_lora/feasibility.py\", line 152, in estimate\n    steps_per_epoch = -(-n // t[\"examples_per_step\"])\n                              ~^^^^^^^^^^^^^^^^^^^^^\nKeyError: 'examples_per_step'\n"
+      }
+    }
+  },
+  "finished": "2026-11-10 03:11:31"
+}
