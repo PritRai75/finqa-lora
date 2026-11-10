@@ -19,8 +19,10 @@ No results yet. Numbers will be added here only from completed runs.
 | Data pinned to an upstream commit, checked by SHA-256 | done |
 | Official FinQA scorer vendored, parity-tested on all 8,281 gold programs | done |
 | Automatic screen (parser v1) | done, counts below |
-| Hand-check 1 (50 train flags) | not started |
-| Training and evaluation | not started |
+| Hand-check 1 (50 train flags) | sheet built, verdicts in progress |
+| Prompt, inference and LoRA training code | done, tested on a tiny model in CI |
+| Feasibility run on GPU (model choice) | ready to run |
+| Main training runs and evaluation | not started |
 
 ### Screen counts (automatic, not hand-checked)
 
@@ -45,6 +47,10 @@ python -m finqa_lora.screen      # writes results/screen/
 python -m finqa_lora.handcheck check1
 ```
 
+GPU jobs run on Kaggle through `notebooks/kaggle_job.ipynb`, which clones this repo at a given commit,
+installs `requirements-gpu.txt` on top of Kaggle's torch and runs one job, for example
+`python -m finqa_lora.feasibility`. The test split is not used until the final runs.
+
 ## Layout
 
 | Path | What it holds |
@@ -55,6 +61,11 @@ python -m finqa_lora.handcheck check1
 | `finqa_lora/screen.py` | The automatic program-versus-answer screen |
 | `finqa_lora/handcheck.py`, `handcheck/` | Hand-check sheets and protocol |
 | `results/screen/` | Screen status for every item |
+| `finqa_lora/prompt.py` | The one prompt format used for training, zero-shot and few-shot |
+| `finqa_lora/infer.py`, `finqa_lora/train.py` | Greedy generation and scoring; LoRA fine-tuning with TRL |
+| `finqa_lora/feasibility.py` | Measures candidate models (dev accuracy, token lengths, training speed) |
+| `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
+| `notebooks/kaggle_job.ipynb` | Thin Kaggle runner |
 
 ## Data and licence
 
