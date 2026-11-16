@@ -13,7 +13,9 @@ An existing .csv is never overwritten, because it may hold verdicts.
 --validate reads a filled sheet and lists problems: values outside the allowed lists, columns
 filled or left empty against the protocol, corrected programs that do not run or do not give the
 corrected answer, and notes with no number from their own item. It reports only; it never changes
-a verdict. It exits 1 when a value is invalid, so it can run before every commit of verdicts.
+a verdict. It also compares the item columns (question, answer, exe_ans, program, ...) on every
+row with the data, because a spreadsheet save rewrites them (43.9% -> 43.90%, 0.0 -> 0). It exits
+1 when a value is invalid, so it can run before every commit of verdicts.
 
 Usage: python -m finqa_lora.handcheck check1
        python -m finqa_lora.handcheck check1 --validate
@@ -45,6 +47,7 @@ ERROR_TYPES = ("wrong_number", "wrong_table_row", "wrong_operation", "operand_or
                "scale_or_units", "answer_typo", "missing_answer", "other")
 ANSWER_ONLY_TYPES = ("answer_typo", "missing_answer")
 UNCERTAIN = ("", "true")
+SHEET_COLUMNS = ["item", "id", "split", "screen_status", "question", "answer", "exe_ans", "program"] + VERDICT_COLUMNS
 _NUMBER = re.compile(r"\d[\d,]*(?:\.\d+)?|\.\d+")
 
 
@@ -108,8 +111,7 @@ def build(check):
         sys.exit(f"{csv_path} exists and may hold verdicts. Not overwriting.")
     with open(csv_path, "w", encoding="utf-8-sig", newline="") as f:
         w = csv.writer(f, lineterminator="\n")
-        w.writerow(["item", "id", "split", "screen_status", "question", "answer", "exe_ans", "program"]
-                   + VERDICT_COLUMNS)
+        w.writerow(SHEET_COLUMNS)
         for i, ex in enumerate(items, 1):
             qa = ex["qa"]
             w.writerow([i, ex["id"], split, status[ex["id"]], qa["question"], str(qa["answer"]).strip(),
@@ -137,16 +139,31 @@ def _item_numbers(ex):
     return set().union(*(_numbers(p) for p in parts))
 
 
-def check_row(row, ex):
-    """Return (invalid, to_review) lists of messages for one sheet row. Empty verdict: nothing to check."""
+def read_only_values(ex, split, status):
+    """The item columns exactly as build() writes them. A spreadsheet save often rewrites these."""
+    qa = ex["qa"]
+    return {"id": ex["id"], "split": split, "screen_status": status, "question": qa["question"],
+            "answer": str(qa["answer"]).strip(), "exe_ans": str(qa["exe_ans"]), "program": qa["program"]}
+
+
+def check_row(row, ex, split=None, status=None):
+    """Return (invalid, to_review) lists of messages for one sheet row.
+
+    Read-only columns are compared on every row. Verdict columns are checked only when a verdict
+    is filled. split and status default to the row's own values (tests pass items directly).
+    """
     invalid, review = [], []
+    expected = read_only_values(ex, split or row.get("split"), status or row.get("screen_status"))
+    for k, want in expected.items():
+        got = row.get(k)
+        if got is None or got != want:
+            invalid.append(f"read-only column {k} changed: sheet {got!r}, item {want!r} "
+                           "(saved by a spreadsheet? restore it with git restore)")
     v = {k: (row.get(k) or "").strip() for k in VERDICT_COLUMNS}
     if not v["verdict"]:
         if any(v[k] for k in VERDICT_COLUMNS):
             invalid.append("columns filled but verdict empty")
         return invalid, review
-    if row["question"].strip() != ex["qa"]["question"].strip():
-        invalid.append("question in the sheet does not match the item: rows may have shifted")
     if v["verdict"] not in VERDICTS:
         invalid.append(f"verdict {v['verdict']!r} not in {VERDICTS}")
     if v["uncertain"] not in UNCERTAIN:
@@ -213,13 +230,16 @@ def validate(check):
     with open(path, encoding="utf-8-sig") as f:
         rows = list(csv.DictReader(f))
     items = {ex["id"]: ex for ex in load_split(split)}
+    status = screen_status(split)
     report = {"rows": len(rows), "with_verdict": 0, "invalid": [], "to_review": []}
+    if rows and list(rows[0]) != SHEET_COLUMNS:
+        report["invalid"].append(("-", "-", f"header changed: expected {SHEET_COLUMNS}"))
     for row in rows:
-        ex = items.get(row["id"])
+        ex = items.get(row.get("id"))
         if ex is None:
-            report["invalid"].append((row["item"], row["id"], "id not in the split"))
+            report["invalid"].append((row.get("item"), row.get("id"), "id not in the split"))
             continue
-        bad, look = check_row(row, ex)
+        bad, look = check_row(row, ex, split, status[ex["id"]])
         report["with_verdict"] += bool((row.get("verdict") or "").strip())
         report["invalid"] += [(row["item"], row["id"], m) for m in bad]
         report["to_review"] += [(row["item"], row["id"], m) for m in look]

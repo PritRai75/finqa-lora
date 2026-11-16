@@ -14,7 +14,7 @@ LMT = "LMT/2015/page_56.pdf-3"    # program 19700; written 197000
 
 def row(item_id, **verdict):
     ex = DEV[item_id]
-    r = {"item": "1", "id": item_id, "question": ex["qa"]["question"]}
+    r = {"item": "1"} | handcheck.read_only_values(ex, "dev", "disagree")
     r.update({k: "" for k in handcheck.VERDICT_COLUMNS})
     r.update(verdict)
     return r, ex
@@ -80,7 +80,27 @@ def test_question_ambiguous_takes_no_correction():
 def test_shifted_rows_are_caught():
     r, _ = row(ETR, **PROGRAM_WRONG)
     invalid, _ = handcheck.check_row(r, DEV[LMT])
-    assert any("rows may have shifted" in m for m in invalid)
+    assert any("read-only column question changed" in m for m in invalid)
+
+
+@pytest.mark.parametrize("column, saved", [("answer", "18.60"), ("exe_ans", "19"), ("program", "add(18.9,0.3)")])
+def test_spreadsheet_rewrites_are_caught_even_without_a_verdict(column, saved):
+    """Excel rewrote check1.csv on 16 Nov: 43.9% -> 43.90%, 0.0 -> 0. Empty rows must be checked too."""
+    r, ex = row(ETR)
+    r[column] = saved
+    invalid, _ = handcheck.check_row(r, ex)
+    assert invalid == [f"read-only column {column} changed: sheet {saved!r}, item {r_ro(ex)[column]!r} "
+                       "(saved by a spreadsheet? restore it with git restore)"]
+
+
+def r_ro(ex):
+    return handcheck.read_only_values(ex, "dev", "disagree")
+
+
+def test_committed_sheet_matches_the_data_on_every_row():
+    """build() and validate() agree: a sheet built today passes the read-only check unchanged."""
+    report = handcheck.validate("check1")
+    assert not [m for m in report["invalid"] if "read-only" in m[2] or "header" in m[2]]
 
 
 @pytest.mark.parametrize("change, message", [
