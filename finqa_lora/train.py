@@ -51,6 +51,9 @@ class RunConfig:
     max_steps: int = -1          # > 0 only for timing runs
     subset: int = 0              # > 0 keeps only the first N arm items (timing runs)
     save: bool = True
+    # "group_by_length" (decision 26, from the pilot on): batches of similar length, about 25% less
+    # padding. Feasibility run 2 timed "random", the only option before 16 Nov 2026.
+    sampling: str = "group_by_length"
 
 
 def screen_status():
@@ -135,6 +138,7 @@ def train(cfg: RunConfig, model=None, tok=None):
         report_to="none",
         seed=cfg.seed,
         data_seed=cfg.seed,
+        train_sampling_strategy=cfg.sampling,
         use_cpu=device == "cpu",
     )
     peft_cfg = LoraConfig(r=cfg.lora_r, lora_alpha=cfg.lora_alpha, lora_dropout=cfg.lora_dropout,

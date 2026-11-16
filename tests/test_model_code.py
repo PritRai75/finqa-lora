@@ -97,3 +97,15 @@ def test_feasibility_refuses_previous_report_with_another_prompt(tiny_model, tmp
                                       "--only", "estimate", "--previous", str(tmp_path / "prev.json")])
     with pytest.raises(SystemExit):
         F.main()
+
+
+def test_training_uses_length_grouped_batches(tiny_model, tmp_path):
+    """Decision 26: batches of similar length. The default must reach the Trainer's sampler."""
+    from transformers.trainer_pt_utils import LengthGroupedSampler
+    cfg = RunConfig(model=tiny_model, out=str(tmp_path / "run"), subset=8, batch_size=2, grad_accum=2,
+                    max_steps=1, save=False)
+    assert cfg.sampling == "group_by_length"
+    _, trainer = train(cfg)
+    sampler = trainer._get_train_sampler()
+    assert isinstance(sampler, LengthGroupedSampler)
+    assert sampler.batch_size == cfg.batch_size * cfg.grad_accum

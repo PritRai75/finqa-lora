@@ -22,7 +22,9 @@ No results yet. Numbers will be added here only from completed runs.
 | Hand-check 1 (50 train flags) | sheet built, verdicts in progress |
 | Prompt, inference and LoRA training code | done, tested on a tiny model in CI |
 | Feasibility run 1 on GPU: licences, token lengths, base models on dev | done, `results/feasibility/run1/` |
-| Feasibility run 2: timed LoRA training, cost per run | ready to run (`jobs/timing.sh`) |
+| Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
+| Model choice | `Qwen/Qwen2.5-1.5B-Instruct` for all training (the only candidate under the 2.5 h per-run gate) |
+| Pilot: learning rate and epoch on dev, same-seed noise | ready to run (`jobs/pilot.sh`, GPU T4 x2) |
 | Main training runs and evaluation | not started |
 
 ### Screen counts (automatic, not hand-checked)
@@ -45,8 +47,12 @@ pip install -r requirements.txt
 python -m finqa_lora.fetch       # downloads train/dev/test at the pinned commit (about 103 MB)
 pytest                           # manifest, scorer parity, screen counts
 python -m finqa_lora.screen      # writes results/screen/
-python -m finqa_lora.handcheck check1
+python -m finqa_lora.handcheck check1             # builds the sheet (never overwrites one)
+python -m finqa_lora.handcheck check1 --validate  # lists invalid or changed values in a filled sheet
 ```
+
+Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
+(`43.9%` to `43.90%`, `0.0` to `0`), and `--validate` then refuses the sheet.
 
 GPU jobs run on Kaggle through `notebooks/kaggle_job.ipynb`. It clones this repo at a given commit and
 runs `scripts/kaggle_run.sh <job>`, which installs `requirements-gpu.txt` on top of Kaggle's torch, downloads
@@ -66,6 +72,7 @@ ran. The test split is not used until the final runs.
 | `finqa_lora/prompt.py` | The one prompt format used for training, zero-shot and few-shot |
 | `finqa_lora/infer.py`, `finqa_lora/train.py` | Greedy generation and scoring; LoRA fine-tuning with TRL |
 | `finqa_lora/feasibility.py` | Measures candidate models (dev accuracy, token lengths, training speed) |
+| `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
 | `notebooks/kaggle_job.ipynb`, `scripts/kaggle_run.sh`, `jobs/` | Kaggle launcher, runner script and one file per GPU job |
 | `results/feasibility/` | Reports, logs and dev predictions of the feasibility runs |

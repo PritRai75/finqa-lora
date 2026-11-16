@@ -12,6 +12,6 @@ pip uninstall -y -q torchao 2>/dev/null || true
 pip install -q -r requirements-gpu.txt
 python -m finqa_lora.fetch
 pip freeze > "$OUT/pip-freeze.txt"
-# One GPU only: with two visible, the Hugging Face Trainer switches to DataParallel.
-export CUDA_VISIBLE_DEVICES=0
+# Which GPU each process sees is set in jobs/<job>.sh (16 Nov 2026): one-GPU jobs export
+# CUDA_VISIBLE_DEVICES=0, because with two visible the Trainer switches to DataParallel.
 bash "jobs/$JOB.sh" "$OUT" 2>&1 | tee "$OUT/$JOB.log"
