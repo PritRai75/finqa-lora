@@ -73,6 +73,7 @@ ran. The test split is not used until the final runs.
 | `finqa_lora/infer.py`, `finqa_lora/train.py` | Greedy generation and scoring; LoRA fine-tuning with TRL |
 | `finqa_lora/feasibility.py` | Measures candidate models (dev accuracy, token lengths, training speed) |
 | `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
+| `finqa_lora/stats.py` | Wilson intervals, exact McNemar, paired bootstrap and the cleaned-versus-random winner rule |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
 | `notebooks/kaggle_job.ipynb`, `scripts/kaggle_run.sh`, `jobs/` | Kaggle launcher, runner script and one file per GPU job |
 | `results/feasibility/` | Reports, logs and dev predictions of the feasibility runs |
