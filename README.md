@@ -49,6 +49,7 @@ pytest                           # manifest, scorer parity, screen counts
 python -m finqa_lora.screen      # writes results/screen/
 python -m finqa_lora.handcheck check1             # builds the sheet (never overwrites one)
 python -m finqa_lora.handcheck check1 --validate  # lists invalid or changed values in a filled sheet
+python -m finqa_lora.runlog build                 # indexes every committed run into runs.db
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -74,6 +75,7 @@ ran. The test split is not used until the final runs.
 | `finqa_lora/feasibility.py` | Measures candidate models (dev accuracy, token lengths, training speed) |
 | `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, paired bootstrap and the cleaned-versus-random winner rule |
+| `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
 | `notebooks/kaggle_job.ipynb`, `scripts/kaggle_run.sh`, `jobs/` | Kaggle launcher, runner script and one file per GPU job |
 | `results/feasibility/` | Reports, logs and dev predictions of the feasibility runs |

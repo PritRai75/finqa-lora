@@ -8,3 +8,5 @@ __pycache__/
 .venv/
 .ipynb_checkpoints/
 runs/
+runs.db
+runs.db.part
