@@ -1,0 +1,301 @@
+{
+  "written": "2026-11-16 15:15:07",
+  "prompt_version": 1,
+  "prompt_fingerprint": "4139bfc3519c",
+  "rule": "highest dev exe_correct averaged over runs a and b; ties to fewer epochs, then the lower learning rate; main runs keep the 3-epoch cosine schedule and use that epoch's adapter",
+  "missing_runs": [],
+  "chosen": {
+    "lr": 0.0002,
+    "epoch": 3,
+    "mean_exe_correct": 585.5,
+    "from_complete_pair": true
+  },
+  "table": [
+    {
+      "lr": 0.0001,
+      "epoch": 1,
+      "by_rep": {
+        "a": 574,
+        "b": 566
+      },
+      "mean_exe_correct": 570.0,
+      "complete": true
+    },
+    {
+      "lr": 0.0001,
+      "epoch": 2,
+      "by_rep": {
+        "a": 576,
+        "b": 574
+      },
+      "mean_exe_correct": 575.0,
+      "complete": true
+    },
+    {
+      "lr": 0.0001,
+      "epoch": 3,
+      "by_rep": {
+        "a": 576,
+        "b": 579
+      },
+      "mean_exe_correct": 577.5,
+      "complete": true
+    },
+    {
+      "lr": 0.0002,
+      "epoch": 1,
+      "by_rep": {
+        "a": 566,
+        "b": 565
+      },
+      "mean_exe_correct": 565.5,
+      "complete": true
+    },
+    {
+      "lr": 0.0002,
+      "epoch": 2,
+      "by_rep": {
+        "a": 581,
+        "b": 582
+      },
+      "mean_exe_correct": 581.5,
+      "complete": true
+    },
+    {
+      "lr": 0.0002,
+      "epoch": 3,
+      "by_rep": {
+        "a": 589,
+        "b": 582
+      },
+      "mean_exe_correct": 585.5,
+      "complete": true
+    }
+  ],
+  "same_seed_noise": {
+    "training": [
+      {
+        "lr": 0.0001,
+        "train_loss_a": 0.08162586048804905,
+        "train_loss_b": 0.08159978711302136,
+        "same_logged_losses": false
+      },
+      {
+        "lr": 0.0002,
+        "train_loss_a": 0.07425760836835145,
+        "train_loss_b": 0.0743249105067835,
+        "same_logged_losses": false
+      }
+    ],
+    "dev": [
+      {
+        "lr": 0.0001,
+        "epoch": 1,
+        "items": 883,
+        "same_adapter": false,
+        "exe_correct_a": 574,
+        "exe_correct_b": 566,
+        "same_reply": 863,
+        "right_in_a_only": 10,
+        "right_in_b_only": 2
+      },
+      {
+        "lr": 0.0001,
+        "epoch": 2,
+        "items": 883,
+        "same_adapter": false,
+        "exe_correct_a": 576,
+        "exe_correct_b": 574,
+        "same_reply": 860,
+        "right_in_a_only": 3,
+        "right_in_b_only": 1
+      },
+      {
+        "lr": 0.0001,
+        "epoch": 3,
+        "items": 883,
+        "same_adapter": false,
+        "exe_correct_a": 576,
+        "exe_correct_b": 579,
+        "same_reply": 858,
+        "right_in_a_only": 0,
+        "right_in_b_only": 3
+      },
+      {
+        "lr": 0.0002,
+        "epoch": 1,
+        "items": 883,
+        "same_adapter": false,
+        "exe_correct_a": 566,
+        "exe_correct_b": 565,
+        "same_reply": 854,
+        "right_in_a_only": 7,
+        "right_in_b_only": 6
+      },
+      {
+        "lr": 0.0002,
+        "epoch": 2,
+        "items": 883,
+        "same_adapter": false,
+        "exe_correct_a": 581,
+        "exe_correct_b": 582,
+        "same_reply": 843,
+        "right_in_a_only": 5,
+        "right_in_b_only": 6
+      },
+      {
+        "lr": 0.0002,
+        "epoch": 3,
+        "items": 883,
+        "same_adapter": false,
+        "exe_correct_a": 589,
+        "exe_correct_b": 582,
+        "same_reply": 833,
+        "right_in_a_only": 8,
+        "right_in_b_only": 1
+      }
+    ]
+  },
+  "runs": [
+    {
+      "lr": 0.0001,
+      "rep": "a",
+      "dev_limit": null,
+      "gpu": "Tesla T4",
+      "train_seconds": 5406.7,
+      "seconds_per_step": 4.938,
+      "steps": 1092,
+      "items": 5820,
+      "train_loss": 0.08162586048804905,
+      "loss_is_finite": true,
+      "peak_gpu_gb": 5.56,
+      "git_commit": "043049195c27e1142a98e3786661a536f34c567f",
+      "sampling": "group_by_length",
+      "dev": [
+        {
+          "epoch": 1,
+          "exe_correct": 574,
+          "executes": 879,
+          "seconds": 255.0
+        },
+        {
+          "epoch": 2,
+          "exe_correct": 576,
+          "executes": 879,
+          "seconds": 248.4
+        },
+        {
+          "epoch": 3,
+          "exe_correct": 576,
+          "executes": 880,
+          "seconds": 262.4
+        }
+      ]
+    },
+    {
+      "lr": 0.0001,
+      "rep": "b",
+      "dev_limit": null,
+      "gpu": "Tesla T4",
+      "train_seconds": 5323.2,
+      "seconds_per_step": 4.864,
+      "steps": 1092,
+      "items": 5820,
+      "train_loss": 0.08159978711302136,
+      "loss_is_finite": true,
+      "peak_gpu_gb": 5.56,
+      "git_commit": "043049195c27e1142a98e3786661a536f34c567f",
+      "sampling": "group_by_length",
+      "dev": [
+        {
+          "epoch": 1,
+          "exe_correct": 566,
+          "executes": 879,
+          "seconds": 252.8
+        },
+        {
+          "epoch": 2,
+          "exe_correct": 574,
+          "executes": 879,
+          "seconds": 247.5
+        },
+        {
+          "epoch": 3,
+          "exe_correct": 579,
+          "executes": 880,
+          "seconds": 254.9
+        }
+      ]
+    },
+    {
+      "lr": 0.0002,
+      "rep": "a",
+      "dev_limit": null,
+      "gpu": "Tesla T4",
+      "train_seconds": 5299.2,
+      "seconds_per_step": 4.839,
+      "steps": 1092,
+      "items": 5820,
+      "train_loss": 0.07425760836835145,
+      "loss_is_finite": true,
+      "peak_gpu_gb": 5.56,
+      "git_commit": "043049195c27e1142a98e3786661a536f34c567f",
+      "sampling": "group_by_length",
+      "dev": [
+        {
+          "epoch": 1,
+          "exe_correct": 566,
+          "executes": 873,
+          "seconds": 245.4
+        },
+        {
+          "epoch": 2,
+          "exe_correct": 581,
+          "executes": 881,
+          "seconds": 245.9
+        },
+        {
+          "epoch": 3,
+          "exe_correct": 589,
+          "executes": 878,
+          "seconds": 244.7
+        }
+      ]
+    },
+    {
+      "lr": 0.0002,
+      "rep": "b",
+      "dev_limit": null,
+      "gpu": "Tesla T4",
+      "train_seconds": 5304.0,
+      "seconds_per_step": 4.845,
+      "steps": 1092,
+      "items": 5820,
+      "train_loss": 0.0743249105067835,
+      "loss_is_finite": true,
+      "peak_gpu_gb": 5.56,
+      "git_commit": "043049195c27e1142a98e3786661a536f34c567f",
+      "sampling": "group_by_length",
+      "dev": [
+        {
+          "epoch": 1,
+          "exe_correct": 565,
+          "executes": 872,
+          "seconds": 251.3
+        },
+        {
+          "epoch": 2,
+          "exe_correct": 582,
+          "executes": 881,
+          "seconds": 249.7
+        },
+        {
+          "epoch": 3,
+          "exe_correct": 582,
+          "executes": 878,
+          "seconds": 252.7
+        }
+      ]
+    }
+  ]
+}

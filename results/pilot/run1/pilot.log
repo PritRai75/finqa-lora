@@ -1,0 +1,75 @@
+GPUs visible: 2, needed: 2
+started: GPU 0 lr 1e-4 (pid 114), GPU 1 lr 2e-4 (pid 115). Progress: /kaggle/working/pilot/gpu0.log, /kaggle/working/pilot/gpu1.log
+GPU 0 chain finished
+GPU 1 chain finished
+{
+  "missing_runs": [],
+  "chosen": {
+    "lr": 0.0002,
+    "epoch": 3,
+    "mean_exe_correct": 585.5,
+    "from_complete_pair": true
+  },
+  "table": [
+    {
+      "lr": 0.0001,
+      "epoch": 1,
+      "by_rep": {
+        "a": 574,
+        "b": 566
+      },
+      "mean_exe_correct": 570.0,
+      "complete": true
+    },
+    {
+      "lr": 0.0001,
+      "epoch": 2,
+      "by_rep": {
+        "a": 576,
+        "b": 574
+      },
+      "mean_exe_correct": 575.0,
+      "complete": true
+    },
+    {
+      "lr": 0.0001,
+      "epoch": 3,
+      "by_rep": {
+        "a": 576,
+        "b": 579
+      },
+      "mean_exe_correct": 577.5,
+      "complete": true
+    },
+    {
+      "lr": 0.0002,
+      "epoch": 1,
+      "by_rep": {
+        "a": 566,
+        "b": 565
+      },
+      "mean_exe_correct": 565.5,
+      "complete": true
+    },
+    {
+      "lr": 0.0002,
+      "epoch": 2,
+      "by_rep": {
+        "a": 581,
+        "b": 582
+      },
+      "mean_exe_correct": 581.5,
+      "complete": true
+    },
+    {
+      "lr": 0.0002,
+      "epoch": 3,
+      "by_rep": {
+        "a": 589,
+        "b": 582
+      },
+      "mean_exe_correct": 585.5,
+      "complete": true
+    }
+  ]
+}

@@ -121,6 +121,9 @@ def test_the_repo_results_build(tmp_path):
     """Whatever is committed under results/ must always build."""
     counts = runlog.build(db=tmp_path / "runs.db")
     assert counts["feasibility/run1"] == 6
+    assert counts["pilot/run1"] == 12   # 2 learning rates x runs a, b x 3 epochs (Kaggle, 16 Nov 2026)
+    con = runlog.connect(tmp_path / "runs.db")
+    assert sum(runlog.vector(con, "pilot/run1/lr2e-4/a/epoch3")) == 589
 
 
 def fake_main_run(folder, arm, seed, right, ids=DEV_IDS):
