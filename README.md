@@ -24,8 +24,10 @@ No results yet. Numbers will be added here only from completed runs.
 | Feasibility run 1 on GPU: licences, token lengths, base models on dev | done, `results/feasibility/run1/` |
 | Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
 | Model choice | `Qwen/Qwen2.5-1.5B-Instruct` for all training (the only candidate under the 2.5 h per-run gate) |
-| Pilot: learning rate and epoch on dev, same-seed noise | ready to run (`jobs/pilot.sh`, GPU T4 x2) |
-| Main training runs and evaluation | not started |
+| Pilot: learning rate and epoch on dev, same-seed noise | running on Kaggle (`jobs/pilot.sh`, GPU T4 x2) |
+| Main training runs: cleaned versus random, 3 seeds each | ready (`jobs/main.sh`); starts once the pilot record is committed |
+| Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
+| Test passes and evaluation | not started |
 
 ### Screen counts (automatic, not hand-checked)
 
@@ -50,6 +52,7 @@ python -m finqa_lora.screen      # writes results/screen/
 python -m finqa_lora.handcheck check1             # builds the sheet (never overwrites one)
 python -m finqa_lora.handcheck check1 --validate  # lists invalid or changed values in a filled sheet
 python -m finqa_lora.runlog build                 # indexes every committed run into runs.db
+python -m finqa_lora.testgate                     # is the test split unlocked? (exit 1 while it is not)
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -58,7 +61,9 @@ Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites 
 GPU jobs run on Kaggle through `notebooks/kaggle_job.ipynb`. It clones this repo at a given commit and
 runs `scripts/kaggle_run.sh <job>`, which installs `requirements-gpu.txt` on top of Kaggle's torch, downloads
 the pinned data and runs `jobs/<job>.sh`, stopping at the first error. Each job file records exactly what
-ran. The test split is not used until the final runs.
+ran. The test split is not used until the final runs: `finqa_lora.infer` refuses to generate on it until
+check2 and check3 have a verdict on every row, pass `--validate` and are committed (`finqa_lora/testgate.py`),
+and each test pass records which commit of those sheets let it through.
 
 ## Layout
 
@@ -74,6 +79,8 @@ ran. The test split is not used until the final runs.
 | `finqa_lora/infer.py`, `finqa_lora/train.py` | Greedy generation and scoring; LoRA fine-tuning with TRL |
 | `finqa_lora/feasibility.py` | Measures candidate models (dev accuracy, token lengths, training speed) |
 | `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
+| `finqa_lora/mainruns.py` | Main runs at the pilot's chosen learning rate and epoch (read from the committed pilot record), adapters kept |
+| `finqa_lora/testgate.py` | Keeps the test split locked until the test hand-checks are finished and committed |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, paired bootstrap and the cleaned-versus-random winner rule |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
