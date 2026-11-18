@@ -1,0 +1,236 @@
+{
+  "written": "2026-11-18 21:15:15",
+  "numpy": "2.5.3",
+  "items": 1147,
+  "sims": 300,
+  "resamples": 1000,
+  "seed": 20261119,
+  "effect_items": 23,
+  "seconds": 319.1,
+  "rows": [
+    {
+      "spread": 30,
+      "run_shift": 0.0,
+      "effect_items": 0,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 0.302,
+      "mean_discordant_between_two_runs": 28.6,
+      "winner_rate": {
+        "item_only": 0.02666666666666667,
+        "two_level": 0.0033333333333333335,
+        "variance_components": 0.0
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.0,
+      "effect_items": 23,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 0.29,
+      "mean_discordant_between_two_runs": 28.4,
+      "winner_rate": {
+        "item_only": 1.0,
+        "two_level": 1.0,
+        "variance_components": 0.9633333333333334
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.0,
+      "effect_items": 0,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 0.334,
+      "mean_discordant_between_two_runs": 31.3,
+      "winner_rate": {
+        "item_only": 0.02,
+        "two_level": 0.0,
+        "variance_components": 0.0
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.0,
+      "effect_items": 23,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 0.293,
+      "mean_discordant_between_two_runs": 25.7,
+      "winner_rate": {
+        "item_only": 1.0,
+        "two_level": 1.0,
+        "variance_components": 1.0
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.5,
+      "effect_items": 0,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 0.584,
+      "mean_discordant_between_two_runs": 28.6,
+      "winner_rate": {
+        "item_only": 0.16,
+        "two_level": 0.06666666666666667,
+        "variance_components": 0.023333333333333334
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.5,
+      "effect_items": 23,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 0.534,
+      "mean_discordant_between_two_runs": 25.8,
+      "winner_rate": {
+        "item_only": 0.9466666666666667,
+        "two_level": 0.8566666666666667,
+        "variance_components": 0.4666666666666667
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.5,
+      "effect_items": 0,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 0.701,
+      "mean_discordant_between_two_runs": 31.1,
+      "winner_rate": {
+        "item_only": 0.03,
+        "two_level": 0.016666666666666666,
+        "variance_components": 0.006666666666666667
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 0.5,
+      "effect_items": 23,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 0.718,
+      "mean_discordant_between_two_runs": 30.9,
+      "winner_rate": {
+        "item_only": 0.8566666666666667,
+        "two_level": 0.8433333333333334,
+        "variance_components": 0.78
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 1.0,
+      "effect_items": 0,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 1.171,
+      "mean_discordant_between_two_runs": 34.2,
+      "winner_rate": {
+        "item_only": 0.23,
+        "two_level": 0.13666666666666666,
+        "variance_components": 0.03666666666666667
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 1.0,
+      "effect_items": 23,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 1.104,
+      "mean_discordant_between_two_runs": 32.0,
+      "winner_rate": {
+        "item_only": 0.6433333333333333,
+        "two_level": 0.5566666666666666,
+        "variance_components": 0.24
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 1.0,
+      "effect_items": 0,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 1.064,
+      "mean_discordant_between_two_runs": 29.1,
+      "winner_rate": {
+        "item_only": 0.056666666666666664,
+        "two_level": 0.043333333333333335,
+        "variance_components": 0.03333333333333333
+      }
+    },
+    {
+      "spread": 30,
+      "run_shift": 1.0,
+      "effect_items": 23,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 1.24,
+      "mean_discordant_between_two_runs": 33.2,
+      "winner_rate": {
+        "item_only": 0.4866666666666667,
+        "two_level": 0.4633333333333333,
+        "variance_components": 0.35
+      }
+    },
+    {
+      "spread": 14,
+      "run_shift": 0.5,
+      "effect_items": 0,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 1.236,
+      "mean_discordant_between_two_runs": 61.0,
+      "winner_rate": {
+        "item_only": 0.20666666666666667,
+        "two_level": 0.08666666666666667,
+        "variance_components": 0.03
+      }
+    },
+    {
+      "spread": 14,
+      "run_shift": 0.5,
+      "effect_items": 23,
+      "seeds": 3,
+      "sims": 300,
+      "mean_seed_sd_points": 1.283,
+      "mean_discordant_between_two_runs": 63.4,
+      "winner_rate": {
+        "item_only": 0.49666666666666665,
+        "two_level": 0.38,
+        "variance_components": 0.17
+      }
+    },
+    {
+      "spread": 14,
+      "run_shift": 0.5,
+      "effect_items": 0,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 1.216,
+      "mean_discordant_between_two_runs": 58.5,
+      "winner_rate": {
+        "item_only": 0.05,
+        "two_level": 0.03,
+        "variance_components": 0.02
+      }
+    },
+    {
+      "spread": 14,
+      "run_shift": 0.5,
+      "effect_items": 23,
+      "seeds": 5,
+      "sims": 300,
+      "mean_seed_sd_points": 1.323,
+      "mean_discordant_between_two_runs": 63.8,
+      "winner_rate": {
+        "item_only": 0.4,
+        "two_level": 0.36333333333333334,
+        "variance_components": 0.30666666666666664
+      }
+    }
+  ]
+}

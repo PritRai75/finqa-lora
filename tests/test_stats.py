@@ -108,16 +108,16 @@ def test_winner_helped_needs_interval_and_every_seed_pair():
 
 
 def test_winner_mixed_seed_pairs_is_no_difference_even_with_a_clear_interval():
-    # Two seed pairs strongly favour cleaning; one pair favours random by 1 item.
-    shared = np.zeros(1147, dtype=int)
-    c = [shared.copy() for _ in range(3)]
-    r = [shared.copy() for _ in range(3)]
-    c[0][:150] = 1
-    c[1][:150] = 1
-    r[2][:1] = 1
+    # 5 seeds: every cleaned run gets 40 items more right; random seed 5 alone gets 41 more right,
+    # so four seed pairs favour cleaning and one favours random by 1 item.
+    c = [np.zeros(1147, dtype=int) for _ in range(5)]
+    r = [np.zeros(1147, dtype=int) for _ in range(5)]
+    for run in c:
+        run[:40] = 1
+    r[4][:41] = 1
     out = stats.winner(c, r)
-    assert out["low"] > 0
-    assert [d > 0 for d in out["seed_pair_differences"]] == [True, True, False]
+    assert out["low"] > 0 and out["df"] == 8                # the rule's interval alone would say "helped"
+    assert [d > 0 for d in out["seed_pair_differences"]] == [True, True, True, True, False]
     assert out["verdict"] == "no detectable difference"
 
 
@@ -131,3 +131,61 @@ def test_winner_interval_crossing_zero_is_no_difference():
 def test_winner_needs_one_random_partner_per_seed():
     with pytest.raises(ValueError):
         stats.winner([[1, 0]] * 3, [[1, 0]] * 2)
+
+
+def test_t_quantiles_match_scipy():
+    scipy_stats = pytest.importorskip("scipy.stats")
+    for df, q in stats.T975.items():
+        assert q == pytest.approx(scipy_stats.t.ppf(0.975, df), abs=1e-11)
+
+
+def test_variance_components_by_hand():
+    rng = np.random.default_rng(5)
+    c, r = runs(rng, 1147, [0.60, 0.62, 0.58]), runs(rng, 1147, [0.55, 0.56, 0.57])
+    out = stats.variance_components(c, r)
+    per_item = np.mean(c, axis=0) - np.mean(r, axis=0)
+    acc_c, acc_r = np.mean(c, axis=1), np.mean(r, axis=1)
+    s2 = (acc_c.var(ddof=1) + acc_r.var(ddof=1)) / 2                    # equal seeds: plain average
+    se = math.sqrt(per_item.var(ddof=1) / 1147 + s2 * (2 / 3))
+    assert out["difference"] == pytest.approx(per_item.mean(), abs=1e-15)
+    assert (out["df"], out["t975"], out["se"]) == (4, stats.T975[4], pytest.approx(se, abs=1e-15))
+    assert (out["low"], out["high"]) == pytest.approx((per_item.mean() - 2.776445105198 * se,
+                                                      per_item.mean() + 2.776445105198 * se), abs=1e-12)
+
+
+def test_variance_components_seed_term_is_the_pooled_two_sample_t_test():
+    """With the item term removed, the interval is the classic equal-variance t interval on run accuracies."""
+    scipy_stats = pytest.importorskip("scipy.stats")
+    rng = np.random.default_rng(6)
+    c, r = runs(rng, 883, [0.60, 0.66, 0.58, 0.63, 0.61]), runs(rng, 883, [0.55, 0.60, 0.57, 0.52, 0.58])
+    out = stats.variance_components(c, r)
+    t = scipy_stats.ttest_ind(np.mean(c, axis=1), np.mean(r, axis=1), equal_var=True).statistic
+    assert out["seed_sd"] * math.sqrt(2 / 5) == pytest.approx(out["difference"] / t, rel=1e-12)
+    assert out["df"] == 8
+
+
+def test_variance_components_needs_two_seeds_per_arm():
+    with pytest.raises(ValueError, match="at least 2 seeds"):
+        stats.variance_components([[1, 0, 1]], [[0, 0, 1]])
+
+
+def test_two_level_bootstrap_with_one_seed_is_the_item_bootstrap():
+    rng = np.random.default_rng(7)
+    c, r = runs(rng, 1147, [0.6]), runs(rng, 1147, [0.55])
+    one, items = stats.two_level_bootstrap(c, r), stats.paired_bootstrap(c, r)
+    assert (one["low"], one["high"]) == pytest.approx((items["low"], items["high"]), abs=0.003)
+
+
+def test_two_level_bootstrap_widens_when_seeds_disagree():
+    rng = np.random.default_rng(8)
+    c, r = runs(rng, 1147, [0.52, 0.60, 0.68]), runs(rng, 1147, [0.50, 0.58, 0.66])
+    two, items = stats.two_level_bootstrap(c, r), stats.paired_bootstrap(c, r)
+    assert two["high"] - two["low"] > 2 * (items["high"] - items["low"])
+    assert stats.two_level_bootstrap(c, r) == two                       # fixed seed: same interval every time
+
+
+def test_winner_reports_all_three_intervals():
+    rng = np.random.default_rng(9)
+    out = stats.winner(runs(rng, 883, [0.6, 0.6, 0.6]), runs(rng, 883, [0.6, 0.6, 0.6]))
+    assert out["rule"] == "variance_components"
+    assert {"item_bootstrap", "two_level_bootstrap", "seed_sd", "se_items"} <= set(out)
