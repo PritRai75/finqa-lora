@@ -121,3 +121,45 @@ def test_the_repo_results_build(tmp_path):
     """Whatever is committed under results/ must always build."""
     counts = runlog.build(db=tmp_path / "runs.db")
     assert counts["feasibility/run1"] == 6
+
+
+def fake_main_run(folder, arm, seed, right, ids=DEV_IDS):
+    folder.mkdir(parents=True)
+    with open(folder / "dev.csv", "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=FIELDS, lineterminator="\n")
+        w.writeheader()
+        for i, item in enumerate(ids):
+            w.writerow({"id": item, "reply": "add(1, 2)", "program": "add(1, 2)", "executes": 1, "value": 3.0,
+                        "exe_correct": int(i in right), "prog_correct": 0})
+    config = {"model": "Qwen/Qwen2.5-1.5B-Instruct", "arm": arm, "seed": seed, "learning_rate": 1e-4,
+              "stop_after_epoch": 2, "out": f"/kaggle/working/main/{arm}/seed{seed}/train"}
+    (folder / "result.json").write_text(json.dumps({
+        "arm": arm, "seed": seed, "lr": 1e-4, "epoch": 2, "step": 728, "gpu": "Tesla T4",
+        "adapter_sha256": f"{arm}{seed}".ljust(64, "0"),
+        "dev": {"items": len(ids), "exe_correct": len(right), "prog_correct": 0, "executes": len(ids)},
+        "train": {"config": config, "git_commit": "abc1234", "prompt_version": 1,
+                  "prompt_fingerprint": "4139bfc3519c"}}))
+
+
+def test_main_runs_are_read_with_arm_and_seed(tmp_path):
+    root = tmp_path / "results" / "main" / "run1"
+    for arm, seed, right in (("cleaned", 1, [0, 3]), ("random", 1, [3])):
+        fake_main_run(root / arm / f"seed{seed}", arm, seed, right)
+    (root / "report.json").write_text(json.dumps({"runs": [{}, {}]}))
+    assert runlog.build(db=tmp_path / "runs.db", results=tmp_path / "results") == {"main/run1": 2}
+    con = runlog.connect(tmp_path / "runs.db")
+    row = con.execute("SELECT * FROM runs WHERE run_id = 'main/run1/cleaned/seed1/dev'").fetchone()
+    assert (row["arm"], row["seed"], row["epoch"], row["step"], row["prompt_fingerprint"]) == (
+        "cleaned", 1, 2, 728, "4139bfc3519c")
+    cleaned, rand = (runlog.vector(con, f"main/run1/{a}/seed1/dev") for a in ("cleaned", "random"))
+    assert [i for i, x in enumerate(cleaned) if x] == [0, 3] and sum(rand) == 1
+    a, b = (con.execute(f"SELECT config_hash FROM runs WHERE arm = '{a}'").fetchone()[0] for a in ("cleaned", "random"))
+    assert a != b   # the arm is part of the config
+
+
+def test_main_run_missing_from_its_report_stops_the_build(tmp_path):
+    root = tmp_path / "results" / "main" / "run1"
+    fake_main_run(root / "cleaned" / "seed1", "cleaned", 1, [0])
+    (root / "report.json").write_text(json.dumps({"runs": []}))
+    with pytest.raises(ValueError, match="1 result.json files, its report lists 0 runs"):
+        runlog.build(db=tmp_path / "runs.db", results=tmp_path / "results")

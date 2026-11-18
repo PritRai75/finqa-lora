@@ -54,6 +54,9 @@ class RunConfig:
     # "group_by_length" (decision 26, from the pilot on): batches of similar length, about 25% less
     # padding. Feasibility run 2 timed "random", the only option before 16 Nov 2026.
     sampling: str = "group_by_length"
+    # > 0: stop at the end of this epoch, keeping the learning-rate schedule of `epochs` (main runs,
+    # decision 32). 0 trains all epochs.
+    stop_after_epoch: int = 0
 
 
 def screen_status():
@@ -90,6 +93,20 @@ def build_dataset(ids, tok, max_length):
             continue
         rows.append({"prompt": prompt, "completion": completion})
     return Dataset.from_list(rows), dropped
+
+
+class StopAfterEpoch(TrainerCallback):
+    """Stop at the end of epoch n. The schedule is still the one for the full number of epochs, so
+    training up to that point is the same as in a run that goes on (the pilot measured those)."""
+
+    def __init__(self, n):
+        self.n, self.seen = n, 0
+
+    def on_epoch_end(self, args, state, control, **kw):
+        self.seen += 1
+        if self.seen >= self.n:
+            control.should_training_stop = True  # the epoch's checkpoint is saved after this, then the loop ends
+        return control
 
 
 class StepTimer(TrainerCallback):
@@ -143,9 +160,12 @@ def train(cfg: RunConfig, model=None, tok=None):
     )
     peft_cfg = LoraConfig(r=cfg.lora_r, lora_alpha=cfg.lora_alpha, lora_dropout=cfg.lora_dropout,
                           target_modules="all-linear", task_type="CAUSAL_LM")
+    if cfg.stop_after_epoch and not 0 < cfg.stop_after_epoch <= cfg.epochs:
+        raise ValueError(f"stop_after_epoch {cfg.stop_after_epoch} is outside 1..{cfg.epochs}")
     timer = StepTimer()
+    callbacks = [timer] + ([StopAfterEpoch(cfg.stop_after_epoch)] if cfg.stop_after_epoch else [])
     trainer = SFTTrainer(model=model, args=args, train_dataset=ds, processing_class=tok,
-                         peft_config=peft_cfg, callbacks=[timer])
+                         peft_config=peft_cfg, callbacks=callbacks)
     trainable = sum(p.numel() for p in trainer.model.parameters() if p.requires_grad)
     if device == "cuda":
         torch.cuda.reset_peak_memory_stats()
@@ -153,6 +173,7 @@ def train(cfg: RunConfig, model=None, tok=None):
     result = trainer.train()
     seconds = time.time() - t0
     losses = [h["loss"] for h in trainer.state.log_history if "loss" in h]
+    learning_rates = [h["learning_rate"] for h in trainer.state.log_history if "loss" in h]
     steps = timer.times
     # Seconds per optimizer step, skipping the first 3 steps (warm-up of kernels and caches).
     sps = (steps[-1] - steps[2]) / (len(steps) - 3) if len(steps) > 4 else None
@@ -170,6 +191,7 @@ def train(cfg: RunConfig, model=None, tok=None):
         "seconds_per_step": None if sps is None else round(sps, 3),
         "examples_per_step": cfg.batch_size * cfg.grad_accum,
         "losses": losses,
+        "learning_rates": learning_rates,   # at each logged step; shows a stopped run kept the full schedule
         "train_loss": result.training_loss,
         "loss_is_finite": all(l == l and abs(l) != float("inf") for l in losses + [result.training_loss]),
         "peak_gpu_gb": round(torch.cuda.max_memory_allocated() / 1e9, 2) if device == "cuda" else None,

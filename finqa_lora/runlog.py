@@ -12,8 +12,9 @@ prompt version and fingerprint, GPU, and the SHA-256 of its prediction CSV. Buil
 CSV's counts differ from the counts its report recorded, or if a CSV names an item that is not in
 the split.
 
-Sources read today: results/feasibility/run*/ (base models, zero-shot and 4-shot, dev) and
-results/pilot/run*/ (fine-tuned, dev after every epoch). Later jobs add a reader here.
+Sources read today: results/feasibility/run*/ (base models, zero-shot and 4-shot, dev),
+results/pilot/run*/ (fine-tuned, dev after every epoch) and results/main/run*/ (fine-tuned at the
+chosen epoch, dev). Later jobs (test passes) add a reader here.
 """
 import argparse
 import csv
@@ -170,6 +171,31 @@ def add_pilot(con, folder):
     return n
 
 
+def add_main(con, folder):
+    folder = Path(folder)
+    with open(folder / "report.json", encoding="utf-8") as f:
+        report = json.load(f)
+    n = 0
+    for result_path in sorted(folder.glob("*/seed*/result.json")):
+        with open(result_path, encoding="utf-8") as f:
+            res = json.load(f)
+        train = res["train"]
+        h, canonical = config_hash(train["config"])
+        _add(con, {
+            "run_id": f"{folder.parent.name}/{folder.name}/{res['arm']}/seed{res['seed']}/dev",
+            "source": f"{folder.parent.name}/{folder.name}", "kind": "finetuned",
+            "model": train["config"]["model"], "shots": 0, "split": "dev",
+            "arm": res["arm"], "seed": res["seed"], "lr": res["lr"], "epoch": res["epoch"], "step": res["step"],
+            "adapter_sha256": res["adapter_sha256"], "config_hash": h, "config_json": canonical,
+            "git_commit": train.get("git_commit"), "prompt_version": train.get("prompt_version"),
+            "prompt_fingerprint": train.get("prompt_fingerprint"), "gpu": res.get("gpu"),
+        }, result_path.parent / "dev.csv", res["dev"], folder.parent.parent)
+        n += 1
+    if n != len(report.get("runs", [])):
+        raise ValueError(f"{folder}: {n} result.json files, its report lists {len(report.get('runs', []))} runs")
+    return n
+
+
 def build(db=DB, results=RESULTS):
     db = Path(db)
     tmp = db.with_suffix(".db.part")
@@ -182,6 +208,8 @@ def build(db=DB, results=RESULTS):
             counts[f"feasibility/{folder.name}"] = add_feasibility(con, folder)
         for folder in sorted(Path(results).glob("pilot/run*")):
             counts[f"pilot/{folder.name}"] = add_pilot(con, folder)
+        for folder in sorted(Path(results).glob("main/run*")):
+            counts[f"main/{folder.name}"] = add_main(con, folder)
         con.commit()
     except Exception:
         con.close()
