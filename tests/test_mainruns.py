@@ -16,20 +16,31 @@ def write_report(path, chosen=None, missing=()):
     return path
 
 
-def test_plan_is_three_seeds_of_both_arms_paired_by_slot():
-    assert mainruns.ARMS == ("cleaned", "random") and mainruns.SEEDS == (1, 2, 3)
+def test_plan_is_five_seeds_of_both_arms_paired_by_slot():
+    assert mainruns.ARMS == ("cleaned", "random") and mainruns.SEEDS == (1, 2, 3, 4, 5)
     assert mainruns.SCHEDULE_EPOCHS == 3.0 and mainruns.MODEL == "Qwen/Qwen2.5-1.5B-Instruct"
-    runs = [r for chain in mainruns.CHAINS.values() for r in chain]
-    assert sorted(runs) == sorted((a, s) for a in mainruns.ARMS for s in mainruns.SEEDS)
-    for slot in zip(*mainruns.CHAINS.values()):
-        assert {a for a, _ in slot} == set(mainruns.ARMS) and len({s for _, s in slot}) == 1
+    runs = [r for job in mainruns.JOBS.values() for chain in job.values() for r in chain]
+    assert sorted(runs) == sorted((a, s) for a in mainruns.ARMS for s in mainruns.SEEDS)   # each run once
+    for job in mainruns.JOBS.values():
+        for slot in zip(*job.values()):
+            assert {a for a, _ in slot} == set(mainruns.ARMS) and len({s for _, s in slot}) == 1
+    # Seeds 1 to 3 are the job already launched from commit 0d172f7; they must not move.
+    assert mainruns.JOBS["main"] == {0: [("cleaned", 1), ("random", 2), ("cleaned", 3)],
+                                     1: [("random", 1), ("cleaned", 2), ("random", 3)]}
+    assert mainruns.job_seeds("main") == [1, 2, 3] and mainruns.job_seeds("main2") == [4, 5]
 
 
-def test_job_file_runs_the_chains_in_the_module():
-    text = (REPO_ROOT / "jobs" / "main.sh").read_text(encoding="utf-8")
-    found = {int(g): [(a, int(s)) for a, s in re.findall(r"(\w+):(\d)", jobs)]
-             for g, jobs in re.findall(r"^chain (\d) ((?:\w+:\d ?)+)", text, re.M)}
-    assert found == mainruns.CHAINS
+def test_job_files_take_their_chains_from_the_module():
+    import subprocess
+    import sys
+    main = (REPO_ROOT / "jobs" / "main.sh").read_text(encoding="utf-8")
+    assert not re.search(r"(cleaned|random):\d", main)          # no run list written into the job file
+    assert "MAIN_JOB=main2" in (REPO_ROOT / "jobs" / "main2.sh").read_text(encoding="utf-8")
+    for job, chains in mainruns.JOBS.items():
+        for gpu, chain in chains.items():
+            out = subprocess.run([sys.executable, "-m", "finqa_lora.mainruns", "chain", "--job", job, "--gpu", str(gpu)],
+                                 cwd=REPO_ROOT, capture_output=True, text=True, check=True).stdout.split()
+            assert out == [f"{a}:{s}" for a, s in chain]
 
 
 def test_frozen_reads_the_chosen_lr_and_epoch(tmp_path):

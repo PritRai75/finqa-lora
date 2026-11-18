@@ -25,7 +25,7 @@ No results yet. Numbers will be added here only from completed runs.
 | Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
 | Model choice | `Qwen/Qwen2.5-1.5B-Instruct` for all training (the only candidate under the 2.5 h per-run gate) |
 | Pilot: learning rate and epoch on dev, same-seed noise | done, `results/pilot/run1/`; chose learning rate 2e-4, epoch 3 (table below) |
-| Main training runs: cleaned versus random, 3 seeds each | ready (`jobs/main.sh`), configuration frozen from the pilot |
+| Main training runs: cleaned versus random, 5 seeds each | seeds 1 to 3 running on Kaggle (`jobs/main.sh`); seeds 4 and 5 next (`jobs/main2.sh`) |
 | Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
 | Test passes and evaluation | not started |
 
@@ -56,8 +56,19 @@ the result; the test passes are.
 GPU training with the same seed and the same batches is not bit-reproducible: adapters differed in all 6
 pairs, and replies differed on 20 to 50 of 883 items. Two of the six pairs differ at exact McNemar
 p = 0.039, so a per-item test between two training runs cannot by itself separate training noise from an
-effect. Each run took about 1.5 h of training (4.84 to 4.94 s per 16-example step, 5.56 GB peak) plus
+effect. This changed the cleaned-versus-random rule before any main run reported (see below). Each run took about 1.5 h of training (4.84 to 4.94 s per 16-example step, 5.56 GB peak) plus
 about 4 minutes per dev pass.
+
+### Cleaned versus random: the rule, fixed before any main-run result (19 Nov 2026)
+
+"Cleaning helped" (or "hurt") only if the 95% interval on the seed-averaged difference excludes zero
+and every seed pair agrees in sign. The interval adds two variances, which items happened to be in
+the test set and which training runs happened to come out, and uses a t quantile with
+2 × (seeds − 1) degrees of freedom. An interval over items alone ignores the second, and in
+simulation (`python -m finqa_lora.rulesim`) it declared a winner between identical arms in 16 to 23%
+of cases with 3 seeds once seeds differ by 0.6 to 1.2 accuracy points; this rule stayed at or under
+5% in every case. Seeds went from 3 to 5 per arm at the same time: at a seed spread of about 0.6
+points, the chance of detecting a real 2-point effect rises from 47% to 78% (simulation).
 
 ## Run it
 
@@ -101,7 +112,8 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
 | `finqa_lora/mainruns.py` | Main runs at the pilot's chosen learning rate and epoch (read from the committed pilot record), adapters kept |
 | `finqa_lora/testgate.py` | Keeps the test split locked until the test hand-checks are finished and committed |
-| `finqa_lora/stats.py` | Wilson intervals, exact McNemar, paired bootstrap and the cleaned-versus-random winner rule |
+| `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
+| `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
 | `notebooks/kaggle_job.ipynb`, `scripts/kaggle_run.sh`, `jobs/` | Kaggle launcher, runner script and one file per GPU job |

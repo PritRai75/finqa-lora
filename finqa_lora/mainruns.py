@@ -6,21 +6,26 @@ same model, prompt, LoRA settings and 3-epoch cosine schedule. Training stops at
 chosen epoch (train.StopAfterEpoch), so the schedule up to that point is the one the pilot measured.
 
 Arms (decision 5): cleaned = train minus the 431 screen flags; random = the same number of items
-drawn from all of train with ARM_SEED. Seeds 1, 2, 3. Seed 1 of the cleaned arm repeats the pilot's
-runs a and b at the chosen setting, which gives one more same-seed comparison for free.
+drawn from all of train with ARM_SEED. Seeds 1 to 5 (decision 40, 19 Nov 2026, before any main-run
+result: 3 seeds left a real 2-point effect mostly undetectable under the decision 39 rule). Seed 1 of
+the cleaned arm repeats the pilot's runs a and b at the chosen setting, which gives one more
+same-seed comparison for free.
 
-jobs/main.sh runs two chains in parallel, one per T4. Each slot pairs the two arms of one seed, one
-arm per GPU, so a job cut short still leaves complete seed pairs:
-  slot 1: GPU 0 cleaned seed 1, GPU 1 random seed 1
-  slot 2: GPU 0 random seed 2,  GPU 1 cleaned seed 2
-  slot 3: GPU 0 cleaned seed 3, GPU 1 random seed 3
+Two jobs, each two chains in parallel, one per T4 (JOBS below). Each slot pairs the two arms of one
+seed, one arm per GPU, so a job cut short still leaves complete seed pairs:
+  main  (results/main/run1): slot 1 GPU 0 cleaned 1, GPU 1 random 1; slot 2 random 2, cleaned 2;
+                             slot 3 cleaned 3, random 3
+  main2 (results/main/run2): slot 4 GPU 0 random 4, GPU 1 cleaned 4; slot 5 cleaned 5, random 5
+jobs/main.sh reads its chains from here (python -m finqa_lora.mainruns chain); jobs/main2.sh is
+jobs/main.sh with MAIN_JOB=main2.
 
 Each run keeps its adapter (about 74 MB) in <arm>/seed<k>/adapter/ for the test passes, scores dev
 once with it, and deletes everything else heavy. Test is not touched here.
 
 Usage:
   python -m finqa_lora.mainruns run --arm cleaned --seed 1 --out /kaggle/working/main   (one GPU)
-  python -m finqa_lora.mainruns report --out /kaggle/working/main
+  python -m finqa_lora.mainruns report --out /kaggle/working/main --job main
+  python -m finqa_lora.mainruns chain --job main --gpu 0    (prints that GPU's runs as arm:seed)
 """
 import argparse
 import json
@@ -33,11 +38,17 @@ from finqa_lora import REPO_ROOT
 from finqa_lora.pilot import MODEL, epoch_checkpoints, lr_name, prune, sha256
 
 ARMS = ("cleaned", "random")
-SEEDS = (1, 2, 3)
+SEEDS = (1, 2, 3, 4, 5)
 SCHEDULE_EPOCHS = 3.0
 PILOT_REPORT = REPO_ROOT / "results" / "pilot" / "run1" / "report.json"
-CHAINS = {0: [("cleaned", 1), ("random", 2), ("cleaned", 3)],
-          1: [("random", 1), ("cleaned", 2), ("random", 3)]}
+JOBS = {"main": {0: [("cleaned", 1), ("random", 2), ("cleaned", 3)],
+                 1: [("random", 1), ("cleaned", 2), ("random", 3)]},
+        "main2": {0: [("random", 4), ("cleaned", 5)],
+                  1: [("cleaned", 4), ("random", 5)]}}
+
+
+def job_seeds(job):
+    return sorted({s for chain in JOBS[job].values() for _, s in chain})
 ADAPTER_FILES = ("adapter_model.safetensors", "adapter_config.json")
 
 # Same-seed repeat tolerance on dev (decision 38), set from the pilot before any main run: across the
@@ -185,14 +196,16 @@ def pilot_repeat(result, report_path, main_dir=None):
     return out
 
 
-def report(out, report_path=PILOT_REPORT):
+def report(out, report_path=PILOT_REPORT, job="main"):
     results = load_results(out)
     got = {(r["arm"], r["seed"]) for r in results}
+    seeds = job_seeds(job)
     rep = {
         "written": time.strftime("%Y-%m-%d %H:%M:%S"),
+        "job": job,
         "frozen": frozen(report_path),
-        "missing_runs": [f"{a}/seed{s}" for s in SEEDS for a in ARMS if (a, s) not in got],
-        "complete_seed_pairs": [s for s in SEEDS if all((a, s) in got for a in ARMS)],
+        "missing_runs": [f"{a}/seed{s}" for s in seeds for a in ARMS if (a, s) not in got],
+        "complete_seed_pairs": [s for s in seeds if all((a, s) in got for a in ARMS)],
         "dev": {f"{r['arm']}/seed{r['seed']}": {"exe_correct": r["dev"]["exe_correct"], "items": r["dev"]["items"],
                                                  "executes": r["dev"]["executes"]} for r in results},
         "cleaned_seed1_vs_pilot": next((pilot_repeat(r, report_path, run_dir(out, r["arm"], r["seed"])) for r in results
@@ -230,12 +243,18 @@ def main():
     s = sub.add_parser("report")
     s.add_argument("--out", required=True)
     s.add_argument("--pilot-report", default=PILOT_REPORT)
+    s.add_argument("--job", choices=sorted(JOBS), default="main")
+    c = sub.add_parser("chain")
+    c.add_argument("--job", choices=sorted(JOBS), required=True)
+    c.add_argument("--gpu", type=int, choices=(0, 1), required=True)
     a = p.parse_args()
-    if a.cmd == "run":
+    if a.cmd == "chain":
+        print(" ".join(f"{arm}:{seed}" for arm, seed in JOBS[a.job][a.gpu]))
+    elif a.cmd == "run":
         run_one(a.arm, a.seed, a.out, model=a.model, dev_limit=a.dev_limit, report_path=a.pilot_report,
                 subset=a.subset, epochs=a.epochs, batch_size=a.batch_size, grad_accum=a.grad_accum)
     else:
-        rep = report(a.out, a.pilot_report)
+        rep = report(a.out, a.pilot_report, a.job)
         print(json.dumps({k: rep[k] for k in ("frozen", "missing_runs", "dev", "cleaned_seed1_vs_pilot")}, indent=2))
 
 
