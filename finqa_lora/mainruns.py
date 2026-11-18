@@ -40,6 +40,13 @@ CHAINS = {0: [("cleaned", 1), ("random", 2), ("cleaned", 3)],
           1: [("random", 1), ("cleaned", 2), ("random", 3)]}
 ADAPTER_FILES = ("adapter_model.safetensors", "adapter_config.json")
 
+# Same-seed repeat tolerance on dev (decision 38), set from the pilot before any main run: across the
+# six same-seed pairs (2 learning rates x 3 epochs) replies were identical on 833 to 863 of 883 items
+# and 3 to 13 items were right in one run only. GPU training is not bit-reproducible (adapters
+# differed in 6 of 6 pairs), so adapter hashes are recorded, not checked. A repeat outside these
+# bounds means something changed (packages, GPU, data) and is investigated before any analysis.
+REPEAT_TOLERANCE = {"same_reply_min": 800, "discordant_max": 20}
+
 
 def frozen(report_path=PILOT_REPORT):
     """The learning rate and epoch chosen by the pilot. Refuses an incomplete or missing pilot."""
@@ -52,8 +59,12 @@ def frozen(report_path=PILOT_REPORT):
     if rep.get("missing_runs") or not chosen or not chosen.get("from_complete_pair"):
         raise SystemExit(f"{report_path}: the pilot is incomplete (missing {rep.get('missing_runs')}); "
                          "the selection rule needs both runs of every learning rate")
+    try:
+        shown = report_path.resolve().relative_to(REPO_ROOT.resolve()).as_posix()
+    except ValueError:
+        shown = report_path.as_posix()
     return {"lr": chosen["lr"], "epoch": int(chosen["epoch"]), "pilot_mean_dev_exe_correct": chosen["mean_exe_correct"],
-            "pilot_report": report_path.as_posix(), "pilot_report_written": rep.get("written"),
+            "pilot_report": shown, "pilot_report_written": rep.get("written"),
             "prompt_fingerprint": rep.get("prompt_fingerprint")}
 
 
@@ -126,8 +137,33 @@ def load_results(out):
     return results
 
 
-def pilot_repeat(result, report_path):
-    """Cleaned seed 1 against the pilot's runs a and b at the chosen learning rate and epoch."""
+def _rows(path):
+    import csv
+    with open(path, encoding="utf-8", newline="") as f:
+        return {r["id"]: r for r in csv.DictReader(f)}
+
+
+def compare_dev(main_csv, pilot_csv):
+    """Item-level comparison of two dev prediction files of the same configuration and seed."""
+    m, p = _rows(main_csv), _rows(pilot_csv)
+    if set(m) != set(p):
+        raise ValueError(f"{main_csv} and {pilot_csv} cover different items")
+    right = lambda r: r["exe_correct"] in ("1", "True")
+    main_only = sum(right(m[i]) and not right(p[i]) for i in m)
+    pilot_only = sum(right(p[i]) and not right(m[i]) for i in m)
+    same = sum(m[i]["reply"] == p[i]["reply"] for i in m)
+    return {"items": len(m), "same_reply": same, "right_in_main_only": main_only, "right_in_pilot_only": pilot_only,
+            "discordant": main_only + pilot_only,
+            # The tolerance is set for the full dev split; a partial comparison is not judged.
+            "within_tolerance": (same >= REPEAT_TOLERANCE["same_reply_min"]
+                                 and main_only + pilot_only <= REPEAT_TOLERANCE["discordant_max"]) if len(m) == 883 else None}
+
+
+def pilot_repeat(result, report_path, main_dir=None):
+    """Cleaned seed 1 against the pilot's runs a and b at the chosen learning rate and epoch.
+
+    Same data, seed and configuration; only GPU arithmetic differs. Judged by REPEAT_TOLERANCE.
+    """
     folder = Path(report_path).parent / lr_name(result["lr"])
     out = {}
     for rep in ("a", "b"):
@@ -137,8 +173,15 @@ def pilot_repeat(result, report_path):
         with open(path, encoding="utf-8") as f:
             pilot = json.load(f)
         e = next((e for e in pilot["epochs"] if e["epoch"] == result["epoch"]), None)
-        if e:
-            out[rep] = {"dev_exe_correct": e["exe_correct"], "same_adapter": e["adapter_sha256"] == result["adapter_sha256"]}
+        if not e:
+            continue
+        out[rep] = {"dev_exe_correct": e["exe_correct"], "main_dev_exe_correct": result["dev"]["exe_correct"],
+                    "same_adapter": e["adapter_sha256"] == result["adapter_sha256"]}
+        pilot_csv = folder / rep / f"dev_epoch{result['epoch']}.csv"
+        if main_dir is not None and pilot_csv.exists():
+            out[rep].update(compare_dev(Path(main_dir) / "dev.csv", pilot_csv))
+    if out:
+        out["tolerance"] = REPEAT_TOLERANCE
     return out
 
 
@@ -152,7 +195,7 @@ def report(out, report_path=PILOT_REPORT):
         "complete_seed_pairs": [s for s in SEEDS if all((a, s) in got for a in ARMS)],
         "dev": {f"{r['arm']}/seed{r['seed']}": {"exe_correct": r["dev"]["exe_correct"], "items": r["dev"]["items"],
                                                  "executes": r["dev"]["executes"]} for r in results},
-        "cleaned_seed1_vs_pilot": next((pilot_repeat(r, report_path) for r in results
+        "cleaned_seed1_vs_pilot": next((pilot_repeat(r, report_path, run_dir(out, r["arm"], r["seed"])) for r in results
                                         if r["arm"] == "cleaned" and r["seed"] == 1), None),
         "runs": [{"arm": r["arm"], "seed": r["seed"], "gpu": r["gpu"], "step": r["step"], "items": r["train"]["items"],
                   "dropped_over_max_length": len(r["train"]["dropped_over_max_length"]),

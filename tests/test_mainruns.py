@@ -81,4 +81,47 @@ def test_stopped_run_repeats_the_pilot_up_to_the_chosen_epoch(tmp_path):
 
     rep = mainruns.report(out, report)
     assert rep["complete_seed_pairs"] == [] and "random/seed1" in rep["missing_runs"]
-    assert rep["cleaned_seed1_vs_pilot"]["a"]["same_adapter"] and rep["cleaned_seed1_vs_pilot"]["b"]["same_adapter"]
+    vs = rep["cleaned_seed1_vs_pilot"]
+    assert vs["a"]["same_adapter"] and vs["b"]["same_adapter"]
+    assert (vs["a"]["same_reply"], vs["a"]["discordant"], vs["a"]["within_tolerance"]) == (3, 0, None)  # 3 of 883 items
+
+
+PILOT = REPO_ROOT / "results" / "pilot" / "run1"
+
+
+def test_frozen_config_is_the_pilot_choice():
+    """Decision 37 (S4): the committed pilot chose lr 2e-4 at epoch 3 (dev 589 and 582, mean 585.5)."""
+    fz = mainruns.frozen()
+    assert (fz["lr"], fz["epoch"], fz["pilot_mean_dev_exe_correct"]) == (2e-4, 3, 585.5)
+    assert fz["pilot_report"] == "results/pilot/run1/report.json" and fz["prompt_fingerprint"] == "4139bfc3519c"
+
+
+def test_repeat_tolerance_holds_for_every_pilot_pair():
+    """Decision 38: the tolerance was set from these six same-seed pairs; each must pass it."""
+    seen = []
+    for lr in ("lr1e-4", "lr2e-4"):
+        for e in (1, 2, 3):
+            c = mainruns.compare_dev(PILOT / lr / "a" / f"dev_epoch{e}.csv", PILOT / lr / "b" / f"dev_epoch{e}.csv")
+            assert c["within_tolerance"], (lr, e, c)
+            seen.append((c["same_reply"], c["discordant"]))
+    assert min(s for s, _ in seen) == 833 and max(s for s, _ in seen) == 863
+    assert min(d for _, d in seen) == 3 and max(d for _, d in seen) == 13
+
+
+def test_repeat_tolerance_flags_a_run_that_changed(tmp_path):
+    """21 items flipped from right to wrong against the pilot's run a: outside the tolerance."""
+    import csv
+    src = PILOT / "lr2e-4" / "a" / "dev_epoch3.csv"
+    with open(src, encoding="utf-8", newline="") as f:
+        rows = list(csv.DictReader(f))
+    flipped = 0
+    for r in rows:
+        if r["exe_correct"] == "1" and flipped < 21:
+            r["exe_correct"], flipped = "0", flipped + 1
+    changed = tmp_path / "dev.csv"
+    with open(changed, "w", encoding="utf-8", newline="") as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+        w.writeheader()
+        w.writerows(rows)
+    c = mainruns.compare_dev(changed, src)
+    assert (c["same_reply"], c["right_in_pilot_only"], c["within_tolerance"]) == (883, 21, False)

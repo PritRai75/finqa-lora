@@ -24,8 +24,8 @@ No results yet. Numbers will be added here only from completed runs.
 | Feasibility run 1 on GPU: licences, token lengths, base models on dev | done, `results/feasibility/run1/` |
 | Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
 | Model choice | `Qwen/Qwen2.5-1.5B-Instruct` for all training (the only candidate under the 2.5 h per-run gate) |
-| Pilot: learning rate and epoch on dev, same-seed noise | running on Kaggle (`jobs/pilot.sh`, GPU T4 x2) |
-| Main training runs: cleaned versus random, 3 seeds each | ready (`jobs/main.sh`); starts once the pilot record is committed |
+| Pilot: learning rate and epoch on dev, same-seed noise | done, `results/pilot/run1/`; chose learning rate 2e-4, epoch 3 (table below) |
+| Main training runs: cleaned versus random, 3 seeds each | ready (`jobs/main.sh`), configuration frozen from the pilot |
 | Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
 | Test passes and evaluation | not started |
 
@@ -38,6 +38,26 @@ No results yet. Numbers will be added here only from completed runs.
 | test | 1,147 | 1,040 | 76 | 9 | 8 | 14 |
 
 A `disagree` is a flag, not a confirmed error. The hand-check decides which flags are real and which side is wrong.
+
+### Pilot (dev, cleaned arm, seed 1; Kaggle T4 x2, 16 Nov 2026)
+
+Dev execution accuracy out of 883, each setting trained twice with the same seed (runs a and b).
+Selection rule fixed before the run: highest mean of a and b; ties to fewer epochs, then the lower learning rate.
+
+| Learning rate | Epoch 1 (a / b) | Epoch 2 (a / b) | Epoch 3 (a / b) |
+| --- | --- | --- | --- |
+| 1e-4 | 574 / 566 | 576 / 574 | 576 / 579 |
+| 2e-4 | 566 / 565 | 581 / 582 | **589 / 582** (chosen) |
+
+For scale, the base 1.5B model scores 29 (zero-shot) and 43 (4-shot) on the same items, and Qwen3-4B 224
+and 221 (`results/feasibility/run1/`). Dev was used to choose the setting, so these dev numbers are not
+the result; the test passes are.
+
+GPU training with the same seed and the same batches is not bit-reproducible: adapters differed in all 6
+pairs, and replies differed on 20 to 50 of 883 items. Two of the six pairs differ at exact McNemar
+p = 0.039, so a per-item test between two training runs cannot by itself separate training noise from an
+effect. Each run took about 1.5 h of training (4.84 to 4.94 s per 16-example step, 5.56 GB peak) plus
+about 4 minutes per dev pass.
 
 ## Run it
 
