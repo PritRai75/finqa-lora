@@ -56,6 +56,14 @@ correction that disagrees with the side marked right, and a note with no number 
 item. It never changes a verdict. `tests/test_handcheck.py` runs the same check on every
 committed sheet, so a sheet with an invalid value fails CI.
 
+## Test gate
+
+No model generates on the test split until check2 and check3 have a verdict on every row, pass
+`--validate` with no invalid value, still hold exactly the items they were built with, and are
+committed with no later changes (`finqa_lora/testgate.py`, called by `finqa_lora.infer`). Each test
+pass stores the git blob and last commit of both sheets. `python -m finqa_lora.testgate` shows
+whether the gate is open.
+
 ## Self-agreement
 
 At least a week after the last check, re-check 20 items blind (about 10 `real_error` and 10

@@ -101,7 +101,15 @@ def summarize(rows):
 
 
 def run(model_id, split, shots=0, adapter=None, limit=None, batch_size=16, model=None, tok=None):
-    """Generate and score. Returns (rows, summary dict with timing)."""
+    """Generate and score. Returns (rows, summary dict with timing).
+
+    For split "test" the test gate must open first (finqa_lora.testgate): check2 and check3 finished
+    and committed. The gate's record of those sheets goes into the summary as "test_gate".
+    """
+    gate = None
+    if split == "test":
+        from finqa_lora.testgate import open_gate
+        gate = open_gate()  # raises GateClosed; nothing below runs, not even model loading
     tok = tok or load_tokenizer(model_id)
     model = model or load_model(model_id, adapter)
     examples = load_split(split)[:limit]
@@ -114,6 +122,8 @@ def run(model_id, split, shots=0, adapter=None, limit=None, batch_size=16, model
     summary = summarize(rows) | {"split": split, "shots": shots, "seconds": round(seconds, 1),
                                  "prompt_tokens_mean": round(sum(len(tok(p, add_special_tokens=False)["input_ids"])
                                                                  for p in prompts) / len(prompts), 1)}
+    if gate is not None:
+        summary["test_gate"] = gate
     return rows, summary
 
 

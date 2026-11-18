@@ -99,12 +99,18 @@ def item_md(n, ex, status):
 """
 
 
-def build(check):
+def select_items(check):
+    """The items a check covers, in sheet order, and the pool they were drawn from."""
     split, statuses, n = CHECKS[check]
     status = screen_status(split)
-    data = load_split(split)
-    pool = [ex for ex in data if status[ex["id"]] in statuses]
+    pool = [ex for ex in load_split(split) if status[ex["id"]] in statuses]
     items = sorted(random.Random(SEED).sample(pool, n), key=lambda e: e["id"]) if n else pool
+    return items, pool, status
+
+
+def build(check):
+    split, statuses, _ = CHECKS[check]
+    items, pool, status = select_items(check)
     OUT.mkdir(exist_ok=True)
     csv_path = OUT / f"{check}.csv"
     if csv_path.exists():
@@ -224,14 +230,15 @@ def check_row(row, ex, split=None, status=None):
     return invalid, review
 
 
-def validate(check):
+def validate(check, path=None):
     split = CHECKS[check][0]
-    path = OUT / f"{check}.csv"
+    path = path or OUT / f"{check}.csv"
     with open(path, encoding="utf-8-sig") as f:
         rows = list(csv.DictReader(f))
     items = {ex["id"]: ex for ex in load_split(split)}
     status = screen_status(split)
-    report = {"rows": len(rows), "with_verdict": 0, "invalid": [], "to_review": []}
+    report = {"rows": len(rows), "with_verdict": 0, "invalid": [], "to_review": [],
+              "ids": [row.get("id") for row in rows]}
     if rows and list(rows[0]) != SHEET_COLUMNS:
         report["invalid"].append(("-", "-", f"header changed: expected {SHEET_COLUMNS}"))
     for row in rows:
