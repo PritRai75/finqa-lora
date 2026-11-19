@@ -1,0 +1,118 @@
+{
+  "written": "2026-11-19 12:53:37",
+  "job": "main2",
+  "frozen": {
+    "lr": 0.0002,
+    "epoch": 3,
+    "pilot_mean_dev_exe_correct": 585.5,
+    "pilot_report": "results/pilot/run1/report.json",
+    "pilot_report_written": "2026-11-16 15:15:07",
+    "prompt_fingerprint": "4139bfc3519c"
+  },
+  "missing_runs": [],
+  "complete_seed_pairs": [
+    4,
+    5
+  ],
+  "dev": {
+    "cleaned/seed4": {
+      "exe_correct": 575,
+      "items": 883,
+      "executes": 880
+    },
+    "cleaned/seed5": {
+      "exe_correct": 596,
+      "items": 883,
+      "executes": 879
+    },
+    "random/seed4": {
+      "exe_correct": 589,
+      "items": 883,
+      "executes": 879
+    },
+    "random/seed5": {
+      "exe_correct": 584,
+      "items": 883,
+      "executes": 878
+    }
+  },
+  "cleaned_seed1_vs_pilot": null,
+  "runs": [
+    {
+      "arm": "cleaned",
+      "seed": 4,
+      "gpu": "Tesla T4",
+      "step": 1092,
+      "items": 5820,
+      "dropped_over_max_length": 0,
+      "train_seconds": 5827.6,
+      "seconds_per_step": 5.321,
+      "train_loss": 0.07366660803738954,
+      "loss_is_finite": true,
+      "last_learning_rate": 3.960203218911218e-09,
+      "peak_gpu_gb": 5.56,
+      "dev_seconds": 263.3,
+      "adapter_sha256": "f7c46d2eb235e1a0e417fa104068a1008a1d931b5ee6a1ec1cf1e6588e4db79b",
+      "adapter_bytes": 73911112,
+      "final_is_chosen_epoch": true,
+      "git_commit": "c878f3ee56e39f353da178eebf09487ea4676e01"
+    },
+    {
+      "arm": "cleaned",
+      "seed": 5,
+      "gpu": "Tesla T4",
+      "step": 1092,
+      "items": 5820,
+      "dropped_over_max_length": 0,
+      "train_seconds": 5748.5,
+      "seconds_per_step": 5.254,
+      "train_loss": 0.0738528585479332,
+      "loss_is_finite": true,
+      "last_learning_rate": 3.960203218911218e-09,
+      "peak_gpu_gb": 5.56,
+      "dev_seconds": 263.2,
+      "adapter_sha256": "7477325bf640fe0714c994a2808eb0bb2ab56ece5e3b3b59c13dd255cadf5440",
+      "adapter_bytes": 73911112,
+      "final_is_chosen_epoch": true,
+      "git_commit": "c878f3ee56e39f353da178eebf09487ea4676e01"
+    },
+    {
+      "arm": "random",
+      "seed": 4,
+      "gpu": "Tesla T4",
+      "step": 1092,
+      "items": 5820,
+      "dropped_over_max_length": 0,
+      "train_seconds": 5759.2,
+      "seconds_per_step": 5.258,
+      "train_loss": 0.08626386961531263,
+      "loss_is_finite": true,
+      "last_learning_rate": 3.960203218911218e-09,
+      "peak_gpu_gb": 5.56,
+      "dev_seconds": 267.2,
+      "adapter_sha256": "2684ed63df9b4fa9207c9ea17a13515439529d7ec5ecd0818c13ce58586c819d",
+      "adapter_bytes": 73911112,
+      "final_is_chosen_epoch": true,
+      "git_commit": "c878f3ee56e39f353da178eebf09487ea4676e01"
+    },
+    {
+      "arm": "random",
+      "seed": 5,
+      "gpu": "Tesla T4",
+      "step": 1092,
+      "items": 5820,
+      "dropped_over_max_length": 0,
+      "train_seconds": 5838.5,
+      "seconds_per_step": 5.334,
+      "train_loss": 0.08674914347035162,
+      "loss_is_finite": true,
+      "last_learning_rate": 3.960203218911218e-09,
+      "peak_gpu_gb": 5.56,
+      "dev_seconds": 275.5,
+      "adapter_sha256": "5c87778023aaaf8277b27f33734d17536b8e01190f9cc3d8ee1f1613bf67772f",
+      "adapter_bytes": 73911112,
+      "final_is_chosen_epoch": true,
+      "git_commit": "c878f3ee56e39f353da178eebf09487ea4676e01"
+    }
+  ]
+}

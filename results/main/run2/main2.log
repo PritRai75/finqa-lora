@@ -1,0 +1,40 @@
+GPUs visible: 2, needed: 2
+frozen config: {'lr': 0.0002, 'epoch': 3, 'pilot_mean_dev_exe_correct': 585.5, 'pilot_report': 'results/pilot/run1/report.json', 'pilot_report_written': '2026-11-16 15:15:07', 'prompt_fingerprint': '4139bfc3519c'}
+job main2: GPU 0 runs random:4 cleaned:5; GPU 1 runs cleaned:4 random:5
+started: GPU 0 (pid 119), GPU 1 (pid 120). Progress: /kaggle/working/main2/gpu0.log, /kaggle/working/main2/gpu1.log
+GPU 0 chain finished
+GPU 1 chain finished
+{
+  "frozen": {
+    "lr": 0.0002,
+    "epoch": 3,
+    "pilot_mean_dev_exe_correct": 585.5,
+    "pilot_report": "results/pilot/run1/report.json",
+    "pilot_report_written": "2026-11-16 15:15:07",
+    "prompt_fingerprint": "4139bfc3519c"
+  },
+  "missing_runs": [],
+  "dev": {
+    "cleaned/seed4": {
+      "exe_correct": 575,
+      "items": 883,
+      "executes": 880
+    },
+    "cleaned/seed5": {
+      "exe_correct": 596,
+      "items": 883,
+      "executes": 879
+    },
+    "random/seed4": {
+      "exe_correct": 589,
+      "items": 883,
+      "executes": 879
+    },
+    "random/seed5": {
+      "exe_correct": 584,
+      "items": 883,
+      "executes": 878
+    }
+  },
+  "cleaned_seed1_vs_pilot": null
+}

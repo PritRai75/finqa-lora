@@ -10,3 +10,5 @@ __pycache__/
 runs/
 runs.db
 runs.db.part
+# Adapters stay out of Git (decision 41); each run's report.json records their SHA-256.
+*.safetensors

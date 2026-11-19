@@ -10,7 +10,7 @@ Work in progress. Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), 
    It is compared with the base model, and training on screened data is compared with a random subset of
    the same size.
 
-No results yet. Numbers will be added here only from completed runs.
+No test results yet. Numbers will be added here only from completed runs.
 
 ## Status
 
@@ -25,7 +25,7 @@ No results yet. Numbers will be added here only from completed runs.
 | Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
 | Model choice | `Qwen/Qwen2.5-1.5B-Instruct` for all training (the only candidate under the 2.5 h per-run gate) |
 | Pilot: learning rate and epoch on dev, same-seed noise | done, `results/pilot/run1/`; chose learning rate 2e-4, epoch 3 (table below) |
-| Main training runs: cleaned versus random, 5 seeds each | seeds 1 to 3 running on Kaggle (`jobs/main.sh`); seeds 4 and 5 next (`jobs/main2.sh`) |
+| Main training runs: cleaned versus random, 5 seeds each | done, `results/main/run1/` (seeds 1 to 3) and `results/main/run2/` (seeds 4 and 5); dev table below |
 | Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
 | Test passes and evaluation | not started |
 
@@ -69,6 +69,31 @@ simulation (`python -m finqa_lora.rulesim`) it declared a winner between identic
 of cases with 3 seeds once seeds differ by 0.6 to 1.2 accuracy points; this rule stayed at or under
 5% in every case. Seeds went from 3 to 5 per arm at the same time: at a seed spread of about 0.6
 points, the chance of detecting a real 2-point effect rises from 47% to 78% (simulation).
+
+### Main runs on dev (learning rate 2e-4, epoch 3, 5 seeds per arm; Kaggle T4 x2, 19 Nov 2026)
+
+Dev execution accuracy out of 883 (items whose program executes in brackets). Both arms train on
+5,820 items; the random arm is a random subset of train of the same size.
+
+| Seed | Cleaned | Random | Cleaned − random |
+| --- | --- | --- | --- |
+| 1 | 588 (877) | 583 (880) | +5 |
+| 2 | 583 (881) | 582 (881) | +1 |
+| 3 | 585 (879) | 588 (880) | −3 |
+| 4 | 575 (880) | 589 (879) | −14 |
+| 5 | 596 (879) | 584 (878) | +12 |
+| Mean (SD) | 585.4 (7.6) = 66.3% | 585.2 (3.1) = 66.3% | +0.2 |
+
+This is not the comparison. Dev chose the learning rate and epoch (on the cleaned arm), and the
+cleaned-versus-random decision is made once, on test, with the rule above. What dev does show is the
+size of the training noise: the within-arm SD across seeds is 5.8 items, 0.66 accuracy points (8 degrees of
+freedom; the 95% range for the true value is about 0.45 to 1.3 points), and two runs with different seeds
+give the same reply on 675 to 724 of 883 items (all 45 pairs, either arm), against 833 to 863 for
+same-seed repeats in the pilot.
+Cleaned seed 1 repeats the pilot's chosen run within the tolerance fixed beforehand (same reply on at
+least 800 items, at most 20 right in one run only): 840 and 822 same replies, 11 and 16 right in one only.
+
+Adapters (about 74 MB each) are not committed. Each run's `report.json` records the SHA-256 of its adapter.
 
 ## Run it
 
@@ -118,6 +143,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
 | `notebooks/kaggle_job.ipynb`, `scripts/kaggle_run.sh`, `jobs/` | Kaggle launcher, runner script and one file per GPU job |
 | `results/feasibility/` | Reports, logs and dev predictions of the feasibility runs |
+| `results/pilot/`, `results/main/` | Reports, logs, training states and dev predictions of the pilot and main runs (adapters not committed) |
 
 ## Data and licence
 
