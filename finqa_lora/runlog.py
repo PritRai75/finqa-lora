@@ -12,9 +12,9 @@ prompt version and fingerprint, GPU, and the SHA-256 of its prediction CSV. Buil
 CSV's counts differ from the counts its report recorded, or if a CSV names an item that is not in
 the split.
 
-Sources read today: results/feasibility/run*/ (base models, zero-shot and 4-shot, dev),
-results/pilot/run*/ (fine-tuned, dev after every epoch) and results/main/run*/ (fine-tuned at the
-chosen epoch, dev). Later jobs (test passes) add a reader here.
+Sources: results/feasibility/run*/ (base models, zero-shot and 4-shot, dev), results/pilot/run*/
+(fine-tuned, dev after every epoch), results/main/run*/ (fine-tuned at the chosen epoch, dev) and
+results/test/run*/ (the test passes of jobs/testpass.sh, and their dev checks).
 """
 import argparse
 import csv
@@ -196,6 +196,37 @@ def add_main(con, folder):
     return n
 
 
+def add_test(con, folder):
+    """Test passes (finqa_lora.testpass): one run per pass on test, one per dev check on dev."""
+    folder = Path(folder)
+    with open(folder / "report.json", encoding="utf-8") as f:
+        report = json.load(f)
+    n = 0
+    for result_path in sorted(folder.rglob("result.json")):
+        with open(result_path, encoding="utf-8") as f:
+            res = json.load(f)
+        rel = result_path.parent.relative_to(folder).as_posix()
+        check = rel.startswith("devcheck/")
+        summary = res["dev"] if check else res["test"]
+        adapter = res.get("adapter_sha256")
+        cfg = {"kind": "finetuned" if adapter else "base", "model": res["model"], "revision": res.get("revision"),
+               "shots": res.get("shots", 0), "split": "dev" if check else "test", "adapter_sha256": adapter}
+        h, canonical = config_hash(cfg)
+        _add(con, {
+            "run_id": f"{folder.parent.name}/{folder.name}/{rel}/{cfg['split']}",
+            "source": f"{folder.parent.name}/{folder.name}", "kind": cfg["kind"], "model": res["model"],
+            "shots": cfg["shots"], "split": cfg["split"], "arm": res.get("arm"), "seed": res.get("seed"),
+            "adapter_sha256": adapter, "config_hash": h, "config_json": canonical, "git_commit": res.get("git_commit"),
+            "prompt_version": res.get("prompt_version"), "prompt_fingerprint": res.get("prompt_fingerprint"),
+            "gpu": res.get("gpu"),
+        }, result_path.parent / ("dev.csv" if check else "test.csv"), summary, folder.parent.parent)
+        n += 1
+    listed = len(report.get("passes", [])) + len(report.get("dev_checks", []))
+    if n != listed:
+        raise ValueError(f"{folder}: {n} result.json files, its report lists {listed} passes and dev checks")
+    return n
+
+
 def build(db=DB, results=RESULTS):
     db = Path(db)
     tmp = db.with_suffix(".db.part")
@@ -210,6 +241,8 @@ def build(db=DB, results=RESULTS):
             counts[f"pilot/{folder.name}"] = add_pilot(con, folder)
         for folder in sorted(Path(results).glob("main/run*")):
             counts[f"main/{folder.name}"] = add_main(con, folder)
+        for folder in sorted(Path(results).glob("test/run*")):
+            counts[f"test/{folder.name}"] = add_test(con, folder)
         con.commit()
     except Exception:
         con.close()

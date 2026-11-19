@@ -28,7 +28,7 @@ No test results yet. Numbers will be added here only from completed runs.
 | Main training runs: cleaned versus random, 5 seeds each | done, `results/main/run1/` (seeds 1 to 3) and `results/main/run2/` (seeds 4 and 5); dev table below |
 | Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
 | Test passes | job ready (`jobs/testpass.sh`), waits for the test gate; adapters come from a private Kaggle dataset, found by SHA-256 |
-| Evaluation on test | not started |
+| Evaluation on test | code ready, tested on made-up predictions (`finqa_lora/testeval.py`): three views, Wilson intervals, McNemar, the winner rule |
 
 ### Screen counts (automatic, not hand-checked)
 
@@ -110,6 +110,7 @@ python -m finqa_lora.handcheck check1             # builds the sheet (never over
 python -m finqa_lora.handcheck check1 --validate  # lists invalid or changed values in a filled sheet
 python -m finqa_lora.runlog build                 # indexes every committed run into runs.db
 python -m finqa_lora.testgate                     # is the test split unlocked? (exit 1 while it is not)
+python -m finqa_lora.testeval results/test/run1   # views and statistics of a recorded test run
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -138,6 +139,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
 | `finqa_lora/mainruns.py` | Main runs at the pilot's chosen learning rate and epoch (read from the committed pilot record), adapters kept |
 | `finqa_lora/testgate.py` | Keeps the test split locked until the test hand-checks are finished and committed |
+| `finqa_lora/testeval.py` | The three test views (official, consistent, corrected) from check2 and check3, and every statistic, from a recorded test run |
 | `finqa_lora/testpass.py` | The test passes: 10 adapters (each matched to its committed SHA-256) and 3 prompted base models at pinned Hub revisions, after a dev check that the committed dev replies repeat |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
 | `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
