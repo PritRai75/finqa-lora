@@ -1,0 +1,76 @@
+GPUs visible: 2, needed: 2
+frozen config: {'lr': 0.0002, 'epoch': 3, 'pilot_mean_dev_exe_correct': 585.5, 'pilot_report': 'results/pilot/run1/report.json', 'pilot_report_written': '2026-11-16 15:15:07', 'prompt_fingerprint': '4139bfc3519c'}
+started: GPU 0 (pid 115), GPU 1 (pid 116). Progress: /kaggle/working/main/gpu0.log, /kaggle/working/main/gpu1.log
+GPU 0 chain finished
+GPU 1 chain finished
+{
+  "frozen": {
+    "lr": 0.0002,
+    "epoch": 3,
+    "pilot_mean_dev_exe_correct": 585.5,
+    "pilot_report": "results/pilot/run1/report.json",
+    "pilot_report_written": "2026-11-16 15:15:07",
+    "prompt_fingerprint": "4139bfc3519c"
+  },
+  "missing_runs": [],
+  "dev": {
+    "cleaned/seed1": {
+      "exe_correct": 588,
+      "items": 883,
+      "executes": 877
+    },
+    "cleaned/seed2": {
+      "exe_correct": 583,
+      "items": 883,
+      "executes": 881
+    },
+    "cleaned/seed3": {
+      "exe_correct": 585,
+      "items": 883,
+      "executes": 879
+    },
+    "random/seed1": {
+      "exe_correct": 583,
+      "items": 883,
+      "executes": 880
+    },
+    "random/seed2": {
+      "exe_correct": 582,
+      "items": 883,
+      "executes": 881
+    },
+    "random/seed3": {
+      "exe_correct": 588,
+      "items": 883,
+      "executes": 880
+    }
+  },
+  "cleaned_seed1_vs_pilot": {
+    "a": {
+      "dev_exe_correct": 589,
+      "main_dev_exe_correct": 588,
+      "same_adapter": false,
+      "items": 883,
+      "same_reply": 840,
+      "right_in_main_only": 5,
+      "right_in_pilot_only": 6,
+      "discordant": 11,
+      "within_tolerance": true
+    },
+    "b": {
+      "dev_exe_correct": 582,
+      "main_dev_exe_correct": 588,
+      "same_adapter": false,
+      "items": 883,
+      "same_reply": 822,
+      "right_in_main_only": 11,
+      "right_in_pilot_only": 5,
+      "discordant": 16,
+      "within_tolerance": true
+    },
+    "tolerance": {
+      "same_reply_min": 800,
+      "discordant_max": 20
+    }
+  }
+}
