@@ -27,7 +27,8 @@ No test results yet. Numbers will be added here only from completed runs.
 | Pilot: learning rate and epoch on dev, same-seed noise | done, `results/pilot/run1/`; chose learning rate 2e-4, epoch 3 (table below) |
 | Main training runs: cleaned versus random, 5 seeds each | done, `results/main/run1/` (seeds 1 to 3) and `results/main/run2/` (seeds 4 and 5); dev table below |
 | Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
-| Test passes and evaluation | not started |
+| Test passes | job ready (`jobs/testpass.sh`), waits for the test gate; adapters come from a private Kaggle dataset, found by SHA-256 |
+| Evaluation on test | not started |
 
 ### Screen counts (automatic, not hand-checked)
 
@@ -137,6 +138,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/pilot.py` | Pilot runs, per-epoch dev scoring, the selection rule and the same-seed noise report |
 | `finqa_lora/mainruns.py` | Main runs at the pilot's chosen learning rate and epoch (read from the committed pilot record), adapters kept |
 | `finqa_lora/testgate.py` | Keeps the test split locked until the test hand-checks are finished and committed |
+| `finqa_lora/testpass.py` | The test passes: 10 adapters (each matched to its committed SHA-256) and 3 prompted base models at pinned Hub revisions, after a dev check that the committed dev replies repeat |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
 | `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |

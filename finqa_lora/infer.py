@@ -23,17 +23,18 @@ def device_and_dtype():
     return ("cuda", torch.float16) if torch.cuda.is_available() else ("cpu", torch.float32)
 
 
-def load_tokenizer(model_id):
-    tok = AutoTokenizer.from_pretrained(model_id)
+def load_tokenizer(model_id, revision=None):
+    tok = AutoTokenizer.from_pretrained(model_id, revision=revision)
     tok.padding_side = "left"
     if tok.pad_token is None:
         tok.pad_token = tok.eos_token
     return tok
 
 
-def load_model(model_id, adapter=None):
+def load_model(model_id, adapter=None, revision=None):
+    """revision pins the base model's Hub commit (None: the Hub's main, as in training)."""
     device, dtype = device_and_dtype()
-    model = AutoModelForCausalLM.from_pretrained(model_id, dtype=dtype).to(device)
+    model = AutoModelForCausalLM.from_pretrained(model_id, dtype=dtype, revision=revision).to(device)
     if adapter:
         from peft import PeftModel
         model = PeftModel.from_pretrained(model, adapter)
@@ -100,7 +101,7 @@ def summarize(rows):
     }
 
 
-def run(model_id, split, shots=0, adapter=None, limit=None, batch_size=16, model=None, tok=None):
+def run(model_id, split, shots=0, adapter=None, limit=None, batch_size=16, model=None, tok=None, revision=None):
     """Generate and score. Returns (rows, summary dict with timing).
 
     For split "test" the test gate must open first (finqa_lora.testgate): check2 and check3 finished
@@ -110,8 +111,8 @@ def run(model_id, split, shots=0, adapter=None, limit=None, batch_size=16, model
     if split == "test":
         from finqa_lora.testgate import open_gate
         gate = open_gate()  # raises GateClosed; nothing below runs, not even model loading
-    tok = tok or load_tokenizer(model_id)
-    model = model or load_model(model_id, adapter)
+    tok = tok or load_tokenizer(model_id, revision)
+    model = model or load_model(model_id, adapter, revision)
     examples = load_split(split)[:limit]
     shot_examples = few_shot_examples(load_split("train"))[:shots] if shots else ()
     prompts = prompts_for(tok, examples, shot_examples)
