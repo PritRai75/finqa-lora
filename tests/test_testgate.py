@@ -56,10 +56,11 @@ def test_finished_committed_sheets_open_the_gate(repo):
     assert record["check3"]["last_commit"] == head and len(record["check3"]["git_blob"]) == 40
 
 
-def test_gate_is_closed_in_this_repo_until_check2_and_check3_exist():
-    """True today. Once both sheets are finished and committed, this test is deleted in that commit."""
+def test_gate_is_closed_in_this_repo_until_check2_and_check3_are_finished():
+    """True today: both sheets are committed (S7) with rows still to fill. The commit that finishes the
+    last row of both sheets deletes this test."""
     message = closed_because(testgate.REPO_ROOT)
-    assert "check2.csv does not exist yet" in message and "check3.csv does not exist yet" in message
+    assert "rows have no verdict" in message
 
 
 def test_a_missing_sheet_keeps_it_closed(repo):
