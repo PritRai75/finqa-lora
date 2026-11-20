@@ -69,12 +69,15 @@ def test_upper_bound_is_exact_clopper_pearson():
 
 
 def test_kinds_of_each_side():
-    k = lambda side, etype="other": auditcounts.kinds({"wrong_side": side, "error_type": etype})
+    k = lambda side, etype="other", answer="12.5": auditcounts.kinds(
+        {"wrong_side": side, "error_type": etype, "answer": answer})
     assert k("program") == {"wrong_program"}
     assert k("answer") == {"wrong_written_answer"}
-    assert k("answer", "missing_answer") == {"missing_answer"}
-    assert k("both") == {"wrong_program", "wrong_written_answer"}
-    assert k("both", "missing_answer") == {"wrong_program", "missing_answer"}
+    assert k("answer", "missing_answer", "") == {"missing_answer"}
+    assert k("answer", "missing_answer", "[6] : in 2015 , 2014") == {"missing_answer"}   # decision 51
+    assert k("both", "wrong_number") == {"wrong_program", "wrong_written_answer"}
+    # decision 49: under both the type is the program's, so an empty answer is read from the answer
+    assert k("both", "wrong_number", "") == {"wrong_program", "missing_answer"}
     assert k("question_ambiguous", "") == {"ambiguous"}
 
 
@@ -119,8 +122,8 @@ def test_unfinished_or_changed_sheets_are_not_counted(tmp_path):
 
 
 def check2_spec(n, ex, status):
-    if status == "no_answer":                      # 14 items: 10 missing answers, 4 missing + wrong program
-        return ("real_error", "both" if n % 5 == 0 else "answer", "missing_answer")
+    if status == "no_answer":                      # 14 items: missing answers, some with a wrong program too
+        return ("real_error", "both", "wrong_number") if n % 5 == 0 else ("real_error", "answer", "missing_answer")
     if status == "unparsed":                       # 8 items
         return ("parser_miss",)
     return [("real_error", "program", "wrong_number"), ("real_error", "answer", "answer_typo"),

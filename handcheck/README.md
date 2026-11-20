@@ -2,7 +2,8 @@
 
 Every verdict in this folder is made by hand by the repo author. Code only builds the sheets
 (`python -m finqa_lora.handcheck check1`), checks filled sheets (`--validate`) and later counts
-the filled columns. The rules below were fixed on 10 Nov 2026, before check1 started.
+the filled columns. The rules below were fixed on 10 Nov 2026, before check1 started; decisions 49–52
+were added on 20 Nov 2026, during check2, before any count.
 
 ## The three checks
 
@@ -33,16 +34,17 @@ and the written answer against it, each on its own.
 - `real_error`: the program, the written answer or the question is wrong.
 - `no_error`: both are right (mainly check3).
 - `parser_miss`: the screen misread the written answer (a units word, a range, free text) and it means the right value.
-- `rounding`: the written answer is the right value rounded more coarsely than the screen allowed, the report gives the same figure at two precisions, or the gap is under 1% of the right value and no specific calculation explains it.
+- `rounding`: the written answer is the right value rounded more coarsely than the screen allowed, the report gives the same figure at two precisions, or the gap is under 1% of the right value and no specific calculation explains it. A digit slip is such an explanation: two adjacent digits swapped, or one digit other than the last changed, is `real_error` / `answer` / `answer_typo` even under 1%; a gap in the last digit alone stays `rounding` (decision 50).
 - `sign_convention`: the two describe the same change with opposite signs, and any other gap is rounding or a parser miss.
 
 ## Rules fixed before check1
 
 - FinQA conventions are not errors: a percentage as a fraction in the program, amounts in the report's own units, a decline answered as a positive size.
 - `wrong_side`: `program` when the written answer matches the right answer, `answer` when the program does, `both` when neither does, `question_ambiguous` when each follows a different defensible reading or the report cannot answer the question.
-- `error_type` is the first thing to fix on the wrong side, read from the first step. An answer-side type other than `answer_typo` or `missing_answer` is used only when that slip reproduces the written value; otherwise `other`.
-- An empty written answer is `real_error`, `answer`, `missing_answer`, also when the program is right (`both` if the program is wrong too). These are counted apart from wrong answers.
-- Programs following `add(a, b), add(#0, c), add(#1, const_3), divide(#2, const_2)` (44 items, all flagged or unanswered) are coded `step_count` when judged wrong.
+- `error_type` is the first thing to fix on the wrong side, read from the first step. Under `both` it describes the program; name the answer's slip in the note (decision 49), so `answer_typo` and `missing_answer` go with `answer` only. An answer-side type other than `answer_typo` or `missing_answer` is used only when that slip reproduces the written value; otherwise `other`.
+- An empty written answer is `real_error`, `answer`, `missing_answer`, also when the program is right. So is an `unparsed` answer whose text gives no value (a footnote, a fragment, the question repeated; decision 51); if the text does mean the right value it is `parser_miss`. If the program is wrong too: `both` with the program's error type. Missing answers are counted apart from wrong answers.
+- Programs that average by adding 3 and halving (last two steps `add(#k, const_3), divide(#k+1, const_2)`: 44 items, all flagged or unanswered) are coded `step_count` when judged wrong. So are their near-variants: an extra halving before that tail, adding `const_4` or `const_5` then halving, adding `const_3` and never dividing; the note names the variant (decision 52).
+- Identical items (same question, answer, program and report; the test split has 9 such pairs) keep a row each, get the same verdict, and both count.
 - `missing_x100` was retired: the screen accepts any ×100 or ÷100 difference, so it cannot cause a flag.
 - `question_ambiguous` items are left out of the consistent and corrected test views; the official view keeps every item.
 - Counts and self-agreement use verdicts as first recorded. A verdict found wrong later is corrected once, in one commit before the final test run, and listed in the write-up.

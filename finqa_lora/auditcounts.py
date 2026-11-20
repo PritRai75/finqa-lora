@@ -10,8 +10,11 @@ reported as in progress (rows done, rows to do) and nothing else is read from it
 Definitions. n = rows with a verdict that are not `uncertain`. Uncertain rows are left out of every
 count (handcheck/README.md) and reported by number. For a real_error row:
   wrong_program        wrong_side program or both: the gold program is wrong (bad training data)
-  wrong_written_answer wrong_side answer or both, error_type not missing_answer
-  missing_answer       error_type missing_answer (counted apart from wrong answers, decision 28)
+  wrong_written_answer wrong_side answer with any type but missing_answer, or both with a written answer
+  missing_answer       wrong_side answer with type missing_answer (an empty answer, or text the screen
+                       could not read that gives no value: decision 51), or both with an empty answer
+                       (under both the type describes the program: decision 49). Counted apart from
+                       wrong answers (decision 28)
   ambiguous            wrong_side question_ambiguous
 A real_error is any of these, question_ambiguous included, as the README defines the verdict.
 
@@ -58,15 +61,21 @@ OUT_FILE = REPO_ROOT / "results" / "audit" / "counts.json"
 
 
 def kinds(row):
-    """The kinds a real_error row counts towards (a row can be both wrong program and missing answer)."""
+    """The kinds a real_error row counts towards (a row can be both wrong program and missing answer).
+
+    Under `both` the error type describes the program (decision 49), so a missing answer is read from
+    the written answer itself: empty means missing. Under `answer` it is the error type, which may
+    also mark text the screen could not read and that gives no value (decision 51)."""
     side, etype = row["wrong_side"].strip(), row["error_type"].strip()
     out = set()
     if side == "question_ambiguous":
         out.add("ambiguous")
     if side in ("program", "both"):
         out.add("wrong_program")
-    if side in ("answer", "both"):
+    if side == "answer":
         out.add("missing_answer" if etype == "missing_answer" else "wrong_written_answer")
+    if side == "both":
+        out.add("wrong_written_answer" if row["answer"].strip() else "missing_answer")
     return out
 
 
