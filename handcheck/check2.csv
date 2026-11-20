@@ -1,99 +1,99 @@
-﻿item,id,split,screen_status,question,answer,exe_ans,program,verdict,wrong_side,error_type,corrected_answer,corrected_program,uncertain,note
-1,MAS/2017/page_27.pdf-2,test,no_answer,what was the difference in percentage cumulative total shareholder return on masco common stock versus the s&p 500 index for the five year period ended 2017?,,1.1197,"subtract(318.46, const_100), divide(#0, const_100), subtract(206.49, const_100), divide(#2, const_100), subtract(#1, #3)",,,,,,,
-2,ILMN/2008/page_82.pdf-1,test,disagree,during 2008 what was the share price of the warrants exercised\\n,7.47,1e-05,"divide(const_3, 401362)",,,,,,,
-3,AON/2015/page_96.pdf-1,test,unparsed,what was the average number of shares issued to employees from 2013 to 2015,"[6] : in 2015 , 2014 , and 2013 , shares , respectively , were issued to employees under the plan .",850636.0,"add(411636, 439000)",,,,,,,
-4,CME/2010/page_91.pdf-1,test,disagree,what was the percentage change in receivables from brokers with in other current assets from 2009 to 2010?,29%,0.27273,"subtract(11.2, 8.8), divide(#0, 8.8)",,,,,,,
-5,MSI/2014/page_76.pdf-3,test,disagree,what was the percentage change in the weighted-average estimated fair value of employee stock options granted during from 2013 to 2014,15.8%,0.12159,"divide(11.02, 9.52), divide(#0, 9.52)",,,,,,,
-6,SNA/2007/page_49.pdf-4,test,disagree,what was the percentage change in the cash dividends paid per common share from 2006 to 2007,2.7%,2.02778,"add(1.11, 1.08), divide(#0, 1.08)",,,,,,,
-7,RSG/2018/page_94.pdf-1,test,disagree,"as of december 31 , 2018 what was the percentage decline in the allowance for doubtful accounts",11.9%,-0.11825,"subtract(34.3, 38.9), divide(#0, 38.9)",,,,,,,
-8,AES/2002/page_128.pdf-2,test,no_answer,what was the decrease in rental expense ( millions ) for operating leases in continuing operations from 2003 to 2003?,,1.0,"subtract(31, 30)",,,,,,,
-9,ECL/2016/page_52.pdf-1,test,disagree,"what portion of cash and cash equivalents on hand are held in u.s . as of december 31 , 2016?",43.7%,0.00543,"divide(327, 184), divide(#0, 327)",,,,,,,
-10,AMT/2012/page_118.pdf-2,test,disagree,"pursuant to the agreement , on march 30 , 2012 , what was the approximate price for each site the company purchased in thousands",189625,0.18962,"divide(151.7, 800)",,,,,,,
-11,AMAT/2013/page_37.pdf-2,test,disagree,what is the total return if 100000 are invested in s&p500 in 2008 and sold in 2011?,3829,38290.0,"subtract(138.29, const_100), divide(100000, const_100), multiply(#1, #0)",,,,,,,
-12,BLK/2014/page_120.pdf-2,test,disagree,what percent of future notes are due by 2017?,29.63%,349.0,"add(126, 111), add(#0, 112)",,,,,,,
-13,SNA/2007/page_69.pdf-3,test,disagree,what was the percentage change in the minority interest from 2005 to 2006,-32.4%,-1.32432,"multiply(4.9, const_m1), subtract(#0, -3.7), divide(#0, 3.7)",,,,,,,
-14,IPG/2017/page_92.pdf-2,test,disagree,what is the percentage decrease in total contingent acquisition payments from 2018-2019?,34.05,31.77215,"subtract(79.0, 53.9), divide(#0, 79.0), multiply(#1, const_100)",,,,,,,
-15,L/2009/page_84.pdf-3,test,disagree,"what was the growth rate of the s&p 500 index from december 31 , 2004 to 2007",28.16%,1.2816,"divide(128.16, const_100)",,,,,,,
-16,V/2014/page_126.pdf-2,test,disagree,what is the percentage increase in the fair value of option granted from 2013 to 2014?,13.0%,5.08,"subtract(44.11, 39.03)",,,,,,,
-17,UNP/2018/page_74.pdf-1,test,disagree,what is the 2019 to 2020 projected growth rate for operating lease payments?,-9.7%,-0.09785,"subtract(378, 419), divide(#0, 419)",,,,,,,
-18,STT/2009/page_25.pdf-2,test,disagree,what was the percent change in the aggregate net asset values of the collateral pools underlying ssga lending funds between 2008 and 2009?,-22%,0.29167,"subtract(31, 24), divide(#0, 24)",,,,,,,
-19,SNA/2012/page_110.pdf-3,test,disagree,"what is the total fair value of the non-vested performance awards at beginning of year , ( in thousands ) ?",34551,658.13,"subtract(707, 48.87)",,,,,,,
-20,STT/2009/page_127.pdf-3,test,disagree,what was the percent change in net unrealized loss on available-for-sale securities between 2008 and 2009?,-68%,2.18154,"subtract(-5205, -1636), divide(#0, -1636)",,,,,,,
-21,AMT/2007/page_29.pdf-2,test,disagree,what portion of the woburn property owned by the american tower corporation is subleased?,64.5%,2e-05,"divide(163000, 57800), divide(#0, 163000)",,,,,,,
-22,AON/2015/page_96.pdf-2,test,disagree,what was the average aggregate intrinsic value of stock options exercised from 2013 to 2015,79.3,61.0,"add(104, 61), add(73, #0), divide(#1, const_2), add(#2, const_3), divide(#3, const_2)",,,,,,,
-23,UNP/2018/page_74.pdf-2,test,disagree,what is the 2019 to 2020 projected growth rate for capital lease payments?,4.8%,0.0473,"subtract(155, 148), divide(#0, 148)",,,,,,,
-24,MSI/2014/page_76.pdf-1,test,disagree,what is the percent change in expected volatility between 2012 and 2013?,-8.7%,-0.07917,"subtract(22.1, 24.0), divide(#0, 24.0)",,,,,,,
-25,LMT/2014/page_77.pdf-3,test,disagree,in 2014 what was the ratio of the aggregate notional amount of outstanding interest rate swaps to the outstanding foreign currency hedges,1.62,0.00162,"divide(1.3, 804)",,,,,,,
-26,HWM/2017/page_42.pdf-2,test,disagree,what is the annualized return for the s&p 500 aematerials index during 2012 and 2017?,22.25%,-0.96929,"subtract(177.79, 100), divide(const_1, const_5), subtract(#1, const_1), exp(#0, #2), subtract(#3, const_1)",,,,,,,
-27,JPM/2003/page_106.pdf-1,test,disagree,"what was the ratio of the firm commitments to provide liquidity on asset- specific basis in 2003 compared to 2002 $ 18.0 billion at december 31 , 2003 , and $ 23.5 billion at december 31 , 2002",0.76,0.76596,"divide(18.0, 23.5)",,,,,,,
-28,PNC/2012/page_65.pdf-5,test,disagree,"how many total assets were there at year ended dec 31 , 2011 , in millions?",275.124,56.05455,"divide(const_100, 22), subtract(60.6, #0)",,,,,,,
-29,GIS/2019/page_68.pdf-1,test,disagree,what is the sales growth rate from 2017 to 2018?,1.70%,284.5,"subtract(17057.4, 16772.9)",,,,,,,
-30,CME/2017/page_89.pdf-3,test,disagree,"based on the effective tax rate , what is the gross amount of the recognized tax benefit the year ended december 31 , 2017 in billions??",7.14,7.42857,"divide(2.6, 35%)",,,,,,,
-31,AWK/2013/page_122.pdf-2,test,disagree,as of december 31.2013 what was the ratio of the interest and penalty as a percent of the total unrecognized tax benefits,0.13%,0.00136,"add(242, 177947), divide(242, #0)",,,,,,,
-32,AAL/2010/page_72.pdf-1,test,no_answer,from 2016-2020 what was the ratio of the pension to the retiree medical and other service costs,,5.01416,"divide(4959, 989)",,,,,,,
-33,AMT/2006/page_113.pdf-1,test,disagree,in 2004 what was the percent of the change in the employee liability for employee separations,-70.3%,-3813.0,"subtract(665, 2239), subtract(#0, 2239)",,,,,,,
-34,CME/2010/page_69.pdf-1,test,disagree,what was the ratio of the increase in cash in 2009 due to the insurance of debt compared to the reduction of debt instruments,3.22,0.00322,"divide(2.9, 900.1)",,,,,,,
-35,AWK/2018/page_146.pdf-4,test,no_answer,"the company repurchased how many million shares of common stock in the open market for the years ended december 31 , 2018 and 2017?",,1.3,"add(0.6, 0.7)",,,,,,,
-36,GPN/2013/page_92.pdf-2,test,disagree,what is the percentage change in the expected minimum payments from 2014 to 2015?,-18.7%,-2072.0,"subtract(8985, 11057)",,,,,,,
-37,RSG/2015/page_98.pdf-1,test,disagree,in 2015 what was the the percentage change in the account balance,20.1%,-31.1,"subtract(46.7, 38.9), subtract(#0, 38.9)",,,,,,,
-38,EL/2008/page_59.pdf-1,test,disagree,"considering the expected return rate on assets , what is the total value of plan assets in 2008 , in millions?",219.35,21.93548,"multiply(1.7, const_100), divide(#0, 7.75)",,,,,,,
-39,UNP/2011/page_33.pdf-1,test,disagree,"with a similar improvement as in 2010 , what would expected operating ratio be in 2011?",81.6%,0.761,"divide(5.5, const_100), add(#0, 70.6%)",,,,,,,
-40,AON/2018/page_87.pdf-4,test,disagree,in 2018 what was the percent of the decline in the uncertain tax positions,0.35%,-0.00357,"subtract(279, 280), divide(#0, 280)",,,,,,,
-41,ETR/2011/page_301.pdf-3,test,disagree,what was entergy gulf states louisiana 2019s receivables from the money pool from 2008 to 2011 in millions,37079.75,74161.5,"add(23596, 63003), add(50131, #0), add(11589, #1), add(#2, const_4), divide(#3, const_2)",,,,,,,
-42,AAL/2010/page_72.pdf-2,test,disagree,what is the percentage decrease in the minimum contribution to benefit pension plans due to the relied act?,-14.0%,-0.12381,"subtract(460, 525), divide(#0, 525)",,,,,,,
-43,ABMD/2005/page_29.pdf-1,test,disagree,"assuming the same rate of growth as in 2005 , what would the projected risk free interest rate be in 2006?",5.38%,0.0585,"divide(3.87%, 2.56%), multiply(3.87%, #0)",,,,,,,
-44,RSG/2015/page_98.pdf-2,test,no_answer,in december 2015 what was the ratio of the restricted cash and marketable securities to the allowance for doubtful accounts,,2.14775,"divide(100.3, 46.7)",,,,,,,
-45,INTC/2013/page_31.pdf-4,test,disagree,what was the percent of the increase in the dow jones u.s . technology index from 2011 to 2012,9.42%,0.00573,"divide(209, 191), divide(#0, 191)",,,,,,,
-46,PNC/2012/page_100.pdf-3,test,no_answer,"how many total private investor repurchase claims were there in 2011 and 2012 combined , in millions?",,184.0,"add(74, 110)",,,,,,,
-47,ABMD/2012/page_79.pdf-1,test,disagree,"what was total rent expense for fiscal years 2010 to 2012 , in millions?",6.6,6.5,"add(1.6, 2.7), add(2.2, #0)",,,,,,,
-48,SNA/2007/page_49.pdf-3,test,disagree,what is the average repurchase price per share paid during 2006?,42.0,-0.38213,"subtract(109.8, const_1000000), divide(#0, 2616618)",,,,,,,
-49,JPM/2010/page_120.pdf-2,test,no_answer,what was the percentage change in loans retained from 2009 to 2010?,,0.11212,"subtract(222510, 200077), divide(#0, 200077)",,,,,,,
-50,PPG/2018/page_85.pdf-1,test,disagree,are the 2018 environmental reserves greater than asbestos-related claim reserves?,no,471.0,"add(180, 291)",,,,,,,
-51,CE/2016/page_19.pdf-4,test,no_answer,what was the percentage change in the the research and development costs from 2014 to 2015,,59.5,"subtract(119, 86), add(#0, 86), divide(#1, const_2)",,,,,,,
-52,JKHY/2019/page_18.pdf-1,test,disagree,what was the percentage growth of the 5 year- cumulative total return for the 2018 peer group from 2016 to 2017,17.3%,-125.06,"subtract(177.26, 151.16), subtract(#0, 151.16)",,,,,,,
-53,ETR/2017/page_143.pdf-3,test,disagree,what is the amount of interest applied to the annual long-term debt maturities in 2018?,566808000,56680800.0,"multiply(760000, const_1000), multiply(#0, 7.458%)",,,,,,,
-54,HIG/2011/page_53.pdf-4,test,no_answer,what was the percentage change in the reinsurance accounts from 2009 to 2010,,0.22464,"subtract(169, 138), divide(#0, 138)",,,,,,,
-55,BLL/2006/page_67.pdf-1,test,disagree,current assets were what percent of net assets acquired for the can and alcan transactions?,32.2%,259.7,"add(259.5, 0.2)",,,,,,,
-56,MMM/2013/page_75.pdf-1,test,disagree,what was the ratio of the company contribution in 2011 to the amount in 2013 to the us pension contributions,1.08,1.08613,"divide(517, 476)",,,,,,,
-57,SLB/2012/page_56.pdf-2,test,disagree,the stock repurchase program reduced shares outstanding by how many million shares in the period?,78,64.0,"add(27, 37)",,,,,,,
-58,DRE/2008/page_46.pdf-3,test,disagree,what was the average basic net income available for common shareholders from 2006 to 2008 in millions,139801,209703.0,"add(56616, 217692), add(145095, #0), add(#1, const_3), divide(#2, const_2)",,,,,,,
-59,AMT/2014/page_149.pdf-2,test,disagree,"what would 2014 contingent consideration be without the foreign currency translation adjustment , in millions?",63458,33458.0,"add(4934, 28524)",,,,,,,
-60,AES/2001/page_85.pdf-2,test,disagree,"prior to the first remarketing date , what is the annual interest cost on the remarketable or redeemable securities ( 2018 2018roars 2019 2019 ) ?",18525000,14750000.0,"multiply(200, const_1000000), multiply(#0, 7.375%)",,,,,,,
-61,ANET/2015/page_156.pdf-1,test,disagree,"as of december 31 , 2015 , are purchase commitments greater than expected 2016 lease commitments?",yes,43900000.0,"multiply(5754, const_1000), multiply(43.9, const_1000000)",,,,,,,
-62,CME/2010/page_123.pdf-5,test,disagree,"what is the total value of the approved equity compensation plans in 2005 , in millions of dollars?",375.15,373.15316,"multiply(1211143, 308.10), divide(#0, const_1000000)",,,,,,,
-63,DG/2007/page_67.pdf-2,test,no_answer,what was the amount of the total impairment charges included in sg&a expense from 2005 to 2007 in millions,,10.2,"add(0.2, 9.4), add(#0, 0.6)",,,,,,,
-64,SNA/2007/page_49.pdf-2,test,disagree,"based on the cash dividends paid , how many common stock shares were outstanding?",58909091,-900842.52252,"subtract(64.8, const_1000000), divide(#0, 1.11)",,,,,,,
-65,CME/2010/page_69.pdf-4,test,disagree,"as of december 31 , 2010 what was the par value of the debt outstanding for the fixed rate notes due february 2014 compared to term loan due 2011",3.2,0.56067,"divide(420.5, 750.0)",,,,,,,
-66,JPM/2015/page_82.pdf-2,test,disagree,what percentage of total net revenue in 2015 was net interest income?,27%,0.46513,"divide(43510, 93543)",,,,,,,
-67,ETFC/2018/page_153.pdf-2,test,disagree,what was the ratio of the pre-tax gain on the securities transferred from held-to-maturity securities to available-for-sale securities \\n,0.15%,1.48936,"divide(const_7, 4.7)",,,,,,,
-68,FIS/2016/page_31.pdf-4,test,disagree,what is the total return if $ 100000 are invested in fidelity national information system in 12/11 and sold in 12/16?,211810,2118100.0,"subtract(311.81, const_100), divide(const_1000000, const_100), multiply(#1, #0)",,,,,,,
-69,WRK/2018/page_107.pdf-3,test,unparsed,"what was the total balance in 2018 , if the company was to include interest and penalty liabilities?",the total balance in 2018 including interest and penalties would be $ 56.7 million .,56.7,"subtract(127.1, 70.4)",,,,,,,
-70,ETR/2016/page_23.pdf-4,test,no_answer,assuming there would not have been a sale of the 583 mw rhode island state energy center in 2015 . what would have net revenue be without this gain on sale?,,5729.0,"subtract(5829, 100)",,,,,,,
-71,DISH/2011/page_122.pdf-2,test,disagree,hard assets were what percent of the total blockbuster purchase price?,12.2%,0.12271,"divide(28663, 233584)",,,,,,,
-72,ETR/2016/page_150.pdf-4,test,disagree,what are the payments for the next three years on the entergy new orleans storm recovery bonds ( in millions? ),44.4,21.6,"add(10.6, 11)",,,,,,,
-73,AMT/2008/page_107.pdf-2,test,disagree,in 2006 what was percentage change in the employee separations liabilities,-65.1%,-13636.0,"subtract(7327, 20963)",,,,,,,
-74,JPM/2009/page_175.pdf-3,test,disagree,in 2008 what was the ratio of the trading assets derivatives - receivables to the payables,1.72,1.41792,"divide(110457, 77901)",,,,,,,
-75,DRE/2007/page_56.pdf-1,test,disagree,what is the percent change in basic net income available for common shareholders from 2006 to 2007?,50.0%,-99.49966,"subtract(217692, 145095), divide(#0, 145095), subtract(#1, const_100)",,,,,,,
-76,RSG/2018/page_135.pdf-2,test,no_answer,what was the percentage decline in the equity from 2017 to 2018 actual,,-0.43333,"subtract(17, 30), divide(#0, 30)",,,,,,,
-77,ABMD/2012/page_79.pdf-2,test,disagree,how much of total future minimum lease payments are due currently?,35%,2845.5,"add(1473, 4218), divide(#0, const_2)",,,,,,,
-78,SNA/2013/page_84.pdf-3,test,disagree,what percentage of trade and other accounts receivable are considered as doubtful receivables in 2013,2.9%,0.02726,"divide(14.9, 546.5)",,,,,,,
-79,PM/2017/page_32.pdf-2,test,disagree,what is the change in basis points of the rate of postretirement plans from 2016 to 2017?,11,-99.89,"subtract(3.79, 3.68), subtract(#0, const_100)",,,,,,,
-80,GPN/2013/page_87.pdf-4,test,unparsed,what was the total number of grants were forfeited?,170 grants,170.0,"add(79, 91)",,,,,,,
-81,AAL/2015/page_114.pdf-2,test,disagree,what is the percent of the professional fees as part of the total re-organization costs,7.5%,0.74953,"divide(1990, 2655)",,,,,,,
-82,ETR/2017/page_372.pdf-2,test,disagree,"without the loss of in volume/weather , what percent increase would net revenue have experienced between 2016 and 2017?",2.25%,721.3,"add(703.1, 18.2)",,,,,,,
-83,DRE/2007/page_56.pdf-2,test,no_answer,what is the net income per common share for the year 2007?,,1.56326,"divide(217692, 139255)",,,,,,,
-84,WRK/2018/page_107.pdf-2,test,unparsed,"what was the total balance in 2018 , if the company was to include interest and penalty liabilities?",the total balance in 2018 including interest and penalties would be $ 56.7 million .,56.7,"subtract(127.1, 70.4)",,,,,,,
-85,SNA/2007/page_49.pdf-1,test,disagree,"what was the average cash flow provided from operating activities from 2005 to to 2007 $ 231.1 million in 2007 , $ 203.4 million in 2006 , and $ 221.1 million in 2005 .",145.97,640.9,"add(231.1, 203.4), add(203.4, #0), add(#1, const_3)",,,,,,,
-86,BKNG/2016/page_33.pdf-1,test,disagree,at the measurement point december 312016 what was the ratio of the the priceline group inc . . to the nasdaqcomposite index,1.44,1.44754,"divide(313.45, 216.54)",,,,,,,
-87,K/2006/page_52.pdf-3,test,disagree,by what percent did net cash from operations increase between 2004 and 2006?,14.77,-1047.5,"subtract(1410.5, 1229.0), subtract(#0, 1229.0)",,,,,,,
-88,STT/2007/page_111.pdf-4,test,disagree,what is the percent change in indemnified securities financing between 2006 and 2007?,10%,52336.0,"subtract(558368, 506032)",,,,,,,
-89,L/2009/page_84.pdf-1,test,disagree,"what was the growth rate of the loews common stock from december 31 , 2004 to 2009",60.6%,1.6062,"divide(160.62, const_100)",,,,,,,
-90,AWK/2017/page_148.pdf-4,test,no_answer,what was the percentage change in the weighted average interest rates computed on daily basis from 2016 to 2017,,0.58974,"subtract(1.24, 0.78), divide(#0, 0.78)",,,,,,,
-91,LMT/2015/page_89.pdf-4,test,disagree,in november 2015 what was the percent of the costs associated with issuing of the notes under the 364-day facility used to finance the acquisition,0.69%,6.85714,"divide(48, 7.0)",,,,,,,
-92,LMT/2014/page_77.pdf-1,test,disagree,what was the average weighted average common shares outstanding for diluted computations from 2012 to 2014,325.7,980.3,"add(326.5, 328.4), add(#0, 322.4), add(#1, const_3)",,,,,,,
-93,ANSS/2012/page_93.pdf-2,test,disagree,what was the percentage change in the royalty fees are reported in cost of goods sold from 2011 to 2012,10.7%,9.3,"subtract(9.3, 8.4), add(#0, 8.4)",,,,,,,
-94,SNA/2012/page_110.pdf-1,test,disagree,in 2012 what was the percent change in the number of shares that was not vested,-28%,-905.0,"subtract(509, 707), subtract(#0, 707)",,,,,,,
-95,ANSS/2016/page_47.pdf-2,test,unparsed,what is the proportion of total global headquarters leases to total other operating leases?,1.371:1,1.37074,"divide(40859, 29808)",,,,,,,
-96,TFX/2017/page_78.pdf-3,test,unparsed,"if the remaining securities would be use or exercised at $ 113.49 , what would cost be for the company?",$ 411906848 or $ 411.91 million,411906847.95,"multiply(113.49, 3629455)",,,,,,,
-97,NCLH/2018/page_64.pdf-4,test,unparsed,how much did interest with libor change from year 1 to years 3-5?,the interest decreased 25.7% from year 1 to years 3-5,-0.25741,"subtract(165172, 222427), divide(#0, 222427)",,,,,,,
-98,HOLX/2009/page_127.pdf-4,test,unparsed,"during the purchase , what was the per share value of the hologic common stock",$ 27.8 per share,27.80639,"divide(3671500, 132038)",,,,,,,
+﻿item,id,verdict,wrong_side,error_type,corrected_answer,corrected_program,uncertain,note
+1,MAS/2017/page_27.pdf-2,real_error,answer,missing_answer,111.97%,,,"Answer empty. Program right: (318.46 - 100)/100 - (206.49 - 100)/100 = 1.1197."
+2,ILMN/2008/page_82.pdf-1,real_error,program,scale_or_units,7.47,"multiply(3.0, const_1000000), divide(#0, 401362)",,"Program divides 3 (millions) by 401362 warrants. Right: 3000000/401362 = 7.47."
+3,AON/2015/page_96.pdf-1,real_error,both,step_count,468878.67,"add(411636, 439000), add(#0, 556000), divide(#1, const_3)",,"Program adds only 411636 + 439000 and never divides; answer text names no value. Right: (411636 + 439000 + 556000)/3 = 468878.67."
+4,CME/2010/page_91.pdf-1,real_error,answer,other,27.3%,,,"Answer 29% matches no calculation. Program right: (11.2 - 8.8)/8.8 = 27.3%."
+5,MSI/2014/page_76.pdf-3,real_error,program,wrong_operation,15.8%,"subtract(11.02, 9.52), divide(#0, 9.52)",,"Program divides 11.02 by 9.52 instead of subtracting. Right: (11.02 - 9.52)/9.52 = 15.8%."
+6,SNA/2007/page_49.pdf-4,real_error,both,wrong_operation,2.8%,"subtract(1.11, 1.08), divide(#0, 1.08)",,"Program adds 1.11 + 1.08; answer divides by the 2007 value (0.03/1.11 = 2.7%). Right: (1.11 - 1.08)/1.08 = 2.8%."
+7,RSG/2018/page_94.pdf-1,sign_convention,,,,,,"Decline written as positive 11.9% against -0.11825; 11.83 vs 11.9 is rounding."
+8,AES/2002/page_128.pdf-2,real_error,question_ambiguous,,,,true,"Unanswerable: question asks 2003 to 2003 and the report has 2003 lease commitments (30), not 2003 rental expense; 2002 expense is 31; answer also empty."
+9,ECL/2016/page_52.pdf-1,real_error,program,wrong_operation,43.7%,"subtract(327, 184), divide(#0, 327)",,"Program divides 327 by 184 first. Right: (327 - 184)/327 = 43.7%."
+10,AMT/2012/page_118.pdf-2,real_error,both,scale_or_units,189.6,"divide(151.7, 800), multiply(#0, const_1000)",,"Question asks thousands: program gives millions (0.18962), answer gives dollars (189625). Right: 151.7/800 * 1000 = 189.6."
+11,AMAT/2013/page_37.pdf-2,real_error,answer,answer_typo,38290,,,"Answer drops a zero (3829). Program right: (138.29 - 100)/100 * 100000 = 38290."
+12,BLK/2014/page_120.pdf-2,real_error,program,step_count,29.63%,"add(126, 111), add(#0, 112), divide(#1, 1178)",,"Program stops at the sum 349. Right: (126 + 111 + 112)/1178 = 29.63%; the table is operating leases, not notes."
+13,SNA/2007/page_69.pdf-3,real_error,both,wrong_number,5.7%,"subtract(3.7, 3.5), divide(#0, 3.5)",,"Program uses the 2007 value 4.9; answer is 2006 to 2007 ((4.9 - 3.7)/3.7 = 32.4%). Right: (3.7 - 3.5)/3.5 = 5.7%."
+14,IPG/2017/page_92.pdf-2,real_error,answer,other,31.8%,,,"Answer 34.05 matches no calculation. Program right: (79.0 - 53.9)/79.0 = 31.8%."
+15,L/2009/page_84.pdf-3,real_error,program,step_count,28.16%,"subtract(128.16, const_100), divide(#0, const_100)",,"Program gives the ratio 1.2816, not growth. Right: (128.16 - 100)/100 = 28.16%."
+16,V/2014/page_126.pdf-2,real_error,program,step_count,13.0%,"subtract(44.11, 39.03), divide(#0, 39.03)",,"Program stops at the difference 5.08. Right: 5.08/39.03 = 13.0%."
+17,UNP/2018/page_74.pdf-1,rounding,,,,,,"-9.785% written as -9.7%; gap under 1%."
+18,STT/2009/page_25.pdf-2,real_error,both,operand_order,-22.6%,"subtract(24, 31), divide(#0, 31)",,"Program reverses the years ((31 - 24)/24 = 29.2%); answer -22% truncates -22.58% (gap 2.6%). Right: (24 - 31)/31 = -22.6%."
+19,SNA/2012/page_110.pdf-3,real_error,program,wrong_operation,34551,"multiply(707, 48.87)",,"Program subtracts 48.87 from 707. Right: 707 * 48.87 = 34551."
+20,STT/2009/page_127.pdf-3,real_error,program,operand_order,-68.6%,"subtract(-1636, -5205), divide(#0, -5205)",,"Program uses 2009 as the base (2.18). Right: (-1636 + 5205)/-5205 = -68.6%; written -68% is within 1%."
+21,AMT/2007/page_29.pdf-2,real_error,program,wrong_operation,64.5%,"subtract(163000, 57800), divide(#0, 163000)",,"Program divides 163000 by 57800 first. Right: (163000 - 57800)/163000 = 64.5% (the text's 57100 occupied gives 65.0%)."
+22,AON/2015/page_96.pdf-2,real_error,program,step_count,79.3,"add(104, 61), add(73, #0), divide(#1, const_3)",,"Averaging template variant with an extra halving first. Right: (104 + 61 + 73)/3 = 79.3."
+23,UNP/2018/page_74.pdf-2,real_error,answer,other,4.7%,,,"Answer 4.8% is 1.5% off 4.73%. Program right: (155 - 148)/148 = 4.7%."
+24,MSI/2014/page_76.pdf-1,real_error,answer,other,-7.9%,,,"Answer -8.7% matches no calculation (-1.9/22.1 = -8.6%). Program right: (22.1 - 24.0)/24.0 = -7.9%."
+25,LMT/2014/page_77.pdf-3,real_error,program,scale_or_units,1.62,"multiply(1.3, const_1000), divide(#0, 804)",,"Program divides 1.3 billion by 804 million as bare numbers. Right: 1300/804 = 1.62."
+26,HWM/2017/page_42.pdf-2,real_error,both,wrong_operation,12.2%,"divide(177.79, const_100), divide(const_1, const_5), exp(#0, #1), subtract(#2, const_1)",,"Program raises the gain 77.79 instead of the factor 1.7779; answer 22.25% matches no calculation. Right: 1.7779^(1/5) - 1 = 12.2%."
+27,JPM/2003/page_106.pdf-1,rounding,,,,,,"0.766 written as 0.76; gap under 1%."
+28,PNC/2012/page_65.pdf-5,real_error,both,wrong_operation,275455,"multiply(60.6, const_1000), divide(#0, 22%)",,"Program computes 60.6 - 100/22; answer 275.124 matches no calculation and is not in millions. Right: 60600/0.22 = 275455."
+29,GIS/2019/page_68.pdf-1,real_error,program,step_count,1.70%,"subtract(17057.4, 16772.9), divide(#0, 16772.9)",,"Program stops at the difference 284.5. Right: 284.5/16772.9 = 1.70%."
+30,CME/2017/page_89.pdf-3,real_error,question_ambiguous,,,,true,"Ambiguous: statutory 35% gives 2.6/0.35 = 7.43, effective 60.8% gives 4.28; written 7.14 matches neither."
+31,AWK/2013/page_122.pdf-2,real_error,answer,other,0.14%,,,"Answer 0.13% truncates 0.136% (gap 4%). Program right: 242/(242 + 177947) = 0.14%."
+32,AAL/2010/page_72.pdf-1,real_error,answer,missing_answer,5.01,,,"Answer empty. Program right: 4959/989 = 5.01."
+33,AMT/2006/page_113.pdf-1,real_error,program,wrong_operation,-70.3%,"subtract(665, 2239), divide(#0, 2239)",,"Program subtracts 2239 a second time instead of dividing. Right: (665 - 2239)/2239 = -70.3%."
+34,CME/2010/page_69.pdf-1,real_error,program,scale_or_units,3.22,"multiply(2.9, const_1000), divide(#0, 900.1)",,"Program divides 2.9 billion by 900.1 million as bare numbers. Right: 2900/900.1 = 3.22."
+35,AWK/2018/page_146.pdf-4,real_error,answer,missing_answer,1.3,,,"Answer empty. Program right: 0.6 + 0.7 = 1.3."
+36,GPN/2013/page_92.pdf-2,real_error,program,step_count,-18.7%,"subtract(8985, 11057), divide(#0, 11057)",,"Program stops at the difference -2072. Right: -2072/11057 = -18.7%."
+37,RSG/2015/page_98.pdf-1,real_error,program,wrong_operation,20.1%,"subtract(46.7, 38.9), divide(#0, 38.9)",,"Program subtracts 38.9 again instead of dividing. Right: (46.7 - 38.9)/38.9 = 20.1%."
+38,EL/2008/page_59.pdf-1,real_error,both,wrong_number,606.45,"divide(47.0, 7.75%)",true,"Both scale the 1.7 sensitivity over 7.75. Expected return 47.0 at 7.75% gives 606.45; the 25bp sensitivity gives 1.7/0.0025 = 680."
+39,UNP/2011/page_33.pdf-1,real_error,both,wrong_operation,65.1%,"divide(5.5, const_100), subtract(70.6%, #0)",,"Program adds the 5.5-point improvement to 70.6; answer adds it to 76.1 (81.6). Right: 70.6 - 5.5 = 65.1%."
+40,AON/2018/page_87.pdf-4,real_error,answer,other,-0.36%,,,"Answer 0.35% is 2% off 0.357%. Program right: (279 - 280)/280 = -0.36%."
+41,ETR/2011/page_301.pdf-3,real_error,both,step_count,37.08,"add(23596, 63003), add(#0, 50131), add(#1, 11589), divide(#2, const_4), divide(#3, const_1000)",,"Program is the template variant adding const_4 then halving; answer is the average in thousands (37079.75), not millions. Right: 148319/4/1000 = 37.08 (a total would be 148.32)."
+42,AAL/2010/page_72.pdf-2,real_error,answer,other,-12.4%,,,"Answer -14.0% matches no calculation (65/460 = 14.1%). Program right: (460 - 525)/525 = -12.4%."
+43,ABMD/2005/page_29.pdf-1,real_error,answer,other,5.85%,,,"Answer 5.38% matches no calculation. Program right: 3.87% * 3.87/2.56 = 5.85%."
+44,RSG/2015/page_98.pdf-2,real_error,answer,missing_answer,2.15,,,"Answer empty. Program right: 100.3/46.7 = 2.15."
+45,INTC/2013/page_31.pdf-4,real_error,program,wrong_operation,9.42%,"subtract(209, 191), divide(#0, 191)",,"Program divides 209 by 191 first. Right: (209 - 191)/191 = 9.42%."
+46,PNC/2012/page_100.pdf-3,real_error,answer,missing_answer,184,,,"Answer empty. Program right: 74 + 110 = 184."
+47,ABMD/2012/page_79.pdf-1,real_error,answer,other,6.5,,,"Answer 6.6 is 1.5% off. Program right: 1.6 + 2.7 + 2.2 = 6.5."
+48,SNA/2007/page_49.pdf-3,real_error,program,wrong_operation,41.96,"multiply(109.8, const_1000000), divide(#0, 2616618)",,"Program subtracts 1000000 from 109.8. Right: 109800000/2616618 = 41.96."
+49,JPM/2010/page_120.pdf-2,real_error,answer,missing_answer,11.2%,,,"Answer empty. Program right: (222510 - 200077)/200077 = 11.2%."
+50,PPG/2018/page_85.pdf-1,real_error,both,wrong_operation,yes,"greater(291, 180)",,"Program adds 180 + 291; answer says no. Right: environmental 291 > asbestos 180, so yes."
+51,CE/2016/page_19.pdf-4,real_error,both,wrong_operation,38.4%,"subtract(119, 86), divide(#0, 86)",,"Answer empty; program adds 86 back and halves (59.5). Right: (119 - 86)/86 = 38.4%."
+52,JKHY/2019/page_18.pdf-1,real_error,program,wrong_operation,17.3%,"subtract(177.26, 151.16), divide(#0, 151.16)",,"Program subtracts 151.16 again instead of dividing. Right: (177.26 - 151.16)/151.16 = 17.3%."
+53,ETR/2017/page_143.pdf-3,real_error,answer,answer_typo,56680800,,,"Answer has an extra zero (566808000). Program right: 760000 * 1000 * 7.458% = 56680800; the 7.458% belongs to one note, so the premise is weak."
+54,HIG/2011/page_53.pdf-4,real_error,question_ambiguous,,,,,"Unanswerable: 169 and 138 are increases in net asbestos reserves and the report has no reinsurance-account values; answer also empty."
+55,BLL/2006/page_67.pdf-1,real_error,program,step_count,32.4%,"add(0.2, 259.5), divide(#0, 802.6)",,"Program stops at the sum 259.7. Right: 259.7/802.6 = 32.4%; written 32.2% is within 1%."
+56,MMM/2013/page_75.pdf-1,rounding,,,,,,"1.086 written as 1.08; gap under 1%."
+57,SLB/2012/page_56.pdf-2,real_error,program,step_count,78,"add(27, 37), add(#0, 14)",,"Program omits the 2012 repurchase of 14. Right: 27 + 37 + 14 = 78."
+58,DRE/2008/page_46.pdf-3,real_error,program,step_count,139801,"add(56616, 217692), add(145095, #0), divide(#1, const_3)",,"Averaging template: adds 3 and halves. Right: (56616 + 217692 + 145095)/3 = 139801."
+59,AMT/2014/page_149.pdf-2,real_error,both,scale_or_units,33.46,"add(4934, 28524), divide(#0, const_1000)",,"Question asks millions: program gives 33458 thousands; answer 63458 also changes a digit. Right: (28524 + 4934)/1000 = 33.46."
+60,AES/2001/page_85.pdf-2,real_error,answer,other,14750000,,,"Answer 18525000 matches no calculation. Program right: 200000000 * 7.375% = 14750000."
+61,ANET/2015/page_156.pdf-1,real_error,program,wrong_operation,yes,"multiply(5754, const_1000), multiply(43.9, const_1000000), greater(#1, #0)",,"Program converts both amounts but never compares them. Right: 43900000 > 5754000, so yes."
+62,CME/2010/page_123.pdf-5,real_error,answer,answer_typo,373.15,,,"Answer changes a non-final digit (375.15). Program right: 1211143 * 308.10/1000000 = 373.15."
+63,DG/2007/page_67.pdf-2,real_error,answer,missing_answer,10.2,,,"Answer empty. Program right: 0.2 + 9.4 + 0.6 = 10.2."
+64,SNA/2007/page_49.pdf-2,real_error,both,wrong_operation,58378378,"multiply(64.8, const_1000000), divide(#0, 1.11)",,"Program subtracts 1000000 from 64.8; answer divides by 1.10 (64800000/1.10 = 58909091). Right: 64800000/1.11 = 58378378."
+65,CME/2010/page_69.pdf-4,real_error,both,operand_order,1.78,"divide(750.0, 420.5)",,"Program gives the inverse 420.5/750.0; answer 3.2 matches no calculation. Right: 750.0/420.5 = 1.78."
+66,JPM/2015/page_82.pdf-2,real_error,answer,other,46.5%,,,"Answer 27% matches no calculation. Program right: 43510/93543 = 46.5%."
+67,ETFC/2018/page_153.pdf-2,real_error,program,scale_or_units,0.15%,"multiply(4.7, const_1000), divide(7, #0)",,"Program divides 7 million by 4.7 billion as bare numbers. Right: 7/4700 = 0.15%."
+68,FIS/2016/page_31.pdf-4,real_error,program,wrong_number,211810,"subtract(311.81, const_100), divide(100000, const_100), multiply(#1, #0)",,"Program invests 1000000 instead of 100000. Right: (311.81 - 100)/100 * 100000 = 211810."
+69,WRK/2018/page_107.pdf-3,real_error,both,wrong_operation,197.5,"add(127.1, 70.4)",,"Program and answer subtract the 70.4 interest and penalties instead of adding. Right: 127.1 + 70.4 = 197.5."
+70,ETR/2016/page_23.pdf-4,real_error,both,wrong_number,5675,"subtract(5829, 154)",true,"Answer empty; program removes the after-tax 100 from a pre-tax figure. Pre-tax gives 5829 - 154 = 5675, but this Utility net revenue may not include the RISEC gain at all."
+71,DISH/2011/page_122.pdf-2,rounding,,,,,,"12.27% written as 12.2%; gap under 1%."
+72,ETR/2016/page_150.pdf-4,real_error,both,step_count,32.8,"add(10.6, 11), add(#0, 11.2)",,"Program sums two years (21.6); answer sums four (44.4). Right: 10.6 + 11 + 11.2 = 32.8."
+73,AMT/2008/page_107.pdf-2,real_error,program,step_count,-65.0%,"subtract(7327, 20963), divide(#0, 20963)",,"Program stops at the difference -13636. Right: -13636/20963 = -65.0%; written -65.1% is within 1%."
+74,JPM/2009/page_175.pdf-3,real_error,both,wrong_number,1.30,"divide(121417, 93200)",,"Program uses the 2009 column (110457/77901); answer 1.72 matches no calculation. Right: 121417/93200 = 1.30."
+75,DRE/2007/page_56.pdf-1,real_error,program,step_count,50.0%,"subtract(217692, 145095), divide(#0, 145095)",,"Program subtracts 100 after the division. Right: (217692 - 145095)/145095 = 50.0%."
+76,RSG/2018/page_135.pdf-2,real_error,answer,missing_answer,-43.3%,,,"Answer empty. Program right on the relative reading: (17 - 30)/30 = -43.3% (the points reading gives -13)."
+77,ABMD/2012/page_79.pdf-2,real_error,program,wrong_operation,34.9%,"divide(1473, 4218)",,"Program averages 1473 and 4218. Right: 1473/4218 = 34.9%."
+78,SNA/2013/page_84.pdf-3,real_error,answer,wrong_number,2.7%,,,"Answer divides by the 2012 total (14.9/516.9 = 2.9%). Program right: 14.9/546.5 = 2.7%."
+79,PM/2017/page_32.pdf-2,real_error,program,wrong_operation,11,"subtract(3.79, 3.68), multiply(#0, const_100)",,"Program subtracts 100 instead of multiplying. Right: (3.79 - 3.68) * 100 = 11 basis points."
+80,GPN/2013/page_87.pdf-4,parser_miss,,,,,,"Answer says 170 grants, which is 79 + 91 = 170."
+81,AAL/2015/page_114.pdf-2,real_error,program,wrong_number,7.5%,"divide(199, 2655)",,"Program uses 1990 (a bond-series year) for 199. Right: 199/2655 = 7.5%."
+82,ETR/2017/page_372.pdf-2,real_error,program,step_count,2.25%,"add(703.1, 18.2), subtract(#0, 705.4), divide(#1, 705.4)",,"Program stops at 721.3. Right: (703.1 + 18.2 - 705.4)/705.4 = 2.25%."
+83,DRE/2007/page_56.pdf-2,real_error,answer,missing_answer,1.56,,,"Answer empty. Program right: 217692/139255 = 1.56."
+84,WRK/2018/page_107.pdf-2,real_error,both,wrong_operation,197.5,"add(127.1, 70.4)",,"Duplicate of item 69. Program and answer subtract 70.4 instead of adding. Right: 127.1 + 70.4 = 197.5."
+85,SNA/2007/page_49.pdf-1,real_error,both,step_count,218.53,"add(231.1, 203.4), add(221.1, #0), divide(#1, const_3)",,"Template variant: adds 203.4 twice and const_3, never divides; answer 145.97 matches no calculation. Right: (231.1 + 203.4 + 221.1)/3 = 218.53."
+86,BKNG/2016/page_33.pdf-1,rounding,,,,,,"1.4475 written as 1.44; gap under 1%."
+87,K/2006/page_52.pdf-3,real_error,program,wrong_operation,14.77%,"subtract(1410.5, 1229.0), divide(#0, 1229.0)",,"Program subtracts 1229.0 again instead of dividing. Right: (1410.5 - 1229.0)/1229.0 = 14.77%."
+88,STT/2007/page_111.pdf-4,real_error,program,step_count,10.3%,"subtract(558368, 506032), divide(#0, 506032)",,"Program stops at the difference 52336. Right: 52336/506032 = 10.3%; written 10% is coarser rounding."
+89,L/2009/page_84.pdf-1,real_error,program,step_count,60.6%,"subtract(160.62, const_100), divide(#0, const_100)",,"Program gives the ratio 1.6062, not growth. Right: (160.62 - 100)/100 = 60.6%."
+90,AWK/2017/page_148.pdf-4,real_error,answer,missing_answer,59.0%,,,"Answer empty. Program right on the relative reading: (1.24 - 0.78)/0.78 = 59.0% (the points reading gives 0.46)."
+91,LMT/2015/page_89.pdf-4,real_error,program,scale_or_units,0.69%,"multiply(7.0, const_1000), divide(48, #0)",,"Program divides 48 million by 7.0 billion as bare numbers. Right: 48/7000 = 0.69%."
+92,LMT/2014/page_77.pdf-1,real_error,program,step_count,325.77,"add(326.5, 328.4), add(#0, 322.4), divide(#1, const_3)",,"Template variant: adds const_3 and never divides (980.3). Right: (322.4 + 326.5 + 328.4)/3 = 325.77."
+93,ANSS/2012/page_93.pdf-2,real_error,program,wrong_operation,10.7%,"subtract(9.3, 8.4), divide(#0, 8.4)",,"Program adds 8.4 back instead of dividing. Right: (9.3 - 8.4)/8.4 = 10.7%."
+94,SNA/2012/page_110.pdf-1,real_error,program,wrong_operation,-28.0%,"subtract(509, 707), divide(#0, 707)",,"Program subtracts 707 again instead of dividing. Right: (509 - 707)/707 = -28.0%."
+95,ANSS/2016/page_47.pdf-2,parser_miss,,,,,,"Answer 1.371:1 is 40859/29808 = 1.371."
+96,TFX/2017/page_78.pdf-3,parser_miss,,,,,,"Answer gives 411906848 or 411.91 million; 113.49 * 3629455 = 411906847.95."
+97,NCLH/2018/page_64.pdf-4,parser_miss,,,,,,"Answer text says decreased 25.7%; (165172 - 222427)/222427 = -25.7%."
+98,HOLX/2009/page_127.pdf-4,parser_miss,,,,,,"Answer $ 27.8 per share is 3671500/132038 = 27.81."
