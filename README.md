@@ -19,7 +19,8 @@ No test results yet. Numbers will be added here only from completed runs.
 | Data pinned to an upstream commit, checked by SHA-256 | done |
 | Official FinQA scorer vendored, parity-tested on all 8,281 gold programs | done |
 | Automatic screen (parser v1) | done, counts below |
-| Hand-check 1 (50 train flags) | sheet built, verdicts in progress |
+| Hand-checks: check1 (50 train flags), check2 (all 98 flagged test items), check3 (50 test `agree` items) | sheets built; verdicts in progress. Parser v1 is kept whatever check1 shows |
+| Audit counts | code ready, tested on made-up verdicts (`finqa_lora/auditcounts.py`): screen precision, wrong programs among the train flags, confirmed test errors, a bound on misses; counts only finished sheets |
 | Prompt, inference and LoRA training code | done, tested on a tiny model in CI |
 | Feasibility run 1 on GPU: licences, token lengths, base models on dev | done, `results/feasibility/run1/` |
 | Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
@@ -108,6 +109,7 @@ pytest                           # manifest, scorer parity, screen counts
 python -m finqa_lora.screen      # writes results/screen/
 python -m finqa_lora.handcheck check1             # builds the sheet (never overwrites one)
 python -m finqa_lora.handcheck check1 --validate  # lists invalid or changed values in a filled sheet
+python -m finqa_lora.auditcounts                  # counts every finished hand-check sheet (results/audit/counts.json)
 python -m finqa_lora.runlog build                 # indexes every committed run into runs.db
 python -m finqa_lora.testgate                     # is the test split unlocked? (exit 1 while it is not)
 python -m finqa_lora.testeval results/test/run1   # views and statistics of a recorded test run
@@ -132,6 +134,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/scoring.py` | Execution and program accuracy through the official code |
 | `finqa_lora/screen.py` | The automatic program-versus-answer screen |
 | `finqa_lora/handcheck.py`, `handcheck/` | Hand-check sheets and protocol |
+| `finqa_lora/auditcounts.py` | Counts from the finished hand-check sheets, with intervals; definitions fixed before any verdict |
 | `results/screen/` | Screen status for every item |
 | `finqa_lora/prompt.py` | The one prompt format used for training, zero-shot and few-shot |
 | `finqa_lora/infer.py`, `finqa_lora/train.py` | Greedy generation and scoring; LoRA fine-tuning with TRL |

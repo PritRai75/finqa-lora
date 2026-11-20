@@ -56,6 +56,23 @@ correction that disagrees with the side marked right, and a note with no number 
 item. It never changes a verdict. `tests/test_handcheck.py` runs the same check on every
 committed sheet, so a sheet with an invalid value fails CI.
 
+## Counting
+
+`python -m finqa_lora.auditcounts` counts each sheet that is finished (a verdict on every row,
+nothing invalid, exactly the items it was built with) and only reports progress for the others. The
+definitions were fixed on 19 Nov 2026, before any sheet had a verdict:
+
+- `uncertain` rows are left out of every count and reported by number.
+- A `real_error` counts as a wrong program when `wrong_side` is `program` or `both`; as a wrong
+  written answer when it is `answer` or `both` and the type is not `missing_answer`; empty answers
+  and `question_ambiguous` are counted on their own.
+- check1: every share with a 95% Wilson interval, also scaled to the 431 train flags. Precision is
+  `real_error` over the counted rows. Parser misses are listed; parser v1 stays whatever they show.
+- check2 covers every flagged test item, so its counts are exact for the test set; screen precision
+  on test `disagree` items gets a Wilson interval.
+- check3: misses with an exact one-sided 95% upper bound, also scaled to the 1,040 test `agree` items.
+- The 9 `sign_only` test items are in no check and are left out of the test-set totals.
+
 ## Test gate
 
 No model generates on the test split until check2 and check3 have a verdict on every row, pass
