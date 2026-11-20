@@ -56,13 +56,6 @@ def test_finished_committed_sheets_open_the_gate(repo):
     assert record["check3"]["last_commit"] == head and len(record["check3"]["git_blob"]) == 40
 
 
-def test_gate_is_closed_in_this_repo_until_check2_and_check3_are_finished():
-    """True today: both sheets are committed (S7) with rows still to fill. The commit that finishes the
-    last row of both sheets deletes this test."""
-    message = closed_because(testgate.REPO_ROOT)
-    assert "rows have no verdict" in message
-
-
 def test_a_missing_sheet_keeps_it_closed(repo):
     git(repo, "rm", "-q", "handcheck/check3.csv")
     git(repo, "commit", "-q", "-m", "drop")
@@ -108,9 +101,13 @@ def test_outside_a_git_checkout_it_stays_closed(tmp_path):
     assert "needs a git checkout" in closed_because(tmp_path)
 
 
-def test_test_inference_stops_before_loading_any_model():
-    """infer.run on test raises GateClosed, not a model-loading error, for a model that does not exist."""
+def test_test_inference_stops_before_loading_any_model(tmp_path, monkeypatch):
+    """infer.run on test raises GateClosed, not a model-loading error, for a model that does not exist.
+    The gate is closed here by pointing the real gate at a folder that is no git checkout, so this holds
+    whatever this repo's own gate says (it opened in S7, when check3 was committed)."""
     pytest.importorskip("torch")
     from finqa_lora.infer import run
-    with pytest.raises(testgate.GateClosed):
+    real = testgate.open_gate
+    monkeypatch.setattr(testgate, "open_gate", lambda root=None: real(tmp_path))
+    with pytest.raises(testgate.GateClosed, match="needs a git checkout"):
         run("no/such-model", "test", limit=1)

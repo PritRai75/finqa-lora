@@ -144,8 +144,13 @@ def test_dev_check_tolerance_is_decision_38():
 
 
 def test_a_test_pass_stops_at_the_closed_gate_before_any_work(tmp_path, monkeypatch):
-    """True while check2 and check3 are unfinished: no Hub call, no adapter copy, no model load."""
+    """A closed gate stops a test pass before any work: no Hub call, no adapter copy, no model load.
+    The real gate is pointed at a folder that is no git checkout, so it is closed whatever this repo's
+    own gate says (it opened in S7, when check3 was committed)."""
     pytest.importorskip("torch")
+    real = testgate.open_gate
+    (tmp_path / "no-repo").mkdir()
+    monkeypatch.setattr(testgate, "open_gate", lambda root=None: real(tmp_path / "no-repo"))
     called = []
     monkeypatch.setattr(testpass, "hub_main_sha", lambda m: called.append("hub"))
     monkeypatch.setattr(testpass, "assemble", lambda *a, **k: called.append("assemble"))
