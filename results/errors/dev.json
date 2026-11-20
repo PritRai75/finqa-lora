@@ -1,0 +1,240 @@
+{
+  "adapter:cleaned:1": {
+    "failures": 295,
+    "tags": {
+      "invalid": 6,
+      "operand_order": 18,
+      "scale_x100": 19,
+      "sign": 5,
+      "near_value": 1,
+      "wrong_operation": 10,
+      "wrong_table_row": 31,
+      "wrong_number": 85,
+      "step_count": 7,
+      "other": 113
+    },
+    "on_flagged_items": 54,
+    "flagged_matching_written_answer": 17
+  },
+  "adapter:cleaned:2": {
+    "failures": 300,
+    "tags": {
+      "invalid": 2,
+      "operand_order": 19,
+      "scale_x100": 18,
+      "sign": 6,
+      "near_value": 1,
+      "wrong_operation": 9,
+      "wrong_table_row": 33,
+      "wrong_number": 79,
+      "step_count": 7,
+      "other": 126
+    },
+    "on_flagged_items": 57,
+    "flagged_matching_written_answer": 22
+  },
+  "adapter:cleaned:3": {
+    "failures": 298,
+    "tags": {
+      "invalid": 4,
+      "operand_order": 22,
+      "scale_x100": 18,
+      "sign": 5,
+      "near_value": 1,
+      "wrong_operation": 13,
+      "wrong_table_row": 27,
+      "wrong_number": 86,
+      "step_count": 8,
+      "other": 114
+    },
+    "on_flagged_items": 53,
+    "flagged_matching_written_answer": 19
+  },
+  "adapter:random:1": {
+    "failures": 300,
+    "tags": {
+      "invalid": 3,
+      "operand_order": 22,
+      "scale_x100": 15,
+      "sign": 4,
+      "near_value": 1,
+      "wrong_operation": 11,
+      "wrong_table_row": 30,
+      "wrong_number": 80,
+      "step_count": 8,
+      "other": 126
+    },
+    "on_flagged_items": 54,
+    "flagged_matching_written_answer": 17
+  },
+  "adapter:random:2": {
+    "failures": 301,
+    "tags": {
+      "invalid": 2,
+      "operand_order": 18,
+      "scale_x100": 17,
+      "sign": 5,
+      "near_value": 1,
+      "wrong_operation": 13,
+      "wrong_table_row": 28,
+      "wrong_number": 75,
+      "step_count": 6,
+      "other": 136
+    },
+    "on_flagged_items": 52,
+    "flagged_matching_written_answer": 19
+  },
+  "adapter:random:3": {
+    "failures": 295,
+    "tags": {
+      "invalid": 3,
+      "operand_order": 14,
+      "scale_x100": 14,
+      "sign": 7,
+      "near_value": 2,
+      "wrong_operation": 10,
+      "wrong_table_row": 28,
+      "wrong_number": 79,
+      "step_count": 7,
+      "other": 131
+    },
+    "on_flagged_items": 56,
+    "flagged_matching_written_answer": 20
+  },
+  "adapter:cleaned:4": {
+    "failures": 308,
+    "tags": {
+      "invalid": 3,
+      "operand_order": 19,
+      "scale_x100": 15,
+      "sign": 6,
+      "near_value": 1,
+      "wrong_operation": 9,
+      "wrong_table_row": 30,
+      "wrong_number": 85,
+      "step_count": 7,
+      "other": 133
+    },
+    "on_flagged_items": 57,
+    "flagged_matching_written_answer": 18
+  },
+  "adapter:cleaned:5": {
+    "failures": 287,
+    "tags": {
+      "invalid": 4,
+      "operand_order": 18,
+      "scale_x100": 14,
+      "sign": 4,
+      "near_value": 1,
+      "wrong_operation": 9,
+      "wrong_table_row": 24,
+      "wrong_number": 78,
+      "step_count": 8,
+      "other": 127
+    },
+    "on_flagged_items": 55,
+    "flagged_matching_written_answer": 19
+  },
+  "adapter:random:4": {
+    "failures": 294,
+    "tags": {
+      "invalid": 4,
+      "operand_order": 23,
+      "scale_x100": 17,
+      "sign": 5,
+      "near_value": 2,
+      "wrong_operation": 11,
+      "wrong_table_row": 26,
+      "wrong_number": 78,
+      "step_count": 7,
+      "other": 121
+    },
+    "on_flagged_items": 53,
+    "flagged_matching_written_answer": 18
+  },
+  "adapter:random:5": {
+    "failures": 299,
+    "tags": {
+      "invalid": 5,
+      "operand_order": 19,
+      "scale_x100": 14,
+      "sign": 5,
+      "near_value": 1,
+      "wrong_operation": 11,
+      "wrong_table_row": 27,
+      "wrong_number": 85,
+      "step_count": 6,
+      "other": 126
+    },
+    "on_flagged_items": 55,
+    "flagged_matching_written_answer": 16
+  },
+  "base:Qwen__Qwen2.5-1.5B-Instruct:0shot": {
+    "failures": 854,
+    "tags": {
+      "invalid": 677,
+      "operand_order": 8,
+      "scale_x100": 1,
+      "sign": 2,
+      "near_value": 0,
+      "wrong_operation": 11,
+      "wrong_table_row": 2,
+      "wrong_number": 16,
+      "step_count": 18,
+      "other": 119
+    },
+    "on_flagged_items": 80,
+    "flagged_matching_written_answer": 1
+  },
+  "base:Qwen__Qwen2.5-1.5B-Instruct:4shot": {
+    "failures": 840,
+    "tags": {
+      "invalid": 597,
+      "operand_order": 7,
+      "scale_x100": 20,
+      "sign": 0,
+      "near_value": 0,
+      "wrong_operation": 7,
+      "wrong_table_row": 2,
+      "wrong_number": 17,
+      "step_count": 18,
+      "other": 172
+    },
+    "on_flagged_items": 76,
+    "flagged_matching_written_answer": 7
+  },
+  "base:Qwen__Qwen3-4B-Instruct-2507:0shot": {
+    "failures": 659,
+    "tags": {
+      "invalid": 420,
+      "operand_order": 5,
+      "scale_x100": 20,
+      "sign": 2,
+      "near_value": 0,
+      "wrong_operation": 9,
+      "wrong_table_row": 11,
+      "wrong_number": 36,
+      "step_count": 59,
+      "other": 97
+    },
+    "on_flagged_items": 73,
+    "flagged_matching_written_answer": 7
+  },
+  "base:Qwen__Qwen3-4B-Instruct-2507:4shot": {
+    "failures": 662,
+    "tags": {
+      "invalid": 126,
+      "operand_order": 8,
+      "scale_x100": 229,
+      "sign": 3,
+      "near_value": 1,
+      "wrong_operation": 14,
+      "wrong_table_row": 9,
+      "wrong_number": 40,
+      "step_count": 28,
+      "other": 204
+    },
+    "on_flagged_items": 67,
+    "flagged_matching_written_answer": 16
+  }
+}
