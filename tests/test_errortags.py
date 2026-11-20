@@ -87,3 +87,85 @@ def test_committed_summary_matches_the_code():
         pytest.skip("results/errors/dev.json not committed yet")
     with open(path, encoding="utf-8") as f:
         assert json.load(f) == errortags.run_dev(write=False)
+
+
+# Test passes (S8, before any test pass was recorded): a made-up run in the layout jobs/testpass.sh writes.
+def write_test_run(root, program_for):
+    from finqa_lora.data import load_split
+    from finqa_lora.testpass import all_passes, parse_pass, pass_dir
+    items = load_split("test")
+    run = root / "run1"
+    for k, name in enumerate(all_passes()):
+        d = pass_dir(run, parse_pass(name))
+        d.mkdir(parents=True)
+        rows = []
+        for i, ex in enumerate(items):
+            prog = program_for(k, i, ex)
+            ok, value = execute(prog, ex["table"]) if prog else (False, None)
+            rows.append({"id": ex["id"], "reply": prog, "program": prog, "executes": int(ok),
+                         "value": "" if value is None else value,
+                         "exe_correct": int(bool(prog) and ok and value == ex["qa"]["exe_ans"]), "prog_correct": 0})
+        with open(d / "test.csv", "w", encoding="utf-8", newline="") as f:
+            w = csv.DictWriter(f, fieldnames=list(rows[0]), lineterminator="\n")
+            w.writeheader()
+            w.writerows(rows)
+        (d / "result.json").write_text(json.dumps({"pass": name, "test": {"exe_correct": sum(r["exe_correct"] for r in rows)}}))
+    (run / "report.json").write_text(json.dumps({"missing_passes": [], "one_gate_record": True}))
+    return run, items
+
+
+def _gold_right(ex):
+    ok, value = execute(ex["qa"]["program"], ex["table"])
+    return ok and value == ex["qa"]["exe_ans"]
+
+
+def test_test_tags_every_pass_with_the_dev_rules(tmp_path, monkeypatch):
+    from finqa_lora.testpass import all_passes
+    monkeypatch.setattr(errortags, "OUT", tmp_path / "errors")
+    gold = lambda k, i, ex: ex["qa"]["program"]
+    base_run, items = write_test_run(tmp_path / "base", gold)
+    base = errortags.run_test(base_run, write=False)
+    right = [i for i, ex in enumerate(items) if _gold_right(ex) and ex["qa"]["exe_ans"] != 0]
+    scale = right[20:22]
+
+    def changed(k, i, ex):          # pass k: k + 1 items left empty (invalid), two given a final x100 (scale_x100)
+        if i in right[:k + 1]:
+            return ""
+        if i in scale:
+            last = ex["qa"]["program"].count("),")
+            return f"{ex['qa']['program']}, multiply(#{last}, const_100)"
+        return gold(k, i, ex)
+
+    run, _ = write_test_run(tmp_path / "changed", changed)
+    out = errortags.run_test(run)
+    assert list(out) == all_passes()
+    for k, name in enumerate(all_passes()):
+        s, b = out[name], base[name]
+        assert s["failures"] == sum(s["tags"].values()) == b["failures"] + k + 3
+        assert s["tags"]["invalid"] == b["tags"]["invalid"] + k + 1
+        assert s["tags"]["scale_x100"] == b["tags"]["scale_x100"] + 2
+        same = [t for t in errortags.TAGS if t not in ("invalid", "scale_x100")]
+        assert {t: s["tags"][t] for t in same} == {t: b["tags"][t] for t in same}
+    with open(tmp_path / "errors" / "test.json", encoding="utf-8") as f:
+        assert json.load(f) == out
+    assert not (tmp_path / "errors" / "dev.json").exists()
+
+
+def test_test_tags_refuse_an_incomplete_run(tmp_path):
+    run, _ = write_test_run(tmp_path, lambda k, i, ex: ex["qa"]["program"])
+    import shutil
+    shutil.rmtree(run / "random" / "seed3")
+    with pytest.raises(SystemExit, match="passes found"):
+        errortags.run_test(run, write=False)
+    (run / "report.json").write_text(json.dumps({"missing_passes": ["adapter:random:3"], "one_gate_record": True}))
+    with pytest.raises(SystemExit, match="missing passes"):
+        errortags.run_test(run, write=False)
+
+
+def test_cli_takes_test_and_a_run(monkeypatch, tmp_path, capsys):
+    seen = {}
+    monkeypatch.setattr(errortags, "run_test", lambda run: seen.setdefault("run", run) and {})
+    monkeypatch.setattr(errortags, "OUT", errortags.REPO_ROOT / "results" / "errors")
+    monkeypatch.setattr("sys.argv", ["errortags", "test", "--run", str(tmp_path)])
+    errortags.main()
+    assert seen["run"] == tmp_path and "results/errors/test.json" in capsys.readouterr().out

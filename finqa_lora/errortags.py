@@ -31,8 +31,16 @@ error, not necessarily a model error (the averaging template on dev is the clear
 items the screen's tolerance (any x100) would count scale_x100 failures as matches, so they are not
 summed.
 
+Test (added S8, 20 Nov 2026, before the test passes were recorded; rules, order and summary unchanged,
+decision 48): the 13 passes of a recorded test run, read and checked as finqa_lora.testeval reads them
+(no pass missing, one gate record, every test.csv covering the 1,147 items in split order). On test the
+flagged items are check2's 98.
+
 Usage: python -m finqa_lora.errortags dev    tags every committed dev prediction file, writes
                                              results/errors/dev.json and prints a Markdown table
+       python -m finqa_lora.errortags test [--run results/test/run1]
+                                             the same for every pass of a recorded test run, writes
+                                             results/errors/test.json
 """
 import argparse
 import collections
@@ -214,6 +222,23 @@ def run_dev(root=REPO_ROOT, write=True):
     return out
 
 
+TEST_RUN = REPO_ROOT / "results" / "test" / "run1"
+
+
+def run_test(run=TEST_RUN, write=True):
+    """{pass name: summary} for every pass of a recorded test run, in testpass.all_passes order."""
+    from finqa_lora.testeval import load_run
+    from finqa_lora.testpass import all_passes
+    _, rows = load_run(run, load_split("test"))
+    out = {name: summarise(tag_rows(rows[name], "test")) for name in all_passes()}
+    if write:
+        OUT.mkdir(parents=True, exist_ok=True)
+        with open(OUT / "test.json", "w", encoding="utf-8", newline="\n") as f:
+            json.dump(out, f, indent=2)
+            f.write("\n")
+    return out
+
+
 def markdown(summary):
     head = ["Run", "Failures"] + list(TAGS) + ["On flagged items", "of which match the written answer"]
     lines = ["| " + " | ".join(head) + " |", "|" + " --- |" * len(head)]
@@ -225,10 +250,11 @@ def markdown(summary):
 
 def main():
     p = argparse.ArgumentParser()
-    p.add_argument("split", choices=["dev"], help="dev only for now; test after the test passes")
-    p.parse_args()
-    print(markdown(run_dev()))
-    print(f"\nwrote {(OUT / 'dev.json').relative_to(REPO_ROOT).as_posix()}")
+    p.add_argument("split", choices=["dev", "test"])
+    p.add_argument("--run", default=str(TEST_RUN), help="test only: the recorded test run")
+    a = p.parse_args()
+    print(markdown(run_dev() if a.split == "dev" else run_test(Path(a.run))))
+    print(f"\nwrote {(OUT / f'{a.split}.json').relative_to(REPO_ROOT).as_posix()}")
 
 
 if __name__ == "__main__":

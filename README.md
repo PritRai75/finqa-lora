@@ -115,6 +115,7 @@ python -m finqa_lora.runlog build                 # indexes every committed run 
 python -m finqa_lora.testgate                     # is the test split unlocked? (exit 1 while it is not)
 python -m finqa_lora.testeval results/test/run1   # views and statistics of a recorded test run
 python -m finqa_lora.errortags dev               # one rule-based error tag per wrong dev prediction (results/errors/dev.json)
+python -m finqa_lora.errortags test              # the same rules on every pass of results/test/run1 (results/errors/test.json)
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -146,7 +147,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/testgate.py` | Keeps the test split locked until the test hand-checks are finished and committed |
 | `finqa_lora/testeval.py` | The three test views (official, consistent, corrected) from check2 and check3, and every statistic, from a recorded test run |
 | `finqa_lora/testpass.py` | The test passes: 10 adapters (each matched to its committed SHA-256) and 3 prompted base models at pinned Hub revisions, after a dev check that the committed dev replies repeat |
-| `finqa_lora/errortags.py`, `results/errors/` | Rule-based error tags for wrong predictions, one per failure, and their dev summary |
+| `finqa_lora/errortags.py`, `results/errors/` | Rule-based error tags for wrong predictions, one per failure, and their dev and test summaries |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
 | `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
