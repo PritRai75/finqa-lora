@@ -49,14 +49,15 @@ def test_empty_row_is_not_checked():
     (ETR, dict(verdict="Real_error"), "verdict 'Real_error' not in"),
     (ETR, dict(wrong_side="programme"), "wrong_side 'programme' not in"),
     (ETR, dict(error_type="missing_x100"), "error_type 'missing_x100' not in"),
-    (ETR, dict(error_type="answer_typo"), "needs wrong_side answer or both"),
+    (ETR, dict(error_type="answer_typo"), "needs wrong_side answer"),
+    (ETR, dict(wrong_side="both", error_type="answer_typo"), "needs wrong_side answer"),   # decision 49
     (ETR, dict(uncertain="yes"), "uncertain 'yes'"),
     (ETR, dict(note=""), "note is empty"),
     (ETR, dict(corrected_answer=""), "corrected_answer is empty"),
     (ETR, dict(corrected_answer="about 18"), "cannot be read"),
     (ETR, dict(corrected_program=""), "corrected_program is empty"),
     (ETR, dict(corrected_program="subtrac(18.9, 0.3)"), "does not run"),
-    (LMT, dict(error_type="missing_answer"), "the item has a written answer"),
+    (LMT, dict(error_type="missing_answer"), "the screen read a value"),
     (LMT, dict(corrected_program="add(1, 2)"), "must be empty when only the answer is wrong"),
 ])
 def test_invalid_values_are_listed(item_id, change, message):
@@ -122,3 +123,30 @@ def test_committed_sheets_have_no_invalid_values(check):
     """Gate: verdicts can only be committed when every filled value follows the protocol."""
     report = handcheck.validate(check)
     assert report["invalid"] == [], report["invalid"]
+
+
+def _row_with_status(item_id, status, **verdict):
+    ex = DEV[item_id]
+    r = {"item": "1"} | handcheck.read_only_values(ex, "dev", status)
+    r.update({k: "" for k in handcheck.VERDICT_COLUMNS})
+    r.update(verdict)
+    return r, ex
+
+
+def test_text_with_no_value_can_be_missing_answer():
+    """Decision 51: missing_answer is allowed when the screen could not read a value from the text."""
+    unread = "ETR/2002/page_24.pdf-2"          # unparsed: a table fragment, not an answer; program 0.13204
+    ok = dict(verdict="real_error", wrong_side="answer", error_type="missing_answer",
+              corrected_answer="0.13204", note="Written answer is a table fragment; program gives 3955 / 29953.")
+    assert handcheck.check_row(*_row_with_status(unread, "unparsed", **ok)) == ([], [])
+
+
+def test_empty_answer_and_wrong_program_take_the_programs_type():
+    """Decisions 49 and the guide: both, with the program's error type; missing_answer under both is invalid."""
+    empty = "SLB/2012/page_44.pdf-4"            # no_answer; program 0.11475
+    ok = dict(verdict="real_error", wrong_side="both", error_type="wrong_number", corrected_answer="0.3",
+              corrected_program="subtract(6.8, 6.1), divide(#0, 6.8)", note="Made up: base should be 6.8, not 6.1.")
+    invalid, _ = handcheck.check_row(*_row_with_status(empty, "no_answer", **ok))
+    assert invalid == []
+    invalid, _ = handcheck.check_row(*_row_with_status(empty, "no_answer", **(ok | dict(error_type="missing_answer"))))
+    assert any("needs wrong_side answer" in m for m in invalid)

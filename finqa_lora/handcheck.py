@@ -195,12 +195,15 @@ def check_row(row, ex, split=None, status=None):
         return invalid, review
     if etype not in ERROR_TYPES:
         invalid.append(f"error_type {etype!r} not in {ERROR_TYPES}")
-    if etype in ANSWER_ONLY_TYPES and side not in ("answer", "both"):
-        invalid.append(f"error_type {etype} needs wrong_side answer or both")
-    if etype == "missing_answer" and str(ex["qa"]["answer"]).strip():
-        invalid.append("missing_answer, but the item has a written answer")
-    if not str(ex["qa"]["answer"]).strip() and etype != "missing_answer" and side != "both":
-        review.append("empty written answer: decision 2 codes it missing_answer (or both, if the program is also wrong)")
+    if etype in ANSWER_ONLY_TYPES and side != "answer":
+        invalid.append(f"error_type {etype} needs wrong_side answer "
+                       "(under both, error_type describes the program and the answer's slip goes in the note)")
+    written = str(ex["qa"]["answer"]).strip()
+    if etype == "missing_answer" and written and expected["screen_status"] != "unparsed":
+        invalid.append("missing_answer, but the screen read a value from the written answer")
+    if not written and etype != "missing_answer" and side != "both":
+        review.append("empty written answer: code it missing_answer (or both with the program's error type, "
+                      "if the program is also wrong)")
 
     if not v["corrected_answer"]:
         invalid.append("corrected_answer is empty")
