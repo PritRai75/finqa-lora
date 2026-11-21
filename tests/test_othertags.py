@@ -151,6 +151,16 @@ def test_rows_out_of_order_or_changed_header_are_invalid(drawn, tmp_path):
     assert "header changed" in othertags.validate(renamed)["invalid"][0][2]
 
 
+def test_committed_counts_match_the_sheet():
+    out, rep = othertags.counts()
+    assert rep["invalid"] == [] and rep["with_tag"] == 50
+    with open(othertags.COUNTS, encoding="utf-8") as f:
+        assert json.load(f) == out
+    assert {t: v["items"] for t, v in out["tags"].items()} == {
+        "gold_wrong": 20, "invented_number": 0, "wrong_quantity": 17, "missing_step": 9, "extra_step": 4,
+        "wrong_constant": 0, "unclear": 0}
+
+
 def test_build_never_overwrites_a_sheet(monkeypatch, tmp_path):
     (tmp_path / f"{othertags.NAME}.csv").write_text("item\n1\n")
     monkeypatch.setattr(othertags, "OUT", tmp_path)

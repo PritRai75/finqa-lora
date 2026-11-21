@@ -110,13 +110,21 @@ Tags, first that holds (the vocabulary comes from the dev failures tagged `other
 
 | Tag | Holds when |
 | --- | --- |
-| `gold_wrong` | the gold program or the written answer is wrong, or the question is ambiguous, so the prediction cannot be called a model error. The note says what is right |
+| `gold_wrong` | the gold program is wrong, the question is ambiguous or unanswerable, or the prediction would be right under the correct label. The note says what is right. See the rule under the table for a wrong written answer |
 | `invented_number` | the program uses a number that is nowhere in the report and is not a constant |
 | `wrong_quantity` | the numbers come from the report, but the program computes another quantity than the question asks: another entity, year or measure, a wrong base or denominator, or a stated figure for something else used as if it answered the question |
 | `missing_step` | the right quantity, but a needed step or term is absent: no scale step, no change step, years or items left out of a sum or an average |
 | `extra_step` | the right quantity, plus steps the question does not need |
 | `wrong_constant` | the right structure, but a wrong `const_*`, divisor or scale |
 | `unclear` | none of the above, or the reason cannot be told |
+
+A wrong gold program counts as unanswerable as scored, because a correct prediction would also fail against
+it, so it is `gold_wrong`. When only the written answer is wrong and the gold program is right, the failure is
+the model's: tag its own reason and say in the note that the written answer is also wrong (scoring is against
+the program's result, so this is a real model error). Decided by Prit on 21 Nov 2026, before any tag, and
+applied in the tags; it reached the repo one commit after them, because `a62be1a` was committed with the
+earlier wording. `a62be1a` also holds the sheet and the tags together. The sample does not depend on that
+order: it is drawn by code from the committed run, and `tests/test_othertags.py` draws it again.
 
 `note` is one line: what the prediction does, and the right calculation with its numbers. Work out the
 right answer from the question and the report first, then read the prediction.
@@ -137,3 +145,7 @@ Counts are fixed now, before any tag: `python -m finqa_lora.othertags --counts` 
 nothing invalid, and writes `results/errors/other_tags.json`: per tag the items, the share of the 50 with a 95%
 Wilson interval, and the same share scaled to the 266 items of the population. These are shares of items with
 a failure tagged `other` by at least one adapter, not shares of all failures, and the write-up says so.
+
+`gold_wrong` tags are not audit verdicts. They were made with a model prediction in view, against the rule
+that no prediction on a test item is looked at before the item has a verdict, so they stay out of
+`results/audit/counts.json` and are reported apart, as label problems seen during error analysis.

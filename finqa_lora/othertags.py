@@ -15,8 +15,12 @@ items in the pool.
 Each sheet row is tagged with one of TAGS, the first that holds (the vocabulary was fixed on 21 Nov 2026,
 from the dev failures tagged `other`, before any test prediction was looked at):
 
-  gold_wrong       the gold program or the written answer is wrong, or the question is ambiguous, so the
-                   prediction cannot be called a model error (the note says what is right)
+  gold_wrong       the gold program is wrong, the question is ambiguous or unanswerable, or the prediction
+                   would be right under the correct label; a wrong gold program makes the item unanswerable
+                   as scored, because a correct prediction would also fail against it (the note says what
+                   is right). When only the written answer is wrong and the gold program is right, the
+                   failure is the model's: tag its own reason and say in the note that the written answer
+                   is also wrong
   invented_number  the program uses a number that is nowhere in the report and is not a constant
   wrong_quantity   the numbers come from the report, but the program computes another quantity than the
                    question asks: another entity, year or measure, a wrong base or denominator, or a stated
