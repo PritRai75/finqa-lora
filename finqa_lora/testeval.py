@@ -204,7 +204,7 @@ def evaluate(run, sheets=None, check_gate=True):
             "finetuned_vs_base": finetuned_vs_base(vec),
             "cleaned_vs_random": stats.winner(arms["cleaned"], arms["random"]),
         }
-    with open(Path(run) / "evaluation.json", "w", encoding="utf-8") as f:
+    with open(Path(run) / "evaluation.json", "w", encoding="utf-8", newline="\n") as f:
         json.dump(out, f, indent=2)
     return out
 

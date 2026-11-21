@@ -1,0 +1,763 @@
+{
+  "sheets": {
+    "check1": {
+      "rows": 50,
+      "with_verdict": 50,
+      "invalid": 0,
+      "state": "complete"
+    },
+    "check2": {
+      "rows": 98,
+      "with_verdict": 98,
+      "invalid": 0,
+      "state": "complete"
+    },
+    "check3": {
+      "rows": 50,
+      "with_verdict": 50,
+      "invalid": 0,
+      "state": "complete"
+    }
+  },
+  "check1": {
+    "rows": 50,
+    "uncertain": 0,
+    "counted": 50,
+    "verdicts": {
+      "real_error": {
+        "count": 45,
+        "of": 50,
+        "share": 0.9,
+        "wilson_low": 0.7863976856252035,
+        "wilson_high": 0.9565242350681096,
+        "pool": 431,
+        "in_pool": 387.90000000000003,
+        "in_pool_low": 338.93740250446274,
+        "in_pool_high": 412.2619453143552
+      },
+      "no_error": {
+        "count": 0,
+        "of": 50,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07134759913335872,
+        "pool": 431,
+        "in_pool": 0.0,
+        "in_pool_low": 2.9906632725840154e-15,
+        "in_pool_high": 30.75081522647761
+      },
+      "parser_miss": {
+        "count": 0,
+        "of": 50,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07134759913335872,
+        "pool": 431,
+        "in_pool": 0.0,
+        "in_pool_low": 2.9906632725840154e-15,
+        "in_pool_high": 30.75081522647761
+      },
+      "rounding": {
+        "count": 5,
+        "of": 50,
+        "share": 0.1,
+        "wilson_low": 0.04347576493189041,
+        "wilson_high": 0.21360231437479654,
+        "pool": 431,
+        "in_pool": 43.1,
+        "in_pool_low": 18.73805468564477,
+        "in_pool_high": 92.0625974955373
+      },
+      "sign_convention": {
+        "count": 0,
+        "of": 50,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07134759913335872,
+        "pool": 431,
+        "in_pool": 0.0,
+        "in_pool_low": 2.9906632725840154e-15,
+        "in_pool_high": 30.75081522647761
+      }
+    },
+    "kinds": {
+      "wrong_program": {
+        "count": 31,
+        "of": 50,
+        "share": 0.62,
+        "wilson_low": 0.4815044693099298,
+        "wilson_high": 0.7413721068980641,
+        "pool": 431,
+        "in_pool": 267.21999999999997,
+        "in_pool_low": 207.52842627257974,
+        "in_pool_high": 319.53137807306564
+      },
+      "wrong_written_answer": {
+        "count": 17,
+        "of": 50,
+        "share": 0.34,
+        "wilson_low": 0.2243694922250009,
+        "wilson_high": 0.478461739497674,
+        "pool": 431,
+        "in_pool": 146.54000000000002,
+        "in_pool_low": 96.7032511489754,
+        "in_pool_high": 206.2170097234975
+      },
+      "missing_answer": {
+        "count": 0,
+        "of": 50,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07134759913335872,
+        "pool": 431,
+        "in_pool": 0.0,
+        "in_pool_low": 2.9906632725840154e-15,
+        "in_pool_high": 30.75081522647761
+      },
+      "ambiguous": {
+        "count": 0,
+        "of": 50,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07134759913335872,
+        "pool": 431,
+        "in_pool": 0.0,
+        "in_pool_low": 2.9906632725840154e-15,
+        "in_pool_high": 30.75081522647761
+      }
+    },
+    "precision": {
+      "count": 45,
+      "of": 50,
+      "share": 0.9,
+      "wilson_low": 0.7863976856252035,
+      "wilson_high": 0.9565242350681096,
+      "pool": 431,
+      "in_pool": 387.90000000000003,
+      "in_pool_low": 338.93740250446274,
+      "in_pool_high": 412.2619453143552
+    },
+    "wrong_side": {
+      "answer": 14,
+      "both": 3,
+      "program": 28
+    },
+    "error_type": {
+      "answer_typo": 4,
+      "operand_order": 2,
+      "other": 8,
+      "scale_or_units": 2,
+      "step_count": 12,
+      "wrong_number": 6,
+      "wrong_operation": 10,
+      "wrong_table_row": 1
+    },
+    "side_by_type": {
+      "answer/answer_typo": 4,
+      "answer/other": 8,
+      "answer/wrong_number": 1,
+      "answer/wrong_table_row": 1,
+      "both/step_count": 1,
+      "both/wrong_operation": 2,
+      "program/operand_order": 2,
+      "program/scale_or_units": 2,
+      "program/step_count": 11,
+      "program/wrong_number": 5,
+      "program/wrong_operation": 8
+    },
+    "pool": 431,
+    "parser_misses": []
+  },
+  "check2": {
+    "rows": 98,
+    "uncertain": 4,
+    "counted": 94,
+    "verdicts": {
+      "real_error": {
+        "count": 83,
+        "of": 94,
+        "share": 0.8829787234042553,
+        "wilson_low": 0.8024979953786057,
+        "wilson_high": 0.9333863717172325
+      },
+      "no_error": {
+        "count": 0,
+        "of": 94,
+        "share": 0.0,
+        "wilson_low": 0.0,
+        "wilson_high": 0.03926207629154474
+      },
+      "parser_miss": {
+        "count": 5,
+        "of": 94,
+        "share": 0.05319148936170213,
+        "wilson_low": 0.022931748685590003,
+        "wilson_high": 0.11853648970259889
+      },
+      "rounding": {
+        "count": 5,
+        "of": 94,
+        "share": 0.05319148936170213,
+        "wilson_low": 0.022931748685590003,
+        "wilson_high": 0.11853648970259889
+      },
+      "sign_convention": {
+        "count": 1,
+        "of": 94,
+        "share": 0.010638297872340425,
+        "wilson_low": 0.0018803957480879353,
+        "wilson_high": 0.05782291296278563
+      }
+    },
+    "kinds": {
+      "wrong_program": {
+        "count": 57,
+        "of": 94,
+        "share": 0.6063829787234043,
+        "wilson_low": 0.5053112567832916,
+        "wilson_high": 0.6991010674099969
+      },
+      "wrong_written_answer": {
+        "count": 33,
+        "of": 94,
+        "share": 0.35106382978723405,
+        "wilson_low": 0.26215483168433173,
+        "wilson_high": 0.4516679144450646
+      },
+      "missing_answer": {
+        "count": 11,
+        "of": 94,
+        "share": 0.11702127659574468,
+        "wilson_low": 0.06661362828276755,
+        "wilson_high": 0.19750200462139433
+      },
+      "ambiguous": {
+        "count": 1,
+        "of": 94,
+        "share": 0.010638297872340425,
+        "wilson_low": 0.0018803957480879353,
+        "wilson_high": 0.05782291296278563
+      }
+    },
+    "precision": {
+      "count": 83,
+      "of": 94,
+      "share": 0.8829787234042553,
+      "wilson_low": 0.8024979953786057,
+      "wilson_high": 0.9333863717172325
+    },
+    "wrong_side": {
+      "answer": 25,
+      "both": 19,
+      "program": 38,
+      "question_ambiguous": 1
+    },
+    "error_type": {
+      "answer_typo": 3,
+      "missing_answer": 10,
+      "operand_order": 3,
+      "other": 11,
+      "scale_or_units": 7,
+      "step_count": 19,
+      "wrong_number": 5,
+      "wrong_operation": 24
+    },
+    "side_by_type": {
+      "answer/answer_typo": 3,
+      "answer/missing_answer": 10,
+      "answer/other": 11,
+      "answer/wrong_number": 1,
+      "both/operand_order": 2,
+      "both/scale_or_units": 2,
+      "both/step_count": 4,
+      "both/wrong_number": 2,
+      "both/wrong_operation": 9,
+      "program/operand_order": 1,
+      "program/scale_or_units": 5,
+      "program/step_count": 15,
+      "program/wrong_number": 2,
+      "program/wrong_operation": 15,
+      "question_ambiguous/-": 1
+    },
+    "by_status": {
+      "disagree": {
+        "rows": 76,
+        "uncertain": 2,
+        "counted": 74,
+        "verdicts": {
+          "real_error": {
+            "count": 68,
+            "of": 74,
+            "share": 0.918918918918919,
+            "wilson_low": 0.8341805755644218,
+            "wilson_high": 0.9623101498061737
+          },
+          "no_error": {
+            "count": 0,
+            "of": 74,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.04934977939638607
+          },
+          "parser_miss": {
+            "count": 0,
+            "of": 74,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.04934977939638607
+          },
+          "rounding": {
+            "count": 5,
+            "of": 74,
+            "share": 0.06756756756756757,
+            "wilson_low": 0.029204086165362186,
+            "wilson_high": 0.1486119392585393
+          },
+          "sign_convention": {
+            "count": 1,
+            "of": 74,
+            "share": 0.013513513513513514,
+            "wilson_low": 0.002389463403456818,
+            "wilson_high": 0.07265356519843233
+          }
+        },
+        "kinds": {
+          "wrong_program": {
+            "count": 53,
+            "of": 74,
+            "share": 0.7162162162162162,
+            "wilson_low": 0.6048274583682747,
+            "wilson_high": 0.8062645289197747
+          },
+          "wrong_written_answer": {
+            "count": 30,
+            "of": 74,
+            "share": 0.40540540540540543,
+            "wilson_low": 0.3009056446255579,
+            "wilson_high": 0.5192416109359206
+          },
+          "missing_answer": {
+            "count": 0,
+            "of": 74,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.04934977939638607
+          },
+          "ambiguous": {
+            "count": 0,
+            "of": 74,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.04934977939638607
+          }
+        },
+        "precision": {
+          "count": 68,
+          "of": 74,
+          "share": 0.918918918918919,
+          "wilson_low": 0.8341805755644218,
+          "wilson_high": 0.9623101498061737
+        },
+        "wrong_side": {
+          "answer": 15,
+          "both": 15,
+          "program": 38
+        },
+        "error_type": {
+          "answer_typo": 3,
+          "operand_order": 3,
+          "other": 11,
+          "scale_or_units": 7,
+          "step_count": 18,
+          "wrong_number": 5,
+          "wrong_operation": 21
+        },
+        "side_by_type": {
+          "answer/answer_typo": 3,
+          "answer/other": 11,
+          "answer/wrong_number": 1,
+          "both/operand_order": 2,
+          "both/scale_or_units": 2,
+          "both/step_count": 3,
+          "both/wrong_number": 2,
+          "both/wrong_operation": 6,
+          "program/operand_order": 1,
+          "program/scale_or_units": 5,
+          "program/step_count": 15,
+          "program/wrong_number": 2,
+          "program/wrong_operation": 15
+        }
+      },
+      "no_answer": {
+        "rows": 14,
+        "uncertain": 2,
+        "counted": 12,
+        "verdicts": {
+          "real_error": {
+            "count": 12,
+            "of": 12,
+            "share": 1.0,
+            "wilson_low": 0.7575059933447592,
+            "wilson_high": 1.0
+          },
+          "no_error": {
+            "count": 0,
+            "of": 12,
+            "share": 0.0,
+            "wilson_low": 2.7755575615628914e-17,
+            "wilson_high": 0.24249400665524085
+          },
+          "parser_miss": {
+            "count": 0,
+            "of": 12,
+            "share": 0.0,
+            "wilson_low": 2.7755575615628914e-17,
+            "wilson_high": 0.24249400665524085
+          },
+          "rounding": {
+            "count": 0,
+            "of": 12,
+            "share": 0.0,
+            "wilson_low": 2.7755575615628914e-17,
+            "wilson_high": 0.24249400665524085
+          },
+          "sign_convention": {
+            "count": 0,
+            "of": 12,
+            "share": 0.0,
+            "wilson_low": 2.7755575615628914e-17,
+            "wilson_high": 0.24249400665524085
+          }
+        },
+        "kinds": {
+          "wrong_program": {
+            "count": 1,
+            "of": 12,
+            "share": 0.08333333333333333,
+            "wilson_low": 0.014865094404917095,
+            "wilson_high": 0.35387991114111694
+          },
+          "wrong_written_answer": {
+            "count": 0,
+            "of": 12,
+            "share": 0.0,
+            "wilson_low": 2.7755575615628914e-17,
+            "wilson_high": 0.24249400665524085
+          },
+          "missing_answer": {
+            "count": 11,
+            "of": 12,
+            "share": 0.9166666666666666,
+            "wilson_low": 0.646120088858883,
+            "wilson_high": 0.9851349055950829
+          },
+          "ambiguous": {
+            "count": 1,
+            "of": 12,
+            "share": 0.08333333333333333,
+            "wilson_low": 0.014865094404917095,
+            "wilson_high": 0.35387991114111694
+          }
+        },
+        "precision": {
+          "count": 12,
+          "of": 12,
+          "share": 1.0,
+          "wilson_low": 0.7575059933447592,
+          "wilson_high": 1.0
+        },
+        "wrong_side": {
+          "answer": 10,
+          "both": 1,
+          "question_ambiguous": 1
+        },
+        "error_type": {
+          "missing_answer": 10,
+          "wrong_operation": 1
+        },
+        "side_by_type": {
+          "answer/missing_answer": 10,
+          "both/wrong_operation": 1,
+          "question_ambiguous/-": 1
+        }
+      },
+      "unparsed": {
+        "rows": 8,
+        "uncertain": 0,
+        "counted": 8,
+        "verdicts": {
+          "real_error": {
+            "count": 3,
+            "of": 8,
+            "share": 0.375,
+            "wilson_low": 0.13684428582359742,
+            "wilson_high": 0.6942576053973727
+          },
+          "no_error": {
+            "count": 0,
+            "of": 8,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.32440756488388023
+          },
+          "parser_miss": {
+            "count": 5,
+            "of": 8,
+            "share": 0.625,
+            "wilson_low": 0.30574239460262737,
+            "wilson_high": 0.8631557141764026
+          },
+          "rounding": {
+            "count": 0,
+            "of": 8,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.32440756488388023
+          },
+          "sign_convention": {
+            "count": 0,
+            "of": 8,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.32440756488388023
+          }
+        },
+        "kinds": {
+          "wrong_program": {
+            "count": 3,
+            "of": 8,
+            "share": 0.375,
+            "wilson_low": 0.13684428582359742,
+            "wilson_high": 0.6942576053973727
+          },
+          "wrong_written_answer": {
+            "count": 3,
+            "of": 8,
+            "share": 0.375,
+            "wilson_low": 0.13684428582359742,
+            "wilson_high": 0.6942576053973727
+          },
+          "missing_answer": {
+            "count": 0,
+            "of": 8,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.32440756488388023
+          },
+          "ambiguous": {
+            "count": 0,
+            "of": 8,
+            "share": 0.0,
+            "wilson_low": 0.0,
+            "wilson_high": 0.32440756488388023
+          }
+        },
+        "precision": {
+          "count": 3,
+          "of": 8,
+          "share": 0.375,
+          "wilson_low": 0.13684428582359742,
+          "wilson_high": 0.6942576053973727
+        },
+        "wrong_side": {
+          "both": 3
+        },
+        "error_type": {
+          "step_count": 1,
+          "wrong_operation": 2
+        },
+        "side_by_type": {
+          "both/step_count": 1,
+          "both/wrong_operation": 2
+        }
+      }
+    },
+    "precision_disagree": {
+      "count": 68,
+      "of": 74,
+      "share": 0.918918918918919,
+      "wilson_low": 0.8341805755644218,
+      "wilson_high": 0.9623101498061737
+    }
+  },
+  "check3": {
+    "rows": 50,
+    "uncertain": 2,
+    "counted": 48,
+    "verdicts": {
+      "real_error": {
+        "count": 3,
+        "of": 48,
+        "share": 0.0625,
+        "wilson_low": 0.021483232908389285,
+        "wilson_high": 0.1683543805494635,
+        "pool": 1040,
+        "in_pool": 65.0,
+        "in_pool_low": 22.34256222472486,
+        "in_pool_high": 175.08855577144203
+      },
+      "no_error": {
+        "count": 45,
+        "of": 48,
+        "share": 0.9375,
+        "wilson_low": 0.8316456194505365,
+        "wilson_high": 0.9785167670916107,
+        "pool": 1040,
+        "in_pool": 975.0,
+        "in_pool_low": 864.9114442285579,
+        "in_pool_high": 1017.6574377752752
+      },
+      "parser_miss": {
+        "count": 0,
+        "of": 48,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07410012966611748,
+        "pool": 1040,
+        "in_pool": 0.0,
+        "in_pool_low": 7.216449660063518e-15,
+        "in_pool_high": 77.06413485276218
+      },
+      "rounding": {
+        "count": 0,
+        "of": 48,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07410012966611748,
+        "pool": 1040,
+        "in_pool": 0.0,
+        "in_pool_low": 7.216449660063518e-15,
+        "in_pool_high": 77.06413485276218
+      },
+      "sign_convention": {
+        "count": 0,
+        "of": 48,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07410012966611748,
+        "pool": 1040,
+        "in_pool": 0.0,
+        "in_pool_low": 7.216449660063518e-15,
+        "in_pool_high": 77.06413485276218
+      }
+    },
+    "kinds": {
+      "wrong_program": {
+        "count": 2,
+        "of": 48,
+        "share": 0.041666666666666664,
+        "wilson_low": 0.011501893489386586,
+        "wilson_high": 0.13975655870455445,
+        "pool": 1040,
+        "in_pool": 43.33333333333333,
+        "in_pool_low": 11.96196922896205,
+        "in_pool_high": 145.34682105273663
+      },
+      "wrong_written_answer": {
+        "count": 2,
+        "of": 48,
+        "share": 0.041666666666666664,
+        "wilson_low": 0.011501893489386586,
+        "wilson_high": 0.13975655870455445,
+        "pool": 1040,
+        "in_pool": 43.33333333333333,
+        "in_pool_low": 11.96196922896205,
+        "in_pool_high": 145.34682105273663
+      },
+      "missing_answer": {
+        "count": 0,
+        "of": 48,
+        "share": 0.0,
+        "wilson_low": 6.938893903907228e-18,
+        "wilson_high": 0.07410012966611748,
+        "pool": 1040,
+        "in_pool": 0.0,
+        "in_pool_low": 7.216449660063518e-15,
+        "in_pool_high": 77.06413485276218
+      },
+      "ambiguous": {
+        "count": 1,
+        "of": 48,
+        "share": 0.020833333333333332,
+        "wilson_low": 0.003687110977510649,
+        "wilson_high": 0.10899217995251861,
+        "pool": 1040,
+        "in_pool": 21.666666666666664,
+        "in_pool_low": 3.834595416611075,
+        "in_pool_high": 113.35186715061936
+      }
+    },
+    "precision": {
+      "count": 3,
+      "of": 48,
+      "share": 0.0625,
+      "wilson_low": 0.021483232908389285,
+      "wilson_high": 0.1683543805494635,
+      "pool": 1040,
+      "in_pool": 65.0,
+      "in_pool_low": 22.34256222472486,
+      "in_pool_high": 175.08855577144203
+    },
+    "wrong_side": {
+      "both": 2,
+      "question_ambiguous": 1
+    },
+    "error_type": {
+      "scale_or_units": 1,
+      "wrong_table_row": 1
+    },
+    "side_by_type": {
+      "both/scale_or_units": 1,
+      "both/wrong_table_row": 1,
+      "question_ambiguous/-": 1
+    },
+    "misses": {
+      "count": 3,
+      "of": 48,
+      "rate": 0.0625,
+      "upper95_one_sided": 0.1536889988733396,
+      "pool": 1040,
+      "in_pool": 65.0,
+      "in_pool_upper": 159.83655882827318
+    },
+    "pool": 1040
+  },
+  "test_set": {
+    "confirmed": 86,
+    "estimate": 148.0,
+    "upper95": 242.83655882827318,
+    "not_covered": {
+      "sign_only": 9,
+      "uncertain": 6
+    },
+    "note": "confirmed = real_error in check2 + check3; estimate and upper95 scale the check3 miss rate to every test agree item; sign_only and uncertain items are in no count"
+  },
+  "averaging_template": {
+    "train": {
+      "items": 34,
+      "status": {
+        "disagree": 33,
+        "no_answer": 1
+      },
+      "verdicts": {
+        "check1:real_error:program": 5
+      }
+    },
+    "dev": {
+      "items": 8,
+      "status": {
+        "disagree": 8
+      },
+      "verdicts": {}
+    },
+    "test": {
+      "items": 2,
+      "status": {
+        "disagree": 2
+      },
+      "verdicts": {
+        "check2:real_error:program": 2
+      }
+    }
+  }
+}
