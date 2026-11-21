@@ -34,7 +34,7 @@ summed.
 Test (added S8, 20 Nov 2026, before the test passes were recorded; rules, order and summary unchanged,
 decision 48): the 13 passes of a recorded test run, read and checked as finqa_lora.testeval reads them
 (no pass missing, one gate record, every test.csv covering the 1,147 items in split order). On test the
-flagged items are check2's 98.
+flagged items (screen status other than `agree`, as on dev) are 107: check2's 98 plus the 9 `sign_only`.
 
 Usage: python -m finqa_lora.errortags dev    tags every committed dev prediction file, writes
                                              results/errors/dev.json and prints a Markdown table

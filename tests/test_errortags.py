@@ -169,3 +169,17 @@ def test_cli_takes_test_and_a_run(monkeypatch, tmp_path, capsys):
     monkeypatch.setattr("sys.argv", ["errortags", "test", "--run", str(tmp_path)])
     errortags.main()
     assert seen["run"] == tmp_path and "results/errors/test.json" in capsys.readouterr().out
+
+
+def test_committed_test_summary_matches_the_code():
+    path = errortags.OUT / "test.json"
+    if not path.exists():
+        pytest.skip("results/errors/test.json not committed yet")
+    summary = errortags.run_test(write=False)
+    with open(path, encoding="utf-8") as f:
+        assert json.load(f) == summary
+    # pinned on 20 Nov 2026 (S8), from the recorded test run (results/test/run1, Kaggle, commit 5aa1573)
+    assert summary["adapter:cleaned:1"]["failures"] == 1147 - 745
+    assert summary["adapter:cleaned:1"]["tags"]["other"] == 160
+    assert summary["base:qwen3-4b:4"]["tags"]["scale_x100"] == 292
+    assert {s["on_flagged_items"] <= 107 for s in summary.values()} == {True}
