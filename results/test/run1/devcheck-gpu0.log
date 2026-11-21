@@ -1,0 +1,3 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:01<08:31,  1.52s/it]Loading weights:  51%|█████     | 171/338 [00:01<00:01, 140.74it/s]Loading weights:  70%|███████   | 238/338 [00:02<00:00, 143.81it/s]Loading weights:  83%|████████▎ | 282/338 [00:02<00:00, 143.47it/s]Loading weights:  93%|█████████▎| 314/338 [00:02<00:00, 146.41it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 121.95it/s]
+dev check cleaned/seed1: same reply 883/883, discordant 0, within tolerance True

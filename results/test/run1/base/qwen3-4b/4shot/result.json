@@ -1,0 +1,68 @@
+{
+  "pass": "base:qwen3-4b:4",
+  "kind": "base",
+  "base": "qwen3-4b",
+  "model": "Qwen/Qwen3-4B-Instruct-2507",
+  "shots": 4,
+  "revision": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "hub_main_sha": "cdbee75f17c01a7cc42f958dc650907174af0554",
+  "started": "2026-11-20 10:58:25",
+  "limit": null,
+  "test": {
+    "items": 1147,
+    "exe_correct": 252,
+    "prog_correct": 210,
+    "executes": 972,
+    "exe_acc": 0.21970357454228423,
+    "split": "test",
+    "shots": 4,
+    "seconds": 1260.3,
+    "prompt_tokens_mean": 885.2,
+    "test_gate": {
+      "check2": {
+        "sheet": "handcheck/check2.csv",
+        "rows": 98,
+        "verdicts": {
+          "parser_miss": 5,
+          "real_error": 87,
+          "rounding": 5,
+          "sign_convention": 1
+        },
+        "git_blob": "133062500b737b20a3721131ffbc526b0693844e",
+        "last_commit": "e467ff59da5be43c739d31ee5ccb9a5e8a2e7af9",
+        "last_commit_date": "2026-11-20T15:17:54+05:30",
+        "allowed_verdicts": [
+          "real_error",
+          "no_error",
+          "parser_miss",
+          "rounding",
+          "sign_convention"
+        ]
+      },
+      "check3": {
+        "sheet": "handcheck/check3.csv",
+        "rows": 50,
+        "verdicts": {
+          "no_error": 45,
+          "real_error": 5
+        },
+        "git_blob": "fbddfe868d1aaf06d4c0c43582f79c58f5b986e8",
+        "last_commit": "5aa1573ff161bf6b29f0492b56b3092ba19f6a97",
+        "last_commit_date": "2026-11-20T15:36:46+05:30",
+        "allowed_verdicts": [
+          "real_error",
+          "no_error",
+          "parser_miss",
+          "rounding",
+          "sign_convention"
+        ]
+      }
+    }
+  },
+  "finished": "2026-11-20 11:20:27",
+  "git_commit": "5aa1573ff161bf6b29f0492b56b3092ba19f6a97",
+  "prompt_version": 1,
+  "prompt_fingerprint": "4139bfc3519c",
+  "gpu": "Tesla T4",
+  "cuda_visible_devices": "0"
+}

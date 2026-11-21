@@ -1,0 +1,39 @@
+{
+  "arm": "random",
+  "seed": 1,
+  "gpu_slot": 1,
+  "adapter_source": "/kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-random-seed1.safetensors",
+  "adapter_sha256": "da85b47dc8b2d4fddc76a9b96541dccdd9f20592644c145d57d8c03b4804a5f4",
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "dev": {
+    "items": 883,
+    "exe_correct": 583,
+    "prog_correct": 539,
+    "executes": 880,
+    "exe_acc": 0.6602491506228766,
+    "split": "dev",
+    "shots": 0,
+    "seconds": 259.3,
+    "prompt_tokens_mean": 368.3
+  },
+  "against": "results/main/run1/random/seed1/dev.csv",
+  "comparison": {
+    "items": 883,
+    "same_reply": 883,
+    "right_now_only": 0,
+    "right_then_only": 0,
+    "discordant": 0,
+    "exe_correct_now": 583,
+    "exe_correct_then": 583
+  },
+  "tolerance": {
+    "same_reply_min": 800,
+    "discordant_max": 20
+  },
+  "within_tolerance": true,
+  "git_commit": "5aa1573ff161bf6b29f0492b56b3092ba19f6a97",
+  "prompt_fingerprint": "4139bfc3519c",
+  "gpu": "Tesla T4",
+  "cuda_visible_devices": "1"
+}

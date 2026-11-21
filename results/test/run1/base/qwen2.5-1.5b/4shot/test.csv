@@ -1,0 +1,1148 @@
+id,reply,program,executes,value,exe_correct,prog_correct
+ETR/2016/page_23.pdf-2,"subtract(5735, 5829)","subtract(5735, 5829)",1,-94.0,0,0
+INTC/2015/page_41.pdf-4,"divide(8.1, 56.0), multiply(#1, const_100)","divide(8.1, 56.0), multiply(#1, const_100)",0,,0,0
+ADI/2011/page_61.pdf-2,"divide(139.9, 153.7), multiply(#1, const_100)","divide(139.9, 153.7), multiply(#1, const_100)",0,,0,0
+FIS/2010/page_70.pdf-2,"divide(121.4, 4187.8)","divide(121.4, 4187.8)",1,0.02899,1,1
+MAS/2017/page_27.pdf-2,"divide(masco of 2017, masco of 2012), multiply(#1, const_100), subtract(divide(s&p 500 index of 2017, s&p 500 index of 2012), #1)","divide(masco of 2017, masco of 2012), multiply(#1, const_100), divide(s&p 500 index of 2017, s&p 500 index of 2012)",0,,0,0
+SYY/2006/page_71.pdf-1,"subtract(100690000, 92710000), divide(#0, 92710000), multiply(#1, const_100)","subtract(100690000, 92710000), divide(#0, 92710000), multiply(#1, const_100)",1,8.60749,0,0
+AES/2010/page_227.pdf-3,"divide(#0, 4612), multiply(#1, const_100)","divide(#0, 4612), multiply(#1, const_100)",0,,0,0
+GS/2015/page_188.pdf-2,"divide(#0, 301), multiply(#1, const_100)","divide(#0, 301), multiply(#1, const_100)",0,,0,0
+MO/2016/page_19.pdf-1,"greater(286.61, 198.09)","greater(286.61, 198.09)",1,yes,1,1
+CMCSA/2015/page_112.pdf-2,"subtract(table_sum(reductions for tax positions of prior years, none), #0), add(table_sum(reductions for tax positions of prior years, none), #0)","table_sum(reductions for tax positions of prior years, none), table_sum(reductions for tax positions of prior years, none)",1,-445.0,0,0
+STT/2007/page_111.pdf-3,"substract(4926, 4711), divide(#0, 4711), multiply(#1, const_100)","divide(#0, 4711), multiply(#1, const_100)",0,,0,0
+UAA/2016/page_42.pdf-2,"divide(table_sum(total debt including current maturities, none), table_sum(total assets, none))","table_sum(total debt including current maturities, none), table_sum(total assets, none)",1,11334150.0,0,0
+GIS/2018/page_110.pdf-2,"divide(table_sum(fiscal 2019 of operating leases, fiscal 2019 of capital leases), table_sum(total noncancelable future lease commitments of operating leases, total noncancelable future lease commitments of capital leases))","table_sum(fiscal 2019 of operating leases, fiscal 2019 of capital leases), table_sum(total noncancelable future lease commitments of operating leases, total noncancelable future lease commitments of capital leases)",0,,0,0
+JKHY/2019/page_18.pdf-3,"greater(table_sum(peer_group, 2019), table_sum(peer_group, 2018))","table_sum(peer_group, 2019), table_sum(peer_group, 2018)",0,,0,0
+AWK/2014/page_121.pdf-2,"subtract(6241, 6348), divide(#0, 6348), multiply(#1, const_100)","subtract(6241, 6348), divide(#0, 6348), multiply(#1, const_100)",1,-1.68557,0,0
+MRO/2011/page_108.pdf-1,"table_average(net change, none)","table_average(net change, none)",0,,0,0
+RCL/2012/page_75.pdf-1,"divide(455, 7)","divide(455, 7)",1,65.0,1,0
+ETR/2017/page_372.pdf-1,"table_average(net revenue, none)","table_average(net revenue, none)",0,,0,0
+ADBE/2008/page_89.pdf-3,"divide(#1, 139549), multiply(#1, const_100)","divide(#1, 139549), multiply(#1, const_100)",0,,0,0
+JPM/2010/page_273.pdf-2,"add(9.7, 10.2), multiply(#1, const_1000)","add(9.7, 10.2), multiply(#1, const_1000)",0,,0,0
+PNC/2012/page_68.pdf-2,"subtract(620, 451), divide(#0, 451), multiply(#1, const_100)","subtract(620, 451), divide(#0, 451), multiply(#1, const_100)",1,37.47228,0,0
+FIS/2016/page_31.pdf-2,"divide(subtract(supply_spcp_dpo_of_12_16, supply_sp500_of_12_16), supply_spcp_dpo_of_12_16), multiply(#1, const_100)","subtract(supply_spcp_dpo_of_12_16, supply_sp500_of_12_16), multiply(#1, const_100)",0,,0,0
+AMT/2016/page_49.pdf-1,"subtract(high(2016), low(2016)), divide(#0, high(2016))",,0,,0,0
+MAR/2018/page_43.pdf-2,"divide(table_sum(capital lease obligations ( 1 ), none), table_sum(total contractual obligations of total, none))","table_sum(total contractual obligations of total, none)",0,,0,0
+AAL/2016/page_8.pdf-4,"divide(#3, #4)","divide(#3, #4)",0,,0,0
+ETFC/2007/page_18.pdf-1,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+GPN/2010/page_87.pdf-3,"divide(-6.3, 18.1), multiply(#1, const_100)","divide(-6.3, 18.1), multiply(#1, const_100)",0,,0,0
+ADBE/2008/page_89.pdf-2,"substract(139549, 201808), divide(#0, 201808), multiply(#1, const_100)","divide(#0, 201808), multiply(#1, const_100)",0,,0,0
+DG/2005/page_44.pdf-2,"add(0.5, 0.6), add(4.7, 0.6), add(0.2, 0.6), add(#0, #2), add(#1, #3)","add(0.5, 0.6), add(4.7, 0.6), add(0.2, 0.6), add(#0, #2), add(#1, #3)",1,7.2,0,0
+ALXN/2016/page_153.pdf-2,"divide(#1, 3081), multiply(#1, const_100)","divide(#1, 3081), multiply(#1, const_100)",0,,0,0
+UNP/2015/page_56.pdf-1,"divide(#1, #3), multiply(#1, const_100)","divide(#1, #3), multiply(#1, const_100)",0,,0,0
+C/2009/page_45.pdf-1,"divide(#3173, #39574), multiply(#1, const_100)","divide(#3173, #39574), multiply(#1, const_100)",0,,0,0
+AAPL/2006/page_100.pdf-3,"max(provision for income taxes of 2006, provision for income taxes of 2005 as restated ( 1 ), provision for income taxes of 2004 as restated ( 1 ))",,0,,0,0
+JPM/2018/page_90.pdf-1,"divide(3087, 55687), multiply(#1, const_100)","divide(3087, 55687), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_65.pdf-4,"subtract($61912, $51052), subtract($61018, $48568)","subtract($61912, $51052), subtract($61018, $48568)",0,,0,0
+ABMD/2008/page_86.pdf-1,"subtract(168, 224), multiply(#0, -const_1000)","subtract(168, 224), multiply(#0, -const_1000)",1,56000.0,0,0
+ETFC/2012/page_24.pdf-1,"divide(254000 - 165000, 254000) * 100","divide(254000 - 165000, 254000)",0,,0,0
+ETFC/2007/page_18.pdf-2,"divide(219000, 166000), multiply(#1, const_100)","divide(219000, 166000), multiply(#1, const_100)",0,,0,0
+GS/2017/page_179.pdf-4,"add(1.09, 1.11, 406), multiply(#1, const_1000000)","add(1.09, 1.11, 406), multiply(#1, const_1000000)",0,,0,0
+MKTX/2004/page_99.pdf-3,"add(1939734, 1937141), add(64001, 289581)","add(1939734, 1937141), add(64001, 289581)",1,353582.0,0,0
+ETR/2013/page_21.pdf-3,"subtract(2045, 1854)","subtract(2045, 1854)",1,191.0,0,0
+GS/2013/page_220.pdf-2,"substract(table_average(s&p 500 financials index, 12/31/13), table_average(goldman sachs group inc., 12/31/13)), divide(#0, table_average(goldman sachs group inc., 12/31/13))","table_average(s&p 500 financials index, 12/31/13), table_average(goldman sachs group inc., 12/31/13), table_average(goldman sachs group inc., 12/31/13)",0,,0,0
+FBHS/2017/page_83.pdf-1,"multiply(160196, 58.02)","multiply(160196, 58.02)",1,9294571.92,1,1
+ZBH/2008/page_57.pdf-2,"divide(table_sum(long-term debt, 2009..2014), table_sum(total contractual obligations, 2009..2014))","table_sum(long-term debt, 2009..2014), table_sum(total contractual obligations, 2009..2014)",1,2040.2,0,0
+K/2006/page_52.pdf-2,"table_average(cash flow, none)","table_average(cash flow, none)",1,892.3,1,0
+GPN/2014/page_92.pdf-1,"add(766801, 8945694)","add(766801, 8945694)",1,9712495.0,0,0
+FIS/2017/page_64.pdf-3,"subtract(1336, 1909), divide(#0, 1909), multiply(#1, const_100)","subtract(1336, 1909), divide(#0, 1909), multiply(#1, const_100)",1,-30.01572,0,0
+BLL/2010/page_37.pdf-2,"subtract(559.7, 765.2), divide(#0, 765.2), multiply(#1, const_100)","subtract(559.7, 765.2), divide(#0, 765.2), multiply(#1, const_100)",1,-26.85572,0,0
+PNC/2012/page_65.pdf-1,"divide(12450, 61400), multiply(#1, const_100)","divide(12450, 61400), multiply(#1, const_100)",0,,0,0
+SNA/2018/page_31.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+FIS/2016/page_45.pdf-4,"subtract(1165, 1131), divide(#0, 1131), multiply(#1, const_100)","subtract(1165, 1131), divide(#0, 1131), multiply(#1, const_100)",1,3.00619,0,0
+ETFC/2011/page_144.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+STT/2009/page_127.pdf-4,"multiply(#3, #4)","multiply(#3, #4)",0,,0,0
+ILMN/2008/page_82.pdf-1,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+ETR/2004/page_239.pdf-3,"substract(426.6, 380.2), divide(#0, 380.2), multiply(#1, const_100)","divide(#0, 380.2), multiply(#1, const_100)",0,,0,0
+HOLX/2007/page_126.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+FBHS/2017/page_83.pdf-2,"substract(57.37, 46.21), divide(#0, 46.21), multiply(#1, const_100)","divide(#0, 46.21), multiply(#1, const_100)",0,,0,0
+UA/2007/page_70.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+FIS/2012/page_48.pdf-1,"subtract(90.0, 62.7), divide(#0, 62.7), multiply(#1, const_100)","subtract(90.0, 62.7), divide(#0, 62.7), multiply(#1, const_100)",1,43.54067,0,0
+AON/2015/page_96.pdf-1,"table_average(shares issued, none)","table_average(shares issued, none)",0,,0,0
+CME/2010/page_91.pdf-1,"subtract(11.2, 8.8), divide(#0, 8.8), multiply(#1, const_100)","subtract(11.2, 8.8), divide(#0, 8.8), multiply(#1, const_100)",1,27.27273,0,0
+HIG/2004/page_140.pdf-1,"divide(table_sum(other comprehensive income, none), table_sum(net income, reclassifying certain separate accounts to general account, none))","table_sum(other comprehensive income, none), table_sum(net income, reclassifying certain separate accounts to general account, none)",0,,0,0
+CME/2010/page_123.pdf-2,"multiply(1211143, 308.10)","multiply(1211143, 308.10)",1,373153158.3,1,1
+AON/2007/page_175.pdf-2,"subtract(155, 134), subtract(#0, 63)","subtract(155, 134), subtract(#0, 63)",1,-42.0,0,0
+ETR/2013/page_21.pdf-2,"divide(nuclear realized price changes, substract(2011 net revenue, 2012 net revenue)), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+ABMD/2005/page_29.pdf-2,"subtract(28000, 19000), divide(#0, 44000)","subtract(28000, 19000), divide(#0, 44000)",1,0.20455,0,0
+NWS/2017/page_119.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_65.pdf-3,"divide(table_sum(total securities available for sale (a), none), table_sum(amortized cost, none)) * 100","table_sum(amortized cost, none)",0,,0,0
+AES/2010/page_227.pdf-4,"substract(690000000, 3152*const_1000000), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+PNC/2012/page_68.pdf-4,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+GIS/2017/page_31.pdf-1,"divide(table_sum(total contractual obligations of payments due by fiscal year 2018, total contractual obligations of payments due by fiscal year 2019 -20), table_sum(long-term debt ( a ) of payments due by fiscal year 2018, long-term debt ( a ) of payments due by fiscal year 2019 -20)) * 100","table_sum(total contractual obligations of payments due by fiscal year 2018, total contractual obligations of payments due by fiscal year 2019 -20)",0,,0,0
+PM/2017/page_32.pdf-1,"subtract(199, 164), multiply(#1, const_100)","subtract(199, 164), multiply(#1, const_100)",0,,0,0
+CME/2010/page_123.pdf-4,"divide(table_sum(plan category the equity compensation plans approved by security holders of number of securities to be issued upon exercise of outstanding options ( a ), table_sum(plan category the equity compensation plans not approved by security holders of number of securities to be issued upon exercise of outstanding options ( a ))), table_sum(plan category the total of number of securities to be issued upon exercise of outstanding options ( a )))",,0,,0,0
+HUM/2014/page_44.pdf-1,"substract(table_sum(hum, 2010), table_sum(hum, 2010)), divide(#0, table_sum(hum, 2010))","table_sum(hum, 2010), table_sum(hum, 2010), table_sum(hum, 2010)",1,1172.0,0,0
+VNO/2014/page_57.pdf-1,"subtract(128, 100), subtract(147, 123), subtract(201, 118)","subtract(128, 100), subtract(147, 123), subtract(201, 118)",1,83.0,0,0
+MSI/2014/page_76.pdf-3,"subtract(table_average(weighted-average estimated fair value of employee stock options granted during, none), 9.52), divide(#0, 9.52), multiply(#1, const_100)","table_average(weighted-average estimated fair value of employee stock options granted during, none), divide(#0, 9.52), multiply(#1, const_100)",0,,0,0
+MRO/2008/page_45.pdf-1,"add(176, 850)","add(176, 850)",1,1026.0,1,1
+CB/2010/page_83.pdf-1,"subtract($47, 21), multiply(#0, const_100)","subtract($47, 21), multiply(#0, const_100)",0,,0,0
+GS/2017/page_86.pdf-2,"table_sum(tier 1 capital, none)","table_sum(tier 1 capital, none)",1,160035.0,1,0
+BLL/2012/page_31.pdf-3,"subtract(207.62, 97.13), subtract(155.14, 85.65), subtract(164.09, 85.65), subtract(117.01, 85.65), subtract(93.28, 85.65)","subtract(207.62, 97.13), subtract(155.14, 85.65), subtract(164.09, 85.65), subtract(117.01, 85.65), subtract(93.28, 85.65)",1,7.63,0,0
+BLL/2012/page_31.pdf-4,"subtract(207.62, 107.76), multiply(#1, const_100)","subtract(207.62, 107.76), multiply(#1, const_100)",0,,0,0
+MRO/2007/page_136.pdf-2,"divide(39.87, 1.4)","divide(39.87, 1.4)",1,28.47857,0,0
+AMT/2012/page_50.pdf-3,"divide(#1, 15790)","divide(#1, 15790)",0,,0,0
+AWK/2012/page_117.pdf-4,"divide(46961, 180993), multiply(#1, const_100)","divide(46961, 180993), multiply(#1, const_100)",0,,0,0
+SNA/2007/page_49.pdf-4,"subtract(1.08, 1.11), multiply(#1, -100)","subtract(1.08, 1.11), multiply(#1, -100)",0,,0,0
+GS/2015/page_188.pdf-1,"divide(1160, 2575), multiply(#1, const_100)","divide(1160, 2575), multiply(#1, const_100)",0,,0,0
+UPS/2012/page_32.pdf-4,"divide(subtract(80.2, 100), 80.2)","subtract(80.2, 100)",1,-19.8,0,0
+AON/2015/page_96.pdf-3,"divide(sum(fact_employees_issued_to_employees_in_uk), count(fact_employees_issued_to_employees_in_uk)), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+STT/2009/page_127.pdf-2,"subtract(368, 68), subtract(7, 368)","subtract(368, 68), subtract(7, 368)",1,-361.0,0,0
+RSG/2018/page_94.pdf-1,"subtract(38.9, 44.0), divide(#0, 44.0), multiply(#1, const_100)","subtract(38.9, 44.0), divide(#0, 44.0), multiply(#1, const_100)",1,-11.59091,0,0
+MRO/2004/page_46.pdf-1,"divide(table_sum(total:of (a), total:of (b)), 45686)",,0,,0,0
+IP/2006/page_30.pdf-1,"divide(#1, #3), multiply(#1, const_100)","divide(#1, #3), multiply(#1, const_100)",0,,0,0
+APD/2016/page_40.pdf-2,"table_average(operating income, none)","table_average(operating income, none)",1,822.06667,1,1
+CDNS/2018/page_66.pdf-4,"subtract(17500000, 17500000)","subtract(17500000, 17500000)",1,0.0,0,0
+CDNS/2015/page_30.pdf-2,"divide(#4, #3), multiply(#1, const_100)","divide(#4, #3), multiply(#1, const_100)",0,,0,0
+AAPL/2006/page_131.pdf-2,"add(100000, 400000)","add(100000, 400000)",1,500000.0,0,0
+L/2009/page_84.pdf-4,"subtract(spx_2009, spx_2004), divide(#0, 2)","subtract(spx_2009, spx_2004), divide(#0, 2)",0,,0,0
+ECL/2016/page_52.pdf-4,"divide(table_sum(total of payments due by period less than 1 year, table_sum(total of payments due by period 2-3 years, table_sum(total of payments due by period 4-5 years, table_sum(total of payments due by period more than 5 years))), const_1000), const_1000)",table_sum(total of payments due by period more than 5 years),0,,0,0
+ETR/2011/page_301.pdf-1,"subtract(63003, 23596), divide(#0, 23596), multiply(#1, const_100)","subtract(63003, 23596), divide(#0, 23596), multiply(#1, const_100)",1,167.00712,0,0
+AWK/2013/page_122.pdf-3,"divide(#2, 158578), multiply(#1, const_100)","divide(#2, 158578), multiply(#1, const_100)",0,,0,0
+DISCA/2014/page_64.pdf-1,"divide(#4, #3), multiply(#1, const_100)","divide(#4, #3), multiply(#1, const_100)",0,,0,0
+C/2009/page_45.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+GPN/2013/page_92.pdf-1,"divide(#0, 16812), multiply(#1, const_100)","divide(#0, 16812), multiply(#1, const_100)",0,,0,0
+GPN/2010/page_89.pdf-4,"substract(table_sum(weighted average grant-date fair value), const_41), divide(#0, const_41), multiply(#1, const_100)","table_sum(weighted average grant-date fair value), divide(#0, const_41), multiply(#1, const_100)",0,,0,0
+AON/2010/page_86.pdf-1,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+EOG/2018/page_75.pdf-1,"table_average(valuation allowances for deferred income tax assets, none)","table_average(valuation allowances for deferred income tax assets, none)",0,,0,0
+CME/2010/page_69.pdf-2,"divide(table_sum(revolving credit facility, none), table_sum(senior credit facility, none)) * 100","table_sum(revolving credit facility, none), table_sum(senior credit facility, none)",0,,0,0
+GS/2014/page_51.pdf-2,"subtract(230667, 255534), divide(#0, 230667), multiply(#1, const_100)","subtract(230667, 255534), divide(#0, 230667), multiply(#1, const_100)",1,-10.78048,0,0
+UNP/2007/page_25.pdf-1,"subtract(242, 2042), divide(#0, 2042)","subtract(242, 2042), divide(#0, 2042)",1,-0.88149,0,0
+AES/2002/page_128.pdf-2,"subtract(32, 31), multiply(#1, const_1000)","subtract(32, 31), multiply(#1, const_1000)",0,,0,0
+AMT/2016/page_49.pdf-3,"subtract(108.11, 104.12), divide(#0, 104.12), multiply(#1, const_100)","subtract(108.11, 104.12), divide(#0, 104.12), multiply(#1, const_100)",1,3.83212,0,0
+ADBE/1999/page_64.pdf-3,"add(-6221, 2014), add(-1874, 8867), add(772, 0)","add(-6221, 2014), add(-1874, 8867), add(772, 0)",1,772.0,0,0
+GPN/2008/page_78.pdf-2,"divide(#1, #3), multiply(#1, const_100)","divide(#1, #3), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_68.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+MRO/2013/page_19.pdf-3,"divide(sum(table_sum(net undeveloped acres expiring, worldwide)), 3)","table_sum(net undeveloped acres expiring, worldwide)",0,,0,0
+C/2008/page_22.pdf-2,"add(367, -78), add(-469, 581)","add(367, -78), add(-469, 581)",1,112.0,0,0
+UPS/2007/page_49.pdf-1,"table_sum(capital leases, operating leases, principal interest, purchase commitments, pension fundings, liabilities)","table_sum(capital leases, operating leases, principal interest, purchase commitments, pension fundings, liabilities)",0,,0,0
+NCLH/2018/page_64.pdf-1,"substract(3370000, 3040000), divide(#0, 3040000), multiply(#1, const_100)","divide(#0, 3040000), multiply(#1, const_100)",0,,0,0
+MKTX/2012/page_42.pdf-1,"subtract(37.79, 29.26), subtract(24.19, 19.78), subtract(31.16, 24.57)","subtract(37.79, 29.26), subtract(24.19, 19.78), subtract(31.16, 24.57)",1,6.59,0,0
+PNC/2014/page_111.pdf-2,"subtract(10560, 10728), multiply(#0, -const_1000)","subtract(10560, 10728), multiply(#0, -const_1000)",1,168000.0,0,0
+AWK/2014/page_121.pdf-1,"subtract(27229, 53818), add(#0, 195237)","subtract(27229, 53818), add(#0, 195237)",1,168648.0,0,0
+AAL/2013/page_172.pdf-4,"divide(1246, 5424)","divide(1246, 5424)",1,0.22972,1,1
+ECL/2016/page_52.pdf-1,"divide(table_sum(cash and cash equivalents, none), table_sum(cash and cash equivalents, u.s.))","table_sum(cash and cash equivalents, none), table_sum(cash and cash equivalents, u.s.)",0,,0,0
+JPM/2010/page_281.pdf-3,"divide(#1, #2), multiply(#3, const_100)","divide(#1, #2), multiply(#3, const_100)",0,,0,0
+CME/2017/page_40.pdf-2,exp(log(#1) * (#2 - #0) / 5),,0,,0,0
+AMT/2012/page_50.pdf-1,"divide(#2, 102400), multiply(#1, const_100)","divide(#2, 102400), multiply(#1, const_100)",0,,0,0
+SNA/2012/page_110.pdf-2,"subtract(707, -379), multiply(#0, const_1000)","subtract(707, -379), multiply(#0, const_1000)",1,1086000.0,0,0
+GPN/2010/page_89.pdf-3,"sum(5.7, 9.0, 12.1)",,0,,0,0
+C/2018/page_175.pdf-3,"divide(5186, 9062), multiply(#1, const_100)","divide(5186, 9062), multiply(#1, const_100)",0,,0,0
+AMT/2012/page_118.pdf-2,"divide(151700, 800), divide(126300, 700)","divide(151700, 800), divide(126300, 700)",1,180.42857,0,0
+DISCA/2011/page_49.pdf-1,"divide(#0, 102.53), multiply(#1, const_100)","divide(#0, 102.53), multiply(#1, const_100)",0,,0,0
+ZBH/2007/page_67.pdf-2,"subtract(6.1, 5.2), divide(#0, 5.2), multiply(#1, const_100)","subtract(6.1, 5.2), divide(#0, 5.2), multiply(#1, const_100)",1,17.30769,0,0
+RSG/2016/page_145.pdf-1,"divide(120000, 120000)","divide(120000, 120000)",1,1.0,1,1
+ZBH/2009/page_58.pdf-2,"divide(table_sum(contractual obligations interest payments, none), table_sum(contractual obligations total, none)) * 100","table_sum(contractual obligations interest payments, none), table_sum(contractual obligations total, none)",0,,0,0
+DRE/2008/page_46.pdf-2,"divide(diluted net income available for common shareholders of 2007, weighted average number of common shares outstanding of 2007)","divide(diluted net income available for common shareholders of 2007, weighted average number of common shares outstanding of 2007)",0,,0,0
+IP/2006/page_75.pdf-2,"divide(table_sum(purchase obligations (bc), 2008), table_sum(total, 2008)), multiply(#1, const_100)","table_sum(total, 2008), multiply(#1, const_100)",0,,0,0
+DRE/2002/page_15.pdf-2,"subtract(211000, 156000), multiply(#1, const_100)","subtract(211000, 156000), multiply(#1, const_100)",0,,0,0
+MRO/2003/page_84.pdf-3,"divide(-57, -41), multiply(#1, const_100)","divide(-57, -41), multiply(#1, const_100)",0,,0,0
+AON/2007/page_171.pdf-1,"subtract(-1010, -726)","subtract(-1010, -726)",1,-284.0,0,0
+K/2013/page_23.pdf-1,"add(2837, 2014), divide(#0, 2098)","add(2837, 2014), divide(#0, 2098)",1,2.3122,0,0
+AMT/2003/page_102.pdf-2,"substract(109435, 73684), divide(#0, 73684), multiply(#1, const_100)","divide(#0, 73684), multiply(#1, const_100)",0,,0,0
+JPM/2018/page_90.pdf-5,"subtract(2.50, 2.36), multiply(#1, const_100)","subtract(2.50, 2.36), multiply(#1, const_100)",0,,0,0
+AMT/2014/page_160.pdf-4,"less(655000000, 574438000)",,0,,0,0
+PNC/2007/page_92.pdf-2,"divide(add(9557, 6337), 2), divide(add(69309, 50900), 2)","add(9557, 6337), add(69309, 50900)",1,120209.0,0,0
+ETR/2016/page_23.pdf-3,"subtract(187, 95), divide(#0, 5829)","subtract(187, 95), divide(#0, 5829)",1,0.01578,0,0
+IP/2006/page_31.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+HST/2018/page_135.pdf-1,"subtract(11, 11), multiply(#0, const_1000)","subtract(11, 11), multiply(#0, const_1000)",1,0.0,1,0
+PNC/2012/page_174.pdf-5,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+CME/2017/page_40.pdf-5,"greater(table_sum(cme group inc., 2013), table_sum(s&p 500, 2013))","table_sum(cme group inc., 2013), table_sum(s&p 500, 2013)",0,,0,0
+CMCSA/2015/page_67.pdf-2,"divide(2424, 7034), multiply(#1, const_100)","divide(2424, 7034), multiply(#1, const_100)",0,,0,0
+ANET/2015/page_156.pdf-2,"add(-1336, 42546)","add(-1336, 42546)",1,41210.0,0,0
+AMAT/2013/page_37.pdf-2,"multiply(100, 109.80), minus(100, 100), plus(multiply(100, 127.94), minus(100, 109.80)), plus(multiply(100, 138.29), minus(100, 127.94)), plus(multiply(100, 15","multiply(100, 109.80), multiply(100, 127.94), multiply(100, 138.29)",1,13829.0,0,0
+PNC/2012/page_247.pdf-3,"subtract(47, 54), multiply(#1, -1), divide(#0, 54), multiply(#1, const_100)","subtract(47, 54), multiply(#1, -1), divide(#0, 54), multiply(#1, const_100)",0,,0,0
+HOLX/2006/page_100.pdf-1,"divide(6900, 31300), multiply(#1, const_100)","divide(6900, 31300), multiply(#1, const_100)",0,,0,0
+UPS/2007/page_98.pdf-1,"multiply(1.8, 64.20)","multiply(1.8, 64.20)",1,115.56,1,1
+CB/2010/page_83.pdf-2,"subtract(47, 21), divide(#0, 21), multiply(#1, const_100)","subtract(47, 21), divide(#0, 21), multiply(#1, const_100)",1,123.80952,0,0
+GPN/2018/page_94.pdf-1,"multiply(78.29, const_1000)","multiply(78.29, const_1000)",1,78290.0,0,0
+BLK/2014/page_120.pdf-2,"divide(#0, 1178), multiply(#1, const_100)","divide(#0, 1178), multiply(#1, const_100)",0,,0,0
+AWK/2014/page_121.pdf-4,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+DG/2010/page_136.pdf-1,"table_max(furniture fixtures and equipment, 20)","table_max(furniture fixtures and equipment, 20)",0,,0,0
+MKTX/2004/page_99.pdf-1,"subtract(1937141, 1939734), add(110000000, 10000000)","subtract(1937141, 1939734), add(110000000, 10000000)",1,120000000.0,1,0
+DG/2007/page_67.pdf-1,"subtract($9.4, $0.2), multiply(#1, const_1000000)","subtract($9.4, $0.2), multiply(#1, const_1000000)",0,,0,0
+EOG/2018/page_75.pdf-2,"divide(#3, 29), multiply(#1, const_100)","divide(#3, 29), multiply(#1, const_100)",0,,0,0
+AES/2001/page_33.pdf-2,"subtract(52.25, 39.95)","subtract(52.25, 39.95)",1,12.3,1,1
+CMCSA/2015/page_67.pdf-1,"divide(2424, 7034), multiply(#1, const_100)","divide(2424, 7034), multiply(#1, const_100)",0,,0,0
+SLG/2001/page_48.pdf-3,"table_average(total revenues, none)","table_average(total revenues, none)",0,,0,0
+JKHY/2017/page_26.pdf-1,"subtract(161.43, 150.27), multiply(#1, const_100)","subtract(161.43, 150.27), multiply(#1, const_100)",0,,0,0
+CE/2016/page_19.pdf-3,"subtract(119, 78), multiply(#1, const_100)","subtract(119, 78), multiply(#1, const_100)",0,,0,0
+GS/2012/page_189.pdf-2,"table_max(tier 2 capital, none)","table_max(tier 2 capital, none)",1,39.0,1,1
+FIS/2016/page_45.pdf-2,"divide(table_sum(long-term debt ( 1 ), payments due in less than 1 year), table_sum(total, payments due in less than 1 year))","table_sum(total, payments due in less than 1 year)",1,28858.0,0,0
+SNA/2007/page_69.pdf-3,"subtract(-3.5, -3.7), divide(#0, -3.5), multiply(#1, const_100)","subtract(-3.5, -3.7), divide(#0, -3.5), multiply(#1, const_100)",1,-5.71429,0,0
+IPG/2017/page_92.pdf-2,"subtract(53.9, 79.0), divide(#0, 79.0), multiply(#1, const_100)","subtract(53.9, 79.0), divide(#0, 79.0), multiply(#1, const_100)",1,-31.77215,0,0
+GS/2017/page_132.pdf-2,"table_min(cash instruments, none)","table_min(cash instruments, none)",1,15395.0,1,1
+ETR/2008/page_298.pdf-3,"subtract(55509, 11589), subtract(75048, 11589), subtract(64011, 11589)","subtract(55509, 11589), subtract(75048, 11589), subtract(64011, 11589)",1,52422.0,0,0
+MRO/2013/page_19.pdf-1,"divide(189, const_1000)","divide(189, const_1000)",1,0.189,0,0
+LMT/2012/page_73.pdf-3,"substract(table_average(weighted average common shares outstanding, none)(2010), table_average(weighted average common shares outstanding, none)(2011)), divide(#0, table_average(weighted average common shares outstanding, none)(2010))","table_average(weighted average common shares outstanding, none), table_average(weighted average common shares outstanding, none), table_average(weighted average common shares outstanding, none)",0,,0,0
+ZBH/2015/page_57.pdf-2,"subtract(33.9, 31.9), multiply(#1, const_1000)","subtract(33.9, 31.9), multiply(#1, const_1000)",0,,0,0
+ADBE/2008/page_89.pdf-4,"less(57.7, 68.9)",,0,,0,0
+MRO/2003/page_45.pdf-2,"table_sum(distillates, none)","table_sum(distillates, none)",1,1056.0,1,1
+ABMD/2012/page_41.pdf-2,"greater(106.37, 162.45)","greater(106.37, 162.45)",1,no,0,0
+BLL/2012/page_31.pdf-2,"divide(table_sum(dj_us_containers__&packaging_of_2007_to_2012, none), table_sum(dj_us_containers__&packaging_of_2007_to_2012, none))","table_sum(dj_us_containers__&packaging_of_2007_to_2012, none), table_sum(dj_us_containers__&packaging_of_2007_to_2012, none)",0,,0,0
+AON/2007/page_188.pdf-4,"subtract(24, 4), multiply(#1, const_1000)","subtract(24, 4), multiply(#1, const_1000)",0,,0,0
+MRO/2004/page_46.pdf-3,"divide(add(34526, 37.07), const_100), multiply(#1, 45686)","add(34526, 37.07), multiply(#1, 45686)",0,,0,0
+L/2009/page_84.pdf-3,"subtract(spreadsheet!A2, spreadsheet!A1), divide(#0, spreadsheet!A1), multiply(#1, const_100)","subtract(spreadsheet!A2, spreadsheet!A1), divide(#0, spreadsheet!A1), multiply(#1, const_100)",0,,0,0
+IP/2006/page_38.pdf-1,"divide(table_sum(debt repayment, 2007), table_sum(total debt repayments, 2006))","table_sum(debt repayment, 2007), table_sum(total debt repayments, 2006)",0,,0,0
+AWK/2012/page_117.pdf-2,"add(180993, -18205), subtract(118314, 158578)","add(180993, -18205), subtract(118314, 158578)",1,-40264.0,0,0
+V/2014/page_126.pdf-2,"substract(44.11, 39.03), divide(#0, 39.03), multiply(#1, const_100)","divide(#0, 39.03), multiply(#1, const_100)",0,,0,0
+UA/2007/page_70.pdf-1,"divide(14684, 53584), multiply(#1, const_100)","divide(14684, 53584), multiply(#1, const_100)",0,,0,0
+SLG/2011/page_91.pdf-1,"add(23301744, 17365401), add(23301744, 15327206), add(#0, 1017)","add(23301744, 17365401), add(23301744, 15327206), add(#0, 1017)",1,40668162.0,0,0
+LMT/2016/page_49.pdf-4,"table_average(operating profit, 2014..2016)","table_average(operating profit, 2014..2016)",1,1214.66667,1,0
+JPM/2008/page_87.pdf-2,"divide(const_1000, 5)","divide(const_1000, 5)",1,200.0,0,0
+HWM/2018/page_96.pdf-2,"substract(33.32, 26.93), multiply(#1, 13), substract(26.93, 26.79), multiply(#1, 11), add(#2, #3)","multiply(#1, 13), multiply(#1, 11), add(#2, #3)",0,,0,0
+PKG/2013/page_88.pdf-2,"multiply(151945, 24.61)","multiply(151945, 24.61)",1,3739366.45,1,1
+AES/2001/page_33.pdf-1,"subtract(72.81, 45.00)","subtract(72.81, 45.00)",1,27.81,0,0
+GS/2018/page_78.pdf-4,"divide(2000000000, 10870000000), multiply(#1, const_100)","divide(2000000000, 10870000000), multiply(#1, const_100)",0,,0,0
+STT/2006/page_95.pdf-3,"substract(table_min(minimum pension liability, 2006), table_min(minimum pension liability, 2004)), divide(#0, table_min(total, 2006))","table_min(minimum pension liability, 2006), table_min(minimum pension liability, 2004), table_min(total, 2006)",1,-231.0,0,0
+ECL/2016/page_52.pdf-2,"divide(table_sum(long-term debt of payments due by period less than 1 year, none), table_sum(total of payments due by period less than 1 year, none))","table_sum(long-term debt of payments due by period less than 1 year, none), table_sum(total of payments due by period less than 1 year, none)",0,,0,0
+HOLX/2009/page_151.pdf-1,"add(23.87, 21.96)","add(23.87, 21.96)",1,45.83,0,0
+RSG/2018/page_94.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+MMM/2007/page_23.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+LMT/2014/page_91.pdf-2,"table_average(contributions, none)","table_average(contributions, none)",0,,0,0
+FBHS/2017/page_22.pdf-1,"divide(segment_cabinets_2017net_sales, segment_doors_2017net_sales)","divide(segment_cabinets_2017net_sales, segment_doors_2017net_sales)",0,,0,0
+AAPL/2003/page_48.pdf-2,"subtract(7.2, 5.5), multiply(#1, const_1000)","subtract(7.2, 5.5), multiply(#1, const_1000)",0,,0,0
+AMT/2007/page_29.pdf-4,"divide(163000, 57800)","divide(163000, 57800)",1,2.82007,0,0
+IPG/2006/page_77.pdf-4,"subtract(2251.2, 240.9), divide(#0, 2251.2), multiply(#1, const_100)","subtract(2251.2, 240.9), divide(#0, 2251.2), multiply(#1, const_100)",1,89.29904,0,0
+CDNS/2018/page_66.pdf-1,"substract(426932, 341003), divide(#0, 341003), multiply(#1, const_100)","divide(#0, 341003), multiply(#1, const_100)",0,,0,0
+AAL/2016/page_8.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+CDW/2017/page_38.pdf-1,"divide(table_average(gross profit, none), table_average(net sales, none)), multiply(#1, const_100)","table_average(gross profit, none), table_average(net sales, none), multiply(#1, const_100)",1,1405403.33333,0,0
+AMT/2006/page_113.pdf-4,"divide(add(1096, 419, 0), 3), divide(add(-3285, -773, -142), 3)","add(1096, 419, 0), add(-3285, -773, -142)",0,,0,0
+C/2008/page_44.pdf-2,"subtract(-291, -461), divide(#0, -291), multiply(#1, const_100)","subtract(-291, -461), divide(#0, -291), multiply(#1, const_100)",1,-58.41924,0,0
+CME/2010/page_91.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+ADI/2019/page_29.pdf-2,"substract(table_sum(period the september 1 2019 through september 28 2019 of total number ofshares purchased ( 1 ), period the september 29 2019 through november 2 2019 of total number ofshares purchased ( 1 )), table_sum(period the september 1 2019 through september 28 2019 of total number of sharespurchased as part",,0,,0,0
+ABMD/2007/page_78.pdf-2,"multiply(8.75, const_100), multiply(#1, 6.25)","multiply(8.75, const_100), multiply(#1, 6.25)",0,,0,0
+AMT/2007/page_29.pdf-3,"subtract(50, 200), multiply(#0, const_12)","subtract(50, 200), multiply(#0, const_12)",1,-1800.0,0,0
+DVN/2012/page_77.pdf-2,"divide(#0, 11664), multiply(#1, const_100)","divide(#0, 11664), multiply(#1, const_100)",0,,0,0
+ETR/2016/page_374.pdf-2,"divide(#3, #2), subtract(const_1, #1), multiply(#1, const_100)","divide(#3, #2), subtract(const_1, #1), multiply(#1, const_100)",0,,0,0
+IPG/2017/page_92.pdf-1,"table_range(deferred acquisition payments, 2018, 2022)",,0,,0,0
+DRE/2002/page_15.pdf-3,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+GPN/2010/page_87.pdf-1,"substitute(-6.3, 6.3)",,0,,0,0
+MSI/2012/page_87.pdf-4,"subtract(2.7, 2.2), multiply(#1, const_100)","subtract(2.7, 2.2), multiply(#1, const_100)",0,,0,0
+GS/2013/page_63.pdf-1,"table_average(total assets, none)","table_average(total assets, none)",1,925031.0,1,1
+ADI/2010/page_80.pdf-2,"divide(#2, #1), subtract(const_1, 1), multiply(#1, const_100)","divide(#2, #1), subtract(const_1, 1), multiply(#1, const_100)",0,,0,0
+MMM/2013/page_75.pdf-2,"subtract(-1.6, -1.2), divide(#0, 1.2), multiply(#1, const_100)","subtract(-1.6, -1.2), divide(#0, 1.2), multiply(#1, const_100)",1,-33.33333,0,0
+UPS/2007/page_98.pdf-2,"divide(sum(employees), 3), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+GPN/2008/page_78.pdf-4,"divide(#1, #3), multiply(#1, const_100)","divide(#1, #3), multiply(#1, const_100)",0,,0,0
+MRO/2006/page_93.pdf-4,"subtract(12, 438), divide(#0, 527)","subtract(12, 438), divide(#0, 527)",1,-0.80835,0,0
+CMCSA/2008/page_36.pdf-2,"divide(1024, 5545), multiply(#1, const_100)","divide(1024, 5545), multiply(#1, const_100)",0,,0,0
+GS/2018/page_78.pdf-3,"subtract(1.76, 1.42), divide(#0, const_100)","subtract(1.76, 1.42), divide(#0, const_100)",1,0.0034,0,0
+ABC/2005/page_49.pdf-4,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+TFX/2017/page_78.pdf-1,"divide(#2, #1)","divide(#2, #1)",0,,0,0
+UNP/2018/page_74.pdf-1,"divide(operatingleases, 2019), subtract(operatingleases, 2019), multiply(#1, const_100)","divide(operatingleases, 2019), subtract(operatingleases, 2019), multiply(#1, const_100)",0,,0,0
+STT/2009/page_25.pdf-2,"divide(table_sum(collateral pools underlying ssga lending funds, none), 1000), subtract(divide(table_sum(collateral pools underlying ssga lending funds, none), 1000), divide(table_sum(collateral pools underlying ssga lending funds, none), 1000))","table_sum(collateral pools underlying ssga lending funds, none), table_sum(collateral pools underlying ssga lending funds, none), table_sum(collateral pools underlying ssga lending funds, none)",1,99.0,0,0
+CDW/2015/page_93.pdf-4,"add(171.8, 158.7)","add(171.8, 158.7)",1,330.5,0,0
+IP/2006/page_31.pdf-1,"divide(#3, #1), multiply(#1, const_100)","divide(#3, #1), multiply(#1, const_100)",0,,0,0
+SNA/2012/page_110.pdf-3,"add(707, -379), multiply(#0, const_1000)","add(707, -379), multiply(#0, const_1000)",1,328000.0,0,0
+CDW/2015/page_93.pdf-1,"table_average(company contributions to the profit sharing and other savings plans, none)","table_average(company contributions to the profit sharing and other savings plans, none)",0,,0,0
+JPM/2010/page_120.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+IP/2006/page_35.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+LMT/2016/page_49.pdf-2,"multiply(1018, const_100)","multiply(1018, const_100)",1,101800.0,0,0
+PKG/2005/page_74.pdf-2,"add(17.6, 19.3), multiply(#1, const_1000)","add(17.6, 19.3), multiply(#1, const_1000)",0,,0,0
+ETR/2017/page_143.pdf-1,"table_sum(amount, [2018, 2019, 2021, 2022, 2023])","table_sum(amount, [2018, 2019, 2021, 2022, 2023])",0,,0,0
+ETR/2016/page_23.pdf-1,"substract(5829, 5735), divide(#0, 5735)","divide(#0, 5735)",0,,0,0
+STT/2006/page_95.pdf-4,"divide(#1, #0), subtract(#3, #2), divide(#2, #1)","divide(#1, #0), subtract(#3, #2), divide(#2, #1)",0,,0,0
+MSI/2007/page_70.pdf-1,"table_average(net sales, none)","table_average(net sales, none)",0,,0,0
+AMAT/2018/page_33.pdf-1,"divide(subtract(198.27, 100.00), 100.00), multiply(#1, const_100)","subtract(198.27, 100.00), multiply(#1, const_100)",0,,0,0
+GS/2012/page_189.pdf-3,"subtract(109669, 112824), multiply(#1, const_1000000)","subtract(109669, 112824), multiply(#1, const_1000000)",0,,0,0
+IP/2006/page_75.pdf-1,"divide(table_sum(lease obligations (a), 2007), table_sum(total, 2007)), multiply(#1, const_100)","table_sum(total, 2007), multiply(#1, const_100)",0,,0,0
+RCL/2016/page_6.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+AAL/2016/page_8.pdf-2,"divide(table_sum(flight attendants of mainline operations, table_sum(flight attendants of wholly-owned regional carriers)), table_sum(total of mainline operations, table_sum(total of wholly-owned regional carriers)))","table_sum(flight attendants of wholly-owned regional carriers), table_sum(total of wholly-owned regional carriers)",0,,0,0
+ZBH/2009/page_58.pdf-4,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+PPG/2006/page_42.pdf-1,"multiply(#3, 10), add(#3, #4), divide(#3, 4)","multiply(#3, 10), add(#3, #4), divide(#3, 4)",0,,0,0
+PKG/2013/page_88.pdf-1,"divide(column_a_number_of_securities_to_be_issued_upon_exercise_of_outstanding_options_warrants_and_rights, column_b_weighted_average_exercise_price_ofoutstanding_options_warrants_and_rights)","divide(column_a_number_of_securities_to_be_issued_upon_exercise_of_outstanding_options_warrants_and_rights, column_b_weighted_average_exercise_price_ofoutstanding_options_warrants_and_rights)",0,,0,0
+AMT/2003/page_102.pdf-3,"divide(808043, 3316258), multiply(#1, const_100)","divide(808043, 3316258), multiply(#1, const_100)",0,,0,0
+ETR/2015/page_17.pdf-2,"subtract(5829, 5735), divide(#0, 5735)","subtract(5829, 5735), divide(#0, 5735)",1,0.01639,1,1
+ILMN/2008/page_86.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+INTC/2015/page_41.pdf-2,"divide(30.7, 32.8), multiply(#1, const_100)","divide(30.7, 32.8), multiply(#1, const_100)",0,,0,0
+AMT/2014/page_160.pdf-3,"subtract(419000000, 495200000), divide(#0, 419000000), multiply(#1, const_100)","subtract(419000000, 495200000), divide(#0, 419000000), multiply(#1, const_100)",1,-18.18616,0,0
+JPM/2014/page_70.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+PPG/2012/page_29.pdf-2,"divide(#0, 10.2), divide(#1, 1)","divide(#0, 10.2), divide(#1, 1)",0,,0,0
+AAPL/2004/page_68.pdf-1,"subtract(7.2, 8.2), multiply(#1, const_1000)","subtract(7.2, 8.2), multiply(#1, const_1000)",0,,0,0
+STT/2009/page_127.pdf-3,"subtract(-5205, -1636), divide(#0, -5205), multiply(#1, const_100)","subtract(-5205, -1636), divide(#0, -5205), multiply(#1, const_100)",1,68.56868,0,0
+DISCA/2011/page_49.pdf-3,"substract(table_average(s&p 500, none), table_average(k series stock, none)), divide(#0, table_average(s&p 500, none))","table_average(s&p 500, none), table_average(k series stock, none), table_average(s&p 500, none)",0,,0,0
+ETR/2016/page_150.pdf-1,"add(21700000, 22300000, 22700000, 23200000, 11000000)","add(21700000, 22300000, 22700000, 23200000, 11000000)",0,,0,0
+WRK/2018/page_107.pdf-4,"substract(148.9, 166.8), divide(#0, 166.8), multiply(#1, const_100)","divide(#0, 166.8), multiply(#1, const_100)",0,,0,0
+GS/2018/page_69.pdf-4,"table_max(provision for credit losses, none)","table_max(provision for credit losses, none)",1,674.0,1,1
+AMT/2007/page_29.pdf-2,"divide(163000, 57800), multiply(#1, const_100)","divide(163000, 57800), multiply(#1, const_100)",0,,0,0
+SLG/2001/page_48.pdf-2,"table_average(total revenues, none)","table_average(total revenues, none)",0,,0,0
+AAL/2010/page_72.pdf-3,"add(602, 665), add(170, 169), add(785, 173), sum()","add(602, 665), add(170, 169), add(785, 173)",1,958.0,0,0
+MRO/2017/page_96.pdf-1,"table_max(ultimate trend rate, none)","table_max(ultimate trend rate, none)",1,0.047,1,1
+IPG/2008/page_72.pdf-1,"divide(131.8, 148.8), multiply(#1, const_100)","divide(131.8, 148.8), multiply(#1, const_100)",0,,0,0
+ETR/2015/page_17.pdf-4,"divide(#1, const_1000)","divide(#1, const_1000)",0,,0,0
+STT/2007/page_111.pdf-2,"substract(527.37, 572.93), divide(#0, 527.37), multiply(#1, const_100)","divide(#0, 527.37), multiply(#1, const_100)",0,,0,0
+UNP/2007/page_25.pdf-2,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+BLL/2012/page_31.pdf-1,"divide(table_sum(ball corporation, 12/31/2007 - 12/31/2012), table_sum(s&p 500, 12/31/2007 - 12/31/2012))","table_sum(ball corporation, 12/31/2007 - 12/31/2012), table_sum(s&p 500, 12/31/2007 - 12/31/2012)",1,505.88,0,0
+C/2015/page_96.pdf-1,"substract(398.9, 378.5), divide(#0, 378.5), multiply(#1, const_100)","divide(#0, 378.5), multiply(#1, const_100)",0,,0,0
+AMT/2008/page_107.pdf-1,"subtract(10.5, 7.1), divide(#0, 7.1), multiply(#1, const_100)","subtract(10.5, 7.1), divide(#0, 7.1), multiply(#1, const_100)",1,47.88732,0,0
+PPG/2008/page_52.pdf-1,"add(-21, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1,","add(-21, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1), add(-1, -1)",1,-2.0,0,0
+BLK/2015/page_124.pdf-1,"divide(#0, 560), multiply(#1, const_100)","divide(#0, 560), multiply(#1, const_100)",0,,0,0
+FIS/2006/page_31.pdf-1,"divide(#1, 19), multiply(#1, const_100)","divide(#1, 19), multiply(#1, const_100)",0,,0,0
+ZBH/2008/page_57.pdf-4,"divide(table_sum(operating leases, none), table_sum(total contractual obligations, none)) * 100","table_sum(operating leases, none), table_sum(total contractual obligations, none)",1,2040.2,0,0
+GS/2017/page_179.pdf-3,"less(4.6, 2.0)",,0,,0,0
+JPM/2009/page_175.pdf-5,"subtract(384102, 381415), subtract(381415, 318063)","subtract(384102, 381415), subtract(381415, 318063)",1,63352.0,0,0
+RCL/2012/page_75.pdf-2,"subtract(442.9, 459.8), divide(#0, 459.8), multiply(#1, const_100)","subtract(442.9, 459.8), divide(#0, 459.8), multiply(#1, const_100)",1,-3.67551,0,0
+KHC/2018/page_132.pdf-3,"subtract(table_sum(shares outstanding, december 29 2018), table_sum(shares outstanding, december 31 2016)), multiply(#1, const_1000)","table_sum(shares outstanding, december 29 2018), table_sum(shares outstanding, december 31 2016), multiply(#1, const_1000)",0,,0,0
+IP/2006/page_35.pdf-1,"divide(#3, #1), multiply(#1, const_100)","divide(#3, #1), multiply(#1, const_100)",0,,0,0
+AMT/2014/page_160.pdf-1,"subtract(655000000, 495200000), divide(#0, 495200000), multiply(#1, const_100)","subtract(655000000, 495200000), divide(#0, 495200000), multiply(#1, const_100)",1,32.26979,0,0
+C/2009/page_243.pdf-2,"divide(table_sum(level 2, level 3), table_sum(agregate cost, fair value))","table_sum(level 2, level 3), table_sum(agregate cost, fair value)",0,,0,0
+MKTX/2004/page_99.pdf-4,"add(64001, 289581)","add(64001, 289581)",1,353582.0,1,1
+BLK/2012/page_33.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+AMT/2014/page_160.pdf-2,"divide(#0, 4214600), multiply(#1, const_100)","divide(#0, 4214600), multiply(#1, const_100)",0,,0,0
+AWK/2017/page_148.pdf-1,"subtract(779, 850), multiply(#1, const_100)","subtract(779, 850), multiply(#1, const_100)",0,,0,0
+GRMN/2008/page_73.pdf-1,"divide(16054, 95519), multiply(#1, const_100)","divide(16054, 95519), multiply(#1, const_100)",0,,0,0
+GS/2013/page_72.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+ZBH/2008/page_57.pdf-1,"divide(table_sum(contractual obligations long-term debt, none), table_sum(contractual obligations total, none))","table_sum(contractual obligations long-term debt, none), table_sum(contractual obligations total, none)",0,,0,0
+LMT/2014/page_50.pdf-1,"substract(20500, 18100), divide(#0, 18100), multiply(#1, const_100)","divide(#0, 18100), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_247.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+GS/2014/page_165.pdf-2,"subtract(289, 270), multiply(#1, const_1000)","subtract(289, 270), multiply(#1, const_1000)",0,,0,0
+AMT/2005/page_102.pdf-3,"subtract(19.1, 17.7), divide(#0, 17.7), multiply(#1, const_100)","subtract(19.1, 17.7), divide(#0, 17.7), multiply(#1, const_100)",1,7.9096,0,0
+AON/2015/page_96.pdf-2,"table_average(intrinsic value of stock options exercised, 2013)","table_average(intrinsic value of stock options exercised, 2013)",0,,0,0
+ADI/2010/page_60.pdf-1,"substract(38, 42.1), divide(#0, 42.1), multiply(#1, const_100)","divide(#0, 42.1), multiply(#1, const_100)",0,,0,0
+C/2008/page_44.pdf-1,"subtract(-599, -345), divide(#0, -599), multiply(#1, const_100)","subtract(-599, -345), divide(#0, -599), multiply(#1, const_100)",1,42.40401,0,0
+ADBE/1999/page_64.pdf-1,"add(0.3, 0.1), multiply(#0, const_1000)","add(0.3, 0.1), multiply(#0, const_1000)",1,400.0,0,0
+SLG/2011/page_91.pdf-4,"add(34000, 22000), add(17000, 2000)","add(34000, 22000), add(17000, 2000)",1,19000.0,0,0
+GS/2013/page_126.pdf-1,"divide(#1, #0), subtract(1), multiply(#1, const_100)","divide(#1, #0), subtract(1), multiply(#1, const_100)",0,,0,0
+ETR/2004/page_281.pdf-1,"divide(money_pool_activity_used(system_energy.operating_cash_flows, 2004), money_pool_receivables_from_money_pool(2004))",,0,,0,0
+AES/2001/page_85.pdf-1,"divide(2323, 22258), multiply(#1, const_100)","divide(2323, 22258), multiply(#1, const_100)",0,,0,0
+ABC/2005/page_49.pdf-1,"subtract(5236, 2984), subtract(7083, 68), add(#0, #2)","subtract(5236, 2984), subtract(7083, 68), add(#0, #2)",0,,0,0
+UNP/2018/page_74.pdf-2,"divide(898, 148), subtract(1), multiply(#1, const_100)","divide(898, 148), subtract(1), multiply(#1, const_100)",0,,0,0
+MSI/2014/page_76.pdf-1,"substract(22.1, 24.0), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+ETFC/2012/page_24.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+UA/2011/page_69.pdf-1,"subtract(5.9, 5.3), multiply(#1, const_100)","subtract(5.9, 5.3), multiply(#1, const_100)",0,,0,0
+RL/2008/page_23.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_100.pdf-1,"subtract(table_sum(table 31 : analysis of home equity unresolved asserted indemnification and repurchase claims in millions december 31 december 31 , none), table_sum(table 31 : analysis of home equity unresolved asserted indemnification and repurchase claims in millions december 31 december 31 , december 31 2011))","table_sum(table 31 : analysis of home equity unresolved asserted indemnification and repurchase claims in millions december 31 december 31, none), table_sum(table 31 : analysis of home equity unresolved asserted indemnification and repurchase claims in millions december 31 december 31, december 31 2011)",0,,0,0
+HWM/2015/page_173.pdf-1,"subtract(2, 12), divide(#0, 2)","subtract(2, 12), divide(#0, 2)",1,-5.0,0,0
+ECL/2017/page_94.pdf-1,"subtract(const_35, const_13.7)","subtract(const_35, const_13.7)",1,21.3,0,0
+NKE/2009/page_43.pdf-1,"add($342.9, $78.5)","add($342.9, $78.5)",0,,0,0
+CME/2017/page_40.pdf-1,"exp(log(#1+#2)/#3), log(#4+#5)/log(#6)",,0,,0,0
+MMM/2015/page_93.pdf-2,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+GS/2013/page_126.pdf-2,"divide(355173, 377677), multiply(#1, const_100)","divide(355173, 377677), multiply(#1, const_100)",0,,0,0
+AON/2007/page_188.pdf-2,"divide(#1, 57000000)","divide(#1, 57000000)",0,,0,0
+GS/2017/page_132.pdf-3,"substract(table_sum(other financial assets of as of december 2017, table_name), table_sum(other financial assets of as of december 2016, table_name)), divide(#0, table_sum(total of as of december 2016, table_name))","table_sum(other financial assets of as of december 2017, table_name), table_sum(other financial assets of as of december 2016, table_name), table_sum(total of as of december 2016, table_name)",0,,0,0
+UNP/2010/page_21.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+ADBE/2008/page_74.pdf-2,"greater(const_4, const_1)","greater(const_4, const_1)",1,yes,1,0
+MRK/2013/page_125.pdf-4,"subtract(1200, 665), divide(#0, 665), multiply(#1, const_100)","subtract(1200, 665), divide(#0, 665), multiply(#1, const_100)",1,80.45113,0,0
+SYY/2006/page_71.pdf-2,"subtract(56499000, 100690000), divide(#0, 100690000), multiply(#1, const_100)","subtract(56499000, 100690000), divide(#0, 100690000), multiply(#1, const_100)",1,-43.88817,0,0
+JPM/2009/page_175.pdf-1,"subtract(381415, 65439), subtract(384102, 121417), subtract(318063, 110457)","subtract(381415, 65439), subtract(384102, 121417), subtract(318063, 110457)",1,207606.0,0,0
+MMM/2007/page_84.pdf-1,"divide(table_sum(respirator mask / asbestos receivables, 2007), table_sum(respirator mask / asbestos liabilities, 2007))","table_sum(respirator mask / asbestos receivables, 2007), table_sum(respirator mask / asbestos liabilities, 2007)",0,,0,0
+MAS/2017/page_27.pdf-4,"divide(masco of 2015, s&p 500 index of 2015), multiply(#1, const_100)","divide(masco of 2015, s&p 500 index of 2015), multiply(#1, const_100)",0,,0,0
+IPG/2006/page_77.pdf-2,"subtract(258.6, 10.3), divide(#0, 2)","subtract(258.6, 10.3), divide(#0, 2)",1,124.15,0,0
+JPM/2008/page_87.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+AMT/2008/page_107.pdf-4,"subtract(-12389, -6110), subtract(-1743, -304), subtract(-20963, 7327), subtract(-6110, 1546), subtract(-1901, 1546), subtract(-304, 1546)","subtract(-12389, -6110), subtract(-1743, -304), subtract(-20963, 7327), subtract(-6110, 1546), subtract(-1901, 1546), subtract(-304, 1546)",1,-1850.0,0,0
+RSG/2009/page_140.pdf-1,"subtract(2.9, 1.5), multiply(#1, const_100)","subtract(2.9, 1.5), multiply(#1, const_100)",0,,0,0
+SLB/2012/page_56.pdf-1,"subtract(76, 100), divide(#0, 100), multiply(#1, 176)","subtract(76, 100), divide(#0, 100), multiply(#1, 176)",1,-42.24,0,0
+TMUS/2017/page_29.pdf-2,"divide(sum(call center of approximate size in square feet), sum(call center of approximate number)), multiply(#1, const_10000)","multiply(#1, const_10000)",0,,0,0
+UPS/2016/page_114.pdf-2,"subtract(207, 190), multiply(#1, const_1000)","subtract(207, 190), multiply(#1, const_1000)",0,,0,0
+MRO/2017/page_96.pdf-3,"table_average(initial health care trend rate, none)","table_average(initial health care trend rate, none)",1,0.08083,1,1
+GS/2013/page_220.pdf-1,"table_average(common stock, 12/26/08, 12/31/09, 12/31/10, 12/31/11, 12/31/12, 12/31/13)","table_average(common stock, 12/26/08, 12/31/09, 12/31/10, 12/31/11, 12/31/12, 12/31/13)",0,,0,0
+LKQ/2016/page_87.pdf-1,"subtract(148.5, 168.4), divide(#0, 168.4), multiply(#1, const_100)","subtract(148.5, 168.4), divide(#0, 168.4), multiply(#1, const_100)",1,-11.8171,0,0
+SNA/2013/page_84.pdf-1,"divide(-14.9, 546.5), multiply(#1, const_100)","divide(-14.9, 546.5), multiply(#1, const_100)",0,,0,0
+DVN/2015/page_79.pdf-3,"subtract(28.8, 30.3), divide(#0, 30.3), multiply(#1, const_100)","subtract(28.8, 30.3), divide(#0, 30.3), multiply(#1, const_100)",1,-4.9505,0,0
+FIS/2017/page_64.pdf-4,"divide(#0, 130), multiply(#1, const_100)","divide(#0, 130), multiply(#1, const_100)",0,,0,0
+LMT/2014/page_77.pdf-3,"divide(add(table_sum(outstanding interest rate swaps, 2014), table_sum(outstanding foreign currency hedges, 2014)), add(table_sum(outstanding foreign currency hedges, 2014), table_sum(outstanding foreign currency hedges, 2013)))","table_sum(outstanding interest rate swaps, 2014), table_sum(outstanding foreign currency hedges, 2014), table_sum(outstanding foreign currency hedges, 2014), table_sum(outstanding foreign currency hedges, 2013)",0,,0,0
+ETFC/2012/page_43.pdf-1,"substract(-5.7, -14.9), multiply(#1, const_1000)","multiply(#1, const_1000)",0,,0,0
+HWM/2017/page_42.pdf-2,"substract(100, 125.60), divide(#0, 100), multiply(#1, const_100), substract(100, 177.79), divide(#0, 100), multiply(#1, const_100)","divide(#0, 100), multiply(#1, const_100), divide(#0, 100), multiply(#1, const_100)",0,,0,0
+GRMN/2006/page_68.pdf-2,"divide(268766, 296554), multiply(#1, const_100)","divide(268766, 296554), multiply(#1, const_100)",0,,0,0
+JPM/2003/page_106.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_247.pdf-2,"table_average(commercial mortgage recourse obligations, none)","table_average(commercial mortgage recourse obligations, none)",0,,0,0
+SLG/2011/page_91.pdf-3,"add(66299, 153644), add(420050, 66299), add(#1, #2)","add(66299, 153644), add(420050, 66299), add(#1, #2)",0,,0,0
+PNC/2012/page_65.pdf-5,"add(table_sum(total securities available for sale ( a ), none), table_sum(total securities held to maturity, none))","table_sum(total securities held to maturity, none)",1,45730.0,0,0
+MS/2013/page_132.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+GPN/2010/page_89.pdf-2,"add(713, 762), multiply(#0, 42)","add(713, 762), multiply(#0, 42)",1,61950.0,0,0
+TFX/2015/page_89.pdf-1,"divide(5822, 6304), multiply(#1, const_100)","divide(5822, 6304), multiply(#1, const_100)",0,,0,0
+ETR/2011/page_17.pdf-3,"subtract(5051, 4904), divide(#0, 5051), multiply(#1, const_100)","subtract(5051, 4904), divide(#0, 5051), multiply(#1, const_100)",1,2.91031,0,0
+CDW/2015/page_93.pdf-3,"add(171.8, 19.8)","add(171.8, 19.8)",1,191.6,0,0
+FIS/2016/page_31.pdf-1,"subtract(100, 100), divide(#0, 100), multiply(#1, const_100)","subtract(100, 100), divide(#0, 100), multiply(#1, const_100)",1,0.0,0,0
+IP/2009/page_84.pdf-1,"substract(205, 168), divide(#0, 168), multiply(#1, const_100)","divide(#0, 168), multiply(#1, const_100)",0,,0,0
+CDW/2017/page_38.pdf-2,"divide(table_average(gross profit, none), table_average(net sales, none)), multiply(#1, const_100)","table_average(gross profit, none), table_average(net sales, none), multiply(#1, const_100)",1,1405403.33333,0,0
+SYY/2005/page_70.pdf-2,"substract(27316000, 46957000), divide(#0, 27316000), multiply(#1, const_100)","divide(#0, 27316000), multiply(#1, const_100)",0,,0,0
+CB/2008/page_229.pdf-4,"divide(7001, 684), divide(8579, 1535), divide(7605, 1527), divide(5337, 798), divide(5321, 873), divide(4431, 724)","divide(7001, 684), divide(8579, 1535), divide(7605, 1527), divide(5337, 798), divide(5321, 873), divide(4431, 724)",1,6.12017,0,0
+GS/2013/page_72.pdf-1,"subtract(58219, 71267)","subtract(58219, 71267)",1,-13048.0,1,1
+GIS/2019/page_68.pdf-1,"divide(#1, #0), subtract(1), multiply(#1, const_100)","divide(#1, #0), subtract(1), multiply(#1, const_100)",0,,0,0
+CME/2017/page_89.pdf-3,"multiply(2.6, const_1000)","multiply(2.6, const_1000)",1,2600.0,0,0
+AWK/2013/page_122.pdf-2,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+V/2008/page_180.pdf-2,"divide(fiscal(2009, volume and support incentives), fiscal(total, volume and support incentives))",,0,,0,0
+AAL/2010/page_72.pdf-1,"divide(table_sum(pension, 2016..2020), table_sum(retiree medical and other, 2016..2020))","table_sum(pension, 2016..2020), table_sum(retiree medical and other, 2016..2020)",0,,0,0
+ETR/2004/page_212.pdf-1,"subtract(973.7, 931.3), divide(#0, 973.7)","subtract(973.7, 931.3), divide(#0, 973.7)",1,0.04355,0,0
+MRO/2004/page_46.pdf-4,"divide(add(6015, 40.51), 2), divide(add(5145, 38.94), 2)","add(6015, 40.51), add(5145, 38.94)",1,5183.94,0,0
+AES/2001/page_33.pdf-4,"add(52.25, 39.95), divide(#0, 2)","add(52.25, 39.95), divide(#0, 2)",1,46.1,0,0
+LMT/2014/page_50.pdf-2,"subtract(20500, 18100), multiply(#0, const_1000)","subtract(20500, 18100), multiply(#0, const_1000)",1,2400000.0,0,0
+AMAT/2013/page_37.pdf-1,"multiply(#1, 100000), subtract(#1, 100), add(#1, 17576)","multiply(#1, 100000), subtract(#1, 100), add(#1, 17576)",0,,0,0
+C/2009/page_63.pdf-3,"divide(table_sum(long-term debt obligations ( 1 ), none), table_sum(total of contractual obligations, none)), multiply(#1, const_100)","table_sum(total of contractual obligations, none), multiply(#1, const_100)",0,,0,0
+ADBE/2008/page_74.pdf-1,"divide(4, const_100)","divide(4, const_100)",1,0.04,0,0
+HIG/2011/page_53.pdf-3,"subtract(271, 39), multiply(#0, const_100)","subtract(271, 39), multiply(#0, const_100)",1,23200.0,0,0
+BLL/2010/page_37.pdf-3,"subtract(559.7, 515.2), divide(#0, 515.2), multiply(#1, const_100)","subtract(559.7, 515.2), divide(#0, 515.2), multiply(#1, const_100)",1,8.63742,0,0
+JPM/2005/page_80.pdf-1,"add(265, -162), divide(#0, 2)","add(265, -162), divide(#0, 2)",1,51.5,0,0
+CDNS/2015/page_30.pdf-3,"subtract(table_average(nasdaq composite, 1/3/2015), table_average(cadence design systems inc., 1/3/2015)), multiply(#1, const_100)","table_average(nasdaq composite, 1/3/2015), table_average(cadence design systems inc., 1/3/2015), multiply(#1, const_100)",0,,0,0
+RSG/2013/page_123.pdf-1,"subtract(27.8, 28.9), multiply(#1, const_100)","subtract(27.8, 28.9), multiply(#1, const_100)",0,,0,0
+ECL/2017/page_69.pdf-1,"subtract(table_sum(global industrial, 2017), table_sum(global industrial, 2015)), divide(#0, table_sum(global industrial, 2015))","table_sum(global industrial, 2017), table_sum(global industrial, 2015), table_sum(global industrial, 2015)",0,,0,0
+GS/2013/page_85.pdf-1,"divide(45826, 182650), multiply(#1, const_100)","divide(45826, 182650), multiply(#1, const_100)",0,,0,0
+GS/2018/page_69.pdf-3,"add(32.73, 0.06), multiply(#0, 100)","add(32.73, 0.06), multiply(#0, 100)",1,3279.0,0,0
+JPM/2010/page_281.pdf-2,"divide(521.3, 635.6), multiply(#1, const_100)","divide(521.3, 635.6), multiply(#1, const_100)",0,,0,0
+AMT/2006/page_113.pdf-1,"divide(-2397, 2239), multiply(#1, const_100)","divide(-2397, 2239), multiply(#1, const_100)",0,,0,0
+ETR/2004/page_212.pdf-4,"substract(#1, #2), divide(#0, #1), multiply(#1, const_100)","divide(#0, #1), multiply(#1, const_100)",0,,0,0
+ECL/2017/page_79.pdf-1,"divide(139.8, 473.6)","divide(139.8, 473.6)",1,0.29519,0,0
+CME/2010/page_69.pdf-1,"divide(#0, -9001000000), multiply(#1, const_100)","divide(#0, -9001000000), multiply(#1, const_100)",0,,0,0
+JPM/2015/page_137.pdf-1,"subtract(59371, 43097), subtract(79000, 59700)","subtract(59371, 43097), subtract(79000, 59700)",1,19300.0,0,0
+AWK/2018/page_146.pdf-4,"sum(0.6, 0.7)",,0,,0,0
+GIS/2018/page_110.pdf-3,"divide(115.7, 559.3), multiply(#1, const_100)","divide(115.7, 559.3), multiply(#1, const_100)",0,,0,0
+GPN/2013/page_87.pdf-1,"divide(48, 1000), multiply(#1, 472), add(divide(44, 1000), multiply(#3, 561))","divide(48, 1000), multiply(#1, 472), divide(44, 1000), multiply(#3, 561)",0,,0,0
+GPN/2013/page_92.pdf-2,"substract(8985, 11057), divide(#0, 11057), multiply(#1, const_100)","divide(#0, 11057), multiply(#1, const_100)",0,,0,0
+ETR/2017/page_143.pdf-2,"substract(857679, 760000), divide(#0, 760000), multiply(#1, const_100)","divide(#0, 760000), multiply(#1, const_100)",0,,0,0
+DISH/2011/page_122.pdf-3,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+HWM/2018/page_96.pdf-1,"multiply(#3, #4), multiply(#5, #6), multiply(#7, #8)","multiply(#3, #4), multiply(#5, #6), multiply(#7, #8)",0,,0,0
+CE/2009/page_65.pdf-2,"subtract(-372, -677), multiply(#0, const_100)","subtract(-372, -677), multiply(#0, const_100)",1,30500.0,0,0
+FIS/2012/page_48.pdf-3,"subtract(90.3, 90.0), divide(#0, 90.0), multiply(#1, const_100)","subtract(90.3, 90.0), divide(#0, 90.0), multiply(#1, const_100)",1,0.33333,0,0
+GS/2013/page_149.pdf-4,"table_min(collateral posted, {2013, 2012})","table_min(collateral posted, {2013, 2012})",0,,0,0
+BLL/2006/page_67.pdf-2,"divide(617.9, 802.6), multiply(#1, const_100)","divide(617.9, 802.6), multiply(#1, const_100)",0,,0,0
+FIS/2016/page_9.pdf-4,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+GS/2018/page_69.pdf-2,"divide(2.93, const_1000)","divide(2.93, const_1000)",1,0.00293,0,0
+DVN/2012/page_77.pdf-1,"divide(#0, 11664), multiply(#1, const_100)","divide(#0, 11664), multiply(#1, const_100)",0,,0,0
+ECL/2017/page_94.pdf-2,"subtract(const_2440, const_2280)","subtract(const_2440, const_2280)",1,160.0,0,0
+SNA/2013/page_83.pdf-1,"subtract(7.7, 19.6), subtract(31.3, 24.79)","subtract(7.7, 19.6), subtract(31.3, 24.79)",1,6.51,0,0
+FIS/2006/page_31.pdf-2,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+AMT/2012/page_144.pdf-2,"add(0.1, -0.1)","add(0.1, -0.1)",1,0.0,0,0
+GPN/2013/page_92.pdf-3,"divide(#3, 16812)","divide(#3, 16812)",0,,0,0
+V/2014/page_126.pdf-1,"sum(172, 179, 147)",,0,,0,0
+SLG/2011/page_91.pdf-2,"substract(23000, 0.1), divide(#0, 23000), multiply(#1, const_100)","divide(#0, 23000), multiply(#1, const_100)",0,,0,0
+ILMN/2008/page_86.pdf-4,"subtract(23778, 21376), multiply(#0, const_1000000)","subtract(23778, 21376), multiply(#0, const_1000000)",1,2402000000.0,0,0
+MAS/2012/page_26.pdf-1,"divide(#0, 24000000)","divide(#0, 24000000)",0,,0,0
+UPS/2010/page_52.pdf-4,"divide(table_sum(commitment type, debt principal), table_sum(total, total)) * 100","table_sum(commitment type, debt principal), table_sum(total, total)",0,,0,0
+AMT/2012/page_118.pdf-1,"add(-5536, -38519)","add(-5536, -38519)",1,-44055.0,0,0
+AON/2007/page_188.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+CDW/2015/page_70.pdf-2,"table_min(foreign currency translation, none)","table_min(foreign currency translation, none)",1,-61.1,0,0
+LMT/2014/page_77.pdf-2,"subtract(326.5, 328.4), multiply(#1, const_1000000)","subtract(326.5, 328.4), multiply(#1, const_1000000)",0,,0,0
+GPN/2008/page_78.pdf-1,"divide(table_sum(customer-related intangible assets, amortization period = 14), 14)","table_sum(customer-related intangible assets, amortization period = 14)",1,4091.0,0,0
+AON/2007/page_171.pdf-2,"subtract(118, -119)","subtract(118, -119)",1,237.0,0,0
+HOLX/2009/page_127.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+PNC/2015/page_93.pdf-2,"divide(5758, 7975), multiply(#1, const_100)","divide(5758, 7975), multiply(#1, const_100)",0,,0,0
+C/2008/page_65.pdf-1,"substract(666.9, 618.3), divide(#0, 618.3), multiply(#1, const_100)","divide(#0, 618.3), multiply(#1, const_100)",0,,0,0
+AMT/2006/page_113.pdf-2,"subtract(3285, 3689), subtract(-34, 267)","subtract(3285, 3689), subtract(-34, 267)",1,-301.0,0,0
+DVN/2018/page_35.pdf-2,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+AWK/2018/page_146.pdf-3,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+HIG/2011/page_53.pdf-1,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+NWS/2017/page_119.pdf-1,"divide(39, 4)","divide(39, 4)",1,9.75,1,1
+MRO/2008/page_45.pdf-4,"table_sum(pipeline barrels handled ( thousands of barrels per day ), 2006, 2007, 2008)",,0,,0,0
+JPM/2014/page_122.pdf-1,"substract(table_average(loans retained, 2013), table_average(loans retained, 2014)), divide(#0, table_average(loans retained, 2013))","table_average(loans retained, 2013), table_average(loans retained, 2014), table_average(loans retained, 2013)",1,158546.25,0,0
+MO/2016/page_19.pdf-2,"greater(286.61, 192.56)","greater(286.61, 192.56)",1,yes,1,1
+TFX/2015/page_89.pdf-2,"divide(474, 7819)","divide(474, 7819)",1,0.06062,0,0
+AMT/2008/page_94.pdf-2,"add(1837, 2305054), add(#0, 4333146)","add(1837, 2305054), add(#0, 4333146)",1,6640037.0,0,0
+AMT/2006/page_104.pdf-3,"divide(#3251000000, #4000000000), multiply(#1, const_100)","divide(#3251000000, #4000000000), multiply(#1, const_100)",0,,0,0
+RSG/2015/page_98.pdf-1,"divide(#0, #1), multiply(#1, const_100)","divide(#0, #1), multiply(#1, const_100)",0,,0,0
+MO/2014/page_62.pdf-2,"divide(86, 5070), multiply(#1, const_100)","divide(86, 5070), multiply(#1, const_100)",0,,0,0
+NCLH/2018/page_64.pdf-2,"subtract(16000000000, 12000000000), divide(#0, 12000000000), multiply(#1, const_100)","subtract(16000000000, 12000000000), divide(#0, 12000000000), multiply(#1, const_100)",1,33.33333,0,0
+STT/2006/page_95.pdf-1,"divide(-224, -231), multiply(#1, const_100)","divide(-224, -231), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_174.pdf-3,"subtract(1141, 1589), multiply(#0, const_1000)","subtract(1141, 1589), multiply(#0, const_1000)",1,-448000.0,0,0
+MAS/2017/page_27.pdf-3,"subtract(206.49, 169.82), divide(#0, 169.82), multiply(#1, const_100)","subtract(206.49, 169.82), divide(#0, 169.82), multiply(#1, const_100)",1,21.59345,0,0
+HOLX/2009/page_127.pdf-1,"divide(#3, const_100)","divide(#3, const_100)",0,,0,0
+AOS/2010/page_18.pdf-1,"substract(table_sum(company/index, none), table_sum(s&p small cap 600 index, none))","table_sum(company/index, none), table_sum(s&p small cap 600 index, none)",0,,0,0
+GPN/2013/page_87.pdf-2,"divide(#3, 3), multiply(#1, const_100)","divide(#3, 3), multiply(#1, const_100)",0,,0,0
+STT/2011/page_69.pdf-2,"subtract(1332, 782)","subtract(1332, 782)",1,550.0,0,0
+HUM/2009/page_105.pdf-1,"substract(17.95, 14.24), divide(#0, 14.24), multiply(#1, const_100)","divide(#0, 14.24), multiply(#1, const_100)",0,,0,0
+HIG/2004/page_140.pdf-3,"add(-23, 292)","add(-23, 292)",1,269.0,0,0
+GS/2018/page_69.pdf-1,"add(9.45, 7.66)","add(9.45, 7.66)",1,17.11,0,0
+EL/2008/page_59.pdf-1,"add(47000000, 19300000)","add(47000000, 19300000)",1,66300000.0,0,0
+PNC/2012/page_100.pdf-2,"table_average(home equity loans/lines:, none)","table_average(home equity loans/lines:, none)",0,,0,0
+UAA/2016/page_42.pdf-3,"substract(inventories of at december 31 , 2015, inventories of at december 31 , 2016), divide(#0, inventories of at december 31 , 2015), multiply(#1, const_100)","divide(#0, inventories of at december 31, 2015), multiply(#1, const_100)",0,,0,0
+HII/2015/page_88.pdf-1,"divide(years 3, 3)","divide(years 3, 3)",0,,0,0
+MRO/2004/page_125.pdf-2,"subtract(556, 478), divide(#0, 802)","subtract(556, 478), divide(#0, 802)",1,0.09726,0,0
+GPN/2013/page_87.pdf-3,"subtract(108, 44), subtract(129, 108)","subtract(108, 44), subtract(129, 108)",1,21.0,0,0
+AWK/2013/page_122.pdf-1,"add(177947, 242), add(177947, 260)","add(177947, 242), add(177947, 260)",1,178207.0,0,0
+MRO/2017/page_96.pdf-2,"subtract(const_8_25, const_8_00)","subtract(const_8_25, const_8_00)",1,25.0,0,0
+AAL/2013/page_172.pdf-1,"divide(849, 5424)","divide(849, 5424)",1,0.15653,1,1
+HII/2015/page_121.pdf-2,"divide(table_average(net earnings ( loss ), 3), table_sum(sales and service revenues, 3))","table_sum(sales and service revenues, 3)",1,6957.0,0,0
+DG/2010/page_136.pdf-2,"table_min(furniture fixtures and equipment, 20)","table_min(furniture fixtures and equipment, 20)",0,,0,0
+MRO/2007/page_136.pdf-1,"add(20.59, 32, 13), multiply(#0, const_1000000)","add(20.59, 32, 13), multiply(#0, const_1000000)",0,,0,0
+DXC/2018/page_56.pdf-3,"divide(#1, 22885), multiply(#1, const_100)","divide(#1, 22885), multiply(#1, const_100)",0,,0,0
+GS/2015/page_188.pdf-4,"add(2.86, 2.87), multiply(#1, const_1000)","add(2.86, 2.87), multiply(#1, const_1000)",0,,0,0
+AAL/2016/page_8.pdf-1,"divide(13400, 16800)","divide(13400, 16800)",1,0.79762,0,0
+ETR/2013/page_21.pdf-4,"divide(-33, 2045), multiply(#1, const_100)","divide(-33, 2045), multiply(#1, const_100)",0,,0,0
+JPM/2018/page_90.pdf-6,"divide(4630, 46780), multiply(#1, const_100)","divide(4630, 46780), multiply(#1, const_100)",0,,0,0
+UNP/2011/page_33.pdf-1,"subtract(5.5, 1.3), add(70.6, const_100), multiply(#1, const_100)","subtract(5.5, 1.3), add(70.6, const_100), multiply(#1, const_100)",1,17060.0,0,0
+AMT/2012/page_118.pdf-4,"divide(#1, 1000)","divide(#1, 1000)",0,,0,0
+JPM/2008/page_117.pdf-1,"add(32, 38), divide(#0, 2)","add(32, 38), divide(#0, 2)",1,35.0,0,0
+C/2008/page_65.pdf-2,"subtract(22.366, 12.393), divide(#0, 12.393), multiply(#1, const_100)","subtract(22.366, 12.393), divide(#0, 12.393), multiply(#1, const_100)",1,80.47285,0,0
+DG/2009/page_77.pdf-1,"divide(20, 20+39-40)","divide(20, 20+39-40)",0,,0,0
+DRE/2002/page_15.pdf-1,"substract(9165, 5080), divide(#0, 5080), multiply(#1, const_100)","divide(#0, 5080), multiply(#1, const_100)",0,,0,0
+SNA/2007/page_69.pdf-1,"subtract(1.7, 1.2), divide(#0, 1.7), multiply(#1, const_100)","subtract(1.7, 1.2), divide(#0, 1.7), multiply(#1, const_100)",1,29.41176,0,0
+HOLX/2006/page_71.pdf-1,"add(4218065, 32014), multiply(#1, const_100)","add(4218065, 32014), multiply(#1, const_100)",0,,0,0
+ETR/2011/page_17.pdf-2,"subtract(5051, 4904)","subtract(5051, 4904)",1,147.0,0,0
+CDNS/2015/page_30.pdf-4,"divide(#4, #3), multiply(#1, const_100)","divide(#4, #3), multiply(#1, const_100)",0,,0,0
+GS/2017/page_132.pdf-1,"table_max(deserivatives, none)","table_max(deserivatives, none)",0,,0,0
+MO/2014/page_39.pdf-1,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+UNP/2009/page_35.pdf-2,"add(76.0, 1.3), add(77.3, 2.0)","add(76.0, 1.3), add(77.3, 2.0)",1,79.3,0,0
+AWK/2018/page_146.pdf-1,"add(12, 4, 4)","add(12, 4, 4)",0,,0,0
+HII/2015/page_121.pdf-1,"divide(#3, #1), multiply(#1, const_100)","divide(#3, #1), multiply(#1, const_100)",0,,0,0
+GS/2018/page_78.pdf-2,"substitute(6.22, 7%, 7%), multiply(#1, const_1000)","multiply(#1, const_1000)",0,,0,0
+IP/2009/page_45.pdf-1,"divide(table_sum(lease obligations, none), table_sum(maturities of long-term debt (a), none)), multiply(#1, const_100)","table_sum(lease obligations, none), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_247.pdf-4,"table_average(reserve for losses, none)","table_average(reserve for losses, none)",0,,0,0
+AMT/2016/page_49.pdf-2,"multiply(#1, #2)","multiply(#1, #2)",0,,0,0
+RCL/2012/page_75.pdf-3,"subtract(398.0, 398.0), divide(#0, 398.0), multiply(#1, const_100)","subtract(398.0, 398.0), divide(#0, 398.0), multiply(#1, const_100)",1,0.0,0,0
+GS/2017/page_132.pdf-4,"subtract(4, 55), divide(#0, 23280)","subtract(4, 55), divide(#0, 23280)",1,-0.00219,0,0
+ZBH/2009/page_58.pdf-1,"divide(table_sum(long-term debt, 2015 and thereafter), table_sum(total contractual obligations, 2015 and thereafter)) * 100","table_sum(long-term debt, 2015 and thereafter), table_sum(total contractual obligations, 2015 and thereafter)",1,5438.6,0,0
+AMAT/2018/page_33.pdf-2,"divide(subtract(198.27, 100.00), 100.00), multiply(#1, const_100)","subtract(198.27, 100.00), multiply(#1, const_100)",0,,0,0
+BLK/2012/page_145.pdf-2,"subtract(table_average(carrying value(floating rate notes due 2013)), table_average(fair value(floating rate notes due 2013)))",,0,,0,0
+SNA/2007/page_29.pdf-1,"divide(table_average(fiscal year ended ( 2 ), 130.66), table_average(fiscal year ended ( 2 ), 152.42))",,0,,0,0
+MSI/2008/page_69.pdf-2,"subtract(-2199, -1201), divide(#0, -1201), multiply(#1, const_100)","subtract(-2199, -1201), divide(#0, -1201), multiply(#1, const_100)",1,83.09742,0,0
+STT/2006/page_95.pdf-2,"divide(-227, -224), multiply(#1, const_100)","divide(-227, -224), multiply(#1, const_100)",0,,0,0
+AMT/2007/page_29.pdf-1,"add(19600, 13900, 57800)","add(19600, 13900, 57800)",0,,0,0
+BLL/2011/page_32.pdf-3,"multiply(897, 0.5)","multiply(897, 0.5)",1,448.5,1,0
+MRO/2008/page_45.pdf-3,"divide(960, 2500), multiply(#1, const_100)","divide(960, 2500), multiply(#1, const_100)",0,,0,0
+MRK/2013/page_3.pdf-1,"divide(#3, #2), subtract(const_1, #1), multiply(#1, const_100)","divide(#3, #2), subtract(const_1, #1), multiply(#1, const_100)",0,,0,0
+CE/2013/page_16.pdf-1,"subtract(92, 83), divide(#0, 83), multiply(#1, const_100)","subtract(92, 83), divide(#0, 83), multiply(#1, const_100)",1,10.84337,0,0
+ETR/2008/page_442.pdf-2,"divide(8000, 8000)","divide(8000, 8000)",1,1.0,0,0
+CB/2008/page_229.pdf-2,"table_average(amortization expense, none)","table_average(amortization expense, none)",0,,0,0
+AMT/2010/page_99.pdf-2,"divide(-74896, 5512492), multiply(#1, const_100)","divide(-74896, 5512492), multiply(#1, const_100)",0,,0,0
+GS/2014/page_74.pdf-2,"divide(45410, 179633), multiply(#1, const_100)","divide(45410, 179633), multiply(#1, const_100)",0,,0,0
+AON/2018/page_87.pdf-4,"subtract(280, 278), divide(#0, 278), multiply(#1, const_100)","subtract(280, 278), divide(#0, 278), multiply(#1, const_100)",1,0.71942,0,0
+GPN/2008/page_78.pdf-3,"divide(#3, #1), multiply(#1, const_100)","divide(#3, #1), multiply(#1, const_100)",0,,0,0
+GS/2012/page_142.pdf-4,"max(net derivative liabilities under bilateral agreements, none), max(collateral posted, none)",,0,,0,0
+GS/2013/page_149.pdf-3,"table_max(net derivative liabilities under bilateral agreements, none)","table_max(net derivative liabilities under bilateral agreements, none)",1,27885.0,1,1
+BLL/2010/page_35.pdf-4,"subtract(18.5, 15), multiply(#0, const_1000)","subtract(18.5, 15), multiply(#0, const_1000)",1,3500.0,0,0
+MRO/2013/page_19.pdf-4,"divide(table_sum(net undeveloped acres expiring, 2014), table_sum(net undeveloped acres expiring, all))","table_sum(net undeveloped acres expiring, 2014), table_sum(net undeveloped acres expiring, all)",0,,0,0
+APD/2018/page_121.pdf-2,"subtract(4.1, 2.2), subtract(2.2, 4.3)","subtract(4.1, 2.2), subtract(2.2, 4.3)",1,-2.1,0,0
+AWK/2014/page_121.pdf-3,"subtract(195237, 180993), subtract(242, 157)","subtract(195237, 180993), subtract(242, 157)",1,85.0,0,0
+HUM/2017/page_118.pdf-2,"divide(77, 54)","divide(77, 54)",1,1.42593,0,0
+UPS/2010/page_52.pdf-3,"divide(table_sum(pension fundings, after 2016), table_sum(total, after 2016)), multiply(#1, const_100)","table_sum(pension fundings, after 2016), table_sum(total, after 2016), multiply(#1, const_100)",1,4711200.0,0,0
+DISCA/2014/page_64.pdf-2,"divide(#4, #3), multiply(#1, const_100)","divide(#4, #3), multiply(#1, const_100)",0,,0,0
+AAPL/2006/page_100.pdf-1,"substitute(987, 29%)",,0,,0,0
+K/2013/page_23.pdf-2,"divide(table_sum(project k (sga) (c), 2013), table_sum(sga, 2013)) * 100","table_sum(sga, 2013)",0,,0,0
+APD/2016/page_40.pdf-1,"subtract(21.9, 18.7), multiply(#1, const_100)","subtract(21.9, 18.7), multiply(#1, const_100)",0,,0,0
+GS/2013/page_63.pdf-2,"subtract(938555, 911507), multiply(#0, const_1000000)","subtract(938555, 911507), multiply(#0, const_1000000)",1,27048000000.0,0,0
+ABMD/2012/page_41.pdf-1,"greater(106.37, 114.84)","greater(106.37, 114.84)",1,no,0,0
+RSG/2018/page_135.pdf-1,"divide(table_average(targetassetallocation, none), table_average(actualassetallocation, none))","table_average(targetassetallocation, none), table_average(actualassetallocation, none)",0,,0,0
+ETR/2004/page_212.pdf-2,"divide(-29.4, 931.3), multiply(#1, const_100)","divide(-29.4, 931.3), multiply(#1, const_100)",0,,0,0
+V/2008/page_180.pdf-3,"add(fiscal(2009, volume and support incentives), fiscal(2012, volume and support incentives))",,0,,0,0
+AMT/2008/page_94.pdf-3,"subtract(162.2, 161.9), divide(#0, 161.9), multiply(#1, const_100)","subtract(162.2, 161.9), divide(#0, 161.9), multiply(#1, const_100)",1,0.1853,0,0
+C/2009/page_243.pdf-1,"divide(add(52022, 62000000000), 38800000000)","add(52022, 62000000000)",1,62000052022.0,0,0
+EMR/2017/page_78.pdf-1,"divide(#3, 17984)","divide(#3, 17984)",0,,0,0
+ILMN/2003/page_58.pdf-3,"subtract(nasdaq_pharmaceutical_index(jul_27_2003, dec_26_2003), illumina_inc(jul_27_2003, dec_26_2003)), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+AMT/2003/page_27.pdf-3,"divide(20000, 30000), multiply(#1, const_100)","divide(20000, 30000), multiply(#1, const_100)",0,,0,0
+RSG/2010/page_98.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+MS/2007/page_179.pdf-2,"divide(123, 1676), multiply(#1, const_100)","divide(123, 1676), multiply(#1, const_100)",0,,0,0
+NKE/2009/page_43.pdf-2,"divide(#1, 342.9), multiply(#1, const_100)","divide(#1, 342.9), multiply(#1, const_100)",0,,0,0
+JPM/2012/page_140.pdf-1,"subtract(434814, 382739), divide(#0, 382739), multiply(#1, const_100)","subtract(434814, 382739), divide(#0, 382739), multiply(#1, const_100)",1,13.60588,0,0
+GS/2014/page_74.pdf-1,"divide(45826, 182650), multiply(#1, const_100)","divide(45826, 182650), multiply(#1, const_100)",0,,0,0
+AMT/2006/page_104.pdf-2,"divide(#3543016, #253907), multiply(#1, const_100)","divide(#3543016, #253907), multiply(#1, const_100)",0,,0,0
+AOS/2010/page_18.pdf-2,"subtract(table_average(company/index, 12/31/10), table_average(russell 1000 index, 12/31/10))","table_average(company/index, 12/31/10), table_average(russell 1000 index, 12/31/10)",0,,0,0
+DRE/2008/page_46.pdf-1,"divide(table_sum(diluted net income available for common shareholders, none), table_sum(weighted average number of common shares outstanding, none))","table_sum(diluted net income available for common shareholders, none), table_sum(weighted average number of common shares outstanding, none)",1,421053.0,0,0
+ETR/2011/page_301.pdf-3,"multiply(23596, const_1000), subtract(63003, 50131), subtract(11589, 23596)","multiply(23596, const_1000), subtract(63003, 50131), subtract(11589, 23596)",1,-12007.0,0,0
+PKG/2005/page_74.pdf-1,"divide(#0, 3772), multiply(#1, const_100)","divide(#0, 3772), multiply(#1, const_100)",0,,0,0
+SNA/2007/page_29.pdf-3,"divide(subtract(198.05, 146.97), 100), multiply(#1, const_100)","subtract(198.05, 146.97), multiply(#1, const_100)",0,,0,0
+PPG/2006/page_42.pdf-2,"subtract(10, 9), multiply(#1, const_100)","subtract(10, 9), multiply(#1, const_100)",0,,0,0
+HUM/2009/page_105.pdf-2,"subtract(28.2, 39.2), multiply(#1, const_100)","subtract(28.2, 39.2), multiply(#1, const_100)",0,,0,0
+HOLX/2009/page_151.pdf-2,"add(31.23, 23.87)","add(31.23, 23.87)",1,55.1,0,0
+RSG/2010/page_98.pdf-1,"subtract(65.7, 14.7), subtract(14.2, #0)","subtract(65.7, 14.7), subtract(14.2, #0)",1,-36.8,0,0
+AMT/2012/page_50.pdf-2,"add(619314, 102400), multiply(#0, const_100)","add(619314, 102400), multiply(#0, const_100)",1,72171400.0,0,0
+JPM/2003/page_106.pdf-4,"subtract(17.5, 11.7), multiply(#0, const_1000)","subtract(17.5, 11.7), multiply(#0, const_1000)",1,5800.0,0,0
+GS/2015/page_188.pdf-3,"divide(1160, 2575), multiply(#1, const_100)","divide(1160, 2575), multiply(#1, const_100)",0,,0,0
+GS/2013/page_220.pdf-4,"divide(#4, #3), multiply(#1, const_100)","divide(#4, #3), multiply(#1, const_100)",0,,0,0
+DVN/2018/page_35.pdf-3,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+AAL/2010/page_72.pdf-2,"subtract(525, 460), divide(#0, 525), multiply(#1, const_100)","subtract(525, 460), divide(#0, 525), multiply(#1, const_100)",1,12.38095,0,0
+TMUS/2017/page_29.pdf-4,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+D/2002/page_87.pdf-2,"divide(#0, 8369), multiply(#1, const_100)","divide(#0, 8369), multiply(#1, const_100)",0,,0,0
+AMT/2003/page_102.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+BLL/2006/page_67.pdf-4,"divide(table_sum(property plant and equipment, total), table_sum(net assets acquired, total)) * 100","table_sum(property plant and equipment, total), table_sum(net assets acquired, total)",1,1605.2,0,0
+ETR/2008/page_442.pdf-1,"sum(8000, 8000, 8000)",,0,,0,0
+GS/2012/page_121.pdf-1,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+MS/2007/page_179.pdf-1,"divide(247, 1676), multiply(#1, const_100)","divide(247, 1676), multiply(#1, const_100)",0,,0,0
+AAL/2013/page_18.pdf-3,"divide(#1, 104), multiply(#1, const_100)","divide(#1, 104), multiply(#1, const_100)",0,,0,0
+IPG/2008/page_72.pdf-2,"subtract(134.8, 266.9), subtract(148.8, 134.8)","subtract(134.8, 266.9), subtract(148.8, 134.8)",1,14.0,1,0
+MRO/2006/page_93.pdf-1,"subtract(711, 527), divide(#0, 527), multiply(#1, const_100)","subtract(711, 527), divide(#0, 527), multiply(#1, const_100)",1,34.91461,0,0
+UNP/2010/page_21.pdf-2,"divide(#1, 3063816), multiply(#1, const_100)","divide(#1, 3063816), multiply(#1, const_100)",0,,0,0
+MRK/2013/page_125.pdf-3,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+ABMD/2005/page_29.pdf-1,"multiply(const_3.87, const_100), add(#0, const_3.87)","multiply(const_3.87, const_100), add(#0, const_3.87)",1,390.87,0,0
+JPM/2003/page_106.pdf-2,"divide(5.3, 9.2), multiply(#1, const_100)","divide(5.3, 9.2), multiply(#1, const_100)",0,,0,0
+MKTX/2012/page_42.pdf-2,"substract(high(2011), low(2011))",,0,,0,0
+AON/2015/page_96.pdf-4,"divide(sum(employee share purchase plan united states), count(employee share purchase plan united states))",,0,,0,0
+GS/2014/page_40.pdf-1,"subtract(22171, 22469), divide(#0, 22469), multiply(#1, const_100)","subtract(22171, 22469), divide(#0, 22469), multiply(#1, const_100)",1,-1.32627,0,0
+TMUS/2017/page_29.pdf-3,"divide(table_sum(data centers of approximate size in square feet, none), table_sum(approximate number, none))","table_sum(data centers of approximate size in square feet, none), table_sum(approximate number, none)",0,,0,0
+MO/2014/page_39.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+BKNG/2016/page_33.pdf-2,"substract(272.59, 243.79), divide(#0, 243.79), multiply(#1, const_100)","divide(#0, 243.79), multiply(#1, const_100)",0,,0,0
+GRMN/2006/page_68.pdf-1,"subtract(15477, 6040), subtract(6040, 15477)","subtract(15477, 6040), subtract(6040, 15477)",1,-9437.0,0,0
+CME/2017/page_89.pdf-4,"table_average(state taxes net of federal benefit, none)","table_average(state taxes net of federal benefit, none)",1,2.93333,1,0
+DISH/2010/page_117.pdf-1,"divide(#0, 777443), multiply(#1, const_100)","divide(#0, 777443), multiply(#1, const_100)",0,,0,0
+BKR/2017/page_56.pdf-1,"divide(-799, 700000000), multiply(#1, const_100)","divide(-799, 700000000), multiply(#1, const_100)",0,,0,0
+MSI/2012/page_87.pdf-2,"substract(13.25, 9.60), divide(#0, 9.60), multiply(#1, const_100)","divide(#0, 9.60), multiply(#1, const_100)",0,,0,0
+BLL/2010/page_35.pdf-3,"substract(#3, #2), divide(#1, #2), multiply(#3, const_100)","divide(#1, #2), multiply(#3, const_100)",0,,0,0
+AES/2010/page_227.pdf-2,"divide(#0, 500), multiply(#1, const_100)","divide(#0, 500), multiply(#1, const_100)",0,,0,0
+ADBE/2008/page_74.pdf-3,"greater(const_5, const_6)","greater(const_5, const_6)",1,no,1,0
+CME/2010/page_123.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+UA/2011/page_69.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+NWS/2019/page_116.pdf-2,"subtract(deferred revenue (a), 3084), multiply(#1, const_1000)","multiply(#1, const_1000)",0,,0,0
+AMT/2005/page_102.pdf-1,"table_average(construction-in-progress impairment charges, none)","table_average(construction-in-progress impairment charges, none)",0,,0,0
+ABMD/2008/page_86.pdf-2,"divide(1800000, 11200000)","divide(1800000, 11200000)",1,0.16071,0,0
+JPM/2003/page_106.pdf-3,"divide(add(table_sum(structured commercial loan vehicles of 2002, table_sum(structured commercial loan vehicles of 2003)), const_2), 2)",table_sum(structured commercial loan vehicles of 2003),0,,0,0
+LMT/2015/page_89.pdf-2,"subtract(3538, 3480), divide(#0, 3480), multiply(#1, const_100)","subtract(3538, 3480), divide(#0, 3480), multiply(#1, const_100)",1,1.66667,0,0
+HOLX/2003/page_52.pdf-1,"multiply(3227753, 8.86)","multiply(3227753, 8.86)",1,28597891.58,1,1
+RSG/2015/page_98.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+INTC/2013/page_31.pdf-4,"substract(209, 191), divide(#0, 191), multiply(#1, const_100)","divide(#0, 191), multiply(#1, const_100)",0,,0,0
+DVN/2018/page_35.pdf-4,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+GS/2015/page_171.pdf-2,"substract(table_sum(securities purchased under agreements to resell, 2014), table_sum(securities purchased under agreements to resell, 2015)), divide(#0, table_sum(securities purchased under agreements to resell, 2014))","table_sum(securities purchased under agreements to resell, 2014), table_sum(securities purchased under agreements to resell, 2015), table_sum(securities purchased under agreements to resell, 2014)",0,,0,0
+C/2008/page_65.pdf-3,"substract(618.3, 542.9), divide(#0, 542.9), multiply(#1, const_100)","divide(#0, 542.9), multiply(#1, const_100)",0,,0,0
+UPS/2010/page_52.pdf-2,"divide(table_sum(commitment type, after 2016), 23556), multiply(#1, const_100)","table_sum(commitment type, after 2016), multiply(#1, const_100)",0,,0,0
+SNA/2018/page_31.pdf-3,"add(205000, 160.20), multiply(#0, 205000), add(335000, 159.35), multiply(#0, 335000)","add(205000, 160.20), multiply(#0, 205000), add(335000, 159.35), multiply(#0, 335000)",1,68728667000.0,0,0
+GIS/2017/page_31.pdf-2,"divide(table_sum(total long-term obligations of payments due by fiscal year, 2018), table_sum(total long-term obligations of payments due by fiscal year total, 2018))","table_sum(total long-term obligations of payments due by fiscal year, 2018), table_sum(total long-term obligations of payments due by fiscal year total, 2018)",0,,0,0
+AON/2007/page_188.pdf-3,"subtract(70, 53), add(24)","subtract(70, 53), add(24)",0,,0,0
+GS/2017/page_86.pdf-4,"subtract(391555, 408164), multiply(#1, const_1000)","subtract(391555, 408164), multiply(#1, const_1000)",0,,0,0
+IPG/2008/page_72.pdf-3,"substract(#2, #1), divide(#3, #1), multiply(#4, const_100)","divide(#3, #1), multiply(#4, const_100)",0,,0,0
+PNC/2008/page_122.pdf-2,"table_average(liabilities, none)","table_average(liabilities, none)",1,797.66667,1,1
+PNC/2012/page_100.pdf-3,"add(table_sum(private investors (a), none), table_sum(private investors (a), none))",,0,,0,0
+ETR/2004/page_239.pdf-4,"subtract(380.2, 426.6), divide(#0, 426.6), multiply(#1, const_100)","subtract(380.2, 426.6), divide(#0, 426.6), multiply(#1, const_100)",1,-10.8767,0,0
+AAL/2014/page_15.pdf-4,"divide(table_sum(flight attendants, total), table_sum(pilots, total))","table_sum(flight attendants, total), table_sum(pilots, total)",1,32400.0,0,0
+GS/2017/page_179.pdf-2,"subtract(2.90, 2.60), multiply(#1, const_100)","subtract(2.90, 2.60), multiply(#1, const_100)",0,,0,0
+RSG/2010/page_57.pdf-2,"divide(86.1, 64.5)","divide(86.1, 64.5)",1,1.33488,1,1
+HIG/2011/page_53.pdf-2,"substitute(367, 320)",,0,,0,0
+ABMD/2012/page_79.pdf-1,"sum(2.2, 2.7, 1.6)",,0,,0,0
+LMT/2014/page_91.pdf-1,"table_average(qualified defined benefit pension plans, none)","table_average(qualified defined benefit pension plans, none)",1,4103.33333,0,0
+ETR/2013/page_21.pdf-1,"subtract(2045, 1854), divide(#0, 2045), multiply(#1, const_100)","subtract(2045, 1854), divide(#0, 2045), multiply(#1, const_100)",1,9.33985,0,0
+UPS/2012/page_32.pdf-3,"divide(subtract(const_100, 63), subtract(const_100, 100))","subtract(const_100, 63), subtract(const_100, 100)",1,0.0,0,0
+GRMN/2008/page_85.pdf-2,"subtract(table_sum(balance at beginning of year of december 27 2007, table_sum(balance at beginning of year of december 27 2008)), table_sum(balance at beginning of year of december 29 2007, table_sum(balance at beginning of year of december 27 2008)))","table_sum(balance at beginning of year of december 27 2008), table_sum(balance at beginning of year of december 27 2008)",0,,0,0
+FIS/2012/page_48.pdf-2,"subtract(90.3, 90.0), divide(#0, 90.0), multiply(#1, const_100)","subtract(90.3, 90.0), divide(#0, 90.0), multiply(#1, const_100)",1,0.33333,0,0
+DG/2005/page_44.pdf-3,"subtract(6.3, 5.8), multiply(#1, const_100)","subtract(6.3, 5.8), multiply(#1, const_100)",0,,0,0
+AWK/2012/page_117.pdf-1,"add(74360, 46961), multiply(#1, const_1000)","add(74360, 46961), multiply(#1, const_1000)",0,,0,0
+ILMN/2003/page_58.pdf-2,"divide(fact(nasdaq composite index of december 29 2000), fact(nasdaq pharmaceutical index of december 29 2000))",,0,,0,0
+SNA/2018/page_31.pdf-2,"multiply(#1, #2)","multiply(#1, #2)",0,,0,0
+PNC/2007/page_92.pdf-1,"divide(#1, 14400), multiply(#1, const_100)","divide(#1, 14400), multiply(#1, const_100)",0,,0,0
+AAPL/2005/page_43.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+RSG/2016/page_139.pdf-2,"divide(#3, 139941), multiply(#1, const_100)","divide(#3, 139941), multiply(#1, const_100)",0,,0,0
+UAA/2016/page_42.pdf-4,"substract(table_average(working capital ( 1 ), 2015), table_average(working capital ( 1 ), 2016)), divide(#0, table_average(working capital ( 1 ), 2015))",,0,,0,0
+STT/2009/page_127.pdf-1,"substitute(5576208, 53.8)",,0,,0,0
+MS/2013/page_132.pdf-2,"multiply(33, const_0.01)","multiply(33, const_0.01)",1,0.33,0,0
+AAL/2014/page_15.pdf-2,"divide(table_sum(passenger service personnel, total), table_sum(fleet service personnel, total)) * 100","table_sum(passenger service personnel, total), table_sum(fleet service personnel, total)",1,34600.0,0,0
+MRO/2004/page_125.pdf-1,"table_average(beginning of year, 2002)","table_average(beginning of year, 2002)",1,4886.0,0,0
+DRE/2002/page_15.pdf-4,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+JPM/2014/page_70.pdf-1,"divide(43319, 96606), multiply(#1, const_100)","divide(43319, 96606), multiply(#1, const_100)",0,,0,0
+SNA/2007/page_49.pdf-3,"divide(add(1098000000, 321000000), 2616618+912100), multiply(#1, const_100)","add(1098000000, 321000000), multiply(#1, const_100)",0,,0,0
+SNA/2007/page_29.pdf-2,"divide(add(198.05, 100), add(146.97, 100)), multiply(#1, const_100)","add(198.05, 100), add(146.97, 100), multiply(#1, const_100)",1,24697.0,0,0
+APD/2018/page_30.pdf-2,"subtract(3.71, 4.25), multiply(#1, const_100)","subtract(3.71, 4.25), multiply(#1, const_100)",0,,0,0
+ETR/2011/page_301.pdf-2,"subtract(63003, 50131), subtract(11589, 23596)","subtract(63003, 50131), subtract(11589, 23596)",1,-12007.0,0,0
+BLL/2011/page_32.pdf-2,"table_average(net sales, none)","table_average(net sales, none)",1,7657.1,1,1
+JPM/2010/page_120.pdf-2,"substract(table_average(loans retained, 2009), table_average(loans retained, 2010)), divide(#0, table_average(loans retained, 2009))","table_average(loans retained, 2009), table_average(loans retained, 2010), table_average(loans retained, 2009)",1,108664.0,0,0
+UPS/2012/page_32.pdf-1,"subtract(100, 121.46), divide(#0, 100), multiply(#1, const_100)","subtract(100, 121.46), divide(#0, 100), multiply(#1, const_100)",1,-21.46,0,0
+GS/2017/page_179.pdf-1,"subtract(2.60, 2.55), multiply(#1, const_100)","subtract(2.60, 2.55), multiply(#1, const_100)",0,,0,0
+BLL/2010/page_35.pdf-1,"divide(#3, 1000)","divide(#3, 1000)",0,,0,0
+JPM/2012/page_140.pdf-2,"substract(table_average(loans retained, 2011), table_average(loans retained, 2012)), divide(#0, table_average(loans retained, 2011))","table_average(loans retained, 2011), table_average(loans retained, 2012), table_average(loans retained, 2011)",1,147112.25,0,0
+MRO/2013/page_39.pdf-1,"greater(const_76, const_63)","greater(const_76, const_63)",1,yes,1,0
+SLG/2001/page_48.pdf-1,"less(-4096, 891)",,0,,0,0
+MSI/2007/page_70.pdf-3,"subtract(5038, 5400), divide(#0, 5400), multiply(#1, const_100)","subtract(5038, 5400), divide(#0, 5400), multiply(#1, const_100)",1,-6.7037,0,0
+PPG/2018/page_85.pdf-1,"greater(table_sum(environmental reserves, 2018), table_sum(asbestos-related claim reserves, 2018))","table_sum(environmental reserves, 2018), table_sum(asbestos-related claim reserves, 2018)",0,,0,0
+PPG/2012/page_29.pdf-1,"sum(358, 355, 360)",,0,,0,0
+GS/2012/page_142.pdf-3,"substract(29002, 24296), divide(#0, 29002), multiply(#1, const_100)","divide(#0, 29002), multiply(#1, const_100)",0,,0,0
+CME/2017/page_89.pdf-1,"subtract(32.9, 35), multiply(#1, const_100)","subtract(32.9, 35), multiply(#1, const_100)",0,,0,0
+CME/2017/page_89.pdf-2,"subtract(36.3, 32.9)","subtract(36.3, 32.9)",1,3.4,0,0
+AON/2007/page_171.pdf-4,"substract(24, 15), divide(#0, 15), multiply(#1, const_100)","divide(#0, 15), multiply(#1, const_100)",0,,0,0
+ETR/2015/page_17.pdf-1,"substract(5829, 5735), divide(#0, 5735), multiply(#1, const_100)","divide(#0, 5735), multiply(#1, const_100)",0,,0,0
+GS/2012/page_142.pdf-1,"subtract(27885, 35066), divide(#0, 35066), multiply(#1, const_100)","subtract(27885, 35066), divide(#0, 35066), multiply(#1, const_100)",1,-20.47853,0,0
+LMT/2012/page_73.pdf-1,"divide(#3, #2), divide(#4, #3)","divide(#3, #2), divide(#4, #3)",0,,0,0
+MS/2013/page_139.pdf-2,"table_sum(industry the sovereign governments of otc derivative products ( 1 ), industry the regional governments of otc derivative products ( 1 ))",,0,,0,0
+ILMN/2008/page_86.pdf-1,"subtract(23778, 21376), divide(#0, 21376), multiply(#1, const_100)","subtract(23778, 21376), divide(#0, 21376), multiply(#1, const_100)",1,11.2369,0,0
+GS/2017/page_86.pdf-3,"subtract(1270173, 1341016), multiply(#1, const_1000)","subtract(1270173, 1341016), multiply(#1, const_1000)",0,,0,0
+EL/2008/page_59.pdf-2,"divide(#3, #6), multiply(#1, const_100)","divide(#3, #6), multiply(#1, const_100)",0,,0,0
+CE/2016/page_19.pdf-4,"subtract(119, 86), divide(#0, 86), multiply(#1, const_100)","subtract(119, 86), divide(#0, 86), multiply(#1, const_100)",1,38.37209,0,0
+JKHY/2019/page_18.pdf-1,"subtract(177.26, 151.16), divide(#0, 151.16), multiply(#1, const_100)","subtract(177.26, 151.16), divide(#0, 151.16), multiply(#1, const_100)",1,17.26647,0,0
+SNA/2007/page_69.pdf-2,"subtract(-17.3, -16.8), divide(#0, -3.7), multiply(#1, const_100)","subtract(-17.3, -16.8), divide(#0, -3.7), multiply(#1, const_100)",1,13.51351,0,0
+L/2009/page_84.pdf-2,"subtract(spx_2008, spx_2007), divide(#0, spx_2007), multiply(#1, const_100)","subtract(spx_2008, spx_2007), divide(#0, spx_2007), multiply(#1, const_100)",0,,0,0
+FBHS/2017/page_22.pdf-2,"multiply(5283.3, const_15)","multiply(5283.3, const_15)",1,79249.5,0,0
+IPG/2006/page_77.pdf-1,"subtract(258.6, 1.4), multiply(#0, const_100)","subtract(258.6, 1.4), multiply(#0, const_100)",1,25720.0,0,0
+AAL/2015/page_114.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+AMT/2014/page_149.pdf-1,"subtract(15.9, 11.2), multiply(#1, const_1000)","subtract(15.9, 11.2), multiply(#1, const_1000)",0,,0,0
+C/2009/page_63.pdf-4,"divide(table_sum(long-term debt obligations ( 1 ), 2011), table_sum(total of contractual obligations, 2011)) * 100","table_sum(total of contractual obligations, 2011)",0,,0,0
+GS/2014/page_40.pdf-2,"subtract(22469, 22956), divide(#0, 22469), multiply(#1, const_100)","subtract(22469, 22956), divide(#0, 22469), multiply(#1, const_100)",1,-2.16743,0,0
+HOLX/2008/page_143.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+ALXN/2016/page_153.pdf-1,"add(150, 175)","add(150, 175)",1,325.0,0,0
+MRK/2013/page_3.pdf-2,"substract(47267, 44033), divide(#0, 44033), multiply(#1, const_100)","divide(#0, 44033), multiply(#1, const_100)",0,,0,0
+RL/2008/page_23.pdf-2,"divide(location(factory retail stores, 4), location(total, 158)) * 100",,0,,0,0
+AAL/2010/page_72.pdf-4,"subtract(708, 736), divide(#0, 736), multiply(#1, const_100)","subtract(708, 736), divide(#0, 736), multiply(#1, const_100)",1,-3.80435,0,0
+ZBH/2008/page_57.pdf-3,"divide(table_sum(total contractual obligations, 2014 and thereafter), table_sum(total contractual obligations, all))","table_sum(total contractual obligations, 2014 and thereafter), table_sum(total contractual obligations, all)",1,2040.2,0,0
+AMT/2016/page_125.pdf-4,"table_average(penalties and tax-related interest expense, none)","table_average(penalties and tax-related interest expense, none)",0,,0,0
+DISCA/2011/page_49.pdf-2,"divide(table_sum(disck, none), table_sum(discb, none))","table_sum(disck, none), table_sum(discb, none)",1,684.86,0,0
+AES/2001/page_85.pdf-4,"divide(1819, 22258), multiply(#1, const_100)","divide(1819, 22258), multiply(#1, const_100)",0,,0,0
+ETR/2017/page_143.pdf-3,"multiply(760000, const_1000)","multiply(760000, const_1000)",1,760000000.0,0,0
+MSI/2014/page_76.pdf-2,"subtract(1.5, 1.4), multiply(#1, const_100)","subtract(1.5, 1.4), multiply(#1, const_100)",0,,0,0
+BLK/2017/page_121.pdf-2,"divide(-27, 999), multiply(#1, const_100)","divide(-27, 999), multiply(#1, const_100)",0,,0,0
+UPS/2016/page_114.pdf-1,"subtract(68, 74), multiply(#1, const_1000)","subtract(68, 74), multiply(#1, const_1000)",0,,0,0
+AMT/2003/page_27.pdf-1,"divide(30000, const_10000)","divide(30000, const_10000)",1,3.0,0,0
+CE/2013/page_16.pdf-2,"subtract(92, 83), divide(#0, 83), multiply(#1, const_100)","subtract(92, 83), divide(#0, 83), multiply(#1, const_100)",1,10.84337,0,0
+MKTX/2012/page_42.pdf-3,"subtract(29.26, 19.78)","subtract(29.26, 19.78)",1,9.48,0,0
+PNC/2012/page_174.pdf-4,"subtract(587, 580), multiply(#0, const_1000)","subtract(587, 580), multiply(#0, const_1000)",1,7000.0,0,0
+PPG/2008/page_52.pdf-2,"subtract(89, 88), divide(#0, 110), multiply(#1, const_100)","subtract(89, 88), divide(#0, 110), multiply(#1, const_100)",1,0.90909,0,0
+ADBE/1999/page_64.pdf-2,"divide(0.4, 0.3)","divide(0.4, 0.3)",1,1.33333,0,0
+IPG/2006/page_77.pdf-3,"subtract(2251.2, 240.9), divide(#0, 2251.2), multiply(#1, const_100)","subtract(2251.2, 240.9), divide(#0, 2251.2), multiply(#1, const_100)",1,89.29904,0,0
+RSG/2012/page_93.pdf-2,"subtract(29.7, 21.0), divide(#0, 21.0), multiply(#1, const_100)","subtract(29.7, 21.0), divide(#0, 21.0), multiply(#1, const_100)",1,41.42857,0,0
+JPM/2018/page_90.pdf-3,"multiply(2229188, const_1000000)","multiply(2229188, const_1000000)",1,2229188000000.0,0,0
+BKNG/2016/page_33.pdf-3,"substract(table_average(nasdaqcomposite index, 2011), table_average(nasdaqcomposite index, 2016)), divide(#0, table_average(nasdaqcomposite index, 2011))","table_average(nasdaqcomposite index, 2011), table_average(nasdaqcomposite index, 2016), table_average(nasdaqcomposite index, 2011)",0,,0,0
+PNC/2012/page_68.pdf-5,"divide(table_sum(commercial mortgages at fair value, none), table_sum(total commercial mortgages, none)) * 100","table_sum(commercial mortgages at fair value, none), table_sum(total commercial mortgages, none)",1,2686.0,0,0
+C/2009/page_63.pdf-2,"divide(table_sum(long-term debt obligations ( 1 ), 2010), table_sum(total of contractual obligations, 2010)) * 100","table_sum(total of contractual obligations, 2010)",0,,0,0
+CB/2008/page_229.pdf-3,"divide(table_average(statutory net income, 2008), table_average(statutory capital and surplus, 2008))","table_average(statutory net income, 2008), table_average(statutory capital and surplus, 2008)",1,6379.0,0,0
+HIG/2011/page_53.pdf-4,"subtract(39, 367), divide(#0, 367), multiply(#1, const_100)","subtract(39, 367), divide(#0, 367), multiply(#1, const_100)",1,-89.3733,0,0
+BLL/2006/page_67.pdf-1,"divide(table_sum(current assets, u.s. can ( metal food & household products packaging americas ), table_sum(current assets, alcan ( plastic packaging americas ))), table_sum(net assets acquired, u.s. can ( metal food & household products packaging americas ), table_sum(net assets acquired, alcan ( plastic packaging americas))))",,0,,0,0
+GS/2013/page_63.pdf-3,"subtract(#2, #1), multiply(#1, const_1000000)","subtract(#2, #1), multiply(#1, const_1000000)",0,,0,0
+C/2008/page_22.pdf-3,"divide(59, 96), multiply(#1, const_100)","divide(59, 96), multiply(#1, const_100)",0,,0,0
+HIG/2004/page_140.pdf-2,"add(const_1, const_2), add(const_3, const_4)","add(const_1, const_2), add(const_3, const_4)",1,7.0,0,0
+FIS/2016/page_9.pdf-1,"divide(const_100, 100), multiply(divide(table_average(gfs, 2014), table_average(gfs, 2015)), const_100)","divide(const_100, 100), table_average(gfs, 2014), table_average(gfs, 2015)",1,2936.0,0,0
+C/2008/page_22.pdf-1,"divide(#1, const_100)","divide(#1, const_100)",0,,0,0
+TMUS/2017/page_29.pdf-1,"divide(sum(fact_switching_centers_of_approximate_size_in_square_feet), fact_switching_centers_of_approximate_number)",,0,,0,0
+GPN/2010/page_89.pdf-1,"substract(762, 518), divide(#0, 518), multiply(#1, const_100)","divide(#0, 518), multiply(#1, const_100)",0,,0,0
+BLL/2010/page_37.pdf-4,"add(559.7, 250)","add(559.7, 250)",1,809.7,0,0
+HOLX/2007/page_126.pdf-1,"add(17000, 73200)","add(17000, 73200)",1,90200.0,0,0
+GS/2013/page_149.pdf-1,"subtract(27885, 22176), divide(#0, 22176), multiply(#1, const_100)","subtract(27885, 22176), divide(#0, 22176), multiply(#1, const_100)",1,25.74405,0,0
+AWK/2012/page_117.pdf-3,"subtract(158578, 118314), multiply(#0, const_1000)","subtract(158578, 118314), multiply(#0, const_1000)",1,40264000.0,0,0
+CDNS/2015/page_30.pdf-1,"subtract(nasdaq composite of 1/1/2011, nasdaq composite of 1/2/2010), divide(#0, 100), multiply(#1, const_100)","subtract(nasdaq composite of 1/1/2011, nasdaq composite of 1/2/2010), divide(#0, 100), multiply(#1, const_100)",0,,0,0
+AAL/2014/page_15.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+DRE/2008/page_46.pdf-4,"substract(33.1, 22.7), divide(#0, 22.7), multiply(#1, const_100)","divide(#0, 22.7), multiply(#1, const_100)",0,,0,0
+INTC/2015/page_41.pdf-3,"divide(17.2, 56.0), multiply(#1, const_100)","divide(17.2, 56.0), multiply(#1, const_100)",0,,0,0
+BLK/2014/page_120.pdf-1,"divide(#0, 105), multiply(#1, const_100)","divide(#0, 105), multiply(#1, const_100)",0,,0,0
+GS/2013/page_85.pdf-3,"divide(46984, 172095), multiply(#1, const_100)","divide(46984, 172095), multiply(#1, const_100)",0,,0,0
+C/2018/page_175.pdf-1,"subtract(5301, 4229), divide(#0, 4229), multiply(#1, const_100)","subtract(5301, 4229), divide(#0, 4229), multiply(#1, const_100)",1,25.34878,0,0
+GS/2012/page_189.pdf-4,"substract(112824, 109669), divide(#0, 109669), multiply(#1, const_100)","divide(#0, 109669), multiply(#1, const_100)",0,,0,0
+CMCSA/2015/page_112.pdf-1,"subtract(1701, 1171), subtract(-141, -220)","subtract(1701, 1171), subtract(-141, -220)",1,79.0,0,0
+GIS/2019/page_68.pdf-2,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+LMT/2014/page_91.pdf-4,"divide(table_sum(retiree medical and life insurance plans of 2015, retired medical and life insurance plans of 2016), table_sum(qualified defined benefit pension plans of 2015, qualified defined benefit pension plans of 2016))","table_sum(retiree medical and life insurance plans of 2015, retired medical and life insurance plans of 2016), table_sum(qualified defined benefit pension plans of 2015, qualified defined benefit pension plans of 2016)",0,,0,0
+D/2002/page_87.pdf-1,"add(599, 311, 253, 205, 89, 215), add(34, 23, 13), multiply(#1, #2, const_1000000)","add(599, 311, 253, 205, 89, 215), add(34, 23, 13), multiply(#1, #2, const_1000000)",0,,0,0
+IP/2006/page_30.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+MMM/2013/page_75.pdf-1,"divide(#3, #1), divide(#2, #1)","divide(#3, #1), divide(#2, #1)",0,,0,0
+AAL/2013/page_172.pdf-3,"divide(849, 5424), multiply(#1, const_100)","divide(849, 5424), multiply(#1, const_100)",0,,0,0
+AMT/2007/page_127.pdf-4,"substract(9.09, 6.79), divide(#0, 6.79)","divide(#0, 6.79)",0,,0,0
+SLB/2012/page_56.pdf-2,"subtract(-27, -37), subtract(-37, -14)","subtract(-27, -37), subtract(-37, -14)",1,-23.0,0,0
+LMT/2015/page_89.pdf-3,"subtract(10.79, 11.24), multiply(#1, const_100)","subtract(10.79, 11.24), multiply(#1, const_100)",0,,0,0
+AES/2002/page_128.pdf-4,"table_average(rental expense, 2000..2002)","table_average(rental expense, 2000..2002)",0,,0,0
+VRTX/2006/page_111.pdf-2,"divide(19733, 213520), multiply(#1, const_100)","divide(19733, 213520), multiply(#1, const_100)",0,,0,0
+AON/2007/page_171.pdf-3,"table_average(net unrealized investment gains, none)","table_average(net unrealized investment gains, none)",1,67.0,1,1
+ETFC/2011/page_144.pdf-1,"divide(table_sum(maturity date = 2037, face value), table_sum(maturity date = 2033, face value))","table_sum(maturity date = 2037, face value), table_sum(maturity date = 2033, face value)",0,,0,0
+AES/2001/page_33.pdf-3,"table_average(high, low)","table_average(high, low)",0,,0,0
+DRE/2008/page_46.pdf-3,"table_average(basic net income available for common shareholders, none)","table_average(basic net income available for common shareholders, none)",1,139801.0,0,0
+DVN/2014/page_87.pdf-2,"multiply(#3, const_1000000)","multiply(#3, const_1000000)",0,,0,0
+AMT/2016/page_49.pdf-4,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+AMT/2007/page_127.pdf-1,"subtract(9.09, 5.15), divide(#0, 9.09)","subtract(9.09, 5.15), divide(#0, 9.09)",1,0.43344,0,0
+VNO/2014/page_57.pdf-2,"subtract(100, 115), subtract(115, 117), subtract(117, 136), subtract(136, 180), subtract(180, 205)","subtract(100, 115), subtract(115, 117), subtract(117, 136), subtract(136, 180), subtract(180, 205)",1,-25.0,0,0
+AMT/2008/page_94.pdf-1,"divide(1962822, 601000000), multiply(#1, const_100)","divide(1962822, 601000000), multiply(#1, const_100)",0,,0,0
+PNC/2015/page_93.pdf-1,"divide(8124, 7975), multiply(#1, const_100)","divide(8124, 7975), multiply(#1, const_100)",0,,0,0
+IPG/2017/page_92.pdf-4,"divide(table_sum(deferred acquisition payments, none), table_sum(total contingent acquisition payments, none))","table_sum(deferred acquisition payments, none), table_sum(total contingent acquisition payments, none)",1,536.8,0,0
+ETR/2004/page_281.pdf-2,"divide(#3, 19064), multiply(#1, const_100)","divide(#3, 19064), multiply(#1, const_100)",0,,0,0
+ETFC/2012/page_43.pdf-2,"substract(-5.7, -14.9), divide(#0, -5.7), multiply(#1, const_100)","divide(#0, -5.7), multiply(#1, const_100)",0,,0,0
+AAL/2013/page_172.pdf-2,"divide(#2, #1)","divide(#2, #1)",0,,0,0
+DISH/2011/page_122.pdf-1,"subtract(107061, 17826), subtract(233584, #0)","subtract(107061, 17826), subtract(233584, #0)",1,144349.0,0,0
+MSI/2012/page_87.pdf-3,"divide(30.56, 2.2)","divide(30.56, 2.2)",1,13.89091,0,0
+MSI/2008/page_69.pdf-3,"divide(table_average(operating earnings ( loss ), 2006), table_average(segment net sales, 2006)) * 100","table_average(segment net sales, 2006)",0,,0,0
+FIS/2016/page_9.pdf-2,"divide(4566, 3846), subtract(const_1, 1), multiply(#1, const_100)","divide(4566, 3846), subtract(const_1, 1), multiply(#1, const_100)",1,0.0,0,0
+ADBE/2008/page_74.pdf-4,"divide(#3, const_5)","divide(#3, const_5)",0,,0,0
+MRO/2003/page_45.pdf-1,"add(1357, 1318, 1304), multiply(#0, const_1000000)","add(1357, 1318, 1304), multiply(#0, const_1000000)",0,,0,0
+AAPL/2006/page_100.pdf-2,"substitute(480, 2005)",,0,,0,0
+RSG/2016/page_139.pdf-1,"subtract(#2, #1), divide(#0, #1), multiply(#1, const_100)","subtract(#2, #1), divide(#0, #1), multiply(#1, const_100)",0,,0,0
+RSG/2013/page_123.pdf-2,"subtract(5.35, 5.27), multiply(#1, const_100)","subtract(5.35, 5.27), multiply(#1, const_100)",0,,0,0
+UNP/2009/page_42.pdf-2,"add(table_sum(capital lease obligations [b], payments due by december 31 2010), table_sum(capital lease obligations [b], payments due by december 31 2011), table_sum(capital lease obligations [b], payments due by december 31 2012), table_sum(capital lease obligations [b], payments due by december 31 2013), table_sum(capital lease obligations [","table_sum(capital lease obligations [b], payments due by december 31 2010), table_sum(capital lease obligations [b], payments due by december 31 2011), table_sum(capital lease obligations [b], payments due by december 31 2012), table_sum(capital lease obligations [b], payments due by december 31 2013)",0,,0,0
+AMT/2016/page_125.pdf-2,"subtract(31947, 28114), divide(#0, 32545), multiply(#1, const_100)","subtract(31947, 28114), divide(#0, 32545), multiply(#1, const_100)",1,11.77754,0,0
+AMT/2014/page_149.pdf-2,"subtract(-4934, -2249), divide(#0, const_1000000)","subtract(-4934, -2249), divide(#0, const_1000000)",1,-0.00268,0,0
+AAPL/2006/page_131.pdf-1,"add(149768, 450000)","add(149768, 450000)",1,599768.0,1,1
+C/2015/page_96.pdf-3,"subtract(368.6, 355.6), subtract(44.0, 42.0)","subtract(368.6, 355.6), subtract(44.0, 42.0)",1,2.0,0,0
+AON/2018/page_87.pdf-3,"table_average(2019s liability for uncertain tax positions, none)","table_average(2019s liability for uncertain tax positions, none)",0,,0,0
+DVN/2014/page_87.pdf-1,"divide(#0, 11257), multiply(#1, const_100)","divide(#0, 11257), multiply(#1, const_100)",0,,0,0
+GIS/2018/page_110.pdf-1,"add(540.8, 167.3)","add(540.8, 167.3)",1,708.1,1,1
+UNP/2006/page_15.pdf-1,"divide(26466, add(27318, 5021)), multiply(#1, const_100)","add(27318, 5021), multiply(#1, const_100)",0,,0,0
+C/2018/page_175.pdf-2,"divide(5186, 9062), multiply(#1, const_100)","divide(5186, 9062), multiply(#1, const_100)",0,,0,0
+ANSS/2012/page_93.pdf-1,"divide(#1, 798018), multiply(#1, const_100)","divide(#1, 798018), multiply(#1, const_100)",0,,0,0
+STT/2011/page_69.pdf-1,"divide(#3, 400), multiply(#1, const_100)","divide(#3, 400), multiply(#1, const_100)",0,,0,0
+AES/2001/page_85.pdf-2,"multiply(200, 7.375)","multiply(200, 7.375)",1,1475.0,0,0
+LMT/2014/page_91.pdf-3,"subtract(200, 190), multiply(#1, const_1000)","subtract(200, 190), multiply(#1, const_1000)",0,,0,0
+GIS/2017/page_31.pdf-4,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+HUM/2017/page_118.pdf-1,"subtract(93, 77), divide(#0, 77), multiply(#1, const_100)","subtract(93, 77), divide(#0, 77), multiply(#1, const_100)",1,20.77922,0,0
+ABMD/2006/page_43.pdf-1,"divide(table_sum(operating lease obligations of payments due by fiscal year, none), table_sum(total obligations of payments due by fiscal year, none))","table_sum(operating lease obligations of payments due by fiscal year, none), table_sum(total obligations of payments due by fiscal year, none)",0,,0,0
+ANET/2015/page_156.pdf-1,"divide(#0, 439000000), greater(#1, 23629)","divide(#0, 439000000), greater(#1, 23629)",0,,0,0
+MRO/2006/page_93.pdf-3,"subtract(711, 527), divide(#0, 527), multiply(#1, const_100)","subtract(711, 527), divide(#0, 527), multiply(#1, const_100)",1,34.91461,0,0
+AES/2010/page_227.pdf-1,"divide(#0, 4612), multiply(#1, const_100)","divide(#0, 4612), multiply(#1, const_100)",0,,0,0
+BLL/2010/page_35.pdf-2,"substract(#3, #2), divide(#1, #2), multiply(#3, const_100)","divide(#1, #2), multiply(#3, const_100)",0,,0,0
+NCLH/2018/page_97.pdf-1,"subtract(37.2, 31.9), divide(#0, 31.9), multiply(#1, const_100)","subtract(37.2, 31.9), divide(#0, 31.9), multiply(#1, const_100)",1,16.61442,0,0
+GS/2015/page_171.pdf-1,"subtract(88215, 86069), divide(#0, 86069), multiply(#1, const_100)","subtract(88215, 86069), divide(#0, 86069), multiply(#1, const_100)",1,2.49335,0,0
+ETR/2003/page_157.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+CME/2010/page_123.pdf-5,"add(a, b), multiply(#1, const_1000000)","add(a, b), multiply(#1, const_1000000)",0,,0,0
+RSG/2012/page_93.pdf-1,"subtract(45.3, 48.1), subtract(50.9, 55.2)","subtract(45.3, 48.1), subtract(50.9, 55.2)",1,-4.3,0,0
+C/2009/page_197.pdf-1,"subtract(8700000000, 9600000000), divide(#0, 9600000000)","subtract(8700000000, 9600000000), divide(#0, 9600000000)",1,-0.09375,0,0
+JPM/2008/page_117.pdf-2,"subtract(38, 32), multiply(#0, const_100)","subtract(38, 32), multiply(#0, const_100)",1,600.0,0,0
+EMR/2017/page_78.pdf-2,"multiply(#3, const_1000)","multiply(#3, const_1000)",0,,0,0
+FIS/2012/page_48.pdf-4,"subtract(9.0, const_1000)","subtract(9.0, const_1000)",1,-991.0,0,0
+MRO/2011/page_108.pdf-2,"add(1899, 2546, 2786), add(1349, 2153, 3773), add(#0, #1, #2)","add(1899, 2546, 2786), add(1349, 2153, 3773), add(#0, #1, #2)",0,,0,0
+PNC/2012/page_174.pdf-2,"subtract(587, 580), multiply(#0, const_1000)","subtract(587, 580), multiply(#0, const_1000)",1,7000.0,0,0
+MAS/2012/page_26.pdf-2,"subtract(63.45, 60.6), divide(#0, 60.6), multiply(#1, const_100)","subtract(63.45, 60.6), divide(#0, 60.6), multiply(#1, const_100)",1,4.70297,0,0
+UPS/2007/page_49.pdf-4,"divide(101, 3465), multiply(#1, const_100)","divide(101, 3465), multiply(#1, const_100)",0,,0,0
+UNP/2011/page_33.pdf-2,"substract(5%, 10%), substract(9%, 9%)",,0,,0,0
+UPS/2007/page_49.pdf-2,"divide(table_sum(capital leases, none), table_sum(total, none))","table_sum(capital leases, none), table_sum(total, none)",0,,0,0
+MRO/2003/page_84.pdf-2,"divide(-57, -41), multiply(#1, const_100)","divide(-57, -41), multiply(#1, const_100)",0,,0,0
+PPG/2018/page_85.pdf-2,"substract(151, 136), divide(#0, 136), multiply(#1, const_100)","divide(#0, 136), multiply(#1, const_100)",0,,0,0
+UPS/2007/page_49.pdf-3,"divide(table_sum(operating leases, 2018), table_sum(total, 2018))","table_sum(operating leases, 2018), table_sum(total, 2018)",0,,0,0
+UNP/2009/page_42.pdf-1,"divide(#0, 44)","divide(#0, 44)",0,,0,0
+ECL/2017/page_79.pdf-2,"divide(511.7, 798.3)","divide(511.7, 798.3)",1,0.64099,0,0
+LMT/2012/page_73.pdf-4,"substract(table_average(weighted average common shares outstanding, none)(2012), table_average(weighted average common shares outstanding, none)(2011)), divide(#0, table_average(weighted average common shares outstanding, none)(2011))","table_average(weighted average common shares outstanding, none), table_average(weighted average common shares outstanding, none), table_average(weighted average common shares outstanding, none)",0,,0,0
+MO/2014/page_62.pdf-1,"substract(5058, 4523), divide(#0, 4523), multiply(#1, const_100)","divide(#0, 4523), multiply(#1, const_100)",0,,0,0
+ECL/2017/page_69.pdf-2,"subtract(table_sum(other, 2017), table_sum(other, 2016)), divide(#0, table_sum(other, 2016))","table_sum(other, 2017), table_sum(other, 2016), table_sum(other, 2016)",0,,0,0
+MRO/2017/page_96.pdf-4,"subtract(const_8_25, const_8_00)","subtract(const_8_25, const_8_00)",1,25.0,0,0
+JPM/2018/page_90.pdf-2,"subtract(51410, 46780), subtract(47292, 40958)","subtract(51410, 46780), subtract(47292, 40958)",1,6334.0,0,0
+ETR/2004/page_239.pdf-1,"subtract(426.6, 380.2), divide(#0, 380.2), multiply(#1, const_100)","subtract(426.6, 380.2), divide(#0, 380.2), multiply(#1, const_100)",1,12.2041,0,0
+AMT/2012/page_50.pdf-4,"add(46000000, 125610000)","add(46000000, 125610000)",1,171610000.0,0,0
+AAL/2013/page_18.pdf-1,"subtract(8959, 8717), divide(#0, 8717), multiply(#1, const_100)","subtract(8959, 8717), divide(#0, 8717), multiply(#1, const_100)",1,2.77618,0,0
+JPM/2010/page_281.pdf-1,"divide(#1, 214.8), multiply(#1, const_100)","divide(#1, 214.8), multiply(#1, const_100)",0,,0,0
+LMT/2012/page_73.pdf-2,"substract(368.3, 364.2), divide(#0, 364.2), multiply(#1, const_100)","divide(#0, 364.2), multiply(#1, const_100)",0,,0,0
+AMT/2008/page_107.pdf-3,"subtract(20963, 7327), subtract(-12389, -6110), subtract(-1743, -304), subtract(284, 1901), subtract(71, 0)","subtract(20963, 7327), subtract(-12389, -6110), subtract(-1743, -304), subtract(284, 1901), subtract(71, 0)",1,71.0,0,0
+KHC/2018/page_132.pdf-1,"subtract(1214, 2014), add(1214, 2014), subtract(1219, 2019), add(1219, 2019), subtract(1224, 2024), add(1224, 2024)","subtract(1214, 2014), add(1214, 2014), subtract(1219, 2019), add(1219, 2019), subtract(1224, 2024), add(1224, 2024)",1,3248.0,0,0
+AES/2002/page_128.pdf-1,"divide(#3, #4), multiply(#1, const_100)","divide(#3, #4), multiply(#1, const_100)",0,,0,0
+PKG/2002/page_52.pdf-2,"add(6478443, 6474102), multiply(#0, const_1000000)","add(6478443, 6474102), multiply(#0, const_1000000)",1,12952545000000.0,0,0
+DISH/2010/page_117.pdf-2,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+AAPL/2006/page_100.pdf-4,"min(effective tax rate, none)",,0,,0,0
+SLG/2011/page_91.pdf-6,"divide(#0, 2728290), multiply(#1, const_100)","divide(#0, 2728290), multiply(#1, const_100)",0,,0,0
+DRE/2007/page_56.pdf-3,"table_average(basic net income available for common shareholders, 2005)","table_average(basic net income available for common shareholders, 2005)",1,223990.0,1,0
+MRK/2013/page_125.pdf-2,"table_average(settlements, none)","table_average(settlements, none)",1,-309.66667,1,1
+ZBH/2007/page_67.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+ETR/2016/page_374.pdf-4,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+CME/2010/page_123.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+UAA/2016/page_42.pdf-1,"divide(table_sum(total debt including current maturities, none), table_sum(stockholders' equity, none))","table_sum(total debt including current maturities, none), table_sum(stockholders' equity, none)",0,,0,0
+GPN/2018/page_94.pdf-2,"multiply(108.51, const_1000)","multiply(108.51, const_1000)",1,108510.0,0,0
+BLL/2011/page_32.pdf-1,"substract(8630.9, 7630), divide(#0, 7630), multiply(#1, const_100)","divide(#0, 7630), multiply(#1, const_100)",0,,0,0
+ETR/2011/page_17.pdf-1,"substract(4904, 5051), divide(#0, 5051), multiply(#1, const_100)","divide(#0, 5051), multiply(#1, const_100)",0,,0,0
+AAL/2013/page_18.pdf-4,"multiply(#3, #4)","multiply(#3, #4)",0,,0,0
+DG/2007/page_67.pdf-2,"sum(0.2, 9.4, 0.6)",,0,,0,0
+ADI/2010/page_80.pdf-1,"substract(1840, 1730), divide(#0, 1730)","divide(#0, 1730)",0,,0,0
+SNA/2007/page_49.pdf-2,"divide(#1, #2), multiply(#3, const_100)","divide(#1, #2), multiply(#3, const_100)",0,,0,0
+AAL/2014/page_15.pdf-3,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+CME/2010/page_69.pdf-4,"divide(750.0, const_1000)","divide(750.0, const_1000)",1,0.75,0,0
+AMT/2016/page_125.pdf-3,"subtract(31947, 28114), subtract(-5371, -307)","subtract(31947, 28114), subtract(-5371, -307)",1,-5064.0,0,0
+HWM/2015/page_173.pdf-2,"divide(-8, 8), multiply(#1, const_100)","divide(-8, 8), multiply(#1, const_100)",0,,0,0
+BKNG/2016/page_33.pdf-4,"subtract(272.59, 100.00), divide(#0, 100.00), multiply(#1, const_100)","subtract(272.59, 100.00), divide(#0, 100.00), multiply(#1, const_100)",1,172.59,0,0
+AAL/2013/page_18.pdf-2,"substract(3.20, 3.09), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+PKG/2005/page_74.pdf-4,"add(3772, 12800), add(17600, 19300), add(#0, #2)","add(3772, 12800), add(17600, 19300), add(#0, #2)",0,,0,0
+ETR/2008/page_298.pdf-2,"add(200000000, 500000000, 750000000)","add(200000000, 500000000, 750000000)",0,,0,0
+ILMN/2003/page_58.pdf-1,"subtract(100.00, 100.39), subtract(71.44, 19.50), subtract(43.81, 43.81), add(#0, #1, #2, #3)","subtract(100.00, 100.39), subtract(71.44, 19.50), subtract(43.81, 43.81), add(#0, #1, #2, #3)",0,,0,0
+JPM/2015/page_82.pdf-2,"divide(43510, 93543), multiply(#1, const_100)","divide(43510, 93543), multiply(#1, const_100)",0,,0,0
+STT/2011/page_69.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+MRO/2013/page_19.pdf-2,"subtract(2605, 225), subtract(189, 2605)","subtract(2605, 225), subtract(189, 2605)",1,-2416.0,0,0
+ABMD/2007/page_78.pdf-1,"table_average(expected volatility, none)","table_average(expected volatility, none)",1,0.74,1,1
+ETFC/2018/page_153.pdf-2,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+INTC/2013/page_31.pdf-3,"subtract(100, 100), multiply(#0, const_100), divide(#1, 100), multiply(#2, const_100), subtract(#3, 100), divide(#4, 100)","subtract(100, 100), multiply(#0, const_100), divide(#1, 100), multiply(#2, const_100), subtract(#3, 100), divide(#4, 100)",1,-1.0,0,0
+SNA/2013/page_34.pdf-1,"divide(table_average(fiscal year ended ( 2 ), 100), table_average(fiscal year ended ( 2 ), 100))",,0,,0,0
+ADI/2011/page_61.pdf-1,"divide(5.0, 100), multiply(#0, #1), multiply(#2, const_100)","divide(5.0, 100), multiply(#0, #1), multiply(#2, const_100)",0,,0,0
+ALLE/2015/page_24.pdf-2,"subtract(8.8, 15.2)","subtract(8.8, 15.2)",1,-6.4,0,0
+JKHY/2017/page_26.pdf-3,"multiply(#1, 100), subtract(#2, #1)","multiply(#1, 100), subtract(#2, #1)",0,,0,0
+UNP/2006/page_15.pdf-2,"divide(27318, 51596), multiply(#1, const_100)","divide(27318, 51596), multiply(#1, const_100)",0,,0,0
+GS/2012/page_189.pdf-1,"table_max(tier 1 capital, none)","table_max(tier 1 capital, none)",1,20704.0,1,1
+ECL/2016/page_52.pdf-3,"divide(table_sum(total of payments due by period less than 1 year, none), table_sum(total, none))","table_sum(total of payments due by period less than 1 year, none), table_sum(total, none)",0,,0,0
+MAS/2012/page_26.pdf-3,"add(masco of 2012, 55.78), divide(#0, 55.78), multiply(#1, const_100)","add(masco of 2012, 55.78), divide(#0, 55.78), multiply(#1, const_100)",0,,0,0
+AWK/2017/page_148.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+GS/2017/page_86.pdf-1,"divide(table_average(supplementary leverage ratio, december 2016), const_100), multiply(#1, const_100)","table_average(supplementary leverage ratio, december 2016), multiply(#1, const_100)",0,,0,0
+FIS/2017/page_64.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+MMM/2007/page_23.pdf-2,"divide(210, -132), multiply(#1, const_100)","divide(210, -132), multiply(#1, const_100)",0,,0,0
+FIS/2016/page_9.pdf-3,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+AON/2018/page_87.pdf-2,"subtract(12, 10), multiply(#1, const_1000)","subtract(12, 10), multiply(#1, const_1000)",0,,0,0
+FIS/2016/page_31.pdf-4,"sub(100000, 100), multiply(#0, 100), add(#1, 100000)","multiply(#0, 100), add(#1, 100000)",0,,0,0
+GPN/2014/page_92.pdf-2,"add(766801, 8945694)","add(766801, 8945694)",1,9712495.0,0,0
+JPM/2009/page_175.pdf-4,"add(318063, 384102, 381415)","add(318063, 384102, 381415)",0,,0,0
+UNP/2016/page_52.pdf-1,"divide(26053, 32070), multiply(#1, const_100)","divide(26053, 32070), multiply(#1, const_100)",0,,0,0
+DVN/2015/page_79.pdf-1,"table_range(grant-date fair value, 2013)",,0,,0,0
+C/2018/page_175.pdf-4,"divide(1423, 9475), multiply(#1, const_100)","divide(1423, 9475), multiply(#1, const_100)",0,,0,0
+ILMN/2008/page_86.pdf-2,"substract(23778, 21376), divide(#0, 21376), multiply(#1, const_100)","divide(#0, 21376), multiply(#1, const_100)",0,,0,0
+ETR/2003/page_157.pdf-2,"divide(14564, 14773), multiply(#1, const_100)","divide(14564, 14773), multiply(#1, const_100)",0,,0,0
+GS/2014/page_165.pdf-4,"divide(8368, 16075), multiply(#1, const_100)","divide(8368, 16075), multiply(#1, const_100)",0,,0,0
+INTC/2013/page_31.pdf-2,"substract(table_average(intel corporation, 2008), table_average(s&p 500 index, 2008)), divide(#0, table_average(s&p 500 index, 2008))","table_average(intel corporation, 2008), table_average(s&p 500 index, 2008), table_average(s&p 500 index, 2008)",1,158.0,0,0
+ETR/2008/page_298.pdf-1,"multiply(6.00, 1000000)","multiply(6.00, 1000000)",1,6000000.0,0,0
+HOLX/2006/page_100.pdf-2,"divide(1900, 31300), multiply(#1, const_100)","divide(1900, 31300), multiply(#1, const_100)",0,,0,0
+CME/2017/page_40.pdf-3,"divide(#4, #3)","divide(#4, #3)",0,,0,0
+JPM/2015/page_82.pdf-1,"divide(43634, 95112), multiply(#1, const_100)","divide(43634, 95112), multiply(#1, const_100)",0,,0,0
+HII/2015/page_121.pdf-4,"divide(table_average(operating income ( loss ), 4), table_average(sales and service revenues, 4))","table_average(sales and service revenues, 4)",1,1739.25,0,0
+STT/2009/page_25.pdf-1,"substract(table_average(direct lending collateral pools of december 31 2008, none), table_average(direct lending collateral pools of december 31 2007, none)), divide(#0, table_average(direct lending collateral pools of december 31 2007, none))","table_average(direct lending collateral pools of december 31 2008, none), table_average(direct lending collateral pools of december 31 2007, none), table_average(direct lending collateral pools of december 31 2007, none)",0,,0,0
+DG/2005/page_44.pdf-1,"subtract(6.3, 5.8), divide(#0, 5.8), multiply(#1, const_100)","subtract(6.3, 5.8), divide(#0, 5.8), multiply(#1, const_100)",1,8.62069,0,0
+AWK/2017/page_148.pdf-3,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+PNC/2012/page_65.pdf-2,"subtract(367, 49447), divide(#0, 2), multiply(#1, const_100)","subtract(367, 49447), divide(#0, 2), multiply(#1, const_100)",1,-2454000.0,0,0
+AMT/2006/page_104.pdf-1,"add(3540009, 3543016), divide(#0, 100)","add(3540009, 3543016), divide(#0, 100)",1,70830.25,0,0
+IPG/2008/page_72.pdf-4,"divide(131.8, 148.8), multiply(#1, const_100)","divide(131.8, 148.8), multiply(#1, const_100)",0,,0,0
+NWS/2019/page_116.pdf-1,"subtract(428, 510), divide(#0, 210), multiply(#1, const_1000)","subtract(428, 510), divide(#0, 210), multiply(#1, const_1000)",1,-390.47619,0,0
+LMT/2015/page_89.pdf-1,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+CDW/2015/page_93.pdf-2,"subtract(170.6, 156.6), multiply(#0, const_1000)","subtract(170.6, 156.6), multiply(#0, const_1000)",1,14000.0,0,0
+CE/2016/page_19.pdf-2,"subtract(119, 86), multiply(#1, const_100)","subtract(119, 86), multiply(#1, const_100)",0,,0,0
+AON/2007/page_175.pdf-1,"subtract(63, 38), add(#0, 2014)","subtract(63, 38), add(#0, 2014)",1,2039.0,0,0
+GPN/2010/page_87.pdf-2,"subtract(-6.3, -5.2), divide(#0, -5.2), multiply(#1, const_100)","subtract(-6.3, -5.2), divide(#0, -5.2), multiply(#1, const_100)",1,21.15385,0,0
+FIS/2017/page_64.pdf-2,"divide(#38, #35), multiply(#1, const_100)","divide(#38, #35), multiply(#1, const_100)",0,,0,0
+BLK/2015/page_124.pdf-2,"sum(136, 132, 137)",,0,,0,0
+DVN/2014/page_87.pdf-3,"divide(875, 1432), multiply(#1, const_100)","divide(875, 1432), multiply(#1, const_100)",0,,0,0
+WRK/2018/page_107.pdf-3,"add(127.1, 81.7)","add(127.1, 81.7)",1,208.8,0,0
+GS/2014/page_51.pdf-1,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+ETR/2015/page_17.pdf-3,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+MS/2013/page_139.pdf-1,"greater(const_1000, div(538, 17614))",,0,,0,0
+UPS/2010/page_52.pdf-1,"divide(table_sum(commitment type, after 2016), 23556), multiply(#1, const_100)","table_sum(commitment type, after 2016), multiply(#1, const_100)",0,,0,0
+LMT/2016/page_49.pdf-3,"table_average(net sales, none)","table_average(net sales, none)",1,6823.33333,1,1
+ETR/2016/page_23.pdf-4,"subtract(154000000, 1000000000), subtract(77000000, 470000000)","subtract(154000000, 1000000000), subtract(77000000, 470000000)",1,-393000000.0,0,0
+JPM/2014/page_122.pdf-2,"divide(438861, 414067), multiply(#1, const_100)","divide(438861, 414067), multiply(#1, const_100)",0,,0,0
+DISH/2011/page_122.pdf-2,"divide(28663, 233584), multiply(#1, const_100)","divide(28663, 233584), multiply(#1, const_100)",0,,0,0
+ETR/2016/page_150.pdf-4,"multiply(#1, 1000), add(21700000, 22300000), add(22700000, 23200000), add(11000000, 11900000)","multiply(#1, 1000), add(21700000, 22300000), add(22700000, 23200000), add(11000000, 11900000)",0,,0,0
+SNA/2013/page_83.pdf-2,"substract(247.9, 243.7), divide(#0, 247.9), multiply(#1, const_100)","divide(#0, 247.9), multiply(#1, const_100)",0,,0,0
+BLL/2011/page_32.pdf-4,"substract(7630.0, 6710.4), divide(#0, 6710.4), multiply(#1, const_100)","divide(#0, 6710.4), multiply(#1, const_100)",0,,0,0
+CMCSA/2008/page_36.pdf-1,"divide(1024, 5545), multiply(#1, const_100)","divide(1024, 5545), multiply(#1, const_100)",0,,0,0
+AMT/2005/page_102.pdf-2,"subtract(19.1, 17.7), divide(#0, 17.7), multiply(#1, const_100)","subtract(19.1, 17.7), divide(#0, 17.7), multiply(#1, const_100)",1,7.9096,0,0
+HII/2015/page_121.pdf-3,"sum(1594, 1719, 1717, 1927)",,0,,0,0
+AMT/2008/page_107.pdf-2,"substract(20963, 7327), divide(#0, 7327), multiply(#1, const_100)","divide(#0, 7327), multiply(#1, const_100)",0,,0,0
+MRO/2004/page_46.pdf-2,"add(34526, 37.07), add(45686, 37.73)","add(34526, 37.07), add(45686, 37.73)",1,45723.73,0,0
+BLK/2012/page_33.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+RSG/2009/page_140.pdf-2,"subtract(6.49, 4.36), divide(#0, 4.36), multiply(#1, const_100)","subtract(6.49, 4.36), divide(#0, 4.36), multiply(#1, const_100)",1,48.85321,0,0
+JPM/2009/page_175.pdf-3,"divide(121417, 93200)","divide(121417, 93200)",1,1.30276,0,0
+ZBH/2015/page_57.pdf-1,"subtract(-14.5, -15.5), divide(#0, 15.5), multiply(#1, const_100)","subtract(-14.5, -15.5), divide(#0, 15.5), multiply(#1, const_100)",1,6.45161,0,0
+DRE/2007/page_56.pdf-1,"substract(217692, 145095), divide(#0, 145095), multiply(#1, const_100)","divide(#0, 145095), multiply(#1, const_100)",0,,0,0
+MSI/2007/page_70.pdf-2,"multiply(45, 43)","multiply(45, 43)",1,1935.0,0,0
+PNC/2008/page_122.pdf-1,"divide(250, 2129), multiply(#1, const_100)","divide(250, 2129), multiply(#1, const_100)",0,,0,0
+ETR/2016/page_374.pdf-1,"multiply(19.4, 3)","multiply(19.4, 3)",1,58.2,1,0
+DISCA/2011/page_49.pdf-4,"exp(table_average(s&p 500, 5))","table_average(s&p 500, 5)",1,93.9375,0,0
+CME/2017/page_40.pdf-4,"greater(add(164.01, 194.06, 208.95, 279.85, 370.32), add(132.39, 150.51, 152.59, 170.84, 208.14))","add(164.01, 194.06, 208.95, 279.85, 370.32), add(132.39, 150.51, 152.59, 170.84, 208.14)",0,,0,0
+RSG/2018/page_135.pdf-2,"substract(table_average(equity securities of december 31 2017 actualassetallocation, none), table_average(equity securities of december 31 2018 actualassetallocation, none))","table_average(equity securities of december 31 2017 actualassetallocation, none), table_average(equity securities of december 31 2018 actualassetallocation, none)",0,,0,0
+DISH/2011/page_122.pdf-4,"subtract(3000000000, 13450000000)","subtract(3000000000, 13450000000)",1,-10450000000.0,0,0
+GS/2018/page_78.pdf-1,"table_min(alternative investments, none)","table_min(alternative investments, none)",1,149.0,1,1
+PNC/2012/page_68.pdf-3,"table_average(other, none)","table_average(other, none)",1,100.5,1,0
+GIS/2015/page_62.pdf-1,"divide(-36.5, 7.7)","divide(-36.5, 7.7)",1,-4.74026,1,1
+DVN/2015/page_79.pdf-2,"table_average(contractual term (years), 2013, 2014, 2015)",,0,,0,0
+CME/2010/page_69.pdf-3,"multiply(612.5, const_1000)","multiply(612.5, const_1000)",1,612500.0,0,0
+ABMD/2012/page_79.pdf-2,"divide(#2, 128)","divide(#2, 128)",0,,0,0
+ANSS/2016/page_47.pdf-1,"divide(table_sum(global headquarters operating lease ( 1 ) of payments due by period after 5 years, global headquarters operating lease ( 1 ) of payments due by period 2 2013 3 years), table_sum(global headquarters operating lease ( 1 ) of payments due by period total)) * 100, const_100)",,0,,0,0
+ETR/2008/page_298.pdf-4,"divide(subtract(55509, 11589), 11589), multiply(#1, const_100)","subtract(55509, 11589), multiply(#1, const_100)",0,,0,0
+DISCA/2014/page_64.pdf-3,"greater(add(100, 138.79), add(100, 112.78)), greater(add(133.61, 142.16), add(138.35, 127.90)), greater(add(200.95, 220.59), add(290.40, 316.","add(100, 138.79), add(100, 112.78), add(133.61, 142.16), add(138.35, 127.90), add(200.95, 220.59)",1,421.54,0,0
+DXC/2018/page_56.pdf-1,"divide(table_average(costs of services ( excludes depreciation and amortization and restructuring costs ), 1), table_average(total costs and expenses, 1))","table_average(total costs and expenses, 1)",1,6294.159,0,0
+GS/2015/page_171.pdf-3,"divide(69800, 172099), multiply(#1, const_100)","divide(69800, 172099), multiply(#1, const_100)",0,,0,0
+DVN/2012/page_77.pdf-3,"divide(500, 3189), multiply(#1, const_100)","divide(500, 3189), multiply(#1, const_100)",0,,0,0
+V/2010/page_28.pdf-1,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+SNA/2013/page_84.pdf-3,"subtract(-14.9, -19.0), divide(#0, 546.5), multiply(#1, const_100)","subtract(-14.9, -19.0), divide(#0, 546.5), multiply(#1, const_100)",1,0.75023,0,0
+INTC/2013/page_31.pdf-1,"divide(table_average(intel corporation, 2010), table_average(dow jones u.s . technology index, 2010))","table_average(intel corporation, 2010), table_average(dow jones u.s . technology index, 2010)",1,188.5,0,0
+BLL/2006/page_67.pdf-3,"divide(table_sum(goodwill of u.s . can ( metal food & household products packaging americas ), table_sum(goodwill of alcan ( plastic packaging americas ))), table_sum(net assets acquired of u.s . can ( metal food & household products packaging americas ), table_sum(net assets acquired of alcan ( plastic packaging americas))))",,0,,0,0
+PNC/2012/page_174.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+MRO/2003/page_45.pdf-3,"subtract(776, 773), subtract(773, 748), divide(#0, 3)","subtract(776, 773), subtract(773, 748), divide(#0, 3)",1,1.0,0,0
+CB/2008/page_229.pdf-1,"substract(table_average(statutory net income, 2007), table_average(statutory net income, 2008)), divide(#0, table_average(statutory net income, 2007))","table_average(statutory net income, 2007), table_average(statutory net income, 2008), table_average(statutory net income, 2007)",1,1023.5,0,0
+SNA/2013/page_84.pdf-2,"subtract(546.5, 516.9), subtract(497.9, 531.6)","subtract(546.5, 516.9), subtract(497.9, 531.6)",1,-33.7,0,0
+AMT/2016/page_125.pdf-1,"subtract(107551, 28114), subtract(31947, 32545)","subtract(107551, 28114), subtract(31947, 32545)",1,-598.0,0,0
+ETR/2017/page_372.pdf-3,"subtract(703.1, 705.4), multiply(#0, const_100)","subtract(703.1, 705.4), multiply(#0, const_100)",1,-230.0,0,0
+ETR/2004/page_239.pdf-2,"subtract(#1, #2)","subtract(#1, #2)",0,,0,0
+GS/2014/page_165.pdf-3,"subtract(#2, #1), multiply(#1, const_1000)","subtract(#2, #1), multiply(#1, const_1000)",0,,0,0
+MKTX/2004/page_99.pdf-2,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+STT/2011/page_69.pdf-4,"divide(105, 289), multiply(#1, const_100)","divide(105, 289), multiply(#1, const_100)",0,,0,0
+ZBH/2009/page_58.pdf-3,"subtract(47.6, 37.3), divide(#0, 37.3), multiply(#1, const_100)","subtract(47.6, 37.3), divide(#0, 37.3), multiply(#1, const_100)",1,27.61394,0,0
+MRO/2013/page_39.pdf-3,"subtract(98.05, 95.11), divide(#0, 95.11)","subtract(98.05, 95.11), divide(#0, 95.11)",1,0.03091,1,1
+C/2015/page_96.pdf-2,"subtract(412.6, 44.0)","subtract(412.6, 44.0)",1,368.6,0,0
+PM/2017/page_32.pdf-2,"subtract(3.79, 3.68)","subtract(3.79, 3.68)",1,0.11,0,0
+IP/2009/page_84.pdf-2,"substract(205, 168), divide(#0, 168), multiply(#1, const_100)","divide(#0, 168), multiply(#1, const_100)",0,,0,0
+GPN/2013/page_87.pdf-4,"add(-79, -91)","add(-79, -91)",1,-170.0,0,0
+JPM/2018/page_90.pdf-4,"subtract(2.50, 2.36), multiply(#1, const_100)","subtract(2.50, 2.36), multiply(#1, const_100)",0,,0,0
+MRO/2006/page_93.pdf-2,"greater(527, 711)","greater(527, 711)",1,no,1,1
+AAL/2015/page_114.pdf-2,"divide(#0, 2655), multiply(#1, const_100)","divide(#0, 2655), multiply(#1, const_100)",0,,0,0
+HOLX/2007/page_93.pdf-1,"add(a, b, c)","add(a, b, c)",0,,0,0
+DXC/2018/page_56.pdf-2,"divide(#1, 22885), multiply(#1, const_100)","divide(#1, 22885), multiply(#1, const_100)",0,,0,0
+FIS/2016/page_45.pdf-1,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+RSG/2016/page_135.pdf-1,"divide(table_sum(debt securities, 2016actualassetallocation), table_sum(equity securities, 2016actualassetallocation))","table_sum(debt securities, 2016actualassetallocation), table_sum(equity securities, 2016actualassetallocation)",1,84.0,0,0
+UPS/2012/page_32.pdf-2,"substract(table_average(united parcel service inc., none), table_average(dow jones transportation average, none)), divide(#0, table_average(dow jones transportation average, none))","table_average(united parcel service inc., none), table_average(dow jones transportation average, none), table_average(dow jones transportation average, none)",0,,0,0
+DRE/2005/page_30.pdf-1,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+ETFC/2012/page_43.pdf-3,"subtract(16.9, 14.9)","subtract(16.9, 14.9)",1,2.0,0,0
+ETR/2016/page_374.pdf-3,"add(696.3, -2.4)","add(696.3, -2.4)",1,693.9,0,0
+LMT/2014/page_50.pdf-3,"subtract(operating margins of 2013, operating margins of 2012)","subtract(operating margins of 2013, operating margins of 2012)",0,,0,0
+MSI/2012/page_87.pdf-1,"table_average(expected volatility, 2010..2012)","table_average(expected volatility, 2010..2012)",1,0.315,0,0
+DRE/2005/page_30.pdf-2,"subtract(-424, 560), divide(#0, const_1000000)","subtract(-424, 560), divide(#0, const_1000000)",1,-0.00098,0,0
+GS/2013/page_220.pdf-3,"subtract(100, 100), multiply(#0, 100), add(#1, 100), multiply(#2, 100), subtract(#3, 100), divide(#4, 100)","subtract(100, 100), multiply(#0, 100), add(#1, 100), multiply(#2, 100), subtract(#3, 100), divide(#4, 100)",1,99.0,0,0
+MSI/2008/page_69.pdf-1,"subtract(33, 40), multiply(#1, -1)","subtract(33, 40), multiply(#1, -1)",0,,0,0
+GS/2013/page_85.pdf-2,"table_average(fair value of the securities and certain overnight cash deposits, none)","table_average(fair value of the securities and certain overnight cash deposits, none)",0,,0,0
+MAR/2004/page_45.pdf-1,"subtract(table_sum(carrying amount, fair value), table_sum(fair value, none))","table_sum(carrying amount, fair value), table_sum(fair value, none)",0,,0,0
+JPM/2005/page_80.pdf-2,"add(265, 200), multiply(#0, const_1000)","add(265, 200), multiply(#0, const_1000)",1,465000.0,0,0
+FIS/2016/page_45.pdf-3,"subtract(1165, 1131), divide(#0, 1131), multiply(#1, const_100)","subtract(1165, 1131), divide(#0, 1131), multiply(#1, const_100)",1,3.00619,0,0
+TFX/2017/page_78.pdf-2,"divide(3629455, 1708928)","divide(3629455, 1708928)",1,2.12382,0,0
+CB/2010/page_103.pdf-1,"subtract(1983, 1667), divide(#0, 1983), multiply(#1, const_100)","subtract(1983, 1667), divide(#0, 1983), multiply(#1, const_100)",1,15.93545,0,0
+HUM/2017/page_118.pdf-4,"table_average(amortization expense, 2015, 2016, 2017)","table_average(amortization expense, 2015, 2016, 2017)",0,,0,0
+WRK/2018/page_107.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+SNA/2013/page_83.pdf-3,"subtract(table_sum(total other accrued liabilities, 2012), table_sum(deferred subscription revenue, 2012))","table_sum(total other accrued liabilities, 2012), table_sum(deferred subscription revenue, 2012)",1,51.4,0,0
+WRK/2018/page_107.pdf-5,"subtract(166.8, 148.9), divide(#0, 148.9), multiply(#1, const_100)","subtract(166.8, 148.9), divide(#0, 148.9), multiply(#1, const_100)",1,12.02149,0,0
+ETR/2017/page_372.pdf-2,"substract(705.4, abs(subtract(703.1, 18.2))), divide(#0, 705.4), multiply(#1, const_100)","subtract(703.1, 18.2), divide(#0, 705.4), multiply(#1, const_100)",1,97.09385,0,0
+ADBE/2008/page_89.pdf-1,"subtract(#2, #1), multiply(#1, const_100)","subtract(#2, #1), multiply(#1, const_100)",0,,0,0
+C/2018/page_176.pdf-2,"add(36931040, 12896599), multiply(#1, const_100), divide(#2, const_100)","add(36931040, 12896599), multiply(#1, const_100), divide(#2, const_100)",0,,0,0
+DRE/2007/page_56.pdf-2,"divide(table_sum(diluted net income available for common shareholders, none), table_sum(weighted average number of common shares outstanding, none))","table_sum(diluted net income available for common shareholders, none), table_sum(weighted average number of common shares outstanding, none)",1,415646.0,0,0
+HUM/2017/page_118.pdf-3,"divide(75, 64), multiply(#1, const_100)","divide(75, 64), multiply(#1, const_100)",0,,0,0
+AON/2018/page_87.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+IP/2009/page_45.pdf-2,"divide(946, 3262), multiply(#1, const_100)","divide(946, 3262), multiply(#1, const_100)",0,,0,0
+AON/2010/page_86.pdf-2,"divide(890, 4932)","divide(890, 4932)",1,0.18045,1,1
+HOLX/2008/page_143.pdf-1,"divide(#3, const_1000)","divide(#3, const_1000)",0,,0,0
+MRO/2003/page_84.pdf-4,"table_average(strategy, 2002), table_average(strategy, 2003)","table_average(strategy, 2002), table_average(strategy, 2003)",0,,0,0
+UNP/2009/page_35.pdf-1,"add(88, 5), multiply(#1, const_100)","add(88, 5), multiply(#1, const_100)",0,,0,0
+AMT/2012/page_118.pdf-3,"divide(#3, 585.3), multiply(#1, const_100)","divide(#3, 585.3), multiply(#1, const_100)",0,,0,0
+MMM/2015/page_93.pdf-1,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+PKG/2002/page_52.pdf-1,"add(6569200, 7204202), divide(#0, const_1000000)","add(6569200, 7204202), divide(#0, const_1000000)",1,13.7734,0,0
+MRO/2008/page_45.pdf-2,"divide(960, 2500), multiply(#1, const_100)","divide(960, 2500), multiply(#1, const_100)",0,,0,0
+UNP/2011/page_24.pdf-2,"divide(table_sum(cash provided by operating activities, none), 5873)","table_sum(cash provided by operating activities, none)",1,13182.0,0,0
+WRK/2018/page_107.pdf-2,"add(127.1, 81.7)","add(127.1, 81.7)",1,208.8,0,0
+SNA/2007/page_49.pdf-1,"table_average(cash flow provided from operating activities, none)","table_average(cash flow provided from operating activities, none)",0,,0,0
+UNP/2011/page_24.pdf-1,"divide(#1, 1917), compare(#2, #3)","divide(#1, 1917)",0,,0,0
+GIS/2017/page_31.pdf-3,"subtract(table_sum(total long-term obligations of payments due by fiscal year, none), table_sum(total contractual obligations of payments due by fiscal year, none))","table_sum(total long-term obligations of payments due by fiscal year, none), table_sum(total contractual obligations of payments due by fiscal year, none)",0,,0,0
+MRO/2013/page_39.pdf-2,"subtract(98.05, 95.11), divide(#0, 95.11)","subtract(98.05, 95.11), divide(#0, 95.11)",1,0.03091,1,1
+JPM/2015/page_137.pdf-2,"divide(26363, 59677)","divide(26363, 59677)",1,0.44176,1,1
+FIS/2016/page_31.pdf-3,"sub(100000, 100), multiply(#0, 198.18), sub(#1, 100), divide(#2, 100)","multiply(#0, 198.18), divide(#2, 100)",0,,0,0
+ILMN/2008/page_82.pdf-2,"add(238510, 864040, 1125734)","add(238510, 864040, 1125734)",0,,0,0
+MAS/2017/page_27.pdf-1,"add(masco of 2017, 138.48), add(masco of 2016, 155.26), add(masco of 2015, 200.79), add(masco of 2014, 155.26), add(masco of 2013, 138.48), divide(#0, #1","add(masco of 2017, 138.48), add(masco of 2016, 155.26), add(masco of 2015, 200.79), add(masco of 2014, 155.26), add(masco of 2013, 138.48)",0,,0,0
+HOLX/2007/page_93.pdf-2,"divide(table_sum(a,b,c), table_sum(a,b))","table_sum(a, b, c), table_sum(a, b)",0,,0,0
+GS/2014/page_165.pdf-1,"divide(8368, 16075), multiply(#1, const_100)","divide(8368, 16075), multiply(#1, const_100)",0,,0,0
+MAR/2018/page_43.pdf-1,"divide(table_sum(operating leases where we are the primary obligor of payments due by period less than1 year, operating leases where we are the primary obligor of payments due by period 1-3 years, operating leases where we are the primary obligor of payments due by period 3-5 years, operating leases where we are the primary obligor of payments due by period after5 years), table_sum(total contractual obligations of payments due by period less than1 year","table_sum(operating leases where we are the primary obligor of payments due by period less than1 year, operating leases where we are the primary obligor of payments due by period 1-3 years, operating leases where we are the primary obligor of payments due by period 3-5 years, operating leases where we are the primary obligor of payments due by period after5 years)",0,,0,0
+AMT/2006/page_104.pdf-4,"divide(#2, #1), multiply(#1, const_100)","divide(#2, #1), multiply(#1, const_100)",0,,0,0
+IP/2006/page_38.pdf-2,"divide(table_sum(debt repayment, 2008), table_sum(total debt repayments, 2006))","table_sum(debt repayment, 2008), table_sum(total debt repayments, 2006)",0,,0,0
+ETR/2004/page_212.pdf-3,"subtract(#1, #2)","subtract(#1, #2)",0,,0,0
+UNP/2015/page_56.pdf-2,"subtract(26064, 32084), divide(#0, 32084), multiply(#1, const_100)","subtract(26064, 32084), divide(#0, 32084), multiply(#1, const_100)",1,-18.76325,0,0
+DRE/2012/page_40.pdf-1,"substract(table_average(second generation tenant improvements, none), table_average(building improvements, none)), divide(#0, table_average(building improvements, none))","table_average(second generation tenant improvements, none), table_average(building improvements, none), table_average(building improvements, none)",1,10064.66667,0,0
+JPM/2010/page_273.pdf-1,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+ALLE/2015/page_24.pdf-1,"divide(#3, 4.4), multiply(#1, const_100)","divide(#3, 4.4), multiply(#1, const_100)",0,,0,0
+AES/2002/page_128.pdf-3,"divide(#0, 169), multiply(#1, const_100)","divide(#0, 169), multiply(#1, const_100)",0,,0,0
+SLG/2011/page_91.pdf-5,"divide(153644, 2330532), multiply(#1, const_100)","divide(153644, 2330532), multiply(#1, const_100)",0,,0,0
+KHC/2018/page_132.pdf-2,"subtract(1224, 1220), divide(#0, 1224), multiply(#1, const_100)","subtract(1224, 1220), divide(#0, 1224), multiply(#1, const_100)",1,0.3268,0,0
+GS/2012/page_142.pdf-2,"table_max(collateral posted, none)","table_max(collateral posted, none)",1,29002.0,1,1
+SNA/2013/page_34.pdf-3,"divide(add(153.24, 100), 100), multiply(#1, const_100)","add(153.24, 100), multiply(#1, const_100)",0,,0,0
+BKNG/2016/page_33.pdf-1,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+AWK/2013/page_122.pdf-4,"subtract(158578, 40620), subtract(158578, 27229)","subtract(158578, 40620), subtract(158578, 27229)",1,131349.0,0,0
+JPM/2015/page_137.pdf-4,"divide(1423, 59677), multiply(#1, const_100)","divide(1423, 59677), multiply(#1, const_100)",0,,0,0
+IPG/2017/page_92.pdf-3,"divide(table_sum(total contingent acquisition payments, 2018), table_sum(total contingent acquisition payments, 2018))","table_sum(total contingent acquisition payments, 2018), table_sum(total contingent acquisition payments, 2018)",1,536.8,0,0
+RSG/2010/page_57.pdf-1,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+K/2006/page_52.pdf-3,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+RCL/2016/page_6.pdf-2,"divide(503000, 298), multiply(#1, const_100)","divide(503000, 298), multiply(#1, const_100)",0,,0,0
+ZBH/2015/page_57.pdf-3,"subtract(33.9, 32.9), multiply(#1, const_1000)","subtract(33.9, 32.9), multiply(#1, const_1000)",0,,0,0
+STT/2014/page_54.pdf-2,"substract(table_average(state street corporation of 2011, table_average(state street corporation of 2012)), table_average(state street corporation of 2010, table_average(state street corporation of 2011)))","table_average(state street corporation of 2012), table_average(state street corporation of 2011)",0,,0,0
+STT/2007/page_111.pdf-4,"subtract(506032, 558368), divide(#0, 506032), multiply(#1, const_100)","subtract(506032, 558368), divide(#0, 506032), multiply(#1, const_100)",1,-10.34243,0,0
+SNA/2013/page_34.pdf-2,"substract(153.24, 100), divide(#0, 100), multiply(#1, const_100)","divide(#0, 100), multiply(#1, const_100)",0,,0,0
+MRK/2013/page_125.pdf-1,"divide(#3, 319), multiply(#1, const_100)","divide(#3, 319), multiply(#1, const_100)",0,,0,0
+CDNS/2018/page_66.pdf-2,"subtract(17500000, 17500000), divide(#0, 341003), multiply(#1, const_100)","subtract(17500000, 17500000), divide(#0, 341003), multiply(#1, const_100)",1,0.0,0,0
+DVN/2018/page_35.pdf-1,"divide(#2, #1)","divide(#2, #1)",0,,0,0
+C/2008/page_22.pdf-4,"subtract(296, 59), subtract(367, 78), add(#0, #2)","subtract(296, 59), subtract(367, 78), add(#0, #2)",0,,0,0
+AMT/2007/page_127.pdf-3,"substract(6.79, 5.15), divide(#0, 5.15)","divide(#0, 5.15)",0,,0,0
+AES/2001/page_85.pdf-3,"divide(#0, 22258), multiply(#1, const_100)","divide(#0, 22258), multiply(#1, const_100)",0,,0,0
+L/2009/page_84.pdf-1,"substract(160.62, 100.00), divide(#0, 100.00), multiply(#1, const_100)","divide(#0, 100.00), multiply(#1, const_100)",0,,0,0
+ETR/2016/page_150.pdf-3,"add(10.6, 11, 11.2, 11.6, 11.9), multiply(#1, const_1000)","add(10.6, 11, 11.2, 11.6, 11.9), multiply(#1, const_1000)",0,,0,0
+CE/2016/page_19.pdf-1,"sum(research and development expense, 2014), sum(research and development expense, 2015), sum(research and development expense, 2016)",,0,,0,0
+AMT/2006/page_113.pdf-3,"substract(3285, 773), substract(-34, -267), add(-2397, 448)","add(-2397, 448)",1,-1949.0,0,0
+CDW/2015/page_70.pdf-1,"add(-61.1, -16.6, -6.3)","add(-61.1, -16.6, -6.3)",0,,0,0
+NCLH/2018/page_97.pdf-2,"subtract(270.4, 267.8), divide(#0, 267.8), multiply(#1, const_100)","subtract(270.4, 267.8), divide(#0, 267.8), multiply(#1, const_100)",1,0.97087,0,0
+AWK/2017/page_148.pdf-4,"subtract(1.61, 0.98), multiply(#1, const_100)","subtract(1.61, 0.98), multiply(#1, const_100)",0,,0,0
+C/2009/page_63.pdf-1,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+AWK/2018/page_146.pdf-2,"divide(#3, #7)","divide(#3, #7)",0,,0,0
+LMT/2015/page_89.pdf-4,"divide(#2, 400000000), multiply(#1, const_100)","divide(#2, 400000000), multiply(#1, const_100)",0,,0,0
+PNC/2014/page_111.pdf-1,"subtract(2572, 2616), multiply(#1, const_1000)","subtract(2572, 2616), multiply(#1, const_1000)",0,,0,0
+VRTX/2006/page_111.pdf-1,"subtract(284000000, 263000000), divide(#0, 263000000), multiply(#1, const_100)","subtract(284000000, 263000000), divide(#0, 263000000), multiply(#1, const_100)",1,7.98479,0,0
+CDNS/2018/page_66.pdf-3,"subtract(426932, 341003), subtract(#0, 772709)","subtract(426932, 341003), subtract(#0, 772709)",1,-686780.0,0,0
+BKR/2017/page_56.pdf-2,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+JPM/2009/page_175.pdf-2,"subtract(384102, 381415), subtract(121417, 65439), subtract(93200, 65198)","subtract(384102, 381415), subtract(121417, 65439), subtract(93200, 65198)",1,28002.0,0,0
+JKHY/2017/page_26.pdf-2,"divide(#1, 100), multiply(#1, const_100)","divide(#1, 100), multiply(#1, const_100)",0,,0,0
+CB/2010/page_103.pdf-2,"subtract(2075, 2068), divide(#0, 2075), multiply(#1, const_100)","subtract(2075, 2068), divide(#0, 2075), multiply(#1, const_100)",1,0.33735,0,0
+STT/2007/page_111.pdf-1,"subtract(527.37, 572.93), multiply(#1, const_100)","subtract(527.37, 572.93), multiply(#1, const_100)",0,,0,0
+ETR/2016/page_150.pdf-2,"add(353000000, 6000000, 320000000)","add(353000000, 6000000, 320000000)",0,,0,0
+V/2008/page_180.pdf-1,"divide(fiscal(2009), fiscal(total)), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+SLB/2015/page_59.pdf-1,"divide(#2, 1000000000), multiply(#1, const_100)","divide(#2, 1000000000), multiply(#1, const_100)",0,,0,0
+UNP/2016/page_52.pdf-2,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+INTC/2015/page_41.pdf-1,"divide(table_sum(owned facilities1, none), table_sum(total, none))","table_sum(owned facilities1, none), table_sum(total, none)",0,,0,0
+AMT/2003/page_102.pdf-4,"divide(102083, 100), multiply(#1, 100), subtract(const_625)","divide(102083, 100), multiply(#1, 100), subtract(const_625)",0,,0,0
+PKG/2005/page_74.pdf-3,"divide(1364, 3772), multiply(#1, const_100)","divide(1364, 3772), multiply(#1, const_100)",0,,0,0
+MRO/2003/page_84.pdf-1,"substract(-95, -112), divide(#0, 95), multiply(#1, const_100)","divide(#0, 95), multiply(#1, const_100)",0,,0,0
+LKQ/2016/page_87.pdf-2,"subtract(211.5, 168.4), divide(#0, 168.4), multiply(#1, const_100)","subtract(211.5, 168.4), divide(#0, 168.4), multiply(#1, const_100)",1,25.59382,0,0
+GS/2012/page_121.pdf-2,"divide(subtract(#2, #1), #1), multiply(#3, const_100)","subtract(#2, #1), multiply(#3, const_100)",0,,0,0
+MAR/2004/page_45.pdf-2,"subtract(table_value(""long-term debt and other long-term liabilities"", ""carrying amount""), table_value(""long-term debt and other long-term liabilities"", ""fair value""))",,0,,0,0
+AMT/2007/page_127.pdf-2,"subtract(5.08, 3.72), multiply(#1, const_100)","subtract(5.08, 3.72), multiply(#1, const_100)",0,,0,0
+LMT/2016/page_49.pdf-1,"substract(6608, 6770), divide(#0, 6770), multiply(#1, const_100)","divide(#0, 6770), multiply(#1, const_100)",0,,0,0
+JPM/2015/page_137.pdf-3,"subtract(59677, 17177), subtract(78975, 21253)","subtract(59677, 17177), subtract(78975, 21253)",1,57722.0,0,0
+K/2006/page_52.pdf-1,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+GRMN/2008/page_85.pdf-1,"subtract(126.6, 70.5), multiply(#0, const_1000)","subtract(126.6, 70.5), multiply(#0, const_1000)",1,56100.0,0,0
+BDX/2018/page_106.pdf-1,"subtract(-73, -16), divide(#0, -73), multiply(#1, const_100)","subtract(-73, -16), divide(#0, -73), multiply(#1, const_100)",1,78.08219,0,0
+LMT/2014/page_77.pdf-1,"table_average(weighted average common shares outstanding for diluted computations, 2012)","table_average(weighted average common shares outstanding for diluted computations, 2012)",1,325.76667,0,0
+JKHY/2019/page_18.pdf-2,"subtract(100.00, 110.51), divide(#0, 100.00), multiply(#1, const_100)","subtract(100.00, 110.51), divide(#0, 100.00), multiply(#1, const_100)",1,-10.51,0,0
+ANSS/2012/page_93.pdf-2,"subtract(93000, 84000), divide(#0, 84000), multiply(#1, const_100)","subtract(93000, 84000), divide(#0, 84000), multiply(#1, const_100)",1,10.71429,0,0
+BLL/2010/page_37.pdf-1,"substract(559.7, 627.6), divide(#0, 627.6), multiply(#1, const_100)","divide(#0, 627.6), multiply(#1, const_100)",0,,0,0
+LMT/2014/page_77.pdf-4,"subtract(326.5, 328.4), multiply(#1, const_1000000)","subtract(326.5, 328.4), multiply(#1, const_1000000)",0,,0,0
+SNA/2012/page_110.pdf-1,"substract(-379, 707), divide(#0, 707), multiply(#1, const_100)","divide(#0, 707), multiply(#1, const_100)",0,,0,0
+AAPL/2003/page_48.pdf-1,"subtract(5.5, 1.2), multiply(#0, const_1000)","subtract(5.5, 1.2), multiply(#0, const_1000)",1,4300.0,0,0
+GS/2013/page_149.pdf-2,"substract(24296, 18178), divide(#0, 18178), multiply(#1, const_100)","divide(#0, 18178), multiply(#1, const_100)",0,,0,0
+PPG/2018/page_85.pdf-3,"divide(90, 291), multiply(#1, const_100)","divide(90, 291), multiply(#1, const_100)",0,,0,0
+HOLX/2009/page_151.pdf-3,"substract(23.44, 23.87), multiply(#0, -150)","multiply(#0, -150)",0,,0,0
+ABMD/2012/page_79.pdf-3,"subtract(64350, 40000), divide(#0, 40000), multiply(#1, const_100)","subtract(64350, 40000), divide(#0, 40000), multiply(#1, const_100)",1,60.875,0,0
+IP/2009/page_84.pdf-3,"divide(table_sum(lease obligations, 2012), table_sum(purchase obligations (a), 2012)), multiply(#1, const_100)","table_sum(lease obligations, 2012), multiply(#1, const_100)",0,,0,0
+MO/2016/page_19.pdf-3,"divide(add(143.69, 135.61), add(100.00, 108.78)), multiply(#1, const_100)","add(143.69, 135.61), add(100.00, 108.78), multiply(#1, const_100)",1,20878.0,0,0
+BLK/2012/page_33.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+PPG/2018/page_85.pdf-4,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+D/2002/page_87.pdf-3,"subtract(107, 75), divide(#0, 75), multiply(#1, const_100)","subtract(107, 75), divide(#0, 75), multiply(#1, const_100)",1,42.66667,0,0
+ABMD/2006/page_43.pdf-2,"divide(table_sum(operating lease obligations of payments due by fiscal year, none), table_sum(total obligations of payments due by fiscal year, none))","table_sum(operating lease obligations of payments due by fiscal year, none), table_sum(total obligations of payments due by fiscal year, none)",0,,0,0
+ADI/2010/page_80.pdf-3,"divide(#0, #1), multiply(#2, const_100)","divide(#0, #1), multiply(#2, const_100)",0,,0,0
+UNP/2016/page_52.pdf-3,"divide(table_sum(coal, 2014), table_sum(total operating revenues, 2014)), multiply(#1, const_100)","table_sum(coal, 2014), table_sum(total operating revenues, 2014), multiply(#1, const_100)",1,6574200.0,0,0
+ABMD/2008/page_86.pdf-3,"subtract(168, 224), divide(#0, 224), multiply(#1, const_100)","subtract(168, 224), divide(#0, 224), multiply(#1, const_100)",1,-25.0,0,0
+ALXN/2016/page_153.pdf-3,"substract(136, 133), divide(#0, 133), multiply(#1, const_100)","divide(#0, 133), multiply(#1, const_100)",0,,0,0
+NCLH/2018/page_64.pdf-3,"divide(table_sum(other ( 6 ), 1-3 years), table_sum(total ( 7 ), 1-3 years)) * 100",,0,,0,0
+BLK/2014/page_120.pdf-3,"substract(137, 132), divide(#0, 132), multiply(#1, const_100)","divide(#0, 132), multiply(#1, const_100)",0,,0,0
+UNP/2015/page_56.pdf-3,"divide(4074, 22560), multiply(#1, const_100)","divide(4074, 22560), multiply(#1, const_100)",0,,0,0
+PPG/2006/page_42.pdf-3,"subtract(10, 4), divide(#0, 4), multiply(#1, const_100)","subtract(10, 4), divide(#0, 4), multiply(#1, const_100)",1,150.0,0,0
+ANSS/2016/page_47.pdf-2,"divide(table_sum(global headquarters operating lease ( 1 ), none), table_sum(other operating leases ( 2 ), none))",,0,,0,0
+BLK/2014/page_120.pdf-4,"substract(137, 133), divide(#0, 133), multiply(#1, const_100)","divide(#0, 133), multiply(#1, const_100)",0,,0,0
+ANSS/2012/page_93.pdf-3,"table_range(total revenue, 2010, 2012)",,0,,0,0
+UNP/2018/page_74.pdf-3,"divide(159, 898), multiply(#1, const_100)","divide(159, 898), multiply(#1, const_100)",0,,0,0
+D/2002/page_87.pdf-4,"subtract(107, 84), divide(#0, 84), multiply(#1, const_100)","subtract(107, 84), divide(#0, 84), multiply(#1, const_100)",1,27.38095,0,0
+IP/2009/page_84.pdf-4,"subtract(3.7, 3.5), subtract(3.5, 2.6), subtract(2.6, 3.5)","subtract(3.7, 3.5), subtract(3.5, 2.6), subtract(2.6, 3.5)",1,-0.9,0,0
+UNP/2011/page_33.pdf-3,"subtract(17282, 18171), multiply(#0, const_1000)","subtract(17282, 18171), multiply(#0, const_1000)",1,-889000.0,0,0
+IP/2006/page_35.pdf-3,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+UNP/2018/page_74.pdf-4,"divide(155, 898), multiply(#1, const_100)","divide(155, 898), multiply(#1, const_100)",0,,0,0
+IP/2006/page_35.pdf-4,"subtract(354, 558), subtract(558, 117)","subtract(354, 558), subtract(558, 117)",1,441.0,0,0
+BLK/2012/page_33.pdf-4,"divide(add(752707, -593356), 593356), multiply(#1, const_100)","add(752707, -593356), multiply(#1, const_100)",0,,0,0
+ABMD/2005/page_29.pdf-3,"substract(2.56, 2.92), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+BDX/2018/page_106.pdf-2,table_range(losses on undesignated foreign exchange derivatives net of none),,0,,0,0
+BLK/2015/page_124.pdf-3,"divide(125, 1203), multiply(#1, const_100)","divide(125, 1203), multiply(#1, const_100)",0,,0,0
+BKR/2017/page_56.pdf-3,"add(-799, 1277)","add(-799, 1277)",1,478.0,0,0
+ADI/2019/page_29.pdf-1,"subtract(2174639499, 2070927831)","subtract(2174639499, 2070927831)",1,103711668.0,0,0
+ABMD/2005/page_29.pdf-4,"substract(3.87, 2.56), multiply(#1, const_100)","multiply(#1, const_100)",0,,0,0
+ABMD/2012/page_79.pdf-4,"subtract(64350, 40000), divide(#0, 40000), multiply(#1, const_100)","subtract(64350, 40000), divide(#0, 40000), multiply(#1, const_100)",1,60.875,0,0
+TFX/2017/page_78.pdf-3,"multiply(#1, #2)","multiply(#1, #2)",0,,0,0
+PPG/2006/page_42.pdf-4,"subtract(10, 4), multiply(#1, const_1000)","subtract(10, 4), multiply(#1, const_1000)",0,,0,0
+IP/2009/page_45.pdf-3,"subtract(148, 124), subtract(124, 148), subtract(148, 177), subtract(177, 148)","subtract(148, 124), subtract(124, 148), subtract(148, 177), subtract(177, 148)",1,29.0,0,0
+UNP/2007/page_25.pdf-3,"substract(table_average(free cash flow, 2007), table_average(free cash flow, 2005))","table_average(free cash flow, 2007), table_average(free cash flow, 2005)",1,412.33333,0,0
+ALXN/2016/page_153.pdf-4,"divide(#0, 3081), multiply(#1, const_100)","divide(#0, 3081), multiply(#1, const_100)",0,,0,0
+IP/2006/page_31.pdf-3,"divide(373, 4545)","divide(373, 4545)",1,0.08207,1,1
+HOLX/2009/page_127.pdf-3,"divide(#1, #2), multiply(#1, const_100)","divide(#1, #2), multiply(#1, const_100)",0,,0,0
+ANSS/2012/page_93.pdf-4,"add(1.3, 1.3, 1.3)","add(1.3, 1.3, 1.3)",0,,0,0
+TFX/2015/page_89.pdf-3,"subtract(170, 194), subtract(474, 2), subtract(1376, 13), subtract(7819, 147)","subtract(170, 194), subtract(474, 2), subtract(1376, 13), subtract(7819, 147)",1,7672.0,0,0
+IP/2006/page_30.pdf-3,"divide(473, 7170)","divide(473, 7170)",1,0.06597,1,1
+VRTX/2006/page_111.pdf-3,"divide(#1, #2)","divide(#1, #2)",0,,0,0
+MO/2016/page_19.pdf-4,"divide(add(subtract(#3, #2), subtract(#1, #0)), add(#2, #0))","subtract(#3, #2), subtract(#1, #0), add(#2, #0)",0,,0,0
+ADI/2019/page_29.pdf-3,"divide(#3, #1), multiply(#1, const_100)","divide(#3, #1), multiply(#1, const_100)",0,,0,0
+ABMD/2012/page_41.pdf-3,"subtract(100, 75.55), divide(#0, 100), multiply(#1, const_100)","subtract(100, 75.55), divide(#0, 100), multiply(#1, const_100)",1,24.45,0,0
+UNP/2015/page_56.pdf-4,"divide(4074, 20397), multiply(#1, const_100)","divide(4074, 20397), multiply(#1, const_100)",0,,0,0
+BLK/2017/page_121.pdf-3,"subtract(348, 301), divide(#0, 301), multiply(#1, const_100)","subtract(348, 301), divide(#0, 301), multiply(#1, const_100)",1,15.61462,0,0
+MO/2014/page_62.pdf-3,"substract(5070, 4535), divide(#0, 4535), multiply(#1, const_100)","divide(#0, 4535), multiply(#1, const_100)",0,,0,0
+IP/2006/page_75.pdf-3,"add(217, 216, 225), multiply(#0, const_1000)","add(217, 216, 225), multiply(#0, const_1000)",0,,0,0
+BLK/2012/page_145.pdf-1,"divide(table_sum(fair value, none), table_sum(carrying value, none))","table_sum(fair value, none), table_sum(carrying value, none)",0,,0,0
+PPG/2012/page_29.pdf-3,"subtract(122, 56), subtract(56, 34)","subtract(122, 56), subtract(56, 34)",1,22.0,1,0
+NCLH/2018/page_64.pdf-4,"subtract(165172, 404380), subtract(404380, 165172)","subtract(165172, 404380), subtract(404380, 165172)",1,239208.0,0,0
+PPG/2008/page_52.pdf-3,"subtract(99, 110), multiply(#1, const_100)","subtract(99, 110), multiply(#1, const_100)",0,,0,0
+UNP/2010/page_21.pdf-3,"divide(3063816, 4)","divide(3063816, 4)",1,765954.0,0,0
+IP/2009/page_45.pdf-4,"divide(#1, #0), multiply(#1, const_100)","divide(#1, #0), multiply(#1, const_100)",0,,0,0
+UNP/2007/page_25.pdf-4,"subtract(516, 234), multiply(#1, const_1000)","subtract(516, 234), multiply(#1, const_1000)",0,,0,0
+IP/2006/page_38.pdf-3,"divide(144, 3165), multiply(#1, const_100)","divide(144, 3165), multiply(#1, const_100)",0,,0,0
+ABMD/2007/page_78.pdf-3,"substract(8.75, 6.91), divide(#0, 6.91)","divide(#0, 6.91)",0,,0,0
+IP/2006/page_38.pdf-4,"divide(table_sum(total debt (a), table_name(""total of"")), table_sum(lease obligations (b), table_name(""total of"")))",,0,,0,0
+VRTX/2006/page_111.pdf-4,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+BLK/2015/page_124.pdf-4,"multiply(50, const_1000)","multiply(50, const_1000)",1,50000.0,0,0
+UNP/2006/page_15.pdf-3,"divide(27318, 51596), multiply(#1, const_100)","divide(27318, 51596), multiply(#1, const_100)",0,,0,0
+LKQ/2016/page_87.pdf-3,"add(211.5, 168.4, 148.5), multiply(#0, const_1000)","add(211.5, 168.4, 148.5), multiply(#0, const_1000)",0,,0,0
+UNP/2011/page_24.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+ABMD/2006/page_43.pdf-3,"divide(table_sum(operating lease obligations of payments due by fiscal year 2008, table_sum(total obligations of payments due by fiscal year 2008)), table_sum(total obligations of payments due by fiscal year))","table_sum(total obligations of payments due by fiscal year 2008), table_sum(total obligations of payments due by fiscal year)",0,,0,0
+UNP/2006/page_15.pdf-4,"divide(27301, 52667), multiply(#1, const_100)","divide(27301, 52667), multiply(#1, const_100)",0,,0,0
+MO/2014/page_39.pdf-3,"divide(table_sum(copenhagen, 2013), table_sum(total smokeless products, 2013))","table_sum(copenhagen, 2013), table_sum(total smokeless products, 2013)",1,2344.1,0,0
+PPG/2008/page_52.pdf-4,"subtract(99, 110), multiply(#1, const_100)","subtract(99, 110), multiply(#1, const_100)",0,,0,0
+UNP/2011/page_33.pdf-4,"subtract(17282, 16058), multiply(#1, const_1000000)","subtract(17282, 16058), multiply(#1, const_1000000)",0,,0,0
+BLK/2017/page_121.pdf-1,"subtract(348, 259), divide(#0, 259), multiply(#1, const_100)","subtract(348, 259), divide(#0, 259), multiply(#1, const_100)",1,34.36293,0,0
+PPG/2012/page_29.pdf-4,"subtract(122, 56), subtract(56, 34)","subtract(122, 56), subtract(56, 34)",1,22.0,1,0
+LKQ/2016/page_87.pdf-4,"divide(#2, 200450), multiply(#1, const_100)","divide(#2, 200450), multiply(#1, const_100)",0,,0,0
+CMCSA/2008/page_36.pdf-3,"divide(#3, #2), multiply(#1, const_100)","divide(#3, #2), multiply(#1, const_100)",0,,0,0
+NCLH/2018/page_97.pdf-3,"divide(2549621, 6609866), multiply(#1, const_100)","divide(2549621, 6609866), multiply(#1, const_100)",0,,0,0
+UNP/2009/page_42.pdf-3,"divide(table_sum(operating leases of payments due by december 31 2010, operating leases of payments due by december 31 2011, operating leases of payments due by december 31 2012, operating leases of payments due by december 31 2013, operating leases of payments due by december 31 2014, operating leases of payments due by december 31 after",,0,,0,0
+BKR/2017/page_56.pdf-4,"add(-799, 262)","add(-799, 262)",1,-537.0,0,0
+CMCSA/2015/page_112.pdf-3,"subtract(1171, 1701), subtract(1701, 1171)","subtract(1171, 1701), subtract(1701, 1171)",1,530.0,0,0
+ABMD/2007/page_78.pdf-4,"substract(6.91, 8.05), divide(#0, 8.05)","divide(#0, 8.05)",0,,0,0
+UNP/2016/page_52.pdf-4,"table_range(millions the chemicals, 2014, 2016)",,0,,0,0
+BLK/2012/page_145.pdf-3,"divide(table_sum(fair value, none), table_sum(carrying value, none))","table_sum(fair value, none), table_sum(carrying value, none)",0,,0,0
+MO/2014/page_62.pdf-4,"subtract(5070, 4535), divide(#0, 4535), multiply(#1, const_100)","subtract(5070, 4535), divide(#0, 4535), multiply(#1, const_100)",1,11.79713,0,0
+ABMD/2008/page_86.pdf-4,"add(5583333, 5583333)","add(5583333, 5583333)",1,11166666.0,0,0
+CMCSA/2015/page_67.pdf-3,"divide(3698, 7034), multiply(#1, const_100)","divide(3698, 7034), multiply(#1, const_100)",0,,0,0
+IP/2006/page_75.pdf-4,"divide(table_sum(purchase obligations (bc), 2007), table_sum(total, 2007)), multiply(#1, const_100)","table_sum(total, 2007), multiply(#1, const_100)",0,,0,0
+UNP/2010/page_21.pdf-4,"subtract(1133106, 1205260), subtract(875000, 92.59)","subtract(1133106, 1205260), subtract(875000, 92.59)",1,874907.41,0,0
+MO/2014/page_39.pdf-4,"divide(table_sum(copenhagen, none), table_sum(total smokeless products, none))","table_sum(copenhagen, none), table_sum(total smokeless products, none)",1,2344.1,0,0
+CMCSA/2015/page_112.pdf-4,"divide(#1, #2), divide(#3, #4)","divide(#1, #2), divide(#3, #4)",0,,0,0
+UNP/2011/page_24.pdf-4,"divide(subtract(table_average(free cash flow, 2011), table_average(free cash flow, 2001)), table_average(free cash flow, 2001)) * 100","table_average(free cash flow, 2011), table_average(free cash flow, 2001), table_average(free cash flow, 2001)",1,1343.66667,0,0
+ABMD/2012/page_41.pdf-4,"subtract(100, 94.11), divide(#0, 100), multiply(#1, const_100)","subtract(100, 94.11), divide(#0, 100), multiply(#1, const_100)",1,5.89,0,0
+UNP/2009/page_42.pdf-4,"divide(table_sum(capital lease obligations [b], none), 5312), multiply(#1, const_100)","table_sum(capital lease obligations [b], none), multiply(#1, const_100)",0,,0,0
+BDX/2018/page_106.pdf-3,"table_average(other income ( expense ), 3)",,0,,0,0
+HOLX/2009/page_127.pdf-4,"divide(#3, #2)","divide(#3, #2)",0,,0,0
+IP/2006/page_30.pdf-4,"table_sum(european papers net sales, none)","table_sum(european papers net sales, none)",0,,0,0

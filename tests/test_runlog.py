@@ -124,10 +124,15 @@ def test_the_repo_results_build(tmp_path):
     assert counts["pilot/run1"] == 12   # 2 learning rates x runs a, b x 3 epochs (Kaggle, 16 Nov 2026)
     assert counts["main/run1"] == 6     # seeds 1 to 3 x 2 arms (Kaggle, 19 Nov 2026)
     assert counts["main/run2"] == 4     # seeds 4 and 5 x 2 arms (Kaggle, 19 Nov 2026)
+    assert counts["test/run1"] == 15    # 13 test passes + 2 dev checks (Kaggle, 20 Nov 2026, commit 5aa1573)
     con = runlog.connect(tmp_path / "runs.db")
     assert sum(runlog.vector(con, "pilot/run1/lr2e-4/a/epoch3")) == 589
     assert sum(runlog.vector(con, "main/run1/cleaned/seed1/dev")) == 588
     assert sum(runlog.vector(con, "main/run2/cleaned/seed5/dev")) == 596
+    assert sum(runlog.vector(con, "test/run1/devcheck/cleaned-seed1/dev")) == 588   # equal to main/run1
+    assert sum(runlog.vector(con, "test/run1/devcheck/random-seed1/dev")) == 583
+    assert sum(runlog.vector(con, "test/run1/cleaned/seed1/test")) == 745
+    assert sum(runlog.vector(con, "test/run1/base/qwen3-4b/4shot/test")) == 252
 
 
 def fake_main_run(folder, arm, seed, right, ids=DEV_IDS):

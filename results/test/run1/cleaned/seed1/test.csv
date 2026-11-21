@@ -1,0 +1,1148 @@
+id,reply,program,executes,value,exe_correct,prog_correct
+ETR/2016/page_23.pdf-2,"subtract(5829, 5735)","subtract(5829, 5735)",1,94.0,1,1
+INTC/2015/page_41.pdf-4,"divide(8.1, 56.0)","divide(8.1, 56.0)",1,0.14464,1,1
+ADI/2011/page_61.pdf-2,"subtract(153.7, 139.9), divide(#0, 139.9)","subtract(153.7, 139.9), divide(#0, 139.9)",1,0.09864,1,1
+FIS/2010/page_70.pdf-2,"divide(121.4, 4187.8)","divide(121.4, 4187.8)",1,0.02899,1,1
+MAS/2017/page_27.pdf-2,"subtract(318.46, 100), divide(#0, 100), subtract(206.49, 100), divide(#2, 100), subtract(#1, #3)","subtract(318.46, 100), divide(#0, 100), subtract(206.49, 100), divide(#2, 100), subtract(#1, #3)",1,1.1197,1,0
+SYY/2006/page_71.pdf-1,"subtract(100690000, 92710000), divide(#0, 92710000)","subtract(100690000, 92710000), divide(#0, 92710000)",1,0.08607,0,0
+AES/2010/page_227.pdf-3,"divide(463, 4612)","divide(463, 4612)",1,0.10039,1,1
+GS/2015/page_188.pdf-2,"divide(301, 2575)","divide(301, 2575)",1,0.11689,1,1
+MO/2016/page_19.pdf-1,"greater(286.61, 198.09)","greater(286.61, 198.09)",1,yes,1,1
+CMCSA/2015/page_112.pdf-2,"subtract(1136, 1171)","subtract(1136, 1171)",1,-35.0,1,1
+STT/2007/page_111.pdf-3,"subtract(4711, 4926), divide(#0, 4926)","subtract(4711, 4926), divide(#0, 4926)",1,-0.04365,1,1
+UAA/2016/page_42.pdf-2,"divide(817388, 3644331)","divide(817388, 3644331)",1,0.22429,1,1
+GIS/2018/page_110.pdf-2,"divide(137.4, 559.3)","divide(137.4, 559.3)",1,0.24566,1,1
+JKHY/2019/page_18.pdf-3,"greater(286.22, 228.97)","greater(286.22, 228.97)",1,yes,0,0
+AWK/2014/page_121.pdf-2,"subtract(6348, 6241), divide(#0, 6241)","subtract(6348, 6241), divide(#0, 6241)",1,0.01714,1,1
+MRO/2011/page_108.pdf-1,"add(4648, 3625), add(#0, 1620), divide(#1, const_3)","add(4648, 3625), add(#0, 1620), divide(#1, const_3)",1,3297.66667,1,0
+RCL/2012/page_75.pdf-1,"divide(455, const_7)","divide(455, const_7)",1,65.0,1,1
+ETR/2017/page_372.pdf-1,"add(705.4, 703.1), divide(#0, const_2)","add(705.4, 703.1), divide(#0, const_2)",1,704.25,0,0
+ADBE/2008/page_89.pdf-3,"divide(15.3, 139549)","divide(15.3, 139549)",1,0.00011,0,0
+JPM/2010/page_273.pdf-2,"add(9.7, 10.2)","add(9.7, 10.2)",1,19.9,0,0
+PNC/2012/page_68.pdf-2,"subtract(772, 843), divide(#0, 843)","subtract(772, 843), divide(#0, 843)",1,-0.08422,1,1
+FIS/2016/page_31.pdf-2,"subtract(311.81, const_100), divide(#0, const_100), subtract(198.18, const_100), divide(#2, const_100), subtract(#1, #3)","subtract(311.81, const_100), divide(#0, const_100), subtract(198.18, const_100), divide(#2, const_100), subtract(#1, #3)",1,1.1363,1,1
+AMT/2016/page_49.pdf-1,"subtract(102.93, 83.07), divide(#0, 83.07)","subtract(102.93, 83.07), divide(#0, 83.07)",1,0.23908,0,0
+MAR/2018/page_43.pdf-2,"divide(230, 13208)","divide(230, 13208)",1,0.01741,1,1
+AAL/2016/page_8.pdf-4,"divide(26900, 16900)","divide(26900, 16900)",1,1.59172,1,1
+ETFC/2007/page_18.pdf-1,"divide(219000, 83000)","divide(219000, 83000)",1,2.63855,1,1
+GPN/2010/page_87.pdf-3,"divide(-6.3, 18.1)","divide(-6.3, 18.1)",1,-0.34807,0,0
+ADBE/2008/page_89.pdf-2,"subtract(139549, 201808), divide(#0, 201808)","subtract(139549, 201808), divide(#0, 201808)",1,-0.30851,1,1
+DG/2005/page_44.pdf-2,"add(0.5, 0.6), add(#0, 4.7), add(#1, 0.6), add(#2, 0.2), add(#3, 0.2)","add(0.5, 0.6), add(#0, 4.7), add(#1, 0.6), add(#2, 0.2), add(#3, 0.2)",1,6.8,0,0
+ALXN/2016/page_153.pdf-2,"add(3500, 200), divide(3500, #0)","add(3500, 200), divide(3500, #0)",1,0.94595,0,0
+UNP/2015/page_56.pdf-1,"divide(3581, 21813)","divide(3581, 21813)",1,0.16417,1,1
+C/2009/page_45.pdf-1,"divide(896, 3173)","divide(896, 3173)",1,0.28238,1,1
+AAPL/2006/page_100.pdf-3,"table_max(provision for income taxes, none)","table_max(provision for income taxes, none)",1,829.0,1,1
+JPM/2018/page_90.pdf-1,"divide(3087, 55687)","divide(3087, 55687)",1,0.05543,1,1
+PNC/2012/page_65.pdf-4,"subtract(51052, 49447)","subtract(51052, 49447)",1,1605.0,0,0
+ABMD/2008/page_86.pdf-1,"subtract(168, 224), divide(#0, const_100), multiply(#1, const_1000)","subtract(168, 224), divide(#0, const_100), multiply(#1, const_1000)",1,-560.0,0,0
+ETFC/2012/page_24.pdf-1,"divide(165000, 254000)","divide(165000, 254000)",1,0.64961,1,1
+ETFC/2007/page_18.pdf-2,"divide(166000, 219000)","divide(166000, 219000)",1,0.75799,1,1
+GS/2017/page_179.pdf-4,"add(4.6, 5.5), add(#0, 2.0)","add(4.6, 5.5), add(#0, 2.0)",1,12.1,1,0
+MKTX/2004/page_99.pdf-3,"add(1939734, 1937141)","add(1939734, 1937141)",1,3876875.0,1,1
+ETR/2013/page_21.pdf-3,"subtract(1854, 2045)","subtract(1854, 2045)",1,-191.0,1,1
+GS/2013/page_220.pdf-2,"subtract(248.36, const_100), divide(#0, const_100), subtract(236.20, const_100), divide(#2, const_100), subtract(#1, #3)","subtract(248.36, const_100), divide(#0, const_100), subtract(236.20, const_100), divide(#2, const_100), subtract(#1, #3)",1,0.1216,1,1
+FBHS/2017/page_83.pdf-1,"multiply(160196, 58.02)","multiply(160196, 58.02)",1,9294571.92,1,1
+ZBH/2008/page_57.pdf-2,"divide(460.1, 1020.1)","divide(460.1, 1020.1)",1,0.45103,1,1
+K/2006/page_52.pdf-2,"add(957.4, 769.1), add(#0, 950.4), divide(#1, const_3)","add(957.4, 769.1), add(#0, 950.4), divide(#1, const_3)",1,892.3,1,1
+GPN/2014/page_92.pdf-1,"multiply(766801, 40.85), divide(#0, const_1000000)","multiply(766801, 40.85), divide(#0, const_1000000)",1,31.32382,1,1
+FIS/2017/page_64.pdf-3,"subtract(1909, 1336), divide(#0, 1336)","subtract(1909, 1336), divide(#0, 1336)",1,0.42889,1,1
+BLL/2010/page_37.pdf-2,"subtract(559.7, 765.2), divide(#0, 765.2)","subtract(559.7, 765.2), divide(#0, 765.2)",1,-0.26856,0,0
+PNC/2012/page_65.pdf-1,"divide(10.4, 61.4)","divide(10.4, 61.4)",1,0.16938,0,0
+SNA/2018/page_31.pdf-1,"divide(205000, 630000)","divide(205000, 630000)",1,0.3254,1,1
+FIS/2016/page_45.pdf-4,"subtract(1131, 1165), divide(#0, 1165)","subtract(1131, 1165), divide(#0, 1165)",1,-0.02918,1,1
+ETFC/2011/page_144.pdf-2,"divide(19.3, 0.5)","divide(19.3, 0.5)",1,38.6,0,0
+STT/2009/page_127.pdf-4,"multiply(5576208, 53.80)","multiply(5576208, 53.80)",1,299999990.4,1,1
+ILMN/2008/page_82.pdf-1,"divide(const_3, 401362)","divide(const_3, 401362)",1,1e-05,1,1
+ETR/2004/page_239.pdf-3,"subtract(426.6, 380.2), divide(#0, 380.2)","subtract(426.6, 380.2), divide(#0, 380.2)",1,0.12204,1,1
+HOLX/2007/page_126.pdf-2,"divide(2800, 73200)","divide(2800, 73200)",1,0.03825,1,1
+FBHS/2017/page_83.pdf-2,"subtract(63.43, 57.37), divide(#0, 57.37)","subtract(63.43, 57.37), divide(#0, 57.37)",1,0.10563,1,1
+UA/2007/page_70.pdf-2,"divide(10.8, 112.7)","divide(10.8, 112.7)",1,0.09583,1,1
+FIS/2012/page_48.pdf-1,"subtract(26.4, 18.6), divide(#0, 18.6)","subtract(26.4, 18.6), divide(#0, 18.6)",1,0.41935,1,1
+AON/2015/page_96.pdf-1,"add(411636, 439000), add(#0, 556000), divide(#1, const_3)","add(411636, 439000), add(#0, 556000), divide(#1, const_3)",1,468878.66667,0,0
+CME/2010/page_91.pdf-1,"subtract(11.2, 8.8), divide(#0, 8.8)","subtract(11.2, 8.8), divide(#0, 8.8)",1,0.27273,1,1
+HIG/2004/page_140.pdf-1,"divide(294, 30)","divide(294, 30)",1,9.8,1,1
+CME/2010/page_123.pdf-2,"multiply(1211143, 308.10)","multiply(1211143, 308.10)",1,373153158.3,1,1
+AON/2007/page_175.pdf-2,"subtract(134, 2014)","subtract(134, 2014)",1,-1880.0,0,0
+ETR/2013/page_21.pdf-2,"subtract(2045, 1854), divide(-194, #0)","subtract(2045, 1854), divide(-194, #0)",1,-1.01571,0,0
+ABMD/2005/page_29.pdf-2,"greater(28000, 19000)","greater(28000, 19000)",1,yes,1,1
+NWS/2017/page_119.pdf-2,"divide(116, 216)","divide(116, 216)",1,0.53704,1,1
+PNC/2012/page_65.pdf-3,"divide(49447, 59801)","divide(49447, 59801)",1,0.82686,1,1
+AES/2010/page_227.pdf-4,"multiply(690, 8.75%)","multiply(690, 8.75%)",1,60.375,0,0
+PNC/2012/page_68.pdf-4,"divide(843, 1294)","divide(843, 1294)",1,0.65147,0,0
+GIS/2017/page_31.pdf-1,"divide(604.2, 3112.0)","divide(604.2, 3112.0)",1,0.19415,0,0
+PM/2017/page_32.pdf-1,"subtract(164, 199), divide(#0, 199)","subtract(164, 199), divide(#0, 199)",1,-0.17588,1,1
+CME/2010/page_123.pdf-4,"divide(5978, 1217121)","divide(5978, 1217121)",1,0.00491,0,0
+HUM/2014/page_44.pdf-1,"subtract(201, 125), divide(#0, 125)","subtract(201, 125), divide(#0, 125)",1,0.608,1,1
+VNO/2014/page_57.pdf-1,"subtract(201, 100)","subtract(201, 100)",1,101.0,1,1
+MSI/2014/page_76.pdf-3,"subtract(11.02, 9.52), divide(#0, 9.52)","subtract(11.02, 9.52), divide(#0, 9.52)",1,0.15756,0,0
+MRO/2008/page_45.pdf-1,"add(176, 850)","add(176, 850)",1,1026.0,1,1
+CB/2010/page_83.pdf-1,"subtract(47, 21)","subtract(47, 21)",1,26.0,0,0
+GS/2017/page_86.pdf-2,"table_sum(tier 1 capital, none)","table_sum(tier 1 capital, none)",1,160035.0,1,0
+BLL/2012/page_31.pdf-3,"subtract(207.62, const_100), subtract(97.13, const_100), subtract(#0, #1)","subtract(207.62, const_100), subtract(97.13, const_100), subtract(#0, #1)",1,110.49,0,0
+BLL/2012/page_31.pdf-4,"subtract(207.62, const_100), subtract(107.76, const_100), subtract(#0, #1)","subtract(207.62, const_100), subtract(107.76, const_100), subtract(#0, #1)",1,99.86,0,0
+MRO/2007/page_136.pdf-2,"divide(37, 1.4)","divide(37, 1.4)",1,26.42857,1,1
+AMT/2012/page_50.pdf-3,"divide(102400, 15790)","divide(102400, 15790)",1,6.48512,1,1
+AWK/2012/page_117.pdf-4,"divide(74360, 180993)","divide(74360, 180993)",1,0.41084,1,1
+SNA/2007/page_49.pdf-4,"subtract(1.11, 1.08), divide(#0, 1.08)","subtract(1.11, 1.08), divide(#0, 1.08)",1,0.02778,0,0
+GS/2015/page_188.pdf-1,"divide(1160, 2575)","divide(1160, 2575)",1,0.45049,1,1
+UPS/2012/page_32.pdf-4,"subtract(86.42, 80.20), divide(#0, 80.20)","subtract(86.42, 80.20), divide(#0, 80.20)",1,0.07756,1,1
+AON/2015/page_96.pdf-3,"divide(const_100, 2779)","divide(const_100, 2779)",1,0.03598,0,0
+STT/2009/page_127.pdf-2,"subtract(368, 68)","subtract(368, 68)",1,300.0,1,1
+RSG/2018/page_94.pdf-1,"subtract(34.3, 38.9), divide(#0, 38.9)","subtract(34.3, 38.9), divide(#0, 38.9)",1,-0.11825,1,1
+MRO/2004/page_46.pdf-1,"divide(34526, 45686)","divide(34526, 45686)",1,0.75572,0,0
+IP/2006/page_30.pdf-1,"divide(496, 6930)","divide(496, 6930)",1,0.07157,1,1
+APD/2016/page_40.pdf-2,"table_average(operating income, none)","table_average(operating income, none)",1,822.06667,1,1
+CDNS/2018/page_66.pdf-4,"subtract(426932, 341003), subtract(#0, 17.5)","subtract(426932, 341003), subtract(#0, 17.5)",1,85911.5,0,0
+CDNS/2015/page_30.pdf-2,"subtract(137.90, const_100), divide(#0, const_100)","subtract(137.90, const_100), divide(#0, const_100)",1,0.379,1,1
+AAPL/2006/page_131.pdf-2,"add(362400, 100000)","add(362400, 100000)",1,462400.0,0,0
+L/2009/page_84.pdf-4,"subtract(121.48, 100.00), divide(#0, 100.00)","subtract(121.48, 100.00), divide(#0, 100.00)",1,0.2148,1,0
+ECL/2016/page_52.pdf-4,"divide(554, const_1000)","divide(554, const_1000)",1,0.554,0,0
+ETR/2011/page_301.pdf-1,"subtract(23596, 63003), divide(#0, 63003)","subtract(23596, 63003), divide(#0, 63003)",1,-0.62548,1,1
+AWK/2013/page_122.pdf-3,"divide(7439, 180993)","divide(7439, 180993)",1,0.0411,0,0
+DISCA/2014/page_64.pdf-1,"subtract(224.65, const_100), divide(#0, const_100)","subtract(224.65, const_100), divide(#0, const_100)",1,1.2465,1,1
+C/2009/page_45.pdf-2,"divide(988, 3332)","divide(988, 3332)",1,0.29652,1,1
+GPN/2013/page_92.pdf-1,"divide(11057, 57096)","divide(11057, 57096)",1,0.19366,1,1
+GPN/2010/page_89.pdf-4,"subtract(713, 762), divide(#0, 762)","subtract(713, 762), divide(#0, 762)",1,-0.0643,0,0
+AON/2010/page_86.pdf-1,"divide(2715, 4932)","divide(2715, 4932)",1,0.55049,1,1
+EOG/2018/page_75.pdf-1,"table_average(ending balance, none)","table_average(ending balance, none)",1,338928.0,1,1
+CME/2010/page_69.pdf-2,"divide(945.5, 420.5)","divide(945.5, 420.5)",1,2.24851,0,0
+GS/2014/page_51.pdf-2,"subtract(230667, 255534), divide(#0, 255534)","subtract(230667, 255534), divide(#0, 255534)",1,-0.09731,1,1
+UNP/2007/page_25.pdf-1,"subtract(2880, 9%)","subtract(2880, 9%)",1,2879.91,0,0
+AES/2002/page_128.pdf-2,"subtract(54, 31)","subtract(54, 31)",1,23.0,0,0
+AMT/2016/page_49.pdf-3,"subtract(108.11, 118.09), divide(#0, 118.09)","subtract(108.11, 118.09), divide(#0, 118.09)",1,-0.08451,1,1
+ADBE/1999/page_64.pdf-3,"subtract(772, 8867)","subtract(772, 8867)",1,-8095.0,1,1
+GPN/2008/page_78.pdf-2,"divide(13536, 16594)","divide(13536, 16594)",1,0.81572,1,1
+PNC/2012/page_68.pdf-1,"subtract(2220, 1522), divide(#0, 1522)","subtract(2220, 1522), divide(#0, 1522)",1,0.45861,1,1
+MRO/2013/page_19.pdf-3,"table_average(worldwide of net undeveloped acres expiring, none)","table_average(worldwide of net undeveloped acres expiring, none)",0,,0,0
+C/2008/page_22.pdf-2,"subtract(367, 78)","subtract(367, 78)",1,289.0,0,0
+UPS/2007/page_49.pdf-1,"add(108, 378), add(#0, 3426), add(#1, 1306), add(#2, 101), add(#3, 78)","add(108, 378), add(#0, 3426), add(#1, 1306), add(#2, 101), add(#3, 78)",1,5397.0,0,0
+NCLH/2018/page_64.pdf-1,"subtract(30.4, 29.0), divide(#0, 29.0)","subtract(30.4, 29.0), divide(#0, 29.0)",1,0.04828,1,1
+MKTX/2012/page_42.pdf-1,"subtract(37.79, 24.19), divide(#0, 24.19)","subtract(37.79, 24.19), divide(#0, 24.19)",1,0.56222,0,0
+PNC/2014/page_111.pdf-2,"subtract(717, 802)","subtract(717, 802)",1,-85.0,1,1
+AWK/2014/page_121.pdf-1,"subtract(195237, 180993)","subtract(195237, 180993)",1,14244.0,0,0
+AAL/2013/page_172.pdf-4,"divide(1246, 5424)","divide(1246, 5424)",1,0.22972,1,1
+ECL/2016/page_52.pdf-1,"subtract(327, 184), divide(#0, 327)","subtract(327, 184), divide(#0, 327)",1,0.43731,0,0
+JPM/2010/page_281.pdf-3,"divide(521.3, 655.0)","divide(521.3, 655.0)",1,0.79588,1,1
+CME/2017/page_40.pdf-2,"subtract(208.14, 100), divide(#0, 100)","subtract(208.14, 100), divide(#0, 100)",1,1.0814,0,0
+AMT/2012/page_50.pdf-1,"divide(102400, 619314)","divide(102400, 619314)",1,0.16534,1,1
+SNA/2012/page_110.pdf-2,"subtract(509, 707)","subtract(509, 707)",1,-198.0,1,0
+GPN/2010/page_89.pdf-3,"add(12.1, 9.0), add(#0, 5.7)","add(12.1, 9.0), add(#0, 5.7)",1,26.8,1,1
+C/2018/page_175.pdf-3,"divide(5186, 9062)","divide(5186, 9062)",1,0.57228,1,1
+AMT/2012/page_118.pdf-2,"divide(151.7, 800)","divide(151.7, 800)",1,0.18962,1,1
+DISCA/2011/page_49.pdf-1,"subtract(296.67, const_100), divide(#0, const_100)","subtract(296.67, const_100), divide(#0, const_100)",1,1.9667,1,1
+ZBH/2007/page_67.pdf-2,"subtract(25.2, 6.1), divide(#0, 6.1)","subtract(25.2, 6.1), divide(#0, 6.1)",1,3.13115,1,1
+RSG/2016/page_145.pdf-1,"divide(120000, 120000)","divide(120000, 120000)",1,1.0,1,1
+ZBH/2009/page_58.pdf-2,"divide(1095.6, 2719.3)","divide(1095.6, 2719.3)",1,0.4029,1,1
+DRE/2008/page_46.pdf-2,"divide(217692, 139255)","divide(217692, 139255)",1,1.56326,1,1
+IP/2006/page_75.pdf-2,"divide(117, 579)","divide(117, 579)",1,0.20207,1,1
+DRE/2002/page_15.pdf-2,"subtract(21.1, 15.6), divide(#0, 21.1)","subtract(21.1, 15.6), divide(#0, 21.1)",1,0.26066,0,0
+MRO/2003/page_84.pdf-3,"subtract(-57, -41), divide(#0, -41)","subtract(-57, -41), divide(#0, -41)",1,0.39024,1,1
+AON/2007/page_171.pdf-1,"subtract(-726, -1010)","subtract(-726, -1010)",1,284.0,1,1
+K/2013/page_23.pdf-1,"divide(2014, 2098), multiply(#0, 2014)","divide(2014, 2098), multiply(#0, 2014)",1,1933.3632,0,0
+AMT/2003/page_102.pdf-2,"subtract(109435, 73684), divide(#0, 73684)","subtract(109435, 73684), divide(#0, 73684)",1,0.48519,1,1
+JPM/2018/page_90.pdf-5,"subtract(2.36%, 2.25%)","subtract(2.36%, 2.25%)",1,0.0011,0,0
+AMT/2014/page_160.pdf-4,"greater(655.0, 495.2)","greater(655.0, 495.2)",1,yes,1,0
+PNC/2007/page_92.pdf-2,"table_average(residential mortgage, none)","table_average(residential mortgage, none)",1,7947.0,1,0
+ETR/2016/page_23.pdf-3,"add(187, 95), subtract(5829, #0)","add(187, 95), subtract(5829, #0)",1,5547.0,0,0
+IP/2006/page_31.pdf-2,"divide(895, 4625)","divide(895, 4625)",1,0.19351,1,1
+HST/2018/page_135.pdf-1,"subtract(11, 11)","subtract(11, 11)",1,0.0,1,1
+PNC/2012/page_174.pdf-5,"divide(541, 2859)","divide(541, 2859)",1,0.18923,1,1
+CME/2017/page_40.pdf-5,"greater(370.32, 208.14)","greater(370.32, 208.14)",1,yes,1,0
+CMCSA/2015/page_67.pdf-2,"divide(2047, 6154)","divide(2047, 6154)",1,0.33263,1,1
+ANET/2015/page_156.pdf-2,"divide(1336, 42546)","divide(1336, 42546)",1,0.0314,1,1
+AMAT/2013/page_37.pdf-2,"subtract(138.29, const_100), divide(100000, const_100), multiply(#1, #0)","subtract(138.29, const_100), divide(100000, const_100), multiply(#1, #0)",1,38290.0,1,1
+PNC/2012/page_247.pdf-3,"subtract(4.0, 3.9), divide(#0, 4.0)","subtract(4.0, 3.9), divide(#0, 4.0)",1,0.025,0,0
+HOLX/2006/page_100.pdf-1,"divide(6900, 31300)","divide(6900, 31300)",1,0.22045,1,1
+UPS/2007/page_98.pdf-1,"multiply(1.8, 64.20)","multiply(1.8, 64.20)",1,115.56,1,1
+CB/2010/page_83.pdf-2,"subtract(47, 21), divide(#0, 21)","subtract(47, 21), divide(#0, 21)",1,1.2381,0,0
+GPN/2018/page_94.pdf-1,"multiply(1226, 78.29)","multiply(1226, 78.29)",1,95983.54,1,1
+BLK/2014/page_120.pdf-2,"divide(112, 1178)","divide(112, 1178)",1,0.09508,0,0
+AWK/2014/page_121.pdf-4,"divide(6498, 542705)","divide(6498, 542705)",1,0.01197,1,1
+DG/2010/page_136.pdf-1,"divide(const_100, 10)","divide(const_100, 10)",1,10.0,0,0
+MKTX/2004/page_99.pdf-1,"subtract(110000000, 1939734)","subtract(110000000, 1939734)",1,108060266.0,0,0
+DG/2007/page_67.pdf-1,"subtract(0.2, 9.4)","subtract(0.2, 9.4)",1,-9.2,1,1
+EOG/2018/page_75.pdf-2,"divide(12, 29)","divide(12, 29)",1,0.41379,1,1
+AES/2001/page_33.pdf-2,"subtract(52.25, 39.95)","subtract(52.25, 39.95)",1,12.3,1,1
+CMCSA/2015/page_67.pdf-1,"divide(2424, 7034)","divide(2424, 7034)",1,0.34461,1,1
+SLG/2001/page_48.pdf-3,"add(257685, 230323), add(#0, 206017), divide(#1, const_3)","add(257685, 230323), add(#0, 206017), divide(#1, const_3)",1,231341.66667,1,1
+JKHY/2017/page_26.pdf-1,"subtract(161.43, 150.27), divide(#0, 150.27)","subtract(161.43, 150.27), divide(#0, 150.27)",1,0.07427,1,1
+CE/2016/page_19.pdf-3,"subtract(78, 119)","subtract(78, 119)",1,-41.0,1,1
+GS/2012/page_189.pdf-2,"table_max(tier 2 capital, none)","table_max(tier 2 capital, none)",1,39.0,1,1
+FIS/2016/page_45.pdf-2,"divide(332, 10591)","divide(332, 10591)",1,0.03135,1,1
+SNA/2007/page_69.pdf-3,"subtract(-3.7, -3.5), divide(#0, -3.5)","subtract(-3.7, -3.5), divide(#0, -3.5)",1,0.05714,0,0
+IPG/2017/page_92.pdf-2,"subtract(79.0, 53.9), divide(#0, 79.0)","subtract(79.0, 53.9), divide(#0, 79.0)",1,0.31772,0,0
+GS/2017/page_132.pdf-2,"table_min(cash instruments, none)","table_min(cash instruments, none)",1,15395.0,1,1
+ETR/2008/page_298.pdf-3,"subtract(55509, 11589)","subtract(55509, 11589)",1,43920.0,1,1
+MRO/2013/page_19.pdf-1,"table_sum(other africa, none)","table_sum(other africa, none)",1,2983.0,1,1
+LMT/2012/page_73.pdf-3,"subtract(335.9, 364.2), divide(#0, 364.2)","subtract(335.9, 364.2), divide(#0, 364.2)",1,-0.0777,1,1
+ZBH/2015/page_57.pdf-2,"subtract(31.9, 33.9)","subtract(31.9, 33.9)",1,-2.0,1,1
+ADBE/2008/page_89.pdf-4,"greater(57.7, 68.9)","greater(57.7, 68.9)",1,no,1,1
+MRO/2003/page_45.pdf-2,"table_sum(distillates, none)","table_sum(distillates, none)",1,1056.0,1,1
+ABMD/2012/page_41.pdf-2,"greater(162.45, 74.40)","greater(162.45, 74.40)",1,yes,1,1
+BLL/2012/page_31.pdf-2,"subtract(107.76, const_100), divide(#0, const_100)","subtract(107.76, const_100), divide(#0, const_100)",1,0.0776,1,1
+AON/2007/page_188.pdf-4,"subtract(4, 24)","subtract(4, 24)",1,-20.0,0,0
+MRO/2004/page_46.pdf-3,"multiply(34526, 37.07), divide(#0, const_4)","multiply(34526, 37.07), divide(#0, const_4)",1,319969.705,0,0
+L/2009/page_84.pdf-3,"subtract(128.16, 100.00), divide(#0, 100.00)","subtract(128.16, 100.00), divide(#0, 100.00)",1,0.2816,0,0
+IP/2006/page_38.pdf-1,"divide(692, 3165)","divide(692, 3165)",1,0.21864,1,1
+AWK/2012/page_117.pdf-2,"subtract(180993, 118314), divide(#0, 118314)","subtract(180993, 118314), divide(#0, 118314)",1,0.52977,1,1
+V/2014/page_126.pdf-2,"subtract(44.11, 39.03), divide(#0, 39.03)","subtract(44.11, 39.03), divide(#0, 39.03)",1,0.13016,0,0
+UA/2007/page_70.pdf-1,"divide(14684, 53584)","divide(14684, 53584)",1,0.27404,1,1
+SLG/2011/page_91.pdf-1,"add(22825000, 49250000)","add(22825000, 49250000)",1,72075000.0,1,1
+LMT/2016/page_49.pdf-4,"table_average(operating profit, none)","table_average(operating profit, none)",1,1214.66667,1,1
+JPM/2008/page_87.pdf-2,"subtract(const_100, 3.3)","subtract(const_100, 3.3)",1,96.7,0,0
+HWM/2018/page_96.pdf-2,"multiply(13, 26.93), multiply(11, 33.32), subtract(#0, #1)","multiply(13, 26.93), multiply(11, 33.32), subtract(#0, #1)",1,-16.43,0,0
+PKG/2013/page_88.pdf-2,"multiply(151945, 24.61)","multiply(151945, 24.61)",1,3739366.45,1,1
+AES/2001/page_33.pdf-1,"subtract(17.80, 11.60)","subtract(17.80, 11.60)",1,6.2,1,1
+GS/2018/page_78.pdf-4,"divide(3, 23)","divide(3, 23)",1,0.13043,0,0
+STT/2006/page_95.pdf-3,"subtract(-186, -26), divide(#0, -26)","subtract(-186, -26), divide(#0, -26)",1,6.15385,1,0
+ECL/2016/page_52.pdf-2,"divide(510, 6652)","divide(510, 6652)",1,0.07667,1,1
+HOLX/2009/page_151.pdf-1,"multiply(2770, 21.96)","multiply(2770, 21.96)",1,60829.2,1,1
+RSG/2018/page_94.pdf-2,"divide(78.6, 108.1)","divide(78.6, 108.1)",1,0.7271,1,1
+MMM/2007/page_23.pdf-1,"divide(1.074, 1.209)","divide(1.074, 1.209)",1,0.88834,1,1
+LMT/2014/page_91.pdf-2,"add(385, 383), add(#0, 380), divide(#1, const_3)","add(385, 383), add(#0, 380), divide(#1, const_3)",1,382.66667,1,1
+FBHS/2017/page_22.pdf-1,"divide(2467.1, 502.9)","divide(2467.1, 502.9)",1,4.90575,1,1
+AAPL/2003/page_48.pdf-2,"subtract(7.2, 5.5)","subtract(7.2, 5.5)",1,1.7,1,1
+AMT/2007/page_29.pdf-4,"divide(57800, 163000)","divide(57800, 163000)",1,0.3546,1,1
+IPG/2006/page_77.pdf-4,"subtract(240.9, 2251.2), divide(#0, 2251.2)","subtract(240.9, 2251.2), divide(#0, 2251.2)",1,-0.89299,0,0
+CDNS/2018/page_66.pdf-1,"subtract(772709, 426932), divide(#0, 426932)","subtract(772709, 426932), divide(#0, 426932)",1,0.80991,1,1
+AAL/2016/page_8.pdf-3,"divide(23000, 122300)","divide(23000, 122300)",1,0.18806,1,1
+CDW/2017/page_38.pdf-1,"divide(2449.9, 15191.5)","divide(2449.9, 15191.5)",1,0.16127,1,1
+AMT/2006/page_113.pdf-4,"add(1.0, 2.3), add(#0, 4.6), divide(#1, const_3)","add(1.0, 2.3), add(#0, 4.6), divide(#1, const_3)",1,2.63333,1,1
+C/2008/page_44.pdf-2,"subtract(438, -291), divide(#0, 291)","subtract(438, -291), divide(#0, 291)",1,2.50515,1,1
+CME/2010/page_91.pdf-2,"divide(9.6, 146.1)","divide(9.6, 146.1)",1,0.06571,0,0
+ADI/2019/page_29.pdf-2,"multiply(342313, 113.39), divide(#0, const_1000000)","multiply(342313, 113.39), divide(#0, const_1000000)",1,38.81487,1,1
+ABMD/2007/page_78.pdf-2,"multiply(8.75, 1.1), round(#0)","multiply(8.75, 1.1)",1,9.625,0,0
+AMT/2007/page_29.pdf-3,"subtract(200, 50)","subtract(200, 50)",1,150.0,1,1
+DVN/2012/page_77.pdf-2,"divide(6725, 11664)","divide(6725, 11664)",1,0.57656,0,0
+ETR/2016/page_374.pdf-2,"subtract(705.4, 696.3), divide(#0, 696.3)","subtract(705.4, 696.3), divide(#0, 696.3)",1,0.01307,1,1
+IPG/2017/page_92.pdf-1,"subtract(41.9, 4.8)","subtract(41.9, 4.8)",1,37.1,1,1
+DRE/2002/page_15.pdf-3,"add(45428, 5080), divide(5080, #0)","add(45428, 5080), divide(5080, #0)",1,0.10058,1,0
+GPN/2010/page_87.pdf-1,"multiply(18.1, const_1000000), add(#0, 6.3), divide(#1, const_1000000)","multiply(18.1, const_1000000), add(#0, 6.3), divide(#1, const_1000000)",1,18.10001,0,0
+MSI/2012/page_87.pdf-4,"subtract(2.2, 2.7), divide(#0, 2.7)","subtract(2.2, 2.7), divide(#0, 2.7)",1,-0.18519,1,1
+GS/2013/page_63.pdf-1,"table_average(total assets, none)","table_average(total assets, none)",1,925031.0,1,1
+ADI/2010/page_80.pdf-2,"subtract(6850, 6213), divide(#0, 6213)","subtract(6850, 6213), divide(#0, 6213)",1,0.10253,1,1
+MMM/2013/page_75.pdf-2,"subtract(-1.6, -1.2), divide(#0, -1.2)","subtract(-1.6, -1.2), divide(#0, -1.2)",1,0.33333,1,0
+UPS/2007/page_98.pdf-2,"multiply(1.8, 2.13%)","multiply(1.8, 2.13%)",1,0.03834,0,0
+GPN/2008/page_78.pdf-4,"divide(13536, 16594)","divide(13536, 16594)",1,0.81572,1,1
+MRO/2006/page_93.pdf-4,"subtract(711, 12)","subtract(711, 12)",1,699.0,0,0
+CMCSA/2008/page_36.pdf-2,"divide(1024, 5545)","divide(1024, 5545)",1,0.18467,1,1
+GS/2018/page_78.pdf-3,"subtract(const_1, 24%), subtract(#0, 1.76)","subtract(const_1, 24%), subtract(#0, 1.76)",1,-1.0,0,0
+ABC/2005/page_49.pdf-4,"divide(630, 700)","divide(630, 700)",1,0.9,1,1
+TFX/2017/page_78.pdf-1,"add(1708928, 3629455), divide(1708928, #0)","add(1708928, 3629455), divide(1708928, #0)",1,0.32012,1,1
+UNP/2018/page_74.pdf-1,"subtract(419, 378), divide(#0, 378)","subtract(419, 378), divide(#0, 378)",1,0.10847,0,0
+STT/2009/page_25.pdf-2,"subtract(24, 31), divide(#0, 31)","subtract(24, 31), divide(#0, 31)",1,-0.22581,0,0
+CDW/2015/page_93.pdf-4,"add(171.8, 0.4)","add(171.8, 0.4)",1,172.2,1,1
+IP/2006/page_31.pdf-1,"divide(955, 4925)","divide(955, 4925)",1,0.19391,1,1
+SNA/2012/page_110.pdf-3,"multiply(707, 48.87)","multiply(707, 48.87)",1,34551.09,0,0
+CDW/2015/page_93.pdf-1,"add(19.8, 21.9), add(#0, 17.3), divide(#1, const_3)","add(19.8, 21.9), add(#0, 17.3), divide(#1, const_3)",1,19.66667,1,1
+JPM/2010/page_120.pdf-1,"subtract(687125, 650212), divide(#0, 650212)","subtract(687125, 650212), divide(#0, 650212)",1,0.05677,1,1
+IP/2006/page_35.pdf-2,"divide(126, 992)","divide(126, 992)",1,0.12702,1,1
+LMT/2016/page_49.pdf-2,"subtract(6608, 1018)","subtract(6608, 1018)",1,5590.0,1,1
+PKG/2005/page_74.pdf-2,"add(17.6, 19.3)","add(17.6, 19.3)",1,36.9,1,1
+ETR/2017/page_143.pdf-1,"add(760000, 857679), add(#0, 960764)","add(760000, 857679), add(#0, 960764)",1,2578443.0,0,0
+ETR/2016/page_23.pdf-1,"subtract(5829, 5735), divide(#0, 5735)","subtract(5829, 5735), divide(#0, 5735)",1,0.01639,1,1
+STT/2006/page_95.pdf-4,"subtract(63, 51), divide(#0, 51)","subtract(63, 51), divide(#0, 51)",1,0.23529,1,1
+MSI/2007/page_70.pdf-1,"add(7729, 5400), add(#0, 43%), divide(#1, const_3)","add(7729, 5400), add(#0, 43%), divide(#1, const_3)",1,4376.47667,0,0
+AMAT/2018/page_33.pdf-1,"subtract(121.04, const_100), divide(#0, const_100)","subtract(121.04, const_100), divide(#0, const_100)",1,0.2104,0,0
+GS/2012/page_189.pdf-3,"subtract(109669, 112824)","subtract(109669, 112824)",1,-3155.0,1,1
+IP/2006/page_75.pdf-1,"divide(144, 2473)","divide(144, 2473)",1,0.05823,1,1
+RCL/2016/page_6.pdf-1,"divide(503000, 298)","divide(503000, 298)",1,1687.91946,1,1
+AAL/2016/page_8.pdf-2,"divide(24700, 101500)","divide(24700, 101500)",1,0.24335,1,1
+ZBH/2009/page_58.pdf-4,"divide(1127.6, 2719.3)","divide(1127.6, 2719.3)",1,0.41467,1,1
+PPG/2006/page_42.pdf-1,"divide(5, 4), multiply(#0, 4)","divide(5, 4), multiply(#0, 4)",1,5.0,0,0
+PKG/2013/page_88.pdf-1,"divide(2140954, 151945)","divide(2140954, 151945)",1,14.09032,1,1
+AMT/2003/page_102.pdf-3,"divide(808043, 3316258)","divide(808043, 3316258)",1,0.24366,0,0
+ETR/2015/page_17.pdf-2,"subtract(5829, 5735), divide(#0, 5735)","subtract(5829, 5735), divide(#0, 5735)",1,0.01639,1,1
+ILMN/2008/page_86.pdf-3,"subtract(23778, 21376), divide(#0, 21376)","subtract(23778, 21376), divide(#0, 21376)",1,0.11237,1,0
+INTC/2015/page_41.pdf-2,"divide(30.7, 47.9)","divide(30.7, 47.9)",1,0.64092,1,1
+AMT/2014/page_160.pdf-3,"subtract(495.2, 419.0), divide(#0, 419.0)","subtract(495.2, 419.0), divide(#0, 419.0)",1,0.18186,1,1
+JPM/2014/page_70.pdf-2,"divide(43634, 94205)","divide(43634, 94205)",1,0.46318,1,1
+PPG/2012/page_29.pdf-2,"divide(92, 1)","divide(92, 1)",1,92.0,1,1
+AAPL/2004/page_68.pdf-1,"subtract(8.2, 5.5)","subtract(8.2, 5.5)",1,2.7,1,1
+STT/2009/page_127.pdf-3,"subtract(-1636, -5205), divide(#0, 5205)","subtract(-1636, -5205), divide(#0, 5205)",1,0.68569,0,0
+DISCA/2011/page_49.pdf-3,"subtract(235.63, 104.23), divide(#0, 104.23)","subtract(235.63, 104.23), divide(#0, 104.23)",1,1.26067,1,1
+ETR/2016/page_150.pdf-1,"add(21.7, 22.3), add(#0, 22.7), add(#1, 23.2), add(#2, 11)","add(21.7, 22.3), add(#0, 22.7), add(#1, 23.2), add(#2, 11)",1,100.9,1,1
+WRK/2018/page_107.pdf-4,"subtract(127.1, 148.9), divide(#0, 148.9)","subtract(127.1, 148.9), divide(#0, 148.9)",1,-0.14641,0,0
+GS/2018/page_69.pdf-4,"table_max(provision for credit losses, none)","table_max(provision for credit losses, none)",1,674.0,1,1
+AMT/2007/page_29.pdf-2,"divide(57800, 163000)","divide(57800, 163000)",1,0.3546,0,0
+SLG/2001/page_48.pdf-2,"add(257685, 230323), add(#0, 206017), divide(#1, const_3)","add(257685, 230323), add(#0, 206017), divide(#1, const_3)",1,231341.66667,1,1
+AAL/2010/page_72.pdf-3,"add(602, 170)","add(602, 170)",1,772.0,0,0
+MRO/2017/page_96.pdf-1,"table_max(ultimate trend rate, none)","table_max(ultimate trend rate, none)",1,0.047,1,1
+IPG/2008/page_72.pdf-1,"divide(131.8, 148.8)","divide(131.8, 148.8)",1,0.88575,0,0
+ETR/2015/page_17.pdf-4,"divide(107, 66)","divide(107, 66)",1,1.62121,0,0
+STT/2007/page_111.pdf-2,"subtract(572.93, 527.37), divide(#0, 527.37)","subtract(572.93, 527.37), divide(#0, 527.37)",1,0.08639,1,1
+UNP/2007/page_25.pdf-2,"subtract(3277, 2880), divide(#0, 2880)","subtract(3277, 2880), divide(#0, 2880)",1,0.13785,1,1
+BLL/2012/page_31.pdf-1,"subtract(207.62, const_100), divide(#0, const_100)","subtract(207.62, const_100), divide(#0, const_100)",1,1.0762,1,1
+C/2015/page_96.pdf-1,"subtract(398.9, 378.5), divide(#0, 378.5)","subtract(398.9, 378.5), divide(#0, 378.5)",1,0.0539,0,0
+AMT/2008/page_107.pdf-1,"subtract(10.5, 7.1), divide(#0, 7.1)","subtract(10.5, 7.1), divide(#0, 7.1)",1,0.47887,1,1
+PPG/2008/page_52.pdf-1,"add(99, -21)","add(99, -21)",1,78.0,0,0
+BLK/2015/page_124.pdf-1,"divide(560, 1203)","divide(560, 1203)",1,0.4655,1,1
+FIS/2006/page_31.pdf-1,"divide(19, 81)","divide(19, 81)",1,0.23457,0,0
+ZBH/2008/page_57.pdf-4,"divide(149.3, 1020.1)","divide(149.3, 1020.1)",1,0.14636,1,1
+GS/2017/page_179.pdf-3,"greater(12165, 4.6)","greater(12165, 4.6)",1,yes,0,0
+JPM/2009/page_175.pdf-5,"subtract(384102, 381415)","subtract(384102, 381415)",1,2687.0,0,0
+RCL/2012/page_75.pdf-2,"subtract(459.8, 442.9), divide(#0, 442.9)","subtract(459.8, 442.9), divide(#0, 442.9)",1,0.03816,1,1
+KHC/2018/page_132.pdf-3,"subtract(1224, 1214)","subtract(1224, 1214)",1,10.0,0,0
+IP/2006/page_35.pdf-1,"divide(116, 1009)","divide(116, 1009)",1,0.11497,1,1
+AMT/2014/page_160.pdf-1,"subtract(655.0, 495.2), divide(#0, 495.2)","subtract(655.0, 495.2), divide(#0, 495.2)",1,0.3227,1,1
+C/2009/page_243.pdf-2,"divide(2.5, 1.6)","divide(2.5, 1.6)",1,1.5625,1,1
+MKTX/2004/page_99.pdf-4,"add(64001, 289581)","add(64001, 289581)",1,353582.0,1,1
+BLK/2012/page_33.pdf-1,"subtract(752707, 593356), divide(#0, 593356)","subtract(752707, 593356), divide(#0, 593356)",1,0.26856,1,1
+AMT/2014/page_160.pdf-2,"divide(4214600, 6903188)","divide(4214600, 6903188)",1,0.61053,1,1
+AWK/2017/page_148.pdf-1,"subtract(779, 850), divide(#0, 850)","subtract(779, 850), divide(#0, 850)",1,-0.08353,1,1
+GRMN/2008/page_73.pdf-1,"divide(44048, 95519)","divide(44048, 95519)",1,0.46114,0,0
+GS/2013/page_72.pdf-2,"subtract(71267, 58219), divide(#0, 58219)","subtract(71267, 58219), divide(#0, 58219)",1,0.22412,0,0
+ZBH/2008/page_57.pdf-1,"divide(460.1, 1020.1)","divide(460.1, 1020.1)",1,0.45103,1,1
+LMT/2014/page_50.pdf-1,"subtract(20500, 18100), divide(#0, 18100)","subtract(20500, 18100), divide(#0, 18100)",1,0.1326,1,1
+PNC/2012/page_247.pdf-1,"divide(3.9, 12.8)","divide(3.9, 12.8)",1,0.30469,1,1
+GS/2014/page_165.pdf-2,"subtract(289, 270)","subtract(289, 270)",1,19.0,1,1
+AMT/2005/page_102.pdf-3,"subtract(17.7, 19.1), divide(#0, 19.1)","subtract(17.7, 19.1), divide(#0, 19.1)",1,-0.0733,1,1
+AON/2015/page_96.pdf-2,"add(104, 61), add(#0, 73), divide(#1, const_3)","add(104, 61), add(#0, 73), divide(#1, const_3)",1,79.33333,0,0
+ADI/2010/page_60.pdf-1,"subtract(42.1, 38), divide(#0, 38)","subtract(42.1, 38), divide(#0, 38)",1,0.10789,1,1
+C/2008/page_44.pdf-1,"subtract(-291, -599), divide(#0, 599)","subtract(-291, -599), divide(#0, 599)",1,0.51419,0,0
+ADBE/1999/page_64.pdf-1,"add(0.3, 0.1)","add(0.3, 0.1)",1,0.4,1,1
+SLG/2011/page_91.pdf-4,"add(3.4, 2.2)","add(3.4, 2.2)",1,5.6,1,1
+GS/2013/page_126.pdf-1,"subtract(911507, 938555), divide(#0, 938555)","subtract(911507, 938555), divide(#0, 938555)",1,-0.02882,1,1
+ETR/2004/page_281.pdf-1,"divide(42.5, 61592)","divide(42.5, 61592)",1,0.00069,0,0
+AES/2001/page_85.pdf-1,"divide(2672, 22258)","divide(2672, 22258)",1,0.12005,1,1
+ABC/2005/page_49.pdf-1,"subtract(5236, 5.4), subtract(12319, #0)","subtract(5236, 5.4), subtract(12319, #0)",1,7088.4,0,0
+UNP/2018/page_74.pdf-2,"subtract(148, 155), divide(#0, 155)","subtract(148, 155), divide(#0, 155)",1,-0.04516,0,0
+MSI/2014/page_76.pdf-1,"subtract(22.1%, 24.0%)","subtract(22.1%, 24.0%)",1,-0.019,0,0
+ETFC/2012/page_24.pdf-2,"divide(254000, 107000)","divide(254000, 107000)",1,2.37383,1,1
+UA/2011/page_69.pdf-1,"subtract(3.5%, 5.3%)","subtract(3.5%, 5.3%)",1,-0.018,0,0
+RL/2008/page_23.pdf-1,"divide(22, 158)","divide(22, 158)",1,0.13924,1,1
+PNC/2012/page_100.pdf-1,"subtract(64.2, 58.2)","subtract(64.2, 58.2)",1,6.0,0,0
+HWM/2015/page_173.pdf-1,"subtract(const_8, 2)","subtract(const_8, 2)",1,6.0,0,0
+ECL/2017/page_94.pdf-1,"subtract(35.0%, 13.7%)","subtract(35.0%, 13.7%)",1,0.213,1,1
+NKE/2009/page_43.pdf-1,"add(342.9, 78.5)","add(342.9, 78.5)",1,421.4,1,1
+CME/2017/page_40.pdf-1,"subtract(370.32, const_100), divide(#0, const_100)","subtract(370.32, const_100), divide(#0, const_100)",1,2.7032,0,0
+MMM/2015/page_93.pdf-2,"divide(264, 210)","divide(264, 210)",1,1.25714,1,1
+GS/2013/page_126.pdf-2,"subtract(355173, 377677), divide(#0, 377677)","subtract(355173, 377677), divide(#0, 377677)",1,-0.05959,1,1
+AON/2007/page_188.pdf-2,"divide(57, 70)","divide(57, 70)",1,0.81429,1,1
+GS/2017/page_132.pdf-3,"subtract(19201, 23280), divide(#0, 23280)","subtract(19201, 23280), divide(#0, 23280)",1,-0.17521,1,1
+UNP/2010/page_21.pdf-1,"divide(1205260, 3063816)","divide(1205260, 3063816)",1,0.39339,1,1
+ADBE/2008/page_74.pdf-2,"greater(4, 1)","greater(4, 1)",1,yes,1,1
+MRK/2013/page_125.pdf-4,"subtract(665, 1.2), divide(#0, 1.2)","subtract(665, 1.2), divide(#0, 1.2)",1,553.16667,0,0
+SYY/2006/page_71.pdf-2,"subtract(10069000, 10000000), divide(#0, 10000000)","subtract(10069000, 10000000), divide(#0, 10000000)",1,0.0069,0,0
+JPM/2009/page_175.pdf-1,"subtract(318063, 77901)","subtract(318063, 77901)",1,240162.0,0,0
+MMM/2007/page_84.pdf-1,"divide(332, 121)","divide(332, 121)",1,2.7438,1,1
+MAS/2017/page_27.pdf-4,"divide(200.79, 151.94)","divide(200.79, 151.94)",1,1.32151,1,1
+IPG/2006/page_77.pdf-2,"multiply(400.0, 4.50%), multiply(400.0, 4.25%), subtract(#0, #1)","multiply(400.0, 4.50%), multiply(400.0, 4.25%), subtract(#0, #1)",1,1.0,0,0
+JPM/2008/page_87.pdf-1,"divide(6.2, 10.0)","divide(6.2, 10.0)",1,0.62,1,0
+AMT/2008/page_107.pdf-4,"subtract(-12389, 7327)","subtract(-12389, 7327)",1,-19716.0,0,0
+RSG/2009/page_140.pdf-1,"subtract(2.9%, 1.5%)","subtract(2.9%, 1.5%)",1,0.014,0,0
+SLB/2012/page_56.pdf-1,"subtract(1434, 176)","subtract(1434, 176)",1,1258.0,0,0
+TMUS/2017/page_29.pdf-2,"divide(1400000, 17)","divide(1400000, 17)",1,82352.94118,1,1
+UPS/2016/page_114.pdf-2,"subtract(190, 207)","subtract(190, 207)",1,-17.0,1,1
+MRO/2017/page_96.pdf-3,"table_average(initial health care trend rate, none)","table_average(initial health care trend rate, none)",1,0.08083,1,1
+GS/2013/page_220.pdf-1,"subtract(248.36, const_100)","subtract(248.36, const_100)",1,148.36,1,1
+LKQ/2016/page_87.pdf-1,"subtract(168.4, 148.5), divide(#0, 148.5)","subtract(168.4, 148.5), divide(#0, 148.5)",1,0.13401,1,1
+SNA/2013/page_84.pdf-1,"divide(14.9, 546.5)","divide(14.9, 546.5)",1,0.02726,1,1
+DVN/2015/page_79.pdf-3,"subtract(28.8%, 30.3%)","subtract(28.8%, 30.3%)",1,-0.015,0,0
+FIS/2017/page_64.pdf-4,"divide(130, 129)","divide(130, 129)",1,1.00775,0,0
+LMT/2014/page_77.pdf-3,"divide(1.3, const_1)","divide(1.3, const_1)",1,1.3,0,0
+ETFC/2012/page_43.pdf-1,"subtract(-16.9, -14.9)","subtract(-16.9, -14.9)",1,-2.0,0,0
+HWM/2017/page_42.pdf-2,"subtract(177.79, const_100), divide(#0, const_5)","subtract(177.79, const_100), divide(#0, const_5)",1,15.558,0,0
+GRMN/2006/page_68.pdf-2,"divide(265409, 296554)","divide(265409, 296554)",1,0.89498,0,0
+JPM/2003/page_106.pdf-1,"divide(18.0, 23.5)","divide(18.0, 23.5)",1,0.76596,1,1
+PNC/2012/page_247.pdf-2,"table_average(january 1, none)","table_average(january 1, none)",1,50.5,0,0
+SLG/2011/page_91.pdf-3,"table_sum(vested during the year, none)","table_sum(vested during the year, none)",1,639993.0,1,1
+PNC/2012/page_65.pdf-5,"add(49447, 51052), add(#0, 10354), add(#1, 10860), add(#2, 60675), add(#3, 61018)","add(49447, 51052), add(#0, 10354), add(#1, 10860), add(#2, 60675), add(#3, 61018)",1,243406.0,0,0
+MS/2013/page_132.pdf-1,"divide(9514, 93033)","divide(9514, 93033)",1,0.10226,0,0
+GPN/2010/page_89.pdf-2,"multiply(713, 42)","multiply(713, 42)",1,29946.0,1,1
+TFX/2015/page_89.pdf-1,"divide(5009, 6304)","divide(5009, 6304)",1,0.79457,1,1
+ETR/2011/page_17.pdf-3,"subtract(5051, 4904), divide(#0, 4904)","subtract(5051, 4904), divide(#0, 4904)",1,0.02998,0,0
+CDW/2015/page_93.pdf-3,"add(171.8, 0.4)","add(171.8, 0.4)",1,172.2,1,1
+FIS/2016/page_31.pdf-1,"subtract(311.81, const_100), divide(#0, const_100)","subtract(311.81, const_100), divide(#0, const_100)",1,2.1181,1,1
+IP/2009/page_84.pdf-1,"subtract(205, 168), divide(#0, 168)","subtract(205, 168), divide(#0, 168)",1,0.22024,1,1
+CDW/2017/page_38.pdf-2,"divide(2327.2, 13981.9)","divide(2327.2, 13981.9)",1,0.16644,0,0
+SYY/2005/page_70.pdf-2,"subtract(46957000, 27316000), divide(#0, 27316000)","subtract(46957000, 27316000), divide(#0, 27316000)",1,0.71903,1,1
+CB/2008/page_229.pdf-4,"divide(7001, 684)","divide(7001, 684)",1,10.23538,1,1
+GS/2013/page_72.pdf-1,"subtract(71267, 58219)","subtract(71267, 58219)",1,13048.0,0,0
+GIS/2019/page_68.pdf-1,"subtract(17057.4, 16772.9), divide(#0, 16772.9)","subtract(17057.4, 16772.9), divide(#0, 16772.9)",1,0.01696,0,0
+CME/2017/page_89.pdf-3,"divide(2.6, 60.8%)","divide(2.6, 60.8%)",1,4.27632,0,0
+AWK/2013/page_122.pdf-2,"divide(242, 7439)","divide(242, 7439)",1,0.03253,0,0
+V/2008/page_180.pdf-2,"divide(1088, 4944)","divide(1088, 4944)",1,0.22006,1,1
+AAL/2010/page_72.pdf-1,"divide(4959, 989)","divide(4959, 989)",1,5.01416,1,1
+ETR/2004/page_212.pdf-1,"subtract(931.3, 973.7), divide(#0, 973.7)","subtract(931.3, 973.7), divide(#0, 973.7)",1,-0.04355,1,1
+MRO/2004/page_46.pdf-4,"table_average(10/01/04 2013 10/31/04, none), table_average(11/01/04 2013 11/30/04, none)","table_average(10/01/04 2013 10/31/04, none), table_average(11/01/04 2013 11/30/04, none)",0,,0,0
+AES/2001/page_33.pdf-4,"add(41.30, 35.56), divide(#0, const_2)","add(41.30, 35.56), divide(#0, const_2)",1,38.43,0,0
+LMT/2014/page_50.pdf-2,"subtract(18900, 20500)","subtract(18900, 20500)",1,-1600.0,1,1
+AMAT/2013/page_37.pdf-1,"subtract(118.21, const_100), divide(100000, const_100), multiply(#1, #0)","subtract(118.21, const_100), divide(100000, const_100), multiply(#1, #0)",1,18210.0,1,1
+C/2009/page_63.pdf-3,"divide(47162, 83659)","divide(47162, 83659)",1,0.56374,1,1
+ADBE/2008/page_74.pdf-1,"divide(const_100, 4)","divide(const_100, 4)",1,25.0,1,1
+HIG/2011/page_53.pdf-3,"add(271, 39)","add(271, 39)",1,310.0,0,0
+BLL/2010/page_37.pdf-3,"subtract(515.2, 559.7), divide(#0, 559.7)","subtract(515.2, 559.7), divide(#0, 559.7)",1,-0.07951,1,1
+JPM/2005/page_80.pdf-1,"add(172, 265), divide(#0, const_2)","add(172, 265), divide(#0, const_2)",1,218.5,1,1
+CDNS/2015/page_30.pdf-3,"subtract(314.36, const_100), divide(#0, const_100), subtract(223.74, const_100), divide(#2, const_100), subtract(#1, #3)","subtract(314.36, const_100), divide(#0, const_100), subtract(223.74, const_100), divide(#2, const_100), subtract(#1, #3)",1,0.9062,1,1
+RSG/2013/page_123.pdf-1,"subtract(28.9%, 27.8%)","subtract(28.9%, 27.8%)",1,0.011,0,0
+ECL/2017/page_69.pdf-1,"subtract(7167.1, 6490.8), divide(#0, 6490.8)","subtract(7167.1, 6490.8), divide(#0, 6490.8)",1,0.10419,1,1
+GS/2013/page_85.pdf-1,"divide(45826, 182650)","divide(45826, 182650)",1,0.2509,1,1
+GS/2018/page_69.pdf-3,"subtract(32.73, 6%)","subtract(32.73, 6%)",1,32.67,0,0
+JPM/2010/page_281.pdf-2,"divide(472.7, 635.6)","divide(472.7, 635.6)",1,0.74371,1,1
+AMT/2006/page_113.pdf-1,"subtract(665, 2239), divide(#0, 2239)","subtract(665, 2239), divide(#0, 2239)",1,-0.70299,0,0
+ETR/2004/page_212.pdf-4,"subtract(973.7, 931.3), divide(#0, 973.7)","subtract(973.7, 931.3), divide(#0, 973.7)",1,0.04355,0,0
+ECL/2017/page_79.pdf-1,"subtract(473.6, 139.8), divide(#0, 473.6)","subtract(473.6, 139.8), divide(#0, 473.6)",1,0.70481,1,1
+CME/2010/page_69.pdf-1,"divide(2.9, 900.1)","divide(2.9, 900.1)",1,0.00322,1,1
+JPM/2015/page_137.pdf-1,"subtract(59.7, 79.0)","subtract(59.7, 79.0)",1,-19.3,1,1
+AWK/2018/page_146.pdf-4,"add(0.6, 0.7)","add(0.6, 0.7)",1,1.3,1,1
+GIS/2018/page_110.pdf-3,"divide(115.7, 559.3)","divide(115.7, 559.3)",1,0.20687,1,1
+GPN/2013/page_87.pdf-1,"multiply(472, 48)","multiply(472, 48)",1,22656.0,0,0
+GPN/2013/page_92.pdf-2,"subtract(8985, 11057), divide(#0, 11057)","subtract(8985, 11057), divide(#0, 11057)",1,-0.18739,0,0
+ETR/2017/page_143.pdf-2,"subtract(857679, 760000), divide(#0, 760000)","subtract(857679, 760000), divide(#0, 760000)",1,0.12853,1,1
+DISH/2011/page_122.pdf-3,"divide(153258, 86080)","divide(153258, 86080)",1,1.78041,1,1
+HWM/2018/page_96.pdf-1,"multiply(9, 26.79)","multiply(9, 26.79)",1,241.11,1,1
+CE/2009/page_65.pdf-2,"add(-372, -677)","add(-372, -677)",1,-1049.0,0,0
+FIS/2012/page_48.pdf-3,"subtract(27.1, 26.4), divide(#0, 26.4)","subtract(27.1, 26.4), divide(#0, 26.4)",1,0.02652,1,1
+GS/2013/page_149.pdf-4,"table_min(collateral posted, none)","table_min(collateral posted, none)",1,18178.0,1,1
+BLL/2006/page_67.pdf-2,"divide(617.9, 802.6)","divide(617.9, 802.6)",1,0.76987,0,0
+FIS/2016/page_9.pdf-4,"divide(2360, 6596)","divide(2360, 6596)",1,0.35779,1,1
+GS/2018/page_69.pdf-2,"subtract(const_100, 28), divide(3.77, #0)","subtract(const_100, 28), divide(3.77, #0)",1,0.05236,0,0
+DVN/2012/page_77.pdf-1,"add(500, 750), divide(#0, 11664)","add(500, 750), divide(#0, 11664)",1,0.10717,0,0
+ECL/2017/page_94.pdf-2,"subtract(35.0%, 24.4%)","subtract(35.0%, 24.4%)",1,0.106,1,1
+SNA/2013/page_83.pdf-1,"subtract(7.7, 19.6)","subtract(7.7, 19.6)",1,-11.9,1,1
+FIS/2006/page_31.pdf-2,"add(57, 63), divide(57, #0)","add(57, 63), divide(57, #0)",1,0.475,0,0
+AMT/2012/page_144.pdf-2,"add(0.1, 0.1)","add(0.1, 0.1)",1,0.2,0,0
+GPN/2013/page_92.pdf-3,"divide(11057, 57096)","divide(11057, 57096)",1,0.19366,1,1
+V/2014/page_126.pdf-1,"add(172, 179), add(#0, 147)","add(172, 179), add(#0, 147)",1,498.0,1,1
+SLG/2011/page_91.pdf-2,"subtract(1.6, 2.3), divide(#0, 2.3)","subtract(1.6, 2.3), divide(#0, 2.3)",1,-0.30435,1,1
+ILMN/2008/page_86.pdf-4,"subtract(2.6, 1.4)","subtract(2.6, 1.4)",1,1.2,1,1
+MAS/2012/page_26.pdf-1,"divide(24, const_100)","divide(24, const_100)",1,0.24,0,0
+UPS/2010/page_52.pdf-4,"divide(10558, 23556)","divide(10558, 23556)",1,0.44821,0,0
+AMT/2012/page_118.pdf-1,"add(5536, 38519)","add(5536, 38519)",1,44055.0,1,1
+AON/2007/page_188.pdf-1,"subtract(70, 53), divide(#0, 53)","subtract(70, 53), divide(#0, 53)",1,0.32075,1,0
+CDW/2015/page_70.pdf-2,"table_min(foreign currency translation, none)","table_min(foreign currency translation, none)",1,-61.1,0,0
+LMT/2014/page_77.pdf-2,"subtract(322.4, 326.5)","subtract(322.4, 326.5)",1,-4.1,1,1
+GPN/2008/page_78.pdf-1,"divide(const_100, 14)","divide(const_100, 14)",1,7.14286,0,0
+AON/2007/page_171.pdf-2,"subtract(284, 118)","subtract(284, 118)",1,166.0,1,1
+HOLX/2009/page_127.pdf-2,"divide(2094800, 6156900)","divide(2094800, 6156900)",1,0.34024,1,1
+PNC/2015/page_93.pdf-2,"divide(5758, 7975)","divide(5758, 7975)",1,0.72201,1,1
+C/2008/page_65.pdf-1,"subtract(621.6, 666.9), divide(#0, 666.9)","subtract(621.6, 666.9), divide(#0, 666.9)",1,-0.06793,1,1
+AMT/2006/page_113.pdf-2,"subtract(665, 2239)","subtract(665, 2239)",1,-1574.0,1,1
+DVN/2018/page_35.pdf-2,"subtract(156, 15), divide(#0, 15)","subtract(156, 15), divide(#0, 15)",1,9.4,0,0
+AWK/2018/page_146.pdf-3,"divide(45, 0.6)","divide(45, 0.6)",1,75.0,1,1
+HIG/2011/page_53.pdf-1,"divide(57, 320)","divide(57, 320)",1,0.17813,1,1
+NWS/2017/page_119.pdf-1,"divide(39, 4)","divide(39, 4)",1,9.75,1,1
+MRO/2008/page_45.pdf-4,"table_sum(total, none)","table_sum(total, none)",1,7403.0,1,1
+JPM/2014/page_122.pdf-1,"subtract(324502, 308263), divide(#0, 308263)","subtract(324502, 308263), divide(#0, 308263)",1,0.05268,1,1
+MO/2016/page_19.pdf-2,"greater(286.61, 192.56)","greater(286.61, 192.56)",1,yes,1,1
+TFX/2015/page_89.pdf-2,"divide(231, 6304)","divide(231, 6304)",1,0.03664,1,1
+AMT/2008/page_94.pdf-2,"add(4333146, 1837)","add(4333146, 1837)",1,4334983.0,0,0
+AMT/2006/page_104.pdf-3,"divide(400.0, 325.1)","divide(400.0, 325.1)",1,1.23039,0,0
+RSG/2015/page_98.pdf-1,"subtract(46.7, 38.9), divide(#0, 38.9)","subtract(46.7, 38.9), divide(#0, 38.9)",1,0.20051,0,0
+MO/2014/page_62.pdf-2,"divide(86, 5070)","divide(86, 5070)",1,0.01696,1,1
+NCLH/2018/page_64.pdf-2,"subtract(1.6, 1.2), divide(#0, 1.2)","subtract(1.6, 1.2), divide(#0, 1.2)",1,0.33333,1,1
+STT/2006/page_95.pdf-1,"subtract(25.25, 17.90), divide(#0, 17.90)","subtract(25.25, 17.90), divide(#0, 17.90)",1,0.41061,1,1
+PNC/2012/page_174.pdf-3,"subtract(1589, 1141)","subtract(1589, 1141)",1,448.0,1,1
+MAS/2017/page_27.pdf-3,"subtract(206.49, 169.82), divide(#0, 169.82)","subtract(206.49, 169.82), divide(#0, 169.82)",1,0.21593,1,1
+HOLX/2009/page_127.pdf-1,"divide(3671500, 132038)","divide(3671500, 132038)",1,27.80639,1,1
+AOS/2010/page_18.pdf-1,"subtract(178.8, const_100), subtract(123.8, const_100), subtract(#0, #1)","subtract(178.8, const_100), subtract(123.8, const_100), subtract(#0, #1)",1,55.0,0,0
+GPN/2013/page_87.pdf-2,"divide(33.5, 2.5)","divide(33.5, 2.5)",1,13.4,1,1
+STT/2011/page_69.pdf-2,"divide(1930, 1332)","divide(1930, 1332)",1,1.44895,0,0
+HUM/2009/page_105.pdf-1,"subtract(14.24, 17.95), divide(#0, 17.95)","subtract(14.24, 17.95), divide(#0, 17.95)",1,-0.20669,1,1
+HIG/2004/page_140.pdf-3,"add(-23, 292)","add(-23, 292)",1,269.0,0,0
+GS/2018/page_69.pdf-1,"multiply(7.66, 23%)","multiply(7.66, 23%)",1,1.7618,0,0
+EL/2008/page_59.pdf-1,"divide(47.0, 7.75%)","divide(47.0, 7.75%)",1,606.45161,0,0
+PNC/2012/page_100.pdf-2,"table_average(home equity unresolved asserted indemnification and repurchase claims, none)","table_average(home equity unresolved asserted indemnification and repurchase claims, none)",0,,0,0
+UAA/2016/page_42.pdf-3,"subtract(917491, 783031), divide(#0, 783031)","subtract(917491, 783031), divide(#0, 783031)",1,0.17172,1,1
+HII/2015/page_88.pdf-1,"divide(const_100, 3)","divide(const_100, 3)",1,33.33333,0,0
+MRO/2004/page_125.pdf-2,"divide(-556, 711)","divide(-556, 711)",1,-0.782,0,0
+GPN/2013/page_87.pdf-3,"subtract(1096, 941)","subtract(1096, 941)",1,155.0,0,0
+AWK/2013/page_122.pdf-1,"add(177947, 260)","add(177947, 260)",1,178207.0,0,0
+MRO/2017/page_96.pdf-2,"subtract(8.00%, 4.70%)","subtract(8.00%, 4.70%)",1,0.033,1,1
+AAL/2013/page_172.pdf-1,"divide(849, 5424)","divide(849, 5424)",1,0.15653,1,1
+HII/2015/page_121.pdf-2,"divide(96, 1927)","divide(96, 1927)",1,0.04982,0,0
+DG/2010/page_136.pdf-2,"divide(const_100, 10)","divide(const_100, 10)",1,10.0,1,1
+MRO/2007/page_136.pdf-1,"add(29, 32), add(#0, 13)","add(29, 32), add(#0, 13)",1,74.0,1,1
+DXC/2018/page_56.pdf-3,"divide(17944, 22885)","divide(17944, 22885)",1,0.78409,1,1
+GS/2015/page_188.pdf-4,"add(2.86, 2.87)","add(2.86, 2.87)",1,5.73,1,1
+AAL/2016/page_8.pdf-1,"divide(13400, 101500)","divide(13400, 101500)",1,0.13202,1,1
+ETR/2013/page_21.pdf-4,"subtract(2045, 1854), divide(-33, #0)","subtract(2045, 1854), divide(-33, #0)",1,-0.17277,0,0
+JPM/2018/page_90.pdf-6,"divide(4630, 51410)","divide(4630, 51410)",1,0.09006,0,0
+UNP/2011/page_33.pdf-1,"subtract(70.7%, 5.5%)","subtract(70.7%, 5.5%)",1,0.652,0,0
+AMT/2012/page_118.pdf-4,"subtract(1500, 300)","subtract(1500, 300)",1,1200.0,0,0
+JPM/2008/page_117.pdf-1,"add(32, 38), divide(#0, const_2)","add(32, 38), divide(#0, const_2)",1,35.0,0,0
+C/2008/page_65.pdf-2,"subtract(22.366, 12.393), divide(#0, 12.393)","subtract(22.366, 12.393), divide(#0, 12.393)",1,0.80473,1,1
+DG/2009/page_77.pdf-1,"divide(const_100, 20)","divide(const_100, 20)",1,5.0,1,1
+DRE/2002/page_15.pdf-1,"subtract(5080, 9165), divide(#0, 9165)","subtract(5080, 9165), divide(#0, 9165)",1,-0.44572,0,0
+SNA/2007/page_69.pdf-1,"subtract(1.7, 0.7), divide(#0, 0.7)","subtract(1.7, 0.7), divide(#0, 0.7)",1,1.42857,0,0
+HOLX/2006/page_71.pdf-1,"multiply(4218065, 15.52)","multiply(4218065, 15.52)",1,65464368.8,1,1
+ETR/2011/page_17.pdf-2,"subtract(4904, 5051)","subtract(4904, 5051)",1,-147.0,0,0
+CDNS/2015/page_30.pdf-4,"subtract(314.36, const_100), divide(#0, const_100)","subtract(314.36, const_100), divide(#0, const_100)",1,2.1436,1,1
+GS/2017/page_132.pdf-1,"table_max(derivatives, none)","table_max(derivatives, none)",1,5190.0,1,1
+MO/2014/page_39.pdf-1,"divide(765, 824)","divide(765, 824)",1,0.9284,1,1
+UNP/2009/page_35.pdf-2,"add(76.0, 1.3), add(#0, 8%)","add(76.0, 1.3), add(#0, 8%)",1,77.38,0,0
+AWK/2018/page_146.pdf-1,"add(12, 4), add(#0, 4)","add(12, 4), add(#0, 4)",1,20.0,1,0
+HII/2015/page_121.pdf-1,"divide(90, 1594)","divide(90, 1594)",1,0.05646,1,1
+GS/2018/page_78.pdf-2,"subtract(const_100, 7), divide(#0, const_100), multiply(#1, 6.22)","subtract(const_100, 7), divide(#0, const_100), multiply(#1, 6.22)",1,5.7846,0,0
+IP/2009/page_45.pdf-1,"divide(574, 1407)","divide(574, 1407)",1,0.40796,1,1
+PNC/2012/page_247.pdf-4,"add(43, 47), divide(#0, const_2)","add(43, 47), divide(#0, const_2)",1,45.0,1,1
+AMT/2016/page_49.pdf-2,"multiply(108.11, 427195037)","multiply(108.11, 427195037)",1,46184055450.07,1,1
+RCL/2012/page_75.pdf-3,"subtract(459.8, 398.0), divide(#0, 398.0)","subtract(459.8, 398.0), divide(#0, 398.0)",1,0.15528,0,0
+GS/2017/page_132.pdf-4,"subtract(19201, 23280)","subtract(19201, 23280)",1,-4079.0,1,1
+ZBH/2009/page_58.pdf-1,"divide(1127.6, 2719.3)","divide(1127.6, 2719.3)",1,0.41467,1,1
+AMAT/2018/page_33.pdf-2,"subtract(198.27, const_100), divide(#0, const_100)","subtract(198.27, const_100), divide(#0, const_100)",1,0.9827,1,1
+BLK/2012/page_145.pdf-2,"subtract(750, 2014), divide(#0, 750)","subtract(750, 2014), divide(#0, 750)",1,-1.68533,0,0
+SNA/2007/page_29.pdf-1,"divide(130.66, 152.42)","divide(130.66, 152.42)",1,0.85724,1,1
+MSI/2008/page_69.pdf-2,"subtract(2199, 1201), divide(#0, 1201)","subtract(2199, 1201), divide(#0, 1201)",1,0.83097,0,0
+STT/2006/page_95.pdf-2,"divide(197, 227)","divide(197, 227)",1,0.86784,1,1
+AMT/2007/page_29.pdf-1,"add(19600, 13900), add(#0, 57800)","add(19600, 13900), add(#0, 57800)",1,91300.0,1,1
+BLL/2011/page_32.pdf-3,"multiply(897, 50%)","multiply(897, 50%)",1,448.5,1,0
+MRO/2008/page_45.pdf-3,"divide(1451, 2500)","divide(1451, 2500)",1,0.5804,1,1
+MRK/2013/page_3.pdf-1,"subtract(44033, 47267), divide(#0, 47267)","subtract(44033, 47267), divide(#0, 47267)",1,-0.06842,1,1
+CE/2013/page_16.pdf-1,"subtract(92, 83), divide(#0, 83)","subtract(92, 83), divide(#0, 83)",1,0.10843,1,1
+ETR/2008/page_442.pdf-2,"divide(8000, 8000)","divide(8000, 8000)",1,1.0,0,0
+CB/2008/page_229.pdf-2,"add(90, 77), add(#0, 64), divide(#1, const_3)","add(90, 77), add(#0, 64), divide(#1, const_3)",1,77.0,1,1
+AMT/2010/page_99.pdf-2,"divide(74896, 5587388)","divide(74896, 5587388)",1,0.0134,1,1
+GS/2014/page_74.pdf-2,"divide(45410, 179633)","divide(45410, 179633)",1,0.25279,1,1
+AON/2018/page_87.pdf-4,"subtract(279, 280), divide(#0, 280)","subtract(279, 280), divide(#0, 280)",1,-0.00357,1,1
+GPN/2008/page_78.pdf-3,"divide(13536, 16594)","divide(13536, 16594)",1,0.81572,1,1
+GS/2012/page_142.pdf-4,"table_max(net derivative liabilities under bilateral agreements, none)","table_max(net derivative liabilities under bilateral agreements, none)",1,35066.0,1,1
+GS/2013/page_149.pdf-3,"table_max(net derivative liabilities under bilateral agreements, none)","table_max(net derivative liabilities under bilateral agreements, none)",1,27885.0,1,1
+BLL/2010/page_35.pdf-4,"add(15, 18.5), add(#0, 280)","add(15, 18.5), add(#0, 280)",1,313.5,0,0
+MRO/2013/page_19.pdf-4,"divide(145, 586)","divide(145, 586)",1,0.24744,1,1
+APD/2018/page_121.pdf-2,"subtract(2.2, 4.1), divide(#0, 4.1)","subtract(2.2, 4.1), divide(#0, 4.1)",1,-0.46341,1,1
+AWK/2014/page_121.pdf-3,"subtract(195237, 177947), divide(#0, 177947)","subtract(195237, 177947), divide(#0, 177947)",1,0.09716,1,1
+HUM/2017/page_118.pdf-2,"divide(75, 54)","divide(75, 54)",1,1.38889,0,0
+UPS/2010/page_52.pdf-3,"divide(2963, 23556)","divide(2963, 23556)",1,0.12579,1,1
+DISCA/2014/page_64.pdf-2,"subtract(233.86, const_100), divide(#0, const_100)","subtract(233.86, const_100), divide(#0, const_100)",1,1.3386,1,1
+AAPL/2006/page_100.pdf-1,"multiply(987, 29%)","multiply(987, 29%)",1,286.23,0,0
+K/2013/page_23.pdf-2,"divide(-34, 3266)","divide(-34, 3266)",1,-0.01041,0,0
+APD/2016/page_40.pdf-1,"subtract(26.8%, 21.9%)","subtract(26.8%, 21.9%)",1,0.049,1,1
+GS/2013/page_63.pdf-2,"subtract(911507, 938555)","subtract(911507, 938555)",1,-27048.0,1,1
+ABMD/2012/page_41.pdf-1,"greater(162.45, 127.66)","greater(162.45, 127.66)",1,yes,1,1
+RSG/2018/page_135.pdf-1,"divide(82%, 18%)","divide(82%, 18%)",1,4.55556,1,0
+ETR/2004/page_212.pdf-2,"divide(-29.4, 931.3)","divide(-29.4, 931.3)",1,-0.03157,1,1
+V/2008/page_180.pdf-3,"add(1088, 798), add(#0, 798)","add(1088, 798), add(#0, 798)",1,2684.0,0,0
+AMT/2008/page_94.pdf-3,"subtract(161.9, 344.6), divide(#0, 344.6)","subtract(161.9, 344.6), divide(#0, 344.6)",1,-0.53018,1,1
+C/2009/page_243.pdf-1,"divide(6.2, 38.8)","divide(6.2, 38.8)",1,0.15979,0,0
+EMR/2017/page_78.pdf-1,"divide(174335, 17984)","divide(174335, 17984)",1,9.69389,0,0
+ILMN/2003/page_58.pdf-3,"subtract(43.81, const_100), subtract(74.57, const_100), add(#0, #1)","subtract(43.81, const_100), subtract(74.57, const_100), add(#0, #1)",1,-81.62,0,0
+AMT/2003/page_27.pdf-3,"divide(10000, 30000)","divide(10000, 30000)",1,0.33333,1,1
+RSG/2010/page_98.pdf-2,"divide(172.8, 14.2)","divide(172.8, 14.2)",1,12.16901,0,0
+MS/2007/page_179.pdf-2,"divide(123, 1676)","divide(123, 1676)",1,0.07339,1,1
+NKE/2009/page_43.pdf-2,"divide(342.9, 342.9)","divide(342.9, 342.9)",1,1.0,0,0
+JPM/2012/page_140.pdf-1,"subtract(434814, 382739), divide(#0, 382739)","subtract(434814, 382739), divide(#0, 382739)",1,0.13606,1,1
+GS/2014/page_74.pdf-1,"divide(45826, 182650)","divide(45826, 182650)",1,0.2509,1,1
+AMT/2006/page_104.pdf-2,"subtract(3543016, 253907), divide(#0, 3543016)","subtract(3543016, 253907), divide(#0, 3543016)",1,0.92834,0,0
+AOS/2010/page_18.pdf-2,"subtract(178.8, const_100), subtract(113.6, const_100), subtract(#0, #1)","subtract(178.8, const_100), subtract(113.6, const_100), subtract(#0, #1)",1,65.2,0,0
+DRE/2008/page_46.pdf-1,"divide(56616, 146915)","divide(56616, 146915)",1,0.38537,1,1
+ETR/2011/page_301.pdf-3,"add(23596, 63003), add(#0, 50131), add(#1, 11589)","add(23596, 63003), add(#0, 50131), add(#1, 11589)",1,148319.0,0,0
+PKG/2005/page_74.pdf-1,"divide(2408, 3772)","divide(2408, 3772)",1,0.63839,1,1
+SNA/2007/page_29.pdf-3,"subtract(182.87, 146.97), divide(#0, 146.97)","subtract(182.87, 146.97), divide(#0, 146.97)",1,0.24427,0,0
+PPG/2006/page_42.pdf-2,"subtract(const_10, 9)","subtract(const_10, 9)",1,1.0,0,0
+HUM/2009/page_105.pdf-2,"subtract(39.2%, 28.2%)","subtract(39.2%, 28.2%)",1,0.11,0,0
+HOLX/2009/page_151.pdf-2,"multiply(1461, 31.23)","multiply(1461, 31.23)",1,45627.03,1,1
+RSG/2010/page_98.pdf-1,"subtract(65.7, 14.7)","subtract(65.7, 14.7)",1,51.0,1,1
+AMT/2012/page_50.pdf-2,"multiply(102400, 74.83), divide(#0, const_1000000)","multiply(102400, 74.83), divide(#0, const_1000000)",1,7.66259,0,0
+JPM/2003/page_106.pdf-4,"subtract(17.5, 11.7)","subtract(17.5, 11.7)",1,5.8,1,1
+GS/2015/page_188.pdf-3,"divide(1160, 2575)","divide(1160, 2575)",1,0.45049,1,1
+GS/2013/page_220.pdf-4,"subtract(248.36, const_100), divide(#0, const_100)","subtract(248.36, const_100), divide(#0, const_100)",1,1.4836,1,1
+DVN/2018/page_35.pdf-3,"subtract(156, 15), divide(#0, 15)","subtract(156, 15), divide(#0, 15)",1,9.4,0,0
+AAL/2010/page_72.pdf-2,"subtract(525, 460), divide(#0, 525)","subtract(525, 460), divide(#0, 525)",1,0.12381,0,0
+TMUS/2017/page_29.pdf-4,"divide(1700000, 900000)","divide(1700000, 900000)",1,1.88889,1,1
+D/2002/page_87.pdf-2,"divide(691, 8369)","divide(691, 8369)",1,0.08257,0,0
+AMT/2003/page_102.pdf-1,"divide(4.8, 221.9)","divide(4.8, 221.9)",1,0.02163,1,1
+BLL/2006/page_67.pdf-4,"divide(239.5, 802.6)","divide(239.5, 802.6)",1,0.29841,1,1
+ETR/2008/page_442.pdf-1,"add(const_8000, const_8000), add(#0, const_8000)","add(const_8000, const_8000), add(#0, const_8000)",1,24000.0,1,0
+GS/2012/page_121.pdf-1,"subtract(938555, 923225), divide(#0, 923225)","subtract(938555, 923225), divide(#0, 923225)",1,0.0166,1,1
+MS/2007/page_179.pdf-1,"divide(247, 1676)","divide(247, 1676)",1,0.14737,1,1
+AAL/2013/page_18.pdf-3,"divide(87, 104)","divide(87, 104)",1,0.83654,0,0
+IPG/2008/page_72.pdf-2,"subtract(148.8, 134.8)","subtract(148.8, 134.8)",1,14.0,1,1
+MRO/2006/page_93.pdf-1,"subtract(711, 438), divide(#0, 438)","subtract(711, 438), divide(#0, 438)",1,0.62329,1,1
+UNP/2010/page_21.pdf-2,"divide(563220, 3063816)","divide(563220, 3063816)",1,0.18383,1,1
+MRK/2013/page_125.pdf-3,"divide(319, 88)","divide(319, 88)",1,3.625,1,1
+ABMD/2005/page_29.pdf-1,"multiply(3.87%, const_100), add(#0, 3.87%)","multiply(3.87%, const_100), add(#0, 3.87%)",1,3.9087,0,0
+JPM/2003/page_106.pdf-2,"divide(5.3, 17.7)","divide(5.3, 17.7)",1,0.29944,1,1
+MKTX/2012/page_42.pdf-2,"subtract(31.16, 24.57)","subtract(31.16, 24.57)",1,6.59,1,1
+AON/2015/page_96.pdf-4,"divide(const_100, 411636)","divide(const_100, 411636)",1,0.00024,0,0
+GS/2014/page_40.pdf-1,"subtract(22171, 22469), divide(#0, 22469)","subtract(22171, 22469), divide(#0, 22469)",1,-0.01326,1,1
+TMUS/2017/page_29.pdf-3,"divide(500000, 6)","divide(500000, 6)",1,83333.33333,1,0
+MO/2014/page_39.pdf-2,"divide(664, 824)","divide(664, 824)",1,0.80583,1,1
+BKNG/2016/page_33.pdf-2,"subtract(272.59, 243.79), divide(#0, 243.79)","subtract(272.59, 243.79), divide(#0, 243.79)",1,0.11813,1,1
+GRMN/2006/page_68.pdf-1,"divide(15477, 6040), subtract(const_1, #0)","divide(15477, 6040), subtract(const_1, #0)",1,-1.56242,0,0
+CME/2017/page_89.pdf-4,"table_average(state taxes net of federal benefit, none)","table_average(state taxes net of federal benefit, none)",1,2.93333,1,0
+DISH/2010/page_117.pdf-1,"divide(390239, 777443)","divide(390239, 777443)",1,0.50195,1,1
+BKR/2017/page_56.pdf-1,"divide(-799, 7.0)","divide(-799, 7.0)",1,-114.14286,0,0
+MSI/2012/page_87.pdf-2,"subtract(9.60, 13.25), divide(#0, 13.25)","subtract(9.60, 13.25), divide(#0, 13.25)",1,-0.27547,1,1
+BLL/2010/page_35.pdf-3,"subtract(634.9, 735.4), divide(#0, 735.4)","subtract(634.9, 735.4), divide(#0, 735.4)",1,-0.13666,1,1
+AES/2010/page_227.pdf-2,"divide(500, 4612)","divide(500, 4612)",1,0.10841,1,1
+ADBE/2008/page_74.pdf-3,"greater(5, 6)","greater(5, 6)",1,no,1,1
+CME/2010/page_123.pdf-3,"divide(1211143, 1217121)","divide(1211143, 1217121)",1,0.99509,1,1
+UA/2011/page_69.pdf-2,"divide(77724, 6882)","divide(77724, 6882)",1,11.29381,0,0
+NWS/2019/page_116.pdf-2,"subtract(3008, -3084)","subtract(3008, -3084)",1,6092.0,0,0
+AMT/2005/page_102.pdf-1,"add(2.3, 4.6), add(#0, 9.2), divide(#1, const_3)","add(2.3, 4.6), add(#0, 9.2), divide(#1, const_3)",1,5.36667,1,1
+ABMD/2008/page_86.pdf-2,"divide(1.8, 11.2)","divide(1.8, 11.2)",1,0.16071,0,0
+JPM/2003/page_106.pdf-3,"add(5.3, 7.2), divide(#0, const_2)","add(5.3, 7.2), divide(#0, const_2)",1,6.25,1,0
+LMT/2015/page_89.pdf-2,"subtract(3538, 3480), divide(#0, 3480)","subtract(3538, 3480), divide(#0, 3480)",1,0.01667,1,1
+HOLX/2003/page_52.pdf-1,"multiply(2111138, 9.25)","multiply(2111138, 9.25)",1,19528026.5,0,0
+RSG/2015/page_98.pdf-2,"divide(100.3, 46.7)","divide(100.3, 46.7)",1,2.14775,1,1
+INTC/2013/page_31.pdf-4,"subtract(209, 191), divide(#0, 191)","subtract(209, 191), divide(#0, 191)",1,0.09424,0,0
+DVN/2018/page_35.pdf-4,"divide(2.6, 2.2)","divide(2.6, 2.2)",1,1.18182,0,0
+GS/2015/page_171.pdf-2,"subtract(120905, 127938), divide(#0, 127938)","subtract(120905, 127938), divide(#0, 127938)",1,-0.05497,1,1
+C/2008/page_65.pdf-3,"subtract(666.9, 577.8), divide(#0, 577.8)","subtract(666.9, 577.8), divide(#0, 577.8)",1,0.15421,1,1
+UPS/2010/page_52.pdf-2,"divide(3515, 23556)","divide(3515, 23556)",1,0.14922,1,1
+SNA/2018/page_31.pdf-3,"multiply(335000, 159.35)","multiply(335000, 159.35)",1,53382250.0,1,1
+GIS/2017/page_31.pdf-2,"divide(3112.0, 13440.0)","divide(3112.0, 13440.0)",1,0.23155,1,1
+AON/2007/page_188.pdf-3,"subtract(70, 53)","subtract(70, 53)",1,17.0,1,1
+GS/2017/page_86.pdf-4,"subtract(408164, 391555)","subtract(408164, 391555)",1,16609.0,1,1
+IPG/2008/page_72.pdf-3,"subtract(148.8, 134.8), divide(#0, 134.8)","subtract(148.8, 134.8), divide(#0, 134.8)",1,0.10386,0,0
+PNC/2008/page_122.pdf-2,"table_average(liabilities, none)","table_average(liabilities, none)",1,797.66667,1,1
+PNC/2012/page_100.pdf-3,"add(74, 110)","add(74, 110)",1,184.0,1,1
+ETR/2004/page_239.pdf-4,"divide(112.3, 426.6)","divide(112.3, 426.6)",1,0.26324,0,0
+AAL/2014/page_15.pdf-4,"divide(25400, 16200)","divide(25400, 16200)",1,1.5679,1,1
+GS/2017/page_179.pdf-2,"subtract(2.90, 2.60), divide(#0, 2.60)","subtract(2.90, 2.60), divide(#0, 2.60)",1,0.11538,1,1
+RSG/2010/page_57.pdf-2,"divide(86.1, 64.5)","divide(86.1, 64.5)",1,1.33488,1,1
+HIG/2011/page_53.pdf-2,"divide(367, 320)","divide(367, 320)",1,1.14688,0,0
+ABMD/2012/page_79.pdf-1,"add(1.6, 2.7), add(#0, 2.2)","add(1.6, 2.7), add(#0, 2.2)",1,6.5,1,1
+LMT/2014/page_91.pdf-1,"add(2070, 2150), add(#0, 2230), divide(#1, const_3)","add(2070, 2150), add(#0, 2230), divide(#1, const_3)",1,2150.0,0,0
+ETR/2013/page_21.pdf-1,"subtract(1854, 2045), divide(#0, 2045)","subtract(1854, 2045), divide(#0, 2045)",1,-0.0934,1,1
+UPS/2012/page_32.pdf-3,"subtract(79.67, 63.00), divide(#0, 63.00)","subtract(79.67, 63.00), divide(#0, 63.00)",1,0.2646,1,1
+GRMN/2008/page_85.pdf-2,"subtract(214.4, 126.6), divide(#0, 126.6), subtract(214.4, 126.6), divide(#2, 126.6)","subtract(214.4, 126.6), divide(#0, 126.6), subtract(214.4, 126.6), divide(#2, 126.6)",1,0.69352,0,0
+FIS/2012/page_48.pdf-2,"subtract(27.1, 26.4), divide(#0, 26.4)","subtract(27.1, 26.4), divide(#0, 26.4)",1,0.02652,1,1
+DG/2005/page_44.pdf-3,"subtract(6.3, 5.8)","subtract(6.3, 5.8)",1,0.5,0,0
+AWK/2012/page_117.pdf-1,"add(74360, 46961)","add(74360, 46961)",1,121321.0,1,1
+ILMN/2003/page_58.pdf-2,"divide(63.84, 93.20)","divide(63.84, 93.20)",1,0.68498,1,1
+SNA/2018/page_31.pdf-2,"multiply(630000, 158.19)","multiply(630000, 158.19)",1,99659700.0,0,0
+PNC/2007/page_92.pdf-1,"divide(2.7, 14.4)","divide(2.7, 14.4)",1,0.1875,1,1
+AAPL/2005/page_43.pdf-2,"divide(165, 6816)","divide(165, 6816)",1,0.02421,1,1
+RSG/2016/page_139.pdf-2,"divide(451.7, 141055)","divide(451.7, 141055)",1,0.0032,0,0
+UAA/2016/page_42.pdf-4,"subtract(1279337, 1019953), divide(#0, 1019953)","subtract(1279337, 1019953), divide(#0, 1019953)",1,0.25431,1,1
+STT/2009/page_127.pdf-1,"multiply(575, const_1000000)","multiply(575, const_1000000)",1,575000000.0,0,0
+MS/2013/page_132.pdf-2,"multiply(9.5, 33%)","multiply(9.5, 33%)",1,3.135,1,1
+AAL/2014/page_15.pdf-2,"divide(22500, 113300)","divide(22500, 113300)",1,0.19859,1,1
+MRO/2004/page_125.pdf-1,"table_average(end of year, none)","table_average(end of year, none)",1,5970.33333,1,1
+DRE/2002/page_15.pdf-4,"subtract(35.1, 32.8), divide(#0, 32.8)","subtract(35.1, 32.8), divide(#0, 32.8)",1,0.07012,1,1
+JPM/2014/page_70.pdf-1,"divide(43319, 96606)","divide(43319, 96606)",1,0.44841,1,1
+SNA/2007/page_49.pdf-3,"multiply(109.8, const_1000000), divide(#0, 2616618)","multiply(109.8, const_1000000), divide(#0, 2616618)",1,41.96256,0,0
+SNA/2007/page_29.pdf-2,"subtract(198.05, 146.97), divide(#0, 146.97)","subtract(198.05, 146.97), divide(#0, 146.97)",1,0.34755,1,1
+APD/2018/page_30.pdf-2,"divide(.95, .86), subtract(#0, const_1)","divide(.95, .86), subtract(#0, const_1)",1,0.10465,0,0
+ETR/2011/page_301.pdf-2,"subtract(63003, 50131)","subtract(63003, 50131)",1,12872.0,1,1
+BLL/2011/page_32.pdf-2,"table_average(net sales, none)","table_average(net sales, none)",1,7657.1,1,1
+JPM/2010/page_120.pdf-2,"subtract(222510, 200077), divide(#0, 200077)","subtract(222510, 200077), divide(#0, 200077)",1,0.11212,1,1
+UPS/2012/page_32.pdf-1,"subtract(121.46, const_100), divide(#0, const_100)","subtract(121.46, const_100), divide(#0, const_100)",1,0.2146,1,1
+GS/2017/page_179.pdf-1,"subtract(2.60, 2.55), divide(#0, 2.55)","subtract(2.60, 2.55), divide(#0, 2.55)",1,0.01961,1,1
+BLL/2010/page_35.pdf-1,"divide(635, 1000)","divide(635, 1000)",1,0.635,1,1
+JPM/2012/page_140.pdf-2,"subtract(306222, 278395), divide(#0, 278395)","subtract(306222, 278395), divide(#0, 278395)",1,0.09996,1,1
+MRO/2013/page_39.pdf-1,"greater(76, 63)","greater(76, 63)",1,yes,1,1
+SLG/2001/page_48.pdf-1,"greater(-4096, 891)","greater(-4096, 891)",1,no,1,1
+MSI/2007/page_70.pdf-3,"subtract(7729, 5400), divide(#0, 5400)","subtract(7729, 5400), divide(#0, 5400)",1,0.4313,0,0
+PPG/2018/page_85.pdf-1,"greater(291, 258)","greater(291, 258)",1,yes,0,0
+PPG/2012/page_29.pdf-1,"add(358, 355), add(#0, 360)","add(358, 355), add(#0, 360)",1,1073.0,1,1
+GS/2012/page_142.pdf-3,"subtract(24296, 29002), divide(#0, 29002)","subtract(24296, 29002), divide(#0, 29002)",1,-0.16226,1,1
+CME/2017/page_89.pdf-1,"subtract(35.0%, 32.9%)","subtract(35.0%, 32.9%)",1,0.021,1,0
+CME/2017/page_89.pdf-2,"subtract(32.9%, 36.3%)","subtract(32.9%, 36.3%)",1,-0.034,0,0
+AON/2007/page_171.pdf-4,"divide(24, 15), subtract(#0, const_1)","divide(24, 15), subtract(#0, const_1)",1,0.6,1,1
+ETR/2015/page_17.pdf-1,"subtract(5829, 5735), divide(#0, 5735)","subtract(5829, 5735), divide(#0, 5735)",1,0.01639,1,1
+GS/2012/page_142.pdf-1,"subtract(27885, 35066), divide(#0, 35066)","subtract(27885, 35066), divide(#0, 35066)",1,-0.20479,1,1
+LMT/2012/page_73.pdf-1,"divide(8.0, 13.4)","divide(8.0, 13.4)",1,0.59701,0,0
+MS/2013/page_139.pdf-2,"add(1597, 816)","add(1597, 816)",1,2413.0,1,1
+ILMN/2008/page_86.pdf-1,"subtract(23778, 21376), divide(#0, 21376)","subtract(23778, 21376), divide(#0, 21376)",1,0.11237,1,0
+GS/2017/page_86.pdf-3,"subtract(1341016, 1270173)","subtract(1341016, 1270173)",1,70843.0,1,1
+EL/2008/page_59.pdf-2,"divide(34, 66.3)","divide(34, 66.3)",1,0.51282,1,1
+CE/2016/page_19.pdf-4,"subtract(119, 86), divide(#0, 86)","subtract(119, 86), divide(#0, 86)",1,0.38372,0,0
+JKHY/2019/page_18.pdf-1,"subtract(177.26, 151.16), divide(#0, 151.16)","subtract(177.26, 151.16), divide(#0, 151.16)",1,0.17266,0,0
+SNA/2007/page_69.pdf-2,"subtract(17.3, 16.8), divide(#0, 16.8)","subtract(17.3, 16.8), divide(#0, 16.8)",1,0.02976,1,1
+L/2009/page_84.pdf-2,"subtract(80.74, 128.16), divide(#0, 128.16)","subtract(80.74, 128.16), divide(#0, 128.16)",1,-0.37001,1,1
+FBHS/2017/page_22.pdf-2,"multiply(5283.3, 15%)","multiply(5283.3, 15%)",1,792.495,1,1
+IPG/2006/page_77.pdf-1,"multiply(250.0, 7.875%)","multiply(250.0, 7.875%)",1,19.6875,0,0
+AAL/2015/page_114.pdf-1,"divide(1733, 2655)","divide(1733, 2655)",1,0.65273,1,1
+AMT/2014/page_149.pdf-1,"greater(11.2, 15.9)","greater(11.2, 15.9)",1,no,0,0
+C/2009/page_63.pdf-4,"divide(59656, 61368)","divide(59656, 61368)",1,0.9721,1,1
+GS/2014/page_40.pdf-2,"subtract(22469, 22956), divide(#0, 22956)","subtract(22469, 22956), divide(#0, 22956)",1,-0.02121,1,1
+HOLX/2008/page_143.pdf-2,"divide(6900, 220600)","divide(6900, 220600)",1,0.03128,1,1
+ALXN/2016/page_153.pdf-1,"add(150, 175)","add(150, 175)",1,325.0,0,0
+MRK/2013/page_3.pdf-2,"subtract(47267, 48047), divide(#0, 48047)","subtract(47267, 48047), divide(#0, 48047)",1,-0.01623,1,1
+RL/2008/page_23.pdf-2,"divide(4, 158)","divide(4, 158)",1,0.02532,1,1
+AAL/2010/page_72.pdf-4,"subtract(736, 708), divide(#0, 708)","subtract(736, 708), divide(#0, 708)",1,0.03955,0,0
+ZBH/2008/page_57.pdf-3,"divide(243.5, 1020.1)","divide(243.5, 1020.1)",1,0.2387,0,0
+AMT/2016/page_125.pdf-4,"add(9.2, 3.2), add(#0, 6.5), divide(#1, const_3)","add(9.2, 3.2), add(#0, 6.5), divide(#1, const_3)",1,6.3,1,1
+DISCA/2011/page_49.pdf-2,"subtract(217.56, const_100), divide(#0, const_100)","subtract(217.56, const_100), divide(#0, const_100)",1,1.1756,1,1
+AES/2001/page_85.pdf-4,"divide(1819, 22258)","divide(1819, 22258)",1,0.08172,1,1
+ETR/2017/page_143.pdf-3,"subtract(760000, 857679)","subtract(760000, 857679)",1,-97679.0,0,0
+MSI/2014/page_76.pdf-2,"subtract(1.4, 1.5), divide(#0, 1.5)","subtract(1.4, 1.5), divide(#0, 1.5)",1,-0.06667,1,1
+BLK/2017/page_121.pdf-2,"divide(-27, 5041)","divide(-27, 5041)",1,-0.00536,0,0
+UPS/2016/page_114.pdf-1,"subtract(68, 74)","subtract(68, 74)",1,-6.0,1,1
+AMT/2003/page_27.pdf-1,"divide(const_100, 30000)","divide(const_100, 30000)",1,0.00333,0,0
+CE/2013/page_16.pdf-2,"subtract(83, 78), divide(#0, 78)","subtract(83, 78), divide(#0, 78)",1,0.0641,1,1
+MKTX/2012/page_42.pdf-3,"subtract(37.79, 29.26), divide(#0, 29.26)","subtract(37.79, 29.26), divide(#0, 29.26)",1,0.29152,0,0
+PNC/2012/page_174.pdf-4,"add(587, 580)","add(587, 580)",1,1167.0,1,1
+PPG/2008/page_52.pdf-2,"subtract(99, 89), divide(#0, 99)","subtract(99, 89), divide(#0, 99)",1,0.10101,1,0
+ADBE/1999/page_64.pdf-2,"divide(0.4, 772)","divide(0.4, 772)",1,0.00052,0,0
+IPG/2006/page_77.pdf-3,"subtract(240.9, 2251.2), divide(#0, 2251.2)","subtract(240.9, 2251.2), divide(#0, 2251.2)",1,-0.89299,0,0
+RSG/2012/page_93.pdf-2,"subtract(29.7, 21.0), divide(#0, 21.0)","subtract(29.7, 21.0), divide(#0, 21.0)",1,0.41429,1,1
+JPM/2018/page_90.pdf-3,"divide(2229188, 2.50%)","divide(2229188, 2.50%)",1,89167520.0,1,0
+BKNG/2016/page_33.pdf-3,"subtract(313.45, const_100), divide(#0, const_100), subtract(198.18, const_100), divide(#2, const_100), subtract(#1, #3)","subtract(313.45, const_100), divide(#0, const_100), subtract(198.18, const_100), divide(#2, const_100), subtract(#1, #3)",1,1.1527,1,1
+PNC/2012/page_68.pdf-5,"divide(772, 3693)","divide(772, 3693)",1,0.20904,1,1
+C/2009/page_63.pdf-2,"divide(47162, 83659)","divide(47162, 83659)",1,0.56374,1,1
+CB/2008/page_229.pdf-3,"divide(684, 7001)","divide(684, 7001)",1,0.0977,1,1
+HIG/2011/page_53.pdf-4,"subtract(39, 367), divide(#0, 367)","subtract(39, 367), divide(#0, 367)",1,-0.89373,0,0
+BLL/2006/page_67.pdf-1,"divide(176.7, 617.9), divide(11.9, 184.7)","divide(176.7, 617.9), divide(11.9, 184.7)",1,0.06443,0,0
+GS/2013/page_63.pdf-3,"subtract(78467, 75716)","subtract(78467, 75716)",1,2751.0,1,1
+C/2008/page_22.pdf-3,"subtract(96, 59), divide(#0, 581)","subtract(96, 59), divide(#0, 581)",1,0.06368,0,0
+HIG/2004/page_140.pdf-2,"add(30, 294)","add(30, 294)",1,324.0,1,1
+FIS/2016/page_9.pdf-1,"subtract(4250, 2360), divide(#0, 2360)","subtract(4250, 2360), divide(#0, 2360)",1,0.80085,1,1
+C/2008/page_22.pdf-1,"subtract(581, 367), divide(#0, 367)","subtract(581, 367), divide(#0, 367)",1,0.58311,0,0
+TMUS/2017/page_29.pdf-1,"divide(1300000, 61)","divide(1300000, 61)",1,21311.47541,1,1
+GPN/2010/page_89.pdf-1,"subtract(762, 518), divide(#0, 518)","subtract(762, 518), divide(#0, 518)",1,0.47104,1,1
+BLL/2010/page_37.pdf-4,"add(765.2, 250)","add(765.2, 250)",1,1015.2,0,0
+HOLX/2007/page_126.pdf-1,"subtract(73200, 17000)","subtract(73200, 17000)",1,56200.0,0,0
+GS/2013/page_149.pdf-1,"subtract(22176, 27885), divide(#0, 27885)","subtract(22176, 27885), divide(#0, 27885)",1,-0.20473,1,1
+AWK/2012/page_117.pdf-3,"subtract(158578, 118314)","subtract(158578, 118314)",1,40264.0,1,1
+CDNS/2015/page_30.pdf-1,"subtract(117.61, 100), divide(#0, 100)","subtract(117.61, 100), divide(#0, 100)",1,0.1761,1,0
+AAL/2014/page_15.pdf-1,"divide(32800, 113300)","divide(32800, 113300)",1,0.2895,1,1
+DRE/2008/page_46.pdf-4,"subtract(22.7, 33.1), divide(#0, 33.1)","subtract(22.7, 33.1), divide(#0, 33.1)",1,-0.3142,1,1
+INTC/2015/page_41.pdf-3,"divide(17.2, 47.9)","divide(17.2, 47.9)",1,0.35908,1,1
+BLK/2014/page_120.pdf-1,"divide(613, 1178)","divide(613, 1178)",1,0.52037,1,1
+GS/2013/page_85.pdf-3,"divide(46984, 172095)","divide(46984, 172095)",1,0.27301,1,1
+C/2018/page_175.pdf-1,"subtract(5301, 4229), divide(#0, 4229)","subtract(5301, 4229), divide(#0, 4229)",1,0.25349,1,1
+GS/2012/page_189.pdf-4,"subtract(109669, 112824), divide(#0, 112824)","subtract(109669, 112824), divide(#0, 112824)",1,-0.02796,1,1
+CMCSA/2015/page_112.pdf-1,"subtract(1171, 1701)","subtract(1171, 1701)",1,-530.0,1,1
+GIS/2019/page_68.pdf-2,"subtract(17057.4, 16772.9), divide(#0, 16772.9)","subtract(17057.4, 16772.9), divide(#0, 16772.9)",1,0.01696,1,1
+LMT/2014/page_91.pdf-4,"divide(2070, 13430)","divide(2070, 13430)",1,0.15413,1,1
+D/2002/page_87.pdf-1,"add(599, 311), add(#0, 253)","add(599, 311), add(#0, 253)",1,1163.0,0,0
+IP/2006/page_30.pdf-2,"divide(465, 7170)","divide(465, 7170)",1,0.06485,1,1
+MMM/2013/page_75.pdf-1,"divide(517, 476), divide(const_1000, #0)","divide(517, 476), divide(const_1000, #0)",1,920.69632,0,0
+AAL/2013/page_172.pdf-3,"divide(849, 5424)","divide(849, 5424)",1,0.15653,1,1
+AMT/2007/page_127.pdf-4,"subtract(9.09, 6.79), divide(#0, 6.79)","subtract(9.09, 6.79), divide(#0, 6.79)",1,0.33873,0,0
+SLB/2012/page_56.pdf-2,"add(27, 37), add(#0, 14)","add(27, 37), add(#0, 14)",1,78.0,0,0
+LMT/2015/page_89.pdf-3,"subtract(11.24, 10.79), divide(#0, 10.79)","subtract(11.24, 10.79), divide(#0, 10.79)",1,0.04171,1,1
+AES/2002/page_128.pdf-4,"add(31, 32), add(#0, 13), divide(#1, const_3)","add(31, 32), add(#0, 13), divide(#1, const_3)",1,25.33333,0,0
+VRTX/2006/page_111.pdf-2,"divide(19733, 213520)","divide(19733, 213520)",1,0.09242,0,0
+AON/2007/page_171.pdf-3,"table_average(net unrealized investment gains, none)","table_average(net unrealized investment gains, none)",1,67.0,1,1
+ETFC/2011/page_144.pdf-1,"divide(110000, 65000)","divide(110000, 65000)",1,1.69231,1,1
+AES/2001/page_33.pdf-3,"add(60.15, 41.30), divide(#0, const_2)","add(60.15, 41.30), divide(#0, const_2)",1,50.725,1,1
+DRE/2008/page_46.pdf-3,"add(56616, 217692), add(#0, 145095), divide(#1, const_3)","add(56616, 217692), add(#0, 145095), divide(#1, const_3)",1,139801.0,0,0
+DVN/2014/page_87.pdf-2,"multiply(932, 0.44)","multiply(932, 0.44)",1,410.08,1,1
+AMT/2016/page_49.pdf-4,"divide(427195037, 153)","divide(427195037, 153)",1,2792124.42484,1,1
+AMT/2007/page_127.pdf-1,"subtract(9.09, 5.15), divide(#0, 5.15)","subtract(9.09, 5.15), divide(#0, 5.15)",1,0.76505,1,1
+VNO/2014/page_57.pdf-2,"subtract(205, 100)","subtract(205, 100)",1,105.0,1,1
+AMT/2008/page_94.pdf-1,"divide(1837, 4333146)","divide(1837, 4333146)",1,0.00042,0,0
+PNC/2015/page_93.pdf-1,"divide(3321, 8124)","divide(3321, 8124)",1,0.40879,1,1
+IPG/2017/page_92.pdf-4,"divide(121.0, 268.4)","divide(121.0, 268.4)",1,0.45082,1,1
+ETR/2004/page_281.pdf-2,"divide(12.0, 19064)","divide(12.0, 19064)",1,0.00063,0,0
+ETFC/2012/page_43.pdf-2,"subtract(-5.7, 2.9), divide(#0, 2.9)","subtract(-5.7, 2.9), divide(#0, 2.9)",1,-2.96552,0,0
+AAL/2013/page_172.pdf-2,"divide(3329, 1246)","divide(3329, 1246)",1,2.67175,1,1
+DISH/2011/page_122.pdf-1,"add(107061, 17826)","add(107061, 17826)",1,124887.0,0,0
+MSI/2012/page_87.pdf-3,"add(42.96, 35.61), divide(#0, const_2)","add(42.96, 35.61), divide(#0, const_2)",1,39.285,0,0
+MSI/2008/page_69.pdf-3,"divide(2690, 28383)","divide(2690, 28383)",1,0.09478,0,0
+FIS/2016/page_9.pdf-2,"subtract(4566, 3846), divide(#0, 3846)","subtract(4566, 3846), divide(#0, 3846)",1,0.18721,1,1
+ADBE/2008/page_74.pdf-4,"divide(const_100, 5)","divide(const_100, 5)",1,20.0,1,1
+MRO/2003/page_45.pdf-1,"add(74, 75), add(#0, 78), multiply(#1, const_1000)","add(74, 75), add(#0, 78), multiply(#1, const_1000)",1,227000.0,0,0
+AAPL/2006/page_100.pdf-2,"multiply(633, 27%)","multiply(633, 27%)",1,170.91,0,0
+RSG/2016/page_139.pdf-1,"subtract(48.56, 41.39), divide(#0, 41.39)","subtract(48.56, 41.39), divide(#0, 41.39)",1,0.17323,1,1
+RSG/2013/page_123.pdf-2,"subtract(5.27, 4.77), divide(#0, 4.77)","subtract(5.27, 4.77), divide(#0, 4.77)",1,0.10482,1,1
+UNP/2009/page_42.pdf-2,"subtract(2975, 2061)","subtract(2975, 2061)",1,914.0,0,0
+AMT/2016/page_125.pdf-2,"subtract(107551, 28114), divide(#0, 28114)","subtract(107551, 28114), divide(#0, 28114)",1,2.82553,0,0
+AMT/2014/page_149.pdf-2,"subtract(31890, 28524)","subtract(31890, 28524)",1,3366.0,0,0
+AAPL/2006/page_131.pdf-1,"add(149768, 450000)","add(149768, 450000)",1,599768.0,1,1
+C/2015/page_96.pdf-3,"subtract(336.5, 368.6)","subtract(336.5, 368.6)",1,-32.1,1,1
+AON/2018/page_87.pdf-3,"table_average(liability for uncertain tax positions, none)","table_average(liability for uncertain tax positions, none)",0,,0,0
+DVN/2014/page_87.pdf-1,"subtract(164, 875), divide(#0, 875)","subtract(164, 875), divide(#0, 875)",1,-0.81257,0,0
+GIS/2018/page_110.pdf-1,"add(540.8, 167.3)","add(540.8, 167.3)",1,708.1,1,1
+UNP/2006/page_15.pdf-1,"add(26466, 5021), add(27318, 5021), add(#0, #1), divide(26466, #2)","add(26466, 5021), add(27318, 5021), add(#0, #1), divide(26466, #2)",1,0.41466,0,0
+C/2018/page_175.pdf-2,"divide(4229, 7857)","divide(4229, 7857)",1,0.53825,1,1
+ANSS/2012/page_93.pdf-1,"divide(265436, 798018)","divide(265436, 798018)",1,0.33262,1,1
+STT/2011/page_69.pdf-1,"divide(156, 289)","divide(156, 289)",1,0.53979,1,1
+AES/2001/page_85.pdf-2,"multiply(200, 7.375%)","multiply(200, 7.375%)",1,14.75,0,0
+LMT/2014/page_91.pdf-3,"subtract(200, 190)","subtract(200, 190)",1,10.0,1,1
+GIS/2017/page_31.pdf-4,"divide(21, 14.6)","divide(21, 14.6)",1,1.43836,1,1
+HUM/2017/page_118.pdf-1,"subtract(75, 77), divide(#0, 77)","subtract(75, 77), divide(#0, 77)",1,-0.02597,1,1
+ABMD/2006/page_43.pdf-1,"divide(4819, 5419)","divide(4819, 5419)",1,0.88928,1,1
+ANET/2015/page_156.pdf-1,"greater(43.9, 49380)","greater(43.9, 49380)",1,no,0,0
+MRO/2006/page_93.pdf-3,"subtract(711, 527), divide(#0, 527)","subtract(711, 527), divide(#0, 527)",1,0.34915,1,1
+AES/2010/page_227.pdf-1,"divide(3152, 4612)","divide(3152, 4612)",1,0.68343,1,1
+BLL/2010/page_35.pdf-2,"subtract(318.5, 634.9), divide(#0, 634.9)","subtract(318.5, 634.9), divide(#0, 634.9)",1,-0.49835,1,1
+NCLH/2018/page_97.pdf-1,"subtract(37.2, 31.9), divide(#0, 31.9)","subtract(37.2, 31.9), divide(#0, 31.9)",1,0.16614,1,1
+GS/2015/page_171.pdf-1,"subtract(86069, 88215), divide(#0, 88215)","subtract(86069, 88215), divide(#0, 88215)",1,-0.02433,1,1
+ETR/2003/page_157.pdf-1,"divide(4900, 14564)","divide(4900, 14564)",1,0.33645,0,0
+CME/2010/page_123.pdf-5,"multiply(1211143, 308.10), divide(#0, const_1000000)","multiply(1211143, 308.10), divide(#0, const_1000000)",1,373.15316,1,1
+RSG/2012/page_93.pdf-1,"subtract(45.3, 48.1)","subtract(45.3, 48.1)",1,-2.8,1,1
+C/2009/page_197.pdf-1,"subtract(const_100, 174)","subtract(const_100, 174)",1,-74.0,0,0
+JPM/2008/page_117.pdf-2,"add(32, 38)","add(32, 38)",1,70.0,0,0
+EMR/2017/page_78.pdf-2,"multiply(4999, 50.33)","multiply(4999, 50.33)",1,251599.67,1,1
+FIS/2012/page_48.pdf-4,"subtract(100.8, 9.0)","subtract(100.8, 9.0)",1,91.8,1,1
+MRO/2011/page_108.pdf-2,"table_sum(changes in estimated future development costs, none)","table_sum(changes in estimated future development costs, none)",1,-7275.0,0,0
+PNC/2012/page_174.pdf-2,"add(587, 580)","add(587, 580)",1,1167.0,1,1
+MAS/2012/page_26.pdf-2,"subtract(79.90, 63.45), divide(#0, 63.45)","subtract(79.90, 63.45), divide(#0, 63.45)",1,0.25926,1,1
+UPS/2007/page_49.pdf-4,"add(619, 1782), add(10527, 8026), add(3828, 3465), add(562, 101), add(#0, #1), add(#2, #3), divide(3465, #4)","add(619, 1782), add(10527, 8026), add(3828, 3465), add(562, 101), add(#0, #1), add(#2, #3), divide(3465, #4)",1,0.16536,0,0
+UNP/2011/page_33.pdf-2,"divide(const_100, 5%), multiply(#0, 5%)","divide(const_100, 5%), multiply(#0, 5%)",1,100.0,0,0
+UPS/2007/page_49.pdf-2,"divide(108, 619)","divide(108, 619)",1,0.17447,1,1
+MRO/2003/page_84.pdf-2,"subtract(-57, -41), divide(#0, -41)","subtract(-57, -41), divide(#0, -41)",1,0.39024,1,1
+PPG/2018/page_85.pdf-2,"subtract(151, 136), divide(#0, 136)","subtract(151, 136), divide(#0, 136)",1,0.11029,1,1
+UPS/2007/page_49.pdf-3,"divide(116, 1782)","divide(116, 1782)",1,0.0651,0,0
+UNP/2009/page_42.pdf-1,"divide(100, 44)","divide(100, 44)",1,2.27273,0,0
+ECL/2017/page_79.pdf-2,"divide(511.7, 798.3)","divide(511.7, 798.3)",1,0.64099,0,0
+LMT/2012/page_73.pdf-4,"subtract(323.7, 335.9), divide(#0, 335.9)","subtract(323.7, 335.9), divide(#0, 335.9)",1,-0.03632,1,1
+MO/2014/page_62.pdf-1,"subtract(5058, 4523), divide(#0, 4523)","subtract(5058, 4523), divide(#0, 4523)",1,0.11828,1,1
+ECL/2017/page_69.pdf-2,"subtract(7167.1, 6383.0), divide(#0, 6383.0)","subtract(7167.1, 6383.0), divide(#0, 6383.0)",1,0.12284,1,1
+MRO/2017/page_96.pdf-4,"subtract(8.25%, 4.50%)","subtract(8.25%, 4.50%)",1,0.0375,1,1
+JPM/2018/page_90.pdf-2,"subtract(51410, 51410)","subtract(51410, 51410)",1,0.0,0,0
+ETR/2004/page_239.pdf-1,"subtract(426.6, 380.2), divide(#0, 426.6)","subtract(426.6, 380.2), divide(#0, 426.6)",1,0.10877,0,0
+AMT/2012/page_50.pdf-4,"multiply(619314, 74.25), divide(#0, const_1000000)","multiply(619314, 74.25), divide(#0, const_1000000)",1,45.98406,0,0
+AAL/2013/page_18.pdf-1,"subtract(8959, 8717), divide(#0, 8717)","subtract(8959, 8717), divide(#0, 8717)",1,0.02776,1,1
+JPM/2010/page_281.pdf-1,"divide(214.8, 450.1)","divide(214.8, 450.1)",1,0.47723,1,1
+LMT/2012/page_73.pdf-2,"subtract(328.4, 339.9), divide(#0, 339.9)","subtract(328.4, 339.9), divide(#0, 339.9)",1,-0.03383,1,1
+AMT/2008/page_107.pdf-3,"subtract(20963, 20963)","subtract(20963, 20963)",1,0.0,0,0
+KHC/2018/page_132.pdf-1,"subtract(1224, 1214), divide(#0, const_1000)","subtract(1224, 1214), divide(#0, const_1000)",1,0.01,0,0
+AES/2002/page_128.pdf-1,"divide(14, 169)","divide(14, 169)",1,0.08284,1,1
+PKG/2002/page_52.pdf-2,"multiply(6474102, 9.10), divide(#0, const_1000000)","multiply(6474102, 9.10), divide(#0, const_1000000)",1,58.91433,1,1
+DISH/2010/page_117.pdf-2,"divide(75970, 777443)","divide(75970, 777443)",1,0.09772,1,1
+AAPL/2006/page_100.pdf-4,"table_min(effective tax rate, none)","table_min(effective tax rate, none)",1,0.27,1,1
+SLG/2011/page_91.pdf-6,"subtract(2912456, 2728290), divide(#0, 2728290)","subtract(2912456, 2728290), divide(#0, 2728290)",1,0.0675,0,0
+DRE/2007/page_56.pdf-3,"add(217692, 145095), add(#0, 309183), divide(#1, const_3)","add(217692, 145095), add(#0, 309183), divide(#1, const_3)",1,223990.0,1,1
+MRK/2013/page_125.pdf-2,"table_average(settlements, none)","table_average(settlements, none)",1,-309.66667,1,1
+ZBH/2007/page_67.pdf-1,"subtract(1.0, 8.8), divide(#0, 8.8)","subtract(1.0, 8.8), divide(#0, 8.8)",1,-0.88636,0,0
+ETR/2016/page_374.pdf-4,"divide(12.9, 705.4)","divide(12.9, 705.4)",1,0.01829,1,1
+CME/2010/page_123.pdf-1,"divide(5978, 5156223)","divide(5978, 5156223)",1,0.00116,0,0
+UAA/2016/page_42.pdf-1,"divide(817388, 2030900)","divide(817388, 2030900)",1,0.40248,1,1
+GPN/2018/page_94.pdf-2,"multiply(1084, 108.51)","multiply(1084, 108.51)",1,117624.84,1,1
+BLL/2011/page_32.pdf-1,"subtract(8630.9, 7630.0), divide(#0, 7630.0)","subtract(8630.9, 7630.0), divide(#0, 7630.0)",1,0.13118,1,1
+ETR/2011/page_17.pdf-1,"subtract(4904, 5051), divide(#0, 5051)","subtract(4904, 5051), divide(#0, 5051)",1,-0.0291,1,1
+AAL/2013/page_18.pdf-4,"divide(8304, 33.2%)","divide(8304, 33.2%)",1,25012.04819,1,1
+DG/2007/page_67.pdf-2,"add(0.2, 9.4), add(#0, 0.6)","add(0.2, 9.4), add(#0, 0.6)",1,10.2,1,1
+ADI/2010/page_80.pdf-1,"subtract(1840, 1730), divide(#0, 1730)","subtract(1840, 1730), divide(#0, 1730)",1,0.06358,1,1
+SNA/2007/page_49.pdf-2,"divide(64.8, 1.11)","divide(64.8, 1.11)",1,58.37838,0,0
+AAL/2014/page_15.pdf-3,"divide(61600, 32800)","divide(61600, 32800)",1,1.87805,1,1
+CME/2010/page_69.pdf-4,"divide(750.0, 420.5)","divide(750.0, 420.5)",1,1.78359,0,0
+AMT/2016/page_125.pdf-3,"subtract(28114, 31947)","subtract(28114, 31947)",1,-3833.0,1,1
+HWM/2015/page_173.pdf-2,"divide(8, 29), subtract(#0, const_1)","divide(8, 29), subtract(#0, const_1)",1,-0.72414,0,0
+BKNG/2016/page_33.pdf-4,"subtract(313.45, const_100), divide(#0, const_100)","subtract(313.45, const_100), divide(#0, const_100)",1,2.1345,1,1
+AAL/2013/page_18.pdf-2,"subtract(3.09, 3.20), divide(#0, 3.20)","subtract(3.09, 3.20), divide(#0, 3.20)",1,-0.03438,1,1
+PKG/2005/page_74.pdf-4,"add(2408, 3772)","add(2408, 3772)",1,6180.0,0,0
+ETR/2008/page_298.pdf-2,"add(200, 500), add(#0, 750)","add(200, 500), add(#0, 750)",1,1450.0,1,1
+ILMN/2003/page_58.pdf-1,"subtract(43.81, const_100)","subtract(43.81, const_100)",1,-56.19,0,0
+JPM/2015/page_82.pdf-2,"divide(43510, 93543)","divide(43510, 93543)",1,0.46513,1,1
+STT/2011/page_69.pdf-3,"divide(105, 156)","divide(105, 156)",1,0.67308,0,0
+MRO/2013/page_19.pdf-2,"subtract(3057, 236), divide(#0, 3057), multiply(#1, const_100)","subtract(3057, 236), divide(#0, 3057), multiply(#1, const_100)",1,92.28001,0,0
+ABMD/2007/page_78.pdf-1,"add(84%, 73%), add(#0, 65%)","add(84%, 73%), add(#0, 65%)",1,2.22,0,0
+ETFC/2018/page_153.pdf-2,"divide(7, 6)","divide(7, 6)",1,1.16667,0,0
+INTC/2013/page_31.pdf-3,"subtract(214, 100), divide(#0, 100)","subtract(214, 100), divide(#0, 100)",1,1.14,1,1
+SNA/2013/page_34.pdf-1,"divide(223.82, 195.02)","divide(223.82, 195.02)",1,1.14768,1,1
+ADI/2011/page_61.pdf-1,"multiply(375, 5.0%)","multiply(375, 5.0%)",1,18.75,1,1
+ALLE/2015/page_24.pdf-2,"subtract(2.9, 8.8)","subtract(2.9, 8.8)",1,-5.9,0,0
+JKHY/2017/page_26.pdf-3,"subtract(203.87, 100.00)","subtract(203.87, 100.00)",1,103.87,0,0
+UNP/2006/page_15.pdf-2,"divide(27318, 51596)","divide(27318, 51596)",1,0.52946,1,1
+GS/2012/page_189.pdf-1,"table_max(tier 1 capital, none)","table_max(tier 1 capital, none)",1,20704.0,1,1
+ECL/2016/page_52.pdf-3,"divide(861, 9379)","divide(861, 9379)",1,0.0918,1,1
+MAS/2012/page_26.pdf-3,"subtract(92.49, 100), divide(#0, 100)","subtract(92.49, 100), divide(#0, 100)",1,-0.0751,1,1
+AWK/2017/page_148.pdf-2,"subtract(1135, 1016), divide(#0, 1016)","subtract(1135, 1016), divide(#0, 1016)",1,0.11713,1,1
+GS/2017/page_86.pdf-1,"divide(const_2, 5.0%)","divide(const_2, 5.0%)",1,40.0,0,0
+FIS/2017/page_64.pdf-1,"subtract(1830, 1909), divide(#0, 1909)","subtract(1830, 1909), divide(#0, 1909)",1,-0.04138,1,1
+MMM/2007/page_23.pdf-2,"divide(210, 132)","divide(210, 132)",1,1.59091,1,1
+FIS/2016/page_9.pdf-3,"divide(4250, 9241)","divide(4250, 9241)",1,0.45991,1,1
+AON/2018/page_87.pdf-2,"subtract(10, 12)","subtract(10, 12)",1,-2.0,0,0
+FIS/2016/page_31.pdf-4,"subtract(311.81, const_100), divide(100000, const_100), multiply(#1, #0)","subtract(311.81, const_100), divide(100000, const_100), multiply(#1, #0)",1,211810.0,0,0
+GPN/2014/page_92.pdf-2,"multiply(766801, 40.85), divide(#0, const_1000000)","multiply(766801, 40.85), divide(#0, const_1000000)",1,31.32382,0,0
+JPM/2009/page_175.pdf-4,"subtract(318063, 60224)","subtract(318063, 60224)",1,257839.0,0,0
+UNP/2016/page_52.pdf-1,"divide(26053, 32070)","divide(26053, 32070)",1,0.81238,1,1
+DVN/2015/page_79.pdf-1,"subtract(81.05, 70.18)","subtract(81.05, 70.18)",1,10.87,0,0
+C/2018/page_175.pdf-4,"divide(2435, 9475)","divide(2435, 9475)",1,0.25699,1,1
+ILMN/2008/page_86.pdf-2,"subtract(2.6, 1.4), divide(#0, 1.4)","subtract(2.6, 1.4), divide(#0, 1.4)",1,0.85714,1,1
+ETR/2003/page_157.pdf-2,"divide(2902, 14564)","divide(2902, 14564)",1,0.19926,0,0
+GS/2014/page_165.pdf-4,"divide(8368, 16075)","divide(8368, 16075)",1,0.52056,1,1
+INTC/2013/page_31.pdf-2,"subtract(214, 100), divide(#0, 100), subtract(236, 100), divide(#2, 100), subtract(#1, #3)","subtract(214, 100), divide(#0, 100), subtract(236, 100), divide(#2, 100), subtract(#1, #3)",1,-0.22,1,1
+ETR/2008/page_298.pdf-1,"multiply(375, 6.00%)","multiply(375, 6.00%)",1,22.5,1,1
+HOLX/2006/page_100.pdf-2,"divide(1900, 31300)","divide(1900, 31300)",1,0.0607,1,1
+CME/2017/page_40.pdf-3,"divide(370.32, 208.14)","divide(370.32, 208.14)",1,1.77919,1,1
+JPM/2015/page_82.pdf-1,"divide(43634, 95112)","divide(43634, 95112)",1,0.45876,1,1
+HII/2015/page_121.pdf-4,"divide(144, 1927)","divide(144, 1927)",1,0.07473,1,1
+STT/2009/page_25.pdf-1,"subtract(85, 150), divide(#0, 150)","subtract(85, 150), divide(#0, 150)",1,-0.43333,1,1
+DG/2005/page_44.pdf-1,"subtract(6.3, 5.8), divide(#0, 5.8)","subtract(6.3, 5.8), divide(#0, 5.8)",1,0.08621,0,0
+AWK/2017/page_148.pdf-3,"subtract(1135, 1016), divide(#0, 1016)","subtract(1135, 1016), divide(#0, 1016)",1,0.11713,1,1
+PNC/2012/page_65.pdf-2,"subtract(49447, 367)","subtract(49447, 367)",1,49080.0,1,1
+AMT/2006/page_104.pdf-1,"add(59.8, 60.4), add(#0, 253907)","add(59.8, 60.4), add(#0, 253907)",1,254027.2,0,0
+IPG/2008/page_72.pdf-4,"divide(131.8, 148.8)","divide(131.8, 148.8)",1,0.88575,1,1
+NWS/2019/page_116.pdf-1,"subtract(210, 182)","subtract(210, 182)",1,28.0,1,1
+LMT/2015/page_89.pdf-1,"divide(3538, 50962)","divide(3538, 50962)",1,0.06942,1,1
+CDW/2015/page_93.pdf-2,"divide(const_100, 156.6), subtract(#0, const_1), divide(const_100, 170.6), subtract(#2, #1)","divide(const_100, 156.6), subtract(#0, const_1), divide(const_100, 170.6), subtract(#2, #1)",1,0.9476,0,0
+CE/2016/page_19.pdf-2,"subtract(119, 86)","subtract(119, 86)",1,33.0,1,1
+AON/2007/page_175.pdf-1,"subtract(63, 116)","subtract(63, 116)",1,-53.0,0,0
+GPN/2010/page_87.pdf-2,"subtract(18.1, 14.6), divide(#0, 14.6)","subtract(18.1, 14.6), divide(#0, 14.6)",1,0.23973,0,0
+FIS/2017/page_64.pdf-2,"divide(38, 129)","divide(38, 129)",1,0.29457,1,1
+BLK/2015/page_124.pdf-2,"add(136, 132), add(#0, 137)","add(136, 132), add(#0, 137)",1,405.0,1,1
+DVN/2014/page_87.pdf-3,"divide(1432, 875)","divide(1432, 875)",1,1.63657,1,1
+WRK/2018/page_107.pdf-3,"add(127.1, 81.7)","add(127.1, 81.7)",1,208.8,0,0
+GS/2014/page_51.pdf-1,"divide(432248, 856240)","divide(432248, 856240)",1,0.50482,0,0
+ETR/2015/page_17.pdf-3,"subtract(5829, 5735), divide(187, #0)","subtract(5829, 5735), divide(187, #0)",1,1.98936,0,0
+MS/2013/page_139.pdf-1,"greater(538, 503)","greater(538, 503)",1,yes,1,1
+UPS/2010/page_52.pdf-1,"divide(1334, 23556)","divide(1334, 23556)",1,0.05663,1,1
+LMT/2016/page_49.pdf-3,"table_average(net sales, none)","table_average(net sales, none)",1,6823.33333,1,1
+ETR/2016/page_23.pdf-4,"subtract(5735, 100)","subtract(5735, 100)",1,5635.0,0,0
+JPM/2014/page_122.pdf-2,"subtract(438861, 414067), divide(#0, 414067)","subtract(438861, 414067), divide(#0, 414067)",1,0.05988,1,1
+DISH/2011/page_122.pdf-2,"divide(28663, 233584)","divide(28663, 233584)",1,0.12271,1,1
+ETR/2016/page_150.pdf-4,"add(10.6, 11), add(#0, 11.2)","add(10.6, 11), add(#0, 11.2)",1,32.8,0,0
+SNA/2013/page_83.pdf-2,"subtract(243.7, 247.9), divide(#0, 247.9)","subtract(243.7, 247.9), divide(#0, 247.9)",1,-0.01694,1,1
+BLL/2011/page_32.pdf-4,"subtract(7630.0, 6710.4), divide(#0, 6710.4)","subtract(7630.0, 6710.4), divide(#0, 6710.4)",1,0.13704,1,1
+CMCSA/2008/page_36.pdf-1,"divide(1014, 5993)","divide(1014, 5993)",1,0.1692,1,1
+AMT/2005/page_102.pdf-2,"subtract(16.8, 17.7), divide(#0, 17.7)","subtract(16.8, 17.7), divide(#0, 17.7)",1,-0.05085,1,1
+HII/2015/page_121.pdf-3,"add(1594, 1719), add(#0, 1717), add(#1, 1927)","add(1594, 1719), add(#0, 1717), add(#1, 1927)",1,6957.0,1,1
+AMT/2008/page_107.pdf-2,"subtract(7327, 20963), divide(#0, 20963)","subtract(7327, 20963), divide(#0, 20963)",1,-0.65048,0,0
+MRO/2004/page_46.pdf-2,"add(5145, 34526)","add(5145, 34526)",1,39671.0,1,1
+BLK/2012/page_33.pdf-2,"subtract(534648, 419651), divide(#0, 419651)","subtract(534648, 419651), divide(#0, 419651)",1,0.27403,1,1
+RSG/2009/page_140.pdf-2,"subtract(4.36, 6.49), divide(#0, 6.49)","subtract(4.36, 6.49), divide(#0, 6.49)",1,-0.3282,1,1
+JPM/2009/page_175.pdf-3,"divide(121417, 93200)","divide(121417, 93200)",1,1.30276,0,0
+ZBH/2015/page_57.pdf-1,"divide(14.5, 46.4)","divide(14.5, 46.4)",1,0.3125,1,1
+DRE/2007/page_56.pdf-1,"subtract(217692, 145095), divide(#0, 145095)","subtract(217692, 145095), divide(#0, 145095)",1,0.50034,0,0
+MSI/2007/page_70.pdf-2,"multiply(5400, 45%)","multiply(5400, 45%)",1,2430.0,1,1
+PNC/2008/page_122.pdf-1,"divide(250, 2129)","divide(250, 2129)",1,0.11743,1,1
+ETR/2016/page_374.pdf-1,"multiply(12.9, const_3)","multiply(12.9, const_3)",1,38.7,0,0
+DISCA/2011/page_49.pdf-4,"greater(217.56, 235.63)","greater(217.56, 235.63)",1,no,1,0
+CME/2017/page_40.pdf-4,"greater(370.32, 208.14)","greater(370.32, 208.14)",1,yes,1,1
+RSG/2018/page_135.pdf-2,"subtract(17, 30), divide(#0, 30)","subtract(17, 30), divide(#0, 30)",1,-0.43333,1,1
+DISH/2011/page_122.pdf-4,"multiply(107061, 1.345), subtract(#0, 30)","multiply(107061, 1.345), subtract(#0, 30)",1,143967.045,0,0
+GS/2018/page_78.pdf-1,"table_min(alternative investments, none)","table_min(alternative investments, none)",1,149.0,1,1
+PNC/2012/page_68.pdf-3,"add(81, 120), divide(#0, const_2)","add(81, 120), divide(#0, const_2)",1,100.5,1,1
+GIS/2015/page_62.pdf-1,"divide(-36.5, 7.7)","divide(-36.5, 7.7)",1,-4.74026,1,1
+DVN/2015/page_79.pdf-2,"add(2.89, 2.89), add(#0, 3.0), divide(#1, const_3)","add(2.89, 2.89), add(#0, 3.0), divide(#1, const_3)",1,2.92667,1,0
+CME/2010/page_69.pdf-3,"multiply(612.5, 4.40%)","multiply(612.5, 4.40%)",1,26.95,0,0
+ABMD/2012/page_79.pdf-2,"divide(36000, 4218)","divide(36000, 4218)",1,8.53485,0,0
+ANSS/2016/page_47.pdf-1,"divide(4278, 40859)","divide(4278, 40859)",1,0.1047,0,0
+ETR/2008/page_298.pdf-4,"subtract(11589, 55509), divide(#0, 55509)","subtract(11589, 55509), divide(#0, 55509)",1,-0.79122,1,1
+DISCA/2014/page_64.pdf-3,"greater(254.30, 184.64)","greater(254.30, 184.64)",1,yes,1,0
+DXC/2018/page_56.pdf-1,"divide(17944, 22885)","divide(17944, 22885)",1,0.78409,1,1
+GS/2015/page_171.pdf-3,"multiply(const_69, const_1000), divide(#0, 172099)","multiply(const_69, const_1000), divide(#0, 172099)",1,0.40093,0,0
+DVN/2012/page_77.pdf-3,"divide(3189, 500)","divide(3189, 500)",1,6.378,1,1
+V/2010/page_28.pdf-1,"divide(2793, 62.2)","divide(2793, 62.2)",1,44.90354,1,1
+SNA/2013/page_84.pdf-3,"divide(14.9, 546.5)","divide(14.9, 546.5)",1,0.02726,1,1
+INTC/2013/page_31.pdf-1,"divide(157, 191)","divide(157, 191)",1,0.82199,1,1
+BLL/2006/page_67.pdf-3,"divide(411.1, 802.6)","divide(411.1, 802.6)",1,0.51221,1,1
+PNC/2012/page_174.pdf-1,"add(587, 580), divide(587, #0)","add(587, 580), divide(587, #0)",1,0.503,0,0
+MRO/2003/page_45.pdf-3,"subtract(776, 748), divide(#0, 748)","subtract(776, 748), divide(#0, 748)",1,0.03743,1,1
+CB/2008/page_229.pdf-1,"subtract(684, 1535), divide(#0, 1535)","subtract(684, 1535), divide(#0, 1535)",1,-0.5544,1,1
+SNA/2013/page_84.pdf-2,"subtract(531.6, 546.5)","subtract(531.6, 546.5)",1,-14.9,0,0
+AMT/2016/page_125.pdf-1,"subtract(107551, 28114)","subtract(107551, 28114)",1,79437.0,1,1
+ETR/2017/page_372.pdf-3,"subtract(705.4, 703.1), divide(#0, 705.4)","subtract(705.4, 703.1), divide(#0, 705.4)",1,0.00326,0,0
+ETR/2004/page_239.pdf-2,"subtract(426.6, 380.2)","subtract(426.6, 380.2)",1,46.4,1,1
+GS/2014/page_165.pdf-3,"subtract(8368, 7874)","subtract(8368, 7874)",1,494.0,1,1
+MKTX/2004/page_99.pdf-2,"divide(450060, 120000000)","divide(450060, 120000000)",1,0.00375,0,0
+STT/2011/page_69.pdf-4,"divide(105, 289)","divide(105, 289)",1,0.36332,0,0
+ZBH/2009/page_58.pdf-3,"subtract(47.6, 26.6), divide(#0, 26.6)","subtract(47.6, 26.6), divide(#0, 26.6)",1,0.78947,0,0
+MRO/2013/page_39.pdf-3,"subtract(98.05, 95.11), divide(#0, 95.11)","subtract(98.05, 95.11), divide(#0, 95.11)",1,0.03091,1,1
+C/2015/page_96.pdf-2,"subtract(378.5, 412.6)","subtract(378.5, 412.6)",1,-34.1,1,1
+PM/2017/page_32.pdf-2,"subtract(3.79, 3.68)","subtract(3.79, 3.68)",1,0.11,0,0
+IP/2009/page_84.pdf-2,"subtract(216, 205), divide(#0, 205)","subtract(216, 205), divide(#0, 205)",1,0.05366,1,1
+GPN/2013/page_87.pdf-4,"add(79, 91)","add(79, 91)",1,170.0,1,1
+JPM/2018/page_90.pdf-4,"subtract(2.50, 2.36), divide(#0, 2.36)","subtract(2.50, 2.36), divide(#0, 2.36)",1,0.05932,0,0
+MRO/2006/page_93.pdf-2,"greater(527, 711)","greater(527, 711)",1,no,1,1
+AAL/2015/page_114.pdf-2,"divide(199, 2655)","divide(199, 2655)",1,0.07495,0,0
+HOLX/2007/page_93.pdf-1,"multiply(2590898, 22.08), divide(#0, const_1000000)","multiply(2590898, 22.08), divide(#0, const_1000000)",1,57.20703,1,1
+DXC/2018/page_56.pdf-2,"divide(8.2, 22885)","divide(8.2, 22885)",1,0.00036,0,0
+FIS/2016/page_45.pdf-1,"subtract(1925, 1131), divide(#0, 1131)","subtract(1925, 1131), divide(#0, 1131)",1,0.70203,1,1
+RSG/2016/page_135.pdf-1,"divide(72%, 28%)","divide(72%, 28%)",1,2.57143,1,0
+UPS/2012/page_32.pdf-2,"subtract(121.46, const_100), divide(#0, const_100), subtract(127.07, const_100), divide(#2, const_100), subtract(#1, #3)","subtract(121.46, const_100), divide(#0, const_100), subtract(127.07, const_100), divide(#2, const_100), subtract(#1, #3)",1,-0.0561,1,1
+DRE/2005/page_30.pdf-1,"divide(16.5, 9.6)","divide(16.5, 9.6)",1,1.71875,1,1
+ETFC/2012/page_43.pdf-3,"subtract(-16.9, -14.9)","subtract(-16.9, -14.9)",1,-2.0,0,0
+ETR/2016/page_374.pdf-3,"subtract(705.4, 696.3)","subtract(705.4, 696.3)",1,9.1,1,1
+LMT/2014/page_50.pdf-3,"subtract(13.1%, 13.0%)","subtract(13.1%, 13.0%)",1,0.001,1,1
+MSI/2012/page_87.pdf-1,"add(24.0%, 28.8%), add(#0, 41.7%), divide(#1, const_3)","add(24.0%, 28.8%), add(#0, 41.7%), divide(#1, const_3)",1,0.315,0,0
+DRE/2005/page_30.pdf-2,"add(10543, 7695), add(#0, -424)","add(10543, 7695), add(#0, -424)",1,17814.0,0,0
+GS/2013/page_220.pdf-3,"subtract(236.20, const_100)","subtract(236.20, const_100)",1,136.2,1,1
+MSI/2008/page_69.pdf-1,"subtract(12099, 28383), divide(#0, 28383)","subtract(12099, 28383), divide(#0, 28383)",1,-0.57372,0,0
+GS/2013/page_85.pdf-2,"add(184.07, 174.62), divide(#0, const_2)","add(184.07, 174.62), divide(#0, const_2)",1,179.345,1,1
+MAR/2004/page_45.pdf-1,"subtract(1702, 1770)","subtract(1702, 1770)",1,-68.0,0,0
+JPM/2005/page_80.pdf-2,"add(172, 265)","add(172, 265)",1,437.0,0,0
+FIS/2016/page_45.pdf-3,"subtract(1925, 1131), divide(#0, 1131)","subtract(1925, 1131), divide(#0, 1131)",1,0.70203,1,1
+TFX/2017/page_78.pdf-2,"add(1708928, 3629455), divide(3629455, #0)","add(1708928, 3629455), divide(3629455, #0)",1,0.67988,1,1
+CB/2010/page_103.pdf-1,"subtract(1983, 1667), divide(#0, 1667)","subtract(1983, 1667), divide(#0, 1667)",1,0.18956,1,1
+HUM/2017/page_118.pdf-4,"add(75, 77), add(#0, 93), divide(#1, const_3)","add(75, 77), add(#0, 93), divide(#1, const_3)",1,81.66667,1,1
+WRK/2018/page_107.pdf-1,"subtract(127.1, 106.6), divide(#0, 106.6)","subtract(127.1, 106.6), divide(#0, 106.6)",1,0.19231,1,1
+SNA/2013/page_83.pdf-3,"subtract(26.6, 24.8)","subtract(26.6, 24.8)",1,1.8,0,0
+WRK/2018/page_107.pdf-5,"subtract(127.1, 148.9), divide(#0, 148.9)","subtract(127.1, 148.9), divide(#0, 148.9)",1,-0.14641,1,1
+ETR/2017/page_372.pdf-2,"divide(-18.2, 705.4)","divide(-18.2, 705.4)",1,-0.0258,0,0
+ADBE/2008/page_89.pdf-1,"subtract(139549, 201808)","subtract(139549, 201808)",1,-62259.0,1,1
+C/2018/page_176.pdf-2,"multiply(12896599, 59.12)","multiply(12896599, 59.12)",1,762446932.88,0,0
+DRE/2007/page_56.pdf-2,"divide(217692, 139255)","divide(217692, 139255)",1,1.56326,1,1
+HUM/2017/page_118.pdf-3,"divide(54, 75)","divide(54, 75)",1,0.72,0,0
+AON/2018/page_87.pdf-1,"subtract(77, 55), divide(#0, 55)","subtract(77, 55), divide(#0, 55)",1,0.4,1,1
+IP/2009/page_45.pdf-2,"divide(199, 946)","divide(199, 946)",1,0.21036,1,1
+AON/2010/page_86.pdf-2,"divide(890, 4932)","divide(890, 4932)",1,0.18045,1,1
+HOLX/2008/page_143.pdf-1,"divide(205500, 8800)","divide(205500, 8800)",1,23.35227,1,1
+MRO/2003/page_84.pdf-4,"add(const_6, const_1), divide(#0, const_2)","add(const_6, const_1), divide(#0, const_2)",1,3.5,1,0
+UNP/2009/page_35.pdf-1,"add(88, 5)","add(88, 5)",1,93.0,0,0
+AMT/2012/page_118.pdf-3,"divide(627, 585.3)","divide(627, 585.3)",1,1.07125,0,0
+MMM/2015/page_93.pdf-1,"divide(987, 205)","divide(987, 205)",1,4.81463,1,1
+PKG/2002/page_52.pdf-1,"multiply(6569200, 4.55), divide(#0, const_1000000)","multiply(6569200, 4.55), divide(#0, const_1000000)",1,29.88986,1,1
+MRO/2008/page_45.pdf-2,"divide(1451, 2500)","divide(1451, 2500)",1,0.5804,1,1
+UNP/2011/page_24.pdf-2,"divide(5873, 3119)","divide(5873, 3119)",1,1.88298,0,0
+WRK/2018/page_107.pdf-2,"add(127.1, 81.7)","add(127.1, 81.7)",1,208.8,0,0
+SNA/2007/page_49.pdf-1,"add(231.1, 203.4), add(#0, 221.1), divide(#1, const_3)","add(231.1, 203.4), add(#0, 221.1), divide(#1, const_3)",1,218.53333,0,0
+UNP/2011/page_24.pdf-1,"multiply(3.6, const_1000), greater(#0, 1917)","multiply(3.6, const_1000), greater(#0, 1917)",1,yes,1,0
+GIS/2017/page_31.pdf-3,"subtract(13440.0, 3112.0), subtract(#0, 3437.5), subtract(#1, 1934.1), subtract(#2, 3583.7)","subtract(13440.0, 3112.0), subtract(#0, 3437.5), subtract(#1, 1934.1), subtract(#2, 3583.7)",1,1372.7,0,0
+MRO/2013/page_39.pdf-2,"subtract(98.05, 95.11), divide(#0, 95.11)","subtract(98.05, 95.11), divide(#0, 95.11)",1,0.03091,1,1
+JPM/2015/page_137.pdf-2,"divide(26363, 59677)","divide(26363, 59677)",1,0.44176,1,1
+FIS/2016/page_31.pdf-3,"subtract(198.18, const_100), divide(100000, const_100), multiply(#1, #0)","subtract(198.18, const_100), divide(100000, const_100), multiply(#1, #0)",1,98180.0,1,1
+ILMN/2008/page_82.pdf-2,"multiply(1125734, 10.91)","multiply(1125734, 10.91)",1,12281757.94,1,1
+MAS/2017/page_27.pdf-1,"subtract(318.46, 100), divide(#0, 100)","subtract(318.46, 100), divide(#0, 100)",1,2.1846,1,0
+HOLX/2007/page_93.pdf-2,"divide(2590898, 2943694)","divide(2590898, 2943694)",1,0.88015,1,1
+GS/2014/page_165.pdf-1,"divide(7874, 16044)","divide(7874, 16044)",1,0.49078,1,1
+MAR/2018/page_43.pdf-1,"divide(2073, 13208)","divide(2073, 13208)",1,0.15695,1,1
+AMT/2006/page_104.pdf-4,"divide(253907, 3540009)","divide(253907, 3540009)",1,0.07172,0,0
+IP/2006/page_38.pdf-2,"divide(129, 708)","divide(129, 708)",1,0.1822,1,1
+ETR/2004/page_212.pdf-3,"subtract(931.3, 973.7)","subtract(931.3, 973.7)",1,-42.4,1,1
+UNP/2015/page_56.pdf-2,"subtract(32084, 26064), divide(#0, 32084)","subtract(32084, 26064), divide(#0, 32084)",1,0.18763,0,0
+DRE/2012/page_40.pdf-1,"subtract(50079, 36676), divide(#0, 50079)","subtract(50079, 36676), divide(#0, 50079)",1,0.26764,0,0
+JPM/2010/page_273.pdf-1,"divide(16568, 24859)","divide(16568, 24859)",1,0.66648,1,1
+ALLE/2015/page_24.pdf-1,"divide(15.2, 4.4)","divide(15.2, 4.4)",1,3.45455,0,0
+AES/2002/page_128.pdf-3,"divide(30, 169)","divide(30, 169)",1,0.17751,1,1
+SLG/2011/page_91.pdf-5,"divide(153644, 2330532)","divide(153644, 2330532)",1,0.06593,1,1
+KHC/2018/page_132.pdf-2,"divide(const_4, 1224)","divide(const_4, 1224)",1,0.00327,0,0
+GS/2012/page_142.pdf-2,"table_max(collateral posted, none)","table_max(collateral posted, none)",1,29002.0,1,1
+SNA/2013/page_34.pdf-3,"subtract(153.24, const_100), divide(#0, const_100)","subtract(153.24, const_100), divide(#0, const_100)",1,0.5324,1,0
+BKNG/2016/page_33.pdf-1,"divide(313.45, 216.54)","divide(313.45, 216.54)",1,1.44754,1,1
+AWK/2013/page_122.pdf-4,"subtract(180993, 158578)","subtract(180993, 158578)",1,22415.0,1,0
+JPM/2015/page_137.pdf-4,"divide(1423, 59677)","divide(1423, 59677)",1,0.02385,1,1
+IPG/2017/page_92.pdf-3,"divide(41.9, 268.4)","divide(41.9, 268.4)",1,0.15611,0,0
+RSG/2010/page_57.pdf-1,"divide(850.0, 650.0)","divide(850.0, 650.0)",1,1.30769,1,1
+K/2006/page_52.pdf-3,"subtract(1410.5, 1229.0), divide(#0, 1229.0)","subtract(1410.5, 1229.0), divide(#0, 1229.0)",1,0.14768,0,0
+RCL/2016/page_6.pdf-2,"divide(173000, 503000)","divide(173000, 503000)",1,0.34394,1,1
+ZBH/2015/page_57.pdf-3,"subtract(33.9, 32.9)","subtract(33.9, 32.9)",1,1.0,1,1
+STT/2014/page_54.pdf-2,"subtract(101, 114), divide(#0, 114)","subtract(101, 114), divide(#0, 114)",1,-0.11404,1,1
+STT/2007/page_111.pdf-4,"subtract(558368, 506032), divide(#0, 506032)","subtract(558368, 506032), divide(#0, 506032)",1,0.10342,0,0
+SNA/2013/page_34.pdf-2,"subtract(145.51, const_100), divide(#0, const_100)","subtract(145.51, const_100), divide(#0, const_100)",1,0.4551,1,0
+MRK/2013/page_125.pdf-1,"subtract(4425, 4277), divide(#0, 4277)","subtract(4425, 4277), divide(#0, 4277)",1,0.0346,1,1
+CDNS/2018/page_66.pdf-2,"subtract(426932, 341003), divide(17.5, #0)","subtract(426932, 341003), divide(17.5, #0)",1,0.0002,0,0
+DVN/2018/page_35.pdf-1,"divide(156, 15)","divide(156, 15)",1,10.4,1,1
+C/2008/page_22.pdf-4,"subtract(581, 123)","subtract(581, 123)",1,458.0,0,0
+AMT/2007/page_127.pdf-3,"subtract(24.98, 15.32), divide(#0, 15.32)","subtract(24.98, 15.32), divide(#0, 15.32)",1,0.63055,1,1
+AES/2001/page_85.pdf-3,"divide(12806, 22258)","divide(12806, 22258)",1,0.57534,1,1
+L/2009/page_84.pdf-1,"subtract(160.62, 100.00), divide(#0, 100.00)","subtract(160.62, 100.00), divide(#0, 100.00)",1,0.6062,0,0
+ETR/2016/page_150.pdf-3,"add(10.6, 11), add(#0, 11.2), add(#1, 11.6), add(#2, 11.9)","add(10.6, 11), add(#0, 11.2), add(#1, 11.6), add(#2, 11.9)",1,56.3,1,1
+CE/2016/page_19.pdf-1,"add(78, 119), add(#0, 86)","add(78, 119), add(#0, 86)",1,283.0,1,1
+AMT/2006/page_113.pdf-3,"add(-448, -773)","add(-448, -773)",1,-1221.0,0,0
+CDW/2015/page_70.pdf-1,"add(-61.1, -16.6), add(#0, -6.3)","add(-61.1, -16.6), add(#0, -6.3)",1,-84.0,1,0
+NCLH/2018/page_97.pdf-2,"subtract(270.4, 267.8), divide(#0, 267.8)","subtract(270.4, 267.8), divide(#0, 267.8)",1,0.00971,1,1
+AWK/2017/page_148.pdf-4,"subtract(1.24%, 0.78%)","subtract(1.24%, 0.78%)",1,0.0046,0,0
+C/2009/page_63.pdf-1,"divide(160, 72)","divide(160, 72)",1,2.22222,1,1
+AWK/2018/page_146.pdf-2,"divide(54, 0.7)","divide(54, 0.7)",1,77.14286,1,1
+LMT/2015/page_89.pdf-4,"divide(48, 7.0)","divide(48, 7.0)",1,6.85714,1,1
+PNC/2014/page_111.pdf-1,"subtract(2.6, 1.6)","subtract(2.6, 1.6)",1,1.0,0,0
+VRTX/2006/page_111.pdf-1,"subtract(26.3, 28.4), divide(#0, 28.4)","subtract(26.3, 28.4), divide(#0, 28.4)",1,-0.07394,1,1
+CDNS/2018/page_66.pdf-3,"subtract(772709, 341003)","subtract(772709, 341003)",1,431706.0,0,0
+BKR/2017/page_56.pdf-2,"divide(997, 7.0)","divide(997, 7.0)",1,142.42857,0,0
+JPM/2009/page_175.pdf-2,"subtract(384102, 121417)","subtract(384102, 121417)",1,262685.0,0,0
+JKHY/2017/page_26.pdf-2,"subtract(322.60, const_100), subtract(271.10, const_100), divide(#0, #1)","subtract(322.60, const_100), subtract(271.10, const_100), divide(#0, #1)",1,1.30099,0,0
+CB/2010/page_103.pdf-2,"subtract(2075, 2068), divide(#0, 2068)","subtract(2075, 2068), divide(#0, 2068)",1,0.00338,1,1
+STT/2007/page_111.pdf-1,"subtract(572.93, 527.37), divide(#0, 527.37)","subtract(572.93, 527.37), divide(#0, 527.37)",1,0.08639,1,1
+ETR/2016/page_150.pdf-2,"add(353, 6), add(#0, 32)","add(353, 6), add(#0, 32)",1,391.0,0,0
+V/2008/page_180.pdf-1,"divide(1088, 4944)","divide(1088, 4944)",1,0.22006,1,1
+SLB/2015/page_59.pdf-1,"divide(8.6, 10)","divide(8.6, 10)",1,0.86,1,0
+UNP/2016/page_52.pdf-2,"divide(3543, 21813)","divide(3543, 21813)",1,0.16243,0,0
+INTC/2015/page_41.pdf-1,"divide(47.9, 56.0)","divide(47.9, 56.0)",1,0.85536,1,1
+AMT/2003/page_102.pdf-4,"multiply(6.25%, 102.083%)","multiply(6.25%, 102.083%)",1,0.0638,0,0
+PKG/2005/page_74.pdf-3,"divide(1364, 3772)","divide(1364, 3772)",1,0.36161,1,1
+MRO/2003/page_84.pdf-1,"subtract(60%, 50%)","subtract(60%, 50%)",1,0.1,0,0
+LKQ/2016/page_87.pdf-2,"subtract(211.5, 168.4), divide(#0, 168.4)","subtract(211.5, 168.4), divide(#0, 168.4)",1,0.25594,1,1
+GS/2012/page_121.pdf-2,"subtract(377677, 388669), divide(#0, 388669)","subtract(377677, 388669), divide(#0, 388669)",1,-0.02828,1,1
+MAR/2004/page_45.pdf-2,"subtract(875, 1487)","subtract(875, 1487)",1,-612.0,0,0
+AMT/2007/page_127.pdf-2,"subtract(5.02, 3.72), divide(#0, 3.72)","subtract(5.02, 3.72), divide(#0, 3.72)",1,0.34946,1,1
+LMT/2016/page_49.pdf-1,"subtract(6608, 6770), divide(#0, 6770)","subtract(6608, 6770), divide(#0, 6770)",1,-0.02393,1,1
+JPM/2015/page_137.pdf-3,"subtract(59677, 17177)","subtract(59677, 17177)",1,42500.0,1,1
+K/2006/page_52.pdf-1,"divide(957.4, 1410.5)","divide(957.4, 1410.5)",1,0.67877,1,1
+GRMN/2008/page_85.pdf-1,"subtract(214.4, 126.6)","subtract(214.4, 126.6)",1,87.8,1,1
+BDX/2018/page_106.pdf-1,"subtract(-16, -73), divide(#0, -73)","subtract(-16, -73), divide(#0, -73)",1,-0.78082,0,0
+LMT/2014/page_77.pdf-1,"add(322.4, 326.5), add(#0, 328.4), divide(#1, const_3)","add(322.4, 326.5), add(#0, 328.4), divide(#1, const_3)",1,325.76667,0,0
+JKHY/2019/page_18.pdf-2,"subtract(240.29, const_100)","subtract(240.29, const_100)",1,140.29,1,0
+ANSS/2012/page_93.pdf-2,"subtract(9.3, 8.4), divide(#0, 8.4)","subtract(9.3, 8.4), divide(#0, 8.4)",1,0.10714,0,0
+BLL/2010/page_37.pdf-1,"subtract(559.7, 627.6), divide(#0, 627.6)","subtract(559.7, 627.6), divide(#0, 627.6)",1,-0.10819,1,1
+LMT/2014/page_77.pdf-4,"subtract(322.4, 326.5)","subtract(322.4, 326.5)",1,-4.1,0,0
+SNA/2012/page_110.pdf-1,"subtract(54208, 213000), divide(#0, 213000)","subtract(54208, 213000), divide(#0, 213000)",1,-0.7455,0,0
+AAPL/2003/page_48.pdf-1,"subtract(7.2, 1.2)","subtract(7.2, 1.2)",1,6.0,1,1
+GS/2013/page_149.pdf-2,"subtract(18178, 24296), divide(#0, 24296)","subtract(18178, 24296), divide(#0, 24296)",1,-0.25181,1,1
+PPG/2018/page_85.pdf-3,"divide(90, 291)","divide(90, 291)",1,0.30928,1,1
+HOLX/2009/page_151.pdf-3,"multiply(150, 23.44)","multiply(150, 23.44)",1,3516.0,1,1
+ABMD/2012/page_79.pdf-3,"subtract(64350, 40000), divide(#0, 40000)","subtract(64350, 40000), divide(#0, 40000)",1,0.60875,1,1
+IP/2009/page_84.pdf-3,"divide(124, 623)","divide(124, 623)",1,0.19904,0,0
+MO/2016/page_19.pdf-3,"subtract(143.69, const_100), divide(#0, const_100)","subtract(143.69, const_100), divide(#0, const_100)",1,0.4369,1,1
+BLK/2012/page_33.pdf-3,"subtract(534648, 419651), divide(#0, 419651)","subtract(534648, 419651), divide(#0, 419651)",1,0.27403,1,1
+PPG/2018/page_85.pdf-4,"divide(151, 291)","divide(151, 291)",1,0.5189,1,1
+D/2002/page_87.pdf-3,"subtract(84, 75), divide(#0, 75)","subtract(84, 75), divide(#0, 75)",1,0.12,1,1
+ABMD/2006/page_43.pdf-2,"divide(4819, 5419)","divide(4819, 5419)",1,0.88928,1,1
+ADI/2010/page_80.pdf-3,"divide(8690, 7943)","divide(8690, 7943)",1,1.09405,0,0
+UNP/2016/page_52.pdf-3,"table_sum(coal, none), table_sum(total freight revenues, none), divide(#0, #1)","table_sum(coal, none), table_sum(total freight revenues, none), divide(#0, #1)",1,0.15926,0,0
+ABMD/2008/page_86.pdf-3,"subtract(168, 224), divide(#0, 224)","subtract(168, 224), divide(#0, 224)",1,-0.25,1,1
+ALXN/2016/page_153.pdf-3,"subtract(136, 133), divide(#0, 133)","subtract(136, 133), divide(#0, 133)",1,0.02256,1,1
+NCLH/2018/page_64.pdf-3,"add(2143649, 4915507), add(#0, 3610120), divide(#1, 15973855)","add(2143649, 4915507), add(#0, 3610120), divide(#1, 15973855)",1,0.66792,0,0
+BLK/2014/page_120.pdf-3,"subtract(132, 137), divide(#0, 137)","subtract(132, 137), divide(#0, 137)",1,-0.0365,1,1
+UNP/2015/page_56.pdf-3,"divide(4489, 22560)","divide(4489, 22560)",1,0.19898,1,1
+PPG/2006/page_42.pdf-3,"subtract(10, 4), divide(#0, 4)","subtract(10, 4), divide(#0, 4)",1,1.5,1,1
+ANSS/2016/page_47.pdf-2,"divide(40859, 29808)","divide(40859, 29808)",1,1.37074,1,1
+BLK/2014/page_120.pdf-4,"subtract(137, 133), divide(#0, 133)","subtract(137, 133), divide(#0, 133)",1,0.03008,1,1
+ANSS/2012/page_93.pdf-3,"subtract(265436, 188649)","subtract(265436, 188649)",1,76787.0,1,1
+UNP/2018/page_74.pdf-3,"divide(159, 898)","divide(159, 898)",1,0.17706,1,1
+D/2002/page_87.pdf-4,"subtract(75, 84), divide(#0, 84)","subtract(75, 84), divide(#0, 84)",1,-0.10714,0,0
+IP/2009/page_84.pdf-4,"add(3.5, 2.6), add(#0, 3.7)","add(3.5, 2.6), add(#0, 3.7)",1,9.8,1,1
+UNP/2011/page_33.pdf-3,"subtract(18171, 17282)","subtract(18171, 17282)",1,889.0,1,1
+IP/2006/page_35.pdf-3,"divide(592, 992)","divide(592, 992)",1,0.59677,1,1
+UNP/2018/page_74.pdf-4,"divide(155, 898)","divide(155, 898)",1,0.17261,1,1
+IP/2006/page_35.pdf-4,"subtract(354, 558)","subtract(354, 558)",1,-204.0,1,1
+BLK/2012/page_33.pdf-4,"subtract(752707, 593356), divide(#0, 593356)","subtract(752707, 593356), divide(#0, 593356)",1,0.26856,1,1
+ABMD/2005/page_29.pdf-3,"subtract(2.56, 2.92), divide(#0, 2.92)","subtract(2.56, 2.92), divide(#0, 2.92)",1,-0.12329,1,1
+BDX/2018/page_106.pdf-2,"subtract(-14, -11)","subtract(-14, -11)",1,-3.0,0,0
+BLK/2015/page_124.pdf-3,"add(134, 125), add(#0, 125), divide(#1, 1203)","add(134, 125), add(#0, 125), divide(#1, 1203)",1,0.3192,0,0
+BKR/2017/page_56.pdf-3,"subtract(1277, 262)","subtract(1277, 262)",1,1015.0,0,0
+ADI/2019/page_29.pdf-1,"multiply(949531, 109.32)","multiply(949531, 109.32)",1,103802728.92,0,0
+ABMD/2005/page_29.pdf-4,"subtract(3.87%, 2.56%)","subtract(3.87%, 2.56%)",1,0.0131,0,0
+ABMD/2012/page_79.pdf-4,"subtract(66000, 64350), divide(#0, 64350)","subtract(66000, 64350), divide(#0, 64350)",1,0.02564,1,1
+TFX/2017/page_78.pdf-3,"multiply(3629455, 113.49)","multiply(3629455, 113.49)",1,411906847.95,1,1
+PPG/2006/page_42.pdf-4,"subtract(10, 4)","subtract(10, 4)",1,6.0,1,1
+IP/2009/page_45.pdf-3,"subtract(148, 124)","subtract(148, 124)",1,24.0,1,1
+UNP/2007/page_25.pdf-3,"subtract(487, 234)","subtract(487, 234)",1,253.0,0,0
+ALXN/2016/page_153.pdf-4,"add(3081, 150), divide(3081, #0)","add(3081, 150), divide(3081, #0)",1,0.95357,0,0
+IP/2006/page_31.pdf-3,"divide(373, 4545)","divide(373, 4545)",1,0.08207,1,1
+HOLX/2009/page_127.pdf-3,"divide(2094800, 6156900)","divide(2094800, 6156900)",1,0.34024,1,1
+ANSS/2012/page_93.pdf-4,"add(1.3, 1.3), add(#0, 1.3)","add(1.3, 1.3), add(#0, 1.3)",1,3.9,1,0
+TFX/2015/page_89.pdf-3,"add(5822, 194), add(#0, 474), add(#1, 1376), add(#2, 147)","add(5822, 194), add(#0, 474), add(#1, 1376), add(#2, 147)",1,8013.0,0,0
+IP/2006/page_30.pdf-3,"divide(473, 7170)","divide(473, 7170)",1,0.06597,1,1
+VRTX/2006/page_111.pdf-3,"divide(4000, 88000)","divide(4000, 88000)",1,0.04545,1,1
+MO/2016/page_19.pdf-4,"subtract(153.55, const_100), divide(#0, const_100)","subtract(153.55, const_100), divide(#0, const_100)",1,0.5355,1,1
+ADI/2019/page_29.pdf-3,"subtract(const_8, const_2), divide(#0, const_2)","subtract(const_8, const_2), divide(#0, const_2)",1,3.0,0,0
+ABMD/2012/page_41.pdf-3,"subtract(75.55, 100), divide(#0, 100)","subtract(75.55, 100), divide(#0, 100)",1,-0.2445,1,1
+UNP/2015/page_56.pdf-4,"divide(4074, 20397)","divide(4074, 20397)",1,0.19974,1,1
+BLK/2017/page_121.pdf-3,"subtract(342, 301), divide(#0, 301)","subtract(342, 301), divide(#0, 301)",1,0.13621,1,1
+MO/2014/page_62.pdf-3,"subtract(4535, 4180), divide(#0, 4180)","subtract(4535, 4180), divide(#0, 4180)",1,0.08493,1,1
+IP/2006/page_75.pdf-3,"add(217, 216), add(#0, 225)","add(217, 216), add(#0, 225)",1,658.0,1,1
+BLK/2012/page_145.pdf-1,"divide(750, 5700)","divide(750, 5700)",1,0.13158,0,0
+PPG/2012/page_29.pdf-3,"subtract(56, 34)","subtract(56, 34)",1,22.0,1,1
+NCLH/2018/page_64.pdf-4,"subtract(404380, 165172)","subtract(404380, 165172)",1,239208.0,0,0
+PPG/2008/page_52.pdf-3,"subtract(99, 110)","subtract(99, 110)",1,-11.0,1,1
+UNP/2010/page_21.pdf-3,"divide(3063816, const_4)","divide(3063816, const_4)",1,765954.0,0,0
+IP/2009/page_45.pdf-4,"divide(574, 304), subtract(#0, const_1)","divide(574, 304), subtract(#0, const_1)",1,0.88816,1,1
+UNP/2007/page_25.pdf-4,"subtract(516, 234)","subtract(516, 234)",1,282.0,1,1
+IP/2006/page_38.pdf-3,"divide(144, 3165)","divide(144, 3165)",1,0.0455,0,0
+ABMD/2007/page_78.pdf-3,"subtract(8.75, 6.91), divide(#0, 6.91)","subtract(8.75, 6.91), divide(#0, 6.91)",1,0.26628,0,0
+IP/2006/page_38.pdf-4,"add(692, 144), divide(692, #0)","add(692, 144), divide(692, #0)",1,0.82775,0,0
+VRTX/2006/page_111.pdf-4,"divide(61535, 54533)","divide(61535, 54533)",1,1.1284,1,1
+BLK/2015/page_124.pdf-4,"multiply(const_1000, const_1000), multiply(#0, 5.0%), multiply(#1, const_1000000)","multiply(const_1000, const_1000), multiply(#0, 5.0%), multiply(#1, const_1000000)",1,50000000000.0,0,0
+UNP/2006/page_15.pdf-3,"divide(27318, 51596)","divide(27318, 51596)",1,0.52946,1,1
+LKQ/2016/page_87.pdf-3,"add(211.5, 168.4), add(#0, 148.5)","add(211.5, 168.4), add(#0, 148.5)",1,528.4,1,1
+UNP/2011/page_24.pdf-3,"subtract(1415, 699), divide(#0, 699)","subtract(1415, 699), divide(#0, 699)",1,1.02432,1,1
+ABMD/2006/page_43.pdf-3,"divide(1371, 5419)","divide(1371, 5419)",1,0.253,0,0
+UNP/2006/page_15.pdf-4,"divide(27301, 52667)","divide(27301, 52667)",1,0.51837,1,1
+MO/2014/page_39.pdf-3,"divide(426.1, 787.5)","divide(426.1, 787.5)",1,0.54108,1,1
+PPG/2008/page_52.pdf-4,"subtract(99, 110), divide(#0, 110)","subtract(99, 110), divide(#0, 110)",1,-0.1,1,1
+UNP/2011/page_33.pdf-4,"subtract(17282, 16058)","subtract(17282, 16058)",1,1224.0,1,1
+BLK/2017/page_121.pdf-1,"subtract(348, 259), divide(#0, 259)","subtract(348, 259), divide(#0, 259)",1,0.34363,1,1
+PPG/2012/page_29.pdf-4,"subtract(122, 56)","subtract(122, 56)",1,66.0,0,0
+LKQ/2016/page_87.pdf-4,"divide(136462, 1184594)","divide(136462, 1184594)",1,0.1152,1,1
+CMCSA/2008/page_36.pdf-3,"divide(2321, 4244)","divide(2321, 4244)",1,0.54689,0,0
+NCLH/2018/page_97.pdf-3,"divide(2549621, 6609866)","divide(2549621, 6609866)",1,0.38573,1,1
+UNP/2009/page_42.pdf-3,"divide(5312, 24166)","divide(5312, 24166)",1,0.21981,1,1
+BKR/2017/page_56.pdf-4,"subtract(262, 799)","subtract(262, 799)",1,-537.0,0,0
+CMCSA/2015/page_112.pdf-3,"subtract(1171, 1701)","subtract(1171, 1701)",1,-530.0,1,1
+ABMD/2007/page_78.pdf-4,"subtract(6.91, 8.05), divide(#0, 8.05)","subtract(6.91, 8.05), divide(#0, 8.05)",1,-0.14161,0,0
+UNP/2016/page_52.pdf-4,"subtract(3474, 3543)","subtract(3474, 3543)",1,-69.0,0,0
+BLK/2012/page_145.pdf-3,"divide(750, 5700)","divide(750, 5700)",1,0.13158,0,0
+MO/2014/page_62.pdf-4,"subtract(5070, 4535), divide(#0, 4535)","subtract(5070, 4535), divide(#0, 4535)",1,0.11797,1,1
+ABMD/2008/page_86.pdf-4,"add(5583333, 5583333)","add(5583333, 5583333)",1,11166666.0,0,0
+CMCSA/2015/page_67.pdf-3,"divide(3698, 7034)","divide(3698, 7034)",1,0.52573,1,1
+IP/2006/page_75.pdf-4,"divide(2329, 2473)","divide(2329, 2473)",1,0.94177,1,1
+UNP/2010/page_21.pdf-4,"multiply(1205260, 89.92), multiply(1133106, 92.59), subtract(#0, #1)","multiply(1205260, 89.92), multiply(1133106, 92.59), subtract(#0, #1)",1,3462694.66,1,1
+MO/2014/page_39.pdf-4,"divide(448.6, 793.3)","divide(448.6, 793.3)",1,0.56549,1,1
+CMCSA/2015/page_112.pdf-4,"divide(700, 700)","divide(700, 700)",1,1.0,0,0
+UNP/2011/page_24.pdf-4,"subtract(1917, 699), divide(#0, 699)","subtract(1917, 699), divide(#0, 699)",1,1.74249,0,0
+ABMD/2012/page_41.pdf-4,"subtract(99.02, 100), divide(#0, 100)","subtract(99.02, 100), divide(#0, 100)",1,-0.0098,1,1
+UNP/2009/page_42.pdf-4,"add(5312, 2975), divide(2975, #0)","add(5312, 2975), divide(2975, #0)",1,0.359,0,0
+BDX/2018/page_106.pdf-3,"add(8, 3), add(#0, 8), divide(#1, const_3)","add(8, 3), add(#0, 8), divide(#1, const_3)",1,6.33333,0,0
+HOLX/2009/page_127.pdf-4,"divide(2094800, 132038)","divide(2094800, 132038)",1,15.86513,0,0
+IP/2006/page_30.pdf-4,"add(const_1, 1.5), add(#0, const_1), add(#1, 1.4)","add(const_1, 1.5), add(#0, const_1), add(#1, 1.4)",1,4.9,0,0

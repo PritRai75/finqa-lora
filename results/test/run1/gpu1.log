@@ -1,0 +1,28 @@
+2026-11-20 10:27:57 start adapter:random:1 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:56,  1.14it/s]Loading weights:  40%|███▉      | 135/338 [00:01<00:01, 178.64it/s]Loading weights:  57%|█████▋    | 192/338 [00:01<00:00, 172.62it/s]Loading weights:  68%|██████▊   | 231/338 [00:01<00:00, 153.82it/s]Loading weights:  77%|███████▋  | 259/338 [00:01<00:00, 150.42it/s]Loading weights:  83%|████████▎ | 282/338 [00:02<00:00, 152.42it/s]Loading weights:  90%|████████▉ | 303/338 [00:02<00:00, 150.14it/s]Loading weights:  95%|█████████▌| 322/338 [00:02<00:00, 156.21it/s]Loading weights: 100%|██████████| 338/338 [00:02<00:00, 142.31it/s]
+adapter:random:1: test exe_correct 735/1147 (336.2 s)
+2026-11-20 10:34:04 done adapter:random:1
+2026-11-20 10:34:04 start adapter:cleaned:2 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:14,  1.32it/s]Loading weights:  47%|████▋     | 159/338 [00:00<00:00, 237.72it/s]Loading weights:  67%|██████▋   | 227/338 [00:01<00:00, 244.76it/s]Loading weights:  82%|████████▏ | 276/338 [00:01<00:00, 245.14it/s]Loading weights:  93%|█████████▎| 315/338 [00:01<00:00, 238.48it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 210.96it/s]
+adapter:cleaned:2: test exe_correct 762/1147 (335.6 s)
+2026-11-20 10:40:10 done adapter:cleaned:2
+2026-11-20 10:40:10 start adapter:random:3 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<02:47,  2.01it/s]Loading weights:  36%|███▋      | 123/338 [00:00<00:00, 263.90it/s]Loading weights:  55%|█████▍    | 185/338 [00:00<00:00, 245.42it/s]Loading weights:  68%|██████▊   | 229/338 [00:01<00:00, 262.76it/s]Loading weights:  79%|███████▉  | 268/338 [00:01<00:00, 235.19it/s]Loading weights:  89%|████████▉ | 300/338 [00:01<00:00, 241.48it/s]Loading weights:  98%|█████████▊| 330/338 [00:01<00:00, 243.12it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 227.54it/s]
+adapter:random:3: test exe_correct 747/1147 (331.9 s)
+2026-11-20 10:46:13 done adapter:random:3
+2026-11-20 10:46:13 start adapter:cleaned:4 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<03:00,  1.87it/s]Loading weights:  36%|███▋      | 123/338 [00:00<00:00, 244.18it/s]Loading weights:  53%|█████▎    | 179/338 [00:00<00:00, 256.97it/s]Loading weights:  66%|██████▌   | 223/338 [00:01<00:00, 241.03it/s]Loading weights:  76%|███████▋  | 258/338 [00:01<00:00, 227.90it/s]Loading weights:  86%|████████▌ | 291/338 [00:01<00:00, 244.08it/s]Loading weights:  95%|█████████▍| 321/338 [00:01<00:00, 249.27it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 223.42it/s]
+adapter:cleaned:4: test exe_correct 754/1147 (329.3 s)
+2026-11-20 10:52:14 done adapter:cleaned:4
+2026-11-20 10:52:14 start adapter:random:5 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<03:10,  1.77it/s]Loading weights:  37%|███▋      | 125/338 [00:00<00:00, 251.66it/s]Loading weights:  59%|█████▊    | 198/338 [00:00<00:00, 238.05it/s]Loading weights:  73%|███████▎  | 248/338 [00:01<00:00, 231.62it/s]Loading weights:  85%|████████▍ | 287/338 [00:01<00:00, 232.71it/s]Loading weights:  95%|█████████▍| 321/338 [00:01<00:00, 236.74it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 216.07it/s]
+adapter:random:5: test exe_correct 724/1147 (331.6 s)
+2026-11-20 10:58:17 done adapter:random:5
+2026-11-20 10:58:17 start base:qwen2.5-1.5b:0 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<02:26,  2.29it/s]Loading weights:  36%|███▋      | 123/338 [00:00<00:00, 263.65it/s]Loading weights:  50%|████▉     | 168/338 [00:00<00:00, 284.24it/s]Loading weights:  62%|██████▏   | 208/338 [00:00<00:00, 257.82it/s]Loading weights:  71%|███████▏  | 241/338 [00:01<00:00, 273.09it/s]Loading weights:  81%|████████  | 274/338 [00:01<00:00, 254.82it/s]Loading weights:  90%|████████▉ | 303/338 [00:01<00:00, 262.04it/s]Loading weights:  98%|█████████▊| 332/338 [00:01<00:00, 268.35it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 245.74it/s]
+base:qwen2.5-1.5b:0: test exe_correct 18/1147 (343.0 s)
+2026-11-20 11:04:19 done base:qwen2.5-1.5b:0
+2026-11-20 11:04:19 start base:qwen2.5-1.5b:4 on GPU 1
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights:   0%|          | 1/338 [00:00<04:27,  1.26it/s]Loading weights:  51%|█████     | 171/338 [00:00<00:00, 250.70it/s]Loading weights:  74%|███████▍  | 251/338 [00:01<00:00, 244.86it/s]Loading weights:  91%|█████████ | 306/338 [00:01<00:00, 237.69it/s]Loading weights: 100%|██████████| 338/338 [00:01<00:00, 213.63it/s]
+base:qwen2.5-1.5b:4: test exe_correct 63/1147 (445.2 s)
+2026-11-20 11:12:06 done base:qwen2.5-1.5b:4

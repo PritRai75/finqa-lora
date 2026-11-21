@@ -1,0 +1,139 @@
+OPEN
+  check2: 98 rows {'parser_miss': 5, 'real_error': 87, 'rounding': 5, 'sign_convention': 1}, blob 133062500b73, last commit e467ff5 2026-11-20T15:17:54+05:30
+  check3: 50 rows {'no_error': 45, 'real_error': 5}, blob fbddfe868d1a, last commit 5aa1573 2026-11-20T15:36:46+05:30
+GPUs visible: 2, needed: 2
+cleaned/seed1  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-cleaned-seed1.safetensors
+cleaned/seed2  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-cleaned-seed2.safetensors
+cleaned/seed3  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-cleaned-seed3.safetensors
+cleaned/seed4  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run2-cleaned-seed4.safetensors
+cleaned/seed5  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run2-cleaned-seed5.safetensors
+random/seed1  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-random-seed1.safetensors
+random/seed2  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-random-seed2.safetensors
+random/seed3  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-random-seed3.safetensors
+random/seed4  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run2-random-seed4.safetensors
+random/seed5  /kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run2-random-seed5.safetensors
+dev check cleaned/seed1: same reply 883/883, discordant 0, within tolerance True
+dev check random/seed1: same reply 883/883, discordant 0, within tolerance True
+GPU 0 runs: adapter:cleaned:1 adapter:random:2 adapter:cleaned:3 adapter:random:4 adapter:cleaned:5 base:qwen3-4b:4
+GPU 1 runs: adapter:random:1 adapter:cleaned:2 adapter:random:3 adapter:cleaned:4 adapter:random:5 base:qwen2.5-1.5b:0 base:qwen2.5-1.5b:4
+started: GPU 0 (pid 217), GPU 1 (pid 218). Progress: /kaggle/working/testpass/gpu0.log, /kaggle/working/testpass/gpu1.log
+GPU 0 chain finished
+GPU 1 chain finished
+{
+  "missing_passes": [],
+  "dev_checks": [
+    {
+      "arm": "cleaned",
+      "seed": 1,
+      "gpu_slot": 0,
+      "within_tolerance": true,
+      "comparison": {
+        "items": 883,
+        "same_reply": 883,
+        "right_now_only": 0,
+        "right_then_only": 0,
+        "discordant": 0,
+        "exe_correct_now": 588,
+        "exe_correct_then": 588
+      },
+      "gpu": "Tesla T4"
+    },
+    {
+      "arm": "random",
+      "seed": 1,
+      "gpu_slot": 1,
+      "within_tolerance": true,
+      "comparison": {
+        "items": 883,
+        "same_reply": 883,
+        "right_now_only": 0,
+        "right_then_only": 0,
+        "discordant": 0,
+        "exe_correct_now": 583,
+        "exe_correct_then": 583
+      },
+      "gpu": "Tesla T4"
+    }
+  ],
+  "one_gate_record": true,
+  "test": {
+    "adapter:cleaned:1": {
+      "exe_correct": 745,
+      "prog_correct": 704,
+      "executes": 1143,
+      "items": 1147
+    },
+    "adapter:cleaned:2": {
+      "exe_correct": 762,
+      "prog_correct": 712,
+      "executes": 1142,
+      "items": 1147
+    },
+    "adapter:cleaned:3": {
+      "exe_correct": 750,
+      "prog_correct": 708,
+      "executes": 1143,
+      "items": 1147
+    },
+    "adapter:cleaned:4": {
+      "exe_correct": 754,
+      "prog_correct": 716,
+      "executes": 1142,
+      "items": 1147
+    },
+    "adapter:cleaned:5": {
+      "exe_correct": 759,
+      "prog_correct": 718,
+      "executes": 1138,
+      "items": 1147
+    },
+    "adapter:random:1": {
+      "exe_correct": 735,
+      "prog_correct": 691,
+      "executes": 1144,
+      "items": 1147
+    },
+    "adapter:random:2": {
+      "exe_correct": 748,
+      "prog_correct": 708,
+      "executes": 1142,
+      "items": 1147
+    },
+    "adapter:random:3": {
+      "exe_correct": 747,
+      "prog_correct": 701,
+      "executes": 1141,
+      "items": 1147
+    },
+    "adapter:random:4": {
+      "exe_correct": 753,
+      "prog_correct": 707,
+      "executes": 1145,
+      "items": 1147
+    },
+    "adapter:random:5": {
+      "exe_correct": 724,
+      "prog_correct": 676,
+      "executes": 1142,
+      "items": 1147
+    },
+    "base:qwen2.5-1.5b:0": {
+      "exe_correct": 18,
+      "prog_correct": 15,
+      "executes": 221,
+      "items": 1147
+    },
+    "base:qwen2.5-1.5b:4": {
+      "exe_correct": 63,
+      "prog_correct": 46,
+      "executes": 435,
+      "items": 1147
+    },
+    "base:qwen3-4b:4": {
+      "exe_correct": 252,
+      "prog_correct": 210,
+      "executes": 972,
+      "items": 1147
+    }
+  }
+}

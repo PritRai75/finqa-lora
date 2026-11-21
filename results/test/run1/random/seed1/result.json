@@ -1,0 +1,72 @@
+{
+  "pass": "adapter:random:1",
+  "kind": "adapter",
+  "arm": "random",
+  "seed": 1,
+  "model": "Qwen/Qwen2.5-1.5B-Instruct",
+  "shots": 0,
+  "revision": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "hub_main_sha": "989aa7980e4cf806f80c7fef2b1adb7bc71aa306",
+  "started": "2026-11-20 10:28:03",
+  "limit": null,
+  "adapter_sha256": "da85b47dc8b2d4fddc76a9b96541dccdd9f20592644c145d57d8c03b4804a5f4",
+  "adapter_source": "/kaggle/input/datasets/pritraithatha75/finqa-lora-adapters/run1-random-seed1.safetensors",
+  "main_run": "run1",
+  "test": {
+    "items": 1147,
+    "exe_correct": 735,
+    "prog_correct": 691,
+    "executes": 1144,
+    "exe_acc": 0.6408020924149956,
+    "split": "test",
+    "shots": 0,
+    "seconds": 336.2,
+    "prompt_tokens_mean": 371.2,
+    "test_gate": {
+      "check2": {
+        "sheet": "handcheck/check2.csv",
+        "rows": 98,
+        "verdicts": {
+          "parser_miss": 5,
+          "real_error": 87,
+          "rounding": 5,
+          "sign_convention": 1
+        },
+        "git_blob": "133062500b737b20a3721131ffbc526b0693844e",
+        "last_commit": "e467ff59da5be43c739d31ee5ccb9a5e8a2e7af9",
+        "last_commit_date": "2026-11-20T15:17:54+05:30",
+        "allowed_verdicts": [
+          "real_error",
+          "no_error",
+          "parser_miss",
+          "rounding",
+          "sign_convention"
+        ]
+      },
+      "check3": {
+        "sheet": "handcheck/check3.csv",
+        "rows": 50,
+        "verdicts": {
+          "no_error": 45,
+          "real_error": 5
+        },
+        "git_blob": "fbddfe868d1aaf06d4c0c43582f79c58f5b986e8",
+        "last_commit": "5aa1573ff161bf6b29f0492b56b3092ba19f6a97",
+        "last_commit_date": "2026-11-20T15:36:46+05:30",
+        "allowed_verdicts": [
+          "real_error",
+          "no_error",
+          "parser_miss",
+          "rounding",
+          "sign_convention"
+        ]
+      }
+    }
+  },
+  "finished": "2026-11-20 10:33:59",
+  "git_commit": "5aa1573ff161bf6b29f0492b56b3092ba19f6a97",
+  "prompt_version": 1,
+  "prompt_fingerprint": "4139bfc3519c",
+  "gpu": "Tesla T4",
+  "cuda_visible_devices": "1"
+}
