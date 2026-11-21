@@ -116,6 +116,8 @@ python -m finqa_lora.testgate                     # is the test split unlocked? 
 python -m finqa_lora.testeval results/test/run1   # views and statistics of a recorded test run
 python -m finqa_lora.errortags dev               # one rule-based error tag per wrong dev prediction (results/errors/dev.json)
 python -m finqa_lora.errortags test              # the same rules on every pass of results/test/run1 (results/errors/test.json)
+python -m finqa_lora.othertags              # builds the hand-tag sheet for the `other` failures (never overwrites one)
+python -m finqa_lora.othertags --validate   # checks a filled sheet; --counts counts a finished one (results/errors/other_tags.json)
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -138,6 +140,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/screen.py` | The automatic program-versus-answer screen |
 | `finqa_lora/handcheck.py`, `handcheck/` | Hand-check sheets and protocol |
 | `finqa_lora/auditcounts.py` | Counts from the finished hand-check sheets, with intervals; definitions fixed before any verdict |
+| `finqa_lora/othertags.py`, `handcheck/tag_other.*` | Hand tags for a random sample of the `other` failures on test (decision 53) |
 | `results/screen/` | Screen status for every item |
 | `finqa_lora/prompt.py` | The one prompt format used for training, zero-shot and few-shot |
 | `finqa_lora/infer.py`, `finqa_lora/train.py` | Greedy generation and scoring; LoRA fine-tuning with TRL |

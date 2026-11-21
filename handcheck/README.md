@@ -88,3 +88,52 @@ whether the gate is open.
 At least a week after the last check, re-check 20 items blind (about 10 `real_error` and 10
 others, drawn by code with a fixed seed) in a fresh sheet that shows the item only, and report
 how often the two verdicts match.
+
+## Tagging the `other` failures (decision 53)
+
+`errortags` tags every wrong prediction by rule (decision 48); its last tag, `other`, is "anything else",
+so the rules do not say why those predictions failed. `tag_other.csv` is a hand-tag sheet for a random
+sample of them. Fixed on 21 Nov 2026, after the test run was recorded and before any test prediction on
+this sheet was read for tagging:
+
+- **Population:** the distinct test items on which at least one of the 10 adapters (5 cleaned, 5 random)
+  has a failure the rules tagged `other` in `results/test/run1`: 266 items. The base-model passes are not in it.
+- **Sample:** 50 items, `random.Random(20261120).sample` of the sorted ids, sorted by id. Each row shows one
+  prediction: the adapter pass is chosen at random, by the same generator, among the adapters whose prediction
+  on that item was tagged `other` (`other_passes` says how many of the 10 that is). The sample describes
+  items, not failures, and one prediction per item.
+- **Read-only columns** are the item as in the check sheets, `checked` (what check2 or check3 decided about
+  the gold label of this item, empty if neither covers it), the shown pass and its program and value.
+- **Columns to fill:** `tag` and `note`. There is no `uncertain` column; `unclear` is the way out.
+
+Tags, first that holds (the vocabulary comes from the dev failures tagged `other`, not from test):
+
+| Tag | Holds when |
+| --- | --- |
+| `gold_wrong` | the gold program or the written answer is wrong, or the question is ambiguous, so the prediction cannot be called a model error. The note says what is right |
+| `invented_number` | the program uses a number that is nowhere in the report and is not a constant |
+| `wrong_quantity` | the numbers come from the report, but the program computes another quantity than the question asks: another entity, year or measure, a wrong base or denominator, or a stated figure for something else used as if it answered the question |
+| `missing_step` | the right quantity, but a needed step or term is absent: no scale step, no change step, years or items left out of a sum or an average |
+| `extra_step` | the right quantity, plus steps the question does not need |
+| `wrong_constant` | the right structure, but a wrong `const_*`, divisor or scale |
+| `unclear` | none of the above, or the reason cannot be told |
+
+`note` is one line: what the prediction does, and the right calculation with its numbers. Work out the
+right answer from the question and the report first, then read the prediction.
+
+Three worked examples, from dev (never hand-checked); each prediction was tagged `other` on dev:
+
+| Item | Gold | Prediction | Tag and note |
+| --- | --- | --- | --- |
+| `UNP/2014/page_35.pdf-2`: cost per car of the 2012 locomotive buyout | `multiply(75, const_1000000), divide(#0, 165)` = 454,545 | `divide(75, 165)` = 0.45455 | `missing_step`: drops the million scale. Right: 75 x 1,000,000 / 165 = 454,545. |
+| `PM/2017/page_38.pdf-3`: percentage increase in interest expense | `subtract(914, 23), divide(23, #0)` = 0.02581 | `divide(23, 914)` = 0.02516 | `wrong_quantity`: uses the current-year 914 as the base. The increase is on the prior year: 914 - 23 = 891, 23 / 891 = 2.6%. |
+| `DVN/2014/page_85.pdf-1`: average amortization 2015-2019 | `multiply(45, const_4), add(#0, 44), divide(#1, const_5)` = 44.8 | `add(45, 45), add(#0, 44), divide(#1, const_3)` = 44.667 | `missing_step`, not `wrong_constant`: the divisor 3 fits the three terms it sums; the failure is leaving out two of the five years. Right: (4 x 45 + 44) / 5 = 44.8. |
+
+Check a filled sheet with `python -m finqa_lora.othertags --validate` (exit 1 on an invalid value; it lists
+notes with no number from their own item for a second look). `tests/test_othertags.py` checks the committed
+sheet against a fresh draw from the committed run, so a changed read-only column fails CI.
+
+Counts are fixed now, before any tag: `python -m finqa_lora.othertags --counts` needs a tag on every row and
+nothing invalid, and writes `results/errors/other_tags.json`: per tag the items, the share of the 50 with a 95%
+Wilson interval, and the same share scaled to the 266 items of the population. These are shares of items with
+a failure tagged `other` by at least one adapter, not shares of all failures, and the write-up says so.
