@@ -231,7 +231,7 @@ class FakeHub:
     """Enough of huggingface_hub for hub.upload: records what was uploaded and serves it back."""
 
     def __init__(self, user="PritRai75", corrupt=False):
-        self.user, self.corrupt, self.store, self.created = user, corrupt, {}, []
+        self.user, self.corrupt, self.store, self.created, self.repo_types = user, corrupt, {}, [], []
 
     def module(self):
         fake = self
@@ -251,7 +251,10 @@ class FakeHub:
             def model_info(self, repo_id):
                 return types.SimpleNamespace(private=False)
 
-        def download(repo_id, name, revision, cache_dir):
+            dataset_info = model_info
+
+        def download(repo_id, name, revision, cache_dir, repo_type="model"):
+            fake.repo_types.append(repo_type)
             assert revision == "c0ffee"
             path = Path(cache_dir) / name
             path.write_bytes(fake.store[name] + (b"!" if fake.corrupt else b""))
@@ -283,6 +286,11 @@ def test_upload_refuses(fake_adapter, monkeypatch, problem):
         assert fake.store == {} and fake.created == []   # nothing created or uploaded
 
 
+# The SHA-256 of a changed card that is committed and waiting to be uploaded again; the commit that records
+# the new upload empties it. Any other change to the card fails test_upload_record until it is uploaded.
+CARD_AWAITING_UPLOAD = "b5c3803da8ec86d8c1d324523eaae815f9bea6affb4dcde2263494a50f1ffbcb"
+
+
 def test_upload_record():
     """results/hub/upload.json is the upload of this card, config and adapter, checked by download-back.
     The card in the repo must stay the one on the Hub: edit it and this fails until it is uploaded again."""
@@ -295,8 +303,14 @@ def test_upload_record():
     card = (REPO_ROOT / hub.CARD).read_bytes()
     config = hub.committed(hub.CONFIG)
     sha, size = hub.expected_adapter()
-    assert u["files"] == {
-        "README.md": {"bytes": len(card), "sha256": hashlib.sha256(card).hexdigest()},
+    files = dict(u["files"])
+    uploaded_card = files.pop("README.md")
+    card_sha = hashlib.sha256(card).hexdigest()
+    if card_sha != uploaded_card["sha256"]:
+        assert card_sha == CARD_AWAITING_UPLOAD, "the card changed: upload it again (python -m finqa_lora.hub)"
+    else:
+        assert uploaded_card["bytes"] == len(card)
+    assert files == {
         "adapter_config.json": {"bytes": len(config), "sha256": hashlib.sha256(config).hexdigest()},
         "adapter_model.safetensors": {"bytes": size, "sha256": sha},
     }

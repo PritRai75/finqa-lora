@@ -2,6 +2,7 @@
 exactly what the code builds and shows no first-pass verdict, a filled sheet is validated like the first pass,
 and the counts need a finished sheet committed on or after 22 Nov 2026 (decision 55)."""
 import csv
+import json
 import hashlib
 
 import pytest
@@ -138,3 +139,12 @@ def test_counts_refuse(tmp_path, first, monkeypatch, problem):
             date = None
     with pytest.raises(ValueError):
         recheck.counts(path, date=date)
+
+
+def test_committed_self_agreement_is_the_count():
+    """results/audit/self_agreement.json is what --counts gives on the committed sheet (decisions 54, 55)."""
+    path = recheck.OUT_FILE
+    committed = json.loads(path.read_text(encoding="utf-8"))
+    assert committed["committed"] >= recheck.NOT_BEFORE
+    assert recheck.counts(date=committed["committed"]) == committed
+    assert committed["items"] == 20 and committed["left_out_uncertain"] == 0

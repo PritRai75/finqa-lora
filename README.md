@@ -12,8 +12,7 @@ Work in progress. Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), 
 
 Test results are below. The adapter is on the Hugging Face Hub:
 [PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora).
-Still to come: a dataset of the hand-checked items, a blind re-check of the hand-check verdicts, and the
-write-up.
+Still to come: the dataset of the hand-checked items on the Hub.
 
 ## Results (test, 1,147 items)
 
@@ -97,7 +96,7 @@ the flags against the report text (`handcheck/`, `results/audit/counts.json`).
 | Test set | 1,147 | 86 label problems confirmed; estimate 148; 95% upper bound 243 (the 9 sign-only and 6 undecided items are in no count) |
 
 These are one checker's verdicts. A blind re-check of 20 of them, two days after the first pass
-(decision 55), measures how stable they are (to come).
+(decision 55), gave the same verdict on 20 of 20 (84–100%; see the write-up below).
 
 Removing the 431 train flags therefore removes about 270 wrong programs (31 of 50, 208–320 of 431)
 together with about 120 items whose program is right and only the written answer wrong (14 of 50, 75–180),
@@ -182,6 +181,59 @@ The trainable-parameter count is computed from the model's configuration (hidden
   hand-check sheets have changed since the test pass.
 - `tests/` pins the committed counts; CI runs them on every push.
 
+## Write-up
+
+**What the project shows.** A 1.5B model fine-tuned with LoRA on about 5,800 FinQA programs reaches
+63–66% execution accuracy on test, about three times a 4B model prompted with the same examples, in under
+two GPU hours per run. Removing the 431 program–answer disagreements from training made no detectable
+difference: the cleaned arm is ahead in all 5 seed pairs, but a rule fixed before the main runs, which
+accounts for seed-to-seed noise, keeps zero inside the interval, where an interval over items alone would
+have declared a winner. The label audit is the stronger result: on test, 86 label problems are confirmed by
+hand (7.5% of the 1,147 items), with an estimate of 148 (12.9%) and a 95% upper bound of 243 (21.2%), and
+in a hand-tagged sample of the fine-tuned model's unexplained failures, 40% were label problems rather than
+model errors.
+
+**What the screen can and cannot see.** The screen is precise (90% of train flags and 92% of test
+`disagree` flags are real), but it only finds items where the gold program and the written answer disagree.
+An item where both make the same mistake passes, and so does a written answer off by exactly ×100 or ÷100,
+which the screen accepts on purpose. The check3 estimate is there to cover what the screen passes. Both
+label problems reported on FinQA's GitHub issues are of this kind, and neither is in a hand-check:
+`ANSS/2008/page_89.pdf-1` (issue #15, 2026: a five-year average divided by 4 in both program and answer;
+screen `agree`) and `ADI/2009/page_49.pdf-1` (issue #6, 2022: written answer 380 against a program result
+of 3.8; screen `agree`). Both are train items, read from the issues and not checked by hand here.
+
+**Retriever setting.** The dev and test facts are FinQA's shipped `model_input`. The pinned data (upstream
+commit `0f16e28`, 5 Jun 2022) is upstream's latest. It postdates the fix of a retriever bug that had leaked
+label information (4 May 2022; FinQA's README gives the corrected FinQANet RoBERTa-large result as 61.24%
+execution accuracy) and the update of the public data with corrected retriever results (`b2eaa71`, 10 May
+2022). On 5 Jun 2022 `model_input` was removed and added again with new retrieval fields, and on test its
+top 3 facts differ from the 27 May version on 1,066 of 1,147 items. Upstream does not say which retriever
+run produced the 5 Jun inputs, so the 61.24% is context here, not a like-for-like comparison.
+
+**Related work.** Northcutt, Athalye and Mueller (NeurIPS 2021, Datasets and Benchmarks) find label errors
+in the test sets of 10 common benchmarks, at least 3.3% on average, by flagging candidates automatically and
+validating them by hand; about half of their flags were real, against 90–92% for this screen, which is
+narrower and only sees one kind of error. Vendrow et al. (2025, "Do Large Language Model Benchmarks Test
+Reliability?") show that label errors can hide model failures and propose re-labelled "platinum"
+benchmarks; this audit is a partial step of that kind for FinQA, not a corrected test set. The FinQA paper
+reports that two experts agreed on 92.65% of 200 sampled items for execution accuracy. A 2025 study of
+program-of-thought prompting on FinQA attributes 7% of 100 sampled model errors to ground-truth problems
+(arXiv 2510.13157).
+
+**Self-agreement.** 20 hand-checked items (10 `real_error`, 10 others, drawn by code) were checked again
+blind two days after the first pass, not the week planned (decision 55): the same verdict on 20 of 20 (95%
+Wilson interval 84–100%), Cohen's kappa 1.00 (`results/audit/self_agreement.json`). Outside the definition
+fixed beforehand, the error type matched on all 10 real errors and the wrong side on 9; the one change
+(`PNC/2012/page_65.pdf-5`, `both` to `program`) turns on the units of the written answer. The short gap makes
+remembered verdicts more likely, so 84% is the cautious reading.
+
+**Limits and next steps.** Every verdict is one person's; a second checker on the same 198 items would
+measure agreement between people, which the re-check cannot. The random checks are 50 items each, so the
+test estimate rests on 3 misses in 48. The 13 error-analysis leads (dataset config
+`error_analysis_gold_wrong`) and the two upstream reports are unverified. Re-scoring on a fully corrected
+test set, and a cleaning arm that removes only confirmed wrong programs rather than every disagreement,
+are the natural next experiments.
+
 ## Status
 
 | Part | State |
@@ -202,8 +254,8 @@ The trainable-parameter count is computed from the model's configuration (hidden
 | Evaluation on test | done, `results/test/run1/evaluation.json` (`finqa_lora/testeval.py`): three views, Wilson intervals, McNemar, the winner rule; results above |
 | Error analysis | done: rule-based tags fixed on dev before any test prediction (`finqa_lora/errortags.py`; `results/errors/dev.json`, `test.json`); 50 of the `other` failures tagged by hand (`results/errors/other_tags.json`) |
 | Adapter and model card on the Hugging Face Hub | done 22 Nov 2026: [PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora), cleaned seed 3 (chosen before any test number: median dev score of its arm), public, Apache-2.0. Hub commit `784e802` from repo commit `20dd5e2`; all three files downloaded back and matched (`results/hub/upload.json`) |
-| Dataset of the hand-checked items, write-up | to come |
-| Blind re-check of 20 hand-check verdicts | sheet built 22 Nov 2026 (decision 54: 10 `real_error` and 10 others from check1-3, uncertain rows skipped, seed 20261127, `handcheck/recheck.*`); re-checked 22 Nov, two days after the first pass, not the week planned (decision 55) |
+| Dataset of the hand-checked items, write-up | write-up above; dataset `PritRai75/finqa-label-audit` built in `hub/dataset/` (decision 57: the 198 hand-checked rows with the 20 second verdicts, and the 13 error-analysis `gold_wrong` leads apart), upload to come |
+| Blind re-check of 20 hand-check verdicts | sheet built 22 Nov 2026 (decision 54: 10 `real_error` and 10 others from check1-3, uncertain rows skipped, seed 20261127, `handcheck/recheck.*`); re-checked 22 Nov, two days after the first pass, not the week planned (decision 55): same verdict on 20 of 20 (84–100%), kappa 1.00 (`results/audit/self_agreement.json`) |
 
 ### Screen counts (automatic, not hand-checked)
 
@@ -293,6 +345,7 @@ python -m finqa_lora.othertags              # builds the hand-tag sheet for the 
 python -m finqa_lora.othertags --validate   # checks a filled sheet; --counts counts a finished one (results/errors/other_tags.json)
 python -m finqa_lora.recheck                # builds the blind re-check sheet (never overwrites one)
 python -m finqa_lora.recheck --validate     # checks a filled sheet; --counts writes results/audit/self_agreement.json
+python -m finqa_lora.hfdataset              # builds the dataset files in hub/dataset/ from the committed sheets
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -329,6 +382,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
 | `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
 | `finqa_lora/recheck.py`, `handcheck/recheck.*` | Blind re-check of 20 hand-check verdicts (decision 54): the draw, the sheet, its validator and the self-agreement counts |
+| `finqa_lora/hfdataset.py`, `hub/dataset/` | The HF dataset of the hand-checked items (decision 57): files built from the committed sheets, the card, the upload |
 | `finqa_lora/hub.py`, `hub/model_card.md` | Upload of the Hub adapter (cleaned seed 3) with its model card: checks the adapter's SHA-256, uploads the committed card and config, downloads all three back and compares hashes (`results/hub/upload.json`) |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |

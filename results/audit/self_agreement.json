@@ -1,0 +1,28 @@
+{
+  "decision": 54,
+  "seed": 20261127,
+  "items": 20,
+  "drawn": {
+    "real_error": 10,
+    "other": 10
+  },
+  "committed": "2026-11-22",
+  "left_out_uncertain": 0,
+  "verdict": {
+    "count": 20,
+    "of": 20,
+    "share": 1.0,
+    "wilson_low": 0.8388748419471806,
+    "wilson_high": 1.0,
+    "kappa": 1.0
+  },
+  "real_error": {
+    "count": 20,
+    "of": 20,
+    "share": 1.0,
+    "wilson_low": 0.8388748419471806,
+    "wilson_high": 1.0,
+    "kappa": 1.0
+  },
+  "changed": []
+}

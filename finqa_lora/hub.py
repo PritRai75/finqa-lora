@@ -90,10 +90,10 @@ def local_checks(adapter):
     return {"README.md": card, "adapter_config.json": config, WEIGHTS: adapter}
 
 
-def publish_checks():
-    """The card that goes up must be the committed one, and the commit must be on GitHub."""
-    if git("status", "--porcelain", "--", CARD, CONFIG).strip():
-        raise HubCheckFailed(f"{CARD} or {CONFIG} has uncommitted changes")
+def publish_checks(paths=(CARD, CONFIG)):
+    """The files that go up must be the committed ones, and the commit must be on GitHub."""
+    if git("status", "--porcelain", "--", *paths).strip():
+        raise HubCheckFailed(f"uncommitted changes in {', '.join(paths)}")
     git("fetch", "--quiet", "origin", "main")
     if subprocess.run(["git", "merge-base", "--is-ancestor", "HEAD", "origin/main"], cwd=REPO_ROOT).returncode:
         raise HubCheckFailed("HEAD is not on origin/main: push the commit first")
@@ -109,40 +109,49 @@ def stage(files, folder):
             for name in sorted(files)}
 
 
-def upload(files, head):
+def upload_verified(repo_id, repo_type, files, message, description):
+    """Upload files ({name: bytes or Path}) in one Hub commit to a public repo, download them back from that
+    commit and compare every SHA-256. Shared by the adapter and the dataset upload."""
     import huggingface_hub
     from huggingface_hub import HfApi, hf_hub_download
 
     api = HfApi()
+    owner = repo_id.split("/")[0]
     user = api.whoami()["name"]
-    if user != REPO_ID.split("/")[0]:
-        raise HubCheckFailed(f"the token belongs to {user!r}, not {REPO_ID.split('/')[0]!r}")
+    if user != owner:
+        raise HubCheckFailed(f"the token belongs to {user!r}, not {owner!r}")
     with tempfile.TemporaryDirectory() as tmp:
         staged = stage(files, tmp)
-        api.create_repo(REPO_ID, repo_type="model", private=False, exist_ok=True)
-        info = api.upload_folder(repo_id=REPO_ID, repo_type="model", folder_path=tmp,
-                                 commit_message=f"Adapter (cleaned seed 3) and card from finqa-lora {head[:7]}",
-                                 commit_description=f"https://github.com/PritRai75/finqa-lora/tree/{head}")
+        api.create_repo(repo_id, repo_type=repo_type, private=False, exist_ok=True)
+        info = api.upload_folder(repo_id=repo_id, repo_type=repo_type, folder_path=tmp,
+                                 commit_message=message, commit_description=description)
     with tempfile.TemporaryDirectory() as tmp:
         back = {}
         for name in staged:
-            path = hf_hub_download(REPO_ID, name, revision=info.oid, cache_dir=tmp)
+            path = hf_hub_download(repo_id, name, repo_type=repo_type, revision=info.oid, cache_dir=tmp)
             back[name] = {"bytes": Path(path).stat().st_size, "sha256": sha256_file(path)}
     if back != staged:
         raise HubCheckFailed(f"the Hub copy differs from what was uploaded: {back} != {staged}")
-    visibility = "private" if api.model_info(REPO_ID).private else "public"
+    repo_info = api.model_info if repo_type == "model" else api.dataset_info
     return {
-        "repo_id": REPO_ID,
+        "repo_id": repo_id,
         "hub_commit": info.oid,
         "hub_commit_url": info.commit_url,
-        "visibility": visibility,
-        "git_commit": head,
-        "arm": ARM, "seed": SEED, "main_run": MAIN_RUN,
+        "visibility": "private" if repo_info(repo_id).private else "public",
         "files": staged,
         "downloaded_back_identical": True,
         "huggingface_hub": huggingface_hub.__version__,
         "uploaded": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
     }
+
+
+def upload(files, head):
+    r = upload_verified(REPO_ID, "model", files,
+                        f"Adapter (cleaned seed 3) and card from finqa-lora {head[:7]}",
+                        f"https://github.com/PritRai75/finqa-lora/tree/{head}")
+    return {**{k: r[k] for k in ("repo_id", "hub_commit", "hub_commit_url", "visibility")}, "git_commit": head,
+            "arm": ARM, "seed": SEED, "main_run": MAIN_RUN,
+            **{k: r[k] for k in ("files", "downloaded_back_identical", "huggingface_hub", "uploaded")}}
 
 
 def main():

@@ -20,7 +20,9 @@ A LoRA adapter for `Qwen/Qwen2.5-1.5B-Instruct` that reads facts from a company'
 and a question, and writes a FinQA calculation program such as `subtract(5829, 5735), divide(#0, 5735)`.
 The model writes the program; Python runs it. It was trained and evaluated in
 [PritRai75/finqa-lora](https://github.com/PritRai75/finqa-lora), which holds the code, every run's
-record and a label audit of FinQA. This card is `hub/model_card.md` in that repo.
+record and a label audit of FinQA. This card is `hub/model_card.md` in that repo. The hand-checked
+labels from the audit are the dataset
+[PritRai75/finqa-label-audit](https://huggingface.co/datasets/PritRai75/finqa-label-audit).
 
 On the FinQA test set (1,147 questions) this adapter gets **750 right = 65.4% (95% interval 62.6–68.1%)**
 execution accuracy, against 1.6% for the same base model prompted with no examples and 22.0% for
@@ -160,8 +162,10 @@ pass (20 Nov 2026); the test pass loaded that revision explicitly.
 ## Limitations
 
 - **Retriever setting.** Dev and test facts are FinQA's shipped `model_input`, the top 3 from the
-  paper's retriever. Whether the shipped test inputs predate or follow FinQA's later retriever fix has
-  not been checked, so these numbers are not placed beside published FinQA scores.
+  paper's retriever. The pinned data (upstream commit `0f16e28`, 5 Jun 2022) postdates upstream's fix of a
+  retriever bug (4 May 2022) and its update of the public data with corrected retriever results (10 May
+  2022), but upstream does not say which retriever run produced these inputs. Published FinQA scores, such
+  as FinQANet's 61.24% with the corrected retriever, are context, not a like-for-like comparison.
 - **Label errors in the test set.** A hand-check of the test set confirmed 86 label problems among the
   1,147 items (estimate 148, 95% upper bound 243). The official score therefore marks some right
   programs wrong and some wrong ones right; the consistent and corrected views are the check on that.
