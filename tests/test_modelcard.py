@@ -16,6 +16,7 @@ from finqa_lora.data import load_split
 from finqa_lora.prompt import messages, prompt_fingerprint
 
 CARD = (REPO_ROOT / "hub" / "model_card.md").read_text(encoding="utf-8")
+README_TEXT = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
 FLAT = " ".join(CARD.split())   # line breaks in prose do not matter
 EVAL = json.loads((REPO_ROOT / "results/test/run1/evaluation.json").read_text(encoding="utf-8"))
 ACC = {v: EVAL["views"][v]["accuracy"] for v in ("official", "consistent", "corrected")}
@@ -280,3 +281,23 @@ def test_upload_refuses(fake_adapter, monkeypatch, problem):
         hub.upload(hub.local_checks(fake_adapter), "a" * 40)
     if problem == "wrong_user":
         assert fake.store == {} and fake.created == []   # nothing created or uploaded
+
+
+def test_upload_record():
+    """results/hub/upload.json is the upload of this card, config and adapter, checked by download-back.
+    The card in the repo must stay the one on the Hub: edit it and this fails until it is uploaded again."""
+    u = load("results/hub/upload.json")
+    assert (u["repo_id"], u["visibility"], u["downloaded_back_identical"]) == (hub.REPO_ID, "public", True)
+    assert (u["arm"], u["seed"], u["main_run"]) == (hub.ARM, hub.SEED, hub.MAIN_RUN)
+    assert u["hub_commit"] == "784e802f7e00146ef56f82c95e418a03ce67d5f8"
+    assert u["hub_commit_url"] == f"https://huggingface.co/{hub.REPO_ID}/commit/{u['hub_commit']}"
+    assert u["git_commit"] == "20dd5e295ebd8cdc6924e5b640fccc4335a6bd9c"
+    card = (REPO_ROOT / hub.CARD).read_bytes()
+    config = hub.committed(hub.CONFIG)
+    sha, size = hub.expected_adapter()
+    assert u["files"] == {
+        "README.md": {"bytes": len(card), "sha256": hashlib.sha256(card).hexdigest()},
+        "adapter_config.json": {"bytes": len(config), "sha256": hashlib.sha256(config).hexdigest()},
+        "adapter_model.safetensors": {"bytes": size, "sha256": sha},
+    }
+    assert f"Hub commit `{u['hub_commit'][:7]}` from repo commit `{u['git_commit'][:7]}`" in README_TEXT
