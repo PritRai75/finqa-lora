@@ -1,7 +1,14 @@
 # finqa-lora
 
-Work in progress. Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), a benchmark of
-8,281 expert-written questions over earnings-report tables and text, each with a gold calculation program.
+A LoRA fine-tune that teaches a 1.5B model to write FinQA calculation programs, and a hand-checked audit
+of FinQA's labels.
+
+- **Model:** [PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora) on the Hugging Face Hub (LoRA adapter for `Qwen/Qwen2.5-1.5B-Instruct`)
+- **Dataset:** [PritRai75/finqa-label-audit](https://huggingface.co/datasets/PritRai75/finqa-label-audit) on the Hugging Face Hub (verdicts and corrections on 198 hand-checked FinQA items)
+- **Write-up:** [below](#write-up), after the results
+
+Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), a benchmark of 8,281 expert-written
+questions over earnings-report tables and text, each with a gold calculation program.
 
 1. **Label-consistency audit.** A screen of every train, dev and test item for disagreement between the
    gold program's result and the annotator's written answer, followed by a hand-check of samples and of
@@ -10,10 +17,7 @@ Work in progress. Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), 
    It is compared with the base model, and training on screened data is compared with a random subset of
    the same size.
 
-Test results are below. On the Hugging Face Hub: the adapter,
-[PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora), and the
-hand-checked labels,
-[PritRai75/finqa-label-audit](https://huggingface.co/datasets/PritRai75/finqa-label-audit).
+Test results are below, then the write-up.
 
 ## Results (test, 1,147 items)
 
