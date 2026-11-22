@@ -324,6 +324,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/errortags.py`, `results/errors/` | Rule-based error tags for wrong predictions, one per failure, and their dev and test summaries |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
 | `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
+| `finqa_lora/hub.py`, `hub/model_card.md` | Upload of the Hub adapter (cleaned seed 3) with its model card: checks the adapter's SHA-256, uploads the committed card and config, downloads all three back and compares hashes (`results/hub/upload.json`) |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |
 | `notebooks/kaggle_job.ipynb`, `scripts/kaggle_run.sh`, `jobs/` | Kaggle launcher, runner script and one file per GPU job |
