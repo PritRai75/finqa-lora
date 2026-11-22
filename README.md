@@ -96,8 +96,8 @@ the flags against the report text (`handcheck/`, `results/audit/counts.json`).
 | check3: 50 random unflagged test items | 50 (2 undecided) | 3 of 48 are real errors the screen missed (6%); one-sided 95% upper bound 15.4%, at most 160 of the 1,040 unflagged items |
 | Test set | 1,147 | 86 label problems confirmed; estimate 148; 95% upper bound 243 (the 9 sign-only and 6 undecided items are in no count) |
 
-These are one checker's verdicts. A blind re-check of about 20 items, a week after the first, measures
-how stable they are (to come).
+These are one checker's verdicts. A blind re-check of 20 of them, two days after the first pass
+(decision 55), measures how stable they are (to come).
 
 Removing the 431 train flags therefore removes about 270 wrong programs (31 of 50, 208–320 of 431)
 together with about 120 items whose program is right and only the written answer wrong (14 of 50, 75–180),
@@ -203,7 +203,7 @@ The trainable-parameter count is computed from the model's configuration (hidden
 | Error analysis | done: rule-based tags fixed on dev before any test prediction (`finqa_lora/errortags.py`; `results/errors/dev.json`, `test.json`); 50 of the `other` failures tagged by hand (`results/errors/other_tags.json`) |
 | Adapter and model card on the Hugging Face Hub | done 22 Nov 2026: [PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora), cleaned seed 3 (chosen before any test number: median dev score of its arm), public, Apache-2.0. Hub commit `784e802` from repo commit `20dd5e2`; all three files downloaded back and matched (`results/hub/upload.json`) |
 | Dataset of the hand-checked items, write-up | to come |
-| Blind re-check of about 20 hand-check verdicts | to come, a week after the first verdicts |
+| Blind re-check of 20 hand-check verdicts | sheet built 22 Nov 2026 (decision 54: 10 `real_error` and 10 others from check1-3, uncertain rows skipped, seed 20261127, `handcheck/recheck.*`); re-checked 22 Nov, two days after the first pass, not the week planned (decision 55) |
 
 ### Screen counts (automatic, not hand-checked)
 
@@ -291,6 +291,8 @@ python -m finqa_lora.errortags dev               # one rule-based error tag per 
 python -m finqa_lora.errortags test              # the same rules on every pass of results/test/run1 (results/errors/test.json)
 python -m finqa_lora.othertags              # builds the hand-tag sheet for the `other` failures (never overwrites one)
 python -m finqa_lora.othertags --validate   # checks a filled sheet; --counts counts a finished one (results/errors/other_tags.json)
+python -m finqa_lora.recheck                # builds the blind re-check sheet (never overwrites one)
+python -m finqa_lora.recheck --validate     # checks a filled sheet; --counts writes results/audit/self_agreement.json
 ```
 
 Fill hand-check sheets in a text editor, not Excel: a spreadsheet save rewrites the item columns
@@ -326,6 +328,7 @@ and each test pass records which commit of those sheets let it through.
 | `finqa_lora/errortags.py`, `results/errors/` | Rule-based error tags for wrong predictions, one per failure, and their dev and test summaries |
 | `finqa_lora/stats.py` | Wilson intervals, exact McNemar, item and two-level bootstraps, and the cleaned-versus-random winner rule (variance-components interval plus a sign check over seeds) |
 | `finqa_lora/rulesim.py` | Simulation of how often each candidate winner rule declares a winner between identical arms (`results/simulations/winner_rule.json`) |
+| `finqa_lora/recheck.py`, `handcheck/recheck.*` | Blind re-check of 20 hand-check verdicts (decision 54): the draw, the sheet, its validator and the self-agreement counts |
 | `finqa_lora/hub.py`, `hub/model_card.md` | Upload of the Hub adapter (cleaned seed 3) with its model card: checks the adapter's SHA-256, uploads the committed card and config, downloads all three back and compares hashes (`results/hub/upload.json`) |
 | `finqa_lora/runlog.py` | Builds `runs.db` (not committed) from `results/`: one row per run with its commit, config, prompt and adapter hashes, one row per item |
 | `finqa_lora/tiny.py` | Tiny random-weight model for CPU tests |

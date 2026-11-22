@@ -89,6 +89,30 @@ At least a week after the last check, re-check 20 items blind (about 10 `real_er
 others, drawn by code with a fixed seed) in a fresh sheet that shows the item only, and report
 how often the two verdicts match.
 
+Fixed by Prit on 22 Nov 2026, before the draw (decision 54; `finqa_lora/recheck.py`):
+
+- **Population:** every row of check1, check2 and check3 that is not `uncertain` in the first pass:
+  192 of 198 (131 `real_error`, 61 other verdicts). The 6 uncertain rows are skipped because the
+  agreement count leaves them out anyway.
+- **Draw:** `random.Random(20261127)`: exactly 10 of the `real_error` ids and then 10 of the others,
+  each from the sorted ids; the 20 are then shuffled with the same generator, so the sheet order does
+  not show the strata.
+- **Sheet:** `recheck.csv` has the columns of the first-pass sheets with the verdict columns empty;
+  `recheck.md` gives the same context the first pass had. Neither shows a first verdict, a note or the
+  sheet an item came from. The screen status is shown, as it was in the first pass. Same rules as the
+  first pass (decision guide, decisions 27-31 and 49-52); `uncertain` is allowed.
+- **When and how:** planned for no earlier than 27 Nov 2026, a week after check3 (20 Nov). Changed by
+  Prit on 22 Nov 2026, before any verdict (decision 55): the re-check is done on 22 Nov, **two days**
+  after the last first-pass verdicts, so that the project is finished before the resume goes out. The
+  shorter gap is reported with the result; it makes remembered verdicts more likely, which would raise
+  the agreement. In a text editor, without opening `check1.csv`, `check2.csv` or `check3.csv`. `python -m finqa_lora.recheck --validate`
+  before committing; the verdicts go in their own commit, after the sheet's build commit is pushed.
+- **Counts** (`--counts`, `results/audit/self_agreement.json`): the definition fixed in S7 in
+  `auditcounts.agreement`: same verdict, with a 95% Wilson interval and Cohen's kappa, on the five
+  verdicts and on `real_error` versus not; rows uncertain in either pass left out; every changed verdict
+  listed. The counts refuse a sheet that is unfinished, invalid, uncommitted or committed before 22 Nov.
+  The first-pass sheets are pinned by SHA-256 in `tests/test_recheck.py`, so the baseline cannot move.
+
 ## Tagging the `other` failures (decision 53)
 
 `errortags` tags every wrong prediction by rule (decision 48); its last tag, `other`, is "anything else",
