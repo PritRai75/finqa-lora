@@ -10,7 +10,175 @@ Work in progress. Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), 
    It is compared with the base model, and training on screened data is compared with a random subset of
    the same size.
 
-No test results yet. Numbers will be added here only from completed runs.
+Test results are below. Still to come: the adapter on the Hugging Face Hub, a dataset of the
+hand-checked items, a blind re-check of the hand-check verdicts, and the write-up.
+
+## Results (test, 1,147 items)
+
+Every rule that decides a claim below was fixed before the numbers it governs existed; the commits are
+named in `handcheck/README.md`, the sections further down and the run reports, and where a rule's text
+reached the repo after the work it governs, `handcheck/README.md` says so. Each
+percentage is given with its count and a 95% Wilson interval. The test split was scored once, on
+20 Nov 2026, at commit `5aa1573` (`results/test/run1/`).
+
+**In short:**
+- Fine-tuning `Qwen/Qwen2.5-1.5B-Instruct` with LoRA on about 5,800 FinQA programs takes it from
+  1.6% (0-shot) and 5.5% (4-shot) to 63–66% execution accuracy on test. That also beats the larger
+  `Qwen/Qwen3-4B-Instruct-2507` prompted with the same 4 examples (22.0%). All 10 fine-tuned runs beat
+  each of the three prompted models, in every view.
+- Training on the screened data (431 program–answer disagreements removed) against a random subset of
+  the same size: **no detectable difference**. Cleaned is ahead by 1.1 points on average and in all 5
+  seed pairs, but the interval the rule uses includes zero, so no cleaning effect is claimed.
+- The audit: the automatic screen's flags are real label problems 90% of the time on train (45 of 50
+  hand-checked) and 92% on test (68 of 74). On test, 86 label problems are confirmed by hand; the
+  estimate is 148 and the 95% upper bound 243 of the 1,147 items.
+
+### Execution accuracy
+
+Execution accuracy: the predicted program, run by the official FinQA executor, gives the gold result.
+Three views of the same predictions (decision 45, fixed before any test number):
+
+- **official**: all 1,147 items against the shipped `exe_ans`;
+- **consistent**: 1,046 items, without every item the hand-check found wrong or could not decide, and
+  without the 9 items whose program and answer differ only in sign;
+- **corrected**: 1,139 items, with a wrong gold program replaced by Prit's corrected program, and the 2
+  ambiguous and 6 undecided items left out.
+
+| Model | official (of 1,147) | consistent (of 1,046) | corrected (of 1,139) |
+| --- | --- | --- | --- |
+| LoRA, cleaned arm, seeds 1–5 | 745, 762, 750, 754, 759 | 720, 734, 723, 729, 732 | 775, 790, 779, 783, 788 |
+| mean | 65.7% | 69.6% | 68.7% |
+| LoRA, random arm, seeds 1–5 | 735, 748, 747, 753, 724 | 709, 718, 718, 728, 701 | 761, 773, 774, 779, 754 |
+| mean | 64.6% | 68.3% | 67.4% |
+| Qwen2.5-1.5B-Instruct, 0-shot | 18 = 1.6% (1.0–2.5%) | 18 = 1.7% (1.1–2.7%) | 18 = 1.6% (1.0–2.5%) |
+| Qwen2.5-1.5B-Instruct, 4-shot | 63 = 5.5% (4.3–7.0%) | 62 = 5.9% (4.7–7.5%) | 66 = 5.8% (4.6–7.3%) |
+| Qwen3-4B-Instruct-2507, 4-shot | 252 = 22.0% (19.7–24.5%) | 244 = 23.3% (20.9–26.0%) | 260 = 22.8% (20.5–25.4%) |
+
+A single fine-tuned run's interval is about ±2.7 points (cleaned seed 3, the adapter for the Hub:
+750 = 65.4%, 62.6–68.1%). Program accuracy (the exact gold program, a stricter measure) for the 10
+runs is 676–718 of 1,147. The fine-tuned runs write a program that executes on 1,138–1,145 items;
+the prompted 1.5B model on 221 (0-shot) and 435 (4-shot), Qwen3-4B on 972.
+
+**Fine-tuned against prompted** (exact McNemar on the same items; the claim needs all 10 runs to win
+at p < 0.05): fine-tuning beats all three prompted models in all three views. Against Qwen3-4B 4-shot,
+the closest, each run is right on 528–549 items where Qwen3-4B is wrong, and wrong on 39–56 where it is
+right (official view, p ≤ 2.7e-97).
+
+### Cleaned against random
+
+The rule (decision 39) claims "cleaning helped" only if the 95% interval below excludes zero and all 5
+seed pairs agree in sign; otherwise "no detectable difference".
+
+| View | Cleaned − random, seed-averaged | 95% interval (the rule's) | Seed pairs 1–5 | Verdict |
+| --- | --- | --- | --- | --- |
+| official | +1.10 pt | −0.52 to +2.71 | +0.87, +1.22, +0.26, +0.09, +3.05 | no detectable difference |
+| consistent | +1.22 pt | −0.39 to +2.83 | +1.05, +1.53, +0.48, +0.10, +2.96 | no detectable difference |
+| corrected | +1.30 pt | −0.23 to +2.83 | +1.23, +1.49, +0.44, +0.35, +2.99 | no detectable difference |
+
+The seed pairs all point the same way, but the training noise between seeds (0.84 pt SD on test) is
+large enough that a difference of this size is not separable from it with 5 seeds. An interval over
+the items alone, reported beside it and deciding nothing, gives +0.19 to +2.01 pt (official) and would
+have called a winner: in simulation, before any main run, such intervals declared a winner between
+identical arms in 16 to 23% of cases (see "the rule" below). The two-level bootstrap gives
+−0.33 to +2.56 pt. Point estimate and interval are the result; a cleaning effect is not.
+
+### The audit
+
+The screen compares each gold program's result with the annotator's written answer. Prit hand-checked
+the flags against the report text (`handcheck/`, `results/audit/counts.json`).
+
+| Check | Items | Result |
+| --- | --- | --- |
+| check1: 50 random train flags | 50 | 45 real label problems: precision 90% (79–96%), about 388 (339–412) of the 431 train flags. Of the 50, a wrong program 31 (62%, 48–74%), a wrong written answer 17 (34%), both in 3; rounding 5; no parser misses |
+| check2: every flagged test item | 98 (4 undecided) | 83 of 94 real; on `disagree` items 68 of 74 = 92% (83–96%); all 12 decided empty-answer items are real (11 missing answers). By side: program 38, written answer 25, both 19, question ambiguous 1 |
+| check3: 50 random unflagged test items | 50 (2 undecided) | 3 of 48 are real errors the screen missed (6%); one-sided 95% upper bound 15.4%, at most 160 of the 1,040 unflagged items |
+| Test set | 1,147 | 86 label problems confirmed; estimate 148; 95% upper bound 243 (the 9 sign-only and 6 undecided items are in no count) |
+
+These are one checker's verdicts. A blind re-check of about 20 items, a week after the first, measures
+how stable they are (to come).
+
+Removing the 431 train flags therefore removes about 270 wrong programs (31 of 50, 208–320 of 431)
+together with about 120 items whose program is right and only the written answer wrong (14 of 50, 75–180),
+which are good training data, and about 40 rounding differences.
+This is why the arm is called "removed program–answer disagreements", not "removed wrong programs".
+
+### Error analysis
+
+Every wrong prediction gets one rule-based tag (decision 48, fixed on dev before any test prediction;
+`results/errors/test.json`). A fine-tuned run fails 385–423 test items: `other` 150–169, `wrong_number`
+88–102, `wrong_table_row` 42–56, `step_count` 23–32, the rest smaller. On the 107 flagged test items
+each run fails 69–76, and on 22–26 of those its answer matches the annotator's written answer: the model
+agrees with the annotator against the gold program. Qwen3-4B 4-shot's largest failure is a scale slip,
+a percentage left as a fraction or the reverse (`scale_x100`, 292 of its 895 failures).
+
+`other` is "none of the rules". Prit hand-tagged 50 of the 266 test items where a fine-tuned run's
+failure is tagged `other` (decision 53; drawn by code, seed 20261120; `results/errors/other_tags.json`):
+
+| Hand tag | Items of 50 | Share (95%) |
+| --- | --- | --- |
+| gold label wrong, or the question ambiguous or unanswerable as scored | 20 | 40% (28–54%) |
+| computes another quantity than the question asks (another year, entity or base) | 17 | 34% (22–48%) |
+| right quantity, a needed step or term missing | 9 | 18% (10–31%) |
+| right quantity, plus unneeded steps | 4 | 8% (3–19%) |
+| a number not in the report; a wrong constant; unclear | 0 each | 0% (0–7%) |
+
+These shares describe items with an `other` failure, not all failures. 13 of the 20 gold problems are on
+items the screen and the hand-check had not flagged. They were found with a model's prediction in view,
+so they are reported here and kept out of the audit counts above.
+
+### Two outputs, as returned
+
+The model replies with a program only; Python runs it. Both are from the Hub adapter (cleaned seed 3),
+chosen by position, not by eye: the first test item, and the first test item it gets wrong
+(`results/test/run1/cleaned/seed3/test.csv`).
+
+`ETR/2016/page_23.pdf-2`, *what is the net change in net revenue during 2015 for entergy corporation?*
+
+```
+subtract(5829, 5735)
+```
+
+Runs to 94.0; gold `subtract(5829, 5735)` = 94. Right.
+
+`SYY/2006/page_71.pdf-1`, *what was the percentage change in total rental expense under operating leases
+from july 2 , 2005 to july 1 , 2006?*
+
+```
+subtract(100690000, 92710000), divide(#0, 92710000)
+```
+
+Runs to 0.08607 (8.6%); gold `subtract(92710000, 86842000), divide(#0, 86842000)` = 0.06757, written
+answer 7%. Scored wrong; rule tag `wrong_number`. The report gives rental expense of $100,690,000,
+$92,710,000 and $86,842,000 "in fiscal 2006, 2005 and 2004" and uses July 1, 2006 and July 2, 2005 as
+the fiscal 2006 and 2005 year-ends. On that reading the question asks for fiscal 2005 to 2006, which is
+what the model computed, and the gold computes the year before. This reading is Claude's, made after
+seeing the prediction; the item is in no hand-check and in no count.
+
+### Training cost
+
+| | |
+| --- | --- |
+| Base model | `Qwen/Qwen2.5-1.5B-Instruct` at revision `989aa79` |
+| Method | LoRA, rank 16, alpha 32, dropout 0.05, on every linear layer of the 28 blocks; 18,464,768 trainable parameters (adapter 73.9 MB in fp32) |
+| Training | 5,820 items, 3 epochs, 1,092 steps of 16 examples, learning rate 2e-4, cosine, fp16, length-grouped batches; prompt of `model_input` (the retrieved facts), no truncation |
+| Hardware | Kaggle, one NVIDIA T4 (16 GB) per run, two runs in parallel; peak 5.56 GB |
+| Time per run | 1.60–1.76 h of training (5.25–5.78 s per step), plus 4.4–4.7 min to score dev |
+| All GPU work | 14.8 h of Kaggle session time: feasibility 1.3 h, pilot 3.5 h, the 10 main runs 9.0 h, all 13 test passes 1.0 h |
+
+The trainable-parameter count is computed from the model's configuration (hidden size 1,536, MLP
+8,960, 2 key-value heads of 128) and matches the adapter's size; the runs did not log it.
+
+### Checks on the test pass
+
+- Before test was touched, each GPU repeated a committed dev run: 883 of 883 identical replies (cleaned
+  seed 1: 588, random seed 1: 583), against a tolerance of 800, fixed beforehand.
+- Each adapter was matched to its training run by SHA-256; both base models loaded at pinned Hub
+  revisions; the prompt fingerprint `4139bfc3519c` is the one used in training.
+- The test gate recorded the commits of the two finished test hand-check sheets.
+- Every column of every prediction file was recomputed from the stored reply, and the totals equal the
+  run's report. `finqa_lora.testeval` refuses to rebuild `results/test/run1/evaluation.json` if the
+  hand-check sheets have changed since the test pass.
+- `tests/` pins the committed counts; CI runs them on every push.
 
 ## Status
 
@@ -19,8 +187,8 @@ No test results yet. Numbers will be added here only from completed runs.
 | Data pinned to an upstream commit, checked by SHA-256 | done |
 | Official FinQA scorer vendored, parity-tested on all 8,281 gold programs | done |
 | Automatic screen (parser v1) | done, counts below |
-| Hand-checks: check1 (50 train flags), check2 (all 98 flagged test items), check3 (50 test `agree` items) | sheets built; verdicts in progress. Parser v1 is kept whatever check1 shows |
-| Audit counts | code ready, tested on made-up verdicts (`finqa_lora/auditcounts.py`): screen precision, wrong programs among the train flags, confirmed test errors, a bound on misses; counts only finished sheets |
+| Hand-checks: check1 (50 train flags), check2 (all 98 flagged test items), check3 (50 test `agree` items) | done: verdicts committed (check1 `cc61253`, check2 `e467ff5`, check3 `5aa1573`). Parser v1 kept whatever check1 showed |
+| Audit counts | done, `results/audit/counts.json` (`finqa_lora/auditcounts.py`, definitions fixed before any verdict); results above |
 | Prompt, inference and LoRA training code | done, tested on a tiny model in CI |
 | Feasibility run 1 on GPU: licences, token lengths, base models on dev | done, `results/feasibility/run1/` |
 | Feasibility run 2: timed LoRA training, cost per run | done, `results/feasibility/run2/` |
@@ -28,9 +196,12 @@ No test results yet. Numbers will be added here only from completed runs.
 | Pilot: learning rate and epoch on dev, same-seed noise | done, `results/pilot/run1/`; chose learning rate 2e-4, epoch 3 (table below) |
 | Main training runs: cleaned versus random, 5 seeds each | done, `results/main/run1/` (seeds 1 to 3) and `results/main/run2/` (seeds 4 and 5); dev table below |
 | Test gate: no test inference until check2 and check3 are finished and committed | done (`finqa_lora/testgate.py`) |
-| Test passes | job ready (`jobs/testpass.sh`), waits for the test gate; adapters come from a private Kaggle dataset, found by SHA-256 |
-| Evaluation on test | code ready, tested on made-up predictions (`finqa_lora/testeval.py`): three views, Wilson intervals, McNemar, the winner rule |
-| Error analysis | rule-based tags fixed on dev before any test prediction (`finqa_lora/errortags.py`); dev summary in `results/errors/dev.json`; a sample of the untagged rest to be tagged by hand |
+| Test passes | done 20 Nov 2026 at `5aa1573`, `results/test/run1/` (Kaggle T4 x2, 59.7 min; `jobs/testpass.sh`); adapters from a private Kaggle dataset, found by SHA-256 |
+| Evaluation on test | done, `results/test/run1/evaluation.json` (`finqa_lora/testeval.py`): three views, Wilson intervals, McNemar, the winner rule; results above |
+| Error analysis | done: rule-based tags fixed on dev before any test prediction (`finqa_lora/errortags.py`; `results/errors/dev.json`, `test.json`); 50 of the `other` failures tagged by hand (`results/errors/other_tags.json`) |
+| Adapter and model card on the Hugging Face Hub | to come: cleaned seed 3, chosen before any test number (median dev score of its arm) |
+| Dataset of the hand-checked items, write-up | to come |
+| Blind re-check of about 20 hand-check verdicts | to come, a week after the first verdicts |
 
 ### Screen counts (automatic, not hand-checked)
 
