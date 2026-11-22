@@ -145,3 +145,18 @@ def test_upload_goes_to_a_dataset_repo_and_checks_the_copy(monkeypatch):
     assert calls == [(hfdataset.REPO_ID, {"repo_type": "dataset", "private": False, "exist_ok": True})]
     assert r["visibility"] == "public" and sorted(r["files"]) == sorted(files)
     assert r["files"][hfdataset.CHECKS_FILE]["sha256"] == hashlib.sha256(files[hfdataset.CHECKS_FILE]).hexdigest()
+
+
+def test_dataset_upload_record():
+    """results/hub/dataset_upload.json is the upload of the committed card and files, checked by download-back.
+    Edit the card or rebuild the files and this fails until they are uploaded again."""
+    u = load("results/hub/dataset_upload.json")
+    assert (u["repo_id"], u["visibility"], u["downloaded_back_identical"]) == (hfdataset.REPO_ID, "public", True)
+    assert u["hub_commit"] == "4c602fa22a4245b1817aa8759d6decc1d365183c"
+    assert u["hub_commit_url"].endswith(f"/datasets/{hfdataset.REPO_ID}/commit/{u['hub_commit']}")
+    assert u["git_commit"] == "aa5056293f794a2b86acc2b7461b2b2e94757c8c"
+    files = {"README.md": (REPO_ROOT / hfdataset.CARD).read_bytes(),
+             **{n: (hfdataset.OUT / n).read_bytes() for n in (hfdataset.CHECKS_FILE, hfdataset.EXTRA_FILE)}}
+    assert u["files"] == {n: {"bytes": len(d), "sha256": hashlib.sha256(d).hexdigest()} for n, d in files.items()}
+    readme = (REPO_ROOT / "README.md").read_text(encoding="utf-8")
+    assert f"Hub commit `{u['hub_commit'][:7]}` from repo commit `{u['git_commit'][:7]}`" in readme

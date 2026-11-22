@@ -288,7 +288,7 @@ def test_upload_refuses(fake_adapter, monkeypatch, problem):
 
 # The SHA-256 of a changed card that is committed and waiting to be uploaded again; the commit that records
 # the new upload empties it. Any other change to the card fails test_upload_record until it is uploaded.
-CARD_AWAITING_UPLOAD = "b5c3803da8ec86d8c1d324523eaae815f9bea6affb4dcde2263494a50f1ffbcb"
+CARD_AWAITING_UPLOAD = ""
 
 
 def test_upload_record():
@@ -297,9 +297,10 @@ def test_upload_record():
     u = load("results/hub/upload.json")
     assert (u["repo_id"], u["visibility"], u["downloaded_back_identical"]) == (hub.REPO_ID, "public", True)
     assert (u["arm"], u["seed"], u["main_run"]) == (hub.ARM, hub.SEED, hub.MAIN_RUN)
-    assert u["hub_commit"] == "784e802f7e00146ef56f82c95e418a03ce67d5f8"
+    # Second upload (card: retriever setting checked, dataset link); the first was 784e802 from 20dd5e2.
+    assert u["hub_commit"] == "ea894cf0e020e8cff4faa17c4013b5400f963763"
     assert u["hub_commit_url"] == f"https://huggingface.co/{hub.REPO_ID}/commit/{u['hub_commit']}"
-    assert u["git_commit"] == "20dd5e295ebd8cdc6924e5b640fccc4335a6bd9c"
+    assert u["git_commit"] == "aa5056293f794a2b86acc2b7461b2b2e94757c8c"
     card = (REPO_ROOT / hub.CARD).read_bytes()
     config = hub.committed(hub.CONFIG)
     sha, size = hub.expected_adapter()

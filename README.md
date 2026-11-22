@@ -10,9 +10,10 @@ Work in progress. Two linked pieces of work on FinQA (Chen et al., EMNLP 2021), 
    It is compared with the base model, and training on screened data is compared with a random subset of
    the same size.
 
-Test results are below. The adapter is on the Hugging Face Hub:
-[PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora).
-Still to come: the dataset of the hand-checked items on the Hub.
+Test results are below. On the Hugging Face Hub: the adapter,
+[PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora), and the
+hand-checked labels,
+[PritRai75/finqa-label-audit](https://huggingface.co/datasets/PritRai75/finqa-label-audit).
 
 ## Results (test, 1,147 items)
 
@@ -253,8 +254,8 @@ are the natural next experiments.
 | Test passes | done 20 Nov 2026 at `5aa1573`, `results/test/run1/` (Kaggle T4 x2, 59.7 min; `jobs/testpass.sh`); adapters from a private Kaggle dataset, found by SHA-256 |
 | Evaluation on test | done, `results/test/run1/evaluation.json` (`finqa_lora/testeval.py`): three views, Wilson intervals, McNemar, the winner rule; results above |
 | Error analysis | done: rule-based tags fixed on dev before any test prediction (`finqa_lora/errortags.py`; `results/errors/dev.json`, `test.json`); 50 of the `other` failures tagged by hand (`results/errors/other_tags.json`) |
-| Adapter and model card on the Hugging Face Hub | done 22 Nov 2026: [PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora), cleaned seed 3 (chosen before any test number: median dev score of its arm), public, Apache-2.0. Hub commit `784e802` from repo commit `20dd5e2`; all three files downloaded back and matched (`results/hub/upload.json`) |
-| Dataset of the hand-checked items, write-up | write-up above; dataset `PritRai75/finqa-label-audit` built in `hub/dataset/` (decision 57: the 198 hand-checked rows with the 20 second verdicts, and the 13 error-analysis `gold_wrong` leads apart), upload to come |
+| Adapter and model card on the Hugging Face Hub | done 22 Nov 2026: [PritRai75/qwen2.5-1.5b-finqa-lora](https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora), cleaned seed 3 (chosen before any test number: median dev score of its arm), public, Apache-2.0. Hub commit `ea894cf` from repo commit `aa50562` (card with the retriever check and the dataset link; first upload `784e802` from `20dd5e2`); all three files downloaded back and matched (`results/hub/upload.json`) |
+| Dataset of the hand-checked items, write-up | done 22 Nov 2026: write-up above; dataset [PritRai75/finqa-label-audit](https://huggingface.co/datasets/PritRai75/finqa-label-audit) (decision 57: the 198 hand-checked rows with the 20 second verdicts, and the 13 error-analysis `gold_wrong` leads apart), public, MIT, Hub commit `4c602fa` from repo commit `aa50562`; all three files downloaded back and matched (`results/hub/dataset_upload.json`) |
 | Blind re-check of 20 hand-check verdicts | sheet built 22 Nov 2026 (decision 54: 10 `real_error` and 10 others from check1-3, uncertain rows skipped, seed 20261127, `handcheck/recheck.*`); re-checked 22 Nov, two days after the first pass, not the week planned (decision 55): same verdict on 20 of 20 (84–100%), kappa 1.00 (`results/audit/self_agreement.json`) |
 
 ### Screen counts (automatic, not hand-checked)

@@ -1,16 +1,16 @@
 {
   "repo_id": "PritRai75/qwen2.5-1.5b-finqa-lora",
-  "hub_commit": "784e802f7e00146ef56f82c95e418a03ce67d5f8",
-  "hub_commit_url": "https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora/commit/784e802f7e00146ef56f82c95e418a03ce67d5f8",
+  "hub_commit": "ea894cf0e020e8cff4faa17c4013b5400f963763",
+  "hub_commit_url": "https://huggingface.co/PritRai75/qwen2.5-1.5b-finqa-lora/commit/ea894cf0e020e8cff4faa17c4013b5400f963763",
   "visibility": "public",
-  "git_commit": "20dd5e295ebd8cdc6924e5b640fccc4335a6bd9c",
+  "git_commit": "aa5056293f794a2b86acc2b7461b2b2e94757c8c",
   "arm": "cleaned",
   "seed": 3,
   "main_run": "run1",
   "files": {
     "README.md": {
-      "bytes": 10825,
-      "sha256": "090b90eba4919b44630c75015a3da45d76d3d63dbb5df174c041f4dc2fd2e1fb"
+      "bytes": 11202,
+      "sha256": "b5c3803da8ec86d8c1d324523eaae815f9bea6affb4dcde2263494a50f1ffbcb"
     },
     "adapter_config.json": {
       "bytes": 1182,
@@ -23,5 +23,5 @@
   },
   "downloaded_back_identical": true,
   "huggingface_hub": "2.4.0",
-  "uploaded": "2026-11-22T07:49:19Z"
+  "uploaded": "2026-11-22T10:05:26Z"
 }

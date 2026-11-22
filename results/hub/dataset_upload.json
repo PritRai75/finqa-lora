@@ -1,0 +1,24 @@
+{
+  "repo_id": "PritRai75/finqa-label-audit",
+  "hub_commit": "4c602fa22a4245b1817aa8759d6decc1d365183c",
+  "hub_commit_url": "https://huggingface.co/datasets/PritRai75/finqa-label-audit/commit/4c602fa22a4245b1817aa8759d6decc1d365183c",
+  "visibility": "public",
+  "git_commit": "aa5056293f794a2b86acc2b7461b2b2e94757c8c",
+  "files": {
+    "README.md": {
+      "bytes": 8620,
+      "sha256": "93343a165652a349519373964c8738c21feb1e192814a9b03e8c1fd721bc083f"
+    },
+    "error_analysis_gold_wrong.csv": {
+      "bytes": 5826,
+      "sha256": "97b0dd112916788e32bae6e79f029215a28c851b5b597a4c6b36bec87cff6ce7"
+    },
+    "hand_checks.csv": {
+      "bytes": 67903,
+      "sha256": "8921dc4da1386379c8989e92c5f58393c5a4d444a4e948d09ff72973e73fff95"
+    }
+  },
+  "downloaded_back_identical": true,
+  "huggingface_hub": "2.4.0",
+  "uploaded": "2026-11-22T10:05:05Z"
+}
